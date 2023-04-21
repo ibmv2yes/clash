@@ -1,20 +1,8 @@
 proxies:
-  - name: 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
-    type: vmess
-    server: 23.225.33.169
-    port: 56002
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
   - name: 美国 CloudFlare节点
     type: vmess
-    server: 172.67.217.222
-    port: 80
+    server: cf-lt.sharecentre.online
+    port: 443
     uuid: 2e496758-950e-4549-8842-d5eec98d9fde
     alterId: 0
     cipher: auto
@@ -22,12 +10,23 @@ proxies:
     network: ws
     ws-path: /shirker
     ws-headers:
-      Host: dp3.scproxy.top
-  - name: 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      Host: lv1.sharecentrepro.org
+    tls: true
+  - name: 美国+V2CROSS.COM
+    type: trojan
+    server: 152.70.74.66
+    port: 443?security=tls&type=tcp&headerType=none
+    password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
+  - name: 法国+OVH数据中心
+    type: trojan
+    server: a1.veryfastnet1.tk
+    port: '32894'
+    password: HchlVCfnXB
+  - name: 南非 V2CROSS.COM
     type: vmess
-    server: 64.32.4.54
-    port: 42175
-    uuid: 8653004f-de67-44c2-9cce-e0830933fb03
+    server: 156.225.67.147
+    port: 51948
+    uuid: 93503dd5-245a-4eb1-ae2a-57ab9f2b3c29
     alterId: 64
     cipher: auto
     udp: true
@@ -35,60 +34,77 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国 V2CROSS.COM
+  - name: 广东省佛山市 移动
     type: vmess
-    server: vde2.0bad.com
-    port: 443
-    uuid: 927094d3-d678-4763-8591-e240d0bcae87
-    alterId: 0
+    server: 25.v2-ray.cyou
+    port: 23625
+    uuid: 0dd19d20-ec86-3680-b256-87237bafa89e
+    alterId: 2
     cipher: auto
     udp: true
     network: ws
-    ws-path: /chat
-    ws-headers: {}
-    tls: true
-  - name: 美国 加利福尼亚州洛杉矶Sharktech数据中心 - 2
+    ws-path: /
+    ws-headers:
+      Host: 25.v2-ray.cyou
+  - name: 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
     type: vmess
-    server: 170.178.179.189
+    server: 23.224.191.5
     port: 443
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
     udp: true
     network: ws
-    ws-path: /path/031730091420
+    ws-path: /path/220128071100
     ws-headers:
       Host: ''
     tls: true
+  - name: 日本 V2CROSS.COM
+    type: vmess
+    server: cloud.cluster.download.cloudsys.buzz
+    port: 80
+    uuid: 0b9d433d-9095-4b4e-aa99-2f8da1e0e25a
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /ac9c9cf8-d1c3-4eb7-aa66-5052edaf9a94.ts
+    ws-headers: {}
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
       - 美国 CloudFlare节点
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
-      - 美国 V2CROSS.COM
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心 - 2
+      - 美国+V2CROSS.COM
+      - 法国+OVH数据中心
+      - 南非 V2CROSS.COM
+      - 广东省佛山市 移动
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 日本 V2CROSS.COM
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
       - 美国 CloudFlare节点
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
-      - 美国 V2CROSS.COM
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心 - 2
+      - 美国+V2CROSS.COM
+      - 法国+OVH数据中心
+      - 南非 V2CROSS.COM
+      - 广东省佛山市 移动
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 日本 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
       - 美国 CloudFlare节点
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
-      - 美国 V2CROSS.COM
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心 - 2
+      - 美国+V2CROSS.COM
+      - 法国+OVH数据中心
+      - 南非 V2CROSS.COM
+      - 广东省佛山市 移动
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 日本 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
