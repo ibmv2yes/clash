@@ -1,32 +1,22 @@
 proxies:
-  - name: 美国 CloudFlare节点
+  - name: 美国 惠普HP
     type: vmess
-    server: cf-lt.sharecentre.online
+    server: hk3.af49c4e4c2ef.sanfen004.me
     port: 443
-    uuid: 2e496758-950e-4549-8842-d5eec98d9fde
+    uuid: 1172d7fe-4a5d-4d07-92f6-aefa4212347f
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /shirker
+    ws-path: /zh-cn
     ws-headers:
-      Host: lv1.sharecentrepro.org
+      Host: www.microsoft.com
     tls: true
-  - name: 美国+V2CROSS.COM
-    type: trojan
-    server: 152.70.74.66
-    port: 443?security=tls&type=tcp&headerType=none
-    password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
-  - name: 法国+OVH数据中心
-    type: trojan
-    server: a1.veryfastnet1.tk
-    port: '32894'
-    password: HchlVCfnXB
-  - name: 南非 V2CROSS.COM
+  - name: 美国 加利福尼亚州洛杉矶Sharktech数据中心
     type: vmess
-    server: 156.225.67.147
-    port: 51948
-    uuid: 93503dd5-245a-4eb1-ae2a-57ab9f2b3c29
+    server: 64.32.4.53
+    port: 42175
+    uuid: 8653004f-de67-44c2-9cce-e0830933fb03
     alterId: 64
     cipher: auto
     udp: true
@@ -34,32 +24,32 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 广东省佛山市 移动
+  - name: 美国 CloudFlare节点
     type: vmess
-    server: 25.v2-ray.cyou
-    port: 23625
-    uuid: 0dd19d20-ec86-3680-b256-87237bafa89e
-    alterId: 2
+    server: cdnjs.com
+    port: 443
+    uuid: DCE76061-EE65-49DB-997C-A6A880DADE3A
+    alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /
+    ws-path: /speedtest
     ws-headers:
-      Host: 25.v2-ray.cyou
-  - name: 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      Host: Amsterdam.kotick.site
+    tls: true
+  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
     type: vmess
-    server: 23.224.191.5
-    port: 443
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    server: 192.74.228.171
+    port: 42857
+    uuid: 051b844f-efe3-4847-92aa-66b5de0b6d4e
     alterId: 64
     cipher: auto
     udp: true
-    network: ws
-    ws-path: /path/220128071100
+    network: tcp
+    ws-path: /
     ws-headers:
-      Host: ''
-    tls: true
-  - name: 日本 V2CROSS.COM
+      Host: n1674862929.gofdwgy.cn
+  - name: 新加坡 Amazon数据中心
     type: vmess
     server: cloud.cluster.download.cloudsys.buzz
     port: 80
@@ -76,35 +66,29 @@ proxy-groups:
     proxies:
       - 自动选择
       - 故障转移
+      - 美国 惠普HP
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
       - 美国 CloudFlare节点
-      - 美国+V2CROSS.COM
-      - 法国+OVH数据中心
-      - 南非 V2CROSS.COM
-      - 广东省佛山市 移动
-      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
-      - 日本 V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 新加坡 Amazon数据中心
   - name: 自动选择
     type: url-test
     proxies:
+      - 美国 惠普HP
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
       - 美国 CloudFlare节点
-      - 美国+V2CROSS.COM
-      - 法国+OVH数据中心
-      - 南非 V2CROSS.COM
-      - 广东省佛山市 移动
-      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
-      - 日本 V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 新加坡 Amazon数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
+      - 美国 惠普HP
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
       - 美国 CloudFlare节点
-      - 美国+V2CROSS.COM
-      - 法国+OVH数据中心
-      - 南非 V2CROSS.COM
-      - 广东省佛山市 移动
-      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
-      - 日本 V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 新加坡 Amazon数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
