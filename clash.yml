@@ -1,25 +1,43 @@
 proxies:
-  - name: 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
-    type: vmess
-    server: 23.225.33.169
-    port: 56002
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国+V2CROSS.COM
-    type: trojan
-    server: 170.187.134.190
-    port: >-
-      8443?security=tls&sni=170-187-134-190.ipv4.rush.ml&type=tcp&headerType=none
-    password: cf4295378e209e70d12c5bdd017144dfd1c772d3
   - name: 美国 CloudFlare节点
     type: vmess
-    server: cf-lt.sharecentre.online
+    server: 104.17.3.81
+    port: 80
+    uuid: e40b2de3-b829-4591-a7b6-99d1913f3246
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /worryfree
+    ws-headers:
+      Host: w.evouch77.live
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: 104.17.3.81
+    port: 80
+    uuid: e40b2de3-b829-4591-a7b6-99d1913f3246
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /worryfree
+    ws-headers:
+      Host: w.evouch77.live
+  - name: 香港 Amazon数据中心
+    type: vmess
+    server: hk80.8b750e3e20aa.sanfen004.me
+    port: 80
+    uuid: 1172d7fe-4a5d-4d07-92f6-aefa4212347f
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /zh-cn/
+    ws-headers:
+      Host: ''
+  - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: 172.67.217.222
     port: 80
     uuid: 2e496758-950e-4549-8842-d5eec98d9fde
     alterId: 0
@@ -28,47 +46,48 @@ proxies:
     network: ws
     ws-path: /shirker
     ws-headers:
-      Host: sg2.sharecentrepro.com
-  - name: 香港+xTom%2FAS9312
-    type: ss
-    server: 38.55.98.61
-    port: '12071'
-    cipher: aes-256-gcm
-    password: ldIYt7gqwf
-  - name: 日本+东京Amazon数据中心
-    type: trojan
-    server: awsjp1.untilmu.com
-    port: '443'
-    password: fb89f661-0ff5-456f-8c36-5d60f79dd32d
+      Host: dp3.scproxy.top
+  - name: 美国 加利福尼亚州洛杉矶Sharktech数据中心
+    type: vmess
+    server: 64.32.4.54
+    port: 42175
+    uuid: 8653004f-de67-44c2-9cce-e0830933fb03
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
-      - 美国+V2CROSS.COM
       - 美国 CloudFlare节点
-      - 香港+xTom%2FAS9312
-      - 日本+东京Amazon数据中心
+      - 美国 CloudFlare节点 - 2
+      - 香港 Amazon数据中心
+      - 美国 CloudFlare节点 - 3
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
-      - 美国+V2CROSS.COM
       - 美国 CloudFlare节点
-      - 香港+xTom%2FAS9312
-      - 日本+东京Amazon数据中心
+      - 美国 CloudFlare节点 - 2
+      - 香港 Amazon数据中心
+      - 美国 CloudFlare节点 - 3
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
-      - 美国+V2CROSS.COM
       - 美国 CloudFlare节点
-      - 香港+xTom%2FAS9312
-      - 日本+东京Amazon数据中心
+      - 美国 CloudFlare节点 - 2
+      - 香港 Amazon数据中心
+      - 美国 CloudFlare节点 - 3
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
