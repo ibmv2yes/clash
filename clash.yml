@@ -1,8 +1,33 @@
 proxies:
+  - name: 西班牙 V2CROSS.COM
+    type: vmess
+    server: mci.bamarambash.monster
+    port: 443
+    uuid: 8f74ec8a-971c-11ed-a8fc-0242ac120002
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /db698b16-d216-11ed-8e14-5ad705867cff
+    ws-headers:
+      Host: db698b16-d216-11ed-8e14-5ad705867cff.asmandll.com
+    tls: true
   - name: 广东省佛山市 移动
     type: vmess
-    server: aasx2.cdn.node.a.tddns-ounk.com
-    port: 50050
+    server: 25.v2-ray.cyou
+    port: 23625
+    uuid: 0dd19d20-ec86-3680-b256-87237bafa89e
+    alterId: 2
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: 25.v2-ray.cyou
+  - name: 广东省广州市 移动
+    type: vmess
+    server: qszx.cdn.node.a.tddns-ounk.com
+    port: 50160
     uuid: 9288e85f-9b18-3e89-bd66-221acdafbd1a
     alterId: 0
     cipher: auto
@@ -10,11 +35,73 @@ proxies:
     network: ws
     ws-path: /009c250b-54f5-43a8-8b18-dccbb5d8c66a.y.live01.m3u8
     ws-headers:
-      Host: aasx2.cdn.node.a.tddns-ounk.com
-  - name: 美国加利福尼亚州洛杉矶 PetaExpress
+      Host: qszx.cdn.node.a.tddns-ounk.com
+  - name: 浙江省+移动数据上网公共出口
+    type: trojan
+    server: cmzs.xibai6.top
+    port: 819?security=tls&sni=ssl.ssl12.xyz&type=tcp&headerType=none
+    password: c39d5e05-3d06-317e-b5ca-e2f71b661570
+  - name: 辽宁省辽阳市 联通
     type: vmess
-    server: 198.2.205.70
-    port: 30402
+    server: mhnb.cdn.node.a.tddns-ounk.com
+    port: 50046
+    uuid: 9288e85f-9b18-3e89-bd66-221acdafbd1a
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /009c250b-54f5-43a8-8b18-dccbb5d8c66a.y.live01.m3u8
+    ws-headers:
+      Host: mhnb.cdn.node.a.tddns-ounk.com
+  - name: 海南省海口市+电信
+    type: ss
+    server: sz.cny.page
+    port: '20957'
+    cipher: aes-128-gcm
+    password: 2cfc4c58-88cb-4e00-9977-ef0a37559a22
+  - name: 海南省海口市+电信 - 2
+    type: ss
+    server: sz.cny.page
+    port: '32366'
+    cipher: aes-128-gcm
+    password: 2cfc4c58-88cb-4e00-9977-ef0a37559a22
+  - name: 广东省广州市+移动
+    type: ss
+    server: assets.flareai.site
+    port: '15343'
+    cipher: chacha20-ietf-poly1305
+    password: d5dd371c-11db-4cfb-b458-072f0fbd0e18
+  - name: 美国 加利福尼亚州圣何塞PEG TECH
+    type: vmess
+    server: 142.4.97.72
+    port: 44942
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-headers: {}
+  - name: 日本+东京Amazon数据中心
+    type: trojan
+    server: jp3.421421.xyz
+    port: 20230?type=tcp&sni=421421.xyz&allowInsecure=1
+    password: 717c3a16-6871-425c-a158-40cc37ff3543
+  - name: 北京市 新国信通信有限公司
+    type: vmess
+    server: cn-ar.dnspro.icu
+    port: 41000
+    uuid: 717e6001-c40f-3cba-8763-623661a53737
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /iso
+    ws-headers:
+      Host: cn-ar.dnspro.icu
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: 137.175.18.89
+    port: 42002
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -23,138 +110,56 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 香港 BGP.NET CN2数据中心
-    type: vmess
-    server: 202.79.171.155
-    port: 443
-    uuid: 7f37da61-c734-41b4-a8c2-eccfd6ca48f0
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /path/080712342310
-    ws-headers:
-      Host: ''
-    tls: true
-  - name: 上海市 联通
-    type: vmess
-    server: 7a6rs.cdn.node.a.tddns-ounk.com
-    port: 40039
-    uuid: ff39aca0-ead2-3d2a-b4be-954ebac34e64
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /80b48db1-7a27-4d2b-a12b-009feb033b04.j.live001.m3u8
-    ws-headers:
-      Host: 7a6rs.cdn.node.a.tddns-ounk.com
-  - name: 法国 国际航空电讯集团公司(SITA)
-    type: vmess
-    server: uk1-vmess.greenssh.xyz
-    port: 80
-    uuid: b5aafe8c-3527-4502-8add-9ca7417cfc88
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /vmess
-    ws-headers:
-      Host: uk1-vmess.greenssh.xyz
-  - name: 河北省石家庄市 电信
-    type: vmess
-    server: hbct2.qq.com.qqcdnxb.com
-    port: 18000
-    uuid: 7bae1ccc-8091-4f26-b22a-14857e8fde3d
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /zh-cn
-    ws-headers:
-      Host: jp80.fee68414a14e.sanfen004.me
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: 172.64.195.14
-    port: 80
-    uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: lg.v2ray20.xyz
-  - name: 美国+惠普HP
-    type: trojan
-    server: 16.162.44.241
-    port: >-
-      443?security=tls&sni=16-163-218-240.nhost.00cdn.com&type=tcp&headerType=none
-    password: be8b8f45-a290-4405-8699-ffeb07f3ee24
-  - name: 广东省广州市+移动
-    type: ss
-    server: api-a-asia-2.mcqqn.com
-    port: '61006'
-    cipher: chacha20-ietf-poly1305
-    password: b6bf8f12-72d8-470e-9bea-95457fd24949
-  - name: 安徽省合肥市+移动
-    type: ss
-    server: piniasg01.abbblog.xyz
-    port: '37908'
-    cipher: aes-128-gcm
-    password: 6652a517-36da-4db4-9607-326c2db9aa70
-  - name: 海南省海口市+电信
-    type: ss
-    server: sz.cny.page
-    port: '25984'
-    cipher: aes-128-gcm
-    password: 2cfc4c58-88cb-4e00-9977-ef0a37559a22
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
+      - 西班牙 V2CROSS.COM
       - 广东省佛山市 移动
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 香港 BGP.NET CN2数据中心
-      - 上海市 联通
-      - 法国 国际航空电讯集团公司(SITA)
-      - 河北省石家庄市 电信
-      - 美国 CloudFlare节点
-      - 美国+惠普HP
-      - 广东省广州市+移动
-      - 安徽省合肥市+移动
+      - 广东省广州市 移动
+      - 浙江省+移动数据上网公共出口
+      - 辽宁省辽阳市 联通
       - 海南省海口市+电信
+      - 海南省海口市+电信 - 2
+      - 广东省广州市+移动
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 日本+东京Amazon数据中心
+      - 北京市 新国信通信有限公司
+      - 美国 V2CROSS.COM
   - name: 自动选择
     type: url-test
     proxies:
+      - 西班牙 V2CROSS.COM
       - 广东省佛山市 移动
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 香港 BGP.NET CN2数据中心
-      - 上海市 联通
-      - 法国 国际航空电讯集团公司(SITA)
-      - 河北省石家庄市 电信
-      - 美国 CloudFlare节点
-      - 美国+惠普HP
-      - 广东省广州市+移动
-      - 安徽省合肥市+移动
+      - 广东省广州市 移动
+      - 浙江省+移动数据上网公共出口
+      - 辽宁省辽阳市 联通
       - 海南省海口市+电信
+      - 海南省海口市+电信 - 2
+      - 广东省广州市+移动
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 日本+东京Amazon数据中心
+      - 北京市 新国信通信有限公司
+      - 美国 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
+      - 西班牙 V2CROSS.COM
       - 广东省佛山市 移动
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 香港 BGP.NET CN2数据中心
-      - 上海市 联通
-      - 法国 国际航空电讯集团公司(SITA)
-      - 河北省石家庄市 电信
-      - 美国 CloudFlare节点
-      - 美国+惠普HP
-      - 广东省广州市+移动
-      - 安徽省合肥市+移动
+      - 广东省广州市 移动
+      - 浙江省+移动数据上网公共出口
+      - 辽宁省辽阳市 联通
       - 海南省海口市+电信
+      - 海南省海口市+电信 - 2
+      - 广东省广州市+移动
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 日本+东京Amazon数据中心
+      - 北京市 新国信通信有限公司
+      - 美国 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
