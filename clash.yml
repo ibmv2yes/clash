@@ -1,94 +1,89 @@
 proxies:
-  - name: 美国 CloudFlare节点
+  - name: 捷克+V2CROSS.COM
+    type: ss
+    server: 176.126.113.151
+    port: '26623'
+    cipher: chacha20-ietf-poly1305
+    password: pVTWnDrxRjpiGabFDupRJq
+  - name: 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
     type: vmess
-    server: wg.679888.xyz
-    port: 443
-    uuid: 8ea19532-3cb3-494f-f49f-b37636b55968
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /vm
-    ws-headers:
-      Host: wg.679888.xyz
-    tls: true
-  - name: 香港 阿里云
-    type: vmess
-    server: n1681621064.edpmvga.cn
-    port: 443
-    uuid: 745d5ccd-d7c1-43b4-a024-424f3fccef47
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-headers: {}
-    tls: true
-  - name: 美国 加你福尼亚洛杉矶Coperation Coloction数据中心
-    type: vmess
-    server: 198.16.45.166
-    port: 53392
+    server: 172.247.67.22
+    port: 42940
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
     udp: true
     network: tcp
-    ws-path: /aceamedv
+    ws-path: /shirker
     ws-headers:
-      Host: ''
-  - name: 美国 V2CROSS.COM
+      Host: uk1.scproxy.top
+  - name: 香港 V2CROSS.COM
     type: vmess
-    server: vau1.0bad.com
-    port: 443
-    uuid: 927094d3-d678-4763-8591-e240d0bcae87
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /chat
-    ws-headers:
-      Host: ''
-    tls: true
-  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
-    type: vmess
-    server: 192.74.228.171
-    port: 42857
-    uuid: 051b844f-efe3-4847-92aa-66b5de0b6d4e
+    server: 156.245.8.248
+    port: 49920
+    uuid: 964bf499-9ec0-4378-92b6-87d8d861b2d0
     alterId: 64
     cipher: auto
     udp: true
     network: tcp
     ws-path: /
     ws-headers:
-      Host: n1674862929.gofdwgy.cn
+      Host: ''
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: 104.17.26.23
+    port: 2096
+    uuid: 76670c86-f837-44af-f485-a3f3b0861045
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /asdf
+    ws-headers:
+      Host: wrxi.ga
+    tls: true
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: 172.67.190.181
+    port: 443
+    uuid: 764e1a95-b4d7-42d8-9f12-335a00764278
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /blue
+    ws-headers:
+      Host: kr.vtcss.top
+    tls: true
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
+      - 捷克+V2CROSS.COM
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 香港 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 香港 阿里云
-      - 美国 加你福尼亚洛杉矶Coperation Coloction数据中心
-      - 美国 V2CROSS.COM
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 美国 CloudFlare节点 - 2
   - name: 自动选择
     type: url-test
     proxies:
+      - 捷克+V2CROSS.COM
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 香港 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 香港 阿里云
-      - 美国 加你福尼亚洛杉矶Coperation Coloction数据中心
-      - 美国 V2CROSS.COM
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 美国 CloudFlare节点 - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
+      - 捷克+V2CROSS.COM
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 香港 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 香港 阿里云
-      - 美国 加你福尼亚洛杉矶Coperation Coloction数据中心
-      - 美国 V2CROSS.COM
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 美国 CloudFlare节点 - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
