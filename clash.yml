@@ -1,14 +1,14 @@
 proxies:
-  - name: 湖北省襄阳市+联通
+  - name: 海南省海口市+电信
     type: ss
-    server: jfan9l3mxptv2qjj8pm1.xn--vur082k.cc
-    port: '29360'
+    server: sz.cny.page
+    port: '32366'
     cipher: aes-128-gcm
-    password: de467768-8540-43de-88a4-7299a2bbeaec
-  - name: 广东省佛山市 移动
+    password: 2cfc4c58-88cb-4e00-9977-ef0a37559a22
+  - name: 广东省广州市 移动
     type: vmess
-    server: a25.achenxty.top
-    port: 11625
+    server: a21.achenxty.top
+    port: 11621
     uuid: abfe3178-3f19-32cd-95b2-5ad2dd39bce6
     alterId: 0
     cipher: auto
@@ -16,60 +16,70 @@ proxies:
     network: tcp
     ws-path: /
     ws-headers:
-      Host: a25.achenxty.top
-  - name: 辽宁省辽阳市 联通
+      Host: a21.achenxty.top
+  - name: 美国 加利福尼亚州圣何塞PEG TECH
     type: vmess
-    server: mhnb.cdn.node.a.tddns-ounk.com
-    port: 50045
-    uuid: 9288e85f-9b18-3e89-bd66-221acdafbd1a
-    alterId: 0
+    server: 142.4.97.75
+    port: 44942
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
     cipher: auto
     udp: true
-    network: ws
-    ws-path: /009c250b-54f5-43a8-8b18-dccbb5d8c66a.y.live01.m3u8
-    ws-headers:
-      Host: mhnb.cdn.node.a.tddns-ounk.com
-  - name: 安徽省合肥市+移动
-    type: ss
-    server: piniasg01.abbblog.xyz
-    port: '37908'
-    cipher: aes-128-gcm
-    password: 6652a517-36da-4db4-9607-326c2db9aa70
-  - name: 美国 CloudFlare节点
+    network: tcp
+    ws-headers: {}
+  - name: 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
     type: vmess
-    server: 108.162.196.103
-    port: 443
-    uuid: 908a929a-74c9-427c-dcec-76549aa25249
-    alterId: 0
+    server: 23.224.15.180
+    port: 50002
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
     cipher: auto
     udp: true
-    network: ws
+    network: tcp
     ws-path: /
     ws-headers:
-      Host: resso.vtcss.top
-    tls: true
-  - name: 广东省佛山市+移动
-    type: ss
-    server: catlog.flareai.science
-    port: '15543'
-    cipher: chacha20-ietf-poly1305
-    password: d5dd371c-11db-4cfb-b458-072f0fbd0e18
-  - name: 上海市 联通
+      Host: gzzz.8bqyato.ml
+  - name: 广东省佛山市 移动
     type: vmess
-    server: 7a6rs.cdn.node.a.tddns-ounk.com
-    port: 40041
-    uuid: ff39aca0-ead2-3d2a-b4be-954ebac34e64
+    server: a16.achenxty.top
+    port: 11616
+    uuid: abfe3178-3f19-32cd-95b2-5ad2dd39bce6
     alterId: 0
     cipher: auto
     udp: true
-    network: ws
-    ws-path: /80b48db1-7a27-4d2b-a12b-009feb033b04.j.live001.m3u8
+    network: tcp
+    ws-path: /
     ws-headers:
-      Host: 7a6rs.cdn.node.a.tddns-ounk.com
-  - name: 美国 华盛顿Cogent通信公司
+      Host: a16.achenxty.top
+  - name: 广东省广州市 移动 - 2
     type: vmess
-    server: 38.54.250.55
-    port: 51431
+    server: a12.achenxty.top
+    port: 11612
+    uuid: abfe3178-3f19-32cd-95b2-5ad2dd39bce6
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: a12.achenxty.top
+  - name: 香港 BGP.NET CN2数据中心
+    type: vmess
+    server: 202.79.171.155
+    port: 443
+    uuid: 7f37da61-c734-41b4-a8c2-eccfd6ca48f0
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /path/080712342310
+    ws-headers:
+      Host: ''
+    tls: true
+  - name: 英国 社会保险安全部
+    type: vmess
+    server: 51.195.35.147
+    port: 58812
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -78,22 +88,20 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 法国 国际航空电讯集团公司(SITA)
+  - name: 美国 加利福尼亚州圣何塞PEG TECH - 2
     type: vmess
-    server: uk1-vmess.greenssh.xyz
-    port: 80
-    uuid: b5aafe8c-3527-4502-8add-9ca7417cfc88
-    alterId: 0
+    server: 142.4.101.166
+    port: 59022
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
     cipher: auto
     udp: true
-    network: ws
-    ws-path: /vmess
-    ws-headers:
-      Host: uk1-vmess.greenssh.xyz
+    network: tcp
+    ws-headers: {}
   - name: 广东省佛山市 移动 - 2
     type: vmess
     server: b9v6w.cdn.node.a.tddns-ounk.com
-    port: 40370
+    port: 40369
     uuid: ff39aca0-ead2-3d2a-b4be-954ebac34e64
     alterId: 0
     cipher: auto
@@ -104,116 +112,123 @@ proxies:
       Host: b9v6w.cdn.node.a.tddns-ounk.com
   - name: 广东省佛山市 移动 - 3
     type: vmess
-    server: a8.achenxty.top
-    port: 11608
-    uuid: abfe3178-3f19-32cd-95b2-5ad2dd39bce6
+    server: d0cd89648587.sanfen004.me
+    port: 16610
+    uuid: e594a27c-1c77-488c-9a04-e833ecc5f0f3
     alterId: 0
     cipher: auto
     udp: true
     network: tcp
     ws-path: /
     ws-headers:
-      Host: a8.achenxty.top
-  - name: 广东省广州市 移动
+      Host: d0cd89648587.sanfen004.me
+  - name: 新加坡 OVH
     type: vmess
-    server: jzygy.cdn.node.a.tddns-ounk.com
-    port: 40240
-    uuid: ff39aca0-ead2-3d2a-b4be-954ebac34e64
+    server: 51.79.243.229
+    port: 10000
+    uuid: 59e17350-ddd4-11ed-9e86-bb75be48585a
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /80b48db1-7a27-4d2b-a12b-009feb033b04.j.live001.m3u8
+    ws-path: /vpnjantit
     ws-headers:
-      Host: jzygy.cdn.node.a.tddns-ounk.com
-  - name: 荷兰+V2CROSS.COM
-    type: ss
-    server: 37.218.241.130
-    port: '443'
-    cipher: chacha20-ietf-poly1305
-    password: j4wkIrreHEdC
-  - name: 香港 阿里云
+      Host: ''
+  - name: 美国 加利福尼亚州洛杉矶Sharktech数据中心
     type: vmess
-    server: n1681621064.edpmvga.cn
-    port: 443
-    uuid: 745d5ccd-d7c1-43b4-a024-424f3fccef47
-    alterId: 0
+    server: 67.21.89.136
+    port: 46866
+    uuid: b697d727-cf6c-41dd-a0de-c7a9478e4a4a
+    alterId: 64
     cipher: auto
     udp: true
-    network: ws
-    ws-headers: {}
-    tls: true
-  - name: 辽宁省辽阳市 联通 - 2
-    type: vmess
-    server: mhnb.cdn.node.a.tddns-ounk.com
-    port: 50046
-    uuid: 9288e85f-9b18-3e89-bd66-221acdafbd1a
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /009c250b-54f5-43a8-8b18-dccbb5d8c66a.y.live01.m3u8
+    network: tcp
+    ws-path: /
     ws-headers:
-      Host: mhnb.cdn.node.a.tddns-ounk.com
+      Host: ''
+  - name: 美国 加利福尼亚州洛杉矶PetaExpress
+    type: vmess
+    server: 107.148.195.21
+    port: 50014
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /shirker
+    ws-headers:
+      Host: uk1.scproxy.top
+  - name: 河北省石家庄市 电信
+    type: vmess
+    server: 222.222.8.164
+    port: 18000
+    uuid: 7bae1ccc-8091-4f26-b22a-14857e8fde3d
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 湖北省襄阳市+联通
+      - 海南省海口市+电信
+      - 广东省广州市 移动
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
       - 广东省佛山市 移动
-      - 辽宁省辽阳市 联通
-      - 安徽省合肥市+移动
-      - 美国 CloudFlare节点
-      - 广东省佛山市+移动
-      - 上海市 联通
-      - 美国 华盛顿Cogent通信公司
-      - 法国 国际航空电讯集团公司(SITA)
+      - 广东省广州市 移动 - 2
+      - 香港 BGP.NET CN2数据中心
+      - 英国 社会保险安全部
+      - 美国 加利福尼亚州圣何塞PEG TECH - 2
       - 广东省佛山市 移动 - 2
       - 广东省佛山市 移动 - 3
-      - 广东省广州市 移动
-      - 荷兰+V2CROSS.COM
-      - 香港 阿里云
-      - 辽宁省辽阳市 联通 - 2
+      - 新加坡 OVH
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 美国 加利福尼亚州洛杉矶PetaExpress
+      - 河北省石家庄市 电信
   - name: 自动选择
     type: url-test
     proxies:
-      - 湖北省襄阳市+联通
+      - 海南省海口市+电信
+      - 广东省广州市 移动
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
       - 广东省佛山市 移动
-      - 辽宁省辽阳市 联通
-      - 安徽省合肥市+移动
-      - 美国 CloudFlare节点
-      - 广东省佛山市+移动
-      - 上海市 联通
-      - 美国 华盛顿Cogent通信公司
-      - 法国 国际航空电讯集团公司(SITA)
+      - 广东省广州市 移动 - 2
+      - 香港 BGP.NET CN2数据中心
+      - 英国 社会保险安全部
+      - 美国 加利福尼亚州圣何塞PEG TECH - 2
       - 广东省佛山市 移动 - 2
       - 广东省佛山市 移动 - 3
-      - 广东省广州市 移动
-      - 荷兰+V2CROSS.COM
-      - 香港 阿里云
-      - 辽宁省辽阳市 联通 - 2
+      - 新加坡 OVH
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 美国 加利福尼亚州洛杉矶PetaExpress
+      - 河北省石家庄市 电信
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 湖北省襄阳市+联通
+      - 海南省海口市+电信
+      - 广东省广州市 移动
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
       - 广东省佛山市 移动
-      - 辽宁省辽阳市 联通
-      - 安徽省合肥市+移动
-      - 美国 CloudFlare节点
-      - 广东省佛山市+移动
-      - 上海市 联通
-      - 美国 华盛顿Cogent通信公司
-      - 法国 国际航空电讯集团公司(SITA)
+      - 广东省广州市 移动 - 2
+      - 香港 BGP.NET CN2数据中心
+      - 英国 社会保险安全部
+      - 美国 加利福尼亚州圣何塞PEG TECH - 2
       - 广东省佛山市 移动 - 2
       - 广东省佛山市 移动 - 3
-      - 广东省广州市 移动
-      - 荷兰+V2CROSS.COM
-      - 香港 阿里云
-      - 辽宁省辽阳市 联通 - 2
+      - 新加坡 OVH
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 美国 加利福尼亚州洛杉矶PetaExpress
+      - 河北省石家庄市 电信
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
