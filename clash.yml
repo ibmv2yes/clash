@@ -1,110 +1,14 @@
 proxies:
-  - name: 广东省广州市 移动
-    type: vmess
-    server: bnm4.cdn.node.a.tddns-ounk.com
-    port: 50069
-    uuid: 9288e85f-9b18-3e89-bd66-221acdafbd1a
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /009c250b-54f5-43a8-8b18-dccbb5d8c66a.y.live01.m3u8
-    ws-headers:
-      Host: bnm4.cdn.node.a.tddns-ounk.com
-  - name: 河北省石家庄市 电信
-    type: vmess
-    server: hbct2.qq.com.qqcdnxb.com
-    port: 18000
-    uuid: 7bae1ccc-8091-4f26-b22a-14857e8fde3d
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ssl.ssl12.xyz
-  - name: 海南省海口市+电信
-    type: ss
-    server: sz.cny.page
-    port: '11536'
-    cipher: aes-128-gcm
-    password: 2cfc4c58-88cb-4e00-9977-ef0a37559a22
-  - name: 亚太地区+V2CROSS.COM
-    type: trojan
-    server: 163.123.192.36
-    port: >-
-      443?security=tls&sni=16-163-218-240.nhost.00cdn.com&type=tcp&headerType=none
-    password: be8b8f45-a290-4405-8699-ffeb07f3ee24
   - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
     type: vmess
-    server: 192.74.228.171
-    port: 42857
-    uuid: 051b844f-efe3-4847-92aa-66b5de0b6d4e
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: n1674862929.gofdwgy.cn
-  - name: 美国 华盛顿Cogent通信公司
-    type: vmess
-    server: 38.54.250.55
-    port: 51431
+    server: 192.74.234.248
+    port: 50044
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
     udp: true
     network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国 V2CROSS.COM
-    type: vmess
-    server: 137.175.18.89
-    port: 42002
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: cf-lt.sharecentre.online
-    port: 80
-    uuid: 2e496758-950e-4549-8842-d5eec98d9fde
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /shirker
-    ws-headers:
-      Host: lv2.sharecentrepro.org
-  - name: 江苏省扬州市 移动
-    type: vmess
-    server: data-hk-v1.shwjfkw.cn
-    port: 50207
-    uuid: b1478e24-4916-3abe-8f17-15931012ecbe
-    alterId: 1
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /hls/cctv5phd.m3u8
-    ws-headers:
-      Host: YTB-awkj
-  - name: 河北省石家庄市 电信 - 2
-    type: vmess
-    server: 222.222.8.164
-    port: 18000
-    uuid: 7bae1ccc-8091-4f26-b22a-14857e8fde3d
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
+    ws-path: ''
     ws-headers:
       Host: ''
   - name: 广东省佛山市 移动
@@ -119,6 +23,18 @@ proxies:
     ws-path: /009c250b-54f5-43a8-8b18-dccbb5d8c66a.y.live01.m3u8
     ws-headers:
       Host: aasx2.cdn.node.a.tddns-ounk.com
+  - name: 广东省广州市 移动
+    type: vmess
+    server: hbng.cdn.node.a.tddns-ounk.com
+    port: 50055
+    uuid: 9288e85f-9b18-3e89-bd66-221acdafbd1a
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /009c250b-54f5-43a8-8b18-dccbb5d8c66a.y.live01.m3u8
+    ws-headers:
+      Host: hbng.cdn.node.a.tddns-ounk.com
   - name: 广东省佛山市 移动 - 2
     type: vmess
     server: b9v6w.cdn.node.a.tddns-ounk.com
@@ -131,16 +47,105 @@ proxies:
     ws-path: /80b48db1-7a27-4d2b-a12b-009feb033b04.j.live001.m3u8
     ws-headers:
       Host: b9v6w.cdn.node.a.tddns-ounk.com
-  - name: 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+  - name: 广东省广州市 移动 - 2
     type: vmess
-    server: 107.167.7.12
-    port: 41654
-    uuid: bdee202c-8fae-441f-a588-7bc4d3887019
+    server: ggsd5.cdn.node.a.tddns-ounk.com
+    port: 50163
+    uuid: 9288e85f-9b18-3e89-bd66-221acdafbd1a
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /009c250b-54f5-43a8-8b18-dccbb5d8c66a.y.live01.m3u8
+    ws-headers:
+      Host: ggsd5.cdn.node.a.tddns-ounk.com
+  - name: 美国 华盛顿Cogent通信公司
+    type: vmess
+    server: 38.63.0.93
+    port: 47002
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
     udp: true
     network: tcp
     ws-path: ''
+    ws-headers:
+      Host: ''
+  - name: 广东省广州市 移动 - 3
+    type: vmess
+    server: hbng.cdn.node.a.tddns-ounk.com
+    port: 50024
+    uuid: 9288e85f-9b18-3e89-bd66-221acdafbd1a
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /009c250b-54f5-43a8-8b18-dccbb5d8c66a.y.live01.m3u8
+    ws-headers:
+      Host: hbng.cdn.node.a.tddns-ounk.com
+  - name: 安徽省合肥市+移动
+    type: ss
+    server: piniasg01.abbblog.xyz
+    port: '37908'
+    cipher: aes-128-gcm
+    password: 6652a517-36da-4db4-9607-326c2db9aa70
+  - name: 广东省广州市 移动 - 4
+    type: vmess
+    server: qszx.cdn.node.a.tddns-ounk.com
+    port: 50160
+    uuid: 9288e85f-9b18-3e89-bd66-221acdafbd1a
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /009c250b-54f5-43a8-8b18-dccbb5d8c66a.y.live01.m3u8
+    ws-headers:
+      Host: qszx.cdn.node.a.tddns-ounk.com
+  - name: 广东省佛山市 移动 - 3
+    type: vmess
+    server: 25.v2-ray.cyou
+    port: 23625
+    uuid: 0dd19d20-ec86-3680-b256-87237bafa89e
+    alterId: 2
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: 25.v2-ray.cyou
+  - name: 海南省海口市+电信
+    type: ss
+    server: sz.cny.page
+    port: '11536'
+    cipher: aes-128-gcm
+    password: 2cfc4c58-88cb-4e00-9977-ef0a37559a22
+  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心 - 2
+    type: vmess
+    server: 192.74.231.174
+    port: 49202
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 广东省汕头市+移动
+    type: trojan
+    server: azhj.xifasd.top
+    port: 20762?security=tls&sni=ssl.ssl12.xyz&type=tcp&headerType=none
+    password: c39d5e05-3d06-317e-b5ca-e2f71b661570
+  - name: 美国 华盛顿Cogent通信公司 - 2
+    type: vmess
+    server: 38.54.250.55
+    port: 51431
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
     ws-headers:
       Host: ''
 proxy-groups:
@@ -149,53 +154,56 @@ proxy-groups:
     proxies:
       - 自动选择
       - 故障转移
-      - 广东省广州市 移动
-      - 河北省石家庄市 电信
-      - 海南省海口市+电信
-      - 亚太地区+V2CROSS.COM
       - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 美国 华盛顿Cogent通信公司
-      - 美国 V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 江苏省扬州市 移动
-      - 河北省石家庄市 电信 - 2
       - 广东省佛山市 移动
+      - 广东省广州市 移动
       - 广东省佛山市 移动 - 2
-      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+      - 广东省广州市 移动 - 2
+      - 美国 华盛顿Cogent通信公司
+      - 广东省广州市 移动 - 3
+      - 安徽省合肥市+移动
+      - 广东省广州市 移动 - 4
+      - 广东省佛山市 移动 - 3
+      - 海南省海口市+电信
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心 - 2
+      - 广东省汕头市+移动
+      - 美国 华盛顿Cogent通信公司 - 2
   - name: 自动选择
     type: url-test
     proxies:
-      - 广东省广州市 移动
-      - 河北省石家庄市 电信
-      - 海南省海口市+电信
-      - 亚太地区+V2CROSS.COM
       - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 美国 华盛顿Cogent通信公司
-      - 美国 V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 江苏省扬州市 移动
-      - 河北省石家庄市 电信 - 2
       - 广东省佛山市 移动
+      - 广东省广州市 移动
       - 广东省佛山市 移动 - 2
-      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+      - 广东省广州市 移动 - 2
+      - 美国 华盛顿Cogent通信公司
+      - 广东省广州市 移动 - 3
+      - 安徽省合肥市+移动
+      - 广东省广州市 移动 - 4
+      - 广东省佛山市 移动 - 3
+      - 海南省海口市+电信
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心 - 2
+      - 广东省汕头市+移动
+      - 美国 华盛顿Cogent通信公司 - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 广东省广州市 移动
-      - 河北省石家庄市 电信
-      - 海南省海口市+电信
-      - 亚太地区+V2CROSS.COM
       - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 美国 华盛顿Cogent通信公司
-      - 美国 V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 江苏省扬州市 移动
-      - 河北省石家庄市 电信 - 2
       - 广东省佛山市 移动
+      - 广东省广州市 移动
       - 广东省佛山市 移动 - 2
-      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+      - 广东省广州市 移动 - 2
+      - 美国 华盛顿Cogent通信公司
+      - 广东省广州市 移动 - 3
+      - 安徽省合肥市+移动
+      - 广东省广州市 移动 - 4
+      - 广东省佛山市 移动 - 3
+      - 海南省海口市+电信
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心 - 2
+      - 广东省汕头市+移动
+      - 美国 华盛顿Cogent通信公司 - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
