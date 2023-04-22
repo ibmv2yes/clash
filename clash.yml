@@ -1,9 +1,9 @@
 proxies:
-  - name: 美国 加利福尼亚州洛杉矶Sharktech数据中心
+  - name: 南非 V2CROSS.COM
     type: vmess
-    server: 64.32.4.53
-    port: 42175
-    uuid: 8653004f-de67-44c2-9cce-e0830933fb03
+    server: 156.225.67.146
+    port: 51948
+    uuid: 93503dd5-245a-4eb1-ae2a-57ab9f2b3c29
     alterId: 64
     cipher: auto
     udp: true
@@ -11,72 +11,85 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国 加利福尼亚州洛杉矶Sharktech数据中心 - 2
+  - name: 美国 CloudFlare节点
     type: vmess
-    server: 170.178.179.189
+    server: 104.17.3.81
+    port: 80
+    uuid: e40b2de3-b829-4591-a7b6-99d1913f3246
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /worryfree
+    ws-headers:
+      Host: w.evouch77.live
+  - name: 英国+V2CROSS.COM
+    type: trojan
+    server: hk19.microsoftjs.top
+    port: '443'
+    password: a21e5380-7711-4c6d-af44-e6210e5436af
+  - name: 瑞士+V2CROSS.COM
+    type: trojan
+    server: 195.15.243.26
+    port: '443'
+    password: '4478'
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: 172.67.140.193
+    port: 80
+    uuid: 2e496758-950e-4549-8842-d5eec98d9fde
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /shirker
+    ws-headers:
+      Host: uk1.scproxy.top
+  - name: 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+    type: vmess
+    server: 23.224.191.5
     port: 443
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
     udp: true
     network: ws
-    ws-path: /path/031730091420
+    ws-path: /path/220128071100
     ws-headers:
       Host: ''
     tls: true
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: 172.66.46.15
-    port: 443
-    uuid: 12612e87-8003-44a8-b4e8-ec4a325e9016
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /ou
-    ws-headers:
-      Host: z.zorro.tk
-    tls: true
-  - name: 法国+OVH数据中心
-    type: trojan
-    server: 54.37.185.148
-    port: '32894'
-    password: HchlVCfnXB
-  - name: 美国+V2CROSS.COM
-    type: trojan
-    server: 170.187.134.190
-    port: >-
-      8443?security=tls&sni=170-187-134-190.ipv4.rush.ml&type=tcp&headerType=none
-    password: cf4295378e209e70d12c5bdd017144dfd1c772d3
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心 - 2
+      - 南非 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 法国+OVH数据中心
-      - 美国+V2CROSS.COM
+      - 英国+V2CROSS.COM
+      - 瑞士+V2CROSS.COM
+      - 美国 CloudFlare节点 - 2
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心 - 2
+      - 南非 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 法国+OVH数据中心
-      - 美国+V2CROSS.COM
+      - 英国+V2CROSS.COM
+      - 瑞士+V2CROSS.COM
+      - 美国 CloudFlare节点 - 2
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心 - 2
+      - 南非 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 法国+OVH数据中心
-      - 美国+V2CROSS.COM
+      - 英国+V2CROSS.COM
+      - 瑞士+V2CROSS.COM
+      - 美国 CloudFlare节点 - 2
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
