@@ -1,31 +1,12 @@
 proxies:
-  - name: 江苏省扬州市 移动
-    type: vmess
-    server: data-hk-v1.shwjfkw.cn
-    port: 50207
-    uuid: b1478e24-4916-3abe-8f17-15931012ecbe
-    alterId: 1
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /hls/cctv5phd.m3u8
-    ws-headers:
-      Host: YTB-awkj
-  - name: 德国 法兰克福Oracle云计算数据中心
-    type: vmess
-    server: 130.61.111.167
-    port: 21872
-    uuid: 9a7a75d4-ab7e-4ba0-bbfa-a4acddc18084
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
+  - name: 英国+V2CROSS.COM
+    type: trojan
+    server: hk19.microsoftjs.top
+    port: '443'
+    password: a21e5380-7711-4c6d-af44-e6210e5436af
   - name: 美国 加利福尼亚州圣何塞PEG TECH
     type: vmess
-    server: 142.4.101.169
+    server: 142.4.101.166
     port: 59022
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
@@ -33,29 +14,6 @@ proxies:
     udp: true
     network: tcp
     ws-headers: {}
-  - name: 日本+V2CROSS.COM
-    type: trojan
-    server: aws-hk03.aikun.online
-    port: '443'
-    password: f8e4d8e3-36b5-42b1-af33-f0e1719976b4
-  - name: 美国 V2CROSS.COM
-    type: vmess
-    server: 143.42.61.111
-    port: 443
-    uuid: 927094d3-d678-4763-8591-e240d0bcae87
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /chat
-    ws-headers:
-      Host: ''
-    tls: true
-  - name: 上海市+电信
-    type: trojan
-    server: official.taipeicitygovernment.kiev.ua
-    port: 8443?security=tls&sni=66.42.40.132&type=tcp&headerType=none
-    password: 5505f6ba-cd37-30ce-8f92-be4120c83d7f
   - name: 美国 CloudFlare节点
     type: vmess
     server: cf-lt.sharecentre.online
@@ -69,41 +27,68 @@ proxies:
     ws-headers:
       Host: lv1.sharecentrepro.org
     tls: true
+  - name: 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+    type: vmess
+    server: 23.224.15.180
+    port: 50002
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: gzzz.8bqyato.ml
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: 143.42.61.111
+    port: 443
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /chat
+    ws-headers:
+      Host: ''
+    tls: true
+  - name: 美国+V2CROSS.COM
+    type: trojan
+    server: 152.70.74.66
+    port: 443?security=tls&type=tcp&headerType=none
+    password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 江苏省扬州市 移动
-      - 德国 法兰克福Oracle云计算数据中心
+      - 英国+V2CROSS.COM
       - 美国 加利福尼亚州圣何塞PEG TECH
-      - 日本+V2CROSS.COM
-      - 美国 V2CROSS.COM
-      - 上海市+电信
       - 美国 CloudFlare节点
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 美国 V2CROSS.COM
+      - 美国+V2CROSS.COM
   - name: 自动选择
     type: url-test
     proxies:
-      - 江苏省扬州市 移动
-      - 德国 法兰克福Oracle云计算数据中心
+      - 英国+V2CROSS.COM
       - 美国 加利福尼亚州圣何塞PEG TECH
-      - 日本+V2CROSS.COM
-      - 美国 V2CROSS.COM
-      - 上海市+电信
       - 美国 CloudFlare节点
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 美国 V2CROSS.COM
+      - 美国+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 江苏省扬州市 移动
-      - 德国 法兰克福Oracle云计算数据中心
+      - 英国+V2CROSS.COM
       - 美国 加利福尼亚州圣何塞PEG TECH
-      - 日本+V2CROSS.COM
-      - 美国 V2CROSS.COM
-      - 上海市+电信
       - 美国 CloudFlare节点
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 美国 V2CROSS.COM
+      - 美国+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
