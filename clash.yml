@@ -1,34 +1,14 @@
 proxies:
-  - name: 捷克+V2CROSS.COM
-    type: ss
-    server: 176.126.113.151
-    port: '26623'
-    cipher: chacha20-ietf-poly1305
-    password: pVTWnDrxRjpiGabFDupRJq
-  - name: 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+  - name: 美国 加利福尼亚州圣何塞PEG TECH
     type: vmess
-    server: 172.247.67.22
-    port: 42940
+    server: 142.4.97.72
+    port: 44942
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
     udp: true
     network: tcp
-    ws-path: /shirker
-    ws-headers:
-      Host: uk1.scproxy.top
-  - name: 香港 V2CROSS.COM
-    type: vmess
-    server: 156.245.8.248
-    port: 49920
-    uuid: 964bf499-9ec0-4378-92b6-87d8d861b2d0
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
+    ws-headers: {}
   - name: 美国 CloudFlare节点
     type: vmess
     server: 104.17.26.23
@@ -55,35 +35,84 @@ proxies:
     ws-headers:
       Host: kr.vtcss.top
     tls: true
+  - name: 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+    type: vmess
+    server: 23.224.15.180
+    port: 50002
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: gzzz.8bqyato.ml
+  - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: lsb-gy.heinu.cf
+    port: 2096
+    uuid: d793c013-f596-4af9-de0a-2062bb864dd7
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /@heinuhome
+    ws-headers:
+      Host: lsb-gy.heinu.cf
+    tls: true
+  - name: 美国+V2CROSS.COM
+    type: trojan
+    server: 170.187.134.190
+    port: >-
+      8443?security=tls&sni=170-187-134-190.ipv4.rush.ml&type=tcp&headerType=none
+    password: cf4295378e209e70d12c5bdd017144dfd1c772d3
+  - name: 美国 加你福尼亚洛杉矶Coperation Coloction数据中心
+    type: vmess
+    server: 198.16.45.166
+    port: 53392
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /aceamedv
+    ws-headers:
+      Host: ''
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 捷克+V2CROSS.COM
-      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
-      - 香港 V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 美国 CloudFlare节点 - 3
+      - 美国+V2CROSS.COM
+      - 美国 加你福尼亚洛杉矶Coperation Coloction数据中心
   - name: 自动选择
     type: url-test
     proxies:
-      - 捷克+V2CROSS.COM
-      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
-      - 香港 V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 美国 CloudFlare节点 - 3
+      - 美国+V2CROSS.COM
+      - 美国 加你福尼亚洛杉矶Coperation Coloction数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 捷克+V2CROSS.COM
-      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
-      - 香港 V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 美国 CloudFlare节点 - 3
+      - 美国+V2CROSS.COM
+      - 美国 加你福尼亚洛杉矶Coperation Coloction数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
