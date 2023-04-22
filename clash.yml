@@ -1,10 +1,28 @@
 proxies:
-  - name: 捷克+V2CROSS.COM
-    type: ss
-    server: 176.126.113.151
-    port: '26623'
-    cipher: chacha20-ietf-poly1305
-    password: pVTWnDrxRjpiGabFDupRJq
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: wg.679888.xyz
+    port: 443
+    uuid: 8ea19532-3cb3-494f-f49f-b37636b55968
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /vm
+    ws-headers:
+      Host: wg.679888.xyz
+    tls: true
+  - name: 香港 阿里云
+    type: vmess
+    server: n1681621064.edpmvga.cn
+    port: 443
+    uuid: 745d5ccd-d7c1-43b4-a024-424f3fccef47
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-headers: {}
+    tls: true
   - name: 美国 加你福尼亚洛杉矶Coperation Coloction数据中心
     type: vmess
     server: 198.16.45.166
@@ -17,29 +35,19 @@ proxies:
     ws-path: /aceamedv
     ws-headers:
       Host: ''
-  - name: 美国 CloudFlare节点
+  - name: 美国 V2CROSS.COM
     type: vmess
-    server: 172.66.46.15
+    server: vau1.0bad.com
     port: 443
-    uuid: 12612e87-8003-44a8-b4e8-ec4a325e9016
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /ou
+    ws-path: /chat
     ws-headers:
-      Host: z.zorro.tk
+      Host: ''
     tls: true
-  - name: 美国加利福尼亚州洛杉矶 PetaExpress
-    type: vmess
-    server: 198.2.206.45
-    port: 33012
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-headers: {}
   - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
     type: vmess
     server: 192.74.228.171
@@ -52,65 +60,35 @@ proxies:
     ws-path: /
     ws-headers:
       Host: n1674862929.gofdwgy.cn
-  - name: 北美地区 V2CROSS.COM
-    type: vmess
-    server: 107.172.60.35
-    port: 80
-    uuid: 4297dcc2-376b-4db3-b9e0-d5dff64dce83
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
-    type: vmess
-    server: 23.224.15.180
-    port: 50002
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: gzzz.8bqyato.ml
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 捷克+V2CROSS.COM
-      - 美国 加你福尼亚洛杉矶Coperation Coloction数据中心
       - 美国 CloudFlare节点
-      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 香港 阿里云
+      - 美国 加你福尼亚洛杉矶Coperation Coloction数据中心
+      - 美国 V2CROSS.COM
       - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 北美地区 V2CROSS.COM
-      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
   - name: 自动选择
     type: url-test
     proxies:
-      - 捷克+V2CROSS.COM
-      - 美国 加你福尼亚洛杉矶Coperation Coloction数据中心
       - 美国 CloudFlare节点
-      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 香港 阿里云
+      - 美国 加你福尼亚洛杉矶Coperation Coloction数据中心
+      - 美国 V2CROSS.COM
       - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 北美地区 V2CROSS.COM
-      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 捷克+V2CROSS.COM
-      - 美国 加你福尼亚洛杉矶Coperation Coloction数据中心
       - 美国 CloudFlare节点
-      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 香港 阿里云
+      - 美国 加你福尼亚洛杉矶Coperation Coloction数据中心
+      - 美国 V2CROSS.COM
       - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 北美地区 V2CROSS.COM
-      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
