@@ -1,16 +1,4 @@
 proxies:
-  - name: 南非 V2CROSS.COM
-    type: vmess
-    server: 156.225.67.146
-    port: 51948
-    uuid: 93503dd5-245a-4eb1-ae2a-57ab9f2b3c29
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
   - name: 美国 CloudFlare节点
     type: vmess
     server: 104.17.3.81
@@ -23,17 +11,32 @@ proxies:
     ws-path: /worryfree
     ws-headers:
       Host: w.evouch77.live
-  - name: 英国+V2CROSS.COM
-    type: trojan
-    server: hk19.microsoftjs.top
-    port: '443'
-    password: a21e5380-7711-4c6d-af44-e6210e5436af
-  - name: 瑞士+V2CROSS.COM
-    type: trojan
-    server: 195.15.243.26
-    port: '443'
-    password: '4478'
   - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: 172.67.217.222
+    port: 80
+    uuid: 2e496758-950e-4549-8842-d5eec98d9fde
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /shirker
+    ws-headers:
+      Host: dp3.scproxy.top
+  - name: 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+    type: vmess
+    server: 23.224.191.6
+    port: 443
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /path/220128071100
+    ws-headers:
+      Host: ''
+    tls: true
+  - name: 美国 CloudFlare节点 - 3
     type: vmess
     server: 172.67.140.193
     port: 80
@@ -45,51 +48,47 @@ proxies:
     ws-path: /shirker
     ws-headers:
       Host: uk1.scproxy.top
-  - name: 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+  - name: 美国 CloudFlare节点 - 4
     type: vmess
-    server: 23.224.191.5
-    port: 443
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
+    server: cf-lt.sharecentre.online
+    port: 80
+    uuid: 2e496758-950e-4549-8842-d5eec98d9fde
+    alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /path/220128071100
+    ws-path: /shirker
     ws-headers:
-      Host: ''
-    tls: true
+      Host: lv1.sharecentrepro.org
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 南非 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 英国+V2CROSS.COM
-      - 瑞士+V2CROSS.COM
       - 美国 CloudFlare节点 - 2
       - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 美国 CloudFlare节点 - 3
+      - 美国 CloudFlare节点 - 4
   - name: 自动选择
     type: url-test
     proxies:
-      - 南非 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 英国+V2CROSS.COM
-      - 瑞士+V2CROSS.COM
       - 美国 CloudFlare节点 - 2
       - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 美国 CloudFlare节点 - 3
+      - 美国 CloudFlare节点 - 4
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 南非 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 英国+V2CROSS.COM
-      - 瑞士+V2CROSS.COM
       - 美国 CloudFlare节点 - 2
       - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 美国 CloudFlare节点 - 3
+      - 美国 CloudFlare节点 - 4
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
