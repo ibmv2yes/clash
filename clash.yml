@@ -1,14 +1,40 @@
 proxies:
+  - name: 美国 新泽西州Linode公司
+    type: vmess
+    server: vus3.0bad.com
+    port: 443
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /chat
+    ws-headers:
+      Host: vus3.0bad.com
+    tls: true
+  - name: 上海市+电信
+    type: trojan
+    server: 116.192.171.97
+    port: 8443?security=tls&type=tcp&headerType=none
+    password: 5505f6ba-cd37-30ce-8f92-be4120c83d7f
+  - name: 江苏省扬州市 移动
+    type: vmess
+    server: data-hk-v1.shwjfkw.cn
+    port: 50207
+    uuid: b1478e24-4916-3abe-8f17-15931012ecbe
+    alterId: 1
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /hls/cctv5phd.m3u8
+    ws-headers:
+      Host: YTB-awkj
   - name: 美国+V2CROSS.COM
     type: trojan
-    server: 170-187-134-190.ipv4.rush.ml
-    port: 8443?type=tcp&allowInsecure=1
+    server: 170.187.134.190
+    port: >-
+      8443?security=tls&sni=170-187-134-190.ipv4.rush.ml&type=tcp&headerType=none
     password: cf4295378e209e70d12c5bdd017144dfd1c772d3
-  - name: 瑞士+V2CROSS.COM
-    type: trojan
-    server: 195.15.243.26
-    port: '443'
-    password: '4478'
   - name: 美国 V2CROSS.COM
     type: vmess
     server: 143.42.61.111
@@ -22,53 +48,43 @@ proxies:
     ws-headers:
       Host: ''
     tls: true
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: lsb-gy.heinu.cf
-    port: 2096
-    uuid: d793c013-f596-4af9-de0a-2062bb864dd7
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /@heinuhome
-    ws-headers:
-      Host: lsb-gy.heinu.cf
-    tls: true
-  - name: 日本+V2CROSS.COM
+  - name: 瑞士+V2CROSS.COM
     type: trojan
-    server: aws-hk01.aikun.online
+    server: 195.15.243.26
     port: '443'
-    password: f8e4d8e3-36b5-42b1-af33-f0e1719976b4
+    password: '4478'
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
+      - 美国 新泽西州Linode公司
+      - 上海市+电信
+      - 江苏省扬州市 移动
       - 美国+V2CROSS.COM
-      - 瑞士+V2CROSS.COM
       - 美国 V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 日本+V2CROSS.COM
+      - 瑞士+V2CROSS.COM
   - name: 自动选择
     type: url-test
     proxies:
+      - 美国 新泽西州Linode公司
+      - 上海市+电信
+      - 江苏省扬州市 移动
       - 美国+V2CROSS.COM
-      - 瑞士+V2CROSS.COM
       - 美国 V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 日本+V2CROSS.COM
+      - 瑞士+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
+      - 美国 新泽西州Linode公司
+      - 上海市+电信
+      - 江苏省扬州市 移动
       - 美国+V2CROSS.COM
-      - 瑞士+V2CROSS.COM
       - 美国 V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 日本+V2CROSS.COM
+      - 瑞士+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
