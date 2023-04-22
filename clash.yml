@@ -1,8 +1,194 @@
 proxies:
-  - name: 美国 Datability
+  - name: 广东省广州市 移动
     type: vmess
-    server: 140.99.59.254
-    port: 55512
+    server: a6.achenxty.top
+    port: 11606
+    uuid: abfe3178-3f19-32cd-95b2-5ad2dd39bce6
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: a6.achenxty.top
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: 108.186.5.10
+    port: 59010
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 加利福尼亚州圣何塞PEG TECH
+    type: vmess
+    server: 142.4.101.166
+    port: 59022
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-headers: {}
+  - name: 广东省佛山市 移动
+    type: vmess
+    server: a7.achenxty.top
+    port: 11607
+    uuid: abfe3178-3f19-32cd-95b2-5ad2dd39bce6
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: a7.achenxty.top
+  - name: 广东省佛山市 移动 - 2
+    type: vmess
+    server: a13.achenxty.top
+    port: 11613
+    uuid: abfe3178-3f19-32cd-95b2-5ad2dd39bce6
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: a13.achenxty.top
+  - name: 美国 加利福尼亚州费利蒙Linode数据中心
+    type: vmess
+    server: vus2.0bad.com
+    port: 443
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /chat
+    ws-headers:
+      Host: vus2.0bad.com
+    tls: true
+  - name: 日本 东京都Amazon数据中心
+    type: vmess
+    server: v3.erciyun.men
+    port: 1011
+    uuid: edd2b1bb-e74b-4d0e-81c3-baff279de1a0
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /obb
+    ws-headers:
+      Host: v3.erciyun.men
+  - name: 海南省海口市+电信
+    type: ss
+    server: sz.cny.page
+    port: '20957'
+    cipher: aes-128-gcm
+    password: 2cfc4c58-88cb-4e00-9977-ef0a37559a22
+  - name: 广东省佛山市 移动 - 3
+    type: vmess
+    server: a24.achenxty.top
+    port: 11624
+    uuid: abfe3178-3f19-32cd-95b2-5ad2dd39bce6
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: a24.achenxty.top
+  - name: 亚太地区+V2CROSS.COM
+    type: trojan
+    server: 163.123.192.34
+    port: >-
+      443?security=tls&sni=16-163-218-240.nhost.00cdn.com&type=tcp&headerType=none
+    password: be8b8f45-a290-4405-8699-ffeb07f3ee24
+  - name: 广东省佛山市 移动 - 4
+    type: vmess
+    server: a16.achenxty.top
+    port: 11616
+    uuid: abfe3178-3f19-32cd-95b2-5ad2dd39bce6
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: a16.achenxty.top
+  - name: 美国 华盛顿Cogent通信公司
+    type: vmess
+    server: 38.54.250.55
+    port: 51431
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+    type: vmess
+    server: 107.167.7.12
+    port: 41654
+    uuid: bdee202c-8fae-441f-a588-7bc4d3887019
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: ''
+    ws-headers:
+      Host: ''
+  - name: 海南省海口市+电信 - 2
+    type: ss
+    server: sz.cny.page
+    port: '25984'
+    cipher: aes-128-gcm
+    password: 2cfc4c58-88cb-4e00-9977-ef0a37559a22
+  - name: 北京市 新国信通信有限公司
+    type: vmess
+    server: steam.dnspro.icu
+    port: 5000
+    uuid: 717e6001-c40f-3cba-8763-623661a53737
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /iso
+    ws-headers:
+      Host: steam.dnspro.icu
+  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
+    type: vmess
+    server: 192.74.228.171
+    port: 42857
+    uuid: 051b844f-efe3-4847-92aa-66b5de0b6d4e
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: cf-lt.sharecentre.online
+    port: 443
+    uuid: 2e496758-950e-4549-8842-d5eec98d9fde
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /shirker
+    ws-headers:
+      Host: lv3.sharecentrepro.org
+    tls: true
+  - name: 美国加利福尼亚州洛杉矶 PetaExpress
+    type: vmess
+    server: 198.2.205.70
+    port: 30402
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -20,94 +206,25 @@ proxies:
     cipher: auto
     udp: true
     network: tcp
-    ws-path: /
+    ws-path: /zh-cn
     ws-headers:
-      Host: zhu.99ton.men
-  - name: 浙江省 移动数据上网公共出口
+      Host: jp80.fee68414a14e.sanfen004.me
+  - name: 美国 Datability
     type: vmess
-    server: dc.xmrthnode.com
-    port: 42304
-    uuid: 61a06847-820f-3785-af90-506d3e988a12
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /th
-    ws-headers:
-      Host: 10.5.96.3
-  - name: 广东省佛山市 移动
-    type: vmess
-    server: a14.achenxty.top
-    port: 11614
-    uuid: abfe3178-3f19-32cd-95b2-5ad2dd39bce6
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: a14.achenxty.top
-  - name: 广东省广州市+移动
-    type: ss
-    server: assets.flareai.site
-    port: '15443'
-    cipher: chacha20-ietf-poly1305
-    password: d5dd371c-11db-4cfb-b458-072f0fbd0e18
-  - name: 美国 加你福尼亚洛杉矶Coperation Coloction数据中心
-    type: vmess
-    server: 198.16.45.166
-    port: 53392
+    server: 140.99.59.254
+    port: 55512
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
     udp: true
     network: tcp
-    ws-path: /aceamedv
+    ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国+V2CROSS.COM
-    type: trojan
-    server: 170-187-134-190.ipv4.rush.ml
-    port: 8443?type=tcp&allowInsecure=1
-    password: cf4295378e209e70d12c5bdd017144dfd1c772d3
-  - name: 美国 加利福尼亚州圣何塞PEG TECH
+  - name: 美国 CloudFlare节点 - 2
     type: vmess
-    server: 142.4.97.72
-    port: 44942
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-headers: {}
-  - name: 印度尼西亚 V2CROSS.COM
-    type: vmess
-    server: rajasa.nirezzvpn.my.id
+    server: 172.67.140.193
     port: 80
-    uuid: de815d15-dc94-4aa2-bb9b-207f88339601
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /vmessws
-    ws-headers:
-      Host: rajasa.nirezzvpn.my.id
-  - name: 广东省广州市 移动
-    type: vmess
-    server: a15.achenxty.top
-    port: 11615
-    uuid: abfe3178-3f19-32cd-95b2-5ad2dd39bce6
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: a15.achenxty.top
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: dp1.scproxy.top
-    port: 443
     uuid: 2e496758-950e-4549-8842-d5eec98d9fde
     alterId: 0
     cipher: auto
@@ -115,221 +232,84 @@ proxies:
     network: ws
     ws-path: /shirker
     ws-headers:
-      Host: dp1.scproxy.top
-    tls: true
-  - name: 广东省广州市 移动 - 2
-    type: vmess
-    server: hbng.cdn.node.a.tddns-ounk.com
-    port: 50055
-    uuid: 9288e85f-9b18-3e89-bd66-221acdafbd1a
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /009c250b-54f5-43a8-8b18-dccbb5d8c66a.y.live01.m3u8
-    ws-headers:
-      Host: hbng.cdn.node.a.tddns-ounk.com
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: lsb-gy.heinu.cf
-    port: 2096
-    uuid: d793c013-f596-4af9-de0a-2062bb864dd7
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /@heinuhome
-    ws-headers:
-      Host: ''
-    tls: true
-  - name: 广东省佛山市 移动 - 2
-    type: vmess
-    server: a22.achenxty.top
-    port: 11622
-    uuid: abfe3178-3f19-32cd-95b2-5ad2dd39bce6
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: a22.achenxty.top
-  - name: 美国 CloudFlare节点 - 3
-    type: vmess
-    server: cf-lt.sharecentre.online
-    port: 80
-    uuid: 35d1eaf8-53e7-4c8b-92aa-d96a20854e3c
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /api/v3/download.getFile
-    ws-headers:
-      Host: ssrsub.v03.ssrsub.com
-  - name: 广东省佛山市 移动 - 3
-    type: vmess
-    server: 25.v2-ray.cyou
-    port: 23625
-    uuid: 0dd19d20-ec86-3680-b256-87237bafa89e
-    alterId: 2
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: 25.v2-ray.cyou
-  - name: 广东省佛山市 移动 - 4
-    type: vmess
-    server: aasx2.cdn.node.a.tddns-ounk.com
-    port: 50050
-    uuid: 9288e85f-9b18-3e89-bd66-221acdafbd1a
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /009c250b-54f5-43a8-8b18-dccbb5d8c66a.y.live01.m3u8
-    ws-headers:
-      Host: aasx2.cdn.node.a.tddns-ounk.com
-  - name: 美国 V2CROSS.COM
-    type: vmess
-    server: 137.175.18.89
-    port: 42002
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国 华盛顿Cogent通信公司
-    type: vmess
-    server: 38.63.0.93
-    port: 47002
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 广东省广州市 移动 - 3
-    type: vmess
-    server: ggsd5.cdn.node.a.tddns-ounk.com
-    port: 50163
-    uuid: 9288e85f-9b18-3e89-bd66-221acdafbd1a
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /009c250b-54f5-43a8-8b18-dccbb5d8c66a.y.live01.m3u8
-    ws-headers:
-      Host: ggsd5.cdn.node.a.tddns-ounk.com
-  - name: 广东省广州市 移动 - 4
-    type: vmess
-    server: bnm4.cdn.node.a.tddns-ounk.com
-    port: 50069
-    uuid: 9288e85f-9b18-3e89-bd66-221acdafbd1a
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /009c250b-54f5-43a8-8b18-dccbb5d8c66a.y.live01.m3u8
-    ws-headers:
-      Host: bnm4.cdn.node.a.tddns-ounk.com
-  - name: 英国 社会保险安全部
-    type: vmess
-    server: 51.195.35.147
-    port: 58812
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
+      Host: uk1.scproxy.top
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 Datability
-      - 河北省石家庄市 电信
-      - 浙江省 移动数据上网公共出口
-      - 广东省佛山市 移动
-      - 广东省广州市+移动
-      - 美国 加你福尼亚洛杉矶Coperation Coloction数据中心
-      - 美国+V2CROSS.COM
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 印度尼西亚 V2CROSS.COM
       - 广东省广州市 移动
-      - 美国 CloudFlare节点
-      - 广东省广州市 移动 - 2
-      - 美国 CloudFlare节点 - 2
-      - 广东省佛山市 移动 - 2
-      - 美国 CloudFlare节点 - 3
-      - 广东省佛山市 移动 - 3
-      - 广东省佛山市 移动 - 4
       - 美国 V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 广东省佛山市 移动
+      - 广东省佛山市 移动 - 2
+      - 美国 加利福尼亚州费利蒙Linode数据中心
+      - 日本 东京都Amazon数据中心
+      - 海南省海口市+电信
+      - 广东省佛山市 移动 - 3
+      - 亚太地区+V2CROSS.COM
+      - 广东省佛山市 移动 - 4
       - 美国 华盛顿Cogent通信公司
-      - 广东省广州市 移动 - 3
-      - 广东省广州市 移动 - 4
-      - 英国 社会保险安全部
+      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+      - 海南省海口市+电信 - 2
+      - 北京市 新国信通信有限公司
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 美国 CloudFlare节点
+      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 河北省石家庄市 电信
+      - 美国 Datability
+      - 美国 CloudFlare节点 - 2
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 Datability
-      - 河北省石家庄市 电信
-      - 浙江省 移动数据上网公共出口
-      - 广东省佛山市 移动
-      - 广东省广州市+移动
-      - 美国 加你福尼亚洛杉矶Coperation Coloction数据中心
-      - 美国+V2CROSS.COM
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 印度尼西亚 V2CROSS.COM
       - 广东省广州市 移动
-      - 美国 CloudFlare节点
-      - 广东省广州市 移动 - 2
-      - 美国 CloudFlare节点 - 2
-      - 广东省佛山市 移动 - 2
-      - 美国 CloudFlare节点 - 3
-      - 广东省佛山市 移动 - 3
-      - 广东省佛山市 移动 - 4
       - 美国 V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 广东省佛山市 移动
+      - 广东省佛山市 移动 - 2
+      - 美国 加利福尼亚州费利蒙Linode数据中心
+      - 日本 东京都Amazon数据中心
+      - 海南省海口市+电信
+      - 广东省佛山市 移动 - 3
+      - 亚太地区+V2CROSS.COM
+      - 广东省佛山市 移动 - 4
       - 美国 华盛顿Cogent通信公司
-      - 广东省广州市 移动 - 3
-      - 广东省广州市 移动 - 4
-      - 英国 社会保险安全部
+      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+      - 海南省海口市+电信 - 2
+      - 北京市 新国信通信有限公司
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 美国 CloudFlare节点
+      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 河北省石家庄市 电信
+      - 美国 Datability
+      - 美国 CloudFlare节点 - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 Datability
-      - 河北省石家庄市 电信
-      - 浙江省 移动数据上网公共出口
-      - 广东省佛山市 移动
-      - 广东省广州市+移动
-      - 美国 加你福尼亚洛杉矶Coperation Coloction数据中心
-      - 美国+V2CROSS.COM
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 印度尼西亚 V2CROSS.COM
       - 广东省广州市 移动
-      - 美国 CloudFlare节点
-      - 广东省广州市 移动 - 2
-      - 美国 CloudFlare节点 - 2
-      - 广东省佛山市 移动 - 2
-      - 美国 CloudFlare节点 - 3
-      - 广东省佛山市 移动 - 3
-      - 广东省佛山市 移动 - 4
       - 美国 V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 广东省佛山市 移动
+      - 广东省佛山市 移动 - 2
+      - 美国 加利福尼亚州费利蒙Linode数据中心
+      - 日本 东京都Amazon数据中心
+      - 海南省海口市+电信
+      - 广东省佛山市 移动 - 3
+      - 亚太地区+V2CROSS.COM
+      - 广东省佛山市 移动 - 4
       - 美国 华盛顿Cogent通信公司
-      - 广东省广州市 移动 - 3
-      - 广东省广州市 移动 - 4
-      - 英国 社会保险安全部
+      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+      - 海南省海口市+电信 - 2
+      - 北京市 新国信通信有限公司
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 美国 CloudFlare节点
+      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 河北省石家庄市 电信
+      - 美国 Datability
+      - 美国 CloudFlare节点 - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
