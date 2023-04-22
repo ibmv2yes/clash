@@ -1,24 +1,30 @@
 proxies:
-  - name: 法国+OVH数据中心
+  - name: 加拿大+V2CROSS.COM
     type: trojan
-    server: 54.37.185.148
-    port: '32894'
-    password: HchlVCfnXB
-  - name: 美国 V2CROSS.COM
+    server: 805tw.ljydw.top
+    port: '443'
+    password: 4a7644fb-0753-4291-a9f2-81478d9f6861
+  - name: 香港 阿里云
     type: vmess
-    server: 108.186.192.250
-    port: 35502
+    server: n1681621064.edpmvga.cn
+    port: 443
+    uuid: 745d5ccd-d7c1-43b4-a024-424f3fccef47
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-headers: {}
+    tls: true
+  - name: 美国 加利福尼亚州圣何塞PEG TECH
+    type: vmess
+    server: 142.4.97.72
+    port: 44942
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
     udp: true
     network: tcp
     ws-headers: {}
-  - name: 英国+V2CROSS.COM
-    type: trojan
-    server: hk19.microsoftjs.top
-    port: '443'
-    password: a21e5380-7711-4c6d-af44-e6210e5436af
   - name: 美国+V2CROSS.COM
     type: trojan
     server: 170-187-134-190.ipv4.rush.ml
@@ -36,35 +42,89 @@ proxies:
     ws-path: /worryfree
     ws-headers:
       Host: w.evouch77.live
+  - name: 日本 V2CROSS.COM
+    type: vmess
+    server: cloud.cluster.download.cloudsys.buzz
+    port: 80
+    uuid: 522e8c21-156c-4125-b821-755956840e64
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /ac9c9cf8-d1c3-4eb7-aa66-5052edaf9a94.ts
+    ws-headers:
+      Host: cloud.cluster.download.cloudsys.buzz
+  - name: 江苏省扬州市 移动
+    type: vmess
+    server: data-hk-v1.shwjfkw.cn
+    port: 50207
+    uuid: b1478e24-4916-3abe-8f17-15931012ecbe
+    alterId: 1
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /hls/cctv5phd.m3u8
+    ws-headers:
+      Host: YTB-awkj
+  - name: 上海市+电信
+    type: trojan
+    server: official.taipeicitygovernment.kiev.ua
+    port: 8443?security=tls&sni=66.42.40.132&type=tcp&headerType=none
+    password: 5505f6ba-cd37-30ce-8f92-be4120c83d7f
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: 143.42.173.175
+    port: 443
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /chat
+    ws-headers:
+      Host: ''
+    tls: true
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 法国+OVH数据中心
-      - 美国 V2CROSS.COM
-      - 英国+V2CROSS.COM
+      - 加拿大+V2CROSS.COM
+      - 香港 阿里云
+      - 美国 加利福尼亚州圣何塞PEG TECH
       - 美国+V2CROSS.COM
       - 美国 CloudFlare节点
+      - 日本 V2CROSS.COM
+      - 江苏省扬州市 移动
+      - 上海市+电信
+      - 美国 V2CROSS.COM
   - name: 自动选择
     type: url-test
     proxies:
-      - 法国+OVH数据中心
-      - 美国 V2CROSS.COM
-      - 英国+V2CROSS.COM
+      - 加拿大+V2CROSS.COM
+      - 香港 阿里云
+      - 美国 加利福尼亚州圣何塞PEG TECH
       - 美国+V2CROSS.COM
       - 美国 CloudFlare节点
+      - 日本 V2CROSS.COM
+      - 江苏省扬州市 移动
+      - 上海市+电信
+      - 美国 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 法国+OVH数据中心
-      - 美国 V2CROSS.COM
-      - 英国+V2CROSS.COM
+      - 加拿大+V2CROSS.COM
+      - 香港 阿里云
+      - 美国 加利福尼亚州圣何塞PEG TECH
       - 美国+V2CROSS.COM
       - 美国 CloudFlare节点
+      - 日本 V2CROSS.COM
+      - 江苏省扬州市 移动
+      - 上海市+电信
+      - 美国 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
