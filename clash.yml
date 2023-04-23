@@ -1,33 +1,66 @@
 proxies:
-  - name: 海南省海口市+电信
-    type: ss
-    server: sz.cny.page
-    port: '32366'
-    cipher: aes-128-gcm
-    password: 2cfc4c58-88cb-4e00-9977-ef0a37559a22
-  - name: 美国 V2CROSS.COM
+  - name: 美国加利福尼亚州洛杉矶 PetaExpress
     type: vmess
-    server: vau1.0bad.com
+    server: 198.2.212.244
+    port: 50002
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-headers: {}
+  - name: 广东省广州市+移动
+    type: ss
+    server: assets.flareai.site
+    port: '15343'
+    cipher: chacha20-ietf-poly1305
+    password: d5dd371c-11db-4cfb-b458-072f0fbd0e18
+  - name: 广东省佛山市 移动
+    type: vmess
+    server: 25.v2-ray.cyou
+    port: 23625
+    uuid: 0dd19d20-ec86-3680-b256-87237bafa89e
+    alterId: 2
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: 25.v2-ray.cyou
+  - name: 广东省广州市+移动 - 2
+    type: ss
+    server: assets.flareai.site
+    port: '15343'
+    cipher: chacha20-ietf-poly1305
+    password: d5dd371c-11db-4cfb-b458-072f0fbd0e18
+  - name: 北美地区 V2CROSS.COM
+    type: vmess
+    server: 134.195.96.178
+    port: 666
+    uuid: 4ebc6214-33ab-37cc-a01a-ff97029db0f5
+    alterId: 2
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /v2ray
+    ws-headers: {}
+  - name: 西班牙 V2CROSS.COM
+    type: vmess
+    server: mci.bamarambash.monster
     port: 443
-    uuid: 927094d3-d678-4763-8591-e240d0bcae87
+    uuid: 8f74ec8a-971c-11ed-a8fc-0242ac120002
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /chat
+    ws-path: /db698b16-d216-11ed-8e14-5ad705867cff
     ws-headers:
-      Host: vau1.0bad.com
+      Host: db698b16-d216-11ed-8e14-5ad705867cff.asmandll.com
     tls: true
-  - name: 瑞典+V2CROSS.COM
-    type: ss
-    server: 167.88.63.79
-    port: '5003'
-    cipher: aes-256-gcm
-    password: g5MeD6Ft3CWlJId
-  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
+  - name: 美国加利福尼亚州洛杉矶 PetaExpress - 2
     type: vmess
-    server: 192.74.242.138
-    port: 44667
+    server: 198.2.205.70
+    port: 30402
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -36,33 +69,27 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 海南省海口市+电信 - 2
-    type: ss
-    server: sz.cny.page
-    port: '11536'
-    cipher: aes-128-gcm
-    password: 2cfc4c58-88cb-4e00-9977-ef0a37559a22
-  - name: 广东省广州市 移动
+  - name: 美国 V2CROSS.COM
     type: vmess
-    server: ggsd5.cdn.node.a.tddns-ounk.com
-    port: 50163
-    uuid: 9288e85f-9b18-3e89-bd66-221acdafbd1a
-    alterId: 0
+    server: 137.175.18.89
+    port: 42002
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
     cipher: auto
     udp: true
-    network: ws
-    ws-path: /009c250b-54f5-43a8-8b18-dccbb5d8c66a.y.live01.m3u8
+    network: tcp
+    ws-path: /
     ws-headers:
-      Host: ggsd5.cdn.node.a.tddns-ounk.com
-  - name: 广东省佛山市+移动
+      Host: ''
+  - name: 广东省广州市+移动 - 3
     type: ss
-    server: catlog.flareai.science
-    port: '15443'
+    server: assets.flareai.site
+    port: '15543'
     cipher: chacha20-ietf-poly1305
     password: d5dd371c-11db-4cfb-b458-072f0fbd0e18
   - name: 美国 CloudFlare节点
     type: vmess
-    server: cf-lt.sharecentre.online
+    server: dp1.scproxy.top
     port: 443
     uuid: 2e496758-950e-4549-8842-d5eec98d9fde
     alterId: 0
@@ -71,63 +98,82 @@ proxies:
     network: ws
     ws-path: /shirker
     ws-headers:
-      Host: lv3.sharecentrepro.org
+      Host: dp1.scproxy.top
     tls: true
-  - name: 海南省海口市+电信 - 3
-    type: ss
-    server: sz.cny.page
-    port: '25984'
-    cipher: aes-128-gcm
-    password: 2cfc4c58-88cb-4e00-9977-ef0a37559a22
-  - name: 法国+OVH数据中心
-    type: trojan
-    server: 54.37.185.148
-    port: '32894'
-    password: HchlVCfnXB
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: cf.noaries.de
+    port: 8080
+    uuid: 6f1d968e-7f41-41fd-931d-73cf35a9f26b
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /aries?ed=2048
+    ws-headers:
+      Host: buyvm.iiio.wiki
+  - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: cf-lt.sharecentre.online
+    port: 80
+    uuid: 35d1eaf8-53e7-4c8b-92aa-d96a20854e3c
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /api/v3/download.getFile
+    ws-headers:
+      Host: ssrsub.v01.ssrsub.com
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 海南省海口市+电信
+      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 广东省广州市+移动
+      - 广东省佛山市 移动
+      - 广东省广州市+移动 - 2
+      - 北美地区 V2CROSS.COM
+      - 西班牙 V2CROSS.COM
+      - 美国加利福尼亚州洛杉矶 PetaExpress - 2
       - 美国 V2CROSS.COM
-      - 瑞典+V2CROSS.COM
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 海南省海口市+电信 - 2
-      - 广东省广州市 移动
-      - 广东省佛山市+移动
+      - 广东省广州市+移动 - 3
       - 美国 CloudFlare节点
-      - 海南省海口市+电信 - 3
-      - 法国+OVH数据中心
+      - 美国 CloudFlare节点 - 2
+      - 美国 CloudFlare节点 - 3
   - name: 自动选择
     type: url-test
     proxies:
-      - 海南省海口市+电信
+      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 广东省广州市+移动
+      - 广东省佛山市 移动
+      - 广东省广州市+移动 - 2
+      - 北美地区 V2CROSS.COM
+      - 西班牙 V2CROSS.COM
+      - 美国加利福尼亚州洛杉矶 PetaExpress - 2
       - 美国 V2CROSS.COM
-      - 瑞典+V2CROSS.COM
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 海南省海口市+电信 - 2
-      - 广东省广州市 移动
-      - 广东省佛山市+移动
+      - 广东省广州市+移动 - 3
       - 美国 CloudFlare节点
-      - 海南省海口市+电信 - 3
-      - 法国+OVH数据中心
+      - 美国 CloudFlare节点 - 2
+      - 美国 CloudFlare节点 - 3
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 海南省海口市+电信
+      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 广东省广州市+移动
+      - 广东省佛山市 移动
+      - 广东省广州市+移动 - 2
+      - 北美地区 V2CROSS.COM
+      - 西班牙 V2CROSS.COM
+      - 美国加利福尼亚州洛杉矶 PetaExpress - 2
       - 美国 V2CROSS.COM
-      - 瑞典+V2CROSS.COM
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 海南省海口市+电信 - 2
-      - 广东省广州市 移动
-      - 广东省佛山市+移动
+      - 广东省广州市+移动 - 3
       - 美国 CloudFlare节点
-      - 海南省海口市+电信 - 3
-      - 法国+OVH数据中心
+      - 美国 CloudFlare节点 - 2
+      - 美国 CloudFlare节点 - 3
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
