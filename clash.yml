@@ -1,161 +1,88 @@
 proxies:
-  - name: 美国 V2CROSS.COM
+  - name: 美国 CloudFlare节点
     type: vmess
-    server: 108.186.5.10
-    port: 59010
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国 加利福尼亚州洛杉矶IT7网络
-    type: vmess
-    server: 23.105.199.160
-    port: 23903
-    uuid: 60b6c1a6-6306-4e28-91d9-8d2be2449ae8
+    server: surongwei.eu.org
+    port: 443
+    uuid: 6093eefb-7ab6-41df-aba0-d5fa58147e10
     alterId: 0
     cipher: auto
     udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 江苏省扬州市 移动
-    type: vmess
-    server: data-hk-v1.shwjfkw.cn
-    port: 50207
-    uuid: b1478e24-4916-3abe-8f17-15931012ecbe
-    alterId: 1
-    cipher: auto
-    udp: true
     network: ws
-    ws-path: /hls/cctv5phd.m3u8
-    ws-headers:
-      Host: YTB-awkj
-  - name: 广东省广州市+UCloud
-    type: ss
-    server: iplc.hk.fp-dns.xyz
-    port: '34436'
-    cipher: chacha20-ietf-poly1305
-    password: f0a9a2e2-0b62-4d46-a97c-c16eb25a88c7
-  - name: 广东省佛山市 移动
-    type: vmess
-    server: 25.v2-ray.cyou
-    port: 23625
-    uuid: 0dd19d20-ec86-3680-b256-87237bafa89e
-    alterId: 2
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: 25.v2-ray.cyou
-  - name: 美国加利福尼亚州洛杉矶 PetaExpress
-    type: vmess
-    server: 198.2.212.244
-    port: 50002
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
+    ws-path: /reffs7y26g0ua
     ws-headers: {}
-  - name: 美国+V2CROSS.COM
-    type: trojan
-    server: 152.70.74.66
-    port: 443?security=tls&type=tcp&headerType=none
-    password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
+    tls: true
   - name: 美国 加利福尼亚州圣何塞PEG TECH
     type: vmess
-    server: 142.4.97.71
-    port: 44942
+    server: 142.4.101.166
+    port: 59022
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
     udp: true
     network: tcp
-    ws-headers: {}
-  - name: 美国 V2CROSS.COM - 2
-    type: vmess
-    server: vau1.0bad.com
-    port: 443
-    uuid: 927094d3-d678-4763-8591-e240d0bcae87
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /chat
+    ws-path: /
     ws-headers:
-      Host: vau1.0bad.com
-    tls: true
+      Host: ''
   - name: 海南省海口市+电信
     type: ss
     server: sz.cny.page
-    port: '25984'
+    port: '20957'
     cipher: aes-128-gcm
     password: 2cfc4c58-88cb-4e00-9977-ef0a37559a22
-  - name: 美国加利福尼亚州洛杉矶 MULTACOM数据中心
+  - name: 美国 CloudFlare节点 - 2
     type: vmess
-    server: 23.234.198.83
-    port: 34888
-    uuid: a9abf3e7-87f4-473d-8d03-2f26ca4b3583
-    alterId: 64
+    server: cf-lt.sharecentre.online
+    port: 443
+    uuid: 2e496758-950e-4549-8842-d5eec98d9fde
+    alterId: 0
     cipher: auto
     udp: true
-    network: tcp
-    ws-path: /
+    network: ws
+    ws-path: /shirker
     ws-headers:
-      Host: ''
+      Host: lv1.sharecentrepro.org
+    tls: true
+  - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: 104.17.3.81
+    port: 80
+    uuid: e40b2de3-b829-4591-a7b6-99d1913f3246
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /worryfree
+    ws-headers:
+      Host: w.evouch77.live
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 V2CROSS.COM
-      - 美国 加利福尼亚州洛杉矶IT7网络
-      - 江苏省扬州市 移动
-      - 广东省广州市+UCloud
-      - 广东省佛山市 移动
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 美国+V2CROSS.COM
+      - 美国 CloudFlare节点
       - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国 V2CROSS.COM - 2
       - 海南省海口市+电信
-      - 美国加利福尼亚州洛杉矶 MULTACOM数据中心
+      - 美国 CloudFlare节点 - 2
+      - 美国 CloudFlare节点 - 3
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 V2CROSS.COM
-      - 美国 加利福尼亚州洛杉矶IT7网络
-      - 江苏省扬州市 移动
-      - 广东省广州市+UCloud
-      - 广东省佛山市 移动
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 美国+V2CROSS.COM
+      - 美国 CloudFlare节点
       - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国 V2CROSS.COM - 2
       - 海南省海口市+电信
-      - 美国加利福尼亚州洛杉矶 MULTACOM数据中心
+      - 美国 CloudFlare节点 - 2
+      - 美国 CloudFlare节点 - 3
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 V2CROSS.COM
-      - 美国 加利福尼亚州洛杉矶IT7网络
-      - 江苏省扬州市 移动
-      - 广东省广州市+UCloud
-      - 广东省佛山市 移动
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 美国+V2CROSS.COM
+      - 美国 CloudFlare节点
       - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国 V2CROSS.COM - 2
       - 海南省海口市+电信
-      - 美国加利福尼亚州洛杉矶 MULTACOM数据中心
+      - 美国 CloudFlare节点 - 2
+      - 美国 CloudFlare节点 - 3
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
