@@ -1,16 +1,16 @@
 proxies:
-  - name: 美国 V2CROSS.COM
+  - name: 美国 CloudFlare节点
     type: vmess
-    server: 143.42.99.183
-    port: 443
-    uuid: 927094d3-d678-4763-8591-e240d0bcae87
+    server: 104.17.3.81
+    port: 80
+    uuid: e40b2de3-b829-4591-a7b6-99d1913f3246
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /chat
-    ws-headers: {}
-    tls: true
+    ws-path: /worryfree
+    ws-headers:
+      Host: w.evouch77.live
   - name: 江苏省扬州市 移动
     type: vmess
     server: data-hk-v1.shwjfkw.cn
@@ -23,72 +23,89 @@ proxies:
     ws-path: /hls/cctv5phd.m3u8
     ws-headers:
       Host: YTB-awkj
-  - name: 美国 CloudFlare节点
+  - name: 美国 加利福尼亚州洛杉矶MULTACOM数据中心
     type: vmess
-    server: cf-lt.sharecentre.online
-    port: 80
-    uuid: 2e496758-950e-4549-8842-d5eec98d9fde
+    server: 170.178.194.14
+    port: 51986
+    uuid: 3023981b-0431-4bff-8a10-0f986ba86c73
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 沙特阿拉伯+Arabic+Computer+System+Co.
+    type: ss
+    server: 85.208.108.20
+    port: '5601'
+    cipher: aes-256-gcm
+    password: Y6R9pAtvxxzmGC
+  - name: 美国 惠普HP
+    type: vmess
+    server: hk4.af49c4e4c2ef.sanfen004.me
+    port: 443
+    uuid: fa52cc8f-e648-496b-a9b6-9a4f982829a1
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /shirker
+    ws-path: /zh-cn
     ws-headers:
-      Host: lv1.sharecentrepro.org
-  - name: 美国+V2CROSS.COM
-    type: trojan
-    server: 152.70.74.66
-    port: 443?security=tls&type=tcp&headerType=none
-    password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
-  - name: 美国 CloudFlare节点 - 2
+      Host: www.microsoft.com
+    tls: true
+  - name: 美国 加你福尼亚洛杉矶Coperation Coloction数据中心
     type: vmess
-    server: cf.noaries.de
-    port: 8080
-    uuid: 6f1d968e-7f41-41fd-931d-73cf35a9f26b
-    alterId: 0
+    server: 198.16.45.166
+    port: 53392
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
     cipher: auto
     udp: true
-    network: ws
-    ws-path: /aries?ed=2048
+    network: tcp
+    ws-path: /aceamedv
     ws-headers:
-      Host: buyvm.iiio.wiki
-  - name: 美国+Nokia
+      Host: ''
+  - name: 法国+OVH数据中心
     type: trojan
-    server: us.disnet.gq
-    port: '443'
-    password: 7c7e0edb-c45a-4c07-b66a-69b191179349
+    server: 54.37.185.148
+    port: '32894'
+    password: HchlVCfnXB
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 V2CROSS.COM
-      - 江苏省扬州市 移动
       - 美国 CloudFlare节点
-      - 美国+V2CROSS.COM
-      - 美国 CloudFlare节点 - 2
-      - 美国+Nokia
+      - 江苏省扬州市 移动
+      - 美国 加利福尼亚州洛杉矶MULTACOM数据中心
+      - 沙特阿拉伯+Arabic+Computer+System+Co.
+      - 美国 惠普HP
+      - 美国 加你福尼亚洛杉矶Coperation Coloction数据中心
+      - 法国+OVH数据中心
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 V2CROSS.COM
-      - 江苏省扬州市 移动
       - 美国 CloudFlare节点
-      - 美国+V2CROSS.COM
-      - 美国 CloudFlare节点 - 2
-      - 美国+Nokia
+      - 江苏省扬州市 移动
+      - 美国 加利福尼亚州洛杉矶MULTACOM数据中心
+      - 沙特阿拉伯+Arabic+Computer+System+Co.
+      - 美国 惠普HP
+      - 美国 加你福尼亚洛杉矶Coperation Coloction数据中心
+      - 法国+OVH数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 V2CROSS.COM
-      - 江苏省扬州市 移动
       - 美国 CloudFlare节点
-      - 美国+V2CROSS.COM
-      - 美国 CloudFlare节点 - 2
-      - 美国+Nokia
+      - 江苏省扬州市 移动
+      - 美国 加利福尼亚州洛杉矶MULTACOM数据中心
+      - 沙特阿拉伯+Arabic+Computer+System+Co.
+      - 美国 惠普HP
+      - 美国 加你福尼亚洛杉矶Coperation Coloction数据中心
+      - 法国+OVH数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
