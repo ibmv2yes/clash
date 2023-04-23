@@ -1,118 +1,151 @@
 proxies:
+  - name: 中国 阿里云
+    type: vmess
+    server: n1681279098.lyqrdde.cn
+    port: 443
+    uuid: b77e7c1b-10d5-48f1-9ef5-8e0d9b09cdd3
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers: {}
+    tls: true
+  - name: 美国 加你福尼亚洛杉矶Coperation Coloction数据中心
+    type: vmess
+    server: 198.16.45.166
+    port: 53392
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /aceamedv
+    ws-headers:
+      Host: ''
+  - name: 美国 加利福尼亚州圣何塞PEG TECH
+    type: vmess
+    server: 142.4.127.4
+    port: 53013
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: 104.17.3.81
+    port: 80
+    uuid: e40b2de3-b829-4591-a7b6-99d1913f3246
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /worryfree
+    ws-headers:
+      Host: w.evouch77.live
   - name: 美国加利福尼亚州洛杉矶 PetaExpress
     type: vmess
-    server: 198.2.205.74
-    port: 30402
+    server: 198.2.212.244
+    port: 50002
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
     udp: true
     network: tcp
     ws-headers: {}
-  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
+  - name: 美国 惠普HP
     type: vmess
-    server: 192.74.231.174
-    port: 49202
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 广东省佛山市 移动
-    type: vmess
-    server: 25.v2-ray.cyou
-    port: 23625
-    uuid: 0dd19d20-ec86-3680-b256-87237bafa89e
-    alterId: 2
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: 25.v2-ray.cyou
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: dp1.scproxy.top
+    server: hk4.af49c4e4c2ef.sanfen004.me
     port: 443
-    uuid: 2e496758-950e-4549-8842-d5eec98d9fde
+    uuid: fa52cc8f-e648-496b-a9b6-9a4f982829a1
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /shirker
+    ws-path: /zh-cn
     ws-headers:
-      Host: dp1.scproxy.top
+      Host: www.microsoft.com
     tls: true
-  - name: 海南省海口市+电信
-    type: ss
-    server: sz.cny.page
-    port: '32366'
-    cipher: aes-128-gcm
-    password: 2cfc4c58-88cb-4e00-9977-ef0a37559a22
-  - name: 广东省揭阳市 移动
+  - name: 美国 CloudFlare节点 - 2
     type: vmess
-    server: 120.240.163.51
-    port: 53173
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    server: cf.noaries.de
+    port: 8080
+    uuid: 6f1d968e-7f41-41fd-931d-73cf35a9f26b
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /aries?ed=2048
+    ws-headers:
+      Host: buyvm.iiio.wiki
+  - name: 香港 阿里云
+    type: vmess
+    server: n1681621064.edpmvga.cn
+    port: 443
+    uuid: 745d5ccd-d7c1-43b4-a024-424f3fccef47
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-headers: {}
+    tls: true
+  - name: 美国 加利福尼亚州洛杉矶Sharktech数据中心
+    type: vmess
+    server: 64.32.4.59
+    port: 42175
+    uuid: 8653004f-de67-44c2-9cce-e0830933fb03
     alterId: 64
     cipher: auto
     udp: true
     network: tcp
-    ws-path: /
+    ws-path: ''
     ws-headers:
       Host: ''
-  - name: 海南省海口市+电信 - 2
-    type: ss
-    server: sz.cny.page
-    port: '11536'
-    cipher: aes-128-gcm
-    password: 2cfc4c58-88cb-4e00-9977-ef0a37559a22
-  - name: 法国+OVH数据中心
-    type: trojan
-    server: 54.37.185.148
-    port: '32894'
-    password: HchlVCfnXB
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 广东省佛山市 移动
+      - 中国 阿里云
+      - 美国 加你福尼亚洛杉矶Coperation Coloction数据中心
+      - 美国 加利福尼亚州圣何塞PEG TECH
       - 美国 CloudFlare节点
-      - 海南省海口市+电信
-      - 广东省揭阳市 移动
-      - 海南省海口市+电信 - 2
-      - 法国+OVH数据中心
+      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 美国 惠普HP
+      - 美国 CloudFlare节点 - 2
+      - 香港 阿里云
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 广东省佛山市 移动
+      - 中国 阿里云
+      - 美国 加你福尼亚洛杉矶Coperation Coloction数据中心
+      - 美国 加利福尼亚州圣何塞PEG TECH
       - 美国 CloudFlare节点
-      - 海南省海口市+电信
-      - 广东省揭阳市 移动
-      - 海南省海口市+电信 - 2
-      - 法国+OVH数据中心
+      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 美国 惠普HP
+      - 美国 CloudFlare节点 - 2
+      - 香港 阿里云
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 广东省佛山市 移动
+      - 中国 阿里云
+      - 美国 加你福尼亚洛杉矶Coperation Coloction数据中心
+      - 美国 加利福尼亚州圣何塞PEG TECH
       - 美国 CloudFlare节点
-      - 海南省海口市+电信
-      - 广东省揭阳市 移动
-      - 海南省海口市+电信 - 2
-      - 法国+OVH数据中心
+      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 美国 惠普HP
+      - 美国 CloudFlare节点 - 2
+      - 香港 阿里云
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
