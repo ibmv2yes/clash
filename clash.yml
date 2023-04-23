@@ -1,23 +1,20 @@
 proxies:
-  - name: 美国 CloudFlare节点
+  - name: 美国 加利福尼亚州圣何塞PEG TECH
     type: vmess
-    server: cf-lt.sharecentre.online
-    port: 443
-    uuid: 2e496758-950e-4549-8842-d5eec98d9fde
-    alterId: 0
+    server: 142.4.97.71
+    port: 44942
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
     cipher: auto
     udp: true
-    network: ws
-    ws-path: /shirker
-    ws-headers:
-      Host: lv1.sharecentrepro.org
-    tls: true
-  - name: 美国 加利福尼亚州洛杉矶IT7网络
+    network: tcp
+    ws-headers: {}
+  - name: 美国 加利福尼亚州圣何塞PEG TECH - 2
     type: vmess
-    server: 23.105.199.160
-    port: 27317
-    uuid: 01832c71-50ac-4891-ae37-1dea8f42ae2d
-    alterId: 0
+    server: 142.4.101.166
+    port: 59022
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
     cipher: auto
     udp: true
     network: tcp
@@ -29,76 +26,68 @@ proxies:
     server: 152.70.74.66
     port: 443?security=tls&type=tcp&headerType=none
     password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
-  - name: 美国加利福尼亚州洛杉矶 MULTACOM数据中心
+  - name: 台湾省新北市 中华电信
     type: vmess
-    server: 23.234.198.83
-    port: 34888
-    uuid: a9abf3e7-87f4-473d-8d03-2f26ca4b3583
-    alterId: 64
+    server: hinet1261.gfwisbest.xyz
+    port: 224
+    uuid: 2285133e-b9ba-3fb5-a246-9c7ddcc2cd7a
+    alterId: 0
     cipher: auto
     udp: true
     network: tcp
-    ws-path: ''
+    ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国 CloudFlare节点 - 2
+  - name: 美国 CloudFlare节点
     type: vmess
-    server: cdnjs.com
-    port: 443
-    uuid: DCE76061-EE65-49DB-997C-A6A880DADE3A
+    server: cf.noaries.de
+    port: 8080
+    uuid: 6f1d968e-7f41-41fd-931d-73cf35a9f26b
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /speedtest
+    ws-path: /aries?ed=2048
     ws-headers:
-      Host: Amsterdam.kotick.site
-    tls: true
-  - name: 美国 CloudFlare节点 - 3
-    type: vmess
-    server: www.codepen.io
-    port: 443
-    uuid: 2cd39102-0799-4c61-abb6-2e7a258f0397
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /vmess
-    ws-headers:
-      Host: us-v.sshmax.xyz
-    tls: true
+      Host: buyvm.iiio.wiki
+  - name: 广东省广州市+移动
+    type: ss
+    server: assets.flareai.site
+    port: '15443'
+    cipher: chacha20-ietf-poly1305
+    password: d5dd371c-11db-4cfb-b458-072f0fbd0e18
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 CloudFlare节点
-      - 美国 加利福尼亚州洛杉矶IT7网络
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国 加利福尼亚州圣何塞PEG TECH - 2
       - 美国+V2CROSS.COM
-      - 美国加利福尼亚州洛杉矶 MULTACOM数据中心
-      - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
+      - 台湾省新北市 中华电信
+      - 美国 CloudFlare节点
+      - 广东省广州市+移动
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 CloudFlare节点
-      - 美国 加利福尼亚州洛杉矶IT7网络
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国 加利福尼亚州圣何塞PEG TECH - 2
       - 美国+V2CROSS.COM
-      - 美国加利福尼亚州洛杉矶 MULTACOM数据中心
-      - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
+      - 台湾省新北市 中华电信
+      - 美国 CloudFlare节点
+      - 广东省广州市+移动
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 CloudFlare节点
-      - 美国 加利福尼亚州洛杉矶IT7网络
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国 加利福尼亚州圣何塞PEG TECH - 2
       - 美国+V2CROSS.COM
-      - 美国加利福尼亚州洛杉矶 MULTACOM数据中心
-      - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
+      - 台湾省新北市 中华电信
+      - 美国 CloudFlare节点
+      - 广东省广州市+移动
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
