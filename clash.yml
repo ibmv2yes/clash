@@ -1,95 +1,69 @@
 proxies:
-  - name: 广东省汕头市+移动
-    type: trojan
-    server: azhj.xifasd.top
-    port: 20767?security=tls&sni=ssl.ssl12.xyz&type=tcp&headerType=none
-    password: c39d5e05-3d06-317e-b5ca-e2f71b661570
-  - name: 英国 社会保险安全部
-    type: vmess
-    server: 51.195.35.147
-    port: 58812
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
   - name: 海南省海口市+电信
     type: ss
     server: sz.cny.page
-    port: '25984'
+    port: '32366'
     cipher: aes-128-gcm
     password: 2cfc4c58-88cb-4e00-9977-ef0a37559a22
-  - name: 广东省广州市+移动
-    type: trojan
-    server: gg.xn--gmqa02ag57d.com
-    port: 25238?security=tls&sni=z267.hongkongnode.top&type=tcp&headerType=none
-    password: bd1f1b56-631b-308e-9f48-ec4a1d97aeaf
-  - name: 亚太地区+V2CROSS.COM
-    type: trojan
-    server: 163.123.192.34
-    port: >-
-      443?security=tls&sni=16-163-218-240.nhost.00cdn.com&type=tcp&headerType=none
-    password: be8b8f45-a290-4405-8699-ffeb07f3ee24
-  - name: 瑞典+V2CROSS.COM
-    type: ss
-    server: 167.88.63.79
-    port: '7307'
-    cipher: aes-256-gcm
-    password: FoOiGlkAA9yPEGP
-  - name: 美国 CloudFlare节点
+  - name: 美国 V2CROSS.COM
     type: vmess
-    server: 172.64.195.14
-    port: 80
-    uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a
+    server: vau1.0bad.com
+    port: 443
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /
+    ws-path: /chat
     ws-headers:
-      Host: lg.v2ray20.xyz
-  - name: 美国 华盛顿Cogent通信公司
+      Host: vau1.0bad.com
+    tls: true
+  - name: 瑞典+V2CROSS.COM
+    type: ss
+    server: 167.88.63.79
+    port: '5003'
+    cipher: aes-256-gcm
+    password: g5MeD6Ft3CWlJId
+  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
     type: vmess
-    server: 38.63.0.93
-    port: 47002
+    server: 192.74.242.138
+    port: 44667
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
     udp: true
     network: tcp
-    ws-path: ''
-    ws-headers:
-      Host: ''
-  - name: 广东省广州市+移动 - 2
-    type: trojan
-    server: gg.xn--gmqa02ag57d.com
-    port: 50355?security=tls&sni=z264.hongkongnode.top&type=tcp&headerType=none
-    password: bd1f1b56-631b-308e-9f48-ec4a1d97aeaf
-  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
-    type: vmess
-    server: 192.74.228.171
-    port: 42857
-    uuid: 051b844f-efe3-4847-92aa-66b5de0b6d4e
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
     ws-path: /
     ws-headers:
-      Host: n1674862929.gofdwgy.cn
+      Host: ''
+  - name: 海南省海口市+电信 - 2
+    type: ss
+    server: sz.cny.page
+    port: '11536'
+    cipher: aes-128-gcm
+    password: 2cfc4c58-88cb-4e00-9977-ef0a37559a22
+  - name: 广东省广州市 移动
+    type: vmess
+    server: ggsd5.cdn.node.a.tddns-ounk.com
+    port: 50163
+    uuid: 9288e85f-9b18-3e89-bd66-221acdafbd1a
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /009c250b-54f5-43a8-8b18-dccbb5d8c66a.y.live01.m3u8
+    ws-headers:
+      Host: ggsd5.cdn.node.a.tddns-ounk.com
   - name: 广东省佛山市+移动
     type: ss
     server: catlog.flareai.science
     port: '15443'
     cipher: chacha20-ietf-poly1305
     password: d5dd371c-11db-4cfb-b458-072f0fbd0e18
-  - name: 美国 CloudFlare节点 - 2
+  - name: 美国 CloudFlare节点
     type: vmess
-    server: 172.67.140.193
-    port: 80
+    server: cf-lt.sharecentre.online
+    port: 443
     uuid: 2e496758-950e-4549-8842-d5eec98d9fde
     alterId: 0
     cipher: auto
@@ -97,126 +71,63 @@ proxies:
     network: ws
     ws-path: /shirker
     ws-headers:
-      Host: uk1.scproxy.top
-  - name: 北京市 新国信通信有限公司
-    type: vmess
-    server: steam.dnspro.icu
-    port: 5000
-    uuid: 717e6001-c40f-3cba-8763-623661a53737
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /iso
-    ws-headers:
-      Host: steam.dnspro.icu
-  - name: 广东省广州市+移动 - 3
-    type: trojan
-    server: gg.xn--gmqa02ag57d.com
-    port: 20076?security=tls&sni=x76.flybar.work&type=tcp&headerType=none
-    password: bd1f1b56-631b-308e-9f48-ec4a1d97aeaf
-  - name: 广东省广州市 移动
-    type: vmess
-    server: qszx.cdn.node.a.tddns-ounk.com
-    port: 50153
-    uuid: 9288e85f-9b18-3e89-bd66-221acdafbd1a
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /009c250b-54f5-43a8-8b18-dccbb5d8c66a.y.live01.m3u8
-    ws-headers:
-      Host: qszx.cdn.node.a.tddns-ounk.com
-  - name: 广东省广州市 移动 - 2
-    type: vmess
-    server: bnm4.cdn.node.a.tddns-ounk.com
-    port: 50068
-    uuid: 9288e85f-9b18-3e89-bd66-221acdafbd1a
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /009c250b-54f5-43a8-8b18-dccbb5d8c66a.y.live01.m3u8
-    ws-headers:
-      Host: bnm4.cdn.node.a.tddns-ounk.com
-  - name: 美国 V2CROSS.COM
-    type: vmess
-    server: lin.musekidan.com
-    port: 443
-    uuid: 5655cc2b-480c-4c28-b7b5-007220f1855b
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /lin
-    ws-headers:
-      Host: lin.musekidan.com
+      Host: lv3.sharecentrepro.org
     tls: true
+  - name: 海南省海口市+电信 - 3
+    type: ss
+    server: sz.cny.page
+    port: '25984'
+    cipher: aes-128-gcm
+    password: 2cfc4c58-88cb-4e00-9977-ef0a37559a22
+  - name: 法国+OVH数据中心
+    type: trojan
+    server: 54.37.185.148
+    port: '32894'
+    password: HchlVCfnXB
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 广东省汕头市+移动
-      - 英国 社会保险安全部
       - 海南省海口市+电信
-      - 广东省广州市+移动
-      - 亚太地区+V2CROSS.COM
-      - 瑞典+V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 美国 华盛顿Cogent通信公司
-      - 广东省广州市+移动 - 2
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 广东省佛山市+移动
-      - 美国 CloudFlare节点 - 2
-      - 北京市 新国信通信有限公司
-      - 广东省广州市+移动 - 3
-      - 广东省广州市 移动
-      - 广东省广州市 移动 - 2
       - 美国 V2CROSS.COM
+      - 瑞典+V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 海南省海口市+电信 - 2
+      - 广东省广州市 移动
+      - 广东省佛山市+移动
+      - 美国 CloudFlare节点
+      - 海南省海口市+电信 - 3
+      - 法国+OVH数据中心
   - name: 自动选择
     type: url-test
     proxies:
-      - 广东省汕头市+移动
-      - 英国 社会保险安全部
       - 海南省海口市+电信
-      - 广东省广州市+移动
-      - 亚太地区+V2CROSS.COM
-      - 瑞典+V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 美国 华盛顿Cogent通信公司
-      - 广东省广州市+移动 - 2
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 广东省佛山市+移动
-      - 美国 CloudFlare节点 - 2
-      - 北京市 新国信通信有限公司
-      - 广东省广州市+移动 - 3
-      - 广东省广州市 移动
-      - 广东省广州市 移动 - 2
       - 美国 V2CROSS.COM
+      - 瑞典+V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 海南省海口市+电信 - 2
+      - 广东省广州市 移动
+      - 广东省佛山市+移动
+      - 美国 CloudFlare节点
+      - 海南省海口市+电信 - 3
+      - 法国+OVH数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 广东省汕头市+移动
-      - 英国 社会保险安全部
       - 海南省海口市+电信
-      - 广东省广州市+移动
-      - 亚太地区+V2CROSS.COM
-      - 瑞典+V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 美国 华盛顿Cogent通信公司
-      - 广东省广州市+移动 - 2
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 广东省佛山市+移动
-      - 美国 CloudFlare节点 - 2
-      - 北京市 新国信通信有限公司
-      - 广东省广州市+移动 - 3
-      - 广东省广州市 移动
-      - 广东省广州市 移动 - 2
       - 美国 V2CROSS.COM
+      - 瑞典+V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 海南省海口市+电信 - 2
+      - 广东省广州市 移动
+      - 广东省佛山市+移动
+      - 美国 CloudFlare节点
+      - 海南省海口市+电信 - 3
+      - 法国+OVH数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
