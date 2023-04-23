@@ -1,20 +1,62 @@
 proxies:
-  - name: 美国 CloudFlare节点
+  - name: 广东省佛山市+移动
+    type: ss
+    server: catlog.flareai.science
+    port: '15443'
+    cipher: chacha20-ietf-poly1305
+    password: d5dd371c-11db-4cfb-b458-072f0fbd0e18
+  - name: 美国 加你福尼亚洛杉矶Coperation Coloction数据中心
     type: vmess
-    server: surongwei.eu.org
-    port: 443
-    uuid: 6093eefb-7ab6-41df-aba0-d5fa58147e10
-    alterId: 0
+    server: 198.16.45.166
+    port: 53392
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /aceamedv
+    ws-headers:
+      Host: ''
+  - name: 美国 加利福尼亚州洛杉矶MULTACOM数据中心
+    type: vmess
+    server: 170.178.194.14
+    port: 51986
+    uuid: 3023981b-0431-4bff-8a10-0f986ba86c73
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: ''
+    ws-headers:
+      Host: ''
+  - name: 江苏省扬州市 移动
+    type: vmess
+    server: data-hk-v1.shwjfkw.cn
+    port: 50207
+    uuid: b1478e24-4916-3abe-8f17-15931012ecbe
+    alterId: 1
     cipher: auto
     udp: true
     network: ws
-    ws-path: /reffs7y26g0ua
-    ws-headers: {}
-    tls: true
-  - name: 美国 加利福尼亚州圣何塞PEG TECH
+    ws-path: /hls/cctv5phd.m3u8
+    ws-headers:
+      Host: YTB-awkj
+  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
     type: vmess
-    server: 142.4.101.166
-    port: 59022
+    server: 192.74.228.174
+    port: 42857
+    uuid: 051b844f-efe3-4847-92aa-66b5de0b6d4e
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 广东省揭阳市 移动
+    type: vmess
+    server: 120.240.163.51
+    port: 53173
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -23,66 +65,69 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 海南省海口市+电信
-    type: ss
-    server: sz.cny.page
-    port: '20957'
-    cipher: aes-128-gcm
-    password: 2cfc4c58-88cb-4e00-9977-ef0a37559a22
-  - name: 美国 CloudFlare节点 - 2
+  - name: 美国 惠普HP
     type: vmess
-    server: cf-lt.sharecentre.online
+    server: hk4.af49c4e4c2ef.sanfen004.me
     port: 443
-    uuid: 2e496758-950e-4549-8842-d5eec98d9fde
+    uuid: fa52cc8f-e648-496b-a9b6-9a4f982829a1
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /shirker
+    ws-path: /zh-cn
     ws-headers:
-      Host: lv1.sharecentrepro.org
+      Host: www.microsoft.com
     tls: true
-  - name: 美国 CloudFlare节点 - 3
+  - name: 欧盟 V2CROSS.COM
     type: vmess
-    server: 104.17.3.81
-    port: 80
-    uuid: e40b2de3-b829-4591-a7b6-99d1913f3246
+    server: 45.95.203.252
+    port: 10000
+    uuid: 42071f5a-ddd4-11ed-9684-17f9e573b56f
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /worryfree
+    ws-path: /vpnjantit
     ws-headers:
-      Host: w.evouch77.live
+      Host: ''
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 CloudFlare节点
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 海南省海口市+电信
-      - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
+      - 广东省佛山市+移动
+      - 美国 加你福尼亚洛杉矶Coperation Coloction数据中心
+      - 美国 加利福尼亚州洛杉矶MULTACOM数据中心
+      - 江苏省扬州市 移动
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 广东省揭阳市 移动
+      - 美国 惠普HP
+      - 欧盟 V2CROSS.COM
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 CloudFlare节点
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 海南省海口市+电信
-      - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
+      - 广东省佛山市+移动
+      - 美国 加你福尼亚洛杉矶Coperation Coloction数据中心
+      - 美国 加利福尼亚州洛杉矶MULTACOM数据中心
+      - 江苏省扬州市 移动
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 广东省揭阳市 移动
+      - 美国 惠普HP
+      - 欧盟 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 CloudFlare节点
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 海南省海口市+电信
-      - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
+      - 广东省佛山市+移动
+      - 美国 加你福尼亚洛杉矶Coperation Coloction数据中心
+      - 美国 加利福尼亚州洛杉矶MULTACOM数据中心
+      - 江苏省扬州市 移动
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 广东省揭阳市 移动
+      - 美国 惠普HP
+      - 欧盟 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
