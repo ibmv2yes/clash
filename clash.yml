@@ -1,10 +1,10 @@
 proxies:
-  - name: 美国 V2CROSS.COM
+  - name: 台湾省新北市 中华电信
     type: vmess
-    server: 108.186.5.10
-    port: 59010
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
+    server: hinet1261.gfwisbest.xyz
+    port: 224
+    uuid: 2285133e-b9ba-3fb5-a246-9c7ddcc2cd7a
+    alterId: 0
     cipher: auto
     udp: true
     network: tcp
@@ -12,6 +12,18 @@ proxies:
     ws-headers:
       Host: ''
   - name: 美国 CloudFlare节点
+    type: vmess
+    server: 172.67.250.239
+    port: 80
+    uuid: 2e496758-950e-4549-8842-d5eec98d9fde
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /shirker
+    ws-headers:
+      Host: dp2.scproxy.top
+  - name: 美国 CloudFlare节点 - 2
     type: vmess
     server: cf.noaries.de
     port: 443
@@ -24,63 +36,61 @@ proxies:
     ws-headers:
       Host: dedipath.cloudflare.quest
     tls: true
-  - name: 浙江省 移动数据上网公共出口
+  - name: 日本 东京Linode数据中心
     type: vmess
-    server: data-hk-v2.shwjfkw.cn
-    port: 50205
-    uuid: b1478e24-4916-3abe-8f17-15931012ecbe
-    alterId: 1
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /hls/cctv5phd.m3u8
-    ws-headers: {}
-  - name: 广东省广州市 移动
-    type: vmess
-    server: dc.xmrthnode.com
-    port: 42041
-    uuid: 61a06847-820f-3785-af90-506d3e988a12
+    server: vjp1.0bad.com
+    port: 443
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /th
+    ws-path: /chat
     ws-headers:
-      Host: 10.5.96.3
-  - name: 法国+OVH数据中心
-    type: trojan
-    server: a1.veryfastnet1.tk
-    port: 32894?security=tls&type=tcp&headerType=none
-    password: HchlVCfnXB
+      Host: vjp1.0bad.com
+    tls: true
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: 143.42.173.175
+    port: 443
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /chat
+    ws-headers:
+      Host: ''
+    tls: true
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 V2CROSS.COM
+      - 台湾省新北市 中华电信
       - 美国 CloudFlare节点
-      - 浙江省 移动数据上网公共出口
-      - 广东省广州市 移动
-      - 法国+OVH数据中心
+      - 美国 CloudFlare节点 - 2
+      - 日本 东京Linode数据中心
+      - 美国 V2CROSS.COM
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 V2CROSS.COM
+      - 台湾省新北市 中华电信
       - 美国 CloudFlare节点
-      - 浙江省 移动数据上网公共出口
-      - 广东省广州市 移动
-      - 法国+OVH数据中心
+      - 美国 CloudFlare节点 - 2
+      - 日本 东京Linode数据中心
+      - 美国 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 V2CROSS.COM
+      - 台湾省新北市 中华电信
       - 美国 CloudFlare节点
-      - 浙江省 移动数据上网公共出口
-      - 广东省广州市 移动
-      - 法国+OVH数据中心
+      - 美国 CloudFlare节点 - 2
+      - 日本 东京Linode数据中心
+      - 美国 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
