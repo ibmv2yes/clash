@@ -1,39 +1,110 @@
 proxies:
   - name: 美国 CloudFlare节点
     type: vmess
-    server: cf.dalazhi.eu.org
+    server: cf.noaries.de
     port: 443
-    uuid: 7098880e-4ca5-490c-8ff7-8067049b6077
+    uuid: 6f1d968e-7f41-41fd-931d-73cf35a9f26b
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /lgzlvws
+    ws-path: /aries?ed=2048
     ws-headers:
-      Host: us.dalazhi.eu.org
+      Host: dedipath.cloudflare.quest
     tls: true
-  - name: 美国+V2CROSS.COM
-    type: trojan
-    server: 152.70.74.66
-    port: 443?type=tcp&allowInsecure=1
-    password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
-  - name: 美国 V2CROSS.COM
+  - name: 日本 东京Linode数据中心
     type: vmess
-    server: 137.175.18.89
-    port: 42002
+    server: vjp1.0bad.com
+    port: 443
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /chat
+    ws-headers:
+      Host: vjp1.0bad.com
+    tls: true
+  - name: 广东省佛山市+移动
+    type: ss
+    server: catlog.flareai.science
+    port: '15543'
+    cipher: chacha20-ietf-poly1305
+    password: d5dd371c-11db-4cfb-b458-072f0fbd0e18
+  - name: 美国 华盛顿Cogent通信公司
+    type: vmess
+    server: 38.40.158.247
+    port: 45002
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
     udp: true
     network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国 加利福尼亚州洛杉矶MULTACOM数据中心
+    ws-headers: {}
+  - name: 美国 V2CROSS.COM
     type: vmess
-    server: 170.178.194.14
-    port: 51986
-    uuid: 3023981b-0431-4bff-8a10-0f986ba86c73
+    server: 137.175.1.6
+    port: 53403
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-headers: {}
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: cf.515188.xyz
+    port: 80
+    uuid: 35d1eaf8-53e7-4c8b-92aa-d96a20854e3c
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /api/v3/download.getFile
+    ws-headers:
+      Host: ssrsub.v03.ssrsub.com
+  - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: cf.noaries.de
+    port: 8080
+    uuid: 6f1d968e-7f41-41fd-931d-73cf35a9f26b
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /aries?ed=2048
+    ws-headers:
+      Host: buyvm.iiio.wiki
+  - name: 日本 东京Amazon数据中心
+    type: vmess
+    server: jp80.fee68414a14e.sanfen004.me
+    port: 80
+    uuid: 692bffe9-01b7-4e0b-aa44-bbba867d67e1
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /zh-cn
+    ws-headers:
+      Host: jp80.fee68414a14e.sanfen004.me
+  - name: 美国 惠普HP
+    type: vmess
+    server: hk4.af49c4e4c2ef.sanfen004.me
+    port: 443
+    uuid: fa52cc8f-e648-496b-a9b6-9a4f982829a1
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /zh-cn
+    ws-headers:
+      Host: www.microsoft.com
+    tls: true
+  - name: 美国 加利福尼亚州圣何塞PEG TECH
+    type: vmess
+    server: 142.4.99.76
+    port: 41169
+    uuid: b65da4af-a12a-4a59-9316-4549e12ba62c
     alterId: 64
     cipher: auto
     udp: true
@@ -41,43 +112,30 @@ proxies:
     ws-path: ''
     ws-headers:
       Host: ''
-  - name: 澳大利亚 V2CROSS.COM
-    type: vmess
-    server: 140.83.63.38
-    port: 24445
-    uuid: 94c5ef37-4d82-49f9-c624-f01259374a17
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
   - name: 美国 V2CROSS.COM - 2
     type: vmess
-    server: 108.186.5.10
-    port: 59010
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
+    server: www.kuromi.eu.org
+    port: 33421
+    uuid: 94e56ff9-ccf1-414e-a114-46e0a79f6614
+    alterId: 0
     cipher: auto
     udp: true
     network: tcp
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国 V2CROSS.COM - 3
+  - name: 美国 CloudFlare节点 - 4
     type: vmess
-    server: lin.musekidan.com
-    port: 443
-    uuid: 01b4e18d-c6f6-4fb7-aa1b-f4d960cd8dbb
+    server: 172.67.250.239
+    port: 80
+    uuid: 2e496758-950e-4549-8842-d5eec98d9fde
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /lin
+    ws-path: /shirker
     ws-headers:
-      Host: lin.untilmu.com
-    tls: true
+      Host: dp2.scproxy.top
 proxy-groups:
   - name: Free-servers
     type: select
@@ -85,34 +143,49 @@ proxy-groups:
       - 自动选择
       - 故障转移
       - 美国 CloudFlare节点
-      - 美国+V2CROSS.COM
+      - 日本 东京Linode数据中心
+      - 广东省佛山市+移动
+      - 美国 华盛顿Cogent通信公司
       - 美国 V2CROSS.COM
-      - 美国 加利福尼亚州洛杉矶MULTACOM数据中心
-      - 澳大利亚 V2CROSS.COM
+      - 美国 CloudFlare节点 - 2
+      - 美国 CloudFlare节点 - 3
+      - 日本 东京Amazon数据中心
+      - 美国 惠普HP
+      - 美国 加利福尼亚州圣何塞PEG TECH
       - 美国 V2CROSS.COM - 2
-      - 美国 V2CROSS.COM - 3
+      - 美国 CloudFlare节点 - 4
   - name: 自动选择
     type: url-test
     proxies:
       - 美国 CloudFlare节点
-      - 美国+V2CROSS.COM
+      - 日本 东京Linode数据中心
+      - 广东省佛山市+移动
+      - 美国 华盛顿Cogent通信公司
       - 美国 V2CROSS.COM
-      - 美国 加利福尼亚州洛杉矶MULTACOM数据中心
-      - 澳大利亚 V2CROSS.COM
+      - 美国 CloudFlare节点 - 2
+      - 美国 CloudFlare节点 - 3
+      - 日本 东京Amazon数据中心
+      - 美国 惠普HP
+      - 美国 加利福尼亚州圣何塞PEG TECH
       - 美国 V2CROSS.COM - 2
-      - 美国 V2CROSS.COM - 3
+      - 美国 CloudFlare节点 - 4
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
       - 美国 CloudFlare节点
-      - 美国+V2CROSS.COM
+      - 日本 东京Linode数据中心
+      - 广东省佛山市+移动
+      - 美国 华盛顿Cogent通信公司
       - 美国 V2CROSS.COM
-      - 美国 加利福尼亚州洛杉矶MULTACOM数据中心
-      - 澳大利亚 V2CROSS.COM
+      - 美国 CloudFlare节点 - 2
+      - 美国 CloudFlare节点 - 3
+      - 日本 东京Amazon数据中心
+      - 美国 惠普HP
+      - 美国 加利福尼亚州圣何塞PEG TECH
       - 美国 V2CROSS.COM - 2
-      - 美国 V2CROSS.COM - 3
+      - 美国 CloudFlare节点 - 4
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
