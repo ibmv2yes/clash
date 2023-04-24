@@ -1,8 +1,13 @@
 proxies:
+  - name: 美国+V2CROSS.COM
+    type: trojan
+    server: 152.70.74.66
+    port: 443?security=tls&type=tcp&headerType=none
+    password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
   - name: 美国 V2CROSS.COM
     type: vmess
-    server: 108.186.5.10
-    port: 59010
+    server: 137.175.18.89
+    port: 42002
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -11,44 +16,7 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 广东省佛山市 移动
-    type: vmess
-    server: 25.v2-ray.cyou
-    port: 23625
-    uuid: 0dd19d20-ec86-3680-b256-87237bafa89e
-    alterId: 2
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: 25.v2-ray.cyou
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: 104.17.3.81
-    port: 80
-    uuid: e40b2de3-b829-4591-a7b6-99d1913f3246
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /worryfree
-    ws-headers:
-      Host: w.evouch77.live
   - name: 美国 V2CROSS.COM - 2
-    type: vmess
-    server: usks.zwtg888.com
-    port: 56412
-    uuid: 512b56ea-233f-46a1-b053-a7d0958a8945
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /usks
-    ws-headers:
-      Host: usks.zwtg888.com
-    tls: true
-  - name: 美国 V2CROSS.COM - 3
     type: vmess
     server: 143.42.173.175
     port: 443
@@ -61,7 +29,41 @@ proxies:
     ws-headers:
       Host: ''
     tls: true
-  - name: 广东省佛山市 移动 - 2
+  - name: 美国 V2CROSS.COM - 3
+    type: vmess
+    server: 173.249.199.27
+    port: 443
+    uuid: e5543efd-5400-3760-9bb6-02767728e888
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /video
+    ws-headers: {}
+  - name: 瑞士+V2CROSS.COM
+    type: trojan
+    server: 195.15.243.26
+    port: 443?security=tls&type=tcp&headerType=none
+    password: '4478'
+  - name: 广东省揭阳市 移动
+    type: vmess
+    server: 120.240.163.51
+    port: 53173
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 广东省佛山市+移动
+    type: ss
+    server: catlog.flareai.science
+    port: '15543'
+    cipher: chacha20-ietf-poly1305
+    password: d5dd371c-11db-4cfb-b458-072f0fbd0e18
+  - name: 广东省佛山市 移动
     type: vmess
     server: 25.v2-ray.cyou
     port: 23625
@@ -73,85 +75,60 @@ proxies:
     ws-path: /
     ws-headers:
       Host: 25.v2-ray.cyou
-  - name: 广东省广州市+移动
-    type: ss
-    server: assets.flareai.site
-    port: '15443'
-    cipher: chacha20-ietf-poly1305
-    password: d5dd371c-11db-4cfb-b458-072f0fbd0e18
-  - name: 香港 阿里云
+  - name: 伊朗 V2CROSS.COM
     type: vmess
-    server: n1681621064.edpmvga.cn
-    port: 443
-    uuid: 745d5ccd-d7c1-43b4-a024-424f3fccef47
+    server: ro1.zwtg888.com
+    port: 18898
+    uuid: 512b56ea-233f-46a1-b053-a7d0958a8945
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-headers: {}
-    tls: true
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: cf-lt.sharecentre.online
-    port: 443
-    uuid: 2e496758-950e-4549-8842-d5eec98d9fde
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /shirker
+    ws-path: /ro1
     ws-headers:
-      Host: lv1.sharecentrepro.org
+      Host: ro1.zwtg888.com
     tls: true
-  - name: 法国+OVH数据中心
-    type: trojan
-    server: a1.veryfastnet1.tk
-    port: 32894?security=tls&type=tcp&headerType=none
-    password: HchlVCfnXB
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
+      - 美国+V2CROSS.COM
       - 美国 V2CROSS.COM
-      - 广东省佛山市 移动
-      - 美国 CloudFlare节点
       - 美国 V2CROSS.COM - 2
       - 美国 V2CROSS.COM - 3
-      - 广东省佛山市 移动 - 2
-      - 广东省广州市+移动
-      - 香港 阿里云
-      - 美国 CloudFlare节点 - 2
-      - 法国+OVH数据中心
+      - 瑞士+V2CROSS.COM
+      - 广东省揭阳市 移动
+      - 广东省佛山市+移动
+      - 广东省佛山市 移动
+      - 伊朗 V2CROSS.COM
   - name: 自动选择
     type: url-test
     proxies:
+      - 美国+V2CROSS.COM
       - 美国 V2CROSS.COM
-      - 广东省佛山市 移动
-      - 美国 CloudFlare节点
       - 美国 V2CROSS.COM - 2
       - 美国 V2CROSS.COM - 3
-      - 广东省佛山市 移动 - 2
-      - 广东省广州市+移动
-      - 香港 阿里云
-      - 美国 CloudFlare节点 - 2
-      - 法国+OVH数据中心
+      - 瑞士+V2CROSS.COM
+      - 广东省揭阳市 移动
+      - 广东省佛山市+移动
+      - 广东省佛山市 移动
+      - 伊朗 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
+      - 美国+V2CROSS.COM
       - 美国 V2CROSS.COM
-      - 广东省佛山市 移动
-      - 美国 CloudFlare节点
       - 美国 V2CROSS.COM - 2
       - 美国 V2CROSS.COM - 3
-      - 广东省佛山市 移动 - 2
-      - 广东省广州市+移动
-      - 香港 阿里云
-      - 美国 CloudFlare节点 - 2
-      - 法国+OVH数据中心
+      - 瑞士+V2CROSS.COM
+      - 广东省揭阳市 移动
+      - 广东省佛山市+移动
+      - 广东省佛山市 移动
+      - 伊朗 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
