@@ -1,41 +1,4 @@
 proxies:
-  - name: 广东省广州市+移动
-    type: ss
-    server: assets.flareai.site
-    port: '15443'
-    cipher: chacha20-ietf-poly1305
-    password: d5dd371c-11db-4cfb-b458-072f0fbd0e18
-  - name: 日本 东京Amazon数据中心
-    type: vmess
-    server: 35.79.54.112
-    port: 40609
-    uuid: 19a4ce51-23d9-4903-c170-f4d91077ca1e
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: ''
-    ws-headers:
-      Host: ''
-  - name: 广东省广州市+移动 - 2
-    type: ss
-    server: assets.flareai.site
-    port: '15543'
-    cipher: chacha20-ietf-poly1305
-    password: d5dd371c-11db-4cfb-b458-072f0fbd0e18
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: www.codepen.io
-    port: 443
-    uuid: 2cd39102-0799-4c61-abb6-2e7a258f0397
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /vmess
-    ws-headers:
-      Host: us-v.sshmax.xyz
-    tls: true
   - name: 美国 加利福尼亚州洛杉矶Sharktech数据中心
     type: vmess
     server: 67.21.84.211
@@ -48,10 +11,54 @@ proxies:
     ws-path: ''
     ws-headers:
       Host: ''
+  - name: 海南省海口市+电信
+    type: ss
+    server: sz.cny.page
+    port: '11536'
+    cipher: aes-128-gcm
+    password: 2cfc4c58-88cb-4e00-9977-ef0a37559a22
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: scaleway.696960.xyz
+    port: 443
+    uuid: e357cd63-f1a5-4c8e-c42e-26da11207fee
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /root/
+    ws-headers:
+      Host: ''
+    tls: true
   - name: 美国 CloudFlare节点 - 2
     type: vmess
-    server: cf-lt.sharecentre.online
+    server: cf.noaries.de
+    port: 2082
+    uuid: 314c1387-618c-4689-97fc-4bc9a1ae5e05
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: ir2.nmsl.ninja
+  - name: 立陶宛 V2CROSS.COM
+    type: vmess
+    server: mci.bamarambash.monster
     port: 443
+    uuid: 8f74ec8a-971c-11ed-a8fc-0242ac120002
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /db698b16-d216-11ed-8e14-5ad705867cff
+    ws-headers:
+      Host: db698b16-d216-11ed-8e14-5ad705867cff.asmandll.com
+    tls: true
+  - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: 172.67.250.239
+    port: 80
     uuid: 2e496758-950e-4549-8842-d5eec98d9fde
     alterId: 0
     cipher: auto
@@ -59,12 +66,11 @@ proxies:
     network: ws
     ws-path: /shirker
     ws-headers:
-      Host: lv1.sharecentrepro.org
-    tls: true
-  - name: 美国 V2CROSS.COM
+      Host: dp2.scproxy.top
+  - name: 美国 加利福尼亚州圣何塞PEG TECH
     type: vmess
-    server: 108.186.5.10
-    port: 59010
+    server: 142.4.114.25
+    port: 34002
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -73,65 +79,54 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 瑞士+V2CROSS.COM
-    type: trojan
-    server: 195.15.243.26
-    port: 443?security=tls&type=tcp&headerType=none
-    password: '4478'
-  - name: 日本 东京Linode数据中心
+  - name: 美国 V2CROSS.COM
     type: vmess
-    server: vjp2.0bad.com
-    port: 443
-    uuid: 927094d3-d678-4763-8591-e240d0bcae87
-    alterId: 0
+    server: 137.175.1.6
+    port: 53403
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
     cipher: auto
     udp: true
-    network: ws
-    ws-path: /chat
-    ws-headers:
-      Host: vjp2.0bad.com
-    tls: true
+    network: tcp
+    ws-headers: {}
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 广东省广州市+移动
-      - 日本 东京Amazon数据中心
-      - 广东省广州市+移动 - 2
-      - 美国 CloudFlare节点
       - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 海南省海口市+电信
+      - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
+      - 立陶宛 V2CROSS.COM
+      - 美国 CloudFlare节点 - 3
+      - 美国 加利福尼亚州圣何塞PEG TECH
       - 美国 V2CROSS.COM
-      - 瑞士+V2CROSS.COM
-      - 日本 东京Linode数据中心
   - name: 自动选择
     type: url-test
     proxies:
-      - 广东省广州市+移动
-      - 日本 东京Amazon数据中心
-      - 广东省广州市+移动 - 2
-      - 美国 CloudFlare节点
       - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 海南省海口市+电信
+      - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
+      - 立陶宛 V2CROSS.COM
+      - 美国 CloudFlare节点 - 3
+      - 美国 加利福尼亚州圣何塞PEG TECH
       - 美国 V2CROSS.COM
-      - 瑞士+V2CROSS.COM
-      - 日本 东京Linode数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 广东省广州市+移动
-      - 日本 东京Amazon数据中心
-      - 广东省广州市+移动 - 2
-      - 美国 CloudFlare节点
       - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 海南省海口市+电信
+      - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
+      - 立陶宛 V2CROSS.COM
+      - 美国 CloudFlare节点 - 3
+      - 美国 加利福尼亚州圣何塞PEG TECH
       - 美国 V2CROSS.COM
-      - 瑞士+V2CROSS.COM
-      - 日本 东京Linode数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
