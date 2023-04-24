@@ -1,44 +1,57 @@
 proxies:
+  - name: 美国+V2CROSS.COM
+    type: ss
+    server: 172.99.190.61
+    port: '443'
+    cipher: aes-256-gcm
+    password: pKEW8JPByTVTLtM
   - name: 加拿大+V2CROSS.COM
     type: ss
     server: 38.64.138.145
-    port: '8080'
+    port: '7001'
     cipher: aes-256-gcm
-    password: KixLvKzwjekG00rm
-  - name: 法国+OVH数据中心
-    type: trojan
-    server: a1.veryfastnet1.tk
-    port: 32894?security=tls&type=tcp&headerType=none
-    password: HchlVCfnXB
-  - name: 加拿大+V2CROSS.COM - 2
-    type: ss
-    server: 38.64.138.145
-    port: '8009'
-    cipher: aes-256-gcm
-    password: XKFKl2rULjIp74
-  - name: 浙江省 移动数据上网公共出口
+    password: RexnBgU7EV5ADxG
+  - name: 美国 V2CROSS.COM
     type: vmess
-    server: data-hk-v2.shwjfkw.cn
-    port: 50205
-    uuid: b1478e24-4916-3abe-8f17-15931012ecbe
-    alterId: 1
+    server: lin.musekidan.com
+    port: 443
+    uuid: 01b4e18d-c6f6-4fb7-aa1b-f4d960cd8dbb
+    alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /hls/cctv5phd.m3u8
-    ws-headers: {}
-  - name: 瑞典+V2CROSS.COM
-    type: ss
-    server: 167.88.63.99
-    port: '8090'
-    cipher: aes-256-gcm
-    password: PCnnH6SQSnfoS27
-  - name: 加拿大+V2CROSS.COM - 3
+    ws-path: /lin
+    ws-headers:
+      Host: lin.untilmu.com
+    tls: true
+  - name: 加拿大+V2CROSS.COM - 2
     type: ss
     server: 38.64.138.145
-    port: '8091'
+    port: '2375'
     cipher: aes-256-gcm
-    password: PCnnH6SQSnfoS27
+    password: faBAoD54k87UJG7
+  - name: 美国+华盛顿Cogent通信公司
+    type: ss
+    server: 38.91.102.30
+    port: '8008'
+    cipher: aes-256-gcm
+    password: XKFKl2rULjIp74
+  - name: 美国 V2CROSS.COM - 2
+    type: vmess
+    server: 137.175.1.6
+    port: 53403
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-headers: {}
+  - name: 美国+V2CROSS.COM - 2
+    type: ss
+    server: 172.99.190.149
+    port: '5601'
+    cipher: aes-256-gcm
+    password: Y6R9pAtvxxzmGC
   - name: 南非 V2CROSS.COM
     type: vmess
     server: 156.225.67.143
@@ -51,170 +64,85 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 加拿大+V2CROSS.COM - 4
+  - name: 法国+OVH数据中心
+    type: trojan
+    server: a1.veryfastnet1.tk
+    port: 32894?security=tls&type=tcp&headerType=none
+    password: HchlVCfnXB
+  - name: 加拿大+V2CROSS.COM - 3
     type: ss
     server: 38.64.138.145
-    port: '2375'
+    port: '8009'
     cipher: aes-256-gcm
-    password: faBAoD54k87UJG7
-  - name: 英国+V2CROSS.COM
-    type: ss
-    server: 145.239.6.202
-    port: '4444'
-    cipher: aes-256-gcm
-    password: pKEW8JPByTVTLtM
-  - name: 美国 CloudFlare节点
+    password: XKFKl2rULjIp74
+  - name: 澳大利亚 Cranbourne Secondary College
     type: vmess
-    server: cfcdn.sanfencdn.net
-    port: 443
-    uuid: da9d5c74-a572-4cf4-a375-19b886f5ffc4
+    server: 203.30.191.100
+    port: 8880
+    uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /zh-cn
-    ws-headers:
-      Host: us2.sanfencdn.net
-    tls: true
-  - name: 瑞典+V2CROSS.COM - 2
-    type: ss
-    server: 167.88.61.213
-    port: '443'
-    cipher: aes-256-gcm
-    password: pKEW8JPByTVTLtM
-  - name: 加拿大+V2CROSS.COM - 5
-    type: ss
-    server: 38.64.138.145
-    port: '8090'
-    cipher: aes-256-gcm
-    password: PCnnH6SQSnfoS27
-  - name: 加拿大+V2CROSS.COM - 6
-    type: ss
-    server: 38.64.138.145
-    port: '3306'
-    cipher: aes-256-gcm
-    password: Y6R9pAtvxxzmGC
-  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
-    type: vmess
-    server: 192.74.228.172
-    port: 42857
-    uuid: 051b844f-efe3-4847-92aa-66b5de0b6d4e
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
     ws-path: /
     ws-headers:
-      Host: ''
-  - name: 加拿大+V2CROSS.COM - 7
-    type: ss
-    server: 38.64.138.145
-    port: '6679'
-    cipher: aes-256-gcm
-    password: TEzjfAYq2IjtuoS
-  - name: 瑞士+V2CROSS.COM
-    type: trojan
-    server: 195.15.243.26
-    port: '443'
-    password: '4478'
-  - name: 美国+V2CROSS.COM
-    type: ss
-    server: 172.99.190.149
-    port: '443'
-    cipher: aes-256-gcm
-    password: pKEW8JPByTVTLtM
-  - name: 瑞典+V2CROSS.COM - 3
+      Host: lg.trump2023.net
+  - name: 瑞典+V2CROSS.COM
     type: ss
     server: 167.88.61.213
     port: '7307'
     cipher: aes-256-gcm
     password: FoOiGlkAA9yPEGP
-  - name: 美国+华盛顿Cogent通信公司
-    type: ss
-    server: 38.91.102.30
-    port: '8008'
-    cipher: aes-256-gcm
-    password: XKFKl2rULjIp74
-  - name: 瑞典+V2CROSS.COM - 4
-    type: ss
-    server: 167.88.61.213
-    port: '8090'
-    cipher: aes-256-gcm
-    password: PCnnH6SQSnfoS27
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 加拿大+V2CROSS.COM
-      - 法国+OVH数据中心
-      - 加拿大+V2CROSS.COM - 2
-      - 浙江省 移动数据上网公共出口
-      - 瑞典+V2CROSS.COM
-      - 加拿大+V2CROSS.COM - 3
-      - 南非 V2CROSS.COM
-      - 加拿大+V2CROSS.COM - 4
-      - 英国+V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 瑞典+V2CROSS.COM - 2
-      - 加拿大+V2CROSS.COM - 5
-      - 加拿大+V2CROSS.COM - 6
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 加拿大+V2CROSS.COM - 7
-      - 瑞士+V2CROSS.COM
       - 美国+V2CROSS.COM
-      - 瑞典+V2CROSS.COM - 3
+      - 加拿大+V2CROSS.COM
+      - 美国 V2CROSS.COM
+      - 加拿大+V2CROSS.COM - 2
       - 美国+华盛顿Cogent通信公司
-      - 瑞典+V2CROSS.COM - 4
+      - 美国 V2CROSS.COM - 2
+      - 美国+V2CROSS.COM - 2
+      - 南非 V2CROSS.COM
+      - 法国+OVH数据中心
+      - 加拿大+V2CROSS.COM - 3
+      - 澳大利亚 Cranbourne Secondary College
+      - 瑞典+V2CROSS.COM
   - name: 自动选择
     type: url-test
     proxies:
-      - 加拿大+V2CROSS.COM
-      - 法国+OVH数据中心
-      - 加拿大+V2CROSS.COM - 2
-      - 浙江省 移动数据上网公共出口
-      - 瑞典+V2CROSS.COM
-      - 加拿大+V2CROSS.COM - 3
-      - 南非 V2CROSS.COM
-      - 加拿大+V2CROSS.COM - 4
-      - 英国+V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 瑞典+V2CROSS.COM - 2
-      - 加拿大+V2CROSS.COM - 5
-      - 加拿大+V2CROSS.COM - 6
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 加拿大+V2CROSS.COM - 7
-      - 瑞士+V2CROSS.COM
       - 美国+V2CROSS.COM
-      - 瑞典+V2CROSS.COM - 3
+      - 加拿大+V2CROSS.COM
+      - 美国 V2CROSS.COM
+      - 加拿大+V2CROSS.COM - 2
       - 美国+华盛顿Cogent通信公司
-      - 瑞典+V2CROSS.COM - 4
+      - 美国 V2CROSS.COM - 2
+      - 美国+V2CROSS.COM - 2
+      - 南非 V2CROSS.COM
+      - 法国+OVH数据中心
+      - 加拿大+V2CROSS.COM - 3
+      - 澳大利亚 Cranbourne Secondary College
+      - 瑞典+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 加拿大+V2CROSS.COM
-      - 法国+OVH数据中心
-      - 加拿大+V2CROSS.COM - 2
-      - 浙江省 移动数据上网公共出口
-      - 瑞典+V2CROSS.COM
-      - 加拿大+V2CROSS.COM - 3
-      - 南非 V2CROSS.COM
-      - 加拿大+V2CROSS.COM - 4
-      - 英国+V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 瑞典+V2CROSS.COM - 2
-      - 加拿大+V2CROSS.COM - 5
-      - 加拿大+V2CROSS.COM - 6
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 加拿大+V2CROSS.COM - 7
-      - 瑞士+V2CROSS.COM
       - 美国+V2CROSS.COM
-      - 瑞典+V2CROSS.COM - 3
+      - 加拿大+V2CROSS.COM
+      - 美国 V2CROSS.COM
+      - 加拿大+V2CROSS.COM - 2
       - 美国+华盛顿Cogent通信公司
-      - 瑞典+V2CROSS.COM - 4
+      - 美国 V2CROSS.COM - 2
+      - 美国+V2CROSS.COM - 2
+      - 南非 V2CROSS.COM
+      - 法国+OVH数据中心
+      - 加拿大+V2CROSS.COM - 3
+      - 澳大利亚 Cranbourne Secondary College
+      - 瑞典+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
