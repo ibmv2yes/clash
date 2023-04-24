@@ -1,89 +1,132 @@
 proxies:
-  - name: 广东省汕头市+移动
-    type: trojan
-    server: azhj.xifasd.top
-    port: 20767?security=tls&sni=ssl.ssl12.xyz&type=tcp&headerType=none
-    password: c39d5e05-3d06-317e-b5ca-e2f71b661570
   - name: 美国 CloudFlare节点
     type: vmess
-    server: 104.17.3.81
-    port: 80
-    uuid: e40b2de3-b829-4591-a7b6-99d1913f3246
+    server: surongwei.eu.org
+    port: 443
+    uuid: 6093eefb-7ab6-41df-aba0-d5fa58147e10
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /worryfree
-    ws-headers:
-      Host: w.evouch77.live
+    ws-path: /reffs7y26g0ua
+    ws-headers: {}
+    tls: true
   - name: 美国 CloudFlare节点 - 2
     type: vmess
-    server: 172.67.127.123
-    port: 80
-    uuid: 2e496758-950e-4549-8842-d5eec98d9fde
+    server: cf7.biger.club
+    port: 2087
+    uuid: 6fdc56eb-ed51-418c-975b-33fcbe752908
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /shirker
+    ws-path: /
     ws-headers:
-      Host: dp1.scproxy.top
+      Host: jp1.biger.club
+    tls: true
+  - name: 美国 惠普HP
+    type: vmess
+    server: hk4.af49c4e4c2ef.sanfen004.me
+    port: 443
+    uuid: fa52cc8f-e648-496b-a9b6-9a4f982829a1
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /zh-cn
+    ws-headers:
+      Host: www.microsoft.com
+    tls: true
+  - name: 美国加利福尼亚州洛杉矶 PetaExpress
+    type: vmess
+    server: 198.2.208.185
+    port: 35402
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: ''
+    ws-headers:
+      Host: ''
+  - name: 日本 东京Linode数据中心
+    type: vmess
+    server: vjp1.0bad.com
+    port: 443
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /chat
+    ws-headers:
+      Host: vjp1.0bad.com
+    tls: true
   - name: 中国 阿里云
     type: vmess
-    server: n1681279112.sxhucjg.cn
+    server: n1681196437.sxhucjg.cn
     port: 443
-    uuid: 0a0acf8e-d147-43a1-86dc-d31fada3972a
+    uuid: 89080029-e31d-4b37-adaf-e3f6a0713df1
     alterId: 0
     cipher: auto
     udp: true
     network: ws
     ws-path: /
     ws-headers:
-      Host: n1681279112.sxhucjg.cn
+      Host: n1681196437.sxhucjg.cn
     tls: true
-  - name: 中国 阿里云 - 2
+  - name: 广东省佛山市 移动
     type: vmess
-    server: n1681962781.edpmvga.cn
-    port: 443
-    uuid: 5abe4cf7-f739-4391-9fb7-d00e1b00f40b
-    alterId: 0
+    server: 25.v2-ray.cyou
+    port: 23625
+    uuid: 0dd19d20-ec86-3680-b256-87237bafa89e
+    alterId: 2
     cipher: auto
     udp: true
     network: ws
     ws-path: /
     ws-headers:
-      Host: n1681962781.edpmvga.cn
-    tls: true
+      Host: 25.v2-ray.cyou
   - name: 美国 CloudFlare节点 - 3
     type: vmess
-    server: cf.noaries.de
+    server: cf.dalazhi.eu.org
     port: 443
-    uuid: 6f1d968e-7f41-41fd-931d-73cf35a9f26b
+    uuid: 7098880e-4ca5-490c-8ff7-8067049b6077
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /aries?ed=2048
+    ws-path: /lgzlvws
     ws-headers:
-      Host: dedipath.cloudflare.quest
+      Host: us.dalazhi.eu.org
     tls: true
-  - name: 江苏省扬州市 移动
+  - name: 广东省揭阳市 移动
     type: vmess
-    server: data-hk-v1.shwjfkw.cn
-    port: 50207
-    uuid: b1478e24-4916-3abe-8f17-15931012ecbe
-    alterId: 1
+    server: 120.240.163.51
+    port: 53173
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
     cipher: auto
     udp: true
-    network: ws
-    ws-path: /hls/cctv5phd.m3u8
-    ws-headers:
-      Host: YTB-awkj
-  - name: 南非 V2CROSS.COM
+    network: tcp
+    ws-headers: {}
+  - name: 美国 加利福尼亚州圣何塞PEG TECH
     type: vmess
-    server: 156.225.67.126
-    port: 48823
-    uuid: 3a3c8a9c-334e-4360-adb8-a80a57ddcbbf
+    server: 142.4.101.166
+    port: 59022
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国加利福尼亚州洛杉矶 PetaExpress - 2
+    type: vmess
+    server: 198.2.198.28
+    port: 41288
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
     udp: true
@@ -95,38 +138,47 @@ proxy-groups:
     proxies:
       - 自动选择
       - 故障转移
-      - 广东省汕头市+移动
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
+      - 美国 惠普HP
+      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 日本 东京Linode数据中心
       - 中国 阿里云
-      - 中国 阿里云 - 2
+      - 广东省佛山市 移动
       - 美国 CloudFlare节点 - 3
-      - 江苏省扬州市 移动
-      - 南非 V2CROSS.COM
+      - 广东省揭阳市 移动
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国加利福尼亚州洛杉矶 PetaExpress - 2
   - name: 自动选择
     type: url-test
     proxies:
-      - 广东省汕头市+移动
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
+      - 美国 惠普HP
+      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 日本 东京Linode数据中心
       - 中国 阿里云
-      - 中国 阿里云 - 2
+      - 广东省佛山市 移动
       - 美国 CloudFlare节点 - 3
-      - 江苏省扬州市 移动
-      - 南非 V2CROSS.COM
+      - 广东省揭阳市 移动
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国加利福尼亚州洛杉矶 PetaExpress - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 广东省汕头市+移动
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
+      - 美国 惠普HP
+      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 日本 东京Linode数据中心
       - 中国 阿里云
-      - 中国 阿里云 - 2
+      - 广东省佛山市 移动
       - 美国 CloudFlare节点 - 3
-      - 江苏省扬州市 移动
-      - 南非 V2CROSS.COM
+      - 广东省揭阳市 移动
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国加利福尼亚州洛杉矶 PetaExpress - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
