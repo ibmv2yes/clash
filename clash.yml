@@ -1,35 +1,22 @@
 proxies:
-  - name: 德国+V2CROSS.COM
+  - name: 湖南省+联通
     type: ss
-    server: 194.15.196.106
-    port: '5001'
-    cipher: aes-256-gcm
-    password: Y6R9pAtvxxzmGC
-  - name: 美国 V2CROSS.COM
+    server: assets.flareai.store
+    port: '15143'
+    cipher: chacha20-ietf-poly1305
+    password: d5dd371c-11db-4cfb-b458-072f0fbd0e18
+  - name: 欧盟 V2CROSS.COM
     type: vmess
-    server: 143.42.173.175
-    port: 443
-    uuid: 927094d3-d678-4763-8591-e240d0bcae87
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /chat
-    ws-headers:
-      Host: ''
-    tls: true
-  - name: 广东省佛山市 移动
-    type: vmess
-    server: d0cd89648587.sanfen004.me
-    port: 16610
-    uuid: e594a27c-1c77-488c-9a04-e833ecc5f0f3
-    alterId: 0
+    server: 45.86.11.147
+    port: 39182
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
     cipher: auto
     udp: true
     network: tcp
-    ws-path: /
+    ws-path: ''
     ws-headers:
-      Host: d0cd89648587.sanfen004.me
+      Host: ''
   - name: 美国 加利福尼亚州洛杉矶Sharktech数据中心
     type: vmess
     server: 64.32.4.59
@@ -42,48 +29,59 @@ proxies:
     ws-path: ''
     ws-headers:
       Host: ''
-  - name: 美国 惠普HP
+  - name: 美国 CloudFlare节点
     type: vmess
-    server: hk4.af49c4e4c2ef.sanfen004.me
-    port: 443
-    uuid: fa52cc8f-e648-496b-a9b6-9a4f982829a1
+    server: cf-lt.sharecentre.online
+    port: 80
+    uuid: 35d1eaf8-53e7-4c8b-92aa-d96a20854e3c
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /zh-cn
+    ws-path: /api/v3/download.getFile
     ws-headers:
-      Host: www.microsoft.com
-    tls: true
+      Host: ssrsub.v03.ssrsub.com
+  - name: 德国 法兰克福Oracle云计算数据中心
+    type: vmess
+    server: 130.61.179.77
+    port: 20574
+    uuid: 87e3048a-5932-457a-84b9-deb51b5c91cd
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: ''
+    ws-headers:
+      Host: ''
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 德国+V2CROSS.COM
-      - 美国 V2CROSS.COM
-      - 广东省佛山市 移动
+      - 湖南省+联通
+      - 欧盟 V2CROSS.COM
       - 美国 加利福尼亚州洛杉矶Sharktech数据中心
-      - 美国 惠普HP
+      - 美国 CloudFlare节点
+      - 德国 法兰克福Oracle云计算数据中心
   - name: 自动选择
     type: url-test
     proxies:
-      - 德国+V2CROSS.COM
-      - 美国 V2CROSS.COM
-      - 广东省佛山市 移动
+      - 湖南省+联通
+      - 欧盟 V2CROSS.COM
       - 美国 加利福尼亚州洛杉矶Sharktech数据中心
-      - 美国 惠普HP
+      - 美国 CloudFlare节点
+      - 德国 法兰克福Oracle云计算数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 德国+V2CROSS.COM
-      - 美国 V2CROSS.COM
-      - 广东省佛山市 移动
+      - 湖南省+联通
+      - 欧盟 V2CROSS.COM
       - 美国 加利福尼亚州洛杉矶Sharktech数据中心
-      - 美国 惠普HP
+      - 美国 CloudFlare节点
+      - 德国 法兰克福Oracle云计算数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
