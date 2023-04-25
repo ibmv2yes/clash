@@ -1,78 +1,56 @@
 proxies:
-  - name: 美国 V2CROSS.COM
-    type: vmess
-    server: lin.musekidan.com
-    port: 443
-    uuid: 942cf9d9-f43a-4916-8a28-dd412a9ad1c8
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /lin
-    ws-headers:
-      Host: lin.untilmu.com
-    tls: true
-  - name: 北美地区+V2CROSS.COM
-    type: ss
-    server: 169.197.141.187
-    port: '3389'
-    cipher: aes-256-gcm
-    password: Y6R9pAtvxxzmGC
   - name: 美国 CloudFlare节点
     type: vmess
-    server: dallas.starsea.vip
-    port: 443
-    uuid: 10735fe6-6c8f-498b-b22e-8e98a57e033d
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: dallas.starsea.vip
-    tls: true
-  - name: 瑞典+V2CROSS.COM
-    type: ss
-    server: 167.88.63.99
-    port: '7307'
-    cipher: aes-256-gcm
-    password: FoOiGlkAA9yPEGP
-  - name: 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
-    type: vmess
-    server: 23.225.33.170
-    port: 56002
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国加利福尼亚州圣何塞 Cloudflare节点
-    type: vmess
-    server: 103.21.244.57
+    server: cf-lt.sharecentre.online
     port: 80
-    uuid: 592c3729-4db5-4bbb-9310-f60bcd88cf8c
+    uuid: 2e496758-950e-4549-8842-d5eec98d9fde
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /blue
+    ws-path: /shirker
     ws-headers:
-      Host: els.vtcss.top
-  - name: 美国+V2CROSS.COM
-    type: trojan
-    server: 138.2.115.240
-    port: '443'
-    password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e
-  - name: 湖南省+联通
-    type: ss
-    server: assets.flareai.store
-    port: '15243'
-    cipher: chacha20-ietf-poly1305
-    password: d5dd371c-11db-4cfb-b458-072f0fbd0e18
+      Host: lv1.sharecentrepro.org
   - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: cfcdn.sanfencdn.net
+    port: 443
+    uuid: da9d5c74-a572-4cf4-a375-19b886f5ffc4
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /zh-cn
+    ws-headers:
+      Host: us2.sanfencdn.net
+    tls: true
+  - name: 美国 惠普HP
+    type: vmess
+    server: hk4.af49c4e4c2ef.sanfen004.me
+    port: 443
+    uuid: fa52cc8f-e648-496b-a9b6-9a4f982829a1
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /zh-cn
+    ws-headers:
+      Host: www.microsoft.com
+    tls: true
+  - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: cf.noaries.de
+    port: 443
+    uuid: 6f1d968e-7f41-41fd-931d-73cf35a9f26b
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /aries?ed=2048
+    ws-headers:
+      Host: dedipath.cloudflare.quest
+    tls: true
+  - name: 美国 CloudFlare节点 - 4
     type: vmess
     server: us2.sanfencdn.net
     port: 443
@@ -84,20 +62,12 @@ proxies:
     ws-path: /zh-cn
     ws-headers: {}
     tls: true
-  - name: 澳大利亚 Pascal Vale Girls Secondary College
-    type: vmess
-    server: cf1.biger.top
-    port: 2087
-    uuid: e0502194-9153-44b4-af3e-704c87b8da00
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: us.biger.top
-    tls: true
-  - name: 美国 CloudFlare节点 - 3
+  - name: 美国加利福尼亚州圣克拉拉+腾讯云
+    type: trojan
+    server: 43.153.34.170
+    port: '8443'
+    password: cf4295378e209e70d12c5bdd017144dfd1c772d3
+  - name: 美国 CloudFlare节点 - 5
     type: vmess
     server: cf.dalazhi.eu.org
     port: 443
@@ -110,76 +80,116 @@ proxies:
     ws-headers:
       Host: us.dalazhi.eu.org
     tls: true
-  - name: 美国 CloudFlare节点 - 4
+  - name: 美国+V2CROSS.COM
+    type: trojan
+    server: 152.70.74.66
+    port: 443?security=tls&type=tcp&headerType=none
+    password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
+  - name: 加拿大+V2CROSS.COM
+    type: ss
+    server: 38.64.138.145
+    port: '4444'
+    cipher: aes-256-gcm
+    password: pKEW8JPByTVTLtM
+  - name: 北美地区+V2CROSS.COM
+    type: ss
+    server: 169.197.141.187
+    port: '5600'
+    cipher: aes-256-gcm
+    password: Y6R9pAtvxxzmGC
+  - name: 美国 CloudFlare节点 - 6
     type: vmess
-    server: cf-lt.sharecentre.online
-    port: 80
-    uuid: 2e496758-950e-4549-8842-d5eec98d9fde
+    server: cf.noaries.de
+    port: 2082
+    uuid: 314c1387-618c-4689-97fc-4bc9a1ae5e05
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /shirker
+    ws-path: /
     ws-headers:
-      Host: lv1.sharecentrepro.org
-  - name: 瑞士+V2CROSS.COM
-    type: trojan
-    server: 195.15.243.26
-    port: 443?security=tls&type=tcp&headerType=none
-    password: '4478'
+      Host: ir2.nmsl.ninja
+  - name: 北美地区+V2CROSS.COM - 2
+    type: ss
+    server: 169.197.141.187
+    port: '3389'
+    cipher: aes-256-gcm
+    password: Y6R9pAtvxxzmGC
+  - name: 湖南省+联通
+    type: ss
+    server: assets.flareai.store
+    port: '15243'
+    cipher: chacha20-ietf-poly1305
+    password: d5dd371c-11db-4cfb-b458-072f0fbd0e18
+  - name: 日本 V2CROSS.COM
+    type: vmess
+    server: hk6.af49c4e4c2ef.sanfen001.pics
+    port: 443
+    uuid: da9d5c74-a572-4cf4-a375-19b886f5ffc4
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /zh-cn
+    ws-headers:
+      Host: www.microsoft.com
+    tls: true
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 V2CROSS.COM
-      - 北美地区+V2CROSS.COM
       - 美国 CloudFlare节点
-      - 瑞典+V2CROSS.COM
-      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
-      - 美国加利福尼亚州圣何塞 Cloudflare节点
-      - 美国+V2CROSS.COM
-      - 湖南省+联通
       - 美国 CloudFlare节点 - 2
-      - 澳大利亚 Pascal Vale Girls Secondary College
+      - 美国 惠普HP
       - 美国 CloudFlare节点 - 3
       - 美国 CloudFlare节点 - 4
-      - 瑞士+V2CROSS.COM
+      - 美国加利福尼亚州圣克拉拉+腾讯云
+      - 美国 CloudFlare节点 - 5
+      - 美国+V2CROSS.COM
+      - 加拿大+V2CROSS.COM
+      - 北美地区+V2CROSS.COM
+      - 美国 CloudFlare节点 - 6
+      - 北美地区+V2CROSS.COM - 2
+      - 湖南省+联通
+      - 日本 V2CROSS.COM
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 V2CROSS.COM
-      - 北美地区+V2CROSS.COM
       - 美国 CloudFlare节点
-      - 瑞典+V2CROSS.COM
-      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
-      - 美国加利福尼亚州圣何塞 Cloudflare节点
-      - 美国+V2CROSS.COM
-      - 湖南省+联通
       - 美国 CloudFlare节点 - 2
-      - 澳大利亚 Pascal Vale Girls Secondary College
+      - 美国 惠普HP
       - 美国 CloudFlare节点 - 3
       - 美国 CloudFlare节点 - 4
-      - 瑞士+V2CROSS.COM
+      - 美国加利福尼亚州圣克拉拉+腾讯云
+      - 美国 CloudFlare节点 - 5
+      - 美国+V2CROSS.COM
+      - 加拿大+V2CROSS.COM
+      - 北美地区+V2CROSS.COM
+      - 美国 CloudFlare节点 - 6
+      - 北美地区+V2CROSS.COM - 2
+      - 湖南省+联通
+      - 日本 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 V2CROSS.COM
-      - 北美地区+V2CROSS.COM
       - 美国 CloudFlare节点
-      - 瑞典+V2CROSS.COM
-      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
-      - 美国加利福尼亚州圣何塞 Cloudflare节点
-      - 美国+V2CROSS.COM
-      - 湖南省+联通
       - 美国 CloudFlare节点 - 2
-      - 澳大利亚 Pascal Vale Girls Secondary College
+      - 美国 惠普HP
       - 美国 CloudFlare节点 - 3
       - 美国 CloudFlare节点 - 4
-      - 瑞士+V2CROSS.COM
+      - 美国加利福尼亚州圣克拉拉+腾讯云
+      - 美国 CloudFlare节点 - 5
+      - 美国+V2CROSS.COM
+      - 加拿大+V2CROSS.COM
+      - 北美地区+V2CROSS.COM
+      - 美国 CloudFlare节点 - 6
+      - 北美地区+V2CROSS.COM - 2
+      - 湖南省+联通
+      - 日本 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
