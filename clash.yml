@@ -1,61 +1,207 @@
 proxies:
+  - name: 南非 V2CROSS.COM
+    type: vmess
+    server: 156.225.67.19
+    port: 37381
+    uuid: a7fa8f14-4fb6-4280-9005-d6bbe99c5da9
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: ''
+    ws-headers:
+      Host: ''
+  - name: 广东省佛山市+移动
+    type: ss
+    server: catlog.flareai.science
+    port: '15443'
+    cipher: chacha20-ietf-poly1305
+    password: d5dd371c-11db-4cfb-b458-072f0fbd0e18
   - name: 北美地区+V2CROSS.COM
+    type: ss
+    server: 169.197.141.187
+    port: '5600'
+    cipher: aes-256-gcm
+    password: Y6R9pAtvxxzmGC
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: cf.dalazhi.eu.org
+    port: 443
+    uuid: 7098880e-4ca5-490c-8ff7-8067049b6077
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /lgzlvws
+    ws-headers:
+      Host: us.dalazhi.eu.org
+    tls: true
+  - name: 北美地区+V2CROSS.COM - 2
+    type: ss
+    server: 169.197.141.187
+    port: '8090'
+    cipher: aes-256-gcm
+    password: PCnnH6SQSnfoS27
+  - name: 美国+V2CROSS.COM
+    type: ss
+    server: 172.99.190.149
+    port: '443'
+    cipher: aes-256-gcm
+    password: pKEW8JPByTVTLtM
+  - name: 美国弗吉尼亚州阿什本 CloudFlare节点
+    type: vmess
+    server: 173.245.49.221
+    port: 80
+    uuid: 592c3729-4db5-4bbb-9310-f60bcd88cf8c
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /blue
+    ws-headers:
+      Host: els.vtcss.top
+  - name: 日本 V2CROSS.COM
+    type: vmess
+    server: hk6.af49c4e4c2ef.sanfen001.pics
+    port: 443
+    uuid: da9d5c74-a572-4cf4-a375-19b886f5ffc4
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /zh-cn
+    ws-headers:
+      Host: www.microsoft.com
+    tls: true
+  - name: 北美地区+V2CROSS.COM - 3
     type: ss
     server: 169.197.141.187
     port: '3389'
     cipher: aes-256-gcm
     password: Y6R9pAtvxxzmGC
-  - name: 北美地区+V2CROSS.COM - 2
+  - name: 湖南省+联通
     type: ss
-    server: 169.197.141.187
-    port: '8118'
+    server: assets.flareai.store
+    port: '15243'
+    cipher: chacha20-ietf-poly1305
+    password: d5dd371c-11db-4cfb-b458-072f0fbd0e18
+  - name: 广东省广州市+移动
+    type: ss
+    server: assets.flareai.site
+    port: '15343'
+    cipher: chacha20-ietf-poly1305
+    password: d5dd371c-11db-4cfb-b458-072f0fbd0e18
+  - name: 南非 V2CROSS.COM - 2
+    type: vmess
+    server: 156.225.67.138
+    port: 49920
+    uuid: 964bf499-9ec0-4378-92b6-87d8d861b2d0
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: ''
+    ws-headers:
+      Host: ''
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: cf.noaries.de
+    port: 443
+    uuid: 6f1d968e-7f41-41fd-931d-73cf35a9f26b
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /aries?ed=2048
+    ws-headers:
+      Host: dedipath.cloudflare.quest
+    tls: true
+  - name: 美国+V2CROSS.COM - 2
+    type: ss
+    server: 172.99.190.149
+    port: '2375'
     cipher: aes-256-gcm
-    password: cdBIDV42DCwnfIN
+    password: faBAoD54k87UJG7
   - name: 法国+OVH数据中心
-    type: trojan
-    server: a1.veryfastnet1.tk
-    port: '32894'
-    password: HchlVCfnXB
-  - name: 法国+OVH数据中心 - 2
     type: trojan
     server: 54.37.185.148
     port: '32894'
     password: HchlVCfnXB
-  - name: 加拿大+V2CROSS.COM
-    type: ss
-    server: 38.64.138.145
-    port: '5001'
-    cipher: aes-256-gcm
-    password: Y6R9pAtvxxzmGC
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: lin.musekidan.com
+    port: 443
+    uuid: 942cf9d9-f43a-4916-8a28-dd412a9ad1c8
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /lin
+    ws-headers:
+      Host: lin.untilmu.com
+    tls: true
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
+      - 南非 V2CROSS.COM
+      - 广东省佛山市+移动
       - 北美地区+V2CROSS.COM
+      - 美国 CloudFlare节点
       - 北美地区+V2CROSS.COM - 2
+      - 美国+V2CROSS.COM
+      - 美国弗吉尼亚州阿什本 CloudFlare节点
+      - 日本 V2CROSS.COM
+      - 北美地区+V2CROSS.COM - 3
+      - 湖南省+联通
+      - 广东省广州市+移动
+      - 南非 V2CROSS.COM - 2
+      - 美国 CloudFlare节点 - 2
+      - 美国+V2CROSS.COM - 2
       - 法国+OVH数据中心
-      - 法国+OVH数据中心 - 2
-      - 加拿大+V2CROSS.COM
+      - 美国 V2CROSS.COM
   - name: 自动选择
     type: url-test
     proxies:
+      - 南非 V2CROSS.COM
+      - 广东省佛山市+移动
       - 北美地区+V2CROSS.COM
+      - 美国 CloudFlare节点
       - 北美地区+V2CROSS.COM - 2
+      - 美国+V2CROSS.COM
+      - 美国弗吉尼亚州阿什本 CloudFlare节点
+      - 日本 V2CROSS.COM
+      - 北美地区+V2CROSS.COM - 3
+      - 湖南省+联通
+      - 广东省广州市+移动
+      - 南非 V2CROSS.COM - 2
+      - 美国 CloudFlare节点 - 2
+      - 美国+V2CROSS.COM - 2
       - 法国+OVH数据中心
-      - 法国+OVH数据中心 - 2
-      - 加拿大+V2CROSS.COM
+      - 美国 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
+      - 南非 V2CROSS.COM
+      - 广东省佛山市+移动
       - 北美地区+V2CROSS.COM
+      - 美国 CloudFlare节点
       - 北美地区+V2CROSS.COM - 2
+      - 美国+V2CROSS.COM
+      - 美国弗吉尼亚州阿什本 CloudFlare节点
+      - 日本 V2CROSS.COM
+      - 北美地区+V2CROSS.COM - 3
+      - 湖南省+联通
+      - 广东省广州市+移动
+      - 南非 V2CROSS.COM - 2
+      - 美国 CloudFlare节点 - 2
+      - 美国+V2CROSS.COM - 2
       - 法国+OVH数据中心
-      - 法国+OVH数据中心 - 2
-      - 加拿大+V2CROSS.COM
+      - 美国 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
