@@ -1,194 +1,225 @@
 proxies:
+  - name: 美国 惠普HP
+    type: vmess
+    server: hk1.b.bd6b6c503c93.sanfen001.pics
+    port: 443
+    uuid: da9d5c74-a572-4cf4-a375-19b886f5ffc4
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /zh-cn
+    ws-headers:
+      Host: www.microsoft.com
+    tls: true
   - name: 加拿大+V2CROSS.COM
     type: ss
     server: 38.64.138.145
-    port: '5004'
+    port: '2376'
     cipher: aes-256-gcm
-    password: g5MeD6Ft3CWlJId
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: cf-lt.sharecentre.online
-    port: 443
-    uuid: 2e496758-950e-4549-8842-d5eec98d9fde
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /shirker
-    ws-headers:
-      Host: lv1.sharecentrepro.org
-    tls: true
+    password: faBAoD54k87UJG7
   - name: 美国+V2CROSS.COM
-    type: trojan
-    server: 152.70.74.66
-    port: 443?security=tls&type=tcp&headerType=none
-    password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
-  - name: 美国+V2CROSS.COM - 2
     type: ss
     server: 172.99.190.149
-    port: '5003'
+    port: '8080'
     cipher: aes-256-gcm
-    password: g5MeD6Ft3CWlJId
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: 172.67.140.193
-    port: 80
-    uuid: 2e496758-950e-4549-8842-d5eec98d9fde
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /shirker
-    ws-headers:
-      Host: uk1.scproxy.top
+    password: KixLvKzwjekG00rm
   - name: 北美地区+V2CROSS.COM
     type: ss
     server: 169.197.141.187
-    port: '8008'
+    port: '8009'
     cipher: aes-256-gcm
     password: XKFKl2rULjIp74
-  - name: 加拿大+V2CROSS.COM - 2
-    type: ss
-    server: 135.181.172.225
-    port: '30705'
-    cipher: aes-256-gcm
-    password: R2Lp3a4tgj
-  - name: 美国 CloudFlare公司CDN节点(shopify)
+  - name: 美国 CloudFlare节点
     type: vmess
-    server: 23.227.38.99
-    port: 443
-    uuid: 86d37526-5758-4cec-862f-df404b313086
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /3G6WPDL7
-    ws-headers:
-      Host: 1.freek1.xyz
-    tls: true
-  - name: 北美地区+V2CROSS.COM - 2
-    type: ss
-    server: 169.197.141.187
-    port: '5600'
-    cipher: aes-256-gcm
-    password: Y6R9pAtvxxzmGC
-  - name: 美国+V2CROSS.COM - 3
-    type: ss
-    server: 172.99.190.149
-    port: '8090'
-    cipher: aes-256-gcm
-    password: PCnnH6SQSnfoS27
-  - name: 新加坡 Amazon数据中心
-    type: vmess
-    server: 52.84.224.60
+    server: cf-lt.sharecentre.online
     port: 80
-    uuid: d4463981-5008-4d08-ff6c-d8114d4ed6bd
+    uuid: 35d1eaf8-53e7-4c8b-92aa-d96a20854e3c
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /ray
+    ws-path: /api/v3/download.getFile
     ws-headers:
-      Host: d59mmf5715v50.cloudfront.net
-  - name: 北美地区+V2CROSS.COM - 3
-    type: ss
-    server: 169.197.141.187
-    port: '6697'
-    cipher: aes-256-gcm
-    password: TEzjfAYq2IjtuoS
-  - name: 加拿大+V2CROSS.COM - 3
-    type: ss
-    server: 38.64.138.145
-    port: '6697'
-    cipher: aes-256-gcm
-    password: TEzjfAYq2IjtuoS
-  - name: 加拿大+V2CROSS.COM - 4
-    type: ss
-    server: 38.64.138.145
-    port: '5000'
-    cipher: aes-256-gcm
-    password: Y6R9pAtvxxzmGC
-  - name: 中国 阿里云
-    type: vmess
-    server: n1681279112.sxhucjg.cn
-    port: 443
-    uuid: 0a0acf8e-d147-43a1-86dc-d31fada3972a
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: n1681279112.sxhucjg.cn
-    tls: true
-  - name: 加拿大+V2CROSS.COM - 5
+      Host: ssrsub.v03.ssrsub.com
+  - name: 加拿大+V2CROSS.COM - 2
     type: ss
     server: 38.64.138.145
     port: '5500'
     cipher: aes-256-gcm
     password: KixLvKzwjekG00rm
+  - name: 上海市浦东新区+电信
+    type: ss
+    server: iplc.us.fp-dns.xyz
+    port: '31402'
+    cipher: chacha20-ietf-poly1305
+    password: f0a9a2e2-0b62-4d46-a97c-c16eb25a88c7
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: cf.noaries.de
+    port: 443
+    uuid: 6f1d968e-7f41-41fd-931d-73cf35a9f26b
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /aries?ed=2048
+    ws-headers:
+      Host: dedipath.iiio.wiki
+    tls: true
+  - name: 法国+OVH数据中心
+    type: trojan
+    server: a1.veryfastnet1.tk
+    port: '32894'
+    password: HchlVCfnXB
+  - name: 美国加利福尼亚州圣何塞 Cloudflare节点
+    type: vmess
+    server: 103.21.244.57
+    port: 80
+    uuid: 592c3729-4db5-4bbb-9310-f60bcd88cf8c
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /blue
+    ws-headers:
+      Host: els.vtcss.top
+  - name: 北美地区+V2CROSS.COM - 2
+    type: ss
+    server: 169.197.141.187
+    port: '443'
+    cipher: aes-256-gcm
+    password: pKEW8JPByTVTLtM
+  - name: 日本 V2CROSS.COM
+    type: vmess
+    server: hk6.af49c4e4c2ef.sanfen001.pics
+    port: 443
+    uuid: da9d5c74-a572-4cf4-a375-19b886f5ffc4
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /zh-cn
+    ws-headers:
+      Host: www.microsoft.com
+    tls: true
+  - name: 美国 惠普HP - 2
+    type: vmess
+    server: hk4.af49c4e4c2ef.sanfen004.me
+    port: 443
+    uuid: fa52cc8f-e648-496b-a9b6-9a4f982829a1
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /zh-cn
+    ws-headers:
+      Host: www.microsoft.com
+    tls: true
+  - name: 美国+V2CROSS.COM - 2
+    type: ss
+    server: 172.99.190.149
+    port: '5004'
+    cipher: aes-256-gcm
+    password: g5MeD6Ft3CWlJId
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: lin.musekidan.com
+    port: 443
+    uuid: 942cf9d9-f43a-4916-8a28-dd412a9ad1c8
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /lin
+    ws-headers:
+      Host: lin.untilmu.com
+    tls: true
+  - name: 北美地区+V2CROSS.COM - 3
+    type: ss
+    server: 169.197.141.187
+    port: '5000'
+    cipher: aes-256-gcm
+    password: Y6R9pAtvxxzmGC
+  - name: 美国+V2CROSS.COM - 3
+    type: trojan
+    server: 152.70.74.66
+    port: 443?security=tls&type=tcp&headerType=none
+    password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
+  - name: 北美地区+V2CROSS.COM - 4
+    type: ss
+    server: 169.197.141.187
+    port: '7306'
+    cipher: aes-256-gcm
+    password: FoOiGlkAA9yPEGP
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
+      - 美国 惠普HP
       - 加拿大+V2CROSS.COM
-      - 美国 CloudFlare节点
       - 美国+V2CROSS.COM
-      - 美国+V2CROSS.COM - 2
-      - 美国 CloudFlare节点 - 2
       - 北美地区+V2CROSS.COM
+      - 美国 CloudFlare节点
       - 加拿大+V2CROSS.COM - 2
-      - 美国 CloudFlare公司CDN节点(shopify)
+      - 上海市浦东新区+电信
+      - 美国 CloudFlare节点 - 2
+      - 法国+OVH数据中心
+      - 美国加利福尼亚州圣何塞 Cloudflare节点
       - 北美地区+V2CROSS.COM - 2
-      - 美国+V2CROSS.COM - 3
-      - 新加坡 Amazon数据中心
+      - 日本 V2CROSS.COM
+      - 美国 惠普HP - 2
+      - 美国+V2CROSS.COM - 2
+      - 美国 V2CROSS.COM
       - 北美地区+V2CROSS.COM - 3
-      - 加拿大+V2CROSS.COM - 3
-      - 加拿大+V2CROSS.COM - 4
-      - 中国 阿里云
-      - 加拿大+V2CROSS.COM - 5
+      - 美国+V2CROSS.COM - 3
+      - 北美地区+V2CROSS.COM - 4
   - name: 自动选择
     type: url-test
     proxies:
+      - 美国 惠普HP
       - 加拿大+V2CROSS.COM
-      - 美国 CloudFlare节点
       - 美国+V2CROSS.COM
-      - 美国+V2CROSS.COM - 2
-      - 美国 CloudFlare节点 - 2
       - 北美地区+V2CROSS.COM
+      - 美国 CloudFlare节点
       - 加拿大+V2CROSS.COM - 2
-      - 美国 CloudFlare公司CDN节点(shopify)
+      - 上海市浦东新区+电信
+      - 美国 CloudFlare节点 - 2
+      - 法国+OVH数据中心
+      - 美国加利福尼亚州圣何塞 Cloudflare节点
       - 北美地区+V2CROSS.COM - 2
-      - 美国+V2CROSS.COM - 3
-      - 新加坡 Amazon数据中心
+      - 日本 V2CROSS.COM
+      - 美国 惠普HP - 2
+      - 美国+V2CROSS.COM - 2
+      - 美国 V2CROSS.COM
       - 北美地区+V2CROSS.COM - 3
-      - 加拿大+V2CROSS.COM - 3
-      - 加拿大+V2CROSS.COM - 4
-      - 中国 阿里云
-      - 加拿大+V2CROSS.COM - 5
+      - 美国+V2CROSS.COM - 3
+      - 北美地区+V2CROSS.COM - 4
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
+      - 美国 惠普HP
       - 加拿大+V2CROSS.COM
-      - 美国 CloudFlare节点
       - 美国+V2CROSS.COM
-      - 美国+V2CROSS.COM - 2
-      - 美国 CloudFlare节点 - 2
       - 北美地区+V2CROSS.COM
+      - 美国 CloudFlare节点
       - 加拿大+V2CROSS.COM - 2
-      - 美国 CloudFlare公司CDN节点(shopify)
+      - 上海市浦东新区+电信
+      - 美国 CloudFlare节点 - 2
+      - 法国+OVH数据中心
+      - 美国加利福尼亚州圣何塞 Cloudflare节点
       - 北美地区+V2CROSS.COM - 2
-      - 美国+V2CROSS.COM - 3
-      - 新加坡 Amazon数据中心
+      - 日本 V2CROSS.COM
+      - 美国 惠普HP - 2
+      - 美国+V2CROSS.COM - 2
+      - 美国 V2CROSS.COM
       - 北美地区+V2CROSS.COM - 3
-      - 加拿大+V2CROSS.COM - 3
-      - 加拿大+V2CROSS.COM - 4
-      - 中国 阿里云
-      - 加拿大+V2CROSS.COM - 5
+      - 美国+V2CROSS.COM - 3
+      - 北美地区+V2CROSS.COM - 4
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
