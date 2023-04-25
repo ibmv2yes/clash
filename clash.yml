@@ -1,35 +1,71 @@
 proxies:
-  - name: 美国 惠普HP
+  - name: 广东省广州市+移动
+    type: ss
+    server: assets.flareai.site
+    port: '15343'
+    cipher: chacha20-ietf-poly1305
+    password: d5dd371c-11db-4cfb-b458-072f0fbd0e18
+  - name: 北美地区+V2CROSS.COM
+    type: ss
+    server: 169.197.141.187
+    port: '5000'
+    cipher: aes-256-gcm
+    password: Y6R9pAtvxxzmGC
+  - name: 加拿大+V2CROSS.COM
+    type: ss
+    server: 38.64.138.145
+    port: '5500'
+    cipher: aes-256-gcm
+    password: KixLvKzwjekG00rm
+  - name: 美国 V2CROSS.COM
     type: vmess
-    server: hk1.b.bd6b6c503c93.sanfen001.pics
-    port: 443
-    uuid: da9d5c74-a572-4cf4-a375-19b886f5ffc4
+    server: 154.7.253.177
+    port: 10000
+    uuid: d5c0cd54-ddd4-11ed-8bb2-9b90de38755c
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /zh-cn
+    ws-path: /vpnjantit
     ws-headers:
-      Host: www.microsoft.com
-    tls: true
-  - name: 加拿大+V2CROSS.COM
-    type: ss
-    server: 38.64.138.145
-    port: '2376'
-    cipher: aes-256-gcm
-    password: faBAoD54k87UJG7
+      Host: 154.7.253.177
   - name: 美国+V2CROSS.COM
     type: ss
     server: 172.99.190.149
+    port: '5004'
+    cipher: aes-256-gcm
+    password: g5MeD6Ft3CWlJId
+  - name: 美国 V2CROSS.COM - 2
+    type: vmess
+    server: vau1.0bad.com
+    port: 443
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /chat
+    ws-headers:
+      Host: vau1.0bad.com
+    tls: true
+  - name: 美国 加利福尼亚州洛杉矶Cogent通信
+    type: vmess
+    server: us2.x898989.xyz
+    port: 50003
+    uuid: 01e07f2e-fc00-45bb-bbf5-547f58316e18
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /aricke.com
+    ws-headers: {}
+    tls: true
+  - name: 北美地区+V2CROSS.COM - 2
+    type: ss
+    server: 169.197.141.187
     port: '8080'
     cipher: aes-256-gcm
     password: KixLvKzwjekG00rm
-  - name: 北美地区+V2CROSS.COM
-    type: ss
-    server: 169.197.141.187
-    port: '8009'
-    cipher: aes-256-gcm
-    password: XKFKl2rULjIp74
   - name: 美国 CloudFlare节点
     type: vmess
     server: cf-lt.sharecentre.online
@@ -42,57 +78,9 @@ proxies:
     ws-path: /api/v3/download.getFile
     ws-headers:
       Host: ssrsub.v03.ssrsub.com
-  - name: 加拿大+V2CROSS.COM - 2
-    type: ss
-    server: 38.64.138.145
-    port: '5500'
-    cipher: aes-256-gcm
-    password: KixLvKzwjekG00rm
-  - name: 上海市浦东新区+电信
-    type: ss
-    server: iplc.us.fp-dns.xyz
-    port: '31402'
-    cipher: chacha20-ietf-poly1305
-    password: f0a9a2e2-0b62-4d46-a97c-c16eb25a88c7
   - name: 美国 CloudFlare节点 - 2
     type: vmess
-    server: cf.noaries.de
-    port: 443
-    uuid: 6f1d968e-7f41-41fd-931d-73cf35a9f26b
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /aries?ed=2048
-    ws-headers:
-      Host: dedipath.iiio.wiki
-    tls: true
-  - name: 法国+OVH数据中心
-    type: trojan
-    server: a1.veryfastnet1.tk
-    port: '32894'
-    password: HchlVCfnXB
-  - name: 美国加利福尼亚州圣何塞 Cloudflare节点
-    type: vmess
-    server: 103.21.244.57
-    port: 80
-    uuid: 592c3729-4db5-4bbb-9310-f60bcd88cf8c
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /blue
-    ws-headers:
-      Host: els.vtcss.top
-  - name: 北美地区+V2CROSS.COM - 2
-    type: ss
-    server: 169.197.141.187
-    port: '443'
-    cipher: aes-256-gcm
-    password: pKEW8JPByTVTLtM
-  - name: 日本 V2CROSS.COM
-    type: vmess
-    server: hk6.af49c4e4c2ef.sanfen001.pics
+    server: us2.sanfencdn.net
     port: 443
     uuid: da9d5c74-a572-4cf4-a375-19b886f5ffc4
     alterId: 0
@@ -101,125 +89,61 @@ proxies:
     network: ws
     ws-path: /zh-cn
     ws-headers:
-      Host: www.microsoft.com
+      Host: ''
     tls: true
-  - name: 美国 惠普HP - 2
-    type: vmess
-    server: hk4.af49c4e4c2ef.sanfen004.me
-    port: 443
-    uuid: fa52cc8f-e648-496b-a9b6-9a4f982829a1
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /zh-cn
-    ws-headers:
-      Host: www.microsoft.com
-    tls: true
-  - name: 美国+V2CROSS.COM - 2
+  - name: 加拿大+V2CROSS.COM - 2
     type: ss
-    server: 172.99.190.149
-    port: '5004'
+    server: 38.64.138.145
+    port: '8008'
     cipher: aes-256-gcm
-    password: g5MeD6Ft3CWlJId
-  - name: 美国 V2CROSS.COM
-    type: vmess
-    server: lin.musekidan.com
-    port: 443
-    uuid: 942cf9d9-f43a-4916-8a28-dd412a9ad1c8
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /lin
-    ws-headers:
-      Host: lin.untilmu.com
-    tls: true
-  - name: 北美地区+V2CROSS.COM - 3
-    type: ss
-    server: 169.197.141.187
-    port: '5000'
-    cipher: aes-256-gcm
-    password: Y6R9pAtvxxzmGC
-  - name: 美国+V2CROSS.COM - 3
-    type: trojan
-    server: 152.70.74.66
-    port: 443?security=tls&type=tcp&headerType=none
-    password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
-  - name: 北美地区+V2CROSS.COM - 4
-    type: ss
-    server: 169.197.141.187
-    port: '7306'
-    cipher: aes-256-gcm
-    password: FoOiGlkAA9yPEGP
+    password: XKFKl2rULjIp74
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 惠普HP
-      - 加拿大+V2CROSS.COM
-      - 美国+V2CROSS.COM
+      - 广东省广州市+移动
       - 北美地区+V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 加拿大+V2CROSS.COM - 2
-      - 上海市浦东新区+电信
-      - 美国 CloudFlare节点 - 2
-      - 法国+OVH数据中心
-      - 美国加利福尼亚州圣何塞 Cloudflare节点
-      - 北美地区+V2CROSS.COM - 2
-      - 日本 V2CROSS.COM
-      - 美国 惠普HP - 2
-      - 美国+V2CROSS.COM - 2
+      - 加拿大+V2CROSS.COM
       - 美国 V2CROSS.COM
-      - 北美地区+V2CROSS.COM - 3
-      - 美国+V2CROSS.COM - 3
-      - 北美地区+V2CROSS.COM - 4
+      - 美国+V2CROSS.COM
+      - 美国 V2CROSS.COM - 2
+      - 美国 加利福尼亚州洛杉矶Cogent通信
+      - 北美地区+V2CROSS.COM - 2
+      - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 - 2
+      - 加拿大+V2CROSS.COM - 2
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 惠普HP
-      - 加拿大+V2CROSS.COM
-      - 美国+V2CROSS.COM
+      - 广东省广州市+移动
       - 北美地区+V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 加拿大+V2CROSS.COM - 2
-      - 上海市浦东新区+电信
-      - 美国 CloudFlare节点 - 2
-      - 法国+OVH数据中心
-      - 美国加利福尼亚州圣何塞 Cloudflare节点
-      - 北美地区+V2CROSS.COM - 2
-      - 日本 V2CROSS.COM
-      - 美国 惠普HP - 2
-      - 美国+V2CROSS.COM - 2
+      - 加拿大+V2CROSS.COM
       - 美国 V2CROSS.COM
-      - 北美地区+V2CROSS.COM - 3
-      - 美国+V2CROSS.COM - 3
-      - 北美地区+V2CROSS.COM - 4
+      - 美国+V2CROSS.COM
+      - 美国 V2CROSS.COM - 2
+      - 美国 加利福尼亚州洛杉矶Cogent通信
+      - 北美地区+V2CROSS.COM - 2
+      - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 - 2
+      - 加拿大+V2CROSS.COM - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 惠普HP
-      - 加拿大+V2CROSS.COM
-      - 美国+V2CROSS.COM
+      - 广东省广州市+移动
       - 北美地区+V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 加拿大+V2CROSS.COM - 2
-      - 上海市浦东新区+电信
-      - 美国 CloudFlare节点 - 2
-      - 法国+OVH数据中心
-      - 美国加利福尼亚州圣何塞 Cloudflare节点
-      - 北美地区+V2CROSS.COM - 2
-      - 日本 V2CROSS.COM
-      - 美国 惠普HP - 2
-      - 美国+V2CROSS.COM - 2
+      - 加拿大+V2CROSS.COM
       - 美国 V2CROSS.COM
-      - 北美地区+V2CROSS.COM - 3
-      - 美国+V2CROSS.COM - 3
-      - 北美地区+V2CROSS.COM - 4
+      - 美国+V2CROSS.COM
+      - 美国 V2CROSS.COM - 2
+      - 美国 加利福尼亚州洛杉矶Cogent通信
+      - 北美地区+V2CROSS.COM - 2
+      - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 - 2
+      - 加拿大+V2CROSS.COM - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
