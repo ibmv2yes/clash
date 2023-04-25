@@ -1,75 +1,139 @@
 proxies:
-  - name: 北美地区+V2CROSS.COM
-    type: ss
-    server: 169.197.141.187
-    port: '7001'
-    cipher: aes-256-gcm
-    password: RexnBgU7EV5ADxG
-  - name: 卢森堡+V2CROSS.COM
-    type: ss
-    server: 46.226.111.148
-    port: '443'
-    cipher: chacha20-ietf-poly1305
-    password: D9rakkd9NJyWhTrSrM6Rbe
-  - name: 法国+OVH数据中心
-    type: trojan
-    server: 54.37.185.148
-    port: '32894'
-    password: HchlVCfnXB
-  - name: 美国加利福尼亚州圣何塞 Cloudflare节点
+  - name: 美国 V2CROSS.COM
     type: vmess
-    server: 103.21.244.244
-    port: 443
-    uuid: 56305337-91a2-4c7b-8c6e-9b54ea2794e7
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /blue
-    ws-headers:
-      Host: jkr.vtcss.top
-    tls: true
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: 141.101.114.2
-    port: 80
-    uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a
+    server: 134.122.23.171
+    port: 30174
+    uuid: 92e920b7-180b-485b-d460-acac23eb77b1
     alterId: 0
     cipher: auto
     udp: true
     network: ws
     ws-path: /
     ws-headers:
-      Host: lg.v2ray20.xyz
+      Host: ''
+  - name: 美国加利福尼亚州洛杉矶 PetaExpress
+    type: vmess
+    server: 198.2.208.181
+    port: 35402
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: www.damonhuang.top
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: aop.ssfree.ru
+    port: 443
+    uuid: 3ce77f66-e382-11ed-b9fe-000017022008
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /getweather
+    ws-headers:
+      Host: ''
+    tls: true
+  - name: 丹麦 V2CROSS.COM
+    type: vmess
+    server: 185.162.228.229
+    port: 8880
+    uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: lg.trump2023.net
+  - name: 澳大利亚 V2CROSS.COM
+    type: vmess
+    server: 140.83.63.38
+    port: 24445
+    uuid: 94c5ef37-4d82-49f9-c624-f01259374a17
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-headers: {}
+  - name: 美国 V2CROSS.COM - 2
+    type: vmess
+    server: 143.42.173.175
+    port: 443
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /chat
+    ws-headers:
+      Host: ''
+    tls: true
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: 172.67.140.193
+    port: 80
+    uuid: 2e496758-950e-4549-8842-d5eec98d9fde
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /shirker
+    ws-headers:
+      Host: uk1.scproxy.top
+  - name: 俄罗斯 V2CROSS.COM
+    type: vmess
+    server: 185.143.220.25
+    port: 443
+    uuid: f28e354e-c2d1-4983-9b07-5acaf1b3b3e5
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /6e9EtZ2dL
+    ws-headers:
+      Host: ''
+    tls: true
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 北美地区+V2CROSS.COM
-      - 卢森堡+V2CROSS.COM
-      - 法国+OVH数据中心
-      - 美国加利福尼亚州圣何塞 Cloudflare节点
+      - 美国 V2CROSS.COM
+      - 美国加利福尼亚州洛杉矶 PetaExpress
       - 美国 CloudFlare节点
+      - 丹麦 V2CROSS.COM
+      - 澳大利亚 V2CROSS.COM
+      - 美国 V2CROSS.COM - 2
+      - 美国 CloudFlare节点 - 2
+      - 俄罗斯 V2CROSS.COM
   - name: 自动选择
     type: url-test
     proxies:
-      - 北美地区+V2CROSS.COM
-      - 卢森堡+V2CROSS.COM
-      - 法国+OVH数据中心
-      - 美国加利福尼亚州圣何塞 Cloudflare节点
+      - 美国 V2CROSS.COM
+      - 美国加利福尼亚州洛杉矶 PetaExpress
       - 美国 CloudFlare节点
+      - 丹麦 V2CROSS.COM
+      - 澳大利亚 V2CROSS.COM
+      - 美国 V2CROSS.COM - 2
+      - 美国 CloudFlare节点 - 2
+      - 俄罗斯 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 北美地区+V2CROSS.COM
-      - 卢森堡+V2CROSS.COM
-      - 法国+OVH数据中心
-      - 美国加利福尼亚州圣何塞 Cloudflare节点
+      - 美国 V2CROSS.COM
+      - 美国加利福尼亚州洛杉矶 PetaExpress
       - 美国 CloudFlare节点
+      - 丹麦 V2CROSS.COM
+      - 澳大利亚 V2CROSS.COM
+      - 美国 V2CROSS.COM - 2
+      - 美国 CloudFlare节点 - 2
+      - 俄罗斯 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
