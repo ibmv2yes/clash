@@ -1,139 +1,111 @@
 proxies:
-  - name: 美国 V2CROSS.COM
+  - name: 澳大利亚 阿里云
     type: vmess
-    server: 134.122.23.171
-    port: 30174
-    uuid: 92e920b7-180b-485b-d460-acac23eb77b1
-    alterId: 0
+    server: 47.74.89.109
+    port: 28056
+    uuid: e2111758-b370-4c0e-8061-0269741a39ef
+    alterId: 64
     cipher: auto
     udp: true
     network: ws
-    ws-path: /
+    ws-path: /aus/getData
     ws-headers:
       Host: ''
-  - name: 美国加利福尼亚州洛杉矶 PetaExpress
+    tls: true
+  - name: 美国+V2CROSS.COM
+    type: trojan
+    server: 152.70.74.66
+    port: 443?security=tls&type=tcp&headerType=none
+    password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
+  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
     type: vmess
-    server: 198.2.208.181
-    port: 35402
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    server: 192.74.228.172
+    port: 42857
+    uuid: 051b844f-efe3-4847-92aa-66b5de0b6d4e
     alterId: 64
     cipher: auto
     udp: true
     network: tcp
     ws-path: /
     ws-headers:
-      Host: www.damonhuang.top
+      Host: ''
   - name: 美国 CloudFlare节点
     type: vmess
-    server: aop.ssfree.ru
+    server: dallas.starsea.vip
     port: 443
-    uuid: 3ce77f66-e382-11ed-b9fe-000017022008
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /getweather
-    ws-headers:
-      Host: ''
-    tls: true
-  - name: 丹麦 V2CROSS.COM
-    type: vmess
-    server: 185.162.228.229
-    port: 8880
-    uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958
+    uuid: 10735fe6-6c8f-498b-b22e-8e98a57e033d
     alterId: 0
     cipher: auto
     udp: true
     network: ws
     ws-path: /
     ws-headers:
-      Host: lg.trump2023.net
-  - name: 澳大利亚 V2CROSS.COM
+      Host: dallas.starsea.vip
+    tls: true
+  - name: 美国+华盛顿Cogent通信公司
+    type: trojan
+    server: 38.150.13.140
+    port: '57063'
+    password: Hu4CFM0wJ3
+  - name: 美国 CloudFlare节点 - 2
     type: vmess
-    server: 140.83.63.38
-    port: 24445
-    uuid: 94c5ef37-4d82-49f9-c624-f01259374a17
-    alterId: 64
+    server: 104.17.3.81
+    port: 80
+    uuid: e40b2de3-b829-4591-a7b6-99d1913f3246
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /worryfree
+    ws-headers:
+      Host: w.evouch77.live
+  - name: 美国 加利福尼亚州洛杉矶IT7网络
+    type: vmess
+    server: 172.93.47.4
+    port: 10512
+    uuid: 58781eee-baba-6666-baba-2ca0ada6568b
+    alterId: 0
     cipher: auto
     udp: true
     network: tcp
-    ws-headers: {}
-  - name: 美国 V2CROSS.COM - 2
-    type: vmess
-    server: 143.42.173.175
-    port: 443
-    uuid: 927094d3-d678-4763-8591-e240d0bcae87
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /chat
+    ws-path: /
     ws-headers:
       Host: ''
-    tls: true
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: 172.67.140.193
-    port: 80
-    uuid: 2e496758-950e-4549-8842-d5eec98d9fde
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /shirker
-    ws-headers:
-      Host: uk1.scproxy.top
-  - name: 俄罗斯 V2CROSS.COM
-    type: vmess
-    server: 185.143.220.25
-    port: 443
-    uuid: f28e354e-c2d1-4983-9b07-5acaf1b3b3e5
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /6e9EtZ2dL
-    ws-headers:
-      Host: ''
-    tls: true
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 V2CROSS.COM
-      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 澳大利亚 阿里云
+      - 美国+V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
       - 美国 CloudFlare节点
-      - 丹麦 V2CROSS.COM
-      - 澳大利亚 V2CROSS.COM
-      - 美国 V2CROSS.COM - 2
+      - 美国+华盛顿Cogent通信公司
       - 美国 CloudFlare节点 - 2
-      - 俄罗斯 V2CROSS.COM
+      - 美国 加利福尼亚州洛杉矶IT7网络
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 V2CROSS.COM
-      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 澳大利亚 阿里云
+      - 美国+V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
       - 美国 CloudFlare节点
-      - 丹麦 V2CROSS.COM
-      - 澳大利亚 V2CROSS.COM
-      - 美国 V2CROSS.COM - 2
+      - 美国+华盛顿Cogent通信公司
       - 美国 CloudFlare节点 - 2
-      - 俄罗斯 V2CROSS.COM
+      - 美国 加利福尼亚州洛杉矶IT7网络
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 V2CROSS.COM
-      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 澳大利亚 阿里云
+      - 美国+V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
       - 美国 CloudFlare节点
-      - 丹麦 V2CROSS.COM
-      - 澳大利亚 V2CROSS.COM
-      - 美国 V2CROSS.COM - 2
+      - 美国+华盛顿Cogent通信公司
       - 美国 CloudFlare节点 - 2
-      - 俄罗斯 V2CROSS.COM
+      - 美国 加利福尼亚州洛杉矶IT7网络
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
