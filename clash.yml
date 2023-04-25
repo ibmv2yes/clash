@@ -1,52 +1,80 @@
 proxies:
-  - name: 中国 阿里云
+  - name: 美国 CloudFlare节点
     type: vmess
-    server: n1681196437.sxhucjg.cn
+    server: cf.dalazhi.eu.org
     port: 443
-    uuid: 89080029-e31d-4b37-adaf-e3f6a0713df1
+    uuid: 7098880e-4ca5-490c-8ff7-8067049b6077
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /lgzlvws
+    ws-headers:
+      Host: us.dalazhi.eu.org
+    tls: true
+  - name: 瑞典 Oracle Corporation
+    type: vmess
+    server: 141.147.153.244
+    port: 41545
+    uuid: d47d7135-0954-46ab-a190-17b6c8630a85
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: 190.93.245.4
+    port: 80
+    uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a
     alterId: 0
     cipher: auto
     udp: true
     network: ws
     ws-path: /
     ws-headers:
-      Host: n1681196437.sxhucjg.cn
-    tls: true
-  - name: 北美地区+V2CROSS.COM
+      Host: lg.v2ray20.xyz
+  - name: 加拿大+V2CROSS.COM
     type: ss
-    server: 169.197.141.187
-    port: '5003'
+    server: 38.64.138.145
+    port: '5001'
     cipher: aes-256-gcm
-    password: g5MeD6Ft3CWlJId
-  - name: 美国 CloudFlare节点
+    password: Y6R9pAtvxxzmGC
+  - name: 美国+V2CROSS.COM
+    type: ss
+    server: 172.99.190.61
+    port: '443'
+    cipher: aes-256-gcm
+    password: pKEW8JPByTVTLtM
+  - name: 意大利+V2CROSS.COM
+    type: trojan
+    server: jgwcc1.gaox.ml
+    port: 443/?sni=jgwcc1.gaox.ml
+    password: 7118b5f4-0ea4-4c11-be7f-11471cb91e4a
+  - name: 美国+V2CROSS.COM - 2
+    type: ss
+    server: 172.99.190.149
+    port: '8090'
+    cipher: aes-256-gcm
+    password: PCnnH6SQSnfoS27
+  - name: 加拿大+V2CROSS.COM - 2
+    type: ss
+    server: 38.64.138.145
+    port: '6697'
+    cipher: aes-256-gcm
+    password: TEzjfAYq2IjtuoS
+  - name: 广东省广州市+移动
+    type: ss
+    server: assets.flareai.site
+    port: '15543'
+    cipher: chacha20-ietf-poly1305
+    password: d5dd371c-11db-4cfb-b458-072f0fbd0e18
+  - name: 美国 加利福尼亚州洛杉矶Sharktech数据中心
     type: vmess
-    server: scaleway.696960.xyz
-    port: 443
-    uuid: e357cd63-f1a5-4c8e-c42e-26da11207fee
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /root/
-    ws-headers: {}
-    tls: true
-  - name: 希腊 V2CROSS.COM
-    type: vmess
-    server: aop.ssfree.ru
-    port: 443
-    uuid: 1212d4c6-e2b9-11ed-8722-000017022008
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /getweather
-    ws-headers:
-      Host: ''
-    tls: true
-  - name: 美国加利福尼亚州洛杉矶 PetaExpress
-    type: vmess
-    server: 198.2.208.181
-    port: 35402
+    server: 170.178.167.140
+    port: 50002
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -54,124 +82,69 @@ proxies:
     network: tcp
     ws-path: /
     ws-headers:
-      Host: www.damonhuang.top
-  - name: 广东省广州市+移动
-    type: ss
-    server: assets.flareai.site
-    port: '15543'
-    cipher: chacha20-ietf-poly1305
-    password: d5dd371c-11db-4cfb-b458-072f0fbd0e18
-  - name: 英国+V2CROSS.COM
-    type: ss
-    server: 145.239.6.202
-    port: '4444'
-    cipher: aes-256-gcm
-    password: pKEW8JPByTVTLtM
-  - name: 加拿大+V2CROSS.COM
-    type: ss
-    server: 135.181.172.225
-    port: '30705'
-    cipher: aes-256-gcm
-    password: R2Lp3a4tgj
-  - name: 美国 惠普HP
-    type: vmess
-    server: hk4.af49c4e4c2ef.sanfen004.me
-    port: 443
-    uuid: fa52cc8f-e648-496b-a9b6-9a4f982829a1
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /zh-cn
-    ws-headers:
-      Host: www.microsoft.com
-    tls: true
-  - name: 美国+V2CROSS.COM
-    type: ss
-    server: 172.99.190.149
-    port: '2375'
-    cipher: aes-256-gcm
-    password: faBAoD54k87UJG7
-  - name: 加拿大+V2CROSS.COM - 2
-    type: ss
-    server: 38.64.138.145
-    port: '8009'
-    cipher: aes-256-gcm
-    password: XKFKl2rULjIp74
-  - name: 加拿大+V2CROSS.COM - 3
-    type: ss
-    server: 38.64.138.145
-    port: '3306'
-    cipher: aes-256-gcm
-    password: Y6R9pAtvxxzmGC
-  - name: 美国+V2CROSS.COM - 2
-    type: ss
-    server: 172.99.190.149
-    port: '5003'
-    cipher: aes-256-gcm
-    password: g5MeD6Ft3CWlJId
-  - name: 北美地区+V2CROSS.COM - 2
+      Host: ''
+  - name: 北美地区+V2CROSS.COM
     type: ss
     server: 169.197.141.187
-    port: '8080'
+    port: '6697'
     cipher: aes-256-gcm
-    password: KixLvKzwjekG00rm
+    password: TEzjfAYq2IjtuoS
+  - name: 美国+V2CROSS.COM - 3
+    type: ss
+    server: 172.99.190.149
+    port: '9101'
+    cipher: aes-256-gcm
+    password: e4FCWrgpkji3QY
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 中国 阿里云
-      - 北美地区+V2CROSS.COM
       - 美国 CloudFlare节点
-      - 希腊 V2CROSS.COM
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 广东省广州市+移动
-      - 英国+V2CROSS.COM
+      - 瑞典 Oracle Corporation
+      - 美国 CloudFlare节点 - 2
       - 加拿大+V2CROSS.COM
-      - 美国 惠普HP
       - 美国+V2CROSS.COM
-      - 加拿大+V2CROSS.COM - 2
-      - 加拿大+V2CROSS.COM - 3
+      - 意大利+V2CROSS.COM
       - 美国+V2CROSS.COM - 2
-      - 北美地区+V2CROSS.COM - 2
+      - 加拿大+V2CROSS.COM - 2
+      - 广东省广州市+移动
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 北美地区+V2CROSS.COM
+      - 美国+V2CROSS.COM - 3
   - name: 自动选择
     type: url-test
     proxies:
-      - 中国 阿里云
-      - 北美地区+V2CROSS.COM
       - 美国 CloudFlare节点
-      - 希腊 V2CROSS.COM
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 广东省广州市+移动
-      - 英国+V2CROSS.COM
+      - 瑞典 Oracle Corporation
+      - 美国 CloudFlare节点 - 2
       - 加拿大+V2CROSS.COM
-      - 美国 惠普HP
       - 美国+V2CROSS.COM
-      - 加拿大+V2CROSS.COM - 2
-      - 加拿大+V2CROSS.COM - 3
+      - 意大利+V2CROSS.COM
       - 美国+V2CROSS.COM - 2
-      - 北美地区+V2CROSS.COM - 2
+      - 加拿大+V2CROSS.COM - 2
+      - 广东省广州市+移动
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 北美地区+V2CROSS.COM
+      - 美国+V2CROSS.COM - 3
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 中国 阿里云
-      - 北美地区+V2CROSS.COM
       - 美国 CloudFlare节点
-      - 希腊 V2CROSS.COM
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 广东省广州市+移动
-      - 英国+V2CROSS.COM
+      - 瑞典 Oracle Corporation
+      - 美国 CloudFlare节点 - 2
       - 加拿大+V2CROSS.COM
-      - 美国 惠普HP
       - 美国+V2CROSS.COM
-      - 加拿大+V2CROSS.COM - 2
-      - 加拿大+V2CROSS.COM - 3
+      - 意大利+V2CROSS.COM
       - 美国+V2CROSS.COM - 2
-      - 北美地区+V2CROSS.COM - 2
+      - 加拿大+V2CROSS.COM - 2
+      - 广东省广州市+移动
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 北美地区+V2CROSS.COM
+      - 美国+V2CROSS.COM - 3
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
