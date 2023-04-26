@@ -1,40 +1,61 @@
 proxies:
-  - name: 美国+V2CROSS.COM
-    type: trojan
-    server: 152.70.74.66
-    port: 443?security=tls&type=tcp&headerType=none
-    password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
-  - name: 爱尔兰 V2CROSS.COM
-    type: vmess
-    server: vuk1.0bad.com
-    port: 443
-    uuid: 927094d3-d678-4763-8591-e240d0bcae87
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /chat
-    ws-headers:
-      Host: vuk1.0bad.com
-    tls: true
-  - name: 瑞士+V2CROSS.COM
-    type: trojan
-    server: 195.15.243.26
-    port: 443?security=tls&type=tcp&headerType=none
-    password: '4478'
   - name: 美国 CloudFlare节点
     type: vmess
-    server: fr.opencc.eu.org
+    server: surongwei.eu.org
     port: 443
-    uuid: 00ff0579-52ec-474e-bb35-4d639769460e
+    uuid: 6093eefb-7ab6-41df-aba0-d5fa58147e10
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /game
-    ws-headers: {}
+    ws-path: /reffs7y26g0ua
+    ws-headers:
+      Host: ''
     tls: true
+  - name: 美国加利福尼亚州圣克拉拉+腾讯云
+    type: trojan
+    server: 43.153.34.170
+    port: '8443'
+    password: cf4295378e209e70d12c5bdd017144dfd1c772d3
   - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: cf.dalazhi.eu.org
+    port: 443
+    uuid: 7098880e-4ca5-490c-8ff7-8067049b6077
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /lgzlvws
+    ws-headers:
+      Host: us.dalazhi.eu.org
+    tls: true
+  - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: cf.noaries.de
+    port: 2082
+    uuid: 314c1387-618c-4689-97fc-4bc9a1ae5e05
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: ir2.nmsl.ninja
+  - name: 俄罗斯 V2CROSS.COM
+    type: vmess
+    server: 185.143.220.25
+    port: 443
+    uuid: f28e354e-c2d1-4983-9b07-5acaf1b3b3e5
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /6e9EtZ2dL
+    ws-headers:
+      Host: ''
+    tls: true
+  - name: 美国 CloudFlare节点 - 4
     type: vmess
     server: cf-lt.sharecentre.online
     port: 443
@@ -47,35 +68,79 @@ proxies:
     ws-headers:
       Host: lv1.sharecentrepro.org
     tls: true
+  - name: 美国 CloudFlare节点 - 5
+    type: vmess
+    server: surongwei.eu.org
+    port: 443
+    uuid: 6093eefb-7ab6-41df-aba0-d5fa58147e10
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /reffs7y26g0ua
+    ws-headers:
+      Host: surongwei.eu.org
+    tls: true
+  - name: 广东省广州市+移动
+    type: ss
+    server: assets.flareai.site
+    port: '15443'
+    cipher: chacha20-ietf-poly1305
+    password: d5dd371c-11db-4cfb-b458-072f0fbd0e18
+  - name: 美国 CloudFlare节点 - 6
+    type: vmess
+    server: cf.dalazhi.eu.org
+    port: 443
+    uuid: 7098880e-4ca5-490c-8ff7-8067049b6077
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /lgzlvws
+    ws-headers:
+      Host: us.dalazhi.eu.org
+    tls: true
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国+V2CROSS.COM
-      - 爱尔兰 V2CROSS.COM
-      - 瑞士+V2CROSS.COM
       - 美国 CloudFlare节点
+      - 美国加利福尼亚州圣克拉拉+腾讯云
       - 美国 CloudFlare节点 - 2
+      - 美国 CloudFlare节点 - 3
+      - 俄罗斯 V2CROSS.COM
+      - 美国 CloudFlare节点 - 4
+      - 美国 CloudFlare节点 - 5
+      - 广东省广州市+移动
+      - 美国 CloudFlare节点 - 6
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国+V2CROSS.COM
-      - 爱尔兰 V2CROSS.COM
-      - 瑞士+V2CROSS.COM
       - 美国 CloudFlare节点
+      - 美国加利福尼亚州圣克拉拉+腾讯云
       - 美国 CloudFlare节点 - 2
+      - 美国 CloudFlare节点 - 3
+      - 俄罗斯 V2CROSS.COM
+      - 美国 CloudFlare节点 - 4
+      - 美国 CloudFlare节点 - 5
+      - 广东省广州市+移动
+      - 美国 CloudFlare节点 - 6
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国+V2CROSS.COM
-      - 爱尔兰 V2CROSS.COM
-      - 瑞士+V2CROSS.COM
       - 美国 CloudFlare节点
+      - 美国加利福尼亚州圣克拉拉+腾讯云
       - 美国 CloudFlare节点 - 2
+      - 美国 CloudFlare节点 - 3
+      - 俄罗斯 V2CROSS.COM
+      - 美国 CloudFlare节点 - 4
+      - 美国 CloudFlare节点 - 5
+      - 广东省广州市+移动
+      - 美国 CloudFlare节点 - 6
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
