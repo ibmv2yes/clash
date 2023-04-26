@@ -1,20 +1,8 @@
 proxies:
-  - name: 南非 V2CROSS.COM
+  - name: 欧盟 V2CROSS.COM
     type: vmess
-    server: 156.225.67.70
-    port: 43553
-    uuid: 11117d4c-3b6a-4e76-8bcc-2b41b3e9ca93
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: ''
-    ws-headers:
-      Host: ''
-  - name: 荷兰 V2CROSS.COM
-    type: vmess
-    server: 46.182.107.15
-    port: 33920
+    server: 45.86.11.176
+    port: 59102
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -23,62 +11,77 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 英国 V2CROSS.COM
-    type: vmess
-    server: 87.254.31.229
-    port: 23797
-    uuid: 9a765244-583e-44c7-810a-ed011c98abaa
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /uk1/getData
-    ws-headers:
-      Host: ''
-    tls: true
-  - name: 美国加利福尼亚州圣克拉拉+腾讯云
-    type: trojan
-    server: 43-153-34-170.ipv4.rush.ml
-    port: '8443'
-    password: cf4295378e209e70d12c5bdd017144dfd1c772d3
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: cf.noaries.de
-    port: 2082
-    uuid: 314c1387-618c-4689-97fc-4bc9a1ae5e05
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: ir2.nmsl.ninja
-  - name: 美国加利福尼亚州圣克拉拉+腾讯云 - 2
-    type: trojan
-    server: 43.153.34.170
-    port: '8443'
-    password: cf4295378e209e70d12c5bdd017144dfd1c772d3
   - name: 瑞士+V2CROSS.COM
     type: trojan
     server: 195.15.243.26
     port: 443?security=tls&type=tcp&headerType=none
     password: '4478'
-  - name: 美国 V2CROSS.COM
+  - name: 美国 CloudFlare节点
     type: vmess
-    server: 143.42.99.183
+    server: dallas.starsea.vip
     port: 443
-    uuid: 927094d3-d678-4763-8591-e240d0bcae87
+    uuid: 10735fe6-6c8f-498b-b22e-8e98a57e033d
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /chat
     ws-headers: {}
+    tls: true
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: cdnjs.com
+    port: 443
+    uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /speedtest
+    ws-headers:
+      Host: Kansas.kotick.site
+    tls: true
+  - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: 104.17.14.48
+    port: 443
+    uuid: 083a9d0b-11fb-4b3d-ad57-7ace252bb51b
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /vmess
+    ws-headers:
+      Host: fr-v.sshmax.xyz
+    tls: true
+  - name: 美国 CloudFlare节点 - 4
+    type: vmess
+    server: 4.mamadcucu.com
+    port: 8880
+    uuid: 51ba5a9a-4b7c-4c62-b4ae-0e53ec8d3024
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /ArsalanTauBot
+    ws-headers:
+      Host: 4.mamadcucu.com
+  - name: 俄罗斯 V2CROSS.COM
+    type: vmess
+    server: 185.143.220.25
+    port: 443
+    uuid: f28e354e-c2d1-4983-9b07-5acaf1b3b3e5
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /6e9EtZ2dL
+    ws-headers:
+      Host: ''
     tls: true
   - name: 美国 加利福尼亚州圣何塞PEG TECH
     type: vmess
-    server: 142.4.125.53
-    port: 50044
+    server: 142.4.97.76
+    port: 44942
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -87,62 +90,44 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: fr.opencc.eu.org
-    port: 443
-    uuid: 00ff0579-52ec-474e-bb35-4d639769460e
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /game
-    ws-headers: {}
-    tls: true
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 南非 V2CROSS.COM
-      - 荷兰 V2CROSS.COM
-      - 英国 V2CROSS.COM
-      - 美国加利福尼亚州圣克拉拉+腾讯云
-      - 美国 CloudFlare节点
-      - 美国加利福尼亚州圣克拉拉+腾讯云 - 2
+      - 欧盟 V2CROSS.COM
       - 瑞士+V2CROSS.COM
-      - 美国 V2CROSS.COM
-      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
+      - 美国 CloudFlare节点 - 3
+      - 美国 CloudFlare节点 - 4
+      - 俄罗斯 V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH
   - name: 自动选择
     type: url-test
     proxies:
-      - 南非 V2CROSS.COM
-      - 荷兰 V2CROSS.COM
-      - 英国 V2CROSS.COM
-      - 美国加利福尼亚州圣克拉拉+腾讯云
-      - 美国 CloudFlare节点
-      - 美国加利福尼亚州圣克拉拉+腾讯云 - 2
+      - 欧盟 V2CROSS.COM
       - 瑞士+V2CROSS.COM
-      - 美国 V2CROSS.COM
-      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
+      - 美国 CloudFlare节点 - 3
+      - 美国 CloudFlare节点 - 4
+      - 俄罗斯 V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 南非 V2CROSS.COM
-      - 荷兰 V2CROSS.COM
-      - 英国 V2CROSS.COM
-      - 美国加利福尼亚州圣克拉拉+腾讯云
-      - 美国 CloudFlare节点
-      - 美国加利福尼亚州圣克拉拉+腾讯云 - 2
+      - 欧盟 V2CROSS.COM
       - 瑞士+V2CROSS.COM
-      - 美国 V2CROSS.COM
-      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
+      - 美国 CloudFlare节点 - 3
+      - 美国 CloudFlare节点 - 4
+      - 俄罗斯 V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
