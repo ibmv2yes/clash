@@ -1,146 +1,110 @@
 proxies:
+  - name: 美国加利福尼亚州圣何塞 Cloudflare节点
+    type: vmess
+    server: 103.21.244.57
+    port: 80
+    uuid: 592c3729-4db5-4bbb-9310-f60bcd88cf8c
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /blue
+    ws-headers:
+      Host: els.vtcss.top
+  - name: 日本 V2CROSS.COM
+    type: vmess
+    server: 43.198.97.210
+    port: 443
+    uuid: deb441cd-57ca-4d14-9c3e-b43cf62c7573
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /zh-cn
+    ws-headers:
+      Host: www.microsoft.com
+    tls: true
   - name: 美国 CloudFlare节点
     type: vmess
-    server: surongwei.eu.org
+    server: fr.opencc.eu.org
     port: 443
-    uuid: 6093eefb-7ab6-41df-aba0-d5fa58147e10
+    uuid: 00ff0579-52ec-474e-bb35-4d639769460e
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /reffs7y26g0ua
-    ws-headers:
-      Host: ''
+    ws-path: /game
+    ws-headers: {}
     tls: true
-  - name: 美国加利福尼亚州圣克拉拉+腾讯云
-    type: trojan
-    server: 43.153.34.170
-    port: '8443'
-    password: cf4295378e209e70d12c5bdd017144dfd1c772d3
-  - name: 美国 CloudFlare节点 - 2
+  - name: 立陶宛 V2CROSS.COM
     type: vmess
-    server: cf.dalazhi.eu.org
+    server: mci.bamarambash.monster
     port: 443
-    uuid: 7098880e-4ca5-490c-8ff7-8067049b6077
+    uuid: 8f74ec8a-971c-11ed-a8fc-0242ac120002
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /lgzlvws
+    ws-path: /db698b16-d216-11ed-8e14-5ad705867cff
     ws-headers:
-      Host: us.dalazhi.eu.org
+      Host: db698b16-d216-11ed-8e14-5ad705867cff.asmandll.com
     tls: true
-  - name: 美国 CloudFlare节点 - 3
+  - name: 荷兰 V2CROSS.COM
     type: vmess
-    server: cf.noaries.de
-    port: 2082
-    uuid: 314c1387-618c-4689-97fc-4bc9a1ae5e05
-    alterId: 0
+    server: 46.182.107.15
+    port: 33920
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
     cipher: auto
     udp: true
-    network: ws
+    network: tcp
     ws-path: /
     ws-headers:
-      Host: ir2.nmsl.ninja
-  - name: 俄罗斯 V2CROSS.COM
+      Host: ''
+  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
     type: vmess
-    server: 185.143.220.25
-    port: 443
-    uuid: f28e354e-c2d1-4983-9b07-5acaf1b3b3e5
-    alterId: 0
+    server: 192.74.228.172
+    port: 42857
+    uuid: 051b844f-efe3-4847-92aa-66b5de0b6d4e
+    alterId: 64
     cipher: auto
     udp: true
-    network: ws
-    ws-path: /6e9EtZ2dL
+    network: tcp
+    ws-path: ''
     ws-headers:
       Host: ''
-    tls: true
-  - name: 美国 CloudFlare节点 - 4
-    type: vmess
-    server: cf-lt.sharecentre.online
-    port: 443
-    uuid: 2e496758-950e-4549-8842-d5eec98d9fde
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /shirker
-    ws-headers:
-      Host: lv1.sharecentrepro.org
-    tls: true
-  - name: 美国 CloudFlare节点 - 5
-    type: vmess
-    server: surongwei.eu.org
-    port: 443
-    uuid: 6093eefb-7ab6-41df-aba0-d5fa58147e10
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /reffs7y26g0ua
-    ws-headers:
-      Host: surongwei.eu.org
-    tls: true
-  - name: 广东省广州市+移动
-    type: ss
-    server: assets.flareai.site
-    port: '15443'
-    cipher: chacha20-ietf-poly1305
-    password: d5dd371c-11db-4cfb-b458-072f0fbd0e18
-  - name: 美国 CloudFlare节点 - 6
-    type: vmess
-    server: cf.dalazhi.eu.org
-    port: 443
-    uuid: 7098880e-4ca5-490c-8ff7-8067049b6077
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /lgzlvws
-    ws-headers:
-      Host: us.dalazhi.eu.org
-    tls: true
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
+      - 美国加利福尼亚州圣何塞 Cloudflare节点
+      - 日本 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 美国加利福尼亚州圣克拉拉+腾讯云
-      - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
-      - 俄罗斯 V2CROSS.COM
-      - 美国 CloudFlare节点 - 4
-      - 美国 CloudFlare节点 - 5
-      - 广东省广州市+移动
-      - 美国 CloudFlare节点 - 6
+      - 立陶宛 V2CROSS.COM
+      - 荷兰 V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
   - name: 自动选择
     type: url-test
     proxies:
+      - 美国加利福尼亚州圣何塞 Cloudflare节点
+      - 日本 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 美国加利福尼亚州圣克拉拉+腾讯云
-      - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
-      - 俄罗斯 V2CROSS.COM
-      - 美国 CloudFlare节点 - 4
-      - 美国 CloudFlare节点 - 5
-      - 广东省广州市+移动
-      - 美国 CloudFlare节点 - 6
+      - 立陶宛 V2CROSS.COM
+      - 荷兰 V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
+      - 美国加利福尼亚州圣何塞 Cloudflare节点
+      - 日本 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 美国加利福尼亚州圣克拉拉+腾讯云
-      - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
-      - 俄罗斯 V2CROSS.COM
-      - 美国 CloudFlare节点 - 4
-      - 美国 CloudFlare节点 - 5
-      - 广东省广州市+移动
-      - 美国 CloudFlare节点 - 6
+      - 立陶宛 V2CROSS.COM
+      - 荷兰 V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
