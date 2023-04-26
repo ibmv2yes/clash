@@ -1,31 +1,20 @@
 proxies:
   - name: 美国 CloudFlare节点
     type: vmess
-    server: ams1.looooooongnet.lol
-    port: 443
-    uuid: cb19e01e-6832-46c7-92c2-1fb93f09e1a8
+    server: 172.67.140.193
+    port: 80
+    uuid: 2e496758-950e-4549-8842-d5eec98d9fde
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: ''
+    ws-path: /shirker
     ws-headers:
-      Host: ''
-    tls: true
-  - name: 法国+OVH数据中心
-    type: trojan
-    server: a1.veryfastnet1.tk
-    port: 32894?security=tls&type=tcp&headerType=none
-    password: HchlVCfnXB
-  - name: 加拿大+V2CROSS.COM
-    type: trojan
-    server: 805tw.ljydw.top
-    port: '443'
-    password: cd22e9c5-1fdf-4ffc-86a9-c704d94b05d4
+      Host: uk1.scproxy.top
   - name: 美国 CloudFlare节点 - 2
     type: vmess
     server: cf-lt.sharecentre.online
-    port: 443
+    port: 80
     uuid: 2e496758-950e-4549-8842-d5eec98d9fde
     alterId: 0
     cipher: auto
@@ -33,32 +22,76 @@ proxies:
     network: ws
     ws-path: /shirker
     ws-headers:
-      Host: lv1.sharecentrepro.org
+      Host: nl.sharecentrepro.com
+  - name: 美国 加利福尼亚州洛杉矶Krypt数据中心
+    type: vmess
+    server: 174.139.126.251
+    port: 45410
+    uuid: 51695a30-3915-4b9e-9a7f-bc10b5033a41
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /us15/getData
+    ws-headers:
+      Host: ''
     tls: true
   - name: 美国 CloudFlare节点 - 3
     type: vmess
-    server: cf-lt.sharecentre.online
-    port: 80
-    uuid: 2e496758-950e-4549-8842-d5eec98d9fde
+    server: 104.17.14.48
+    port: 443
+    uuid: 083a9d0b-11fb-4b3d-ad57-7ace252bb51b
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /shirker
+    ws-path: /vmess
     ws-headers:
-      Host: lv2.sharecentrepro.org
+      Host: fr-v.sshmax.xyz
+    tls: true
+  - name: 湖南省+联通
+    type: ss
+    server: assets.flareai.store
+    port: '15143'
+    cipher: chacha20-ietf-poly1305
+    password: d5dd371c-11db-4cfb-b458-072f0fbd0e18
+  - name: 澳大利亚 Langwarrin Secondary College
+    type: vmess
+    server: cf5.biger.club
+    port: 2087
+    uuid: 6fdc56eb-ed51-418c-975b-33fcbe752908
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: us.biger.club
+    tls: true
   - name: 美国 CloudFlare节点 - 4
     type: vmess
-    server: 104.17.3.81
+    server: hax2.freeair.eu.org
     port: 80
-    uuid: e40b2de3-b829-4591-a7b6-99d1913f3246
+    uuid: cb1402b7-2a15-4978-ec7d-dc19d9b5586d
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /worryfree
+    ws-path: /hax2
     ws-headers:
-      Host: w.evouch77.live
+      Host: ''
+  - name: 台湾省新北市 中华电信
+    type: vmess
+    server: hinet1261.gfwisbest.xyz
+    port: 224
+    uuid: 2285133e-b9ba-3fb5-a246-9c7ddcc2cd7a
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
 proxy-groups:
   - name: Free-servers
     type: select
@@ -66,31 +99,37 @@ proxy-groups:
       - 自动选择
       - 故障转移
       - 美国 CloudFlare节点
-      - 法国+OVH数据中心
-      - 加拿大+V2CROSS.COM
       - 美国 CloudFlare节点 - 2
+      - 美国 加利福尼亚州洛杉矶Krypt数据中心
       - 美国 CloudFlare节点 - 3
+      - 湖南省+联通
+      - 澳大利亚 Langwarrin Secondary College
       - 美国 CloudFlare节点 - 4
+      - 台湾省新北市 中华电信
   - name: 自动选择
     type: url-test
     proxies:
       - 美国 CloudFlare节点
-      - 法国+OVH数据中心
-      - 加拿大+V2CROSS.COM
       - 美国 CloudFlare节点 - 2
+      - 美国 加利福尼亚州洛杉矶Krypt数据中心
       - 美国 CloudFlare节点 - 3
+      - 湖南省+联通
+      - 澳大利亚 Langwarrin Secondary College
       - 美国 CloudFlare节点 - 4
+      - 台湾省新北市 中华电信
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
       - 美国 CloudFlare节点
-      - 法国+OVH数据中心
-      - 加拿大+V2CROSS.COM
       - 美国 CloudFlare节点 - 2
+      - 美国 加利福尼亚州洛杉矶Krypt数据中心
       - 美国 CloudFlare节点 - 3
+      - 湖南省+联通
+      - 澳大利亚 Langwarrin Secondary College
       - 美国 CloudFlare节点 - 4
+      - 台湾省新北市 中华电信
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
