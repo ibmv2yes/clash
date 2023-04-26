@@ -1,66 +1,4 @@
 proxies:
-  - name: 美国加利福尼亚州圣何塞 Cloudflare节点
-    type: vmess
-    server: 103.21.244.57
-    port: 80
-    uuid: 592c3729-4db5-4bbb-9310-f60bcd88cf8c
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /blue
-    ws-headers:
-      Host: els.vtcss.top
-  - name: 日本 V2CROSS.COM
-    type: vmess
-    server: 43.198.97.210
-    port: 443
-    uuid: deb441cd-57ca-4d14-9c3e-b43cf62c7573
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /zh-cn
-    ws-headers:
-      Host: www.microsoft.com
-    tls: true
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: fr.opencc.eu.org
-    port: 443
-    uuid: 00ff0579-52ec-474e-bb35-4d639769460e
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /game
-    ws-headers: {}
-    tls: true
-  - name: 立陶宛 V2CROSS.COM
-    type: vmess
-    server: mci.bamarambash.monster
-    port: 443
-    uuid: 8f74ec8a-971c-11ed-a8fc-0242ac120002
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /db698b16-d216-11ed-8e14-5ad705867cff
-    ws-headers:
-      Host: db698b16-d216-11ed-8e14-5ad705867cff.asmandll.com
-    tls: true
-  - name: 荷兰 V2CROSS.COM
-    type: vmess
-    server: 46.182.107.15
-    port: 33920
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
   - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
     type: vmess
     server: 192.74.228.172
@@ -73,38 +11,109 @@ proxies:
     ws-path: ''
     ws-headers:
       Host: ''
+  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心 - 2
+    type: vmess
+    server: 192.74.228.172
+    port: 42857
+    uuid: 051b844f-efe3-4847-92aa-66b5de0b6d4e
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: cf-lt.sharecentre.online
+    port: 443
+    uuid: 2e496758-950e-4549-8842-d5eec98d9fde
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /shirker
+    ws-headers:
+      Host: lv1.sharecentrepro.org
+    tls: true
+  - name: 广东省广州市+UCloud
+    type: trojan
+    server: iplc-enter-tw-xe.fib-sys.xyz
+    port: '11451'
+    password: 11a4e5be-3c87-37d2-aac8-00b85ef0fcdc
+  - name: 美国 CloudFlare公司CDN节点(shopify)
+    type: vmess
+    server: 23.227.38.99
+    port: 443
+    uuid: 86d37526-5758-4cec-862f-df404b313086
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /3G6WPDL7
+    ws-headers:
+      Host: 1.freek1.xyz
+    tls: true
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: cf-lt.sharecentre.online
+    port: 443
+    uuid: 2e496758-950e-4549-8842-d5eec98d9fde
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /shirker
+    ws-headers:
+      Host: lv1.sharecentrepro.org
+    tls: true
+  - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: fr.seeworld.pro
+    port: 443
+    uuid: 00ff0579-52ec-474e-bb35-4d639769460e
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /retreyte6
+    ws-headers: {}
+    tls: true
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国加利福尼亚州圣何塞 Cloudflare节点
-      - 日本 V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 立陶宛 V2CROSS.COM
-      - 荷兰 V2CROSS.COM
       - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心 - 2
+      - 美国 CloudFlare节点
+      - 广东省广州市+UCloud
+      - 美国 CloudFlare公司CDN节点(shopify)
+      - 美国 CloudFlare节点 - 2
+      - 美国 CloudFlare节点 - 3
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国加利福尼亚州圣何塞 Cloudflare节点
-      - 日本 V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 立陶宛 V2CROSS.COM
-      - 荷兰 V2CROSS.COM
       - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心 - 2
+      - 美国 CloudFlare节点
+      - 广东省广州市+UCloud
+      - 美国 CloudFlare公司CDN节点(shopify)
+      - 美国 CloudFlare节点 - 2
+      - 美国 CloudFlare节点 - 3
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国加利福尼亚州圣何塞 Cloudflare节点
-      - 日本 V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 立陶宛 V2CROSS.COM
-      - 荷兰 V2CROSS.COM
       - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心 - 2
+      - 美国 CloudFlare节点
+      - 广东省广州市+UCloud
+      - 美国 CloudFlare公司CDN节点(shopify)
+      - 美国 CloudFlare节点 - 2
+      - 美国 CloudFlare节点 - 3
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
