@@ -1,60 +1,17 @@
 proxies:
   - name: 美国 CloudFlare节点
     type: vmess
-    server: d.pgypgykmoljklj.xyz
-    port: 443
-    uuid: fa4cb529-3ac9-4268-bb04-ed4253813508
+    server: l1.zanbil-mo.cf
+    port: 2095
+    uuid: 56fc3d21-4a2f-4f68-8f78-eebd6a051101
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /mR17oBKzZ7
-    ws-headers: {}
-    tls: true
-  - name: 香港 BGP.NET CN2数据中心
-    type: vmess
-    server: 202.79.172.53
-    port: 443
-    uuid: 30216206-14b7-40e7-995d-61c1219ba584
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /path/220128071100
+    ws-path: /
     ws-headers:
       Host: ''
-    tls: true
-  - name: 江苏省扬州市 移动
-    type: vmess
-    server: data-hk-v1.shwjfkw.cn
-    port: 50207
-    uuid: b1478e24-4916-3abe-8f17-15931012ecbe
-    alterId: 1
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /hls/cctv5phd.m3u8
-    ws-headers:
-      Host: YTB-awkj
-  - name: 美国+华盛顿Cogent通信公司
-    type: ss
-    server: 38.75.136.21
-    port: '6379'
-    cipher: aes-256-gcm
-    password: zDNVedRFPQexG9v
   - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: hax2.freeair.eu.org
-    port: 80
-    uuid: cb1402b7-2a15-4978-ec7d-dc19d9b5586d
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /hax2
-    ws-headers:
-      Host: ''
-  - name: 美国 CloudFlare节点 - 3
     type: vmess
     server: telecom.cfcdn.giize.com
     port: 443
@@ -67,6 +24,45 @@ proxies:
     ws-headers:
       Host: de01.cctvvip.ml
     tls: true
+  - name: 俄罗斯 V2CROSS.COM
+    type: vmess
+    server: 185.143.220.25
+    port: 443
+    uuid: f28e354e-c2d1-4983-9b07-5acaf1b3b3e5
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /6e9EtZ2dL
+    ws-headers:
+      Host: ''
+    tls: true
+  - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: www.udemy.com
+    port: 443
+    uuid: 92869d41-a98a-40ba-b79d-2eeb7ffe2433
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /worryfree
+    ws-headers:
+      Host: dynamic-sg1b.obfs.xyz
+    tls: true
+  - name: 日本 V2CROSS.COM
+    type: vmess
+    server: 43.198.97.210
+    port: 443
+    uuid: deb441cd-57ca-4d14-9c3e-b43cf62c7573
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /zh-cn
+    ws-headers:
+      Host: www.microsoft.com
+    tls: true
 proxy-groups:
   - name: Free-servers
     type: select
@@ -74,31 +70,28 @@ proxy-groups:
       - 自动选择
       - 故障转移
       - 美国 CloudFlare节点
-      - 香港 BGP.NET CN2数据中心
-      - 江苏省扬州市 移动
-      - 美国+华盛顿Cogent通信公司
       - 美国 CloudFlare节点 - 2
+      - 俄罗斯 V2CROSS.COM
       - 美国 CloudFlare节点 - 3
+      - 日本 V2CROSS.COM
   - name: 自动选择
     type: url-test
     proxies:
       - 美国 CloudFlare节点
-      - 香港 BGP.NET CN2数据中心
-      - 江苏省扬州市 移动
-      - 美国+华盛顿Cogent通信公司
       - 美国 CloudFlare节点 - 2
+      - 俄罗斯 V2CROSS.COM
       - 美国 CloudFlare节点 - 3
+      - 日本 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
       - 美国 CloudFlare节点
-      - 香港 BGP.NET CN2数据中心
-      - 江苏省扬州市 移动
-      - 美国+华盛顿Cogent通信公司
       - 美国 CloudFlare节点 - 2
+      - 俄罗斯 V2CROSS.COM
       - 美国 CloudFlare节点 - 3
+      - 日本 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
