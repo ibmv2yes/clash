@@ -1,90 +1,34 @@
 proxies:
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: target.292228.xyz
-    port: 80
-    uuid: 12b1bed9-1534-41db-a530-a1dbf6c2a7c6
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /filetransfer
-    ws-headers:
-      Host: us-east-1.292228.xyz
   - name: 新加坡 OVH
     type: vmess
-    server: 51.79.158.59
-    port: 80
+    server: asia.artunnel57.host
+    port: 443
     uuid: 65e44501-defd-4609-a4e3-7028dc417b50
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /vmess-ntls
+    ws-path: /vmess-tls
     ws-headers: {}
+    tls: true
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: 172.67.13.13
+    port: 80
+    uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: lg.v2ray20.xyz
   - name: 湖南省+联通
     type: ss
     server: assets.flareai.store
-    port: '15743'
+    port: '15143'
     cipher: chacha20-ietf-poly1305
     password: d5dd371c-11db-4cfb-b458-072f0fbd0e18
-  - name: 日本 东京Linode数据中心
-    type: vmess
-    server: vjp1.0bad.com
-    port: 443
-    uuid: 927094d3-d678-4763-8591-e240d0bcae87
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /chat
-    ws-headers:
-      Host: vjp1.0bad.com
-    tls: true
-  - name: 法国+OVH数据中心
-    type: trojan
-    server: 54.37.185.148
-    port: 32894?type=tcp&sni=fararu.com&allowInsecure=1
-    password: HchlVCfnXB
-  - name: 俄罗斯 V2CROSS.COM
-    type: vmess
-    server: 185.143.220.25
-    port: 443
-    uuid: f28e354e-c2d1-4983-9b07-5acaf1b3b3e5
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /6e9EtZ2dL
-    ws-headers:
-      Host: ''
-    tls: true
-  - name: 立陶宛 V2CROSS.COM
-    type: vmess
-    server: mci.bamarambash.monster
-    port: 443
-    uuid: 8f74ec8a-971c-11ed-a8fc-0242ac120002
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /db698b16-d216-11ed-8e14-5ad705867cff
-    ws-headers:
-      Host: db698b16-d216-11ed-8e14-5ad705867cff.asmandll.com
-    tls: true
-  - name: 立陶宛 V2CROSS.COM - 2
-    type: vmess
-    server: mci.bamarambash.monster
-    port: 443
-    uuid: 8f74ec8a-971c-11ed-a8fc-0242ac120002
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /db698b16-d216-11ed-8e14-5ad705867cff
-    ws-headers:
-      Host: db698b16-d216-11ed-8e14-5ad705867cff.asmandll.com
-    tls: true
   - name: 日本 V2CROSS.COM
     type: vmess
     server: 43.198.97.210
@@ -98,47 +42,94 @@ proxies:
     ws-headers:
       Host: www.microsoft.com
     tls: true
+  - name: 澳门+澳门电讯
+    type: trojan
+    server: 45.64.22.56
+    port: 443?type=tcp&sni=trojan-ctb-sg02.globalssh.xyz&allowInsecure=1
+    password: '123456'
+  - name: 广东省广州市+移动
+    type: ss
+    server: assets.flareai.site
+    port: '15343'
+    cipher: chacha20-ietf-poly1305
+    password: d5dd371c-11db-4cfb-b458-072f0fbd0e18
+  - name: 德国 黑森州法兰克福DigitalOcean数据中心
+    type: vmess
+    server: 165.227.133.55
+    port: 80
+    uuid: df68f678-62c3-4799-91a8-4d301e8cf565
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /PGV2vtMvxwNFt2
+    ws-headers: {}
+  - name: 江苏省扬州市 移动
+    type: vmess
+    server: data-hk-v1.shwjfkw.cn
+    port: 50207
+    uuid: b1478e24-4916-3abe-8f17-15931012ecbe
+    alterId: 1
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /hls/cctv5phd.m3u8
+    ws-headers:
+      Host: YTB-awkj
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: vus5.0bad.com
+    port: 443
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /chat
+    ws-headers:
+      Host: ''
+    tls: true
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 CloudFlare节点
       - 新加坡 OVH
+      - 美国 CloudFlare节点
       - 湖南省+联通
-      - 日本 东京Linode数据中心
-      - 法国+OVH数据中心
-      - 俄罗斯 V2CROSS.COM
-      - 立陶宛 V2CROSS.COM
-      - 立陶宛 V2CROSS.COM - 2
       - 日本 V2CROSS.COM
+      - 澳门+澳门电讯
+      - 广东省广州市+移动
+      - 德国 黑森州法兰克福DigitalOcean数据中心
+      - 江苏省扬州市 移动
+      - 美国 V2CROSS.COM
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 CloudFlare节点
       - 新加坡 OVH
+      - 美国 CloudFlare节点
       - 湖南省+联通
-      - 日本 东京Linode数据中心
-      - 法国+OVH数据中心
-      - 俄罗斯 V2CROSS.COM
-      - 立陶宛 V2CROSS.COM
-      - 立陶宛 V2CROSS.COM - 2
       - 日本 V2CROSS.COM
+      - 澳门+澳门电讯
+      - 广东省广州市+移动
+      - 德国 黑森州法兰克福DigitalOcean数据中心
+      - 江苏省扬州市 移动
+      - 美国 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 CloudFlare节点
       - 新加坡 OVH
+      - 美国 CloudFlare节点
       - 湖南省+联通
-      - 日本 东京Linode数据中心
-      - 法国+OVH数据中心
-      - 俄罗斯 V2CROSS.COM
-      - 立陶宛 V2CROSS.COM
-      - 立陶宛 V2CROSS.COM - 2
       - 日本 V2CROSS.COM
+      - 澳门+澳门电讯
+      - 广东省广州市+移动
+      - 德国 黑森州法兰克福DigitalOcean数据中心
+      - 江苏省扬州市 移动
+      - 美国 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
