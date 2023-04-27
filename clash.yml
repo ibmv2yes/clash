@@ -1,20 +1,8 @@
 proxies:
   - name: 美国 CloudFlare节点
     type: vmess
-    server: wwwow.ir
+    server: cf-lt.sharecentre.online
     port: 443
-    uuid: 84b4d2ac-699b-4ba5-a6b2-adaaa82b667d
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /84b4d2ac-699b-4ba5-a6b2-adaaa82b667d-vm
-    ws-headers: {}
-    tls: true
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: 172.67.140.193
-    port: 80
     uuid: 2e496758-950e-4549-8842-d5eec98d9fde
     alterId: 0
     cipher: auto
@@ -22,36 +10,8 @@ proxies:
     network: ws
     ws-path: /shirker
     ws-headers:
-      Host: uk1.scproxy.top
-  - name: 俄罗斯 V2CROSS.COM
-    type: vmess
-    server: 185.143.220.25
-    port: 443
-    uuid: f28e354e-c2d1-4983-9b07-5acaf1b3b3e5
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /6e9EtZ2dL
-    ws-headers:
-      Host: ''
+      Host: lv1.sharecentrepro.org
     tls: true
-  - name: 瑞士+V2CROSS.COM
-    type: trojan
-    server: 195.15.243.26
-    port: 443?security=tls&type=tcp&headerType=none
-    password: '4478'
-  - name: 美国+V2CROSS.COM
-    type: trojan
-    server: 152.70.74.66
-    port: 443?security=tls&type=tcp&headerType=none
-    password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
-  - name: 广东省广州市+移动
-    type: ss
-    server: assets.flareai.site
-    port: '15443'
-    cipher: chacha20-ietf-poly1305
-    password: d5dd371c-11db-4cfb-b458-072f0fbd0e18
   - name: 美国 加利福尼亚州费利蒙Linode数据中心
     type: vmess
     server: vus3.0bad.com
@@ -63,8 +23,68 @@ proxies:
     network: ws
     ws-path: /chat
     ws-headers:
-      Host: ''
+      Host: vus3.0bad.com
     tls: true
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: l1.zanbil-mo.cf
+    port: 2095
+    uuid: 56fc3d21-4a2f-4f68-8f78-eebd6a051101
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+    type: vmess
+    server: 23.225.33.170
+    port: 56002
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: l9.zanbil-mo.cf
+    port: 2082
+    uuid: 2bb765fa-9d92-48a5-be79-803728b250cd
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 CloudFlare节点 - 4
+    type: vmess
+    server: 172.67.140.193
+    port: 80
+    uuid: 2e496758-950e-4549-8842-d5eec98d9fde
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /shirker
+    ws-headers:
+      Host: uk1.scproxy.top
+  - name: 美国加利福尼亚州洛杉矶 PetaExpress
+    type: vmess
+    server: 198.2.206.34
+    port: 33012
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /hax1
+    ws-headers:
+      Host: hax1.freeair.eu.org
 proxy-groups:
   - name: Free-servers
     type: select
@@ -72,34 +92,34 @@ proxy-groups:
       - 自动选择
       - 故障转移
       - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 俄罗斯 V2CROSS.COM
-      - 瑞士+V2CROSS.COM
-      - 美国+V2CROSS.COM
-      - 广东省广州市+移动
       - 美国 加利福尼亚州费利蒙Linode数据中心
+      - 美国 CloudFlare节点 - 2
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 美国 CloudFlare节点 - 3
+      - 美国 CloudFlare节点 - 4
+      - 美国加利福尼亚州洛杉矶 PetaExpress
   - name: 自动选择
     type: url-test
     proxies:
       - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 俄罗斯 V2CROSS.COM
-      - 瑞士+V2CROSS.COM
-      - 美国+V2CROSS.COM
-      - 广东省广州市+移动
       - 美国 加利福尼亚州费利蒙Linode数据中心
+      - 美国 CloudFlare节点 - 2
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 美国 CloudFlare节点 - 3
+      - 美国 CloudFlare节点 - 4
+      - 美国加利福尼亚州洛杉矶 PetaExpress
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
       - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 俄罗斯 V2CROSS.COM
-      - 瑞士+V2CROSS.COM
-      - 美国+V2CROSS.COM
-      - 广东省广州市+移动
       - 美国 加利福尼亚州费利蒙Linode数据中心
+      - 美国 CloudFlare节点 - 2
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 美国 CloudFlare节点 - 3
+      - 美国 CloudFlare节点 - 4
+      - 美国加利福尼亚州洛杉矶 PetaExpress
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
