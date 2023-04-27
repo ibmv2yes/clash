@@ -1,17 +1,16 @@
 proxies:
-  - name: 美国 CloudFlare节点
+  - name: 美国加利福尼亚州洛杉矶 PetaExpress
     type: vmess
-    server: cf-lt.sharecentre.online
-    port: 443
-    uuid: 2e496758-950e-4549-8842-d5eec98d9fde
-    alterId: 0
+    server: 198.2.208.181
+    port: 35402
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
     cipher: auto
     udp: true
-    network: ws
-    ws-path: /shirker
+    network: tcp
+    ws-path: /
     ws-headers:
-      Host: lv1.sharecentrepro.org
-    tls: true
+      Host: www.damonhuang.top
   - name: 美国 V2CROSS.COM
     type: vmess
     server: 170.187.200.114
@@ -24,46 +23,23 @@ proxies:
     ws-path: /chat
     ws-headers: {}
     tls: true
-  - name: 美国 CloudFlare节点 - 2
+  - name: 美国 V2CROSS.COM - 2
     type: vmess
-    server: hax1.freeair.eu.org
-    port: 80
-    uuid: 2ca15318-1015-486d-ef3e-4652102a235a
+    server: 143.42.173.175
+    port: 443
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /hax1
-    ws-headers:
-      Host: ''
-  - name: 美国+V2CROSS.COM
-    type: trojan
-    server: 152.70.74.66
-    port: 443?security=tls&type=tcp&headerType=none
-    password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
-  - name: 加拿大+魁北克省博阿努瓦OVH数据中心
-    type: ss
-    server: 158.69.185.230
-    port: '14783'
-    cipher: chacha20-ietf-poly1305
-    password: 8c80d838-253c-41df-afda-d0f04a2c0873
-  - name: 香港 BGP.NET CN2数据中心
-    type: vmess
-    server: 202.79.172.53
-    port: 443
-    uuid: 30216206-14b7-40e7-995d-61c1219ba584
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /path/220128071100
+    ws-path: /chat
     ws-headers:
       Host: ''
     tls: true
-  - name: 美国 加利福尼亚州圣何塞PEG TECH
+  - name: 美国 加利福尼亚州洛杉矶Sharktech数据中心
     type: vmess
-    server: 142.4.125.53
-    port: 50044
+    server: 170.178.167.140
+    port: 50002
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -72,41 +48,47 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
+  - name: 南非 V2CROSS.COM
+    type: vmess
+    server: 156.225.67.143
+    port: 51409
+    uuid: 990006bd-cb20-482f-9c97-f5fc65359605
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: ''
+    ws-headers:
+      Host: ''
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 CloudFlare节点
+      - 美国加利福尼亚州洛杉矶 PetaExpress
       - 美国 V2CROSS.COM
-      - 美国 CloudFlare节点 - 2
-      - 美国+V2CROSS.COM
-      - 加拿大+魁北克省博阿努瓦OVH数据中心
-      - 香港 BGP.NET CN2数据中心
-      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国 V2CROSS.COM - 2
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 南非 V2CROSS.COM
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 CloudFlare节点
+      - 美国加利福尼亚州洛杉矶 PetaExpress
       - 美国 V2CROSS.COM
-      - 美国 CloudFlare节点 - 2
-      - 美国+V2CROSS.COM
-      - 加拿大+魁北克省博阿努瓦OVH数据中心
-      - 香港 BGP.NET CN2数据中心
-      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国 V2CROSS.COM - 2
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 南非 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 CloudFlare节点
+      - 美国加利福尼亚州洛杉矶 PetaExpress
       - 美国 V2CROSS.COM
-      - 美国 CloudFlare节点 - 2
-      - 美国+V2CROSS.COM
-      - 加拿大+魁北克省博阿努瓦OVH数据中心
-      - 香港 BGP.NET CN2数据中心
-      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国 V2CROSS.COM - 2
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 南非 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
