@@ -1,16 +1,16 @@
 proxies:
   - name: 美国 CloudFlare节点
     type: vmess
-    server: cf-lt.sharecentre.online
+    server: 104.17.3.81
     port: 80
-    uuid: 2e496758-950e-4549-8842-d5eec98d9fde
+    uuid: e40b2de3-b829-4591-a7b6-99d1913f3246
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /shirker
+    ws-path: /worryfree
     ws-headers:
-      Host: lv2.sharecentrepro.org
+      Host: w.evouch77.live
   - name: 美国 CloudFlare节点 - 2
     type: vmess
     server: l1.zanbil-mo.cf
@@ -25,17 +25,55 @@ proxies:
       Host: ''
   - name: 美国 CloudFlare节点 - 3
     type: vmess
-    server: 4.mamadcucu.com
-    port: 8880
-    uuid: 51ba5a9a-4b7c-4c62-b4ae-0e53ec8d3024
+    server: wwwow.ir
+    port: 443
+    uuid: 84b4d2ac-699b-4ba5-a6b2-adaaa82b667d
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /ArsalanTauBot
+    ws-path: /84b4d2ac-699b-4ba5-a6b2-adaaa82b667d-vm
+    ws-headers: {}
+    tls: true
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: 100.43.163.40
+    port: 51832
+    uuid: 704f5220-4a23-4a4d-9166-e29f3d138313
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /us14/getData
     ws-headers:
-      Host: 4.mamadcucu.com
+      Host: ''
+    tls: true
+  - name: 美国 CloudFlare节点 - 4
+    type: vmess
+    server: cdnjs.com
+    port: 443
+    uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /speedtest
+    ws-headers:
+      Host: LosAngeles.kotick.site
+    tls: true
   - name: 美国 加利福尼亚州洛杉矶Sharktech数据中心
+    type: vmess
+    server: 170.178.167.140
+    port: 50002
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 加利福尼亚州洛杉矶Sharktech数据中心 - 2
     type: vmess
     server: 67.21.72.41
     port: 443
@@ -48,66 +86,29 @@ proxies:
     ws-headers:
       Host: www.17080100.xyz
     tls: true
-  - name: 德国 黑森州法兰克福DigitalOcean数据中心
+  - name: 荷兰 V2CROSS.COM
     type: vmess
-    server: 165.227.133.55
+    server: 91.199.84.125
     port: 80
-    uuid: df68f678-62c3-4799-91a8-4d301e8cf565
+    uuid: 2cfc4c58-88cb-4e00-9977-ef0a37559a22
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /PGV2vtMvxwNFt2
+    ws-path: /
     ws-headers: {}
-  - name: 美国 CloudFlare节点 - 4
+  - name: 江苏省扬州市 移动
     type: vmess
-    server: target.292228.xyz
-    port: 80
-    uuid: 12b1bed9-1534-41db-a530-a1dbf6c2a7c6
-    alterId: 0
+    server: data-hk-v1.shwjfkw.cn
+    port: 50207
+    uuid: b1478e24-4916-3abe-8f17-15931012ecbe
+    alterId: 1
     cipher: auto
     udp: true
     network: ws
-    ws-path: /filetransfer
+    ws-path: /hls/cctv5phd.m3u8
     ws-headers:
-      Host: us-east-1.292228.xyz
-  - name: 美国 CloudFlare节点 - 5
-    type: vmess
-    server: 172.67.140.193
-    port: 80
-    uuid: 2e496758-950e-4549-8842-d5eec98d9fde
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /shirker
-    ws-headers:
-      Host: uk1.scproxy.top
-  - name: 美国 CloudFlare节点 - 6
-    type: vmess
-    server: hax1.freeair.eu.org
-    port: 80
-    uuid: 2ca15318-1015-486d-ef3e-4652102a235a
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /hax1
-    ws-headers:
-      Host: ''
-  - name: 美国 加利福尼亚州费利蒙Linode数据中心
-    type: vmess
-    server: vus2.0bad.com
-    port: 443
-    uuid: 927094d3-d678-4763-8591-e240d0bcae87
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /chat
-    ws-headers:
-      Host: vus2.0bad.com
-    tls: true
+      Host: YTB-awkj
 proxy-groups:
   - name: Free-servers
     type: select
@@ -117,24 +118,24 @@ proxy-groups:
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
       - 美国 CloudFlare节点 - 3
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
-      - 德国 黑森州法兰克福DigitalOcean数据中心
+      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点 - 4
-      - 美国 CloudFlare节点 - 5
-      - 美国 CloudFlare节点 - 6
-      - 美国 加利福尼亚州费利蒙Linode数据中心
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心 - 2
+      - 荷兰 V2CROSS.COM
+      - 江苏省扬州市 移动
   - name: 自动选择
     type: url-test
     proxies:
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
       - 美国 CloudFlare节点 - 3
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
-      - 德国 黑森州法兰克福DigitalOcean数据中心
+      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点 - 4
-      - 美国 CloudFlare节点 - 5
-      - 美国 CloudFlare节点 - 6
-      - 美国 加利福尼亚州费利蒙Linode数据中心
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心 - 2
+      - 荷兰 V2CROSS.COM
+      - 江苏省扬州市 移动
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
@@ -143,12 +144,12 @@ proxy-groups:
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
       - 美国 CloudFlare节点 - 3
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
-      - 德国 黑森州法兰克福DigitalOcean数据中心
+      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点 - 4
-      - 美国 CloudFlare节点 - 5
-      - 美国 CloudFlare节点 - 6
-      - 美国 加利福尼亚州费利蒙Linode数据中心
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心 - 2
+      - 荷兰 V2CROSS.COM
+      - 江苏省扬州市 移动
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
