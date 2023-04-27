@@ -1,43 +1,17 @@
 proxies:
-  - name: 日本 V2CROSS.COM
-    type: vmess
-    server: 43.198.97.210
-    port: 443
-    uuid: deb441cd-57ca-4d14-9c3e-b43cf62c7573
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /zh-cn
-    ws-headers:
-      Host: www.microsoft.com
-    tls: true
   - name: 美国 CloudFlare节点
     type: vmess
-    server: 172.67.140.193
+    server: hax1.freeair.eu.org
     port: 80
-    uuid: 2e496758-950e-4549-8842-d5eec98d9fde
+    uuid: 2ca15318-1015-486d-ef3e-4652102a235a
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /shirker
+    ws-path: /hax1
     ws-headers:
-      Host: uk1.scproxy.top
+      Host: ''
   - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: 104.17.14.48
-    port: 443
-    uuid: 083a9d0b-11fb-4b3d-ad57-7ace252bb51b
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /vmess
-    ws-headers:
-      Host: fr-v.sshmax.xyz
-    tls: true
-  - name: 美国 CloudFlare节点 - 3
     type: vmess
     server: cf.noaries.de
     port: 2082
@@ -49,93 +23,65 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ir2.nmsl.ninja
+  - name: 美国+V2CROSS.COM
+    type: trojan
+    server: 152.70.74.66
+    port: 443?security=tls&type=tcp&headerType=none
+    password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
   - name: 美国 加利福尼亚州洛杉矶Sharktech数据中心
     type: vmess
-    server: 170.178.167.140
-    port: 50002
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    server: 67.21.72.41
+    port: 443
+    uuid: 2566d00f-218c-48f7-9a36-13d3d6f1a724
     alterId: 64
     cipher: auto
     udp: true
-    network: tcp
+    network: ws
+    ws-path: /path/173418141123
+    ws-headers:
+      Host: ''
+    tls: true
+  - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: l1.zanbil-mo.cf
+    port: 2095
+    uuid: 56fc3d21-4a2f-4f68-8f78-eebd6a051101
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国 CloudFlare节点 - 4
-    type: vmess
-    server: d.pgypgykmoljklj.xyz
-    port: 443
-    uuid: fa4cb529-3ac9-4268-bb04-ed4253813508
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /mR17oBKzZ7
-    ws-headers: {}
-    tls: true
-  - name: 美国 V2CROSS.COM
-    type: vmess
-    server: 143.42.99.183
-    port: 443
-    uuid: 927094d3-d678-4763-8591-e240d0bcae87
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /chat
-    ws-headers: {}
-    tls: true
-  - name: 美国 CloudFlare节点 - 5
-    type: vmess
-    server: telecom.cfcdn.giize.com
-    port: 443
-    uuid: 13c7db38-b00f-49ca-bd9e-60f4f1f008cd
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /cctv13.m3u8
-    ws-headers:
-      Host: de01.cctvvip.ml
-    tls: true
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 日本 V2CROSS.COM
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
+      - 美国+V2CROSS.COM
       - 美国 加利福尼亚州洛杉矶Sharktech数据中心
-      - 美国 CloudFlare节点 - 4
-      - 美国 V2CROSS.COM
-      - 美国 CloudFlare节点 - 5
+      - 美国 CloudFlare节点 - 3
   - name: 自动选择
     type: url-test
     proxies:
-      - 日本 V2CROSS.COM
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
+      - 美国+V2CROSS.COM
       - 美国 加利福尼亚州洛杉矶Sharktech数据中心
-      - 美国 CloudFlare节点 - 4
-      - 美国 V2CROSS.COM
-      - 美国 CloudFlare节点 - 5
+      - 美国 CloudFlare节点 - 3
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 日本 V2CROSS.COM
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
+      - 美国+V2CROSS.COM
       - 美国 加利福尼亚州洛杉矶Sharktech数据中心
-      - 美国 CloudFlare节点 - 4
-      - 美国 V2CROSS.COM
-      - 美国 CloudFlare节点 - 5
+      - 美国 CloudFlare节点 - 3
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
