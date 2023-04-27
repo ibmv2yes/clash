@@ -1,10 +1,4 @@
 proxies:
-  - name: 美国+V2CROSS.COM
-    type: ss
-    server: 172.99.190.61
-    port: '2375'
-    cipher: aes-256-gcm
-    password: faBAoD54k87UJG7
   - name: 美国 CloudFlare节点
     type: vmess
     server: www.udemy.com
@@ -18,32 +12,54 @@ proxies:
     ws-headers:
       Host: dynamic-sg1b.obfs.xyz
     tls: true
-  - name: 美国 华盛顿Cogent通信公司
+  - name: 美国 加利福尼亚州圣何塞PEG TECH
     type: vmess
-    server: 38.54.107.169
-    port: 55255
-    uuid: 6e28708e-60b5-4fda-aaa7-51940d3cc55b
+    server: 142.4.125.53
+    port: 50044
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
     udp: true
-    network: ws
-    ws-path: /tw2/getData
+    network: tcp
+    ws-path: /
     ws-headers:
       Host: ''
-    tls: true
-  - name: 俄罗斯 V2CROSS.COM
+  - name: 美国 CloudFlare节点 - 2
     type: vmess
-    server: 185.143.220.25
+    server: ming2.kiwireich.com
     port: 443
-    uuid: f28e354e-c2d1-4983-9b07-5acaf1b3b3e5
+    uuid: 18e5f40f-bda6-4c15-9334-e87cda6047af
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /6e9EtZ2dL
+    ws-path: /ray
+    ws-headers: {}
+    tls: true
+  - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: 172.67.229.153
+    port: 80
+    uuid: 314c1387-618c-4689-97fc-4bc9a1ae5e05
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: sg4.562148.xyz
+  - name: 美国 加利福尼亚州洛杉矶Sharktech数据中心
+    type: vmess
+    server: 170.178.167.140
+    port: 50002
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
     ws-headers:
       Host: ''
-    tls: true
   - name: 美国 加利福尼亚州圣华金县斯托克顿市PacWest通信公司
     type: vmess
     server: ganjun.xyz
@@ -57,35 +73,84 @@ proxies:
     ws-headers:
       Host: ganjun.xyz
     tls: true
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: 143.42.99.183
+    port: 443
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /chat
+    ws-headers: {}
+    tls: true
+  - name: 德国 黑森州法兰克福DigitalOcean数据中心
+    type: vmess
+    server: 165.227.133.55
+    port: 80
+    uuid: df68f678-62c3-4799-91a8-4d301e8cf565
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /PGV2vtMvxwNFt2
+    ws-headers:
+      Host: speedtest.net
+  - name: 美国 CloudFlare节点 - 4
+    type: vmess
+    server: 104.17.14.48
+    port: 443
+    uuid: 083a9d0b-11fb-4b3d-ad57-7ace252bb51b
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /vmess
+    ws-headers:
+      Host: fr-v.sshmax.xyz
+    tls: true
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国+V2CROSS.COM
       - 美国 CloudFlare节点
-      - 美国 华盛顿Cogent通信公司
-      - 俄罗斯 V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国 CloudFlare节点 - 2
+      - 美国 CloudFlare节点 - 3
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
       - 美国 加利福尼亚州圣华金县斯托克顿市PacWest通信公司
+      - 美国 V2CROSS.COM
+      - 德国 黑森州法兰克福DigitalOcean数据中心
+      - 美国 CloudFlare节点 - 4
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国+V2CROSS.COM
       - 美国 CloudFlare节点
-      - 美国 华盛顿Cogent通信公司
-      - 俄罗斯 V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国 CloudFlare节点 - 2
+      - 美国 CloudFlare节点 - 3
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
       - 美国 加利福尼亚州圣华金县斯托克顿市PacWest通信公司
+      - 美国 V2CROSS.COM
+      - 德国 黑森州法兰克福DigitalOcean数据中心
+      - 美国 CloudFlare节点 - 4
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国+V2CROSS.COM
       - 美国 CloudFlare节点
-      - 美国 华盛顿Cogent通信公司
-      - 俄罗斯 V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国 CloudFlare节点 - 2
+      - 美国 CloudFlare节点 - 3
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
       - 美国 加利福尼亚州圣华金县斯托克顿市PacWest通信公司
+      - 美国 V2CROSS.COM
+      - 德国 黑森州法兰克福DigitalOcean数据中心
+      - 美国 CloudFlare节点 - 4
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
