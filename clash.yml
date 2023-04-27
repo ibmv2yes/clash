@@ -1,95 +1,91 @@
 proxies:
-  - name: 美国 加利福尼亚州洛杉矶Sharktech数据中心
-    type: vmess
-    server: 67.21.72.41
-    port: 443
-    uuid: 2566d00f-218c-48f7-9a36-13d3d6f1a724
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /path/173418141123
-    ws-headers:
-      Host: ''
-    tls: true
-  - name: 美国 加利福尼亚州洛杉矶Krypt数据中心
-    type: vmess
-    server: 174.139.126.251
-    port: 59803
-    uuid: 51695a30-3915-4b9e-9a7f-bc10b5033a41
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /us15/getData
-    ws-headers:
-      Host: ''
-    tls: true
-  - name: 德国 黑森州法兰克福DigitalOcean数据中心
-    type: vmess
-    server: 165.227.133.55
-    port: 80
-    uuid: df68f678-62c3-4799-91a8-4d301e8cf565
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /PGV2vtMvxwNFt2
-    ws-headers: {}
-  - name: 香港 BGP.NET CN2数据中心
-    type: vmess
-    server: 202.79.172.53
-    port: 443
-    uuid: 30216206-14b7-40e7-995d-61c1219ba584
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /path/220128071100
-    ws-headers:
-      Host: ''
-    tls: true
+  - name: 美国+V2CROSS.COM
+    type: ss
+    server: 172.99.190.61
+    port: '2375'
+    cipher: aes-256-gcm
+    password: faBAoD54k87UJG7
   - name: 美国 CloudFlare节点
     type: vmess
-    server: 172.67.140.193
-    port: 80
-    uuid: 2e496758-950e-4549-8842-d5eec98d9fde
+    server: www.udemy.com
+    port: 443
+    uuid: 92869d41-a98a-40ba-b79d-2eeb7ffe2433
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /shirker
+    ws-path: /worryfree
     ws-headers:
-      Host: uk1.scproxy.top
+      Host: dynamic-sg1b.obfs.xyz
+    tls: true
+  - name: 美国 华盛顿Cogent通信公司
+    type: vmess
+    server: 38.54.107.169
+    port: 55255
+    uuid: 6e28708e-60b5-4fda-aaa7-51940d3cc55b
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /tw2/getData
+    ws-headers:
+      Host: ''
+    tls: true
+  - name: 俄罗斯 V2CROSS.COM
+    type: vmess
+    server: 185.143.220.25
+    port: 443
+    uuid: f28e354e-c2d1-4983-9b07-5acaf1b3b3e5
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /6e9EtZ2dL
+    ws-headers:
+      Host: ''
+    tls: true
+  - name: 美国 加利福尼亚州圣华金县斯托克顿市PacWest通信公司
+    type: vmess
+    server: ganjun.xyz
+    port: 443
+    uuid: 17bc2008-0ff7-44b0-bfb1-0c300180c71e
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: ganjun.xyz
+    tls: true
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
-      - 美国 加利福尼亚州洛杉矶Krypt数据中心
-      - 德国 黑森州法兰克福DigitalOcean数据中心
-      - 香港 BGP.NET CN2数据中心
+      - 美国+V2CROSS.COM
       - 美国 CloudFlare节点
+      - 美国 华盛顿Cogent通信公司
+      - 俄罗斯 V2CROSS.COM
+      - 美国 加利福尼亚州圣华金县斯托克顿市PacWest通信公司
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
-      - 美国 加利福尼亚州洛杉矶Krypt数据中心
-      - 德国 黑森州法兰克福DigitalOcean数据中心
-      - 香港 BGP.NET CN2数据中心
+      - 美国+V2CROSS.COM
       - 美国 CloudFlare节点
+      - 美国 华盛顿Cogent通信公司
+      - 俄罗斯 V2CROSS.COM
+      - 美国 加利福尼亚州圣华金县斯托克顿市PacWest通信公司
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
-      - 美国 加利福尼亚州洛杉矶Krypt数据中心
-      - 德国 黑森州法兰克福DigitalOcean数据中心
-      - 香港 BGP.NET CN2数据中心
+      - 美国+V2CROSS.COM
       - 美国 CloudFlare节点
+      - 美国 华盛顿Cogent通信公司
+      - 俄罗斯 V2CROSS.COM
+      - 美国 加利福尼亚州圣华金县斯托克顿市PacWest通信公司
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
