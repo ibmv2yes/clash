@@ -1,55 +1,6 @@
 proxies:
   - name: 美国 CloudFlare节点
     type: vmess
-    server: 172.67.13.11
-    port: 8880
-    uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: lg.trump2023.net
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: l9.zanbil-mo.cf
-    port: 2082
-    uuid: 2bb765fa-9d92-48a5-be79-803728b250cd
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 俄罗斯 V2CROSS.COM
-    type: vmess
-    server: 185.143.220.25
-    port: 443
-    uuid: f28e354e-c2d1-4983-9b07-5acaf1b3b3e5
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /6e9EtZ2dL
-    ws-headers:
-      Host: ''
-    tls: true
-  - name: 美国 CloudFlare节点 - 3
-    type: vmess
-    server: ming2.kiwireich.com
-    port: 443
-    uuid: 18e5f40f-bda6-4c15-9334-e87cda6047af
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /ray
-    ws-headers: {}
-    tls: true
-  - name: 美国 CloudFlare节点 - 4
-    type: vmess
     server: www.udemy.com
     port: 443
     uuid: 92869d41-a98a-40ba-b79d-2eeb7ffe2433
@@ -60,6 +11,19 @@ proxies:
     ws-path: /worryfree
     ws-headers:
       Host: dynamic-sg1b.obfs.xyz
+    tls: true
+  - name: 美国 加利福尼亚州洛杉矶Sharktech数据中心
+    type: vmess
+    server: 67.21.72.41
+    port: 443
+    uuid: 2566d00f-218c-48f7-9a36-13d3d6f1a724
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /path/173418141123
+    ws-headers:
+      Host: ''
     tls: true
   - name: 英国 V2CROSS.COM
     type: vmess
@@ -74,6 +38,56 @@ proxies:
     ws-headers:
       Host: ''
     tls: true
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: telecom.cfcdn.giize.com
+    port: 443
+    uuid: 13c7db38-b00f-49ca-bd9e-60f4f1f008cd
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /cctv13.m3u8
+    ws-headers:
+      Host: de01.cctvvip.ml
+    tls: true
+  - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: 4.mamadcucu.com
+    port: 8880
+    uuid: 51ba5a9a-4b7c-4c62-b4ae-0e53ec8d3024
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /ArsalanTauBot
+    ws-headers:
+      Host: 4.mamadcucu.com
+  - name: 美国 CloudFlare节点 - 4
+    type: vmess
+    server: telecom.cfcdn.giize.com
+    port: 443
+    uuid: cfc3627f-31e8-4695-dfbd-34076e2f1f5d
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /cctv13.m3u8
+    ws-headers:
+      Host: jp06.cctvvip.ml
+    tls: true
+  - name: 德国 黑森州法兰克福DigitalOcean数据中心
+    type: vmess
+    server: 165.227.133.55
+    port: 80
+    uuid: df68f678-62c3-4799-91a8-4d301e8cf565
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /PGV2vtMvxwNFt2
+    ws-headers:
+      Host: speedtest.net
 proxy-groups:
   - name: Free-servers
     type: select
@@ -81,31 +95,34 @@ proxy-groups:
       - 自动选择
       - 故障转移
       - 美国 CloudFlare节点
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 英国 V2CROSS.COM
       - 美国 CloudFlare节点 - 2
-      - 俄罗斯 V2CROSS.COM
       - 美国 CloudFlare节点 - 3
       - 美国 CloudFlare节点 - 4
-      - 英国 V2CROSS.COM
+      - 德国 黑森州法兰克福DigitalOcean数据中心
   - name: 自动选择
     type: url-test
     proxies:
       - 美国 CloudFlare节点
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 英国 V2CROSS.COM
       - 美国 CloudFlare节点 - 2
-      - 俄罗斯 V2CROSS.COM
       - 美国 CloudFlare节点 - 3
       - 美国 CloudFlare节点 - 4
-      - 英国 V2CROSS.COM
+      - 德国 黑森州法兰克福DigitalOcean数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
       - 美国 CloudFlare节点
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 英国 V2CROSS.COM
       - 美国 CloudFlare节点 - 2
-      - 俄罗斯 V2CROSS.COM
       - 美国 CloudFlare节点 - 3
       - 美国 CloudFlare节点 - 4
-      - 英国 V2CROSS.COM
+      - 德国 黑森州法兰克福DigitalOcean数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
