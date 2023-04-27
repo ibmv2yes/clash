@@ -1,65 +1,71 @@
 proxies:
-  - name: 德国 黑森州法兰克福DigitalOcean数据中心
-    type: vmess
-    server: 165.227.133.55
-    port: 80
-    uuid: df68f678-62c3-4799-91a8-4d301e8cf565
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /PGV2vtMvxwNFt2
-    ws-headers: {}
   - name: 美国 CloudFlare节点
     type: vmess
-    server: wwwow.ir
+    server: d.pgypgykmoljklj.xyz
     port: 443
-    uuid: 84b4d2ac-699b-4ba5-a6b2-adaaa82b667d
+    uuid: fa4cb529-3ac9-4268-bb04-ed4253813508
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /84b4d2ac-699b-4ba5-a6b2-adaaa82b667d-vm
+    ws-path: /mR17oBKzZ7
     ws-headers: {}
     tls: true
-  - name: 俄罗斯 V2CROSS.COM
+  - name: 香港 BGP.NET CN2数据中心
     type: vmess
-    server: 185.143.220.25
+    server: 202.79.172.53
     port: 443
-    uuid: f28e354e-c2d1-4983-9b07-5acaf1b3b3e5
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /6e9EtZ2dL
-    ws-headers:
-      Host: ''
-    tls: true
-  - name: 日本 V2CROSS.COM
-    type: vmess
-    server: 43.198.97.210
-    port: 443
-    uuid: deb441cd-57ca-4d14-9c3e-b43cf62c7573
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /zh-cn
-    ws-headers:
-      Host: www.microsoft.com
-    tls: true
-  - name: 美国 加利福尼亚州洛杉矶Sharktech数据中心
-    type: vmess
-    server: 67.21.72.41
-    port: 443
-    uuid: 2566d00f-218c-48f7-9a36-13d3d6f1a724
+    uuid: 30216206-14b7-40e7-995d-61c1219ba584
     alterId: 64
     cipher: auto
     udp: true
     network: ws
-    ws-path: /path/173418141123
+    ws-path: /path/220128071100
     ws-headers:
       Host: ''
+    tls: true
+  - name: 江苏省扬州市 移动
+    type: vmess
+    server: data-hk-v1.shwjfkw.cn
+    port: 50207
+    uuid: b1478e24-4916-3abe-8f17-15931012ecbe
+    alterId: 1
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /hls/cctv5phd.m3u8
+    ws-headers:
+      Host: YTB-awkj
+  - name: 美国+华盛顿Cogent通信公司
+    type: ss
+    server: 38.75.136.21
+    port: '6379'
+    cipher: aes-256-gcm
+    password: zDNVedRFPQexG9v
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: hax2.freeair.eu.org
+    port: 80
+    uuid: cb1402b7-2a15-4978-ec7d-dc19d9b5586d
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /hax2
+    ws-headers:
+      Host: ''
+  - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: telecom.cfcdn.giize.com
+    port: 443
+    uuid: 13c7db38-b00f-49ca-bd9e-60f4f1f008cd
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /cctv13.m3u8
+    ws-headers:
+      Host: de01.cctvvip.ml
     tls: true
 proxy-groups:
   - name: Free-servers
@@ -67,29 +73,32 @@ proxy-groups:
     proxies:
       - 自动选择
       - 故障转移
-      - 德国 黑森州法兰克福DigitalOcean数据中心
       - 美国 CloudFlare节点
-      - 俄罗斯 V2CROSS.COM
-      - 日本 V2CROSS.COM
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 香港 BGP.NET CN2数据中心
+      - 江苏省扬州市 移动
+      - 美国+华盛顿Cogent通信公司
+      - 美国 CloudFlare节点 - 2
+      - 美国 CloudFlare节点 - 3
   - name: 自动选择
     type: url-test
     proxies:
-      - 德国 黑森州法兰克福DigitalOcean数据中心
       - 美国 CloudFlare节点
-      - 俄罗斯 V2CROSS.COM
-      - 日本 V2CROSS.COM
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 香港 BGP.NET CN2数据中心
+      - 江苏省扬州市 移动
+      - 美国+华盛顿Cogent通信公司
+      - 美国 CloudFlare节点 - 2
+      - 美国 CloudFlare节点 - 3
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 德国 黑森州法兰克福DigitalOcean数据中心
       - 美国 CloudFlare节点
-      - 俄罗斯 V2CROSS.COM
-      - 日本 V2CROSS.COM
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 香港 BGP.NET CN2数据中心
+      - 江苏省扬州市 移动
+      - 美国+华盛顿Cogent通信公司
+      - 美国 CloudFlare节点 - 2
+      - 美国 CloudFlare节点 - 3
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
