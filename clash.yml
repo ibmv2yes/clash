@@ -1,87 +1,82 @@
 proxies:
+  - name: 澳门+澳门电讯
+    type: trojan
+    server: 45.64.22.56
+    port: 443?type=tcp&sni=trojan-ctb-sg02.globalssh.xyz&allowInsecure=1
+    password: '123456'
   - name: 美国 CloudFlare节点
     type: vmess
-    server: hax1.freeair.eu.org
+    server: 172.67.140.193
     port: 80
-    uuid: 2ca15318-1015-486d-ef3e-4652102a235a
+    uuid: 2e496758-950e-4549-8842-d5eec98d9fde
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /hax1
+    ws-path: /shirker
     ws-headers:
-      Host: ''
-  - name: 美国 CloudFlare节点 - 2
+      Host: uk1.scproxy.top
+  - name: 香港 BGP.NET CN2数据中心
     type: vmess
-    server: cf.noaries.de
-    port: 2082
-    uuid: 314c1387-618c-4689-97fc-4bc9a1ae5e05
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: ir2.nmsl.ninja
-  - name: 美国+V2CROSS.COM
-    type: trojan
-    server: 152.70.74.66
-    port: 443?security=tls&type=tcp&headerType=none
-    password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
-  - name: 美国 加利福尼亚州洛杉矶Sharktech数据中心
-    type: vmess
-    server: 67.21.72.41
+    server: 202.79.172.53
     port: 443
-    uuid: 2566d00f-218c-48f7-9a36-13d3d6f1a724
+    uuid: 30216206-14b7-40e7-995d-61c1219ba584
     alterId: 64
     cipher: auto
     udp: true
     network: ws
-    ws-path: /path/173418141123
+    ws-path: /path/220128071100
     ws-headers:
       Host: ''
     tls: true
-  - name: 美国 CloudFlare节点 - 3
+  - name: 北美地区+V2CROSS.COM
+    type: ss
+    server: 169.197.141.187
+    port: '8881'
+    cipher: aes-256-gcm
+    password: kDWvXYZoTBcGkC4
+  - name: 日本 V2CROSS.COM
     type: vmess
-    server: l1.zanbil-mo.cf
-    port: 2095
-    uuid: 56fc3d21-4a2f-4f68-8f78-eebd6a051101
+    server: 43.198.97.210
+    port: 443
+    uuid: deb441cd-57ca-4d14-9c3e-b43cf62c7573
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /
+    ws-path: /zh-cn
     ws-headers:
-      Host: ''
+      Host: www.microsoft.com
+    tls: true
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
+      - 澳门+澳门电讯
       - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 美国+V2CROSS.COM
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
-      - 美国 CloudFlare节点 - 3
+      - 香港 BGP.NET CN2数据中心
+      - 北美地区+V2CROSS.COM
+      - 日本 V2CROSS.COM
   - name: 自动选择
     type: url-test
     proxies:
+      - 澳门+澳门电讯
       - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 美国+V2CROSS.COM
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
-      - 美国 CloudFlare节点 - 3
+      - 香港 BGP.NET CN2数据中心
+      - 北美地区+V2CROSS.COM
+      - 日本 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
+      - 澳门+澳门电讯
       - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 美国+V2CROSS.COM
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
-      - 美国 CloudFlare节点 - 3
+      - 香港 BGP.NET CN2数据中心
+      - 北美地区+V2CROSS.COM
+      - 日本 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
