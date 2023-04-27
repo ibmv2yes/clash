@@ -1,4 +1,41 @@
 proxies:
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: 108.162.192.31
+    port: 80
+    uuid: cbb8627b-669d-4695-cf13-00d9e075d88d
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /blue
+    ws-headers:
+      Host: jkr.vtcss.top
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: mci.bamarambash.monster
+    port: 443
+    uuid: 8f74ec8a-971c-11ed-a8fc-0242ac120002
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /db698b16-d216-11ed-8e14-5ad705867cff
+    ws-headers:
+      Host: db698b16-d216-11ed-8e14-5ad705867cff.asmandll.com
+    tls: true
+  - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: 4.mamadcucu.com
+    port: 8880
+    uuid: 51ba5a9a-4b7c-4c62-b4ae-0e53ec8d3024
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /ArsalanTauBot
+    ws-headers:
+      Host: 4.mamadcucu.com
   - name: 美国 V2CROSS.COM
     type: vmess
     server: 143.42.99.183
@@ -11,25 +48,73 @@ proxies:
     ws-path: /chat
     ws-headers: {}
     tls: true
-  - name: 湖南省+联通
-    type: ss
-    server: assets.flareai.store
-    port: '15143'
-    cipher: chacha20-ietf-poly1305
-    password: d5dd371c-11db-4cfb-b458-072f0fbd0e18
-  - name: 美国 CloudFlare节点
+  - name: 英国 伦敦Linode数据中心
     type: vmess
-    server: target.292228.xyz
-    port: 80
-    uuid: 12b1bed9-1534-41db-a530-a1dbf6c2a7c6
+    server: vuk1.0bad.com
+    port: 443
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /filetransfer
+    ws-path: /chat
+    ws-headers: {}
+    tls: true
+  - name: 美国加利福尼亚州圣克拉拉+腾讯云
+    type: trojan
+    server: 43.153.34.170
+    port: '8443'
+    password: cf4295378e209e70d12c5bdd017144dfd1c772d3
+  - name: 美国 加利福尼亚州圣何塞PEG TECH
+    type: vmess
+    server: 142.4.125.53
+    port: 50044
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
     ws-headers:
-      Host: us-east-1.292228.xyz
-  - name: 美国 CloudFlare节点 - 2
+      Host: ''
+  - name: 美国 V2CROSS.COM - 2
+    type: vmess
+    server: vau1.0bad.com
+    port: 443
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /chat
+    ws-headers:
+      Host: vau1.0bad.com
+    tls: true
+  - name: 美国 CloudFlare节点 - 4
+    type: vmess
+    server: 162.159.44.111
+    port: 80
+    uuid: cbb8627b-669d-4695-cf13-00d9e075d88d
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /blue
+    ws-headers:
+      Host: jkr.vtcss.top
+  - name: 美国 CloudFlare节点 - 5
+    type: vmess
+    server: 104.17.3.81
+    port: 80
+    uuid: e40b2de3-b829-4591-a7b6-99d1913f3246
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /worryfree
+    ws-headers:
+      Host: w.evouch77.live
+  - name: 美国 CloudFlare节点 - 6
     type: vmess
     server: www.udemy.com
     port: 443
@@ -42,85 +127,94 @@ proxies:
     ws-headers:
       Host: dynamic-sg1b.obfs.xyz
     tls: true
-  - name: 美国 CloudFlare节点 - 3
+  - name: 韩国 首尔Oracle云计算数据中心
     type: vmess
-    server: d.pgypgykmoljklj.xyz
-    port: 443
-    uuid: fa4cb529-3ac9-4268-bb04-ed4253813508
+    server: kr-5.vuex.eu.org
+    port: 8888
+    uuid: 0e05e02b-3e9d-4d25-a6c5-895bdbded83a
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /mR17oBKzZ7
     ws-headers: {}
-    tls: true
-  - name: 美国 CloudFlare节点 - 4
+  - name: 韩国首尔 oracle云
     type: vmess
-    server: 104.17.3.81
-    port: 80
-    uuid: e40b2de3-b829-4591-a7b6-99d1913f3246
+    server: kr-1.vuex.eu.org
+    port: 9898
+    uuid: 0e05e02b-3e9d-4d25-a6c5-895bdbded83a
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /worryfree
+    ws-headers: {}
+  - name: 美国弗吉尼亚州阿什本 CloudFlare节点
+    type: vmess
+    server: 173.245.49.185
+    port: 80
+    uuid: cbb8627b-669d-4695-cf13-00d9e075d88d
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /blue
     ws-headers:
-      Host: w.evouch77.live
-  - name: 广东省广州市+移动
-    type: ss
-    server: assets.flareai.site
-    port: '15343'
-    cipher: chacha20-ietf-poly1305
-    password: d5dd371c-11db-4cfb-b458-072f0fbd0e18
-  - name: 新加坡 OVH
-    type: vmess
-    server: 51.79.158.59
-    port: 80
-    uuid: 65e44501-defd-4609-a4e3-7028dc417b50
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /vmess-ntls
-    ws-headers: {}
+      Host: jkr.vtcss.top
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 V2CROSS.COM
-      - 湖南省+联通
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
       - 美国 CloudFlare节点 - 3
+      - 美国 V2CROSS.COM
+      - 英国 伦敦Linode数据中心
+      - 美国加利福尼亚州圣克拉拉+腾讯云
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国 V2CROSS.COM - 2
       - 美国 CloudFlare节点 - 4
-      - 广东省广州市+移动
-      - 新加坡 OVH
+      - 美国 CloudFlare节点 - 5
+      - 美国 CloudFlare节点 - 6
+      - 韩国 首尔Oracle云计算数据中心
+      - 韩国首尔 oracle云
+      - 美国弗吉尼亚州阿什本 CloudFlare节点
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 V2CROSS.COM
-      - 湖南省+联通
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
       - 美国 CloudFlare节点 - 3
+      - 美国 V2CROSS.COM
+      - 英国 伦敦Linode数据中心
+      - 美国加利福尼亚州圣克拉拉+腾讯云
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国 V2CROSS.COM - 2
       - 美国 CloudFlare节点 - 4
-      - 广东省广州市+移动
-      - 新加坡 OVH
+      - 美国 CloudFlare节点 - 5
+      - 美国 CloudFlare节点 - 6
+      - 韩国 首尔Oracle云计算数据中心
+      - 韩国首尔 oracle云
+      - 美国弗吉尼亚州阿什本 CloudFlare节点
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 V2CROSS.COM
-      - 湖南省+联通
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
       - 美国 CloudFlare节点 - 3
+      - 美国 V2CROSS.COM
+      - 英国 伦敦Linode数据中心
+      - 美国加利福尼亚州圣克拉拉+腾讯云
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国 V2CROSS.COM - 2
       - 美国 CloudFlare节点 - 4
-      - 广东省广州市+移动
-      - 新加坡 OVH
+      - 美国 CloudFlare节点 - 5
+      - 美国 CloudFlare节点 - 6
+      - 韩国 首尔Oracle云计算数据中心
+      - 韩国首尔 oracle云
+      - 美国弗吉尼亚州阿什本 CloudFlare节点
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
