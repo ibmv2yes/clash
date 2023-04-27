@@ -1,16 +1,52 @@
 proxies:
-  - name: 美国 CloudFlare节点
+  - name: 德国 黑森州法兰克福DigitalOcean数据中心
     type: vmess
-    server: www.udemy.com
-    port: 443
-    uuid: 92869d41-a98a-40ba-b79d-2eeb7ffe2433
+    server: 165.227.133.55
+    port: 80
+    uuid: df68f678-62c3-4799-91a8-4d301e8cf565
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /worryfree
+    ws-path: /PGV2vtMvxwNFt2
+    ws-headers: {}
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: wwwow.ir
+    port: 443
+    uuid: 84b4d2ac-699b-4ba5-a6b2-adaaa82b667d
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /84b4d2ac-699b-4ba5-a6b2-adaaa82b667d-vm
+    ws-headers: {}
+    tls: true
+  - name: 俄罗斯 V2CROSS.COM
+    type: vmess
+    server: 185.143.220.25
+    port: 443
+    uuid: f28e354e-c2d1-4983-9b07-5acaf1b3b3e5
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /6e9EtZ2dL
     ws-headers:
-      Host: dynamic-sg1b.obfs.xyz
+      Host: ''
+    tls: true
+  - name: 日本 V2CROSS.COM
+    type: vmess
+    server: 43.198.97.210
+    port: 443
+    uuid: deb441cd-57ca-4d14-9c3e-b43cf62c7573
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /zh-cn
+    ws-headers:
+      Host: www.microsoft.com
     tls: true
   - name: 美国 加利福尼亚州洛杉矶Sharktech数据中心
     type: vmess
@@ -25,104 +61,35 @@ proxies:
     ws-headers:
       Host: ''
     tls: true
-  - name: 英国 V2CROSS.COM
-    type: vmess
-    server: 87.254.31.229
-    port: 30075
-    uuid: 9a765244-583e-44c7-810a-ed011c98abaa
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /uk1/getData
-    ws-headers:
-      Host: ''
-    tls: true
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: telecom.cfcdn.giize.com
-    port: 443
-    uuid: 13c7db38-b00f-49ca-bd9e-60f4f1f008cd
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /cctv13.m3u8
-    ws-headers:
-      Host: de01.cctvvip.ml
-    tls: true
-  - name: 美国 CloudFlare节点 - 3
-    type: vmess
-    server: 4.mamadcucu.com
-    port: 8880
-    uuid: 51ba5a9a-4b7c-4c62-b4ae-0e53ec8d3024
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /ArsalanTauBot
-    ws-headers:
-      Host: 4.mamadcucu.com
-  - name: 美国 CloudFlare节点 - 4
-    type: vmess
-    server: telecom.cfcdn.giize.com
-    port: 443
-    uuid: cfc3627f-31e8-4695-dfbd-34076e2f1f5d
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /cctv13.m3u8
-    ws-headers:
-      Host: jp06.cctvvip.ml
-    tls: true
-  - name: 德国 黑森州法兰克福DigitalOcean数据中心
-    type: vmess
-    server: 165.227.133.55
-    port: 80
-    uuid: df68f678-62c3-4799-91a8-4d301e8cf565
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /PGV2vtMvxwNFt2
-    ws-headers:
-      Host: speedtest.net
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 CloudFlare节点
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
-      - 英国 V2CROSS.COM
-      - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
       - 德国 黑森州法兰克福DigitalOcean数据中心
+      - 美国 CloudFlare节点
+      - 俄罗斯 V2CROSS.COM
+      - 日本 V2CROSS.COM
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 CloudFlare节点
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
-      - 英国 V2CROSS.COM
-      - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
       - 德国 黑森州法兰克福DigitalOcean数据中心
+      - 美国 CloudFlare节点
+      - 俄罗斯 V2CROSS.COM
+      - 日本 V2CROSS.COM
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 CloudFlare节点
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
-      - 英国 V2CROSS.COM
-      - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
       - 德国 黑森州法兰克福DigitalOcean数据中心
+      - 美国 CloudFlare节点
+      - 俄罗斯 V2CROSS.COM
+      - 日本 V2CROSS.COM
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
