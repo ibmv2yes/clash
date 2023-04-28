@@ -1,60 +1,6 @@
 proxies:
   - name: 美国 CloudFlare节点
     type: vmess
-    server: cf-lt.sharecentre.online
-    port: 80
-    uuid: 2e496758-950e-4549-8842-d5eec98d9fde
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /shirker
-    ws-headers:
-      Host: uk1.scproxy.top
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: ming2.kiwireich.com
-    port: 443
-    uuid: 18e5f40f-bda6-4c15-9334-e87cda6047af
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /ray
-    ws-headers: {}
-    tls: true
-  - name: 香港+DMIT数据中心
-    type: trojan
-    server: hkhe02.bcloudv.cyou
-    port: '20897'
-    password: 10f87a8e-a6f6-319d-a895-8310d326ecce
-  - name: 美国 CloudFlare节点 - 3
-    type: vmess
-    server: 172.67.140.193
-    port: 80
-    uuid: 2e496758-950e-4549-8842-d5eec98d9fde
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /shirker
-    ws-headers:
-      Host: uk1.scproxy.top
-  - name: 美国 加利福尼亚州费利蒙Linode数据中心
-    type: vmess
-    server: vus2.0bad.com
-    port: 443
-    uuid: 927094d3-d678-4763-8591-e240d0bcae87
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /chat
-    ws-headers:
-      Host: vus2.0bad.com
-    tls: true
-  - name: 美国 CloudFlare节点 - 4
-    type: vmess
     server: 172.67.217.222
     port: 80
     uuid: 2e496758-950e-4549-8842-d5eec98d9fde
@@ -65,34 +11,84 @@ proxies:
     ws-path: /shirker
     ws-headers:
       Host: dp3.scproxy.top
-  - name: 美国 CloudFlare节点 - 5
+  - name: 美国 CloudFlare节点 - 2
     type: vmess
-    server: scaleway.696960.xyz
-    port: 443
-    uuid: e357cd63-f1a5-4c8e-c42e-26da11207fee
+    server: 4.mamadcucu.com
+    port: 8880
+    uuid: 51ba5a9a-4b7c-4c62-b4ae-0e53ec8d3024
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /root/
-    ws-headers: {}
-    tls: true
-  - name: 浙江省 移动数据上网公共出口
+    ws-path: /ArsalanTauBot
+    ws-headers:
+      Host: ''
+  - name: 日本 V2CROSS.COM
     type: vmess
-    server: data-hk-v2.shwjfkw.cn
-    port: 50205
-    uuid: b1478e24-4916-3abe-8f17-15931012ecbe
-    alterId: 1
+    server: 43.198.97.210
+    port: 443
+    uuid: deb441cd-57ca-4d14-9c3e-b43cf62c7573
+    alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /hls/cctv5phd.m3u8
+    ws-path: /zh-cn
+    ws-headers:
+      Host: www.microsoft.com
+    tls: true
+  - name: 美国 加利福尼亚州圣何塞PEG TECH
+    type: vmess
+    server: 142.4.106.246
+    port: 52902
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: ''
+    ws-headers:
+      Host: ''
+  - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: cdnjs.com
+    port: 443
+    uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /speedtest
+    ws-headers:
+      Host: LosAngeles.kotick.site
+    tls: true
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: telegram-id.vpneti.ga
+    port: 443
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /vjp2.0bad.com:443/chat
+    ws-headers:
+      Host: bia-to-channel.vpneti.tk
+    tls: true
+  - name: 北美地区 V2CROSS.COM
+    type: vmess
+    server: hk1.taobao4755.xyz
+    port: 80
+    uuid: f36ffaa2-b7ce-4297-b18f-1c003698ae49
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
     ws-headers: {}
-  - name: 日本+东京Amazon数据中心
+  - name: 瑞士+V2CROSS.COM
     type: trojan
-    server: cd529a06-85c5-4662-9157-a0ce584cd324.interface.buzz
-    port: 443?type=tcp&sni=apps.apple.com&allowInsecure=1
-    password: 285adff2-eb0b-41f6-80d7-8a8fc65b10fc
+    server: 195.15.243.26
+    port: 443?type=tcp&allowInsecure=1
+    password: '4478'
 proxy-groups:
   - name: Free-servers
     type: select
@@ -101,25 +97,23 @@ proxy-groups:
       - 故障转移
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
-      - 香港+DMIT数据中心
+      - 日本 V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH
       - 美国 CloudFlare节点 - 3
-      - 美国 加利福尼亚州费利蒙Linode数据中心
-      - 美国 CloudFlare节点 - 4
-      - 美国 CloudFlare节点 - 5
-      - 浙江省 移动数据上网公共出口
-      - 日本+东京Amazon数据中心
+      - 美国 V2CROSS.COM
+      - 北美地区 V2CROSS.COM
+      - 瑞士+V2CROSS.COM
   - name: 自动选择
     type: url-test
     proxies:
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
-      - 香港+DMIT数据中心
+      - 日本 V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH
       - 美国 CloudFlare节点 - 3
-      - 美国 加利福尼亚州费利蒙Linode数据中心
-      - 美国 CloudFlare节点 - 4
-      - 美国 CloudFlare节点 - 5
-      - 浙江省 移动数据上网公共出口
-      - 日本+东京Amazon数据中心
+      - 美国 V2CROSS.COM
+      - 北美地区 V2CROSS.COM
+      - 瑞士+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
@@ -127,13 +121,12 @@ proxy-groups:
     proxies:
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
-      - 香港+DMIT数据中心
+      - 日本 V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH
       - 美国 CloudFlare节点 - 3
-      - 美国 加利福尼亚州费利蒙Linode数据中心
-      - 美国 CloudFlare节点 - 4
-      - 美国 CloudFlare节点 - 5
-      - 浙江省 移动数据上网公共出口
-      - 日本+东京Amazon数据中心
+      - 美国 V2CROSS.COM
+      - 北美地区 V2CROSS.COM
+      - 瑞士+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
