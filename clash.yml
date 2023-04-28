@@ -1,16 +1,67 @@
 proxies:
   - name: 美国 CloudFlare节点
     type: vmess
-    server: ca.moop.wiki
-    port: 80
-    uuid: c25afb3a-15ec-4c1d-9233-872e1fbe6965
+    server: inf.314156.xyz
+    port: 443
+    uuid: 5b3b5d3f-68a1-4afe-8a9e-a55f30af98e3
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /catre2
+    ws-path: /workerConfig
     ws-headers:
-      Host: ca.moop.wiki
+      Host: inf.314156.xyz
+    tls: true
+  - name: 美国加利福尼亚州洛杉矶 PetaExpress
+    type: vmess
+    server: 198.2.208.181
+    port: 35402
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: www.damonhuang.top
+  - name: 日本 V2CROSS.COM
+    type: vmess
+    server: hk6.af49c4e4c2ef.sanfen004.me
+    port: 443
+    uuid: 29387883-aace-4e03-bad7-940bc5e6ba67
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /zh-cn
+    ws-headers:
+      Host: www.microsoft.com
+    tls: true
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: cfcdn.sanfencdn.net
+    port: 443
+    uuid: c4868b8a-1f5c-4536-b191-d5429c2e14b7
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /zh-cn
+    ws-headers:
+      Host: us1.sanfencdn.net
+    tls: true
+  - name: 欧盟 V2CROSS.COM
+    type: vmess
+    server: 45.12.144.79
+    port: 47127
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
   - name: 浙江省 移动数据上网公共出口
     type: vmess
     server: data-hk-v2.shwjfkw.cn
@@ -22,40 +73,19 @@ proxies:
     network: ws
     ws-path: /hls/cctv5phd.m3u8
     ws-headers: {}
-  - name: 美国 CloudFlare节点 - 2
+  - name: 立陶宛 V2CROSS.COM
     type: vmess
-    server: 172.67.98.34
-    port: 80
-    uuid: 2e496758-950e-4549-8842-d5eec98d9fde
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /shirker
-    ws-headers:
-      Host: uk1.scproxy.top
-  - name: 香港 阿里云
-    type: vmess
-    server: n1682396197.edpmvga.cn
+    server: mci.bamarambash.monster
     port: 443
-    uuid: 2d6feb24-efc5-4932-a255-d15c791e9b3a
+    uuid: 8f74ec8a-971c-11ed-a8fc-0242ac120002
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /
-    ws-headers: {}
+    ws-path: /db698b16-d216-11ed-8e14-5ad705867cff
+    ws-headers:
+      Host: db698b16-d216-11ed-8e14-5ad705867cff.asmandll.com
     tls: true
-  - name: 美国 加利福尼亚州圣何塞PEG TECH
-    type: vmess
-    server: 142.4.97.76
-    port: 44942
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-headers: {}
 proxy-groups:
   - name: Free-servers
     type: select
@@ -63,28 +93,34 @@ proxy-groups:
       - 自动选择
       - 故障转移
       - 美国 CloudFlare节点
-      - 浙江省 移动数据上网公共出口
+      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 日本 V2CROSS.COM
       - 美国 CloudFlare节点 - 2
-      - 香港 阿里云
-      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 欧盟 V2CROSS.COM
+      - 浙江省 移动数据上网公共出口
+      - 立陶宛 V2CROSS.COM
   - name: 自动选择
     type: url-test
     proxies:
       - 美国 CloudFlare节点
-      - 浙江省 移动数据上网公共出口
+      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 日本 V2CROSS.COM
       - 美国 CloudFlare节点 - 2
-      - 香港 阿里云
-      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 欧盟 V2CROSS.COM
+      - 浙江省 移动数据上网公共出口
+      - 立陶宛 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
       - 美国 CloudFlare节点
-      - 浙江省 移动数据上网公共出口
+      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 日本 V2CROSS.COM
       - 美国 CloudFlare节点 - 2
-      - 香港 阿里云
-      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 欧盟 V2CROSS.COM
+      - 浙江省 移动数据上网公共出口
+      - 立陶宛 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
