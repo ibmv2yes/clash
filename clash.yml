@@ -1,94 +1,95 @@
 proxies:
-  - name: 美国 CloudFlare节点
+  - name: 澳门+澳门电讯
+    type: trojan
+    server: 45.64.22.56
+    port: 443?type=tcp&sni=trojan-ctb-sg02.globalssh.xyz&allowInsecure=1
+    password: '123456'
+  - name: 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
     type: vmess
-    server: d.pgypgykmoljklj.xyz
+    server: 23.224.173.101
     port: 443
-    uuid: fa4cb529-3ac9-4268-bb04-ed4253813508
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /path/080712342310
+    ws-headers: {}
+    tls: true
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: 143.42.99.183
+    port: 443
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /mR17oBKzZ7
+    ws-path: /chat
     ws-headers: {}
     tls: true
-  - name: 荷兰 V2CROSS.COM
+  - name: 美国 加利福尼亚州圣华金县斯托克顿市PacWest通信公司
     type: vmess
-    server: 91.199.84.125
-    port: 80
-    uuid: 2cfc4c58-88cb-4e00-9977-ef0a37559a22
+    server: ganjun.xyz
+    port: 443
+    uuid: 17bc2008-0ff7-44b0-bfb1-0c300180c71e
     alterId: 0
     cipher: auto
     udp: true
     network: ws
     ws-path: /
-    ws-headers: {}
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: telecom.cfcdn.giize.com
-    port: 443
-    uuid: 13c7db38-b00f-49ca-bd9e-60f4f1f008cd
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /cctv13.m3u8
     ws-headers:
-      Host: de01.cctvvip.ml
+      Host: ganjun.xyz
     tls: true
-  - name: 美国 CloudFlare节点 - 3
+  - name: 香港+DMIT数据中心
+    type: trojan
+    server: any3017.bcloud.cyou
+    port: '10116'
+    password: 10f87a8e-a6f6-319d-a895-8310d326ecce
+  - name: 台湾省新北市 中华电信
     type: vmess
-    server: cf-lt.sharecentre.online
-    port: 80
-    uuid: 2e496758-950e-4549-8842-d5eec98d9fde
+    server: hinet1261.gfwisbest.xyz
+    port: 224
+    uuid: 2285133e-b9ba-3fb5-a246-9c7ddcc2cd7a
     alterId: 0
     cipher: auto
     udp: true
-    network: ws
-    ws-path: /shirker
+    network: tcp
+    ws-path: /
     ws-headers:
-      Host: lv2.sharecentrepro.org
-  - name: 美国 CloudFlare节点 - 4
-    type: vmess
-    server: www.udemy.com
-    port: 443
-    uuid: 92869d41-a98a-40ba-b79d-2eeb7ffe2433
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /worryfree
-    ws-headers:
-      Host: dynamic-sg1b.obfs.xyz
-    tls: true
+      Host: ''
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 CloudFlare节点
-      - 荷兰 V2CROSS.COM
-      - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
+      - 澳门+澳门电讯
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 美国 V2CROSS.COM
+      - 美国 加利福尼亚州圣华金县斯托克顿市PacWest通信公司
+      - 香港+DMIT数据中心
+      - 台湾省新北市 中华电信
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 CloudFlare节点
-      - 荷兰 V2CROSS.COM
-      - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
+      - 澳门+澳门电讯
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 美国 V2CROSS.COM
+      - 美国 加利福尼亚州圣华金县斯托克顿市PacWest通信公司
+      - 香港+DMIT数据中心
+      - 台湾省新北市 中华电信
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 CloudFlare节点
-      - 荷兰 V2CROSS.COM
-      - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
+      - 澳门+澳门电讯
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 美国 V2CROSS.COM
+      - 美国 加利福尼亚州圣华金县斯托克顿市PacWest通信公司
+      - 香港+DMIT数据中心
+      - 台湾省新北市 中华电信
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
