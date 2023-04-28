@@ -1,40 +1,16 @@
 proxies:
-  - name: 美国加利福尼亚州洛杉矶 PetaExpress
+  - name: 美国 CloudFlare节点
     type: vmess
-    server: 198.2.208.181
-    port: 35402
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: www.damonhuang.top
-  - name: 美国 V2CROSS.COM
-    type: vmess
-    server: 170.187.200.114
+    server: 104.17.14.48
     port: 443
-    uuid: 927094d3-d678-4763-8591-e240d0bcae87
+    uuid: 083a9d0b-11fb-4b3d-ad57-7ace252bb51b
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /chat
-    ws-headers: {}
-    tls: true
-  - name: 美国 V2CROSS.COM - 2
-    type: vmess
-    server: 143.42.173.175
-    port: 443
-    uuid: 927094d3-d678-4763-8591-e240d0bcae87
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /chat
+    ws-path: /vmess
     ws-headers:
-      Host: ''
+      Host: fr-v.sshmax.xyz
     tls: true
   - name: 美国 加利福尼亚州洛杉矶Sharktech数据中心
     type: vmess
@@ -48,6 +24,74 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: telecom.cfcdn.giize.com
+    port: 443
+    uuid: 13c7db38-b00f-49ca-bd9e-60f4f1f008cd
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /cctv13.m3u8
+    ws-headers:
+      Host: de01.cctvvip.ml
+    tls: true
+  - name: 英国 V2CROSS.COM
+    type: vmess
+    server: wfi.sahnama.com
+    port: 80
+    uuid: 1e5fba98-deac-4fae-ac2f-c055e7810668
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /n02mMHFUSf9cMft6o
+    ws-headers:
+      Host: ''
+  - name: 俄罗斯 V2CROSS.COM
+    type: vmess
+    server: 185.143.220.25
+    port: 443
+    uuid: f28e354e-c2d1-4983-9b07-5acaf1b3b3e5
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /6e9EtZ2dL
+    ws-headers:
+      Host: ''
+    tls: true
+  - name: 日本 东京Linode数据中心
+    type: vmess
+    server: vjp1.0bad.com
+    port: 443
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /chat
+    ws-headers:
+      Host: vjp1.0bad.com
+    tls: true
+  - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: d.pgypgykmoljklj.xyz
+    port: 443
+    uuid: fa4cb529-3ac9-4268-bb04-ed4253813508
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /mR17oBKzZ7
+    ws-headers: {}
+    tls: true
+  - name: 日本+V2CROSS.COM
+    type: trojan
+    server: photo.lele233.cn
+    port: '443'
+    password: c3197c95-dd5b-4b1e-a3a0-dc83c288aea9
   - name: 南非 V2CROSS.COM
     type: vmess
     server: 156.225.67.143
@@ -57,7 +101,7 @@ proxies:
     cipher: auto
     udp: true
     network: tcp
-    ws-path: ''
+    ws-path: /
     ws-headers:
       Host: ''
 proxy-groups:
@@ -66,28 +110,40 @@ proxy-groups:
     proxies:
       - 自动选择
       - 故障转移
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 美国 V2CROSS.COM
-      - 美国 V2CROSS.COM - 2
+      - 美国 CloudFlare节点
       - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 美国 CloudFlare节点 - 2
+      - 英国 V2CROSS.COM
+      - 俄罗斯 V2CROSS.COM
+      - 日本 东京Linode数据中心
+      - 美国 CloudFlare节点 - 3
+      - 日本+V2CROSS.COM
       - 南非 V2CROSS.COM
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 美国 V2CROSS.COM
-      - 美国 V2CROSS.COM - 2
+      - 美国 CloudFlare节点
       - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 美国 CloudFlare节点 - 2
+      - 英国 V2CROSS.COM
+      - 俄罗斯 V2CROSS.COM
+      - 日本 东京Linode数据中心
+      - 美国 CloudFlare节点 - 3
+      - 日本+V2CROSS.COM
       - 南非 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 美国 V2CROSS.COM
-      - 美国 V2CROSS.COM - 2
+      - 美国 CloudFlare节点
       - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 美国 CloudFlare节点 - 2
+      - 英国 V2CROSS.COM
+      - 俄罗斯 V2CROSS.COM
+      - 日本 东京Linode数据中心
+      - 美国 CloudFlare节点 - 3
+      - 日本+V2CROSS.COM
       - 南非 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
