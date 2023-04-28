@@ -1,29 +1,14 @@
 proxies:
-  - name: 美国加利福尼亚州洛杉矶 PetaExpress
+  - name: 南非 V2CROSS.COM
     type: vmess
-    server: 198.2.206.34
-    port: 33012
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    server: 156.225.67.213
+    port: 47666
+    uuid: 3ca912da-6ac2-418f-b9cf-45b6f694579b
     alterId: 64
     cipher: auto
     udp: true
     network: tcp
-    ws-path: /hax1
-    ws-headers:
-      Host: hax1.freeair.eu.org
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: aaaa.wxx.gay
-    port: 443
-    uuid: 0269fc24-e59e-11ed-8dbb-000017022008
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /look
-    ws-headers:
-      Host: ''
-    tls: true
+    ws-headers: {}
   - name: 俄罗斯 V2CROSS.COM
     type: vmess
     server: 185.143.220.25
@@ -37,120 +22,79 @@ proxies:
     ws-headers:
       Host: ''
     tls: true
-  - name: 南非 V2CROSS.COM
+  - name: 美国 CloudFlare节点
     type: vmess
-    server: 156.225.67.213
-    port: 47666
-    uuid: 3ca912da-6ac2-418f-b9cf-45b6f694579b
+    server: surongwei.eu.org
+    port: 443
+    uuid: 6093eefb-7ab6-41df-aba0-d5fa58147e10
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /reffs7y26g0ua
+    ws-headers:
+      Host: surongwei.eu.org
+    tls: true
+  - name: 美国 加利福尼亚州圣何塞PEG TECH
+    type: vmess
+    server: 142.4.97.76
+    port: 44942
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
     udp: true
     network: tcp
     ws-headers: {}
-  - name: 俄罗斯+莫斯科justhost.ru
-    type: ss
-    server: 45.129.3.99
-    port: '22233'
-    cipher: aes-256-gcm
-    password: dongtaiwang.com
-  - name: 美国 CloudFlare节点 - 2
+  - name: 美国+Microsoft数据中心
+    type: trojan
+    server: fscus.fscloud123456789.com
+    port: '443'
+    password: 514b8c92-12da-4219-b06c-56ecc67dfa23
+  - name: 立陶宛 V2CROSS.COM
     type: vmess
-    server: v.vpchi.tk
-    port: 2086
-    uuid: 7165a97e-9a41-421f-f709-e33e9e23f4d0
+    server: mci.bamarambash.monster
+    port: 443
+    uuid: 8f74ec8a-971c-11ed-a8fc-0242ac120002
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /
+    ws-path: /db698b16-d216-11ed-8e14-5ad705867cff
     ws-headers:
-      Host: ''
-  - name: 美国 CloudFlare节点 - 3
-    type: vmess
-    server: 172.67.98.34
-    port: 80
-    uuid: 2e496758-950e-4549-8842-d5eec98d9fde
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /shirker
-    ws-headers:
-      Host: uk1.scproxy.top
-  - name: 美国 CloudFlare节点 - 4
-    type: vmess
-    server: hax1.freeair.eu.org
-    port: 80
-    uuid: 2ca15318-1015-486d-ef3e-4652102a235a
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /hax1
-    ws-headers:
-      Host: hax1.freeair.eu.org
-  - name: 俄罗斯+莫斯科justhost.ru - 2
-    type: ss
-    server: 45.129.3.99
-    port: '22233'
-    cipher: aes-256-gcm
-    password: dongtaiwang.com
-  - name: 美国 CloudFlare节点 - 5
-    type: vmess
-    server: 172.67.140.193
-    port: 80
-    uuid: 2e496758-950e-4549-8842-d5eec98d9fde
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /shirker
-    ws-headers:
-      Host: uk1.scproxy.top
+      Host: db698b16-d216-11ed-8e14-5ad705867cff.asmandll.com
+    tls: true
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 美国 CloudFlare节点
-      - 俄罗斯 V2CROSS.COM
       - 南非 V2CROSS.COM
-      - 俄罗斯+莫斯科justhost.ru
-      - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
-      - 俄罗斯+莫斯科justhost.ru - 2
-      - 美国 CloudFlare节点 - 5
+      - 俄罗斯 V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国+Microsoft数据中心
+      - 立陶宛 V2CROSS.COM
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 美国 CloudFlare节点
-      - 俄罗斯 V2CROSS.COM
       - 南非 V2CROSS.COM
-      - 俄罗斯+莫斯科justhost.ru
-      - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
-      - 俄罗斯+莫斯科justhost.ru - 2
-      - 美国 CloudFlare节点 - 5
+      - 俄罗斯 V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国+Microsoft数据中心
+      - 立陶宛 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 美国 CloudFlare节点
-      - 俄罗斯 V2CROSS.COM
       - 南非 V2CROSS.COM
-      - 俄罗斯+莫斯科justhost.ru
-      - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
-      - 俄罗斯+莫斯科justhost.ru - 2
-      - 美国 CloudFlare节点 - 5
+      - 俄罗斯 V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国+Microsoft数据中心
+      - 立陶宛 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
