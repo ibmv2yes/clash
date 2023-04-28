@@ -1,29 +1,27 @@
 proxies:
   - name: 美国 CloudFlare节点
     type: vmess
-    server: 104.17.14.48
+    server: d.pgypgykmoljklj.xyz
     port: 443
-    uuid: 083a9d0b-11fb-4b3d-ad57-7ace252bb51b
+    uuid: fa4cb529-3ac9-4268-bb04-ed4253813508
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /vmess
-    ws-headers:
-      Host: fr-v.sshmax.xyz
+    ws-path: /mR17oBKzZ7
+    ws-headers: {}
     tls: true
-  - name: 美国 加利福尼亚州洛杉矶Sharktech数据中心
+  - name: 荷兰 V2CROSS.COM
     type: vmess
-    server: 170.178.167.140
-    port: 50002
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
+    server: 91.199.84.125
+    port: 80
+    uuid: 2cfc4c58-88cb-4e00-9977-ef0a37559a22
+    alterId: 0
     cipher: auto
     udp: true
-    network: tcp
+    network: ws
     ws-path: /
-    ws-headers:
-      Host: ''
+    ws-headers: {}
   - name: 美国 CloudFlare节点 - 2
     type: vmess
     server: telecom.cfcdn.giize.com
@@ -37,73 +35,31 @@ proxies:
     ws-headers:
       Host: de01.cctvvip.ml
     tls: true
-  - name: 英国 V2CROSS.COM
-    type: vmess
-    server: wfi.sahnama.com
-    port: 80
-    uuid: 1e5fba98-deac-4fae-ac2f-c055e7810668
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /n02mMHFUSf9cMft6o
-    ws-headers:
-      Host: ''
-  - name: 俄罗斯 V2CROSS.COM
-    type: vmess
-    server: 185.143.220.25
-    port: 443
-    uuid: f28e354e-c2d1-4983-9b07-5acaf1b3b3e5
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /6e9EtZ2dL
-    ws-headers:
-      Host: ''
-    tls: true
-  - name: 日本 东京Linode数据中心
-    type: vmess
-    server: vjp1.0bad.com
-    port: 443
-    uuid: 927094d3-d678-4763-8591-e240d0bcae87
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /chat
-    ws-headers:
-      Host: vjp1.0bad.com
-    tls: true
   - name: 美国 CloudFlare节点 - 3
     type: vmess
-    server: d.pgypgykmoljklj.xyz
-    port: 443
-    uuid: fa4cb529-3ac9-4268-bb04-ed4253813508
+    server: cf-lt.sharecentre.online
+    port: 80
+    uuid: 2e496758-950e-4549-8842-d5eec98d9fde
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /mR17oBKzZ7
-    ws-headers: {}
-    tls: true
-  - name: 日本+V2CROSS.COM
-    type: trojan
-    server: photo.lele233.cn
-    port: '443'
-    password: c3197c95-dd5b-4b1e-a3a0-dc83c288aea9
-  - name: 南非 V2CROSS.COM
+    ws-path: /shirker
+    ws-headers:
+      Host: lv2.sharecentrepro.org
+  - name: 美国 CloudFlare节点 - 4
     type: vmess
-    server: 156.225.67.143
-    port: 51409
-    uuid: 990006bd-cb20-482f-9c97-f5fc65359605
-    alterId: 64
+    server: www.udemy.com
+    port: 443
+    uuid: 92869d41-a98a-40ba-b79d-2eeb7ffe2433
+    alterId: 0
     cipher: auto
     udp: true
-    network: tcp
-    ws-path: /
+    network: ws
+    ws-path: /worryfree
     ws-headers:
-      Host: ''
+      Host: dynamic-sg1b.obfs.xyz
+    tls: true
 proxy-groups:
   - name: Free-servers
     type: select
@@ -111,40 +67,28 @@ proxy-groups:
       - 自动选择
       - 故障转移
       - 美国 CloudFlare节点
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 荷兰 V2CROSS.COM
       - 美国 CloudFlare节点 - 2
-      - 英国 V2CROSS.COM
-      - 俄罗斯 V2CROSS.COM
-      - 日本 东京Linode数据中心
       - 美国 CloudFlare节点 - 3
-      - 日本+V2CROSS.COM
-      - 南非 V2CROSS.COM
+      - 美国 CloudFlare节点 - 4
   - name: 自动选择
     type: url-test
     proxies:
       - 美国 CloudFlare节点
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 荷兰 V2CROSS.COM
       - 美国 CloudFlare节点 - 2
-      - 英国 V2CROSS.COM
-      - 俄罗斯 V2CROSS.COM
-      - 日本 东京Linode数据中心
       - 美国 CloudFlare节点 - 3
-      - 日本+V2CROSS.COM
-      - 南非 V2CROSS.COM
+      - 美国 CloudFlare节点 - 4
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
       - 美国 CloudFlare节点
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 荷兰 V2CROSS.COM
       - 美国 CloudFlare节点 - 2
-      - 英国 V2CROSS.COM
-      - 俄罗斯 V2CROSS.COM
-      - 日本 东京Linode数据中心
       - 美国 CloudFlare节点 - 3
-      - 日本+V2CROSS.COM
-      - 南非 V2CROSS.COM
+      - 美国 CloudFlare节点 - 4
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
