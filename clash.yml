@@ -1,19 +1,50 @@
 proxies:
   - name: 美国 CloudFlare节点
     type: vmess
-    server: cf-lt.sharecentre.online
-    port: 80
-    uuid: 35d1eaf8-53e7-4c8b-92aa-d96a20854e3c
+    server: inf.314156.xyz
+    port: 443
+    uuid: 5b3b5d3f-68a1-4afe-8a9e-a55f30af98e3
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /api/v3/download.getFile
+    ws-path: /workerConfig
     ws-headers:
-      Host: ssrsub.v03.ssrsub.com
+      Host: inf.314156.xyz
+    tls: true
+  - name: 中国 阿里云
+    type: vmess
+    server: n1680936927.lyqrdde.cn
+    port: 443
+    uuid: 79c356e5-c00a-4843-90ec-846c43b795cf
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers: {}
+    tls: true
   - name: 美国 CloudFlare节点 - 2
     type: vmess
-    server: 172.67.87.132
+    server: hax2.freeair.eu.org
+    port: 80
+    uuid: cb1402b7-2a15-4978-ec7d-dc19d9b5586d
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /hax2
+    ws-headers:
+      Host: ''
+  - name: 俄罗斯+莫斯科justhost.ru
+    type: ss
+    server: 45.129.3.99
+    port: '22233'
+    cipher: aes-256-gcm
+    password: dongtaiwang.com
+  - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: 172.67.140.193
     port: 80
     uuid: 2e496758-950e-4549-8842-d5eec98d9fde
     alterId: 0
@@ -23,73 +54,56 @@ proxies:
     ws-path: /shirker
     ws-headers:
       Host: uk1.scproxy.top
-  - name: 美国 加利福尼亚州费利蒙Linode数据中心
-    type: vmess
-    server: vus2.0bad.com
-    port: 443
-    uuid: 927094d3-d678-4763-8591-e240d0bcae87
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /chat
-    ws-headers:
-      Host: ''
-    tls: true
-  - name: 江苏省扬州市 移动
-    type: vmess
-    server: data-hk-v1.shwjfkw.cn
-    port: 50207
-    uuid: b1478e24-4916-3abe-8f17-15931012ecbe
-    alterId: 1
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /hls/cctv5phd.m3u8
-    ws-headers:
-      Host: YTB-awkj
-  - name: 美国 CloudFlare节点 - 3
+  - name: 美国 CloudFlare节点 - 4
     type: vmess
     server: cf-lt.sharecentre.online
     port: 80
-    uuid: 2e496758-950e-4549-8842-d5eec98d9fde
+    uuid: 35d1eaf8-53e7-4c8b-92aa-d96a20854e3c
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /shirker
+    ws-path: /api/v3/download.getFile
     ws-headers:
-      Host: lv1.sharecentrepro.org
-  - name: 美国加利福尼亚州洛杉矶 PetaExpress
+      Host: ssrsub.v01.ssrsub.com
+  - name: 美国 CloudFlare公司CDN节点(shopify)
     type: vmess
-    server: 198.2.203.57
-    port: 44502
+    server: 23.227.38.99
+    port: 443
+    uuid: 86d37526-5758-4cec-862f-df404b313086
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /3G6WPDL7
+    ws-headers:
+      Host: 1.freek1.xyz
+    tls: true
+  - name: 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+    type: vmess
+    server: 23.224.173.101
+    port: 443
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
     udp: true
-    network: tcp
-    ws-path: /
+    network: ws
+    ws-path: /path/080712342310
+    ws-headers: {}
+    tls: true
+  - name: 俄罗斯 V2CROSS.COM
+    type: vmess
+    server: 185.143.220.25
+    port: 443
+    uuid: f28e354e-c2d1-4983-9b07-5acaf1b3b3e5
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /6e9EtZ2dL
     ws-headers:
       Host: ''
-  - name: 美国加利福尼亚州洛杉矶 PetaExpress - 2
-    type: vmess
-    server: 198.2.206.34
-    port: 33012
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /hax1
-    ws-headers:
-      Host: hax1.freeair.eu.org
-  - name: 加拿大+魁北克省博阿努瓦OVH数据中心
-    type: ss
-    server: 158.69.185.230
-    port: '14783'
-    cipher: chacha20-ietf-poly1305
-    password: 8c80d838-253c-41df-afda-d0f04a2c0873
+    tls: true
 proxy-groups:
   - name: Free-servers
     type: select
@@ -97,37 +111,40 @@ proxy-groups:
       - 自动选择
       - 故障转移
       - 美国 CloudFlare节点
+      - 中国 阿里云
       - 美国 CloudFlare节点 - 2
-      - 美国 加利福尼亚州费利蒙Linode数据中心
-      - 江苏省扬州市 移动
+      - 俄罗斯+莫斯科justhost.ru
       - 美国 CloudFlare节点 - 3
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 美国加利福尼亚州洛杉矶 PetaExpress - 2
-      - 加拿大+魁北克省博阿努瓦OVH数据中心
+      - 美国 CloudFlare节点 - 4
+      - 美国 CloudFlare公司CDN节点(shopify)
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 俄罗斯 V2CROSS.COM
   - name: 自动选择
     type: url-test
     proxies:
       - 美国 CloudFlare节点
+      - 中国 阿里云
       - 美国 CloudFlare节点 - 2
-      - 美国 加利福尼亚州费利蒙Linode数据中心
-      - 江苏省扬州市 移动
+      - 俄罗斯+莫斯科justhost.ru
       - 美国 CloudFlare节点 - 3
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 美国加利福尼亚州洛杉矶 PetaExpress - 2
-      - 加拿大+魁北克省博阿努瓦OVH数据中心
+      - 美国 CloudFlare节点 - 4
+      - 美国 CloudFlare公司CDN节点(shopify)
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 俄罗斯 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
       - 美国 CloudFlare节点
+      - 中国 阿里云
       - 美国 CloudFlare节点 - 2
-      - 美国 加利福尼亚州费利蒙Linode数据中心
-      - 江苏省扬州市 移动
+      - 俄罗斯+莫斯科justhost.ru
       - 美国 CloudFlare节点 - 3
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 美国加利福尼亚州洛杉矶 PetaExpress - 2
-      - 加拿大+魁北克省博阿努瓦OVH数据中心
+      - 美国 CloudFlare节点 - 4
+      - 美国 CloudFlare公司CDN节点(shopify)
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 俄罗斯 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
