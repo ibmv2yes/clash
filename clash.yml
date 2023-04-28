@@ -1,24 +1,32 @@
 proxies:
-  - name: 澳门+澳门电讯
-    type: trojan
-    server: 45.64.22.56
-    port: 443?type=tcp&sni=trojan-ctb-sg02.globalssh.xyz&allowInsecure=1
-    password: '123456'
-  - name: 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+  - name: 美国 CloudFlare节点
     type: vmess
-    server: 23.224.173.101
-    port: 443
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
+    server: 4.mamadcucu.com
+    port: 8880
+    uuid: 51ba5a9a-4b7c-4c62-b4ae-0e53ec8d3024
+    alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /path/080712342310
-    ws-headers: {}
-    tls: true
-  - name: 美国 V2CROSS.COM
+    ws-path: /ArsalanTauBot
+    ws-headers:
+      Host: ''
+  - name: 美国 CloudFlare节点 - 2
     type: vmess
-    server: 143.42.99.183
+    server: cdnjs.com
+    port: 443
+    uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /speedtest
+    ws-headers:
+      Host: Kansas.kotick.site
+    tls: true
+  - name: 美国 加利福尼亚州费利蒙Linode数据中心
+    type: vmess
+    server: vus3.0bad.com
     port: 443
     uuid: 927094d3-d678-4763-8591-e240d0bcae87
     alterId: 0
@@ -26,70 +34,91 @@ proxies:
     udp: true
     network: ws
     ws-path: /chat
-    ws-headers: {}
+    ws-headers:
+      Host: vus3.0bad.com
     tls: true
-  - name: 美国 加利福尼亚州圣华金县斯托克顿市PacWest通信公司
+  - name: 美国 CloudFlare节点 - 3
     type: vmess
-    server: ganjun.xyz
+    server: 104.17.14.48
     port: 443
-    uuid: 17bc2008-0ff7-44b0-bfb1-0c300180c71e
+    uuid: 083a9d0b-11fb-4b3d-ad57-7ace252bb51b
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /
+    ws-path: /vmess
     ws-headers:
-      Host: ganjun.xyz
+      Host: fr-v.sshmax.xyz
     tls: true
-  - name: 香港+DMIT数据中心
-    type: trojan
-    server: any3017.bcloud.cyou
-    port: '10116'
-    password: 10f87a8e-a6f6-319d-a895-8310d326ecce
-  - name: 台湾省新北市 中华电信
+  - name: 英国 V2CROSS.COM
     type: vmess
-    server: hinet1261.gfwisbest.xyz
-    port: 224
-    uuid: 2285133e-b9ba-3fb5-a246-9c7ddcc2cd7a
+    server: wfi.sahnama.com
+    port: 80
+    uuid: 1e5fba98-deac-4fae-ac2f-c055e7810668
     alterId: 0
     cipher: auto
     udp: true
-    network: tcp
-    ws-path: /
+    network: ws
+    ws-path: /n02mMHFUSf9cMft6o
     ws-headers:
       Host: ''
+  - name: 美国 加利福尼亚州圣何塞PEG TECH
+    type: vmess
+    server: 142.4.97.76
+    port: 44942
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-headers: {}
+  - name: 美国 CloudFlare节点 - 4
+    type: vmess
+    server: 172.67.140.193
+    port: 80
+    uuid: 2e496758-950e-4549-8842-d5eec98d9fde
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /shirker
+    ws-headers:
+      Host: uk1.scproxy.top
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 澳门+澳门电讯
-      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
-      - 美国 V2CROSS.COM
-      - 美国 加利福尼亚州圣华金县斯托克顿市PacWest通信公司
-      - 香港+DMIT数据中心
-      - 台湾省新北市 中华电信
+      - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 - 2
+      - 美国 加利福尼亚州费利蒙Linode数据中心
+      - 美国 CloudFlare节点 - 3
+      - 英国 V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国 CloudFlare节点 - 4
   - name: 自动选择
     type: url-test
     proxies:
-      - 澳门+澳门电讯
-      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
-      - 美国 V2CROSS.COM
-      - 美国 加利福尼亚州圣华金县斯托克顿市PacWest通信公司
-      - 香港+DMIT数据中心
-      - 台湾省新北市 中华电信
+      - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 - 2
+      - 美国 加利福尼亚州费利蒙Linode数据中心
+      - 美国 CloudFlare节点 - 3
+      - 英国 V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国 CloudFlare节点 - 4
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 澳门+澳门电讯
-      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
-      - 美国 V2CROSS.COM
-      - 美国 加利福尼亚州圣华金县斯托克顿市PacWest通信公司
-      - 香港+DMIT数据中心
-      - 台湾省新北市 中华电信
+      - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 - 2
+      - 美国 加利福尼亚州费利蒙Linode数据中心
+      - 美国 CloudFlare节点 - 3
+      - 英国 V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国 CloudFlare节点 - 4
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
