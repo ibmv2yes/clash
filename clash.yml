@@ -1,18 +1,30 @@
 proxies:
-  - name: 俄罗斯 V2CROSS.COM
+  - name: 美国 CloudFlare节点
     type: vmess
-    server: 185.143.220.25
-    port: 443
-    uuid: f28e354e-c2d1-4983-9b07-5acaf1b3b3e5
+    server: v.vpchi.tk
+    port: 2086
+    uuid: 7165a97e-9a41-421f-f709-e33e9e23f4d0
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /6e9EtZ2dL
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: vde2.0bad.com
+    port: 443
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /chat
     ws-headers:
       Host: ''
     tls: true
-  - name: 美国 CloudFlare节点
+  - name: 美国 CloudFlare节点 - 2
     type: vmess
     server: v2ray.online
     port: 443
@@ -25,23 +37,43 @@ proxies:
     ws-headers:
       Host: Kansas.v2ray.online
     tls: true
-  - name: 日本+东京Amazon数据中心
-    type: trojan
-    server: cd529a06-85c5-4662-9157-a0ce584cd324.interface.buzz
-    port: 443?type=tcp&sni=apps.apple.com&allowInsecure=1
-    password: 285adff2-eb0b-41f6-80d7-8a8fc65b10fc
-  - name: 美国 CloudFlare节点 - 2
+  - name: 南非 V2CROSS.COM
     type: vmess
-    server: hax1.freeair.eu.org
-    port: 80
-    uuid: 2ca15318-1015-486d-ef3e-4652102a235a
+    server: 156.225.67.213
+    port: 47666
+    uuid: 3ca912da-6ac2-418f-b9cf-45b6f694579b
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: ''
+    ws-headers:
+      Host: ''
+  - name: 美国 加利福尼亚州圣何塞PEG TECH
+    type: vmess
+    server: 142.4.114.22
+    port: 34002
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: inf.314156.xyz
+    port: 443
+    uuid: 5b3b5d3f-68a1-4afe-8a9e-a55f30af98e3
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /hax1
+    ws-path: /workerConfig
     ws-headers:
-      Host: hax1.freeair.eu.org
+      Host: inf.314156.xyz
+    tls: true
   - name: 日本 V2CROSS.COM
     type: vmess
     server: 43.198.97.210
@@ -55,50 +87,50 @@ proxies:
     ws-headers:
       Host: www.microsoft.com
     tls: true
-  - name: 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
-    type: vmess
-    server: 23.225.28.183
-    port: 49234
-    uuid: 2278efe4-ad0c-47ce-9480-068608368d76
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
+  - name: 俄罗斯+莫斯科justhost.ru
+    type: ss
+    server: 45.129.3.99
+    port: '22233'
+    cipher: aes-256-gcm
+    password: dongtaiwang.com
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 俄罗斯 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 日本+东京Amazon数据中心
+      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点 - 2
+      - 南非 V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国 CloudFlare节点 - 3
       - 日本 V2CROSS.COM
-      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 俄罗斯+莫斯科justhost.ru
   - name: 自动选择
     type: url-test
     proxies:
-      - 俄罗斯 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 日本+东京Amazon数据中心
+      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点 - 2
+      - 南非 V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国 CloudFlare节点 - 3
       - 日本 V2CROSS.COM
-      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 俄罗斯+莫斯科justhost.ru
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 俄罗斯 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 日本+东京Amazon数据中心
+      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点 - 2
+      - 南非 V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国 CloudFlare节点 - 3
       - 日本 V2CROSS.COM
-      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 俄罗斯+莫斯科justhost.ru
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
