@@ -1,28 +1,61 @@
 proxies:
-  - name: 美国 CloudFlare公司CDN节点(shopify)
+  - name: 美国 加利福尼亚州洛杉矶Sharktech数据中心
     type: vmess
-    server: 23.227.38.99
+    server: 170.178.179.189
     port: 443
-    uuid: 86d37526-5758-4cec-862f-df404b313086
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /3G6WPDL7
-    ws-headers:
-      Host: 1.freek1.xyz
-    tls: true
-  - name: 美国加利福尼亚州洛杉矶 PetaExpress
-    type: vmess
-    server: 198.2.203.58
-    port: 44502
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
     udp: true
-    network: tcp
-    ws-headers: {}
+    network: ws
+    ws-path: /path/031730091420
+    ws-headers:
+      Host: ''
+    tls: true
   - name: 美国 CloudFlare节点
+    type: vmess
+    server: hd.mamadcucu.com
+    port: 2082
+    uuid: 8e98f959-6eac-40b7-8fa8-e745942c9a8c
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: h5.mamadcucu.com
+  - name: 日本 V2CROSS.COM
+    type: vmess
+    server: hk6.af49c4e4c2ef.sanfen001.pics
+    port: 443
+    uuid: 134e78bd-39d4-4c39-90d7-c7639167a7a9
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /zh-cn
+    ws-headers:
+      Host: ''
+    tls: true
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: quiz.vidio.com
+    port: 443
+    uuid: 92869d41-a98a-40ba-b79d-2eeb7ffe2433
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /worryfree
+    ws-headers:
+      Host: dynamic-sg1b.obfs.xyz
+    tls: true
+  - name: 美国+V2CROSS.COM
+    type: trojan
+    server: tempest-us.aikun.online
+    port: '443'
+    password: 11e247e5-136d-45f1-844a-a7f054d36bab
+  - name: 美国 CloudFlare节点 - 3
     type: vmess
     server: cf.noaries.de
     port: 2082
@@ -34,46 +67,43 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ir2.nmsl.ninja
-  - name: 美国 加利福尼亚州圣何塞PEG TECH
+  - name: 美国 加利福尼亚州洛杉矶Krypt数据中心
     type: vmess
-    server: 142.4.97.76
-    port: 44942
+    server: 174.139.126.251
+    port: 33547
+    uuid: 51695a30-3915-4b9e-9a7f-bc10b5033a41
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /us15/getData
+    ws-headers:
+      Host: us15.verichains.co
+    tls: true
+  - name: 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+    type: vmess
+    server: 23.224.14.142
+    port: 55332
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
     udp: true
     network: tcp
-    ws-headers: {}
-  - name: 美国 CloudFlare节点 - 2
+    ws-path: /shirker
+    ws-headers:
+      Host: ''
+  - name: 日本 东京Amazon数据中心
     type: vmess
-    server: cfcdn.sanfencdn.net
+    server: jp4.af49c4e4c2ef.sanfen004.me
     port: 443
     uuid: c4868b8a-1f5c-4536-b191-d5429c2e14b7
     alterId: 0
     cipher: auto
     udp: true
-    network: ws
-    ws-path: /zh-cn
+    network: tcp
+    ws-path: ''
     ws-headers:
-      Host: us1.sanfencdn.net
-    tls: true
-  - name: 美国+V2CROSS.COM
-    type: trojan
-    server: tempest-us.aikun.online
-    port: '443'
-    password: 11e247e5-136d-45f1-844a-a7f054d36bab
-  - name: 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
-    type: vmess
-    server: 23.224.191.5
-    port: 443
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /path/220128071100
-    ws-headers:
-      Host: ''
+      Host: jp4.af49c4e4c2ef.sanfen004.me
     tls: true
 proxy-groups:
   - name: Free-servers
@@ -81,35 +111,41 @@ proxy-groups:
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 CloudFlare公司CDN节点(shopify)
-      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
       - 美国 CloudFlare节点
-      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 日本 V2CROSS.COM
       - 美国 CloudFlare节点 - 2
       - 美国+V2CROSS.COM
+      - 美国 CloudFlare节点 - 3
+      - 美国 加利福尼亚州洛杉矶Krypt数据中心
       - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 日本 东京Amazon数据中心
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 CloudFlare公司CDN节点(shopify)
-      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
       - 美国 CloudFlare节点
-      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 日本 V2CROSS.COM
       - 美国 CloudFlare节点 - 2
       - 美国+V2CROSS.COM
+      - 美国 CloudFlare节点 - 3
+      - 美国 加利福尼亚州洛杉矶Krypt数据中心
       - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 日本 东京Amazon数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 CloudFlare公司CDN节点(shopify)
-      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
       - 美国 CloudFlare节点
-      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 日本 V2CROSS.COM
       - 美国 CloudFlare节点 - 2
       - 美国+V2CROSS.COM
+      - 美国 CloudFlare节点 - 3
+      - 美国 加利福尼亚州洛杉矶Krypt数据中心
       - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 日本 东京Amazon数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
