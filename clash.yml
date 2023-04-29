@@ -1,77 +1,123 @@
 proxies:
-  - name: 日本+东京Microsoft数据中心
-    type: trojan
-    server: fscsg.fscloud123456789.com
-    port: '443'
-    password: ed19b239-8e49-4b82-979a-24b84fa7b173
-  - name: 新加坡 腾讯云
+  - name: 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
     type: vmess
-    server: 43.134.161.69
-    port: 31101
-    uuid: d50a35ce-08a4-47d2-8c42-65be8f5cb7c6
+    server: 23.224.191.5
+    port: 443
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
     udp: true
     network: ws
-    ws-path: /sgx/getData
-    ws-headers: {}
+    ws-path: /path/220128071100
+    ws-headers:
+      Host: ''
     tls: true
-  - name: 伊朗+V2CROSS.COM
-    type: trojan
-    server: uniquenet50.khasbox.fun
-    port: '10010'
-    password: 2e454370-4207-4443-8262-7e06663f54cb
-  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
+  - name: 美国 CloudFlare节点
     type: vmess
-    server: 192.74.242.149
-    port: 44667
+    server: cf-lt.sharecentre.online
+    port: 80
+    uuid: 35d1eaf8-53e7-4c8b-92aa-d96a20854e3c
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /api/v3/download.getFile
+    ws-headers:
+      Host: ssrsub.v03.ssrsub.com
+  - name: 俄罗斯 V2CROSS.COM
+    type: vmess
+    server: 213.156.144.6
+    port: 443
+    uuid: 859b9dd2-23e5-4663-abe9-aca56154a1f4
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /bb
+    ws-headers:
+      Host: cc66.111711.xyz
+    tls: true
+  - name: 美国 加利福尼亚州圣何塞PEG TECH
+    type: vmess
+    server: 142.4.119.205
+    port: 53986
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: cf-lt.sharecentre.online
+    port: 80
+    uuid: 35d1eaf8-53e7-4c8b-92aa-d96a20854e3c
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /api/v3/download.getFile
+    ws-headers:
+      Host: ssrsub.v03.ssrsub.com
+  - name: 美国 加利福尼亚州洛杉矶Sharktech数据中心
+    type: vmess
+    server: 170.178.167.140
+    port: 50002
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 加利福尼亚州圣何塞PEG TECH - 2
+    type: vmess
+    server: 142.4.97.76
+    port: 44942
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
     udp: true
     network: tcp
     ws-headers: {}
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: cf.noaries.de
-    port: 2082
-    uuid: 314c1387-618c-4689-97fc-4bc9a1ae5e05
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: ir2.nmsl.ninja
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 日本+东京Microsoft数据中心
-      - 新加坡 腾讯云
-      - 伊朗+V2CROSS.COM
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
       - 美国 CloudFlare节点
+      - 俄罗斯 V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国 CloudFlare节点 - 2
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 美国 加利福尼亚州圣何塞PEG TECH - 2
   - name: 自动选择
     type: url-test
     proxies:
-      - 日本+东京Microsoft数据中心
-      - 新加坡 腾讯云
-      - 伊朗+V2CROSS.COM
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
       - 美国 CloudFlare节点
+      - 俄罗斯 V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国 CloudFlare节点 - 2
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 美国 加利福尼亚州圣何塞PEG TECH - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 日本+东京Microsoft数据中心
-      - 新加坡 腾讯云
-      - 伊朗+V2CROSS.COM
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
       - 美国 CloudFlare节点
+      - 俄罗斯 V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国 CloudFlare节点 - 2
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 美国 加利福尼亚州圣何塞PEG TECH - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
