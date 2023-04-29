@@ -1,79 +1,115 @@
 proxies:
-  - name: 日本 东京Linode数据中心
+  - name: 美国 CloudFlare公司CDN节点(shopify)
     type: vmess
-    server: vjp1.0bad.com
+    server: 23.227.38.99
     port: 443
-    uuid: 927094d3-d678-4763-8591-e240d0bcae87
+    uuid: 86d37526-5758-4cec-862f-df404b313086
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /chat
+    ws-path: /3G6WPDL7
     ws-headers:
-      Host: vjp1.0bad.com
+      Host: 1.freek1.xyz
     tls: true
-  - name: 美国+Microsoft数据中心
-    type: trojan
-    server: fscsg.fscloud123456789.com
-    port: '443'
-    password: ed19b239-8e49-4b82-979a-24b84fa7b173
-  - name: 浙江省 移动数据上网公共出口
+  - name: 美国加利福尼亚州洛杉矶 PetaExpress
     type: vmess
-    server: data-hk-v2.shwjfkw.cn
-    port: 50205
-    uuid: b1478e24-4916-3abe-8f17-15931012ecbe
-    alterId: 1
+    server: 198.2.203.58
+    port: 44502
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
     cipher: auto
     udp: true
-    network: ws
-    ws-path: /hls/cctv5phd.m3u8
+    network: tcp
     ws-headers: {}
-  - name: 马来西亚 V2CROSS.COM
+  - name: 美国 CloudFlare节点
     type: vmess
-    server: join-bede.vmessorg.fun
-    port: 80
-    uuid: bd09fd7b-d228-4de6-f6d9-53daf6a75013
+    server: cf.noaries.de
+    port: 2082
+    uuid: 314c1387-618c-4689-97fc-4bc9a1ae5e05
     alterId: 0
     cipher: auto
     udp: true
     network: ws
     ws-path: /
     ws-headers:
-      Host: ''
-  - name: 美国+Microsoft数据中心 - 2
+      Host: ir2.nmsl.ninja
+  - name: 美国 加利福尼亚州圣何塞PEG TECH
+    type: vmess
+    server: 142.4.97.76
+    port: 44942
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-headers: {}
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: cfcdn.sanfencdn.net
+    port: 443
+    uuid: c4868b8a-1f5c-4536-b191-d5429c2e14b7
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /zh-cn
+    ws-headers:
+      Host: us1.sanfencdn.net
+    tls: true
+  - name: 美国+V2CROSS.COM
     type: trojan
-    server: sg.stablize.top
+    server: tempest-us.aikun.online
     port: '443'
-    password: 2bfe8e4f-c00c-496b-ba8c-e67d2becd03b
+    password: 11e247e5-136d-45f1-844a-a7f054d36bab
+  - name: 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+    type: vmess
+    server: 23.224.191.5
+    port: 443
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /path/220128071100
+    ws-headers:
+      Host: ''
+    tls: true
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 日本 东京Linode数据中心
-      - 美国+Microsoft数据中心
-      - 浙江省 移动数据上网公共出口
-      - 马来西亚 V2CROSS.COM
-      - 美国+Microsoft数据中心 - 2
+      - 美国 CloudFlare公司CDN节点(shopify)
+      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 美国 CloudFlare节点
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国 CloudFlare节点 - 2
+      - 美国+V2CROSS.COM
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
   - name: 自动选择
     type: url-test
     proxies:
-      - 日本 东京Linode数据中心
-      - 美国+Microsoft数据中心
-      - 浙江省 移动数据上网公共出口
-      - 马来西亚 V2CROSS.COM
-      - 美国+Microsoft数据中心 - 2
+      - 美国 CloudFlare公司CDN节点(shopify)
+      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 美国 CloudFlare节点
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国 CloudFlare节点 - 2
+      - 美国+V2CROSS.COM
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 日本 东京Linode数据中心
-      - 美国+Microsoft数据中心
-      - 浙江省 移动数据上网公共出口
-      - 马来西亚 V2CROSS.COM
-      - 美国+Microsoft数据中心 - 2
+      - 美国 CloudFlare公司CDN节点(shopify)
+      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 美国 CloudFlare节点
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国 CloudFlare节点 - 2
+      - 美国+V2CROSS.COM
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
