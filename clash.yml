@@ -1,86 +1,80 @@
 proxies:
-  - name: 美国 CloudFlare节点
+  - name: 江苏省扬州市 移动
     type: vmess
-    server: 172.67.217.222
-    port: 80
-    uuid: 2e496758-950e-4549-8842-d5eec98d9fde
+    server: data-hk-v1.shwjfkw.cn
+    port: 50207
+    uuid: b1478e24-4916-3abe-8f17-15931012ecbe
+    alterId: 1
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /hls/cctv5phd.m3u8
+    ws-headers:
+      Host: YTB-awkj
+  - name: 美国 加利福尼亚州费利蒙Linode数据中心
+    type: vmess
+    server: vus3.0bad.com
+    port: 443
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /shirker
+    ws-path: /chat
     ws-headers:
-      Host: dp3.scproxy.top
-  - name: 美国 加利福尼亚州圣何塞PEG TECH
+      Host: vus3.0bad.com
+    tls: true
+  - name: 美国 CloudFlare节点
     type: vmess
-    server: 142.4.97.76
-    port: 44942
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
+    server: v.vpchi.tk
+    port: 2086
+    uuid: 7165a97e-9a41-421f-f709-e33e9e23f4d0
+    alterId: 0
     cipher: auto
     udp: true
-    network: tcp
-    ws-headers: {}
-  - name: 美国加利福尼亚州洛杉矶 PetaExpress
-    type: vmess
-    server: 198.2.204.246
-    port: 46802
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
+    network: ws
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: cfcdn.sanfencdn.net
-    port: 443
-    uuid: c4868b8a-1f5c-4536-b191-d5429c2e14b7
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /zh-cn
-    ws-headers:
-      Host: us1.sanfencdn.net
-    tls: true
-  - name: 北美地区+V2CROSS.COM
-    type: ss
-    server: 169.197.141.187
-    port: '5001'
-    cipher: aes-256-gcm
-    password: Y6R9pAtvxxzmGC
+  - name: 美国+V2CROSS.COM
+    type: trojan
+    server: 152.70.74.66
+    port: 443?security=tls&type=tcp&headerType=none
+    password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
+  - name: 瑞士+V2CROSS.COM
+    type: trojan
+    server: 195.15.243.26
+    port: 443?type=tcp&allowInsecure=1
+    password: '4478'
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
+      - 江苏省扬州市 移动
+      - 美国 加利福尼亚州费利蒙Linode数据中心
       - 美国 CloudFlare节点
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 美国 CloudFlare节点 - 2
-      - 北美地区+V2CROSS.COM
+      - 美国+V2CROSS.COM
+      - 瑞士+V2CROSS.COM
   - name: 自动选择
     type: url-test
     proxies:
+      - 江苏省扬州市 移动
+      - 美国 加利福尼亚州费利蒙Linode数据中心
       - 美国 CloudFlare节点
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 美国 CloudFlare节点 - 2
-      - 北美地区+V2CROSS.COM
+      - 美国+V2CROSS.COM
+      - 瑞士+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
+      - 江苏省扬州市 移动
+      - 美国 加利福尼亚州费利蒙Linode数据中心
       - 美国 CloudFlare节点
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 美国 CloudFlare节点 - 2
-      - 北美地区+V2CROSS.COM
+      - 美国+V2CROSS.COM
+      - 瑞士+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
