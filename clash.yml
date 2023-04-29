@@ -1,10 +1,75 @@
 proxies:
-  - name: 加拿大+魁北克省博阿努瓦OVH数据中心
-    type: ss
-    server: 158.69.185.230
-    port: '14783'
-    cipher: chacha20-ietf-poly1305
-    password: 8c80d838-253c-41df-afda-d0f04a2c0873
+  - name: 美国 加利福尼亚州圣何塞PEG TECH
+    type: vmess
+    server: 142.4.118.250
+    port: 57402
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国+Microsoft数据中心
+    type: trojan
+    server: uk.stablize.top
+    port: '443'
+    password: 9478e27c-6bdd-4f0e-ba46-90d9739e1e34
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: 172.64.195.14
+    port: 80
+    uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: lg.v2ray20.xyz
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: woiden-eu2.moop.wiki
+    port: 443
+    uuid: c25afb3a-15ec-4c1d-9233-872e1fbe6965
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /hax02eu
+    ws-headers: {}
+    tls: true
+  - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: new3.hucloud-dns.xyz
+    port: 443
+    uuid: 1c8ad3f2-835c-4fda-b9b6-881d3cadfd8e
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers: {}
+    tls: true
+  - name: 美国 CloudFlare节点 - 4
+    type: vmess
+    server: quiz.vidio.com
+    port: 443
+    uuid: 92869d41-a98a-40ba-b79d-2eeb7ffe2433
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /worryfree
+    ws-headers:
+      Host: dynamic-sg1b.obfs.xyz
+    tls: true
+  - name: 瑞士+V2CROSS.COM
+    type: trojan
+    server: 195.15.243.26
+    port: 443?security=tls&type=tcp&headerType=none
+    password: '4478'
   - name: 日本 V2CROSS.COM
     type: vmess
     server: hk6.af49c4e4c2ef.sanfen004.me
@@ -18,72 +83,90 @@ proxies:
     ws-headers:
       Host: www.microsoft.com
     tls: true
-  - name: 日本 V2CROSS.COM - 2
+  - name: 美国 CloudFlare节点 - 5
     type: vmess
-    server: hk6.af49c4e4c2ef.sanfen001.pics
-    port: 443
-    uuid: 134e78bd-39d4-4c39-90d7-c7639167a7a9
+    server: cf-lt.sharecentre.online
+    port: 80
+    uuid: 35d1eaf8-53e7-4c8b-92aa-d96a20854e3c
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /zh-cn
+    ws-path: /api/v3/download.getFile
     ws-headers:
-      Host: ''
-    tls: true
-  - name: 江苏省扬州市 移动
+      Host: ssrsub.v03.ssrsub.com
+  - name: 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
     type: vmess
-    server: data-hk-v1.shwjfkw.cn
-    port: 50207
-    uuid: b1478e24-4916-3abe-8f17-15931012ecbe
-    alterId: 1
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /hls/cctv5phd.m3u8
-    ws-headers:
-      Host: YTB-awkj
-  - name: 南非 V2CROSS.COM
-    type: vmess
-    server: 156.225.67.146
-    port: 51948
-    uuid: 93503dd5-245a-4eb1-ae2a-57ab9f2b3c29
+    server: 23.224.14.142
+    port: 55332
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
     udp: true
     network: tcp
-    ws-path: /
+    ws-path: /shirker
     ws-headers:
       Host: ''
+  - name: 美国 CloudFlare节点 - 6
+    type: vmess
+    server: surongwei.eu.org
+    port: 443
+    uuid: 6093eefb-7ab6-41df-aba0-d5fa58147e10
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /reffs7y26g0ua
+    ws-headers:
+      Host: ''
+    tls: true
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 加拿大+魁北克省博阿努瓦OVH数据中心
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国+Microsoft数据中心
+      - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 - 2
+      - 美国 CloudFlare节点 - 3
+      - 美国 CloudFlare节点 - 4
+      - 瑞士+V2CROSS.COM
       - 日本 V2CROSS.COM
-      - 日本 V2CROSS.COM - 2
-      - 江苏省扬州市 移动
-      - 南非 V2CROSS.COM
+      - 美国 CloudFlare节点 - 5
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 美国 CloudFlare节点 - 6
   - name: 自动选择
     type: url-test
     proxies:
-      - 加拿大+魁北克省博阿努瓦OVH数据中心
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国+Microsoft数据中心
+      - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 - 2
+      - 美国 CloudFlare节点 - 3
+      - 美国 CloudFlare节点 - 4
+      - 瑞士+V2CROSS.COM
       - 日本 V2CROSS.COM
-      - 日本 V2CROSS.COM - 2
-      - 江苏省扬州市 移动
-      - 南非 V2CROSS.COM
+      - 美国 CloudFlare节点 - 5
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 美国 CloudFlare节点 - 6
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 加拿大+魁北克省博阿努瓦OVH数据中心
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国+Microsoft数据中心
+      - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 - 2
+      - 美国 CloudFlare节点 - 3
+      - 美国 CloudFlare节点 - 4
+      - 瑞士+V2CROSS.COM
       - 日本 V2CROSS.COM
-      - 日本 V2CROSS.COM - 2
-      - 江苏省扬州市 移动
-      - 南非 V2CROSS.COM
+      - 美国 CloudFlare节点 - 5
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 美国 CloudFlare节点 - 6
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
