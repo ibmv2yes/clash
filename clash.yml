@@ -1,71 +1,29 @@
 proxies:
-  - name: 香港 V2CROSS.COM
+  - name: 日本 V2CROSS.COM
     type: vmess
-    server: 156.245.8.187
-    port: 49519
-    uuid: 5a4d69ad-20a9-4941-b223-87bbd09f5f52
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: ''
-    ws-headers:
-      Host: ''
-  - name: 乌克兰+V2CROSS.COM
-    type: ss
-    server: 193.108.118.34
-    port: '2376'
-    cipher: aes-256-gcm
-    password: faBAoD54k87UJG7
-  - name: 美国 加利福尼亚州圣何塞PEG TECH
-    type: vmess
-    server: 142.4.97.76
-    port: 44942
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-headers: {}
-  - name: 美国 加利福尼亚州圣何塞PEG TECH - 2
-    type: vmess
-    server: 142.4.112.10
-    port: 51091
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-headers: {}
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: cf.515188.xyz
-    port: 80
-    uuid: 35d1eaf8-53e7-4c8b-92aa-d96a20854e3c
+    server: hk6.af49c4e4c2ef.sanfen001.pics
+    port: 443
+    uuid: 134e78bd-39d4-4c39-90d7-c7639167a7a9
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /api/v3/download.getFile
-    ws-headers:
-      Host: ssrsub.v03.ssrsub.com
-  - name: 日本+东京Microsoft数据中心
-    type: trojan
-    server: fscuk.fscloud123456789.com
-    port: '443'
-    password: ed19b239-8e49-4b82-979a-24b84fa7b173
-  - name: 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
-    type: vmess
-    server: 23.224.14.142
-    port: 55332
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /shirker
+    ws-path: /zh-cn
     ws-headers:
       Host: ''
+    tls: true
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: new3.hucloud-dns.xyz
+    port: 443
+    uuid: 1c8ad3f2-835c-4fda-b9b6-881d3cadfd8e
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers: {}
+    tls: true
   - name: 美国 CloudFlare节点 - 2
     type: vmess
     server: cf.noaries.de
@@ -78,19 +36,24 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ir2.nmsl.ninja
-  - name: 美国 CloudFlare节点 - 3
+  - name: 美国+Microsoft数据中心
+    type: trojan
+    server: sg.stablize.top
+    port: '443'
+    password: 2bfe8e4f-c00c-496b-ba8c-e67d2becd03b
+  - name: 美国加利福尼亚州洛杉矶 PetaExpress
     type: vmess
-    server: 162.159.58.13
-    port: 8880
-    uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958
-    alterId: 0
+    server: 198.2.204.246
+    port: 46802
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
     cipher: auto
     udp: true
-    network: ws
+    network: tcp
     ws-path: /
     ws-headers:
-      Host: lg.trump2023.net
-  - name: 美国 CloudFlare节点 - 4
+      Host: ''
+  - name: 美国 CloudFlare节点 - 3
     type: vmess
     server: cfcdn.sanfencdn.net
     port: 443
@@ -103,33 +66,39 @@ proxies:
     ws-headers:
       Host: us1.sanfencdn.net
     tls: true
+  - name: 美国 CloudFlare节点 - 4
+    type: vmess
+    server: l1.zanbil-mo.cf
+    port: 2095
+    uuid: 56fc3d21-4a2f-4f68-8f78-eebd6a051101
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: l1.zanbil-mo.cf
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 香港 V2CROSS.COM
-      - 乌克兰+V2CROSS.COM
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国 加利福尼亚州圣何塞PEG TECH - 2
+      - 日本 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 日本+东京Microsoft数据中心
-      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
       - 美国 CloudFlare节点 - 2
+      - 美国+Microsoft数据中心
+      - 美国加利福尼亚州洛杉矶 PetaExpress
       - 美国 CloudFlare节点 - 3
       - 美国 CloudFlare节点 - 4
   - name: 自动选择
     type: url-test
     proxies:
-      - 香港 V2CROSS.COM
-      - 乌克兰+V2CROSS.COM
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国 加利福尼亚州圣何塞PEG TECH - 2
+      - 日本 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 日本+东京Microsoft数据中心
-      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
       - 美国 CloudFlare节点 - 2
+      - 美国+Microsoft数据中心
+      - 美国加利福尼亚州洛杉矶 PetaExpress
       - 美国 CloudFlare节点 - 3
       - 美国 CloudFlare节点 - 4
     url: http://www.gstatic.com/generate_204
@@ -137,14 +106,11 @@ proxy-groups:
   - name: 故障转移
     type: fallback
     proxies:
-      - 香港 V2CROSS.COM
-      - 乌克兰+V2CROSS.COM
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国 加利福尼亚州圣何塞PEG TECH - 2
+      - 日本 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 日本+东京Microsoft数据中心
-      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
       - 美国 CloudFlare节点 - 2
+      - 美国+Microsoft数据中心
+      - 美国加利福尼亚州洛杉矶 PetaExpress
       - 美国 CloudFlare节点 - 3
       - 美国 CloudFlare节点 - 4
     url: http://www.gstatic.com/generate_204
