@@ -1,65 +1,57 @@
 proxies:
   - name: 美国 CloudFlare节点
     type: vmess
-    server: Kansas.v2ray.online
-    port: 443
-    uuid: 00BBF5B8-173E-6818-9927-5AD1AA073C7D
+    server: 172.67.217.222
+    port: 80
+    uuid: 2e496758-950e-4549-8842-d5eec98d9fde
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /speedtest
+    ws-path: /shirker
     ws-headers:
-      Host: Kansas.v2ray.online
-    tls: true
-  - name: 日本 V2CROSS.COM
+      Host: dp3.scproxy.top
+  - name: 美国 加利福尼亚州圣何塞PEG TECH
     type: vmess
-    server: hk6.af49c4e4c2ef.sanfen001.pics
+    server: 142.4.97.76
+    port: 44942
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-headers: {}
+  - name: 美国加利福尼亚州洛杉矶 PetaExpress
+    type: vmess
+    server: 198.2.204.246
+    port: 46802
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: cfcdn.sanfencdn.net
     port: 443
-    uuid: 134e78bd-39d4-4c39-90d7-c7639167a7a9
+    uuid: c4868b8a-1f5c-4536-b191-d5429c2e14b7
     alterId: 0
     cipher: auto
     udp: true
     network: ws
     ws-path: /zh-cn
     ws-headers:
-      Host: ''
+      Host: us1.sanfencdn.net
     tls: true
-  - name: 瑞士+V2CROSS.COM
-    type: trojan
-    server: 195.15.243.26
-    port: 443?type=tcp&allowInsecure=1
-    password: '4478'
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: cf-lt.sharecentre.online
-    port: 80
-    uuid: 35d1eaf8-53e7-4c8b-92aa-d96a20854e3c
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /api/v3/download.getFile
-    ws-headers:
-      Host: ssrsub.v03.ssrsub.com
-  - name: 美国 CloudFlare节点 - 3
-    type: vmess
-    server: ca.moop.wiki
-    port: 80
-    uuid: c25afb3a-15ec-4c1d-9233-872e1fbe6965
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /catre2
-    ws-headers:
-      Host: ca.moop.wiki
-  - name: 瑞典+V2CROSS.COM
+  - name: 北美地区+V2CROSS.COM
     type: ss
-    server: 167.88.61.213
-    port: '8119'
+    server: 169.197.141.187
+    port: '5001'
     cipher: aes-256-gcm
-    password: cdBIDV42DCwnfIN
+    password: Y6R9pAtvxxzmGC
 proxy-groups:
   - name: Free-servers
     type: select
@@ -67,31 +59,28 @@ proxy-groups:
       - 自动选择
       - 故障转移
       - 美国 CloudFlare节点
-      - 日本 V2CROSS.COM
-      - 瑞士+V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国加利福尼亚州洛杉矶 PetaExpress
       - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
-      - 瑞典+V2CROSS.COM
+      - 北美地区+V2CROSS.COM
   - name: 自动选择
     type: url-test
     proxies:
       - 美国 CloudFlare节点
-      - 日本 V2CROSS.COM
-      - 瑞士+V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国加利福尼亚州洛杉矶 PetaExpress
       - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
-      - 瑞典+V2CROSS.COM
+      - 北美地区+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
       - 美国 CloudFlare节点
-      - 日本 V2CROSS.COM
-      - 瑞士+V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国加利福尼亚州洛杉矶 PetaExpress
       - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
-      - 瑞典+V2CROSS.COM
+      - 北美地区+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
