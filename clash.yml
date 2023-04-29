@@ -1,36 +1,54 @@
 proxies:
-  - name: 美国+加利福尼亚州洛杉矶Level3通信(DIA)
-    type: trojan
-    server: sg.stablize.top
-    port: '443'
-    password: 2bfe8e4f-c00c-496b-ba8c-e67d2becd03b
-  - name: 美国 加利福尼亚州圣何塞PEG TECH
+  - name: 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
     type: vmess
-    server: 142.4.112.10
-    port: 51091
+    server: 23.224.14.142
+    port: 55332
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
     udp: true
     network: tcp
-    ws-headers: {}
-  - name: 美国+V2CROSS.COM
-    type: trojan
-    server: 152.70.74.66
-    port: 443?security=tls&type=tcp&headerType=none
-    password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
-  - name: 美国 CloudFlare节点
+    ws-path: /shirker
+    ws-headers:
+      Host: ''
+  - name: 美国加利福尼亚州洛杉矶 PetaExpress
     type: vmess
-    server: hd.mamadcucu.com
-    port: 2082
-    uuid: 8e98f959-6eac-40b7-8fa8-e745942c9a8c
+    server: 198.2.206.45
+    port: 33012
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 英国伦敦 Linode数据中心
+    type: vmess
+    server: vuk1.0bad.com
+    port: 443
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /
+    ws-path: /chat
     ws-headers:
-      Host: h5.mamadcucu.com
+      Host: ''
+    tls: true
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: aaaa.wxx.gay
+    port: 443
+    uuid: 50e32df4-e642-11ed-89c1-000017022008
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /look
+    ws-headers:
+      Host: ''
+    tls: true
   - name: 北美地区+V2CROSS.COM
     type: ss
     server: 169.197.141.187
@@ -43,17 +61,17 @@ proxy-groups:
     proxies:
       - 自动选择
       - 故障转移
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国+V2CROSS.COM
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 英国伦敦 Linode数据中心
       - 美国 CloudFlare节点
       - 北美地区+V2CROSS.COM
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国+V2CROSS.COM
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 英国伦敦 Linode数据中心
       - 美国 CloudFlare节点
       - 北美地区+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
@@ -61,9 +79,9 @@ proxy-groups:
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国+V2CROSS.COM
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 英国伦敦 Linode数据中心
       - 美国 CloudFlare节点
       - 北美地区+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
