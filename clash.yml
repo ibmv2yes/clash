@@ -1,80 +1,90 @@
 proxies:
-  - name: 江苏省扬州市 移动
+  - name: 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
     type: vmess
-    server: data-hk-v1.shwjfkw.cn
-    port: 50207
-    uuid: b1478e24-4916-3abe-8f17-15931012ecbe
-    alterId: 1
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /hls/cctv5phd.m3u8
-    ws-headers:
-      Host: YTB-awkj
-  - name: 美国 加利福尼亚州费利蒙Linode数据中心
-    type: vmess
-    server: vus3.0bad.com
+    server: 23.224.191.6
     port: 443
-    uuid: 927094d3-d678-4763-8591-e240d0bcae87
-    alterId: 0
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
     cipher: auto
     udp: true
     network: ws
-    ws-path: /chat
-    ws-headers:
-      Host: vus3.0bad.com
-    tls: true
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: v.vpchi.tk
-    port: 2086
-    uuid: 7165a97e-9a41-421f-f709-e33e9e23f4d0
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
+    ws-path: /path/220128071100
     ws-headers:
       Host: ''
+    tls: true
+  - name: 美国 CloudFlare公司CDN节点(shopify)
+    type: vmess
+    server: 23.227.38.99
+    port: 443
+    uuid: 86d37526-5758-4cec-862f-df404b313086
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /3G6WPDL7
+    ws-headers:
+      Host: 1.freek1.xyz
+    tls: true
+  - name: 日本 V2CROSS.COM
+    type: vmess
+    server: hk6.af49c4e4c2ef.sanfen004.me
+    port: 443
+    uuid: 29387883-aace-4e03-bad7-940bc5e6ba67
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /zh-cn
+    ws-headers:
+      Host: www.microsoft.com
+    tls: true
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: 74.217.179.187
+    port: 443
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /path/1682400954225
+    ws-headers:
+      Host: www.39960822.xyz
+    tls: true
   - name: 美国+V2CROSS.COM
     type: trojan
     server: 152.70.74.66
     port: 443?security=tls&type=tcp&headerType=none
     password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
-  - name: 瑞士+V2CROSS.COM
-    type: trojan
-    server: 195.15.243.26
-    port: 443?type=tcp&allowInsecure=1
-    password: '4478'
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 江苏省扬州市 移动
-      - 美国 加利福尼亚州费利蒙Linode数据中心
-      - 美国 CloudFlare节点
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 美国 CloudFlare公司CDN节点(shopify)
+      - 日本 V2CROSS.COM
+      - 美国 V2CROSS.COM
       - 美国+V2CROSS.COM
-      - 瑞士+V2CROSS.COM
   - name: 自动选择
     type: url-test
     proxies:
-      - 江苏省扬州市 移动
-      - 美国 加利福尼亚州费利蒙Linode数据中心
-      - 美国 CloudFlare节点
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 美国 CloudFlare公司CDN节点(shopify)
+      - 日本 V2CROSS.COM
+      - 美国 V2CROSS.COM
       - 美国+V2CROSS.COM
-      - 瑞士+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 江苏省扬州市 移动
-      - 美国 加利福尼亚州费利蒙Linode数据中心
-      - 美国 CloudFlare节点
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 美国 CloudFlare公司CDN节点(shopify)
+      - 日本 V2CROSS.COM
+      - 美国 V2CROSS.COM
       - 美国+V2CROSS.COM
-      - 瑞士+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
