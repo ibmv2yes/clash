@@ -1,34 +1,48 @@
 proxies:
-  - name: 北美地区+V2CROSS.COM
-    type: ss
-    server: 169.197.141.187
-    port: '5001'
-    cipher: aes-256-gcm
-    password: Y6R9pAtvxxzmGC
-  - name: 瑞士+V2CROSS.COM
-    type: trojan
-    server: 195.15.243.26
-    port: 443?security=tls&type=tcp&headerType=none
-    password: '4478'
-  - name: 美国+加利福尼亚州洛杉矶Level3通信(DIA)
-    type: trojan
-    server: sg.stablize.top
-    port: '443'
-    password: 2bfe8e4f-c00c-496b-ba8c-e67d2becd03b
-  - name: 美国 惠普HP
+  - name: 美国 CloudFlare节点
     type: vmess
-    server: hk3.af49c4e4c2ef.sanfen001.pics
-    port: 443
-    uuid: e5ffd02e-a82b-40d1-83aa-23f9f6841abb
+    server: l1.zanbil-mo.cf
+    port: 2095
+    uuid: 56fc3d21-4a2f-4f68-8f78-eebd6a051101
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /zh-cn
+    ws-path: /
+    ws-headers:
+      Host: l1.zanbil-mo.cf
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: scaleway.696960.xyz
+    port: 443
+    uuid: e357cd63-f1a5-4c8e-c42e-26da11207fee
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /root/
     ws-headers:
       Host: ''
     tls: true
-  - name: 美国 CloudFlare节点
+  - name: 美国 加利福尼亚州洛杉矶Sharktech数据中心
+    type: vmess
+    server: 67.21.89.136
+    port: 46866
+    uuid: b697d727-cf6c-41dd-a0de-c7a9478e4a4a
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: ''
+    ws-headers:
+      Host: ''
+  - name: 加拿大+魁北克省博阿努瓦OVH数据中心
+    type: ss
+    server: 158.69.185.230
+    port: '14783'
+    cipher: chacha20-ietf-poly1305
+    password: 8c80d838-253c-41df-afda-d0f04a2c0873
+  - name: 美国 CloudFlare节点 - 3
     type: vmess
     server: 172.67.229.153
     port: 80
@@ -40,50 +54,35 @@ proxies:
     ws-path: /
     ws-headers:
       Host: sg4.562148.xyz
-  - name: 德国 黑森州法兰克福DigitalOcean数据中心
-    type: vmess
-    server: 165.227.133.55
-    port: 80
-    uuid: df68f678-62c3-4799-91a8-4d301e8cf565
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /PGV2vtMvxwNFt2
-    ws-headers:
-      Host: ''
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 北美地区+V2CROSS.COM
-      - 瑞士+V2CROSS.COM
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
-      - 美国 惠普HP
       - 美国 CloudFlare节点
-      - 德国 黑森州法兰克福DigitalOcean数据中心
+      - 美国 CloudFlare节点 - 2
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 加拿大+魁北克省博阿努瓦OVH数据中心
+      - 美国 CloudFlare节点 - 3
   - name: 自动选择
     type: url-test
     proxies:
-      - 北美地区+V2CROSS.COM
-      - 瑞士+V2CROSS.COM
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
-      - 美国 惠普HP
       - 美国 CloudFlare节点
-      - 德国 黑森州法兰克福DigitalOcean数据中心
+      - 美国 CloudFlare节点 - 2
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 加拿大+魁北克省博阿努瓦OVH数据中心
+      - 美国 CloudFlare节点 - 3
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 北美地区+V2CROSS.COM
-      - 瑞士+V2CROSS.COM
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
-      - 美国 惠普HP
       - 美国 CloudFlare节点
-      - 德国 黑森州法兰克福DigitalOcean数据中心
+      - 美国 CloudFlare节点 - 2
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 加拿大+魁北克省博阿努瓦OVH数据中心
+      - 美国 CloudFlare节点 - 3
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
