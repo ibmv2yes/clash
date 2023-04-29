@@ -1,118 +1,79 @@
 proxies:
-  - name: 日本 V2CROSS.COM
+  - name: 日本 东京Linode数据中心
     type: vmess
-    server: hk6.af49c4e4c2ef.sanfen001.pics
+    server: vjp1.0bad.com
     port: 443
-    uuid: 134e78bd-39d4-4c39-90d7-c7639167a7a9
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /zh-cn
+    ws-path: /chat
+    ws-headers:
+      Host: vjp1.0bad.com
+    tls: true
+  - name: 美国+Microsoft数据中心
+    type: trojan
+    server: fscsg.fscloud123456789.com
+    port: '443'
+    password: ed19b239-8e49-4b82-979a-24b84fa7b173
+  - name: 浙江省 移动数据上网公共出口
+    type: vmess
+    server: data-hk-v2.shwjfkw.cn
+    port: 50205
+    uuid: b1478e24-4916-3abe-8f17-15931012ecbe
+    alterId: 1
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /hls/cctv5phd.m3u8
+    ws-headers: {}
+  - name: 马来西亚 V2CROSS.COM
+    type: vmess
+    server: join-bede.vmessorg.fun
+    port: 80
+    uuid: bd09fd7b-d228-4de6-f6d9-53daf6a75013
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
     ws-headers:
       Host: ''
-    tls: true
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: new3.hucloud-dns.xyz
-    port: 443
-    uuid: 1c8ad3f2-835c-4fda-b9b6-881d3cadfd8e
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers: {}
-    tls: true
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: cf.noaries.de
-    port: 2082
-    uuid: 314c1387-618c-4689-97fc-4bc9a1ae5e05
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: ir2.nmsl.ninja
-  - name: 美国+Microsoft数据中心
+  - name: 美国+Microsoft数据中心 - 2
     type: trojan
     server: sg.stablize.top
     port: '443'
     password: 2bfe8e4f-c00c-496b-ba8c-e67d2becd03b
-  - name: 美国加利福尼亚州洛杉矶 PetaExpress
-    type: vmess
-    server: 198.2.204.246
-    port: 46802
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国 CloudFlare节点 - 3
-    type: vmess
-    server: cfcdn.sanfencdn.net
-    port: 443
-    uuid: c4868b8a-1f5c-4536-b191-d5429c2e14b7
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /zh-cn
-    ws-headers:
-      Host: us1.sanfencdn.net
-    tls: true
-  - name: 美国 CloudFlare节点 - 4
-    type: vmess
-    server: l1.zanbil-mo.cf
-    port: 2095
-    uuid: 56fc3d21-4a2f-4f68-8f78-eebd6a051101
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: l1.zanbil-mo.cf
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 日本 V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
+      - 日本 东京Linode数据中心
       - 美国+Microsoft数据中心
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
+      - 浙江省 移动数据上网公共出口
+      - 马来西亚 V2CROSS.COM
+      - 美国+Microsoft数据中心 - 2
   - name: 自动选择
     type: url-test
     proxies:
-      - 日本 V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
+      - 日本 东京Linode数据中心
       - 美国+Microsoft数据中心
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
+      - 浙江省 移动数据上网公共出口
+      - 马来西亚 V2CROSS.COM
+      - 美国+Microsoft数据中心 - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 日本 V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
+      - 日本 东京Linode数据中心
       - 美国+Microsoft数据中心
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
+      - 浙江省 移动数据上网公共出口
+      - 马来西亚 V2CROSS.COM
+      - 美国+Microsoft数据中心 - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
