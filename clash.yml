@@ -1,53 +1,47 @@
 proxies:
   - name: 美国 CloudFlare节点
     type: vmess
-    server: scaleway.696960.xyz
+    server: Kansas.v2ray.online
     port: 443
-    uuid: e357cd63-f1a5-4c8e-c42e-26da11207fee
+    uuid: 00BBF5B8-173E-6818-9927-5AD1AA073C7D
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /root/
+    ws-path: /speedtest
+    ws-headers:
+      Host: Kansas.v2ray.online
+    tls: true
+  - name: 日本 V2CROSS.COM
+    type: vmess
+    server: hk6.af49c4e4c2ef.sanfen001.pics
+    port: 443
+    uuid: 134e78bd-39d4-4c39-90d7-c7639167a7a9
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /zh-cn
     ws-headers:
       Host: ''
     tls: true
-  - name: 瑞典+V2CROSS.COM
-    type: ss
-    server: 167.88.61.213
-    port: '5003'
-    cipher: aes-256-gcm
-    password: g5MeD6Ft3CWlJId
-  - name: 美国 加利福尼亚州洛杉矶Sharktech数据中心
-    type: vmess
-    server: 64.32.10.117
-    port: 35169
-    uuid: c528d8d8-94d6-48a9-8dd3-52892558a6ab
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: ''
-    ws-headers:
-      Host: ''
+  - name: 瑞士+V2CROSS.COM
+    type: trojan
+    server: 195.15.243.26
+    port: 443?type=tcp&allowInsecure=1
+    password: '4478'
   - name: 美国 CloudFlare节点 - 2
     type: vmess
-    server: cf-dx-dns.sharecentre.online
+    server: cf-lt.sharecentre.online
     port: 80
-    uuid: 2e496758-950e-4549-8842-d5eec98d9fde
+    uuid: 35d1eaf8-53e7-4c8b-92aa-d96a20854e3c
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /shirker
+    ws-path: /api/v3/download.getFile
     ws-headers:
-      Host: dp3.scproxy.top
-  - name: 俄罗斯+莫斯科justhost.ru
-    type: ss
-    server: 45.129.3.99
-    port: '22233'
-    cipher: aes-256-gcm
-    password: dongtaiwang.com
+      Host: ssrsub.v03.ssrsub.com
   - name: 美国 CloudFlare节点 - 3
     type: vmess
     server: ca.moop.wiki
@@ -60,30 +54,12 @@ proxies:
     ws-path: /catre2
     ws-headers:
       Host: ca.moop.wiki
-  - name: 美国 CloudFlare节点 - 4
-    type: vmess
-    server: 172.67.13.11
-    port: 8880
-    uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: lg.trump2023.net
-  - name: 江苏省扬州市 移动
-    type: vmess
-    server: data-hk-v1.shwjfkw.cn
-    port: 50207
-    uuid: b1478e24-4916-3abe-8f17-15931012ecbe
-    alterId: 1
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /hls/cctv5phd.m3u8
-    ws-headers:
-      Host: YTB-awkj
+  - name: 瑞典+V2CROSS.COM
+    type: ss
+    server: 167.88.61.213
+    port: '8119'
+    cipher: aes-256-gcm
+    password: cdBIDV42DCwnfIN
 proxy-groups:
   - name: Free-servers
     type: select
@@ -91,37 +67,31 @@ proxy-groups:
       - 自动选择
       - 故障转移
       - 美国 CloudFlare节点
-      - 瑞典+V2CROSS.COM
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 日本 V2CROSS.COM
+      - 瑞士+V2CROSS.COM
       - 美国 CloudFlare节点 - 2
-      - 俄罗斯+莫斯科justhost.ru
       - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
-      - 江苏省扬州市 移动
+      - 瑞典+V2CROSS.COM
   - name: 自动选择
     type: url-test
     proxies:
       - 美国 CloudFlare节点
-      - 瑞典+V2CROSS.COM
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 日本 V2CROSS.COM
+      - 瑞士+V2CROSS.COM
       - 美国 CloudFlare节点 - 2
-      - 俄罗斯+莫斯科justhost.ru
       - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
-      - 江苏省扬州市 移动
+      - 瑞典+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
       - 美国 CloudFlare节点
-      - 瑞典+V2CROSS.COM
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 日本 V2CROSS.COM
+      - 瑞士+V2CROSS.COM
       - 美国 CloudFlare节点 - 2
-      - 俄罗斯+莫斯科justhost.ru
       - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
-      - 江苏省扬州市 移动
+      - 瑞典+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
