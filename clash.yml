@@ -1,4 +1,75 @@
 proxies:
+  - name: 美国 惠普HP
+    type: vmess
+    server: hk3.af49c4e4c2ef.sanfen001.pics
+    port: 443
+    uuid: e5ffd02e-a82b-40d1-83aa-23f9f6841abb
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /zh-cn
+    ws-headers:
+      Host: ''
+    tls: true
+  - name: 美国 加利福尼亚州圣何塞PEG TECH
+    type: vmess
+    server: 142.4.112.10
+    port: 51091
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-headers: {}
+  - name: 美国 惠普HP - 2
+    type: vmess
+    server: hk5.af49c4e4c2ef.sanfen001.pics
+    port: 443
+    uuid: e5ffd02e-a82b-40d1-83aa-23f9f6841abb
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /zh-cn
+    ws-headers:
+      Host: hk5.af49c4e4c2ef.sanfen001.pics
+    tls: true
+  - name: 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+    type: vmess
+    server: 23.224.14.142
+    port: 55332
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /shirker
+    ws-headers:
+      Host: ''
+  - name: 美国+V2CROSS.COM
+    type: trojan
+    server: 152.70.74.66
+    port: 443?security=tls&type=tcp&headerType=none
+    password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
+  - name: 北美地区+V2CROSS.COM
+    type: ss
+    server: 169.197.141.187
+    port: '8881'
+    cipher: aes-256-gcm
+    password: kDWvXYZoTBcGkC4
+  - name: 美国加利福尼亚州洛杉矶 PetaExpress
+    type: vmess
+    server: 198.2.206.45
+    port: 33012
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
   - name: 美国 CloudFlare节点
     type: vmess
     server: l1.zanbil-mo.cf
@@ -11,78 +82,44 @@ proxies:
     ws-path: /
     ws-headers:
       Host: l1.zanbil-mo.cf
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: scaleway.696960.xyz
-    port: 443
-    uuid: e357cd63-f1a5-4c8e-c42e-26da11207fee
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /root/
-    ws-headers:
-      Host: ''
-    tls: true
-  - name: 美国 加利福尼亚州洛杉矶Sharktech数据中心
-    type: vmess
-    server: 67.21.89.136
-    port: 46866
-    uuid: b697d727-cf6c-41dd-a0de-c7a9478e4a4a
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: ''
-    ws-headers:
-      Host: ''
-  - name: 加拿大+魁北克省博阿努瓦OVH数据中心
-    type: ss
-    server: 158.69.185.230
-    port: '14783'
-    cipher: chacha20-ietf-poly1305
-    password: 8c80d838-253c-41df-afda-d0f04a2c0873
-  - name: 美国 CloudFlare节点 - 3
-    type: vmess
-    server: 172.67.229.153
-    port: 80
-    uuid: 314c1387-618c-4689-97fc-4bc9a1ae5e05
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: sg4.562148.xyz
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
+      - 美国 惠普HP
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国 惠普HP - 2
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 美国+V2CROSS.COM
+      - 北美地区+V2CROSS.COM
+      - 美国加利福尼亚州洛杉矶 PetaExpress
       - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
-      - 加拿大+魁北克省博阿努瓦OVH数据中心
-      - 美国 CloudFlare节点 - 3
   - name: 自动选择
     type: url-test
     proxies:
+      - 美国 惠普HP
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国 惠普HP - 2
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 美国+V2CROSS.COM
+      - 北美地区+V2CROSS.COM
+      - 美国加利福尼亚州洛杉矶 PetaExpress
       - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
-      - 加拿大+魁北克省博阿努瓦OVH数据中心
-      - 美国 CloudFlare节点 - 3
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
+      - 美国 惠普HP
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国 惠普HP - 2
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 美国+V2CROSS.COM
+      - 北美地区+V2CROSS.COM
+      - 美国加利福尼亚州洛杉矶 PetaExpress
       - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
-      - 加拿大+魁北克省博阿努瓦OVH数据中心
-      - 美国 CloudFlare节点 - 3
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
