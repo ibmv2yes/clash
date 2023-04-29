@@ -1,100 +1,76 @@
 proxies:
-  - name: 日本 V2CROSS.COM
-    type: vmess
-    server: hk6.af49c4e4c2ef.sanfen001.pics
-    port: 443
-    uuid: 134e78bd-39d4-4c39-90d7-c7639167a7a9
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /zh-cn
-    ws-headers:
-      Host: ''
-    tls: true
   - name: 日本+东京Microsoft数据中心
     type: trojan
     server: fscsg.fscloud123456789.com
     port: '443'
     password: ed19b239-8e49-4b82-979a-24b84fa7b173
-  - name: 浙江省 移动数据上网公共出口
+  - name: 新加坡 腾讯云
     type: vmess
-    server: data-hk-v2.shwjfkw.cn
-    port: 50205
-    uuid: b1478e24-4916-3abe-8f17-15931012ecbe
-    alterId: 1
+    server: 43.134.161.69
+    port: 31101
+    uuid: d50a35ce-08a4-47d2-8c42-65be8f5cb7c6
+    alterId: 64
     cipher: auto
     udp: true
     network: ws
-    ws-path: /hls/cctv5phd.m3u8
+    ws-path: /sgx/getData
     ws-headers: {}
-  - name: 南非 V2CROSS.COM
+    tls: true
+  - name: 伊朗+V2CROSS.COM
+    type: trojan
+    server: uniquenet50.khasbox.fun
+    port: '10010'
+    password: 2e454370-4207-4443-8262-7e06663f54cb
+  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
     type: vmess
-    server: 156.225.67.146
-    port: 51948
-    uuid: 93503dd5-245a-4eb1-ae2a-57ab9f2b3c29
+    server: 192.74.242.149
+    port: 44667
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
     udp: true
     network: tcp
-    ws-path: ''
-    ws-headers:
-      Host: ''
-  - name: 台湾省新北市 中华电信
-    type: vmess
-    server: hinet1261.gfwisbest.xyz
-    port: 224
-    uuid: 2285133e-b9ba-3fb5-a246-9c7ddcc2cd7a
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
+    ws-headers: {}
   - name: 美国 CloudFlare节点
     type: vmess
-    server: 172.64.195.14
-    port: 80
-    uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a
+    server: cf.noaries.de
+    port: 2082
+    uuid: 314c1387-618c-4689-97fc-4bc9a1ae5e05
     alterId: 0
     cipher: auto
     udp: true
     network: ws
     ws-path: /
     ws-headers:
-      Host: lg.v2ray20.xyz
+      Host: ir2.nmsl.ninja
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 日本 V2CROSS.COM
       - 日本+东京Microsoft数据中心
-      - 浙江省 移动数据上网公共出口
-      - 南非 V2CROSS.COM
-      - 台湾省新北市 中华电信
+      - 新加坡 腾讯云
+      - 伊朗+V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
       - 美国 CloudFlare节点
   - name: 自动选择
     type: url-test
     proxies:
-      - 日本 V2CROSS.COM
       - 日本+东京Microsoft数据中心
-      - 浙江省 移动数据上网公共出口
-      - 南非 V2CROSS.COM
-      - 台湾省新北市 中华电信
+      - 新加坡 腾讯云
+      - 伊朗+V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
       - 美国 CloudFlare节点
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 日本 V2CROSS.COM
       - 日本+东京Microsoft数据中心
-      - 浙江省 移动数据上网公共出口
-      - 南非 V2CROSS.COM
-      - 台湾省新北市 中华电信
+      - 新加坡 腾讯云
+      - 伊朗+V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
       - 美国 CloudFlare节点
     url: http://www.gstatic.com/generate_204
     interval: 86400
