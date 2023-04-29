@@ -1,46 +1,36 @@
 proxies:
-  - name: 美国 加利福尼亚州洛杉矶Sharktech数据中心
+  - name: 香港 V2CROSS.COM
     type: vmess
-    server: 170.178.179.189
-    port: 443
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    server: 156.245.8.187
+    port: 49519
+    uuid: 5a4d69ad-20a9-4941-b223-87bbd09f5f52
     alterId: 64
     cipher: auto
     udp: true
-    network: ws
-    ws-path: /path/031730091420
+    network: tcp
+    ws-path: ''
     ws-headers:
       Host: ''
-    tls: true
-  - name: 美国 加利福尼亚州洛杉矶Sharktech数据中心 - 2
+  - name: 乌克兰+V2CROSS.COM
+    type: ss
+    server: 193.108.118.34
+    port: '2376'
+    cipher: aes-256-gcm
+    password: faBAoD54k87UJG7
+  - name: 美国 加利福尼亚州圣何塞PEG TECH
     type: vmess
-    server: 170.178.167.140
-    port: 50002
+    server: 142.4.97.76
+    port: 44942
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
     udp: true
     network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 日本 V2CROSS.COM
+    ws-headers: {}
+  - name: 美国 加利福尼亚州圣何塞PEG TECH - 2
     type: vmess
-    server: hk6.af49c4e4c2ef.sanfen004.me
-    port: 443
-    uuid: 29387883-aace-4e03-bad7-940bc5e6ba67
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /zh-cn
-    ws-headers:
-      Host: www.microsoft.com
-    tls: true
-  - name: 美国加利福尼亚州洛杉矶 PetaExpress
-    type: vmess
-    server: 198.2.203.58
-    port: 44502
+    server: 142.4.112.10
+    port: 51091
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -49,17 +39,33 @@ proxies:
     ws-headers: {}
   - name: 美国 CloudFlare节点
     type: vmess
-    server: quiz.vidio.com
-    port: 443
-    uuid: 92869d41-a98a-40ba-b79d-2eeb7ffe2433
+    server: cf.515188.xyz
+    port: 80
+    uuid: 35d1eaf8-53e7-4c8b-92aa-d96a20854e3c
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /worryfree
+    ws-path: /api/v3/download.getFile
     ws-headers:
-      Host: dynamic-sg1b.obfs.xyz
-    tls: true
+      Host: ssrsub.v03.ssrsub.com
+  - name: 日本+东京Microsoft数据中心
+    type: trojan
+    server: fscuk.fscloud123456789.com
+    port: '443'
+    password: ed19b239-8e49-4b82-979a-24b84fa7b173
+  - name: 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+    type: vmess
+    server: 23.224.14.142
+    port: 55332
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /shirker
+    ws-headers:
+      Host: ''
   - name: 美国 CloudFlare节点 - 2
     type: vmess
     server: cf.noaries.de
@@ -84,41 +90,63 @@ proxies:
     ws-path: /
     ws-headers:
       Host: lg.trump2023.net
+  - name: 美国 CloudFlare节点 - 4
+    type: vmess
+    server: cfcdn.sanfencdn.net
+    port: 443
+    uuid: c4868b8a-1f5c-4536-b191-d5429c2e14b7
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /zh-cn
+    ws-headers:
+      Host: us1.sanfencdn.net
+    tls: true
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心 - 2
-      - 日本 V2CROSS.COM
-      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 香港 V2CROSS.COM
+      - 乌克兰+V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国 加利福尼亚州圣何塞PEG TECH - 2
       - 美国 CloudFlare节点
+      - 日本+东京Microsoft数据中心
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
       - 美国 CloudFlare节点 - 2
       - 美国 CloudFlare节点 - 3
+      - 美国 CloudFlare节点 - 4
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心 - 2
-      - 日本 V2CROSS.COM
-      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 香港 V2CROSS.COM
+      - 乌克兰+V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国 加利福尼亚州圣何塞PEG TECH - 2
       - 美国 CloudFlare节点
+      - 日本+东京Microsoft数据中心
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
       - 美国 CloudFlare节点 - 2
       - 美国 CloudFlare节点 - 3
+      - 美国 CloudFlare节点 - 4
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心 - 2
-      - 日本 V2CROSS.COM
-      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 香港 V2CROSS.COM
+      - 乌克兰+V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国 加利福尼亚州圣何塞PEG TECH - 2
       - 美国 CloudFlare节点
+      - 日本+东京Microsoft数据中心
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
       - 美国 CloudFlare节点 - 2
       - 美国 CloudFlare节点 - 3
+      - 美国 CloudFlare节点 - 4
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
