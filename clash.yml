@@ -1,80 +1,125 @@
 proxies:
-  - name: 美国+V2CROSS.COM
-    type: trojan
-    server: tempest-us.aikun.online
-    port: 443?type=tcp&allowInsecure=1
-    password: 11e247e5-136d-45f1-844a-a7f054d36bab
-  - name: 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+  - name: 美国 CloudFlare节点
     type: vmess
-    server: 23.224.14.142
-    port: 55332
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /shirker
-    ws-headers:
-      Host: ''
-  - name: 香港 腾讯云
-    type: vmess
-    server: 43.154.34.49
-    port: 23183
-    uuid: b402a4af-285a-463e-c3a7-53f91efdec78
+    server: us-01.legeth.xyz
+    port: 80
+    uuid: 0c117b0d-bf59-4fc7-98ef-6205a18282b5
     alterId: 0
     cipher: auto
     udp: true
-    network: tcp
-    ws-path: /
+    network: ws
+    ws-path: ''
     ws-headers:
       Host: ''
-  - name: 北美地区+V2CROSS.COM
-    type: ss
-    server: 169.197.141.187
-    port: '8881'
-    cipher: aes-256-gcm
-    password: kDWvXYZoTBcGkC4
-  - name: 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心 - 2
+  - name: 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
     type: vmess
-    server: 172.247.67.22
-    port: 42940
+    server: 23.225.33.172
+    port: 56002
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
     udp: true
     network: tcp
-    ws-path: /shirker
+    ws-headers: {}
+  - name: 美国 惠普HP
+    type: vmess
+    server: hk3.af49c4e4c2ef.sanfen004.me
+    port: 443
+    uuid: a316207e-0d3b-4754-ae9f-a4ec13aacba9
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /zh-cn
+    ws-headers: {}
+    tls: true
+  - name: 美国+加利福尼亚州洛杉矶Level3通信(DIA)
+    type: trojan
+    server: uk.stablize.top
+    port: '443'
+    password: 9478e27c-6bdd-4f0e-ba46-90d9739e1e34
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: quiz.vidio.com
+    port: 443
+    uuid: 92869d41-a98a-40ba-b79d-2eeb7ffe2433
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /worryfree
     ws-headers:
-      Host: uk1.scproxy.top
+      Host: dynamic-sg1b.obfs.xyz
+    tls: true
+  - name: 美国+V2CROSS.COM
+    type: trojan
+    server: 152.70.74.66
+    port: 443?security=tls&type=tcp&headerType=none
+    password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
+  - name: 英国伦敦 Linode数据中心
+    type: vmess
+    server: vuk1.0bad.com
+    port: 443
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /chat
+    ws-headers:
+      Host: ''
+    tls: true
+  - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: surongwei.eu.org
+    port: 443
+    uuid: 6093eefb-7ab6-41df-aba0-d5fa58147e10
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /reffs7y26g0ua
+    ws-headers:
+      Host: surongwei.eu.org
+    tls: true
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国+V2CROSS.COM
+      - 美国 CloudFlare节点
       - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
-      - 香港 腾讯云
-      - 北美地区+V2CROSS.COM
-      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心 - 2
+      - 美国 惠普HP
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
+      - 美国 CloudFlare节点 - 2
+      - 美国+V2CROSS.COM
+      - 英国伦敦 Linode数据中心
+      - 美国 CloudFlare节点 - 3
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国+V2CROSS.COM
+      - 美国 CloudFlare节点
       - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
-      - 香港 腾讯云
-      - 北美地区+V2CROSS.COM
-      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心 - 2
+      - 美国 惠普HP
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
+      - 美国 CloudFlare节点 - 2
+      - 美国+V2CROSS.COM
+      - 英国伦敦 Linode数据中心
+      - 美国 CloudFlare节点 - 3
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国+V2CROSS.COM
+      - 美国 CloudFlare节点
       - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
-      - 香港 腾讯云
-      - 北美地区+V2CROSS.COM
-      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心 - 2
+      - 美国 惠普HP
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
+      - 美国 CloudFlare节点 - 2
+      - 美国+V2CROSS.COM
+      - 英国伦敦 Linode数据中心
+      - 美国 CloudFlare节点 - 3
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
