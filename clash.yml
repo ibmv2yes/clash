@@ -1,9 +1,9 @@
 proxies:
-  - name: 南非 V2CROSS.COM
+  - name: 美国 华盛顿Cogent通信公司
     type: vmess
-    server: 156.225.67.138
-    port: 48123
-    uuid: 964bf499-9ec0-4378-92b6-87d8d861b2d0
+    server: 38.63.17.164
+    port: 50702
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
     udp: true
@@ -11,61 +11,18 @@ proxies:
     ws-path: ''
     ws-headers:
       Host: ''
-  - name: 浙江省+联通
-    type: ss
-    server: p1.bxy-fun1.com
-    port: '23102'
-    cipher: chacha20-ietf-poly1305
-    password: d7bee830-09aa-43b2-8945-3b341b8787db
   - name: 美国 CloudFlare节点
     type: vmess
-    server: cdnjs.com
-    port: 443
-    uuid: DCE76061-EE65-49DB-997C-A6A880DADE3A
+    server: cf-lt.sharecentre.online
+    port: 8080
+    uuid: e2952737-6f10-492b-9813-19131deb71b1
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /speedtest
+    ws-path: /api/v3/download.getFile
     ws-headers:
-      Host: Amsterdam.kotick.site
-    tls: true
-  - name: 日本 东京都品川区Linode数据中心
-    type: vmess
-    server: 139.162.96.174
-    port: 443
-    uuid: 927094d3-d678-4763-8591-e240d0bcae87
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /chat
-    ws-headers:
-      Host: ''
-    tls: true
-  - name: 湖南省长沙市+联通
-    type: ss
-    server: p1.bxy-fun3.com
-    port: '24105'
-    cipher: chacha20-ietf-poly1305
-    password: d7bee830-09aa-43b2-8945-3b341b8787db
-  - name: 美国 惠普HP
-    type: vmess
-    server: hk3.af49c4e4c2ef.sanfen004.me
-    port: 443
-    uuid: a316207e-0d3b-4754-ae9f-a4ec13aacba9
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /zh-cn
-    ws-headers: {}
-    tls: true
-  - name: 亚太地区+V2CROSS.COM
-    type: trojan
-    server: 103.103.245.125
-    port: '50418'
-    password: a70b39d1-62ea-4d9e-b681-9c5408352234
+      Host: ssrsub.v01.ssrsub.com
   - name: 美国 加利福尼亚州洛杉矶Sharktech数据中心
     type: vmess
     server: 64.32.4.62
@@ -78,44 +35,96 @@ proxies:
     ws-path: ''
     ws-headers:
       Host: ''
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: vde2.0bad.com
+    port: 443
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /chat
+    ws-headers: {}
+    tls: true
+  - name: 美国 加利福尼亚州圣何塞PEG TECH
+    type: vmess
+    server: 142.4.99.78
+    port: 43379
+    uuid: b65da4af-a12a-4a59-9316-4549e12ba62c
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: ''
+    ws-headers:
+      Host: ''
+  - name: 亚太地区+V2CROSS.COM
+    type: trojan
+    server: 103.103.245.125
+    port: '50418'
+    password: a70b39d1-62ea-4d9e-b681-9c5408352234
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: surongwei.eu.org
+    port: 443
+    uuid: 6093eefb-7ab6-41df-aba0-d5fa58147e10
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /reffs7y26g0ua
+    ws-headers:
+      Host: surongwei.eu.org
+    tls: true
+  - name: 日本 东京BGP.NET数据中心
+    type: vmess
+    server: 27.124.20.240
+    port: 44002
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-headers: {}
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 南非 V2CROSS.COM
-      - 浙江省+联通
+      - 美国 华盛顿Cogent通信公司
       - 美国 CloudFlare节点
-      - 日本 东京都品川区Linode数据中心
-      - 湖南省长沙市+联通
-      - 美国 惠普HP
-      - 亚太地区+V2CROSS.COM
       - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 美国 V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 亚太地区+V2CROSS.COM
+      - 美国 CloudFlare节点 - 2
+      - 日本 东京BGP.NET数据中心
   - name: 自动选择
     type: url-test
     proxies:
-      - 南非 V2CROSS.COM
-      - 浙江省+联通
+      - 美国 华盛顿Cogent通信公司
       - 美国 CloudFlare节点
-      - 日本 东京都品川区Linode数据中心
-      - 湖南省长沙市+联通
-      - 美国 惠普HP
-      - 亚太地区+V2CROSS.COM
       - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 美国 V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 亚太地区+V2CROSS.COM
+      - 美国 CloudFlare节点 - 2
+      - 日本 东京BGP.NET数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 南非 V2CROSS.COM
-      - 浙江省+联通
+      - 美国 华盛顿Cogent通信公司
       - 美国 CloudFlare节点
-      - 日本 东京都品川区Linode数据中心
-      - 湖南省长沙市+联通
-      - 美国 惠普HP
-      - 亚太地区+V2CROSS.COM
       - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 美国 V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 亚太地区+V2CROSS.COM
+      - 美国 CloudFlare节点 - 2
+      - 日本 东京BGP.NET数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
