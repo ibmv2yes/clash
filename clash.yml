@@ -12,30 +12,6 @@ proxies:
     ws-headers:
       Host: www.microsoft.com
     tls: true
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: us-01.legeth.xyz
-    port: 80
-    uuid: 0c117b0d-bf59-4fc7-98ef-6205a18282b5
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: ''
-    ws-headers:
-      Host: ''
-  - name: 日本 V2CROSS.COM - 2
-    type: vmess
-    server: 43.201.46.252
-    port: 49021
-    uuid: c7919224-c6c7-45c2-a228-073837b203e9
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
   - name: 美国 滴滴盾CN2高防节点(dididun.com)
     type: vmess
     server: 137.175.3.231
@@ -46,23 +22,44 @@ proxies:
     udp: true
     network: tcp
     ws-headers: {}
-  - name: 美国+加利福尼亚州洛杉矶Level3通信(DIA)
-    type: trojan
-    server: sg.stablize.top
-    port: '443'
-    password: 2bfe8e4f-c00c-496b-ba8c-e67d2becd03b
-  - name: 美国 CloudFlare节点 - 2
+  - name: 美国 加利福尼亚州圣何塞PEG TECH
     type: vmess
-    server: cf-lt.sharecentre.online
-    port: 8080
-    uuid: e2952737-6f10-492b-9813-19131deb71b1
+    server: 142.4.112.10
+    port: 51091
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 日本 东京Linode数据中心
+    type: vmess
+    server: vjp1.0bad.com
+    port: 443
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /api/v3/download.getFile
+    ws-path: /chat
     ws-headers:
-      Host: ssrsub.v01.ssrsub.com
+      Host: vjp1.0bad.com
+    tls: true
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: cdnjs.com
+    port: 443
+    uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /speedtest
+    ws-headers:
+      Host: Kansas.kotick.site
+    tls: true
 proxy-groups:
   - name: Free-servers
     type: select
@@ -70,31 +67,28 @@ proxy-groups:
       - 自动选择
       - 故障转移
       - 日本 V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 日本 V2CROSS.COM - 2
       - 美国 滴滴盾CN2高防节点(dididun.com)
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
-      - 美国 CloudFlare节点 - 2
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 日本 东京Linode数据中心
+      - 美国 CloudFlare节点
   - name: 自动选择
     type: url-test
     proxies:
       - 日本 V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 日本 V2CROSS.COM - 2
       - 美国 滴滴盾CN2高防节点(dididun.com)
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
-      - 美国 CloudFlare节点 - 2
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 日本 东京Linode数据中心
+      - 美国 CloudFlare节点
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
       - 日本 V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 日本 V2CROSS.COM - 2
       - 美国 滴滴盾CN2高防节点(dididun.com)
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
-      - 美国 CloudFlare节点 - 2
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 日本 东京Linode数据中心
+      - 美国 CloudFlare节点
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
