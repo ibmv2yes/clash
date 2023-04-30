@@ -1,78 +1,73 @@
 proxies:
-  - name: 美国 CloudFlare节点
+  - name: 美国 加利福尼亚州费利蒙Linode数据中心
     type: vmess
-    server: r2wind.com
-    port: 8080
-    uuid: e2952737-6f10-492b-9813-19131deb71b1
+    server: vus3.0bad.com
+    port: 443
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /api/v3/download.getFile
+    ws-path: /chat
     ws-headers:
-      Host: ssrsub.v02.ssrsub.com
-  - name: 美国+V2CROSS.COM
-    type: trojan
-    server: 152.70.74.66
-    port: 443?security=tls&type=tcp&headerType=none
-    password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
-  - name: 日本 东京PEG TECH
-    type: vmess
-    server: 104.233.191.182
-    port: 443
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /path/031730091420
-    ws-headers:
-      Host: ''
+      Host: vus3.0bad.com
     tls: true
-  - name: 美国 滴滴盾CN2高防节点(dididun.com)
+  - name: 美国+Microsoft数据中心
+    type: trojan
+    server: sg.stablize.top
+    port: '443'
+    password: 2bfe8e4f-c00c-496b-ba8c-e67d2becd03b
+  - name: 北美地区+V2CROSS.COM
+    type: ss
+    server: 169.197.141.187
+    port: '7001'
+    cipher: aes-256-gcm
+    password: RexnBgU7EV5ADxG
+  - name: 北美地区+V2CROSS.COM - 2
+    type: ss
+    server: 169.197.141.187
+    port: '2375'
+    cipher: aes-256-gcm
+    password: faBAoD54k87UJG7
+  - name: 美国 V2CROSS.COM
     type: vmess
-    server: 137.175.3.231
-    port: 53042
+    server: 108.186.192.251
+    port: 35502
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
     udp: true
     network: tcp
     ws-headers: {}
-  - name: 美国+V2CROSS.COM - 2
-    type: trojan
-    server: tempest-us.aikun.online
-    port: 443?type=tcp&allowInsecure=1
-    password: 11e247e5-136d-45f1-844a-a7f054d36bab
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 CloudFlare节点
-      - 美国+V2CROSS.COM
-      - 日本 东京PEG TECH
-      - 美国 滴滴盾CN2高防节点(dididun.com)
-      - 美国+V2CROSS.COM - 2
+      - 美国 加利福尼亚州费利蒙Linode数据中心
+      - 美国+Microsoft数据中心
+      - 北美地区+V2CROSS.COM
+      - 北美地区+V2CROSS.COM - 2
+      - 美国 V2CROSS.COM
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 CloudFlare节点
-      - 美国+V2CROSS.COM
-      - 日本 东京PEG TECH
-      - 美国 滴滴盾CN2高防节点(dididun.com)
-      - 美国+V2CROSS.COM - 2
+      - 美国 加利福尼亚州费利蒙Linode数据中心
+      - 美国+Microsoft数据中心
+      - 北美地区+V2CROSS.COM
+      - 北美地区+V2CROSS.COM - 2
+      - 美国 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 CloudFlare节点
-      - 美国+V2CROSS.COM
-      - 日本 东京PEG TECH
-      - 美国 滴滴盾CN2高防节点(dididun.com)
-      - 美国+V2CROSS.COM - 2
+      - 美国 加利福尼亚州费利蒙Linode数据中心
+      - 美国+Microsoft数据中心
+      - 北美地区+V2CROSS.COM
+      - 北美地区+V2CROSS.COM - 2
+      - 美国 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
