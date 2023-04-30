@@ -1,63 +1,79 @@
 proxies:
-  - name: 美国+V2CROSS.COM
-    type: trojan
-    server: 152.70.74.66
-    port: 443?security=tls&type=tcp&headerType=none
-    password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
-  - name: 美国+乔治亚州
-    type: trojan
-    server: usjjs.ndy58850.me
-    port: '26656'
-    password: 799c66fa-1188-4d89-bc94-9a6b9587c1b0
-  - name: 瑞士+V2CROSS.COM
-    type: trojan
-    server: 195.15.243.26
-    port: 443?security=tls&type=tcp&headerType=none
-    password: '4478'
-  - name: 美国 华盛顿Cogent通信公司
+  - name: 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
     type: vmess
-    server: 38.63.2.5
-    port: 57723
+    server: 23.225.33.172
+    port: 56002
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
     udp: true
     network: tcp
     ws-headers: {}
-  - name: 美国+加利福尼亚州洛杉矶Level3通信(DIA)
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: aaaa.wxx.gay
+    port: 443
+    uuid: 7b1d76aa-e70b-11ed-8166-000017022008
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /look
+    ws-headers:
+      Host: ''
+    tls: true
+  - name: 亚太地区+V2CROSS.COM
     type: trojan
-    server: sg.stablize.top
-    port: '443'
-    password: 2bfe8e4f-c00c-496b-ba8c-e67d2becd03b
+    server: 103.103.245.125
+    port: '50206'
+    password: 789d73af-b985-4778-9872-211047c28015
+  - name: 广东省广州市+移动
+    type: ss
+    server: p1.bxy-fun2.com
+    port: '24101'
+    cipher: chacha20-ietf-poly1305
+    password: d7bee830-09aa-43b2-8945-3b341b8787db
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: scaleway.696960.xyz
+    port: 443
+    uuid: e357cd63-f1a5-4c8e-c42e-26da11207fee
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /root/
+    ws-headers: {}
+    tls: true
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国+V2CROSS.COM
-      - 美国+乔治亚州
-      - 瑞士+V2CROSS.COM
-      - 美国 华盛顿Cogent通信公司
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 美国 CloudFlare节点
+      - 亚太地区+V2CROSS.COM
+      - 广东省广州市+移动
+      - 美国 CloudFlare节点 - 2
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国+V2CROSS.COM
-      - 美国+乔治亚州
-      - 瑞士+V2CROSS.COM
-      - 美国 华盛顿Cogent通信公司
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 美国 CloudFlare节点
+      - 亚太地区+V2CROSS.COM
+      - 广东省广州市+移动
+      - 美国 CloudFlare节点 - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国+V2CROSS.COM
-      - 美国+乔治亚州
-      - 瑞士+V2CROSS.COM
-      - 美国 华盛顿Cogent通信公司
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 美国 CloudFlare节点
+      - 亚太地区+V2CROSS.COM
+      - 广东省广州市+移动
+      - 美国 CloudFlare节点 - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
