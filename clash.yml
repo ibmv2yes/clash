@@ -1,56 +1,5 @@
 proxies:
-  - name: 美国 加利福尼亚州圣何塞PEG TECH
-    type: vmess
-    server: 142.4.119.205
-    port: 53986
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
   - name: 美国 CloudFlare节点
-    type: vmess
-    server: v2ray.online
-    port: 443
-    uuid: 00BBF5B8-173E-6818-9927-5AD1AA073C7D
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /speedtest
-    ws-headers:
-      Host: Kansas.v2ray.online
-    tls: true
-  - name: 日本 V2CROSS.COM
-    type: vmess
-    server: hk6.af49c4e4c2ef.sanfen004.me
-    port: 443
-    uuid: 29387883-aace-4e03-bad7-940bc5e6ba67
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /zh-cn
-    ws-headers:
-      Host: www.microsoft.com
-    tls: true
-  - name: 香港 腾讯云
-    type: vmess
-    server: 43.154.76.92
-    port: 48336
-    uuid: 784272d2-bd2d-438a-bbd4-1271bb1f1b0d
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /hk15/getData
-    ws-headers:
-      Host: ''
-    tls: true
-  - name: 美国 CloudFlare节点 - 2
     type: vmess
     server: cf-lt.sharecentre.online
     port: 8080
@@ -62,35 +11,84 @@ proxies:
     ws-path: /api/v3/download.getFile
     ws-headers:
       Host: ssrsub.v01.ssrsub.com
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: 170.187.200.114
+    port: 443
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /chat
+    ws-headers: {}
+    tls: true
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: us-01.legeth.xyz
+    port: 80
+    uuid: 0c117b0d-bf59-4fc7-98ef-6205a18282b5
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: ''
+    ws-headers:
+      Host: ''
+  - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: surongwei.eu.org
+    port: 443
+    uuid: 6093eefb-7ab6-41df-aba0-d5fa58147e10
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /reffs7y26g0ua
+    ws-headers:
+      Host: surongwei.eu.org
+    tls: true
+  - name: 德国 黑森州法兰克福DigitalOcean数据中心
+    type: vmess
+    server: 165.227.133.55
+    port: 80
+    uuid: df68f678-62c3-4799-91a8-4d301e8cf565
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /PGV2vtMvxwNFt2
+    ws-headers:
+      Host: ''
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 加利福尼亚州圣何塞PEG TECH
       - 美国 CloudFlare节点
-      - 日本 V2CROSS.COM
-      - 香港 腾讯云
+      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点 - 2
+      - 美国 CloudFlare节点 - 3
+      - 德国 黑森州法兰克福DigitalOcean数据中心
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 加利福尼亚州圣何塞PEG TECH
       - 美国 CloudFlare节点
-      - 日本 V2CROSS.COM
-      - 香港 腾讯云
+      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点 - 2
+      - 美国 CloudFlare节点 - 3
+      - 德国 黑森州法兰克福DigitalOcean数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 加利福尼亚州圣何塞PEG TECH
       - 美国 CloudFlare节点
-      - 日本 V2CROSS.COM
-      - 香港 腾讯云
+      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点 - 2
+      - 美国 CloudFlare节点 - 3
+      - 德国 黑森州法兰克福DigitalOcean数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
