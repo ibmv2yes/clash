@@ -1,39 +1,45 @@
 proxies:
-  - name: 美国 CloudFlare节点
+  - name: 美国+加利福尼亚州洛杉矶Level3通信(DIA)
+    type: trojan
+    server: sg.stablize.top
+    port: '443'
+    password: 2bfe8e4f-c00c-496b-ba8c-e67d2becd03b
+  - name: 德国 黑森州法兰克福DigitalOcean数据中心
     type: vmess
-    server: ming2.kiwireich.com
-    port: 443
-    uuid: 18e5f40f-bda6-4c15-9334-e87cda6047af
+    server: 165.227.133.55
+    port: 80
+    uuid: df68f678-62c3-4799-91a8-4d301e8cf565
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /ray
+    ws-path: /PGV2vtMvxwNFt2
     ws-headers:
-      Host: ming2.kiwireich.com
-    tls: true
-  - name: 美国 加利福尼亚州圣何塞PEG TECH
+      Host: ''
+  - name: 美国加利福尼亚州洛杉矶 PetaExpress
     type: vmess
-    server: 142.4.112.10
-    port: 51091
+    server: 198.2.206.45
+    port: 33012
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
     udp: true
     network: tcp
-    ws-headers: {}
-  - name: 美国 惠普HP
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 CloudFlare节点
     type: vmess
-    server: hk3.af49c4e4c2ef.sanfen004.me
-    port: 443
-    uuid: a316207e-0d3b-4754-ae9f-a4ec13aacba9
+    server: us-01.legeth.xyz
+    port: 80
+    uuid: 0c117b0d-bf59-4fc7-98ef-6205a18282b5
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /zh-cn
-    ws-headers: {}
-    tls: true
+    ws-path: ''
+    ws-headers:
+      Host: ''
   - name: 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
     type: vmess
     server: 23.224.14.142
@@ -46,54 +52,35 @@ proxies:
     ws-path: /shirker
     ws-headers:
       Host: ''
-  - name: 北美地区+V2CROSS.COM
-    type: ss
-    server: 169.197.141.187
-    port: '8888'
-    cipher: aes-256-gcm
-    password: Y6R9pAtvxxzmGC
-  - name: 日本 东京BGP.NET数据中心
-    type: vmess
-    server: 27.124.20.240
-    port: 44002
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-headers: {}
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
+      - 德国 黑森州法兰克福DigitalOcean数据中心
+      - 美国加利福尼亚州洛杉矶 PetaExpress
       - 美国 CloudFlare节点
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国 惠普HP
       - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
-      - 北美地区+V2CROSS.COM
-      - 日本 东京BGP.NET数据中心
   - name: 自动选择
     type: url-test
     proxies:
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
+      - 德国 黑森州法兰克福DigitalOcean数据中心
+      - 美国加利福尼亚州洛杉矶 PetaExpress
       - 美国 CloudFlare节点
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国 惠普HP
       - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
-      - 北美地区+V2CROSS.COM
-      - 日本 东京BGP.NET数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
+      - 德国 黑森州法兰克福DigitalOcean数据中心
+      - 美国加利福尼亚州洛杉矶 PetaExpress
       - 美国 CloudFlare节点
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国 惠普HP
       - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
-      - 北美地区+V2CROSS.COM
-      - 日本 东京BGP.NET数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
