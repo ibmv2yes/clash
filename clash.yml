@@ -1,9 +1,43 @@
 proxies:
-  - name: 美国+加利福尼亚州洛杉矶Level3通信(DIA)
+  - name: 美国+V2CROSS.COM
     type: trojan
-    server: sg.stablize.top
-    port: '443'
-    password: 2bfe8e4f-c00c-496b-ba8c-e67d2becd03b
+    server: 152.70.74.66
+    port: 443?security=tls&type=tcp&headerType=none
+    password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
+  - name: 美国 加利福尼亚州圣何塞PEG TECH
+    type: vmess
+    server: 142.4.99.77
+    port: 43379
+    uuid: b65da4af-a12a-4a59-9316-4549e12ba62c
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: ''
+    ws-headers:
+      Host: ''
+  - name: 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+    type: vmess
+    server: 23.225.33.172
+    port: 56002
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-headers: {}
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: l1.zanbil-mo.cf
+    port: 2095
+    uuid: 56fc3d21-4a2f-4f68-8f78-eebd6a051101
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: l1.zanbil-mo.cf
   - name: 德国 黑森州法兰克福DigitalOcean数据中心
     type: vmess
     server: 165.227.133.55
@@ -16,71 +50,35 @@ proxies:
     ws-path: /PGV2vtMvxwNFt2
     ws-headers:
       Host: ''
-  - name: 美国加利福尼亚州洛杉矶 PetaExpress
-    type: vmess
-    server: 198.2.206.45
-    port: 33012
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: us-01.legeth.xyz
-    port: 80
-    uuid: 0c117b0d-bf59-4fc7-98ef-6205a18282b5
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: ''
-    ws-headers:
-      Host: ''
-  - name: 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
-    type: vmess
-    server: 23.224.14.142
-    port: 55332
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /shirker
-    ws-headers:
-      Host: ''
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
-      - 德国 黑森州法兰克福DigitalOcean数据中心
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 美国 CloudFlare节点
+      - 美国+V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH
       - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 美国 CloudFlare节点
+      - 德国 黑森州法兰克福DigitalOcean数据中心
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
-      - 德国 黑森州法兰克福DigitalOcean数据中心
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 美国 CloudFlare节点
+      - 美国+V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH
       - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 美国 CloudFlare节点
+      - 德国 黑森州法兰克福DigitalOcean数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
-      - 德国 黑森州法兰克福DigitalOcean数据中心
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 美国 CloudFlare节点
+      - 美国+V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH
       - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 美国 CloudFlare节点
+      - 德国 黑森州法兰克福DigitalOcean数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
