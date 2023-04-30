@@ -1,7 +1,27 @@
 proxies:
-  - name: 美国 加利福尼亚州费利蒙Linode数据中心
+  - name: 美国 加利福尼亚州圣何塞PEG TECH
     type: vmess
-    server: vus3.0bad.com
+    server: 142.4.114.28
+    port: 34002
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-headers: {}
+  - name: 美国 滴滴盾CN2高防节点(dididun.com)
+    type: vmess
+    server: 137.175.3.231
+    port: 53042
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-headers: {}
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: 170.187.200.114
     port: 443
     uuid: 927094d3-d678-4763-8591-e240d0bcae87
     alterId: 0
@@ -9,30 +29,17 @@ proxies:
     udp: true
     network: ws
     ws-path: /chat
-    ws-headers:
-      Host: vus3.0bad.com
+    ws-headers: {}
     tls: true
   - name: 美国+Microsoft数据中心
     type: trojan
     server: sg.stablize.top
     port: '443'
     password: 2bfe8e4f-c00c-496b-ba8c-e67d2becd03b
-  - name: 北美地区+V2CROSS.COM
-    type: ss
-    server: 169.197.141.187
-    port: '7001'
-    cipher: aes-256-gcm
-    password: RexnBgU7EV5ADxG
-  - name: 北美地区+V2CROSS.COM - 2
-    type: ss
-    server: 169.197.141.187
-    port: '2375'
-    cipher: aes-256-gcm
-    password: faBAoD54k87UJG7
-  - name: 美国 V2CROSS.COM
+  - name: 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
     type: vmess
-    server: 108.186.192.251
-    port: 35502
+    server: 23.225.33.172
+    port: 56002
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -45,29 +52,29 @@ proxy-groups:
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 加利福尼亚州费利蒙Linode数据中心
-      - 美国+Microsoft数据中心
-      - 北美地区+V2CROSS.COM
-      - 北美地区+V2CROSS.COM - 2
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国 滴滴盾CN2高防节点(dididun.com)
       - 美国 V2CROSS.COM
+      - 美国+Microsoft数据中心
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 加利福尼亚州费利蒙Linode数据中心
-      - 美国+Microsoft数据中心
-      - 北美地区+V2CROSS.COM
-      - 北美地区+V2CROSS.COM - 2
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国 滴滴盾CN2高防节点(dididun.com)
       - 美国 V2CROSS.COM
+      - 美国+Microsoft数据中心
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 加利福尼亚州费利蒙Linode数据中心
-      - 美国+Microsoft数据中心
-      - 北美地区+V2CROSS.COM
-      - 北美地区+V2CROSS.COM - 2
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国 滴滴盾CN2高防节点(dididun.com)
       - 美国 V2CROSS.COM
+      - 美国+Microsoft数据中心
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
