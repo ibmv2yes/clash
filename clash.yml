@@ -1,16 +1,49 @@
 proxies:
-  - name: 美国 CloudFlare节点
+  - name: 日本 东京Linode数据中心
     type: vmess
-    server: cf-lt.sharecentre.online
-    port: 8080
-    uuid: e2952737-6f10-492b-9813-19131deb71b1
+    server: vjp1.0bad.com
+    port: 443
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /api/v3/download.getFile
+    ws-path: /chat
     ws-headers:
-      Host: ssrsub.v01.ssrsub.com
+      Host: vjp1.0bad.com
+    tls: true
+  - name: 美国 加利福尼亚州圣何塞PEG TECH
+    type: vmess
+    server: 142.4.119.205
+    port: 53986
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-headers: {}
+  - name: 台湾省新北市 中华电信
+    type: vmess
+    server: hinet1261.gfwisbest.xyz
+    port: 224
+    uuid: 2285133e-b9ba-3fb5-a246-9c7ddcc2cd7a
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 滴滴盾CN2高防节点(dididun.com)
+    type: vmess
+    server: 137.175.3.231
+    port: 53042
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-headers: {}
   - name: 美国 V2CROSS.COM
     type: vmess
     server: 170.187.200.114
@@ -23,72 +56,35 @@ proxies:
     ws-path: /chat
     ws-headers: {}
     tls: true
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: us-01.legeth.xyz
-    port: 80
-    uuid: 0c117b0d-bf59-4fc7-98ef-6205a18282b5
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: ''
-    ws-headers:
-      Host: ''
-  - name: 美国 CloudFlare节点 - 3
-    type: vmess
-    server: surongwei.eu.org
-    port: 443
-    uuid: 6093eefb-7ab6-41df-aba0-d5fa58147e10
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /reffs7y26g0ua
-    ws-headers:
-      Host: surongwei.eu.org
-    tls: true
-  - name: 德国 黑森州法兰克福DigitalOcean数据中心
-    type: vmess
-    server: 165.227.133.55
-    port: 80
-    uuid: df68f678-62c3-4799-91a8-4d301e8cf565
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /PGV2vtMvxwNFt2
-    ws-headers:
-      Host: ''
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 CloudFlare节点
+      - 日本 东京Linode数据中心
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 台湾省新北市 中华电信
+      - 美国 滴滴盾CN2高防节点(dididun.com)
       - 美国 V2CROSS.COM
-      - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
-      - 德国 黑森州法兰克福DigitalOcean数据中心
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 CloudFlare节点
+      - 日本 东京Linode数据中心
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 台湾省新北市 中华电信
+      - 美国 滴滴盾CN2高防节点(dididun.com)
       - 美国 V2CROSS.COM
-      - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
-      - 德国 黑森州法兰克福DigitalOcean数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 CloudFlare节点
+      - 日本 东京Linode数据中心
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 台湾省新北市 中华电信
+      - 美国 滴滴盾CN2高防节点(dididun.com)
       - 美国 V2CROSS.COM
-      - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
-      - 德国 黑森州法兰克福DigitalOcean数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
