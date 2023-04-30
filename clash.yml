@@ -1,8 +1,21 @@
 proxies:
-  - name: 美国 加利福尼亚州圣何塞PEG TECH
+  - name: 日本 东京PEG TECH
     type: vmess
-    server: 142.4.119.205
-    port: 53986
+    server: 104.233.191.182
+    port: 443
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /path/031730091420
+    ws-headers:
+      Host: ''
+    tls: true
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: 108.186.192.251
+    port: 35502
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -10,6 +23,42 @@ proxies:
     network: tcp
     ws-headers: {}
   - name: 美国 CloudFlare节点
+    type: vmess
+    server: cf-lt.sharecentre.online
+    port: 8080
+    uuid: e2952737-6f10-492b-9813-19131deb71b1
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /api/v3/download.getFile
+    ws-headers:
+      Host: ssrsub.v01.ssrsub.com
+  - name: 广东省广州市+移动
+    type: ss
+    server: p1.bxy-fun2.com
+    port: '26107'
+    cipher: chacha20-ietf-poly1305
+    password: d7bee830-09aa-43b2-8945-3b341b8787db
+  - name: 美国 V2CROSS.COM - 2
+    type: vmess
+    server: 170.187.200.114
+    port: 443
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /chat
+    ws-headers: {}
+    tls: true
+  - name: 浙江省+联通
+    type: ss
+    server: p1.bxy-fun1.com
+    port: '11407'
+    cipher: chacha20-ietf-poly1305
+    password: d7bee830-09aa-43b2-8945-3b341b8787db
+  - name: 美国 CloudFlare节点 - 2
     type: vmess
     server: hd.mamadcucu.com
     port: 2082
@@ -21,65 +70,41 @@ proxies:
     ws-path: /
     ws-headers:
       Host: h5.mamadcucu.com
-  - name: 美国 惠普HP
-    type: vmess
-    server: hk3.af49c4e4c2ef.sanfen004.me
-    port: 443
-    uuid: a316207e-0d3b-4754-ae9f-a4ec13aacba9
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /zh-cn
-    ws-headers: {}
-    tls: true
-  - name: 美国+V2CROSS.COM
-    type: trojan
-    server: 152.70.74.66
-    port: 443?security=tls&type=tcp&headerType=none
-    password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
-  - name: 日本 V2CROSS.COM
-    type: vmess
-    server: hk6.af49c4e4c2ef.sanfen004.me
-    port: 443
-    uuid: 29387883-aace-4e03-bad7-940bc5e6ba67
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /zh-cn
-    ws-headers:
-      Host: www.microsoft.com
-    tls: true
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 日本 东京PEG TECH
+      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 美国 惠普HP
-      - 美国+V2CROSS.COM
-      - 日本 V2CROSS.COM
+      - 广东省广州市+移动
+      - 美国 V2CROSS.COM - 2
+      - 浙江省+联通
+      - 美国 CloudFlare节点 - 2
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 日本 东京PEG TECH
+      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 美国 惠普HP
-      - 美国+V2CROSS.COM
-      - 日本 V2CROSS.COM
+      - 广东省广州市+移动
+      - 美国 V2CROSS.COM - 2
+      - 浙江省+联通
+      - 美国 CloudFlare节点 - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 日本 东京PEG TECH
+      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 美国 惠普HP
-      - 美国+V2CROSS.COM
-      - 日本 V2CROSS.COM
+      - 广东省广州市+移动
+      - 美国 V2CROSS.COM - 2
+      - 浙江省+联通
+      - 美国 CloudFlare节点 - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
