@@ -1,100 +1,75 @@
 proxies:
-  - name: 美国 加利福尼亚州洛杉矶Sharktech数据中心
-    type: vmess
-    server: 64.32.4.62
-    port: 43165
-    uuid: 8653004f-de67-44c2-9cce-e0830933fb03
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: ''
-    ws-headers:
-      Host: ''
-  - name: 美国+加利福尼亚州洛杉矶Level3通信(DIA)
-    type: trojan
-    server: sg.stablize.top
-    port: '443'
-    password: 2bfe8e4f-c00c-496b-ba8c-e67d2becd03b
-  - name: 日本 东京BGP.NET数据中心
-    type: vmess
-    server: 27.124.20.240
-    port: 44002
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-headers: {}
-  - name: 美国 惠普HP
-    type: vmess
-    server: hk3.af49c4e4c2ef.sanfen004.me
-    port: 443
-    uuid: a316207e-0d3b-4754-ae9f-a4ec13aacba9
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /zh-cn
-    ws-headers: {}
-    tls: true
   - name: 美国 CloudFlare节点
     type: vmess
-    server: 172.67.125.26
-    port: 2053
-    uuid: d6616014-a47e-4040-8286-34a2207c5b7c
+    server: cdn.yuntujisu.ml
+    port: 80
+    uuid: d59b24b1-b475-4d44-be46-a18563a87711
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /10029
+    ws-path: /
     ws-headers:
-      Host: b.v2ray2333.tk
-    tls: true
-  - name: 美国 V2CROSS.COM
+      Host: jp.ytjs114514.ml
+  - name: 湖南省长沙市+联通
+    type: ss
+    server: p1.bxy-fun3.com
+    port: '24105'
+    cipher: chacha20-ietf-poly1305
+    password: d7bee830-09aa-43b2-8945-3b341b8787db
+  - name: 浙江省+联通
+    type: ss
+    server: p1.bxy-fun1.com
+    port: '30470'
+    cipher: chacha20-ietf-poly1305
+    password: d7bee830-09aa-43b2-8945-3b341b8787db
+  - name: 浙江省+联通 - 2
+    type: ss
+    server: p1.bxy-fun1.com
+    port: '23102'
+    cipher: chacha20-ietf-poly1305
+    password: d7bee830-09aa-43b2-8945-3b341b8787db
+  - name: 美国 CloudFlare节点 - 2
     type: vmess
-    server: vde2.0bad.com
-    port: 443
-    uuid: 927094d3-d678-4763-8591-e240d0bcae87
+    server: cf-lt.sharecentre.online
+    port: 80
+    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /chat
-    ws-headers: {}
-    tls: true
+    ws-path: /shirker
+    ws-headers:
+      Host: nl.sharecentrepro.com
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
-      - 日本 东京BGP.NET数据中心
-      - 美国 惠普HP
       - 美国 CloudFlare节点
-      - 美国 V2CROSS.COM
+      - 湖南省长沙市+联通
+      - 浙江省+联通
+      - 浙江省+联通 - 2
+      - 美国 CloudFlare节点 - 2
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
-      - 日本 东京BGP.NET数据中心
-      - 美国 惠普HP
       - 美国 CloudFlare节点
-      - 美国 V2CROSS.COM
+      - 湖南省长沙市+联通
+      - 浙江省+联通
+      - 浙江省+联通 - 2
+      - 美国 CloudFlare节点 - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
-      - 日本 东京BGP.NET数据中心
-      - 美国 惠普HP
       - 美国 CloudFlare节点
-      - 美国 V2CROSS.COM
+      - 湖南省长沙市+联通
+      - 浙江省+联通
+      - 浙江省+联通 - 2
+      - 美国 CloudFlare节点 - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
