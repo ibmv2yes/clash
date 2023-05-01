@@ -1,76 +1,59 @@
 proxies:
-  - name: 美国 CloudFlare节点
+  - name: 广东省广州市+移动
+    type: ss
+    server: p1.bxy-fun2.com
+    port: '23105'
+    cipher: chacha20-ietf-poly1305
+    password: d7bee830-09aa-43b2-8945-3b341b8787db
+  - name: 美国 加利福尼亚州圣何塞PEG TECH
     type: vmess
-    server: 172.67.132.15
-    port: 443
-    uuid: 18e5f40f-bda6-4c15-9334-e87cda6047af
-    alterId: 0
+    server: 142.4.119.205
+    port: 53986
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
     cipher: auto
     udp: true
-    network: ws
-    ws-path: /ray
-    ws-headers:
-      Host: ming2.kiwireich.com
-    tls: true
-  - name: 北美地区+V2CROSS.COM
-    type: ss
-    server: 169.197.141.187
-    port: '7001'
-    cipher: aes-256-gcm
-    password: RexnBgU7EV5ADxG
+    network: tcp
+    ws-headers: {}
   - name: 浙江省+联通
     type: ss
     server: p1.bxy-fun1.com
-    port: '30470'
+    port: '23102'
     cipher: chacha20-ietf-poly1305
     password: d7bee830-09aa-43b2-8945-3b341b8787db
-  - name: 瑞士+V2CROSS.COM
-    type: trojan
-    server: 195.15.243.26
-    port: 443?type=tcp&allowInsecure=1
-    password: '4478'
   - name: 日本+V2CROSS.COM
     type: trojan
-    server: jp-csjc.syjd.xyz
-    port: 443?type=tcp&sni=jp-csjc.syjd.xyz&allowInsecure=1
+    server: microsoft-hk01.syjd.xyz
+    port: 443?type=tcp&sni=microsoft-hk01.syjd.xyz&allowInsecure=1
     password: 51eebef7-beaa-417b-9584-2794d10377c9
-  - name: 湖南省长沙市+联通
-    type: ss
-    server: p1.bxy-fun3.com
-    port: '35127'
-    cipher: chacha20-ietf-poly1305
-    password: d7bee830-09aa-43b2-8945-3b341b8787db
-  - name: 湖南省长沙市+联通 - 2
-    type: ss
-    server: p1.bxy-fun3.com
-    port: '24105'
-    cipher: chacha20-ietf-poly1305
-    password: d7bee830-09aa-43b2-8945-3b341b8787db
-  - name: 日本 V2CROSS.COM
+  - name: 新加坡+Amazon亚太数据中心
+    type: trojan
+    server: sg-csjc.syjd.xyz
+    port: 443?type=tcp&sni=sg-csjc.syjd.xyz&allowInsecure=1
+    password: 51eebef7-beaa-417b-9584-2794d10377c9
+  - name: 北美地区 V2CROSS.COM
     type: vmess
-    server: hk6.af49c4e4c2ef.sanfen004.me
+    server: 134.195.96.178
+    port: 666
+    uuid: 4ebc6214-33ab-37cc-a01a-ff97029db0f5
+    alterId: 2
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /v2ray
+    ws-headers:
+      Host: ''
+  - name: 美国 惠普HP
+    type: vmess
+    server: hk3.af49c4e4c2ef.sanfen004.me
     port: 443
-    uuid: 29387883-aace-4e03-bad7-940bc5e6ba67
+    uuid: a316207e-0d3b-4754-ae9f-a4ec13aacba9
     alterId: 0
     cipher: auto
     udp: true
     network: ws
     ws-path: /zh-cn
-    ws-headers:
-      Host: ''
-    tls: true
-  - name: 日本 东京Linode数据中心
-    type: vmess
-    server: vjp1.0bad.com
-    port: 443
-    uuid: 927094d3-d678-4763-8591-e240d0bcae87
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /chat
-    ws-headers:
-      Host: vjp1.0bad.com
+    ws-headers: {}
     tls: true
 proxy-groups:
   - name: Free-servers
@@ -78,41 +61,35 @@ proxy-groups:
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 CloudFlare节点
-      - 北美地区+V2CROSS.COM
+      - 广东省广州市+移动
+      - 美国 加利福尼亚州圣何塞PEG TECH
       - 浙江省+联通
-      - 瑞士+V2CROSS.COM
       - 日本+V2CROSS.COM
-      - 湖南省长沙市+联通
-      - 湖南省长沙市+联通 - 2
-      - 日本 V2CROSS.COM
-      - 日本 东京Linode数据中心
+      - 新加坡+Amazon亚太数据中心
+      - 北美地区 V2CROSS.COM
+      - 美国 惠普HP
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 CloudFlare节点
-      - 北美地区+V2CROSS.COM
+      - 广东省广州市+移动
+      - 美国 加利福尼亚州圣何塞PEG TECH
       - 浙江省+联通
-      - 瑞士+V2CROSS.COM
       - 日本+V2CROSS.COM
-      - 湖南省长沙市+联通
-      - 湖南省长沙市+联通 - 2
-      - 日本 V2CROSS.COM
-      - 日本 东京Linode数据中心
+      - 新加坡+Amazon亚太数据中心
+      - 北美地区 V2CROSS.COM
+      - 美国 惠普HP
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 CloudFlare节点
-      - 北美地区+V2CROSS.COM
+      - 广东省广州市+移动
+      - 美国 加利福尼亚州圣何塞PEG TECH
       - 浙江省+联通
-      - 瑞士+V2CROSS.COM
       - 日本+V2CROSS.COM
-      - 湖南省长沙市+联通
-      - 湖南省长沙市+联通 - 2
-      - 日本 V2CROSS.COM
-      - 日本 东京Linode数据中心
+      - 新加坡+Amazon亚太数据中心
+      - 北美地区 V2CROSS.COM
+      - 美国 惠普HP
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
