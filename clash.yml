@@ -1,90 +1,123 @@
 proxies:
+  - name: 瑞典+V2CROSS.COM
+    type: ss
+    server: 167.88.61.213
+    port: '8091'
+    cipher: aes-256-gcm
+    password: PCnnH6SQSnfoS27
+  - name: 瑞典+V2CROSS.COM - 2
+    type: ss
+    server: 167.88.61.213
+    port: '8881'
+    cipher: aes-256-gcm
+    password: kDWvXYZoTBcGkC4
   - name: 美国 CloudFlare节点
     type: vmess
-    server: quiz.vidio.com
-    port: 443
-    uuid: 92869d41-a98a-40ba-b79d-2eeb7ffe2433
+    server: cf.noaries.de
+    port: 2082
+    uuid: 314c1387-618c-4689-97fc-4bc9a1ae5e05
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /worryfree
-    ws-headers:
-      Host: dynamic-sg1b.obfs.xyz
-    tls: true
-  - name: 北美地区+V2CROSS.COM
-    type: ss
-    server: 169.197.142.187
-    port: '5004'
-    cipher: aes-256-gcm
-    password: g5MeD6Ft3CWlJId
-  - name: 北美地区+V2CROSS.COM - 2
-    type: ss
-    server: 169.197.141.187
-    port: '5001'
-    cipher: aes-256-gcm
-    password: Y6R9pAtvxxzmGC
-  - name: 美国 加利福尼亚州圣何塞PEG TECH
-    type: vmess
-    server: 142.4.97.71
-    port: 44942
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
     ws-path: /
     ws-headers:
-      Host: ''
-  - name: 中国 阿里云
+      Host: ir2.nmsl.ninja
+  - name: 瑞典+V2CROSS.COM - 3
+    type: ss
+    server: 167.88.61.213
+    port: '8888'
+    cipher: aes-256-gcm
+    password: Y6R9pAtvxxzmGC
+  - name: 美国 CloudFlare节点 - 2
     type: vmess
-    server: n1681962788.aqdisrv.cn
+    server: 172.67.132.15
     port: 443
-    uuid: 541a9ac1-96c3-4916-b12e-025d80248de1
+    uuid: 18e5f40f-bda6-4c15-9334-e87cda6047af
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-headers: {}
+    ws-path: /ray
+    ws-headers:
+      Host: ming2.kiwireich.com
     tls: true
-  - name: 美国+华盛顿Cogent通信公司
-    type: ss
-    server: 38.91.101.159
-    port: '5601'
-    cipher: aes-256-gcm
-    password: Y6R9pAtvxxzmGC
+  - name: 美国 惠普HP
+    type: vmess
+    server: hk3.af49c4e4c2ef.sanfen004.me
+    port: 443
+    uuid: a316207e-0d3b-4754-ae9f-a4ec13aacba9
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /zh-cn
+    ws-headers:
+      Host: ''
+    tls: true
+  - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: cdn.yuntujisu.ml
+    port: 2095
+    uuid: d59b24b1-b475-4d44-be46-a18563a87711
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: nanous.ytjs114514.ml
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: 170.114.45.122
+    port: 443
+    uuid: 8f74ec8a-971c-11ed-a8fc-0242ac120002
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /db698b16-d216-11ed-8e14-5ad705867cff
+    ws-headers:
+      Host: db698b16-d216-11ed-8e14-5ad705867cff.asmandll.com
+    tls: true
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
+      - 瑞典+V2CROSS.COM
+      - 瑞典+V2CROSS.COM - 2
       - 美国 CloudFlare节点
-      - 北美地区+V2CROSS.COM
-      - 北美地区+V2CROSS.COM - 2
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 中国 阿里云
-      - 美国+华盛顿Cogent通信公司
+      - 瑞典+V2CROSS.COM - 3
+      - 美国 CloudFlare节点 - 2
+      - 美国 惠普HP
+      - 美国 CloudFlare节点 - 3
+      - 美国 V2CROSS.COM
   - name: 自动选择
     type: url-test
     proxies:
+      - 瑞典+V2CROSS.COM
+      - 瑞典+V2CROSS.COM - 2
       - 美国 CloudFlare节点
-      - 北美地区+V2CROSS.COM
-      - 北美地区+V2CROSS.COM - 2
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 中国 阿里云
-      - 美国+华盛顿Cogent通信公司
+      - 瑞典+V2CROSS.COM - 3
+      - 美国 CloudFlare节点 - 2
+      - 美国 惠普HP
+      - 美国 CloudFlare节点 - 3
+      - 美国 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
+      - 瑞典+V2CROSS.COM
+      - 瑞典+V2CROSS.COM - 2
       - 美国 CloudFlare节点
-      - 北美地区+V2CROSS.COM
-      - 北美地区+V2CROSS.COM - 2
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 中国 阿里云
-      - 美国+华盛顿Cogent通信公司
+      - 瑞典+V2CROSS.COM - 3
+      - 美国 CloudFlare节点 - 2
+      - 美国 惠普HP
+      - 美国 CloudFlare节点 - 3
+      - 美国 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
