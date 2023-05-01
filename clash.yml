@@ -1,95 +1,130 @@
 proxies:
-  - name: 广东省广州市+移动
-    type: ss
-    server: p1.bxy-fun2.com
-    port: '23105'
-    cipher: chacha20-ietf-poly1305
-    password: d7bee830-09aa-43b2-8945-3b341b8787db
-  - name: 美国 加利福尼亚州圣何塞PEG TECH
+  - name: 美国 Datability
     type: vmess
-    server: 142.4.119.205
-    port: 53986
+    server: 140.99.48.38
+    port: 56102
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
     udp: true
     network: tcp
-    ws-headers: {}
-  - name: 浙江省+联通
-    type: ss
-    server: p1.bxy-fun1.com
-    port: '23102'
-    cipher: chacha20-ietf-poly1305
-    password: d7bee830-09aa-43b2-8945-3b341b8787db
-  - name: 日本+V2CROSS.COM
-    type: trojan
-    server: microsoft-hk01.syjd.xyz
-    port: 443?type=tcp&sni=microsoft-hk01.syjd.xyz&allowInsecure=1
-    password: 51eebef7-beaa-417b-9584-2794d10377c9
-  - name: 新加坡+Amazon亚太数据中心
-    type: trojan
-    server: sg-csjc.syjd.xyz
-    port: 443?type=tcp&sni=sg-csjc.syjd.xyz&allowInsecure=1
-    password: 51eebef7-beaa-417b-9584-2794d10377c9
-  - name: 北美地区 V2CROSS.COM
+    ws-path: ''
+    ws-headers:
+      Host: ''
+  - name: 美国 V2CROSS.COM
     type: vmess
-    server: 134.195.96.178
-    port: 666
-    uuid: 4ebc6214-33ab-37cc-a01a-ff97029db0f5
-    alterId: 2
+    server: vde2.0bad.com
+    port: 443
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
+    alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /v2ray
+    ws-path: /chat
     ws-headers:
       Host: ''
-  - name: 美国 惠普HP
+    tls: true
+  - name: 香港+DMIT数据中心
+    type: trojan
+    server: hkhe02.bcloudv.cyou
+    port: '20897'
+    password: 10f87a8e-a6f6-319d-a895-8310d326ecce
+  - name: 日本 V2CROSS.COM
     type: vmess
-    server: hk3.af49c4e4c2ef.sanfen004.me
+    server: hk6.af49c4e4c2ef.sanfen004.me
     port: 443
-    uuid: a316207e-0d3b-4754-ae9f-a4ec13aacba9
+    uuid: 29387883-aace-4e03-bad7-940bc5e6ba67
     alterId: 0
     cipher: auto
     udp: true
     network: ws
     ws-path: /zh-cn
-    ws-headers: {}
+    ws-headers:
+      Host: www.microsoft.com
     tls: true
+  - name: 浙江省+联通
+    type: ss
+    server: p1.bxy-fun1.com
+    port: '30470'
+    cipher: chacha20-ietf-poly1305
+    password: d7bee830-09aa-43b2-8945-3b341b8787db
+  - name: 浙江省+联通 - 2
+    type: ss
+    server: p1.bxy-fun1.com
+    port: '26105'
+    cipher: chacha20-ietf-poly1305
+    password: d7bee830-09aa-43b2-8945-3b341b8787db
+  - name: 美国+Microsoft数据中心
+    type: trojan
+    server: sg.stablize.top
+    port: '443'
+    password: 2bfe8e4f-c00c-496b-ba8c-e67d2becd03b
+  - name: 亚太地区+V2CROSS.COM
+    type: trojan
+    server: 103.103.245.125
+    port: '50350'
+    password: 006bca8c-4e1f-44e0-9399-1cd4ff480a40
+  - name: 美国+Microsoft数据中心 - 2
+    type: trojan
+    server: sg.stablize.top
+    port: '443'
+    password: 2bfe8e4f-c00c-496b-ba8c-e67d2becd03b
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: cf-lt.sharecentre.online
+    port: 8080
+    uuid: e2952737-6f10-492b-9813-19131deb71b1
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /api/v3/download.getFile
+    ws-headers:
+      Host: ssrsub.v02.ssrsub.com
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 广东省广州市+移动
-      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国 Datability
+      - 美国 V2CROSS.COM
+      - 香港+DMIT数据中心
+      - 日本 V2CROSS.COM
       - 浙江省+联通
-      - 日本+V2CROSS.COM
-      - 新加坡+Amazon亚太数据中心
-      - 北美地区 V2CROSS.COM
-      - 美国 惠普HP
+      - 浙江省+联通 - 2
+      - 美国+Microsoft数据中心
+      - 亚太地区+V2CROSS.COM
+      - 美国+Microsoft数据中心 - 2
+      - 美国 CloudFlare节点
   - name: 自动选择
     type: url-test
     proxies:
-      - 广东省广州市+移动
-      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国 Datability
+      - 美国 V2CROSS.COM
+      - 香港+DMIT数据中心
+      - 日本 V2CROSS.COM
       - 浙江省+联通
-      - 日本+V2CROSS.COM
-      - 新加坡+Amazon亚太数据中心
-      - 北美地区 V2CROSS.COM
-      - 美国 惠普HP
+      - 浙江省+联通 - 2
+      - 美国+Microsoft数据中心
+      - 亚太地区+V2CROSS.COM
+      - 美国+Microsoft数据中心 - 2
+      - 美国 CloudFlare节点
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 广东省广州市+移动
-      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国 Datability
+      - 美国 V2CROSS.COM
+      - 香港+DMIT数据中心
+      - 日本 V2CROSS.COM
       - 浙江省+联通
-      - 日本+V2CROSS.COM
-      - 新加坡+Amazon亚太数据中心
-      - 北美地区 V2CROSS.COM
-      - 美国 惠普HP
+      - 浙江省+联通 - 2
+      - 美国+Microsoft数据中心
+      - 亚太地区+V2CROSS.COM
+      - 美国+Microsoft数据中心 - 2
+      - 美国 CloudFlare节点
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
