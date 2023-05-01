@@ -1,5 +1,35 @@
 proxies:
+  - name: 广东省广州市+移动
+    type: ss
+    server: p1.bxy-fun2.com
+    port: '23105'
+    cipher: chacha20-ietf-poly1305
+    password: d7bee830-09aa-43b2-8945-3b341b8787db
   - name: 美国 CloudFlare节点
+    type: vmess
+    server: cf-lt.sharecentre.online
+    port: 80
+    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /shirker
+    ws-headers:
+      Host: dp4.scproxy.top
+  - name: 沙特阿拉伯 Arabic Computer System Co.
+    type: vmess
+    server: 85.208.107.119
+    port: 38183
+    uuid: 6b32d610-1e0c-45b0-e91d-af12ccaeed8b
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: 85.208.107.119
+  - name: 美国 CloudFlare节点 - 2
     type: vmess
     server: quiz.vidio.com
     port: 443
@@ -12,18 +42,6 @@ proxies:
     ws-headers:
       Host: dynamic-sg1b.obfs.xyz
     tls: true
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: cf-lt.sharecentre.online
-    port: 8080
-    uuid: e2952737-6f10-492b-9813-19131deb71b1
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /api/v3/download.getFile
-    ws-headers:
-      Host: ssrsub.v01.ssrsub.com
   - name: 美国 加利福尼亚州洛杉矶MULTACOM数据中心
     type: vmess
     server: cuq.shipv.net
@@ -37,61 +55,44 @@ proxies:
     ws-headers:
       Host: ''
     tls: true
-  - name: 美国 CloudFlare节点 - 3
-    type: vmess
-    server: surongwei.eu.org
-    port: 443
-    uuid: 6093eefb-7ab6-41df-aba0-d5fa58147e10
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /reffs7y26g0ua
-    ws-headers:
-      Host: surongwei.eu.org
-    tls: true
-  - name: 美国 V2CROSS.COM
-    type: vmess
-    server: 170.187.200.114
-    port: 443
-    uuid: 927094d3-d678-4763-8591-e240d0bcae87
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /chat
-    ws-headers:
-      Host: ''
-    tls: true
+  - name: 北美地区+V2CROSS.COM
+    type: ss
+    server: 169.197.141.187
+    port: '8881'
+    cipher: aes-256-gcm
+    password: kDWvXYZoTBcGkC4
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
+      - 广东省广州市+移动
       - 美国 CloudFlare节点
+      - 沙特阿拉伯 Arabic Computer System Co.
       - 美国 CloudFlare节点 - 2
       - 美国 加利福尼亚州洛杉矶MULTACOM数据中心
-      - 美国 CloudFlare节点 - 3
-      - 美国 V2CROSS.COM
+      - 北美地区+V2CROSS.COM
   - name: 自动选择
     type: url-test
     proxies:
+      - 广东省广州市+移动
       - 美国 CloudFlare节点
+      - 沙特阿拉伯 Arabic Computer System Co.
       - 美国 CloudFlare节点 - 2
       - 美国 加利福尼亚州洛杉矶MULTACOM数据中心
-      - 美国 CloudFlare节点 - 3
-      - 美国 V2CROSS.COM
+      - 北美地区+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
+      - 广东省广州市+移动
       - 美国 CloudFlare节点
+      - 沙特阿拉伯 Arabic Computer System Co.
       - 美国 CloudFlare节点 - 2
       - 美国 加利福尼亚州洛杉矶MULTACOM数据中心
-      - 美国 CloudFlare节点 - 3
-      - 美国 V2CROSS.COM
+      - 北美地区+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
