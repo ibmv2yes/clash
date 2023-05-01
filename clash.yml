@@ -1,96 +1,82 @@
 proxies:
+  - name: 北美地区+V2CROSS.COM
+    type: ss
+    server: 169.197.142.187
+    port: '8882'
+    cipher: aes-256-gcm
+    password: kDWvXYZoTBcGkC4
   - name: 美国 CloudFlare节点
     type: vmess
-    server: ming2.kiwireich.com
-    port: 443
-    uuid: 18e5f40f-bda6-4c15-9334-e87cda6047af
+    server: 172.67.38.105
+    port: 2096
+    uuid: fcbd5c07-fba5-4ff9-c19c-02e023220628
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /ray
+    ws-path: ho3ino
     ws-headers:
-      Host: ming2.kiwireich.com
+      Host: h.h3io.co
     tls: true
-  - name: 美国 加利福尼亚州洛杉矶Sharktech数据中心
+  - name: 北美地区+V2CROSS.COM - 2
+    type: ss
+    server: 169.197.141.187
+    port: '2375'
+    cipher: aes-256-gcm
+    password: faBAoD54k87UJG7
+  - name: 美国 加利福尼亚州圣何塞PEG TECH
     type: vmess
-    server: 67.21.91.136
-    port: 30883
-    uuid: ec186cad-56ac-42b3-8309-184d0e748b04
+    server: 142.4.97.71
+    port: 44942
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
     udp: true
     network: tcp
-    ws-path: ''
-    ws-headers:
-      Host: ''
-  - name: 浙江省+联通
-    type: ss
-    server: p1.bxy-fun1.com
-    port: '23102'
-    cipher: chacha20-ietf-poly1305
-    password: d7bee830-09aa-43b2-8945-3b341b8787db
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: cf.noaries.de
-    port: 2082
-    uuid: 314c1387-618c-4689-97fc-4bc9a1ae5e05
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
     ws-path: /
     ws-headers:
-      Host: ir2.nmsl.ninja
-  - name: 美国 Akamai科技公司CDN网络节点
+      Host: ''
+  - name: 美国 CloudFlare节点 - 2
     type: vmess
-    server: vin1.0bad.com
-    port: 443
-    uuid: 927094d3-d678-4763-8591-e240d0bcae87
+    server: cf-lt.sharecentre.online
+    port: 80
+    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /chat
-    ws-headers: {}
-    tls: true
-  - name: 亚太地区+V2CROSS.COM
-    type: trojan
-    server: 103.103.245.125
-    port: '50418'
-    password: a70b39d1-62ea-4d9e-b681-9c5408352234
+    ws-path: /shirker
+    ws-headers:
+      Host: lv1.sharecentrepro.org
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
+      - 北美地区+V2CROSS.COM
       - 美国 CloudFlare节点
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
-      - 浙江省+联通
+      - 北美地区+V2CROSS.COM - 2
+      - 美国 加利福尼亚州圣何塞PEG TECH
       - 美国 CloudFlare节点 - 2
-      - 美国 Akamai科技公司CDN网络节点
-      - 亚太地区+V2CROSS.COM
   - name: 自动选择
     type: url-test
     proxies:
+      - 北美地区+V2CROSS.COM
       - 美国 CloudFlare节点
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
-      - 浙江省+联通
+      - 北美地区+V2CROSS.COM - 2
+      - 美国 加利福尼亚州圣何塞PEG TECH
       - 美国 CloudFlare节点 - 2
-      - 美国 Akamai科技公司CDN网络节点
-      - 亚太地区+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
+      - 北美地区+V2CROSS.COM
       - 美国 CloudFlare节点
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
-      - 浙江省+联通
+      - 北美地区+V2CROSS.COM - 2
+      - 美国 加利福尼亚州圣何塞PEG TECH
       - 美国 CloudFlare节点 - 2
-      - 美国 Akamai科技公司CDN网络节点
-      - 亚太地区+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
