@@ -1,109 +1,96 @@
 proxies:
-  - name: 美国 惠普HP
-    type: vmess
-    server: hk3.af49c4e4c2ef.sanfen004.me
-    port: 443
-    uuid: a316207e-0d3b-4754-ae9f-a4ec13aacba9
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /zh-cn
-    ws-headers:
-      Host: ''
-    tls: true
-  - name: 湖南省长沙市+联通
-    type: ss
-    server: p1.bxy-fun3.com
-    port: '35127'
-    cipher: chacha20-ietf-poly1305
-    password: d7bee830-09aa-43b2-8945-3b341b8787db
   - name: 美国 CloudFlare节点
     type: vmess
-    server: 172.67.38.105
-    port: 2096
-    uuid: fcbd5c07-fba5-4ff9-c19c-02e023220628
+    server: ming2.kiwireich.com
+    port: 443
+    uuid: 18e5f40f-bda6-4c15-9334-e87cda6047af
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: ho3ino
+    ws-path: /ray
     ws-headers:
-      Host: h.h3io.co
+      Host: ming2.kiwireich.com
     tls: true
+  - name: 美国 加利福尼亚州洛杉矶Sharktech数据中心
+    type: vmess
+    server: 67.21.91.136
+    port: 30883
+    uuid: ec186cad-56ac-42b3-8309-184d0e748b04
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: ''
+    ws-headers:
+      Host: ''
+  - name: 浙江省+联通
+    type: ss
+    server: p1.bxy-fun1.com
+    port: '23102'
+    cipher: chacha20-ietf-poly1305
+    password: d7bee830-09aa-43b2-8945-3b341b8787db
   - name: 美国 CloudFlare节点 - 2
     type: vmess
-    server: 172.67.38.105
-    port: 2096
-    uuid: fcbd5c07-fba5-4ff9-c19c-02e023220628
+    server: cf.noaries.de
+    port: 2082
+    uuid: 314c1387-618c-4689-97fc-4bc9a1ae5e05
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: ho3ino
+    ws-path: /
     ws-headers:
-      Host: h.h3io.co
-    tls: true
-  - name: 美国+华盛顿Cogent通信公司
-    type: ss
-    server: 38.91.101.159
-    port: '7307'
-    cipher: aes-256-gcm
-    password: FoOiGlkAA9yPEGP
-  - name: 美国 CloudFlare节点 - 3
+      Host: ir2.nmsl.ninja
+  - name: 美国 Akamai科技公司CDN网络节点
     type: vmess
-    server: 104.22.59.195
+    server: vin1.0bad.com
     port: 443
-    uuid: a1560b52-b580-4aad-b8cd-9cd2ec5264b4
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /vmessws
-    ws-headers:
-      Host: 1.239000.xyz
+    ws-path: /chat
+    ws-headers: {}
     tls: true
-  - name: 美国+华盛顿Cogent通信公司 - 2
-    type: ss
-    server: 38.91.101.159
-    port: '5601'
-    cipher: aes-256-gcm
-    password: Y6R9pAtvxxzmGC
+  - name: 亚太地区+V2CROSS.COM
+    type: trojan
+    server: 103.103.245.125
+    port: '50418'
+    password: a70b39d1-62ea-4d9e-b681-9c5408352234
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 惠普HP
-      - 湖南省长沙市+联通
       - 美国 CloudFlare节点
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 浙江省+联通
       - 美国 CloudFlare节点 - 2
-      - 美国+华盛顿Cogent通信公司
-      - 美国 CloudFlare节点 - 3
-      - 美国+华盛顿Cogent通信公司 - 2
+      - 美国 Akamai科技公司CDN网络节点
+      - 亚太地区+V2CROSS.COM
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 惠普HP
-      - 湖南省长沙市+联通
       - 美国 CloudFlare节点
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 浙江省+联通
       - 美国 CloudFlare节点 - 2
-      - 美国+华盛顿Cogent通信公司
-      - 美国 CloudFlare节点 - 3
-      - 美国+华盛顿Cogent通信公司 - 2
+      - 美国 Akamai科技公司CDN网络节点
+      - 亚太地区+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 惠普HP
-      - 湖南省长沙市+联通
       - 美国 CloudFlare节点
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 浙江省+联通
       - 美国 CloudFlare节点 - 2
-      - 美国+华盛顿Cogent通信公司
-      - 美国 CloudFlare节点 - 3
-      - 美国+华盛顿Cogent通信公司 - 2
+      - 美国 Akamai科技公司CDN网络节点
+      - 亚太地区+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
