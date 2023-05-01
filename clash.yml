@@ -1,46 +1,77 @@
 proxies:
   - name: 美国 CloudFlare节点
     type: vmess
-    server: cdn.yuntujisu.ml
-    port: 80
-    uuid: d59b24b1-b475-4d44-be46-a18563a87711
+    server: 172.67.132.15
+    port: 443
+    uuid: 18e5f40f-bda6-4c15-9334-e87cda6047af
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /
+    ws-path: /ray
     ws-headers:
-      Host: jp.ytjs114514.ml
-  - name: 湖南省长沙市+联通
+      Host: ming2.kiwireich.com
+    tls: true
+  - name: 北美地区+V2CROSS.COM
     type: ss
-    server: p1.bxy-fun3.com
-    port: '24105'
-    cipher: chacha20-ietf-poly1305
-    password: d7bee830-09aa-43b2-8945-3b341b8787db
+    server: 169.197.141.187
+    port: '7001'
+    cipher: aes-256-gcm
+    password: RexnBgU7EV5ADxG
   - name: 浙江省+联通
     type: ss
     server: p1.bxy-fun1.com
     port: '30470'
     cipher: chacha20-ietf-poly1305
     password: d7bee830-09aa-43b2-8945-3b341b8787db
-  - name: 浙江省+联通 - 2
+  - name: 瑞士+V2CROSS.COM
+    type: trojan
+    server: 195.15.243.26
+    port: 443?type=tcp&allowInsecure=1
+    password: '4478'
+  - name: 日本+V2CROSS.COM
+    type: trojan
+    server: jp-csjc.syjd.xyz
+    port: 443?type=tcp&sni=jp-csjc.syjd.xyz&allowInsecure=1
+    password: 51eebef7-beaa-417b-9584-2794d10377c9
+  - name: 湖南省长沙市+联通
     type: ss
-    server: p1.bxy-fun1.com
-    port: '23102'
+    server: p1.bxy-fun3.com
+    port: '35127'
     cipher: chacha20-ietf-poly1305
     password: d7bee830-09aa-43b2-8945-3b341b8787db
-  - name: 美国 CloudFlare节点 - 2
+  - name: 湖南省长沙市+联通 - 2
+    type: ss
+    server: p1.bxy-fun3.com
+    port: '24105'
+    cipher: chacha20-ietf-poly1305
+    password: d7bee830-09aa-43b2-8945-3b341b8787db
+  - name: 日本 V2CROSS.COM
     type: vmess
-    server: cf-lt.sharecentre.online
-    port: 80
-    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
+    server: hk6.af49c4e4c2ef.sanfen004.me
+    port: 443
+    uuid: 29387883-aace-4e03-bad7-940bc5e6ba67
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /shirker
+    ws-path: /zh-cn
     ws-headers:
-      Host: nl.sharecentrepro.com
+      Host: ''
+    tls: true
+  - name: 日本 东京Linode数据中心
+    type: vmess
+    server: vjp1.0bad.com
+    port: 443
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /chat
+    ws-headers:
+      Host: vjp1.0bad.com
+    tls: true
 proxy-groups:
   - name: Free-servers
     type: select
@@ -48,28 +79,40 @@ proxy-groups:
       - 自动选择
       - 故障转移
       - 美国 CloudFlare节点
-      - 湖南省长沙市+联通
+      - 北美地区+V2CROSS.COM
       - 浙江省+联通
-      - 浙江省+联通 - 2
-      - 美国 CloudFlare节点 - 2
+      - 瑞士+V2CROSS.COM
+      - 日本+V2CROSS.COM
+      - 湖南省长沙市+联通
+      - 湖南省长沙市+联通 - 2
+      - 日本 V2CROSS.COM
+      - 日本 东京Linode数据中心
   - name: 自动选择
     type: url-test
     proxies:
       - 美国 CloudFlare节点
-      - 湖南省长沙市+联通
+      - 北美地区+V2CROSS.COM
       - 浙江省+联通
-      - 浙江省+联通 - 2
-      - 美国 CloudFlare节点 - 2
+      - 瑞士+V2CROSS.COM
+      - 日本+V2CROSS.COM
+      - 湖南省长沙市+联通
+      - 湖南省长沙市+联通 - 2
+      - 日本 V2CROSS.COM
+      - 日本 东京Linode数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
       - 美国 CloudFlare节点
-      - 湖南省长沙市+联通
+      - 北美地区+V2CROSS.COM
       - 浙江省+联通
-      - 浙江省+联通 - 2
-      - 美国 CloudFlare节点 - 2
+      - 瑞士+V2CROSS.COM
+      - 日本+V2CROSS.COM
+      - 湖南省长沙市+联通
+      - 湖南省长沙市+联通 - 2
+      - 日本 V2CROSS.COM
+      - 日本 东京Linode数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
