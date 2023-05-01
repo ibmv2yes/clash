@@ -1,17 +1,65 @@
 proxies:
-  - name: 美国加利福尼亚州洛杉矶 PetaExpress
+  - name: 湖南省长沙市+联通
+    type: ss
+    server: p1.bxy-fun3.com
+    port: '35127'
+    cipher: chacha20-ietf-poly1305
+    password: d7bee830-09aa-43b2-8945-3b341b8787db
+  - name: 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
     type: vmess
-    server: 198.2.208.185
-    port: 35402
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    server: 23.225.28.186
+    port: 52234
+    uuid: 2278efe4-ad0c-47ce-9480-068608368d76
     alterId: 64
     cipher: auto
     udp: true
     network: tcp
-    ws-path: /
+    ws-path: ''
     ws-headers:
       Host: ''
   - name: 美国 CloudFlare节点
+    type: vmess
+    server: ming2.kiwireich.com
+    port: 443
+    uuid: 18e5f40f-bda6-4c15-9334-e87cda6047af
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /ray
+    ws-headers:
+      Host: ming2.kiwireich.com
+    tls: true
+  - name: 中国 阿里云
+    type: vmess
+    server: n1681962788.aqdisrv.cn
+    port: 443
+    uuid: 541a9ac1-96c3-4916-b12e-025d80248de1
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-headers: {}
+    tls: true
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: cdn.yuntujisu.ml
+    port: 2095
+    uuid: d59b24b1-b475-4d44-be46-a18563a87711
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: nanous.ytjs114514.ml
+  - name: 浙江省+联通
+    type: ss
+    server: p1.bxy-fun1.com
+    port: '30470'
+    cipher: chacha20-ietf-poly1305
+    password: d7bee830-09aa-43b2-8945-3b341b8787db
+  - name: 美国 CloudFlare节点 - 3
     type: vmess
     server: cf-lt.sharecentre.online
     port: 80
@@ -22,59 +70,50 @@ proxies:
     network: ws
     ws-path: /shirker
     ws-headers:
-      Host: uk1.scproxy.top
-  - name: 亚太地区+V2CROSS.COM
+      Host: dp4.scproxy.top
+  - name: 美国+V2CROSS.COM
     type: trojan
-    server: 103.103.245.125
-    port: '50206'
-    password: 789d73af-b985-4778-9872-211047c28015
-  - name: 浙江省+联通
-    type: ss
-    server: p1.bxy-fun1.com
-    port: '11407'
-    cipher: chacha20-ietf-poly1305
-    password: d7bee830-09aa-43b2-8945-3b341b8787db
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: cf-lt.sharecentre.online
-    port: 8080
-    uuid: e2952737-6f10-492b-9813-19131deb71b1
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /api/v3/download.getFile
-    ws-headers:
-      Host: ssrsub.v01.ssrsub.com
+    server: tempest-us.aikun.online
+    port: 443?type=tcp&allowInsecure=1
+    password: 11e247e5-136d-45f1-844a-a7f054d36bab
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 湖南省长沙市+联通
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
       - 美国 CloudFlare节点
-      - 亚太地区+V2CROSS.COM
-      - 浙江省+联通
+      - 中国 阿里云
       - 美国 CloudFlare节点 - 2
+      - 浙江省+联通
+      - 美国 CloudFlare节点 - 3
+      - 美国+V2CROSS.COM
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 湖南省长沙市+联通
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
       - 美国 CloudFlare节点
-      - 亚太地区+V2CROSS.COM
-      - 浙江省+联通
+      - 中国 阿里云
       - 美国 CloudFlare节点 - 2
+      - 浙江省+联通
+      - 美国 CloudFlare节点 - 3
+      - 美国+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 湖南省长沙市+联通
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
       - 美国 CloudFlare节点
-      - 亚太地区+V2CROSS.COM
-      - 浙江省+联通
+      - 中国 阿里云
       - 美国 CloudFlare节点 - 2
+      - 浙江省+联通
+      - 美国 CloudFlare节点 - 3
+      - 美国+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
