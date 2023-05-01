@@ -1,75 +1,82 @@
 proxies:
-  - name: 北美地区+V2CROSS.COM
-    type: ss
-    server: 169.197.141.187
-    port: '7001'
-    cipher: aes-256-gcm
-    password: RexnBgU7EV5ADxG
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: cf-lt.sharecentre.online
+    port: 80
+    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /shirker
+    ws-headers:
+      Host: ny1.sharecentrepro.org
+  - name: 美国 惠普HP
+    type: vmess
+    server: hk3.af49c4e4c2ef.sanfen004.me
+    port: 443
+    uuid: a316207e-0d3b-4754-ae9f-a4ec13aacba9
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /zh-cn
+    ws-headers:
+      Host: ''
+    tls: true
   - name: 浙江省+联通
+    type: ss
+    server: p1.bxy-fun1.com
+    port: '23102'
+    cipher: chacha20-ietf-poly1305
+    password: d7bee830-09aa-43b2-8945-3b341b8787db
+  - name: 浙江省+联通 - 2
     type: ss
     server: p1.bxy-fun1.com
     port: '30470'
     cipher: chacha20-ietf-poly1305
     password: d7bee830-09aa-43b2-8945-3b341b8787db
-  - name: 美国 CloudFlare节点
+  - name: 澳大利亚 Kooweerup Secondary College
     type: vmess
-    server: cf-lt.sharecentre.online
-    port: 8080
-    uuid: e2952737-6f10-492b-9813-19131deb71b1
+    server: 203.30.189.2
+    port: 8880
+    uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /api/v3/download.getFile
+    ws-path: /
     ws-headers:
-      Host: ssrsub.v01.ssrsub.com
-  - name: 南非 V2CROSS.COM
-    type: vmess
-    server: 156.225.67.251
-    port: 48443
-    uuid: 3fd637ad-46fe-4f85-a6e8-86b00bca1122
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: ''
-    ws-headers:
-      Host: ''
-  - name: 湖南省长沙市+联通
-    type: ss
-    server: p1.bxy-fun3.com
-    port: '35127'
-    cipher: chacha20-ietf-poly1305
-    password: d7bee830-09aa-43b2-8945-3b341b8787db
+      Host: lg.trump2023.net
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 北美地区+V2CROSS.COM
-      - 浙江省+联通
       - 美国 CloudFlare节点
-      - 南非 V2CROSS.COM
-      - 湖南省长沙市+联通
+      - 美国 惠普HP
+      - 浙江省+联通
+      - 浙江省+联通 - 2
+      - 澳大利亚 Kooweerup Secondary College
   - name: 自动选择
     type: url-test
     proxies:
-      - 北美地区+V2CROSS.COM
-      - 浙江省+联通
       - 美国 CloudFlare节点
-      - 南非 V2CROSS.COM
-      - 湖南省长沙市+联通
+      - 美国 惠普HP
+      - 浙江省+联通
+      - 浙江省+联通 - 2
+      - 澳大利亚 Kooweerup Secondary College
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 北美地区+V2CROSS.COM
-      - 浙江省+联通
       - 美国 CloudFlare节点
-      - 南非 V2CROSS.COM
-      - 湖南省长沙市+联通
+      - 美国 惠普HP
+      - 浙江省+联通
+      - 浙江省+联通 - 2
+      - 澳大利亚 Kooweerup Secondary College
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
