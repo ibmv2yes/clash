@@ -1,62 +1,22 @@
 proxies:
-  - name: 美国 惠普HP
-    type: vmess
-    server: hk3.af49c4e4c2ef.sanfen004.me
-    port: 443
-    uuid: a316207e-0d3b-4754-ae9f-a4ec13aacba9
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /zh-cn
-    ws-headers:
-      Host: ''
-    tls: true
-  - name: 美国 惠普HP - 2
-    type: vmess
-    server: hk3.af49c4e4c2ef.sanfen004.me
-    port: 443
-    uuid: a316207e-0d3b-4754-ae9f-a4ec13aacba9
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /zh-cn
-    ws-headers:
-      Host: ''
-    tls: true
   - name: 美国 CloudFlare节点
     type: vmess
     server: cf-lt.sharecentre.online
-    port: 8080
-    uuid: e2952737-6f10-492b-9813-19131deb71b1
+    port: 80
+    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /api/v3/download.getFile
+    ws-path: /shirker
     ws-headers:
-      Host: ssrsub.v01.ssrsub.com
-  - name: 北美地区+V2CROSS.COM
-    type: ss
-    server: 169.197.141.187
-    port: '2375'
-    cipher: aes-256-gcm
-    password: faBAoD54k87UJG7
+      Host: dp4.scproxy.top
+  - name: 亚太地区+V2CROSS.COM
+    type: trojan
+    server: 103.103.245.125
+    port: '50418'
+    password: a70b39d1-62ea-4d9e-b681-9c5408352234
   - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: quiz.vidio.com
-    port: 443
-    uuid: 92869d41-a98a-40ba-b79d-2eeb7ffe2433
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /worryfree
-    ws-headers:
-      Host: dynamic-sg1b.obfs.xyz
-    tls: true
-  - name: 美国 CloudFlare节点 - 3
     type: vmess
     server: cfcdn.sanfencdn.net
     port: 443
@@ -69,37 +29,59 @@ proxies:
     ws-headers:
       Host: us2.sanfencdn.net
     tls: true
+  - name: 美国 加利福尼亚州费利蒙Linode数据中心
+    type: vmess
+    server: vus3.0bad.com
+    port: 443
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /chat
+    ws-headers: {}
+    tls: true
+  - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: quiz.vidio.com
+    port: 443
+    uuid: 92869d41-a98a-40ba-b79d-2eeb7ffe2433
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /worryfree
+    ws-headers:
+      Host: dynamic-sg1b.obfs.xyz
+    tls: true
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 惠普HP
-      - 美国 惠普HP - 2
       - 美国 CloudFlare节点
-      - 北美地区+V2CROSS.COM
+      - 亚太地区+V2CROSS.COM
       - 美国 CloudFlare节点 - 2
+      - 美国 加利福尼亚州费利蒙Linode数据中心
       - 美国 CloudFlare节点 - 3
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 惠普HP
-      - 美国 惠普HP - 2
       - 美国 CloudFlare节点
-      - 北美地区+V2CROSS.COM
+      - 亚太地区+V2CROSS.COM
       - 美国 CloudFlare节点 - 2
+      - 美国 加利福尼亚州费利蒙Linode数据中心
       - 美国 CloudFlare节点 - 3
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 惠普HP
-      - 美国 惠普HP - 2
       - 美国 CloudFlare节点
-      - 北美地区+V2CROSS.COM
+      - 亚太地区+V2CROSS.COM
       - 美国 CloudFlare节点 - 2
+      - 美国 加利福尼亚州费利蒙Linode数据中心
       - 美国 CloudFlare节点 - 3
     url: http://www.gstatic.com/generate_204
     interval: 86400
