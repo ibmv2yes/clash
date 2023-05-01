@@ -1,104 +1,79 @@
 proxies:
-  - name: 亚太地区+V2CROSS.COM
-    type: trojan
-    server: 103.103.245.125
-    port: '50350'
-    password: 006bca8c-4e1f-44e0-9399-1cd4ff480a40
-  - name: 美国 CloudFlare节点
+  - name: 美国加利福尼亚州洛杉矶 PetaExpress
     type: vmess
-    server: 2.halazooon.ir
-    port: 443
-    uuid: bdfb22c6-c322-4d14-be4a-e95cff2bbeca
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /argo-vmess?ed=2048
-    ws-headers:
-      Host: odds-marco-nelson-gifts.trycloudflare.com
-    tls: true
-  - name: 南非 V2CROSS.COM
-    type: vmess
-    server: 156.225.67.251
-    port: 48443
-    uuid: 3fd637ad-46fe-4f85-a6e8-86b00bca1122
+    server: 198.2.208.185
+    port: 35402
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
     udp: true
     network: tcp
-    ws-path: ''
+    ws-path: /
     ws-headers:
       Host: ''
-  - name: 日本 东京Linode数据中心
+  - name: 美国 CloudFlare节点
     type: vmess
-    server: vjp1.0bad.com
-    port: 443
-    uuid: 927094d3-d678-4763-8591-e240d0bcae87
+    server: cf-lt.sharecentre.online
+    port: 80
+    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /chat
+    ws-path: /shirker
     ws-headers:
-      Host: vjp1.0bad.com
-    tls: true
-  - name: 美国+Microsoft数据中心
+      Host: uk1.scproxy.top
+  - name: 亚太地区+V2CROSS.COM
     type: trojan
-    server: sg.stablize.top
-    port: '443'
-    password: 2bfe8e4f-c00c-496b-ba8c-e67d2becd03b
-  - name: 瑞士+V2CROSS.COM
-    type: trojan
-    server: 195.15.243.26
-    port: 443?type=tcp&allowInsecure=1
-    password: '4478'
+    server: 103.103.245.125
+    port: '50206'
+    password: 789d73af-b985-4778-9872-211047c28015
+  - name: 浙江省+联通
+    type: ss
+    server: p1.bxy-fun1.com
+    port: '11407'
+    cipher: chacha20-ietf-poly1305
+    password: d7bee830-09aa-43b2-8945-3b341b8787db
   - name: 美国 CloudFlare节点 - 2
     type: vmess
-    server: ming2.kiwireich.com
-    port: 443
-    uuid: 18e5f40f-bda6-4c15-9334-e87cda6047af
+    server: cf-lt.sharecentre.online
+    port: 8080
+    uuid: e2952737-6f10-492b-9813-19131deb71b1
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /ray
+    ws-path: /api/v3/download.getFile
     ws-headers:
-      Host: ming2.kiwireich.com
-    tls: true
+      Host: ssrsub.v01.ssrsub.com
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 亚太地区+V2CROSS.COM
+      - 美国加利福尼亚州洛杉矶 PetaExpress
       - 美国 CloudFlare节点
-      - 南非 V2CROSS.COM
-      - 日本 东京Linode数据中心
-      - 美国+Microsoft数据中心
-      - 瑞士+V2CROSS.COM
+      - 亚太地区+V2CROSS.COM
+      - 浙江省+联通
       - 美国 CloudFlare节点 - 2
   - name: 自动选择
     type: url-test
     proxies:
-      - 亚太地区+V2CROSS.COM
+      - 美国加利福尼亚州洛杉矶 PetaExpress
       - 美国 CloudFlare节点
-      - 南非 V2CROSS.COM
-      - 日本 东京Linode数据中心
-      - 美国+Microsoft数据中心
-      - 瑞士+V2CROSS.COM
+      - 亚太地区+V2CROSS.COM
+      - 浙江省+联通
       - 美国 CloudFlare节点 - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 亚太地区+V2CROSS.COM
+      - 美国加利福尼亚州洛杉矶 PetaExpress
       - 美国 CloudFlare节点
-      - 南非 V2CROSS.COM
-      - 日本 东京Linode数据中心
-      - 美国+Microsoft数据中心
-      - 瑞士+V2CROSS.COM
+      - 亚太地区+V2CROSS.COM
+      - 浙江省+联通
       - 美国 CloudFlare节点 - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
