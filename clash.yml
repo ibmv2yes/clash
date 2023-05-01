@@ -1,51 +1,73 @@
 proxies:
-  - name: 美国 Datability
+  - name: 美国 惠普HP
     type: vmess
-    server: 140.99.48.24
-    port: 57102
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
+    server: hk3.af49c4e4c2ef.sanfen004.me
+    port: 443
+    uuid: a316207e-0d3b-4754-ae9f-a4ec13aacba9
+    alterId: 0
     cipher: auto
     udp: true
-    network: tcp
-    ws-path: ''
+    network: ws
+    ws-path: /zh-cn
     ws-headers:
       Host: ''
-  - name: 美国+华盛顿Cogent通信公司
-    type: ss
-    server: 38.91.101.159
-    port: '7307'
-    cipher: aes-256-gcm
-    password: FoOiGlkAA9yPEGP
-  - name: 香港 阿里云
+    tls: true
+  - name: 美国 惠普HP - 2
     type: vmess
-    server: n1681196439.aqdisrv.cn
+    server: hk3.af49c4e4c2ef.sanfen004.me
     port: 443
-    uuid: 1780a2d3-a892-4559-b242-d6bfdad4d869
+    uuid: a316207e-0d3b-4754-ae9f-a4ec13aacba9
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /
-    ws-headers: {}
+    ws-path: /zh-cn
+    ws-headers:
+      Host: ''
     tls: true
-  - name: 亚太地区+V2CROSS.COM
-    type: trojan
-    server: 103.103.245.125
-    port: '50418'
-    password: a70b39d1-62ea-4d9e-b681-9c5408352234
   - name: 美国 CloudFlare节点
     type: vmess
-    server: 172.67.132.15
-    port: 443
-    uuid: 18e5f40f-bda6-4c15-9334-e87cda6047af
+    server: cf-lt.sharecentre.online
+    port: 8080
+    uuid: e2952737-6f10-492b-9813-19131deb71b1
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /ray
+    ws-path: /api/v3/download.getFile
     ws-headers:
-      Host: ming2.kiwireich.com
+      Host: ssrsub.v01.ssrsub.com
+  - name: 北美地区+V2CROSS.COM
+    type: ss
+    server: 169.197.141.187
+    port: '2375'
+    cipher: aes-256-gcm
+    password: faBAoD54k87UJG7
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: quiz.vidio.com
+    port: 443
+    uuid: 92869d41-a98a-40ba-b79d-2eeb7ffe2433
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /worryfree
+    ws-headers:
+      Host: dynamic-sg1b.obfs.xyz
+    tls: true
+  - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: cfcdn.sanfencdn.net
+    port: 443
+    uuid: 648d1970-6bdc-45c1-8351-aff09fc067a7
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /zh-cn
+    ws-headers:
+      Host: us2.sanfencdn.net
     tls: true
 proxy-groups:
   - name: Free-servers
@@ -53,29 +75,32 @@ proxy-groups:
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 Datability
-      - 美国+华盛顿Cogent通信公司
-      - 香港 阿里云
-      - 亚太地区+V2CROSS.COM
+      - 美国 惠普HP
+      - 美国 惠普HP - 2
       - 美国 CloudFlare节点
+      - 北美地区+V2CROSS.COM
+      - 美国 CloudFlare节点 - 2
+      - 美国 CloudFlare节点 - 3
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 Datability
-      - 美国+华盛顿Cogent通信公司
-      - 香港 阿里云
-      - 亚太地区+V2CROSS.COM
+      - 美国 惠普HP
+      - 美国 惠普HP - 2
       - 美国 CloudFlare节点
+      - 北美地区+V2CROSS.COM
+      - 美国 CloudFlare节点 - 2
+      - 美国 CloudFlare节点 - 3
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 Datability
-      - 美国+华盛顿Cogent通信公司
-      - 香港 阿里云
-      - 亚太地区+V2CROSS.COM
+      - 美国 惠普HP
+      - 美国 惠普HP - 2
       - 美国 CloudFlare节点
+      - 北美地区+V2CROSS.COM
+      - 美国 CloudFlare节点 - 2
+      - 美国 CloudFlare节点 - 3
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
