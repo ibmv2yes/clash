@@ -1,88 +1,109 @@
 proxies:
-  - name: 美国 CloudFlare节点
+  - name: 美国 惠普HP
     type: vmess
-    server: cf-lt.sharecentre.online
-    port: 8080
-    uuid: e2952737-6f10-492b-9813-19131deb71b1
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /api/v3/download.getFile
-    ws-headers:
-      Host: ssrsub.v01.ssrsub.com
-  - name: 美国 加利福尼亚州费里蒙Linode数据中心
-    type: vmess
-    server: vus2.0bad.com
+    server: hk3.af49c4e4c2ef.sanfen004.me
     port: 443
-    uuid: 927094d3-d678-4763-8591-e240d0bcae87
+    uuid: a316207e-0d3b-4754-ae9f-a4ec13aacba9
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /chat
-    ws-headers:
-      Host: vus2.0bad.com
-    tls: true
-  - name: 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
-    type: vmess
-    server: 23.225.28.186
-    port: 52234
-    uuid: 2278efe4-ad0c-47ce-9480-068608368d76
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
+    ws-path: /zh-cn
     ws-headers:
       Host: ''
-  - name: 浙江省+联通
+    tls: true
+  - name: 湖南省长沙市+联通
     type: ss
-    server: p1.bxy-fun1.com
-    port: '11407'
+    server: p1.bxy-fun3.com
+    port: '35127'
     cipher: chacha20-ietf-poly1305
     password: d7bee830-09aa-43b2-8945-3b341b8787db
-  - name: 美国 CloudFlare节点 - 2
+  - name: 美国 CloudFlare节点
     type: vmess
-    server: cdn.yuntujisu.ml
-    port: 2095
-    uuid: d59b24b1-b475-4d44-be46-a18563a87711
+    server: 172.67.38.105
+    port: 2096
+    uuid: fcbd5c07-fba5-4ff9-c19c-02e023220628
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /
+    ws-path: ho3ino
     ws-headers:
-      Host: nanous.ytjs114514.ml
+      Host: h.h3io.co
+    tls: true
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: 172.67.38.105
+    port: 2096
+    uuid: fcbd5c07-fba5-4ff9-c19c-02e023220628
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: ho3ino
+    ws-headers:
+      Host: h.h3io.co
+    tls: true
+  - name: 美国+华盛顿Cogent通信公司
+    type: ss
+    server: 38.91.101.159
+    port: '7307'
+    cipher: aes-256-gcm
+    password: FoOiGlkAA9yPEGP
+  - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: 104.22.59.195
+    port: 443
+    uuid: a1560b52-b580-4aad-b8cd-9cd2ec5264b4
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /vmessws
+    ws-headers:
+      Host: 1.239000.xyz
+    tls: true
+  - name: 美国+华盛顿Cogent通信公司 - 2
+    type: ss
+    server: 38.91.101.159
+    port: '5601'
+    cipher: aes-256-gcm
+    password: Y6R9pAtvxxzmGC
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
+      - 美国 惠普HP
+      - 湖南省长沙市+联通
       - 美国 CloudFlare节点
-      - 美国 加利福尼亚州费里蒙Linode数据中心
-      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
-      - 浙江省+联通
       - 美国 CloudFlare节点 - 2
+      - 美国+华盛顿Cogent通信公司
+      - 美国 CloudFlare节点 - 3
+      - 美国+华盛顿Cogent通信公司 - 2
   - name: 自动选择
     type: url-test
     proxies:
+      - 美国 惠普HP
+      - 湖南省长沙市+联通
       - 美国 CloudFlare节点
-      - 美国 加利福尼亚州费里蒙Linode数据中心
-      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
-      - 浙江省+联通
       - 美国 CloudFlare节点 - 2
+      - 美国+华盛顿Cogent通信公司
+      - 美国 CloudFlare节点 - 3
+      - 美国+华盛顿Cogent通信公司 - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
+      - 美国 惠普HP
+      - 湖南省长沙市+联通
       - 美国 CloudFlare节点
-      - 美国 加利福尼亚州费里蒙Linode数据中心
-      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
-      - 浙江省+联通
       - 美国 CloudFlare节点 - 2
+      - 美国+华盛顿Cogent通信公司
+      - 美国 CloudFlare节点 - 3
+      - 美国+华盛顿Cogent通信公司 - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
