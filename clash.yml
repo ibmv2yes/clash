@@ -1,6 +1,19 @@
 proxies:
   - name: 美国 CloudFlare节点
     type: vmess
+    server: quiz.vidio.com
+    port: 443
+    uuid: 92869d41-a98a-40ba-b79d-2eeb7ffe2433
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /worryfree
+    ws-headers:
+      Host: dynamic-sg1b.obfs.xyz
+    tls: true
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
     server: cf-lt.sharecentre.online
     port: 8080
     uuid: e2952737-6f10-492b-9813-19131deb71b1
@@ -11,75 +24,6 @@ proxies:
     ws-path: /api/v3/download.getFile
     ws-headers:
       Host: ssrsub.v01.ssrsub.com
-  - name: 沙特阿拉伯 Arabic Computer System Co.
-    type: vmess
-    server: 85.208.107.119
-    port: 38183
-    uuid: 6b32d610-1e0c-45b0-e91d-af12ccaeed8b
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: 85.208.107.119
-  - name: 卢森堡 root.lu数据中心
-    type: vmess
-    server: apkwvctghw.114514782.xyz
-    port: 2052
-    uuid: ca2175a5-f759-3e28-a4e3-136ab1900e40
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /miaosafh
-    ws-headers:
-      Host: apkwvctghw.114514782.xyz
-  - name: 美国+加利福尼亚州洛杉矶Level3通信(DIA)
-    type: trojan
-    server: ap.stablize.top
-    port: 443?type=tcp&allowInsecure=1
-    password: 9478e27c-6bdd-4f0e-ba46-90d9739e1e34
-  - name: 北美地区 V2CROSS.COM
-    type: vmess
-    server: usblog.114514782.xyz
-    port: 2052
-    uuid: 14a8ba38-8918-3de1-bc93-9fc87777da30
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /mtryjhiaogrs
-    ws-headers:
-      Host: usblog.114514782.xyz
-  - name: 浙江省+联通
-    type: ss
-    server: p1.bxy-fun1.com
-    port: '30470'
-    cipher: chacha20-ietf-poly1305
-    password: d7bee830-09aa-43b2-8945-3b341b8787db
-  - name: 美国 加利福尼亚州圣何塞PEG TECH
-    type: vmess
-    server: 142.4.119.205
-    port: 53986
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-headers: {}
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: hd.mamadcucu.com
-    port: 2082
-    uuid: 8e98f959-6eac-40b7-8fa8-e745942c9a8c
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: h5.mamadcucu.com
   - name: 美国 加利福尼亚州洛杉矶MULTACOM数据中心
     type: vmess
     server: cuq.shipv.net
@@ -95,15 +39,29 @@ proxies:
     tls: true
   - name: 美国 CloudFlare节点 - 3
     type: vmess
-    server: scaleway.696960.xyz
+    server: surongwei.eu.org
     port: 443
-    uuid: e357cd63-f1a5-4c8e-c42e-26da11207fee
+    uuid: 6093eefb-7ab6-41df-aba0-d5fa58147e10
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /root/
-    ws-headers: {}
+    ws-path: /reffs7y26g0ua
+    ws-headers:
+      Host: surongwei.eu.org
+    tls: true
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: 170.187.200.114
+    port: 443
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /chat
+    ws-headers:
+      Host: ''
     tls: true
 proxy-groups:
   - name: Free-servers
@@ -112,43 +70,28 @@ proxy-groups:
       - 自动选择
       - 故障转移
       - 美国 CloudFlare节点
-      - 沙特阿拉伯 Arabic Computer System Co.
-      - 卢森堡 root.lu数据中心
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
-      - 北美地区 V2CROSS.COM
-      - 浙江省+联通
-      - 美国 加利福尼亚州圣何塞PEG TECH
       - 美国 CloudFlare节点 - 2
       - 美国 加利福尼亚州洛杉矶MULTACOM数据中心
       - 美国 CloudFlare节点 - 3
+      - 美国 V2CROSS.COM
   - name: 自动选择
     type: url-test
     proxies:
       - 美国 CloudFlare节点
-      - 沙特阿拉伯 Arabic Computer System Co.
-      - 卢森堡 root.lu数据中心
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
-      - 北美地区 V2CROSS.COM
-      - 浙江省+联通
-      - 美国 加利福尼亚州圣何塞PEG TECH
       - 美国 CloudFlare节点 - 2
       - 美国 加利福尼亚州洛杉矶MULTACOM数据中心
       - 美国 CloudFlare节点 - 3
+      - 美国 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
       - 美国 CloudFlare节点
-      - 沙特阿拉伯 Arabic Computer System Co.
-      - 卢森堡 root.lu数据中心
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
-      - 北美地区 V2CROSS.COM
-      - 浙江省+联通
-      - 美国 加利福尼亚州圣何塞PEG TECH
       - 美国 CloudFlare节点 - 2
       - 美国 加利福尼亚州洛杉矶MULTACOM数据中心
       - 美国 CloudFlare节点 - 3
+      - 美国 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
