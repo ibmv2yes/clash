@@ -1,37 +1,56 @@
 proxies:
+  - name: 瑞士+V2CROSS.COM
+    type: trojan
+    server: 195.15.243.26
+    port: 443?type=tcp&allowInsecure=1
+    password: '4478'
   - name: 美国 CloudFlare节点
     type: vmess
-    server: cf-lt.sharecentre.online
-    port: 80
-    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
+    server: cdnjs.com
+    port: 443
+    uuid: DCE76061-EE65-49DB-997C-A6A880DADE3A
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /shirker
+    ws-path: /speedtest
     ws-headers:
-      Host: dp4.scproxy.top
-  - name: 亚太地区+V2CROSS.COM
-    type: trojan
-    server: 103.103.245.125
-    port: '50418'
-    password: a70b39d1-62ea-4d9e-b681-9c5408352234
+      Host: Amsterdam.kotick.site
+    tls: true
+  - name: 北美地区+V2CROSS.COM
+    type: ss
+    server: 169.197.141.187
+    port: '5001'
+    cipher: aes-256-gcm
+    password: Y6R9pAtvxxzmGC
+  - name: 香港 阿里云
+    type: vmess
+    server: n1681196439.aqdisrv.cn
+    port: 443
+    uuid: 1780a2d3-a892-4559-b242-d6bfdad4d869
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers: {}
+    tls: true
   - name: 美国 CloudFlare节点 - 2
     type: vmess
-    server: cfcdn.sanfencdn.net
+    server: 104.22.59.195
     port: 443
-    uuid: 648d1970-6bdc-45c1-8351-aff09fc067a7
+    uuid: a1560b52-b580-4aad-b8cd-9cd2ec5264b4
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /zh-cn
+    ws-path: /vmessws
     ws-headers:
-      Host: us2.sanfencdn.net
+      Host: 1.239000.xyz
     tls: true
-  - name: 美国 加利福尼亚州费利蒙Linode数据中心
+  - name: 美国 V2CROSS.COM
     type: vmess
-    server: vus3.0bad.com
+    server: 170.187.200.114
     port: 443
     uuid: 927094d3-d678-4763-8591-e240d0bcae87
     alterId: 0
@@ -39,20 +58,21 @@ proxies:
     udp: true
     network: ws
     ws-path: /chat
-    ws-headers: {}
+    ws-headers:
+      Host: ''
     tls: true
   - name: 美国 CloudFlare节点 - 3
     type: vmess
-    server: quiz.vidio.com
-    port: 443
-    uuid: 92869d41-a98a-40ba-b79d-2eeb7ffe2433
+    server: 172.67.38.105
+    port: 2096
+    uuid: fcbd5c07-fba5-4ff9-c19c-02e023220628
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /worryfree
+    ws-path: ho3ino
     ws-headers:
-      Host: dynamic-sg1b.obfs.xyz
+      Host: h.h3io.co
     tls: true
 proxy-groups:
   - name: Free-servers
@@ -60,28 +80,34 @@ proxy-groups:
     proxies:
       - 自动选择
       - 故障转移
+      - 瑞士+V2CROSS.COM
       - 美国 CloudFlare节点
-      - 亚太地区+V2CROSS.COM
+      - 北美地区+V2CROSS.COM
+      - 香港 阿里云
       - 美国 CloudFlare节点 - 2
-      - 美国 加利福尼亚州费利蒙Linode数据中心
+      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点 - 3
   - name: 自动选择
     type: url-test
     proxies:
+      - 瑞士+V2CROSS.COM
       - 美国 CloudFlare节点
-      - 亚太地区+V2CROSS.COM
+      - 北美地区+V2CROSS.COM
+      - 香港 阿里云
       - 美国 CloudFlare节点 - 2
-      - 美国 加利福尼亚州费利蒙Linode数据中心
+      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点 - 3
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
+      - 瑞士+V2CROSS.COM
       - 美国 CloudFlare节点
-      - 亚太地区+V2CROSS.COM
+      - 北美地区+V2CROSS.COM
+      - 香港 阿里云
       - 美国 CloudFlare节点 - 2
-      - 美国 加利福尼亚州费利蒙Linode数据中心
+      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点 - 3
     url: http://www.gstatic.com/generate_204
     interval: 86400
