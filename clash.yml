@@ -1,15 +1,48 @@
 proxies:
-  - name: 南非 V2CROSS.COM
+  - name: 瑞士+V2CROSS.COM
+    type: trojan
+    server: 195.15.243.26
+    port: 443?security=tls&type=tcp&headerType=none
+    password: '4478'
+  - name: 美国 CloudFlare节点
     type: vmess
-    server: 156.225.67.101
-    port: 49188
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
+    server: v2ray.online
+    port: 443
+    uuid: 00BBF5B8-173E-6818-9927-5AD1AA073C7D
+    alterId: 0
     cipher: auto
     udp: true
-    network: tcp
-    ws-headers: {}
-  - name: 美国 CloudFlare节点
+    network: ws
+    ws-path: /speedtest
+    ws-headers:
+      Host: Kansas.v2ray.online
+    tls: true
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: i.vpchi.tk
+    port: 2082
+    uuid: 1cbcbeff-de07-4f43-8ca9-4cb3a2a508ab
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: i.vpchi.tk
+  - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: v2ray3.webgfw.top
+    port: 2083
+    uuid: 07e90bec-b70d-414c-a00e-c844f1ea3345
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /X9piqfat/
+    ws-headers:
+      Host: ''
+    tls: true
+  - name: 美国 CloudFlare节点 - 4
     type: vmess
     server: inf.314156.xyz
     port: 443
@@ -22,60 +55,106 @@ proxies:
     ws-headers:
       Host: ''
     tls: true
-  - name: 瑞典+V2CROSS.COM
-    type: ss
-    server: 167.88.61.213
-    port: '8881'
-    cipher: aes-256-gcm
-    password: kDWvXYZoTBcGkC4
-  - name: 美国 惠普HP
+  - name: 美国 加利福尼亚州洛杉矶Sharktech数据中心
     type: vmess
-    server: hk3.af49c4e4c2ef.sanfen004.me
+    server: 64.32.20.34
+    port: 54042
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-headers: {}
+  - name: 美国 CloudFlare节点 - 5
+    type: vmess
+    server: aaaa.wxx.gay
     port: 443
-    uuid: a316207e-0d3b-4754-ae9f-a4ec13aacba9
+    uuid: 3ac8ab72-e839-11ed-ad5e-000017022008
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /zh-cn
+    ws-path: /look
     ws-headers:
       Host: ''
     tls: true
+  - name: 法国+格拉沃利讷OVH数据中心
+    type: ss
+    server: 54.36.174.181
+    port: '7306'
+    cipher: aes-256-gcm
+    password: FoOiGlkAA9yPEGP
+  - name: 瑞典+V2CROSS.COM
+    type: ss
+    server: 167.88.61.213
+    port: '8118'
+    cipher: aes-256-gcm
+    password: cdBIDV42DCwnfIN
   - name: 瑞典+V2CROSS.COM - 2
     type: ss
     server: 167.88.61.213
-    port: '8119'
+    port: '7307'
     cipher: aes-256-gcm
-    password: cdBIDV42DCwnfIN
+    password: FoOiGlkAA9yPEGP
+  - name: 立陶宛 V2CROSS.COM
+    type: vmess
+    server: aduibdfg.114514782.xyz
+    port: 2052
+    uuid: 3c6a7937-52f5-38ab-8161-d1456ed68964
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /flkfhzz
+    ws-headers:
+      Host: aduibdfg.114514782.xyz
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 南非 V2CROSS.COM
+      - 瑞士+V2CROSS.COM
       - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 - 2
+      - 美国 CloudFlare节点 - 3
+      - 美国 CloudFlare节点 - 4
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 美国 CloudFlare节点 - 5
+      - 法国+格拉沃利讷OVH数据中心
       - 瑞典+V2CROSS.COM
-      - 美国 惠普HP
       - 瑞典+V2CROSS.COM - 2
+      - 立陶宛 V2CROSS.COM
   - name: 自动选择
     type: url-test
     proxies:
-      - 南非 V2CROSS.COM
+      - 瑞士+V2CROSS.COM
       - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 - 2
+      - 美国 CloudFlare节点 - 3
+      - 美国 CloudFlare节点 - 4
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 美国 CloudFlare节点 - 5
+      - 法国+格拉沃利讷OVH数据中心
       - 瑞典+V2CROSS.COM
-      - 美国 惠普HP
       - 瑞典+V2CROSS.COM - 2
+      - 立陶宛 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 南非 V2CROSS.COM
+      - 瑞士+V2CROSS.COM
       - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 - 2
+      - 美国 CloudFlare节点 - 3
+      - 美国 CloudFlare节点 - 4
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 美国 CloudFlare节点 - 5
+      - 法国+格拉沃利讷OVH数据中心
       - 瑞典+V2CROSS.COM
-      - 美国 惠普HP
       - 瑞典+V2CROSS.COM - 2
+      - 立陶宛 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
