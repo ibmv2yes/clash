@@ -2,58 +2,110 @@ proxies:
   - name: 法国+格拉沃利讷OVH数据中心
     type: ss
     server: 54.36.174.181
-    port: '5600'
+    port: '2375'
     cipher: aes-256-gcm
-    password: Y6R9pAtvxxzmGC
+    password: faBAoD54k87UJG7
+  - name: 瑞典+V2CROSS.COM
+    type: ss
+    server: 167.88.61.213
+    port: '443'
+    cipher: aes-256-gcm
+    password: pKEW8JPByTVTLtM
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: cf-lt.sharecentre.online
+    port: 8080
+    uuid: e2952737-6f10-492b-9813-19131deb71b1
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /api/v3/download.getFile
+    ws-headers:
+      Host: ssrsub.v01.ssrsub.com
+  - name: 美国 加利福尼亚州旧金山Amazon数据中心
+    type: vmess
+    server: pop.xini.gfwcaonimanmsl.ml
+    port: 25511
+    uuid: c604e5e7-385f-44a7-aebb-0fdec93eebaa
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /34342me
+    ws-headers:
+      Host: ''
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: i.vpchi.tk
+    port: 2082
+    uuid: 1cbcbeff-de07-4f43-8ca9-4cb3a2a508ab
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: i.vpchi.tk
   - name: 北美地区+V2CROSS.COM
     type: ss
     server: 169.197.141.187
-    port: '7002'
+    port: '8882'
     cipher: aes-256-gcm
-    password: RexnBgU7EV5ADxG
-  - name: 法国+格拉沃利讷OVH数据中心 - 2
-    type: ss
-    server: 54.36.174.181
-    port: '8118'
-    cipher: aes-256-gcm
-    password: cdBIDV42DCwnfIN
-  - name: 加拿大 魁北克省博阿努瓦OVH数据中心
+    password: kDWvXYZoTBcGkC4
+  - name: 美国 CloudFlare节点 - 3
     type: vmess
-    server: 51.79.70.147
-    port: 10000
-    uuid: b1884a50-e5fb-11ed-be5b-1bbeeeb1740a
+    server: v2ray3.webgfw.top
+    port: 2083
+    uuid: 4cc72565-0d05-41e6-bc34-72aba9da544f
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /vpnjantit
-    ws-headers:
-      Host: 51.79.70.147
-  - name: 法国+格拉沃利讷OVH数据中心 - 3
-    type: ss
-    server: 54.36.174.181
-    port: '6679'
-    cipher: aes-256-gcm
-    password: TEzjfAYq2IjtuoS
-  - name: 北美地区+V2CROSS.COM - 2
-    type: ss
-    server: 169.197.141.187
-    port: '8000'
-    cipher: aes-256-gcm
-    password: KixLvKzwjekG00rm
-  - name: 美国 华盛顿Cogent通信公司
-    type: vmess
-    server: wrvlc-12-v2-1.tyo-0-0.o-two.xyz
-    port: 1888
-    uuid: ae913024-cd1c-4787-be21-c3d346473d20
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /je5x3pBN1vez3NQudNkB
+    ws-path: /X9piqfat/
     ws-headers:
       Host: ''
     tls: true
+  - name: 美国 CloudFlare节点 - 4
+    type: vmess
+    server: cf.noaries.de
+    port: 2082
+    uuid: 314c1387-618c-4689-97fc-4bc9a1ae5e05
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: ir2.nmsl.ninja
+  - name: 法国+格拉沃利讷OVH数据中心 - 2
+    type: ss
+    server: 54.36.174.181
+    port: '7306'
+    cipher: aes-256-gcm
+    password: FoOiGlkAA9yPEGP
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: 104.194.224.93
+    port: 50912
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-headers: {}
+  - name: 澳大利亚 Cranbourne Secondary College
+    type: vmess
+    server: 203.30.191.2
+    port: 80
+    uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: lg.v2ray20.xyz
 proxy-groups:
   - name: Free-servers
     type: select
@@ -61,34 +113,46 @@ proxy-groups:
       - 自动选择
       - 故障转移
       - 法国+格拉沃利讷OVH数据中心
+      - 瑞典+V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 美国 加利福尼亚州旧金山Amazon数据中心
+      - 美国 CloudFlare节点 - 2
       - 北美地区+V2CROSS.COM
+      - 美国 CloudFlare节点 - 3
+      - 美国 CloudFlare节点 - 4
       - 法国+格拉沃利讷OVH数据中心 - 2
-      - 加拿大 魁北克省博阿努瓦OVH数据中心
-      - 法国+格拉沃利讷OVH数据中心 - 3
-      - 北美地区+V2CROSS.COM - 2
-      - 美国 华盛顿Cogent通信公司
+      - 美国 V2CROSS.COM
+      - 澳大利亚 Cranbourne Secondary College
   - name: 自动选择
     type: url-test
     proxies:
       - 法国+格拉沃利讷OVH数据中心
+      - 瑞典+V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 美国 加利福尼亚州旧金山Amazon数据中心
+      - 美国 CloudFlare节点 - 2
       - 北美地区+V2CROSS.COM
+      - 美国 CloudFlare节点 - 3
+      - 美国 CloudFlare节点 - 4
       - 法国+格拉沃利讷OVH数据中心 - 2
-      - 加拿大 魁北克省博阿努瓦OVH数据中心
-      - 法国+格拉沃利讷OVH数据中心 - 3
-      - 北美地区+V2CROSS.COM - 2
-      - 美国 华盛顿Cogent通信公司
+      - 美国 V2CROSS.COM
+      - 澳大利亚 Cranbourne Secondary College
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
       - 法国+格拉沃利讷OVH数据中心
+      - 瑞典+V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 美国 加利福尼亚州旧金山Amazon数据中心
+      - 美国 CloudFlare节点 - 2
       - 北美地区+V2CROSS.COM
+      - 美国 CloudFlare节点 - 3
+      - 美国 CloudFlare节点 - 4
       - 法国+格拉沃利讷OVH数据中心 - 2
-      - 加拿大 魁北克省博阿努瓦OVH数据中心
-      - 法国+格拉沃利讷OVH数据中心 - 3
-      - 北美地区+V2CROSS.COM - 2
-      - 美国 华盛顿Cogent通信公司
+      - 美国 V2CROSS.COM
+      - 澳大利亚 Cranbourne Secondary College
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
