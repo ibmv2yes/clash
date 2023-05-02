@@ -1,71 +1,5 @@
 proxies:
-  - name: 瑞士+V2CROSS.COM
-    type: trojan
-    server: 195.15.243.26
-    port: 443?security=tls&type=tcp&headerType=none
-    password: '4478'
   - name: 美国 CloudFlare节点
-    type: vmess
-    server: v2ray.online
-    port: 443
-    uuid: 00BBF5B8-173E-6818-9927-5AD1AA073C7D
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /speedtest
-    ws-headers:
-      Host: Kansas.v2ray.online
-    tls: true
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: i.vpchi.tk
-    port: 2082
-    uuid: 1cbcbeff-de07-4f43-8ca9-4cb3a2a508ab
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: i.vpchi.tk
-  - name: 美国 CloudFlare节点 - 3
-    type: vmess
-    server: v2ray3.webgfw.top
-    port: 2083
-    uuid: 07e90bec-b70d-414c-a00e-c844f1ea3345
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /X9piqfat/
-    ws-headers:
-      Host: ''
-    tls: true
-  - name: 美国 CloudFlare节点 - 4
-    type: vmess
-    server: inf.314156.xyz
-    port: 443
-    uuid: 5b3b5d3f-68a1-4afe-8a9e-a55f30af98e3
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /workerConfig
-    ws-headers:
-      Host: ''
-    tls: true
-  - name: 美国 加利福尼亚州洛杉矶Sharktech数据中心
-    type: vmess
-    server: 64.32.20.34
-    port: 54042
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-headers: {}
-  - name: 美国 CloudFlare节点 - 5
     type: vmess
     server: aaaa.wxx.gay
     port: 443
@@ -78,83 +12,111 @@ proxies:
     ws-headers:
       Host: ''
     tls: true
-  - name: 法国+格拉沃利讷OVH数据中心
-    type: ss
-    server: 54.36.174.181
-    port: '7306'
-    cipher: aes-256-gcm
-    password: FoOiGlkAA9yPEGP
   - name: 瑞典+V2CROSS.COM
     type: ss
     server: 167.88.61.213
-    port: '8118'
+    port: '5003'
     cipher: aes-256-gcm
-    password: cdBIDV42DCwnfIN
-  - name: 瑞典+V2CROSS.COM - 2
-    type: ss
-    server: 167.88.61.213
-    port: '7307'
-    cipher: aes-256-gcm
-    password: FoOiGlkAA9yPEGP
-  - name: 立陶宛 V2CROSS.COM
+    password: g5MeD6Ft3CWlJId
+  - name: 南非豪登省约翰内斯堡 Cloudinnovation数据中心
     type: vmess
-    server: aduibdfg.114514782.xyz
-    port: 2052
-    uuid: 3c6a7937-52f5-38ab-8161-d1456ed68964
+    server: 156.249.18.16
+    port: 31220
+    uuid: 375e70f0-5d46-476f-8d69-0fb35c5548a9
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: ''
+    ws-headers:
+      Host: ''
+  - name: 北美地区+V2CROSS.COM
+    type: ss
+    server: 169.197.141.187
+    port: '8882'
+    cipher: aes-256-gcm
+    password: kDWvXYZoTBcGkC4
+  - name: 加拿大 魁北克省博阿努瓦OVH数据中心
+    type: vmess
+    server: 51.79.70.147
+    port: 10000
+    uuid: b1884a50-e5fb-11ed-be5b-1bbeeeb1740a
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /flkfhzz
+    ws-path: /vpnjantit
     ws-headers:
-      Host: aduibdfg.114514782.xyz
+      Host: 51.79.70.147
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: cfcdn.sanfencdn.net
+    port: 443
+    uuid: 648d1970-6bdc-45c1-8351-aff09fc067a7
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /zh-cn
+    ws-headers:
+      Host: us2.sanfencdn.net
+    tls: true
+  - name: 美国+华盛顿Cogent通信公司
+    type: ss
+    server: 38.143.66.187
+    port: '9101'
+    cipher: aes-256-gcm
+    password: e4FCWrgpkji3QY
+  - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: scaleway.696960.xyz
+    port: 443
+    uuid: e357cd63-f1a5-4c8e-c42e-26da11207fee
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /root/
+    ws-headers: {}
+    tls: true
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 瑞士+V2CROSS.COM
       - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
-      - 美国 CloudFlare节点 - 5
-      - 法国+格拉沃利讷OVH数据中心
       - 瑞典+V2CROSS.COM
-      - 瑞典+V2CROSS.COM - 2
-      - 立陶宛 V2CROSS.COM
+      - 南非豪登省约翰内斯堡 Cloudinnovation数据中心
+      - 北美地区+V2CROSS.COM
+      - 加拿大 魁北克省博阿努瓦OVH数据中心
+      - 美国 CloudFlare节点 - 2
+      - 美国+华盛顿Cogent通信公司
+      - 美国 CloudFlare节点 - 3
   - name: 自动选择
     type: url-test
     proxies:
-      - 瑞士+V2CROSS.COM
       - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
-      - 美国 CloudFlare节点 - 5
-      - 法国+格拉沃利讷OVH数据中心
       - 瑞典+V2CROSS.COM
-      - 瑞典+V2CROSS.COM - 2
-      - 立陶宛 V2CROSS.COM
+      - 南非豪登省约翰内斯堡 Cloudinnovation数据中心
+      - 北美地区+V2CROSS.COM
+      - 加拿大 魁北克省博阿努瓦OVH数据中心
+      - 美国 CloudFlare节点 - 2
+      - 美国+华盛顿Cogent通信公司
+      - 美国 CloudFlare节点 - 3
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 瑞士+V2CROSS.COM
       - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
-      - 美国 CloudFlare节点 - 5
-      - 法国+格拉沃利讷OVH数据中心
       - 瑞典+V2CROSS.COM
-      - 瑞典+V2CROSS.COM - 2
-      - 立陶宛 V2CROSS.COM
+      - 南非豪登省约翰内斯堡 Cloudinnovation数据中心
+      - 北美地区+V2CROSS.COM
+      - 加拿大 魁北克省博阿努瓦OVH数据中心
+      - 美国 CloudFlare节点 - 2
+      - 美国+华盛顿Cogent通信公司
+      - 美国 CloudFlare节点 - 3
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
