@@ -1,28 +1,24 @@
 proxies:
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: inf.314156.xyz
+    port: 443
+    uuid: 5b3b5d3f-68a1-4afe-8a9e-a55f30af98e3
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /workerConfig
+    ws-headers:
+      Host: ''
+    tls: true
   - name: 法国+格拉沃利讷OVH数据中心
     type: ss
     server: 54.36.174.181
-    port: '6679'
+    port: '8118'
     cipher: aes-256-gcm
-    password: TEzjfAYq2IjtuoS
-  - name: 法国+格拉沃利讷OVH数据中心 - 2
-    type: ss
-    server: 54.36.174.181
-    port: '8000'
-    cipher: aes-256-gcm
-    password: KixLvKzwjekG00rm
-  - name: 瑞典+V2CROSS.COM
-    type: ss
-    server: 167.88.61.213
-    port: '7307'
-    cipher: aes-256-gcm
-    password: FoOiGlkAA9yPEGP
-  - name: 美国+V2CROSS.COM
-    type: trojan
-    server: tempest-us.aikun.online
-    port: '443'
-    password: 11e247e5-136d-45f1-844a-a7f054d36bab
-  - name: 美国 CloudFlare节点
+    password: cdBIDV42DCwnfIN
+  - name: 美国 CloudFlare节点 - 2
     type: vmess
     server: 172.67.145.116
     port: 8080
@@ -34,99 +30,47 @@ proxies:
     ws-path: /uitsrt
     ws-headers:
       Host: vc3chixui.uitsrt.me
-  - name: 法国+格拉沃利讷OVH数据中心 - 3
+  - name: 北美地区+V2CROSS.COM
+    type: ss
+    server: 169.197.141.187
+    port: '8009'
+    cipher: aes-256-gcm
+    password: XKFKl2rULjIp74
+  - name: 法国+格拉沃利讷OVH数据中心 - 2
     type: ss
     server: 54.36.174.181
     port: '5600'
     cipher: aes-256-gcm
     password: Y6R9pAtvxxzmGC
-  - name: 北美地区+V2CROSS.COM
-    type: ss
-    server: 169.197.141.187
-    port: '7307'
-    cipher: aes-256-gcm
-    password: FoOiGlkAA9yPEGP
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: i.vpchi.tk
-    port: 2082
-    uuid: 1cbcbeff-de07-4f43-8ca9-4cb3a2a508ab
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: i.vpchi.tk
-  - name: 瑞典+V2CROSS.COM - 2
-    type: ss
-    server: 167.88.61.213
-    port: '8090'
-    cipher: aes-256-gcm
-    password: PCnnH6SQSnfoS27
-  - name: 北美地区+V2CROSS.COM - 2
-    type: ss
-    server: 169.197.141.187
-    port: '8882'
-    cipher: aes-256-gcm
-    password: kDWvXYZoTBcGkC4
-  - name: 南非 V2CROSS.COM
-    type: vmess
-    server: 156.225.67.138
-    port: 48113
-    uuid: 964bf499-9ec0-4378-92b6-87d8d861b2d0
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-headers: {}
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 法国+格拉沃利讷OVH数据中心
-      - 法国+格拉沃利讷OVH数据中心 - 2
-      - 瑞典+V2CROSS.COM
-      - 美国+V2CROSS.COM
       - 美国 CloudFlare节点
-      - 法国+格拉沃利讷OVH数据中心 - 3
-      - 北美地区+V2CROSS.COM
+      - 法国+格拉沃利讷OVH数据中心
       - 美国 CloudFlare节点 - 2
-      - 瑞典+V2CROSS.COM - 2
-      - 北美地区+V2CROSS.COM - 2
-      - 南非 V2CROSS.COM
+      - 北美地区+V2CROSS.COM
+      - 法国+格拉沃利讷OVH数据中心 - 2
   - name: 自动选择
     type: url-test
     proxies:
-      - 法国+格拉沃利讷OVH数据中心
-      - 法国+格拉沃利讷OVH数据中心 - 2
-      - 瑞典+V2CROSS.COM
-      - 美国+V2CROSS.COM
       - 美国 CloudFlare节点
-      - 法国+格拉沃利讷OVH数据中心 - 3
-      - 北美地区+V2CROSS.COM
+      - 法国+格拉沃利讷OVH数据中心
       - 美国 CloudFlare节点 - 2
-      - 瑞典+V2CROSS.COM - 2
-      - 北美地区+V2CROSS.COM - 2
-      - 南非 V2CROSS.COM
+      - 北美地区+V2CROSS.COM
+      - 法国+格拉沃利讷OVH数据中心 - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 法国+格拉沃利讷OVH数据中心
-      - 法国+格拉沃利讷OVH数据中心 - 2
-      - 瑞典+V2CROSS.COM
-      - 美国+V2CROSS.COM
       - 美国 CloudFlare节点
-      - 法国+格拉沃利讷OVH数据中心 - 3
-      - 北美地区+V2CROSS.COM
+      - 法国+格拉沃利讷OVH数据中心
       - 美国 CloudFlare节点 - 2
-      - 瑞典+V2CROSS.COM - 2
-      - 北美地区+V2CROSS.COM - 2
-      - 南非 V2CROSS.COM
+      - 北美地区+V2CROSS.COM
+      - 法国+格拉沃利讷OVH数据中心 - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
