@@ -1,47 +1,22 @@
 proxies:
-  - name: 瑞典+V2CROSS.COM
+  - name: 法国+格拉沃利讷OVH数据中心
     type: ss
-    server: 167.88.61.213
-    port: '8090'
+    server: 54.36.174.181
+    port: '5600'
     cipher: aes-256-gcm
-    password: PCnnH6SQSnfoS27
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: 172.67.145.116
-    port: 8080
-    uuid: 6d68cfc2-36e5-432d-b6f2-5ff431cd431b
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /uitsrt
-    ws-headers:
-      Host: vc3chixui.uitsrt.me
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: scaleway.696960.xyz
-    port: 443
-    uuid: e357cd63-f1a5-4c8e-c42e-26da11207fee
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /root/
-    ws-headers:
-      Host: ''
-    tls: true
-  - name: 美国 V2CROSS.COM
-    type: vmess
-    server: aduibdfg.114514782.xyz
-    port: 2052
-    uuid: 3c6a7937-52f5-38ab-8161-d1456ed68964
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /flkfhzz
-    ws-headers:
-      Host: aduibdfg.114514782.xyz
+    password: Y6R9pAtvxxzmGC
+  - name: 北美地区+V2CROSS.COM
+    type: ss
+    server: 169.197.141.187
+    port: '7002'
+    cipher: aes-256-gcm
+    password: RexnBgU7EV5ADxG
+  - name: 法国+格拉沃利讷OVH数据中心 - 2
+    type: ss
+    server: 54.36.174.181
+    port: '8118'
+    cipher: aes-256-gcm
+    password: cdBIDV42DCwnfIN
   - name: 加拿大 魁北克省博阿努瓦OVH数据中心
     type: vmess
     server: 51.79.70.147
@@ -54,47 +29,30 @@ proxies:
     ws-path: /vpnjantit
     ws-headers:
       Host: 51.79.70.147
-  - name: 美国 V2CROSS.COM - 2
-    type: vmess
-    server: 104.194.224.93
-    port: 50912
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-headers: {}
-  - name: 美国 CloudFlare节点 - 3
-    type: vmess
-    server: v2ray.online
-    port: 443
-    uuid: 00BBF5B8-173E-6818-9927-5AD1AA073C7D
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /speedtest
-    ws-headers:
-      Host: Kansas.v2ray.online
-    tls: true
-  - name: 法国+格拉沃利讷OVH数据中心
+  - name: 法国+格拉沃利讷OVH数据中心 - 3
     type: ss
     server: 54.36.174.181
-    port: '9102'
+    port: '6679'
     cipher: aes-256-gcm
-    password: e4FCWrgpkji3QY
-  - name: 美国 CloudFlare节点 - 4
+    password: TEzjfAYq2IjtuoS
+  - name: 北美地区+V2CROSS.COM - 2
+    type: ss
+    server: 169.197.141.187
+    port: '8000'
+    cipher: aes-256-gcm
+    password: KixLvKzwjekG00rm
+  - name: 美国 华盛顿Cogent通信公司
     type: vmess
-    server: 104.21.94.37
-    port: 443
-    uuid: 00BBF5B8-173E-6818-9927-5AD1AA073C7D
+    server: wrvlc-12-v2-1.tyo-0-0.o-two.xyz
+    port: 1888
+    uuid: ae913024-cd1c-4787-be21-c3d346473d20
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /speedtest
+    ws-path: /je5x3pBN1vez3NQudNkB
     ws-headers:
-      Host: Kansas.v2ray.online
+      Host: ''
     tls: true
 proxy-groups:
   - name: Free-servers
@@ -102,41 +60,35 @@ proxy-groups:
     proxies:
       - 自动选择
       - 故障转移
-      - 瑞典+V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 美国 V2CROSS.COM
-      - 加拿大 魁北克省博阿努瓦OVH数据中心
-      - 美国 V2CROSS.COM - 2
-      - 美国 CloudFlare节点 - 3
       - 法国+格拉沃利讷OVH数据中心
-      - 美国 CloudFlare节点 - 4
+      - 北美地区+V2CROSS.COM
+      - 法国+格拉沃利讷OVH数据中心 - 2
+      - 加拿大 魁北克省博阿努瓦OVH数据中心
+      - 法国+格拉沃利讷OVH数据中心 - 3
+      - 北美地区+V2CROSS.COM - 2
+      - 美国 华盛顿Cogent通信公司
   - name: 自动选择
     type: url-test
     proxies:
-      - 瑞典+V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 美国 V2CROSS.COM
-      - 加拿大 魁北克省博阿努瓦OVH数据中心
-      - 美国 V2CROSS.COM - 2
-      - 美国 CloudFlare节点 - 3
       - 法国+格拉沃利讷OVH数据中心
-      - 美国 CloudFlare节点 - 4
+      - 北美地区+V2CROSS.COM
+      - 法国+格拉沃利讷OVH数据中心 - 2
+      - 加拿大 魁北克省博阿努瓦OVH数据中心
+      - 法国+格拉沃利讷OVH数据中心 - 3
+      - 北美地区+V2CROSS.COM - 2
+      - 美国 华盛顿Cogent通信公司
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 瑞典+V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 美国 V2CROSS.COM
-      - 加拿大 魁北克省博阿努瓦OVH数据中心
-      - 美国 V2CROSS.COM - 2
-      - 美国 CloudFlare节点 - 3
       - 法国+格拉沃利讷OVH数据中心
-      - 美国 CloudFlare节点 - 4
+      - 北美地区+V2CROSS.COM
+      - 法国+格拉沃利讷OVH数据中心 - 2
+      - 加拿大 魁北克省博阿努瓦OVH数据中心
+      - 法国+格拉沃利讷OVH数据中心 - 3
+      - 北美地区+V2CROSS.COM - 2
+      - 美国 华盛顿Cogent通信公司
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
