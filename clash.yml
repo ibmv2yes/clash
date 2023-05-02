@@ -1,136 +1,129 @@
 proxies:
-  - name: 美国+DXC+Technology
-    type: trojan
-    server: sg.stablize.top
-    port: '443'
-    password: 9014ea56-3fec-43d8-bed6-af7bcb5e2cb3
-  - name: 瑞典+V2CROSS.COM
-    type: ss
-    server: 167.88.61.213
-    port: '8090'
-    cipher: aes-256-gcm
-    password: PCnnH6SQSnfoS27
-  - name: 美国 CloudFlare节点
+  - name: 挪威 V2CROSS.COM
     type: vmess
-    server: 104.22.59.195
-    port: 443
-    uuid: a1560b52-b580-4aad-b8cd-9cd2ec5264b4
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /vmessws
-    ws-headers:
-      Host: 1.239000.xyz
-    tls: true
-  - name: 瑞士+V2CROSS.COM
-    type: trojan
-    server: 195.15.243.26
-    port: 443?security=tls&type=tcp&headerType=none
-    password: '4478'
-  - name: 美国 V2CROSS.COM
-    type: vmess
-    server: 104.194.224.93
-    port: 50912
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-headers: {}
-  - name: 美国弗吉尼亚州阿什本 CloudFlare节点
-    type: vmess
-    server: 173.245.49.16
-    port: 443
-    uuid: 662f4e74-b075-4d85-d68d-61c51882429f
+    server: pl1-vmess.greenssh.xyz
+    port: 80
+    uuid: 2b3ec40f-1dfc-4893-b739-c94e2fe46015
     alterId: 0
     cipher: auto
     udp: true
     network: ws
     ws-path: /
     ws-headers:
-      Host: kott1.vtcss.top
-    tls: true
-  - name: 北美地区+V2CROSS.COM
-    type: ss
-    server: 169.197.141.187
-    port: '443'
-    cipher: aes-256-gcm
-    password: pKEW8JPByTVTLtM
-  - name: 瑞典+V2CROSS.COM - 2
-    type: ss
-    server: 167.88.61.213
-    port: '5003'
-    cipher: aes-256-gcm
-    password: g5MeD6Ft3CWlJId
+      Host: ''
+  - name: 美国+V2CROSS.COM
+    type: trojan
+    server: 152.70.74.66
+    port: 443?security=tls&type=tcp&headerType=none
+    password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: snappfood.ir
+    port: 80
+    uuid: e640b7a8-c42d-4188-d411-4fb7736f90bc
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: dayz-gone.website
   - name: 法国+格拉沃利讷OVH数据中心
     type: ss
     server: 54.36.174.181
-    port: '2375'
+    port: '9102'
     cipher: aes-256-gcm
-    password: faBAoD54k87UJG7
-  - name: 美国加利福尼亚州洛杉矶 PetaExpress
+    password: e4FCWrgpkji3QY
+  - name: 美国 CloudFlare节点
     type: vmess
-    server: 198.2.204.249
-    port: 46802
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
+    server: 172.67.63.57
+    port: 2053
+    uuid: d6616014-a47e-4040-8286-34a2207c5b7c
+    alterId: 0
     cipher: auto
     udp: true
-    network: tcp
-    ws-headers: {}
+    network: ws
+    ws-path: /10029
+    ws-headers:
+      Host: b.v2ray2333.tk
+    tls: true
+  - name: 美国+DXC+Technology
+    type: trojan
+    server: sg.stablize.top
+    port: '443'
+    password: 9014ea56-3fec-43d8-bed6-af7bcb5e2cb3
+  - name: 北美地区+V2CROSS.COM
+    type: ss
+    server: 169.197.141.187
+    port: '3389'
+    cipher: aes-256-gcm
+    password: Y6R9pAtvxxzmGC
   - name: 美国+马里兰州罗耀拉大学
     type: trojan
     server: mirab.sandbad.live
     port: '443'
     password: 6bc66c8e-8c95-0c62-bfa0-249dcff0618f
+  - name: 日本+V2CROSS.COM
+    type: trojan
+    server: microsoft-hk.85413.xyz
+    port: '443'
+    password: a3f80b20-99d0-498b-8fd2-24b3349e1b95
+  - name: 南非豪登省约翰内斯堡 Cloudinnovation数据中心
+    type: vmess
+    server: 156.249.18.185
+    port: 49050
+    uuid: 6193116d-96f9-4d7a-9be5-5bb06a69af0b
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: ''
+    ws-headers:
+      Host: ''
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国+DXC+Technology
-      - 瑞典+V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 瑞士+V2CROSS.COM
+      - 挪威 V2CROSS.COM
+      - 美国+V2CROSS.COM
       - 美国 V2CROSS.COM
-      - 美国弗吉尼亚州阿什本 CloudFlare节点
-      - 北美地区+V2CROSS.COM
-      - 瑞典+V2CROSS.COM - 2
       - 法国+格拉沃利讷OVH数据中心
-      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 美国 CloudFlare节点
+      - 美国+DXC+Technology
+      - 北美地区+V2CROSS.COM
       - 美国+马里兰州罗耀拉大学
+      - 日本+V2CROSS.COM
+      - 南非豪登省约翰内斯堡 Cloudinnovation数据中心
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国+DXC+Technology
-      - 瑞典+V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 瑞士+V2CROSS.COM
+      - 挪威 V2CROSS.COM
+      - 美国+V2CROSS.COM
       - 美国 V2CROSS.COM
-      - 美国弗吉尼亚州阿什本 CloudFlare节点
-      - 北美地区+V2CROSS.COM
-      - 瑞典+V2CROSS.COM - 2
       - 法国+格拉沃利讷OVH数据中心
-      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 美国 CloudFlare节点
+      - 美国+DXC+Technology
+      - 北美地区+V2CROSS.COM
       - 美国+马里兰州罗耀拉大学
+      - 日本+V2CROSS.COM
+      - 南非豪登省约翰内斯堡 Cloudinnovation数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国+DXC+Technology
-      - 瑞典+V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 瑞士+V2CROSS.COM
+      - 挪威 V2CROSS.COM
+      - 美国+V2CROSS.COM
       - 美国 V2CROSS.COM
-      - 美国弗吉尼亚州阿什本 CloudFlare节点
-      - 北美地区+V2CROSS.COM
-      - 瑞典+V2CROSS.COM - 2
       - 法国+格拉沃利讷OVH数据中心
-      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 美国 CloudFlare节点
+      - 美国+DXC+Technology
+      - 北美地区+V2CROSS.COM
       - 美国+马里兰州罗耀拉大学
+      - 日本+V2CROSS.COM
+      - 南非豪登省约翰内斯堡 Cloudinnovation数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
