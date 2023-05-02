@@ -1,89 +1,136 @@
 proxies:
-  - name: 美国 加利福尼亚州旧金山Amazon数据中心
+  - name: 美国+DXC+Technology
+    type: trojan
+    server: sg.stablize.top
+    port: '443'
+    password: 9014ea56-3fec-43d8-bed6-af7bcb5e2cb3
+  - name: 瑞典+V2CROSS.COM
+    type: ss
+    server: 167.88.61.213
+    port: '8090'
+    cipher: aes-256-gcm
+    password: PCnnH6SQSnfoS27
+  - name: 美国 CloudFlare节点
     type: vmess
-    server: pop.xini.gfwcaonimanmsl.ml
-    port: 25511
-    uuid: c604e5e7-385f-44a7-aebb-0fdec93eebaa
+    server: 104.22.59.195
+    port: 443
+    uuid: a1560b52-b580-4aad-b8cd-9cd2ec5264b4
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /34342me
+    ws-path: /vmessws
     ws-headers:
-      Host: ''
+      Host: 1.239000.xyz
+    tls: true
+  - name: 瑞士+V2CROSS.COM
+    type: trojan
+    server: 195.15.243.26
+    port: 443?security=tls&type=tcp&headerType=none
+    password: '4478'
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: 104.194.224.93
+    port: 50912
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-headers: {}
+  - name: 美国弗吉尼亚州阿什本 CloudFlare节点
+    type: vmess
+    server: 173.245.49.16
+    port: 443
+    uuid: 662f4e74-b075-4d85-d68d-61c51882429f
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: kott1.vtcss.top
+    tls: true
   - name: 北美地区+V2CROSS.COM
     type: ss
     server: 169.197.141.187
-    port: '7307'
+    port: '443'
     cipher: aes-256-gcm
-    password: FoOiGlkAA9yPEGP
-  - name: 美国 CloudFlare节点
+    password: pKEW8JPByTVTLtM
+  - name: 瑞典+V2CROSS.COM - 2
+    type: ss
+    server: 167.88.61.213
+    port: '5003'
+    cipher: aes-256-gcm
+    password: g5MeD6Ft3CWlJId
+  - name: 法国+格拉沃利讷OVH数据中心
+    type: ss
+    server: 54.36.174.181
+    port: '2375'
+    cipher: aes-256-gcm
+    password: faBAoD54k87UJG7
+  - name: 美国加利福尼亚州洛杉矶 PetaExpress
     type: vmess
-    server: 172.67.145.116
-    port: 8080
-    uuid: 6d68cfc2-36e5-432d-b6f2-5ff431cd431b
-    alterId: 0
+    server: 198.2.204.249
+    port: 46802
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
     cipher: auto
     udp: true
-    network: ws
-    ws-path: /uitsrt
-    ws-headers:
-      Host: vc3chixui.uitsrt.me
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: quiz.vidio.com
-    port: 443
-    uuid: 92869d41-a98a-40ba-b79d-2eeb7ffe2433
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /worryfree
-    ws-headers:
-      Host: dynamic-sg1b.obfs.xyz
-    tls: true
-  - name: 美国 CloudFlare节点 - 3
-    type: vmess
-    server: v2ray3.webgfw.top
-    port: 2083
-    uuid: 4cc72565-0d05-41e6-bc34-72aba9da544f
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /X9piqfat/
-    ws-headers:
-      Host: ''
-    tls: true
+    network: tcp
+    ws-headers: {}
+  - name: 美国+马里兰州罗耀拉大学
+    type: trojan
+    server: mirab.sandbad.live
+    port: '443'
+    password: 6bc66c8e-8c95-0c62-bfa0-249dcff0618f
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 加利福尼亚州旧金山Amazon数据中心
-      - 北美地区+V2CROSS.COM
+      - 美国+DXC+Technology
+      - 瑞典+V2CROSS.COM
       - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
+      - 瑞士+V2CROSS.COM
+      - 美国 V2CROSS.COM
+      - 美国弗吉尼亚州阿什本 CloudFlare节点
+      - 北美地区+V2CROSS.COM
+      - 瑞典+V2CROSS.COM - 2
+      - 法国+格拉沃利讷OVH数据中心
+      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 美国+马里兰州罗耀拉大学
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 加利福尼亚州旧金山Amazon数据中心
-      - 北美地区+V2CROSS.COM
+      - 美国+DXC+Technology
+      - 瑞典+V2CROSS.COM
       - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
+      - 瑞士+V2CROSS.COM
+      - 美国 V2CROSS.COM
+      - 美国弗吉尼亚州阿什本 CloudFlare节点
+      - 北美地区+V2CROSS.COM
+      - 瑞典+V2CROSS.COM - 2
+      - 法国+格拉沃利讷OVH数据中心
+      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 美国+马里兰州罗耀拉大学
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 加利福尼亚州旧金山Amazon数据中心
-      - 北美地区+V2CROSS.COM
+      - 美国+DXC+Technology
+      - 瑞典+V2CROSS.COM
       - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
+      - 瑞士+V2CROSS.COM
+      - 美国 V2CROSS.COM
+      - 美国弗吉尼亚州阿什本 CloudFlare节点
+      - 北美地区+V2CROSS.COM
+      - 瑞典+V2CROSS.COM - 2
+      - 法国+格拉沃利讷OVH数据中心
+      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 美国+马里兰州罗耀拉大学
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
