@@ -1,90 +1,81 @@
 proxies:
+  - name: 南非 V2CROSS.COM
+    type: vmess
+    server: 156.225.67.101
+    port: 49188
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-headers: {}
   - name: 美国 CloudFlare节点
     type: vmess
-    server: aaaa.wxx.gay
+    server: inf.314156.xyz
     port: 443
-    uuid: 3ac8ab72-e839-11ed-ad5e-000017022008
+    uuid: 5b3b5d3f-68a1-4afe-8a9e-a55f30af98e3
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /look
+    ws-path: /workerConfig
     ws-headers:
       Host: ''
     tls: true
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: cf-lt.sharecentre.online
-    port: 80
-    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /shirker
-    ws-headers:
-      Host: dp4.scproxy.top
-  - name: 北美地区+V2CROSS.COM
+  - name: 瑞典+V2CROSS.COM
     type: ss
-    server: 169.197.141.187
-    port: '8882'
+    server: 167.88.61.213
+    port: '8881'
     cipher: aes-256-gcm
     password: kDWvXYZoTBcGkC4
-  - name: 北美地区+V2CROSS.COM - 2
-    type: ss
-    server: 169.197.141.187
-    port: '8000'
-    cipher: aes-256-gcm
-    password: KixLvKzwjekG00rm
-  - name: 瑞士+V2CROSS.COM
-    type: trojan
-    server: 195.15.243.26
-    port: 443?security=tls&type=tcp&headerType=none
-    password: '4478'
-  - name: 美国 CloudFlare节点 - 3
+  - name: 美国 惠普HP
     type: vmess
-    server: cf-lt.sharecentre.online
-    port: 8080
-    uuid: e2952737-6f10-492b-9813-19131deb71b1
+    server: hk3.af49c4e4c2ef.sanfen004.me
+    port: 443
+    uuid: a316207e-0d3b-4754-ae9f-a4ec13aacba9
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /api/v3/download.getFile
+    ws-path: /zh-cn
     ws-headers:
-      Host: ssrsub.v01.ssrsub.com
+      Host: ''
+    tls: true
+  - name: 瑞典+V2CROSS.COM - 2
+    type: ss
+    server: 167.88.61.213
+    port: '8119'
+    cipher: aes-256-gcm
+    password: cdBIDV42DCwnfIN
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
+      - 南非 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 北美地区+V2CROSS.COM
-      - 北美地区+V2CROSS.COM - 2
-      - 瑞士+V2CROSS.COM
-      - 美国 CloudFlare节点 - 3
+      - 瑞典+V2CROSS.COM
+      - 美国 惠普HP
+      - 瑞典+V2CROSS.COM - 2
   - name: 自动选择
     type: url-test
     proxies:
+      - 南非 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 北美地区+V2CROSS.COM
-      - 北美地区+V2CROSS.COM - 2
-      - 瑞士+V2CROSS.COM
-      - 美国 CloudFlare节点 - 3
+      - 瑞典+V2CROSS.COM
+      - 美国 惠普HP
+      - 瑞典+V2CROSS.COM - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
+      - 南非 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 北美地区+V2CROSS.COM
-      - 北美地区+V2CROSS.COM - 2
-      - 瑞士+V2CROSS.COM
-      - 美国 CloudFlare节点 - 3
+      - 瑞典+V2CROSS.COM
+      - 美国 惠普HP
+      - 瑞典+V2CROSS.COM - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
