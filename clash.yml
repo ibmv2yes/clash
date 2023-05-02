@@ -1,65 +1,16 @@
 proxies:
   - name: 美国 CloudFlare节点
     type: vmess
-    server: quiz.vidio.com
+    server: cf.dalazhi.eu.org
     port: 443
-    uuid: 92869d41-a98a-40ba-b79d-2eeb7ffe2433
+    uuid: 896dfa91-7bfa-4335-8b3b-6d8cebed164d
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /worryfree
+    ws-path: /bexcvws
     ws-headers:
-      Host: dynamic-sg1b.obfs.xyz
-    tls: true
-  - name: 德国 V2CROSS.COM
-    type: vmess
-    server: bxawdbwdtyhjsgd.76898102.xyz
-    port: 2052
-    uuid: 5f9c7bda-33f9-3dd0-bcf5-aca324418e31
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /seifbibgef
-    ws-headers:
-      Host: ''
-  - name: 法国+格拉沃利讷OVH数据中心
-    type: ss
-    server: 54.36.174.181
-    port: '5600'
-    cipher: aes-256-gcm
-    password: Y6R9pAtvxxzmGC
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: 172.67.63.57
-    port: 2053
-    uuid: d6616014-a47e-4040-8286-34a2207c5b7c
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /10029
-    ws-headers:
-      Host: b.v2ray2333.tk
-    tls: true
-  - name: 美国+马里兰州罗耀拉大学
-    type: trojan
-    server: mirab.sandbad.live
-    port: '443'
-    password: 6bc66c8e-8c95-0c62-bfa0-249dcff0618f
-  - name: 美国 CloudFlare节点 - 3
-    type: vmess
-    server: 172.64.153.178
-    port: 2096
-    uuid: fcbd5c07-fba5-4ff9-c19c-02e023220628
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: ho3ino
-    ws-headers:
-      Host: h.h3io.co
+      Host: tj1.dalazhi.eu.org
     tls: true
   - name: 美国 V2CROSS.COM
     type: vmess
@@ -73,12 +24,34 @@ proxies:
     ws-path: /
     ws-headers:
       Host: dayz-gone.website
-  - name: 法国+格拉沃利讷OVH数据中心 - 2
+  - name: 瑞典+V2CROSS.COM
     type: ss
-    server: 54.36.174.181
-    port: '5600'
+    server: 167.88.61.213
+    port: '8090'
     cipher: aes-256-gcm
-    password: Y6R9pAtvxxzmGC
+    password: PCnnH6SQSnfoS27
+  - name: 美国 加利福尼亚州洛杉矶Sharktech数据中心
+    type: vmess
+    server: 64.32.20.34
+    port: 54042
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-headers: {}
+  - name: 马来西亚 V2CROSS.COM
+    type: vmess
+    server: join-bede.vmessorg.fun
+    port: 80
+    uuid: b91105c9-2061-40e6-9219-d04d5b4869d3
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: ''
 proxy-groups:
   - name: Free-servers
     type: select
@@ -86,37 +59,28 @@ proxy-groups:
       - 自动选择
       - 故障转移
       - 美国 CloudFlare节点
-      - 德国 V2CROSS.COM
-      - 法国+格拉沃利讷OVH数据中心
-      - 美国 CloudFlare节点 - 2
-      - 美国+马里兰州罗耀拉大学
-      - 美国 CloudFlare节点 - 3
       - 美国 V2CROSS.COM
-      - 法国+格拉沃利讷OVH数据中心 - 2
+      - 瑞典+V2CROSS.COM
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 马来西亚 V2CROSS.COM
   - name: 自动选择
     type: url-test
     proxies:
       - 美国 CloudFlare节点
-      - 德国 V2CROSS.COM
-      - 法国+格拉沃利讷OVH数据中心
-      - 美国 CloudFlare节点 - 2
-      - 美国+马里兰州罗耀拉大学
-      - 美国 CloudFlare节点 - 3
       - 美国 V2CROSS.COM
-      - 法国+格拉沃利讷OVH数据中心 - 2
+      - 瑞典+V2CROSS.COM
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 马来西亚 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
       - 美国 CloudFlare节点
-      - 德国 V2CROSS.COM
-      - 法国+格拉沃利讷OVH数据中心
-      - 美国 CloudFlare节点 - 2
-      - 美国+马里兰州罗耀拉大学
-      - 美国 CloudFlare节点 - 3
       - 美国 V2CROSS.COM
-      - 法国+格拉沃利讷OVH数据中心 - 2
+      - 瑞典+V2CROSS.COM
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 马来西亚 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
