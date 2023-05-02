@@ -1,32 +1,42 @@
 proxies:
-  - name: 美国+加利福尼亚州洛杉矶Level3通信(DIA)
-    type: trojan
-    server: ap.stablize.top
-    port: '443'
-    password: 10f94506-9bf9-4dbb-9542-3ff13893b190
   - name: 美国 CloudFlare节点
     type: vmess
-    server: quiz.vidio.com
+    server: cdnjs.com
     port: 443
-    uuid: 92869d41-a98a-40ba-b79d-2eeb7ffe2433
+    uuid: F66EBBBC-1D4B-4185-B607-EA98E6779114
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /worryfree
+    ws-path: /speedtest
     ws-headers:
-      Host: dynamic-sg1b.obfs.xyz
+      Host: Kansas.kotick.site
     tls: true
-  - name: 香港 V2CROSS.COM
+  - name: 美国加利福尼亚州洛杉矶 PetaExpress
     type: vmess
-    server: 156.245.8.187
-    port: 49309
-    uuid: 5a4d69ad-20a9-4941-b223-87bbd09f5f52
+    server: 198.2.204.249
+    port: 46802
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
     udp: true
     network: tcp
-    ws-path: ''
+    ws-headers: {}
+  - name: 美国+加利福尼亚州洛杉矶Level3通信(DIA)
+    type: trojan
+    server: sg.stablize.top
+    port: '443'
+    password: 9014ea56-3fec-43d8-bed6-af7bcb5e2cb3
+  - name: 马来西亚 V2CROSS.COM
+    type: vmess
+    server: join-bede.vmessorg.fun
+    port: 80
+    uuid: b91105c9-2061-40e6-9219-d04d5b4869d3
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
     ws-headers:
       Host: ''
   - name: 美国 CloudFlare节点 - 2
@@ -40,73 +50,83 @@ proxies:
     network: ws
     ws-path: /shirker
     ws-headers:
-      Host: lv1.sharecentrepro.org
+      Host: dp4.scproxy.top
   - name: 美国 CloudFlare节点 - 3
     type: vmess
-    server: new3.hucloud-dns.xyz
-    port: 443
-    uuid: 1c8ad3f2-835c-4fda-b9b6-881d3cadfd8e
+    server: 172.67.145.116
+    port: 8080
+    uuid: 6d68cfc2-36e5-432d-b6f2-5ff431cd431b
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /
+    ws-path: /uitsrt
+    ws-headers:
+      Host: vc3chixui.uitsrt.me
+  - name: 美国 CloudFlare节点 - 4
+    type: vmess
+    server: st.suchenawa.com
+    port: 443
+    uuid: 670c745c-8699-4741-95b1-2feffc0e6e0b
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /suchen
+    ws-headers:
+      Host: st.suchenawa.com
+    tls: true
+  - name: 美国 CloudFlare节点 - 5
+    type: vmess
+    server: new6.huvicloud.com
+    port: 443
+    uuid: a11ca760-9ef9-4a63-95c9-4c5c32d56251
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /huvi
     ws-headers:
       Host: ''
     tls: true
-  - name: 香港 阿里云
-    type: vmess
-    server: n1682393187.edpmvga.cn
-    port: 443
-    uuid: c204042b-3f11-4860-b159-e3dd97dbefbe
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: n1682393187.edpmvga.cn
-    tls: true
-  - name: 美国+加利福尼亚州洛杉矶Level3通信(DIA) - 2
-    type: trojan
-    server: ap.stablize.top
-    port: '443'
-    password: 10f94506-9bf9-4dbb-9542-3ff13893b190
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
       - 美国 CloudFlare节点
-      - 香港 V2CROSS.COM
+      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
+      - 马来西亚 V2CROSS.COM
       - 美国 CloudFlare节点 - 2
       - 美国 CloudFlare节点 - 3
-      - 香港 阿里云
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA) - 2
+      - 美国 CloudFlare节点 - 4
+      - 美国 CloudFlare节点 - 5
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
       - 美国 CloudFlare节点
-      - 香港 V2CROSS.COM
+      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
+      - 马来西亚 V2CROSS.COM
       - 美国 CloudFlare节点 - 2
       - 美国 CloudFlare节点 - 3
-      - 香港 阿里云
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA) - 2
+      - 美国 CloudFlare节点 - 4
+      - 美国 CloudFlare节点 - 5
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
       - 美国 CloudFlare节点
-      - 香港 V2CROSS.COM
+      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
+      - 马来西亚 V2CROSS.COM
       - 美国 CloudFlare节点 - 2
       - 美国 CloudFlare节点 - 3
-      - 香港 阿里云
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA) - 2
+      - 美国 CloudFlare节点 - 4
+      - 美国 CloudFlare节点 - 5
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
