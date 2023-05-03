@@ -1,32 +1,54 @@
 proxies:
-  - name: 美国 CloudFlare节点
+  - name: 美国 V2CROSS.COM
     type: vmess
-    server: cdnjs.com
+    server: 45.142.120.156
     port: 443
-    uuid: F66EBBBC-1D4B-4185-B607-EA98E6779114
+    uuid: 8f74ec8a-971c-11ed-a8fc-0242ac120002
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /speedtest
+    ws-path: /8701b594-d144-11ed-8e14-5ad705867cff
     ws-headers:
-      Host: Kansas.kotick.site
+      Host: 8701b594-d144-11ed-8e14-5ad705867cff.asmandll.com
     tls: true
-  - name: 美国加利福尼亚州洛杉矶 PetaExpress
+  - name: 南非 V2CROSS.COM
     type: vmess
-    server: 198.2.204.249
-    port: 46802
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    server: 156.225.67.107
+    port: 45020
+    uuid: 29a5d48e-24f1-48fd-a5e1-9a46cb31032f
     alterId: 64
     cipher: auto
     udp: true
     network: tcp
+    ws-path: ''
+    ws-headers:
+      Host: ''
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: scaleway.696960.xyz
+    port: 443
+    uuid: e357cd63-f1a5-4c8e-c42e-26da11207fee
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /root/
     ws-headers: {}
-  - name: 美国+加利福尼亚州洛杉矶Level3通信(DIA)
-    type: trojan
-    server: sg.stablize.top
-    port: '443'
-    password: 9014ea56-3fec-43d8-bed6-af7bcb5e2cb3
+    tls: true
+  - name: 美国 V2CROSS.COM - 2
+    type: vmess
+    server: de2-vmess.greenssh.xyz
+    port: 443
+    uuid: e5be6b53-3645-43df-a403-7b354f312bbd
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: de2-vmess.greenssh.xyz
+    tls: true
   - name: 马来西亚 V2CROSS.COM
     type: vmess
     server: join-bede.vmessorg.fun
@@ -39,94 +61,63 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
+  - name: 南非 V2CROSS.COM - 2
+    type: vmess
+    server: 156.225.67.138
+    port: 48113
+    uuid: 964bf499-9ec0-4378-92b6-87d8d861b2d0
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-headers: {}
   - name: 美国 CloudFlare节点 - 2
     type: vmess
-    server: cf-lt.sharecentre.online
-    port: 80
-    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
+    server: i.vpchi.tk
+    port: 2082
+    uuid: 1cbcbeff-de07-4f43-8ca9-4cb3a2a508ab
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /shirker
+    ws-path: /
     ws-headers:
-      Host: dp4.scproxy.top
-  - name: 美国 CloudFlare节点 - 3
-    type: vmess
-    server: 172.67.145.116
-    port: 8080
-    uuid: 6d68cfc2-36e5-432d-b6f2-5ff431cd431b
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /uitsrt
-    ws-headers:
-      Host: vc3chixui.uitsrt.me
-  - name: 美国 CloudFlare节点 - 4
-    type: vmess
-    server: st.suchenawa.com
-    port: 443
-    uuid: 670c745c-8699-4741-95b1-2feffc0e6e0b
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /suchen
-    ws-headers:
-      Host: st.suchenawa.com
-    tls: true
-  - name: 美国 CloudFlare节点 - 5
-    type: vmess
-    server: new6.huvicloud.com
-    port: 443
-    uuid: a11ca760-9ef9-4a63-95c9-4c5c32d56251
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /huvi
-    ws-headers:
-      Host: ''
-    tls: true
+      Host: i.vpchi.tk
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
+      - 美国 V2CROSS.COM
+      - 南非 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
+      - 美国 V2CROSS.COM - 2
       - 马来西亚 V2CROSS.COM
+      - 南非 V2CROSS.COM - 2
       - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
-      - 美国 CloudFlare节点 - 5
   - name: 自动选择
     type: url-test
     proxies:
+      - 美国 V2CROSS.COM
+      - 南非 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
+      - 美国 V2CROSS.COM - 2
       - 马来西亚 V2CROSS.COM
+      - 南非 V2CROSS.COM - 2
       - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
-      - 美国 CloudFlare节点 - 5
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
+      - 美国 V2CROSS.COM
+      - 南非 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
+      - 美国 V2CROSS.COM - 2
       - 马来西亚 V2CROSS.COM
+      - 南非 V2CROSS.COM - 2
       - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
-      - 美国 CloudFlare节点 - 5
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
