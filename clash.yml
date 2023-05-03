@@ -1,122 +1,81 @@
 proxies:
-  - name: 美国 V2CROSS.COM
+  - name: 瑞典+V2CROSS.COM
+    type: ss
+    server: 167.88.63.79
+    port: '8119'
+    cipher: aes-256-gcm
+    password: cdBIDV42DCwnfIN
+  - name: 台湾省新北市 中华电信
     type: vmess
-    server: 45.142.120.156
+    server: hinet1261.gfwisbest.xyz
+    port: 224
+    uuid: 2285133e-b9ba-3fb5-a246-9c7ddcc2cd7a
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国+V2CROSS.COM
+    type: trojan
+    server: 152.70.74.66
+    port: 443?security=tls&type=tcp&headerType=none
+    password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: mci.bamarambash.monster
     port: 443
     uuid: 8f74ec8a-971c-11ed-a8fc-0242ac120002
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /8701b594-d144-11ed-8e14-5ad705867cff
+    ws-path: /db698b16-d216-11ed-8e14-5ad705867cff
     ws-headers:
-      Host: 8701b594-d144-11ed-8e14-5ad705867cff.asmandll.com
+      Host: db698b16-d216-11ed-8e14-5ad705867cff.asmandll.com
     tls: true
-  - name: 南非 V2CROSS.COM
-    type: vmess
-    server: 156.225.67.107
-    port: 45020
-    uuid: 29a5d48e-24f1-48fd-a5e1-9a46cb31032f
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: ''
-    ws-headers:
-      Host: ''
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: scaleway.696960.xyz
-    port: 443
-    uuid: e357cd63-f1a5-4c8e-c42e-26da11207fee
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /root/
-    ws-headers: {}
-    tls: true
-  - name: 美国 V2CROSS.COM - 2
-    type: vmess
-    server: de2-vmess.greenssh.xyz
-    port: 443
-    uuid: e5be6b53-3645-43df-a403-7b354f312bbd
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: de2-vmess.greenssh.xyz
-    tls: true
-  - name: 马来西亚 V2CROSS.COM
-    type: vmess
-    server: join-bede.vmessorg.fun
-    port: 80
-    uuid: b91105c9-2061-40e6-9219-d04d5b4869d3
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 南非 V2CROSS.COM - 2
-    type: vmess
-    server: 156.225.67.138
-    port: 48113
-    uuid: 964bf499-9ec0-4378-92b6-87d8d861b2d0
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-headers: {}
   - name: 美国 CloudFlare节点 - 2
     type: vmess
-    server: i.vpchi.tk
-    port: 2082
-    uuid: 1cbcbeff-de07-4f43-8ca9-4cb3a2a508ab
+    server: aaaa.wxx.gay
+    port: 443
+    uuid: 651d6330-e902-11ed-aad0-000017022008
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /
+    ws-path: /look
     ws-headers:
-      Host: i.vpchi.tk
+      Host: ''
+    tls: true
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 V2CROSS.COM
-      - 南非 V2CROSS.COM
+      - 瑞典+V2CROSS.COM
+      - 台湾省新北市 中华电信
+      - 美国+V2CROSS.COM
       - 美国 CloudFlare节点
-      - 美国 V2CROSS.COM - 2
-      - 马来西亚 V2CROSS.COM
-      - 南非 V2CROSS.COM - 2
       - 美国 CloudFlare节点 - 2
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 V2CROSS.COM
-      - 南非 V2CROSS.COM
+      - 瑞典+V2CROSS.COM
+      - 台湾省新北市 中华电信
+      - 美国+V2CROSS.COM
       - 美国 CloudFlare节点
-      - 美国 V2CROSS.COM - 2
-      - 马来西亚 V2CROSS.COM
-      - 南非 V2CROSS.COM - 2
       - 美国 CloudFlare节点 - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 V2CROSS.COM
-      - 南非 V2CROSS.COM
+      - 瑞典+V2CROSS.COM
+      - 台湾省新北市 中华电信
+      - 美国+V2CROSS.COM
       - 美国 CloudFlare节点
-      - 美国 V2CROSS.COM - 2
-      - 马来西亚 V2CROSS.COM
-      - 南非 V2CROSS.COM - 2
       - 美国 CloudFlare节点 - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
