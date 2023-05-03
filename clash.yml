@@ -1,52 +1,78 @@
 proxies:
-  - name: 瑞典+V2CROSS.COM
-    type: ss
-    server: 167.88.63.79
-    port: '8119'
-    cipher: aes-256-gcm
-    password: cdBIDV42DCwnfIN
-  - name: 台湾省新北市 中华电信
+  - name: 欧盟 V2CROSS.COM
     type: vmess
-    server: hinet1261.gfwisbest.xyz
-    port: 224
-    uuid: 2285133e-b9ba-3fb5-a246-9c7ddcc2cd7a
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国+V2CROSS.COM
-    type: trojan
-    server: 152.70.74.66
-    port: 443?security=tls&type=tcp&headerType=none
-    password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: mci.bamarambash.monster
+    server: 45.85.119.1
     port: 443
     uuid: 8f74ec8a-971c-11ed-a8fc-0242ac120002
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /db698b16-d216-11ed-8e14-5ad705867cff
+    ws-path: /8701b594-d144-11ed-8e14-5ad705867cff
     ws-headers:
-      Host: db698b16-d216-11ed-8e14-5ad705867cff.asmandll.com
+      Host: 8701b594-d144-11ed-8e14-5ad705867cff.asmandll.com
     tls: true
-  - name: 美国 CloudFlare节点 - 2
+  - name: 美国 CloudFlare节点
     type: vmess
-    server: aaaa.wxx.gay
+    server: cf.dalazhi.eu.org
     port: 443
-    uuid: 651d6330-e902-11ed-aad0-000017022008
+    uuid: 896dfa91-7bfa-4335-8b3b-6d8cebed164d
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /look
+    ws-path: /bexcvws
+    ws-headers:
+      Host: tj1.dalazhi.eu.org
+    tls: true
+  - name: 美国 DXC Technology
+    type: vmess
+    server: azjp.untilmu.com
+    port: 16627
+    uuid: 659d6261-efba-40dc-b086-2fd05d89d051
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /azjp
+    ws-headers: {}
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: new6.huvicloud.com
+    port: 443
+    uuid: a11ca760-9ef9-4a63-95c9-4c5c32d56251
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /huvi
     ws-headers:
       Host: ''
+    tls: true
+  - name: 美国 得克萨斯州
+    type: vmess
+    server: gcphk.musekidan.com
+    port: 16617
+    uuid: 659d6261-efba-40dc-b086-2fd05d89d051
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /sg
+    ws-headers: {}
+    tls: true
+  - name: 美国 加利福尼亚州费利蒙Linode数据中心
+    type: vmess
+    server: vus2.0bad.com
+    port: 443
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /chat
+    ws-headers:
+      Host: vus2.0bad.com
     tls: true
 proxy-groups:
   - name: Free-servers
@@ -54,29 +80,32 @@ proxy-groups:
     proxies:
       - 自动选择
       - 故障转移
-      - 瑞典+V2CROSS.COM
-      - 台湾省新北市 中华电信
-      - 美国+V2CROSS.COM
+      - 欧盟 V2CROSS.COM
       - 美国 CloudFlare节点
+      - 美国 DXC Technology
       - 美国 CloudFlare节点 - 2
+      - 美国 得克萨斯州
+      - 美国 加利福尼亚州费利蒙Linode数据中心
   - name: 自动选择
     type: url-test
     proxies:
-      - 瑞典+V2CROSS.COM
-      - 台湾省新北市 中华电信
-      - 美国+V2CROSS.COM
+      - 欧盟 V2CROSS.COM
       - 美国 CloudFlare节点
+      - 美国 DXC Technology
       - 美国 CloudFlare节点 - 2
+      - 美国 得克萨斯州
+      - 美国 加利福尼亚州费利蒙Linode数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 瑞典+V2CROSS.COM
-      - 台湾省新北市 中华电信
-      - 美国+V2CROSS.COM
+      - 欧盟 V2CROSS.COM
       - 美国 CloudFlare节点
+      - 美国 DXC Technology
       - 美国 CloudFlare节点 - 2
+      - 美国 得克萨斯州
+      - 美国 加利福尼亚州费利蒙Linode数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
