@@ -1,95 +1,81 @@
 proxies:
+  - name: 日本东京+xTom%2FAS23959
+    type: trojan
+    server: vir.troaa.top
+    port: '53559'
+    password: e3c70763-89cf-4267-831d-61a98467c6dc
   - name: 美国 CloudFlare节点
     type: vmess
+    server: new3.hucloud-dns.xyz
+    port: 443
+    uuid: 1c8ad3f2-835c-4fda-b9b6-881d3cadfd8e
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: ''
+    tls: true
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
     server: cf-lt.sharecentre.online
-    port: 80
-    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
+    port: 8080
+    uuid: e2952737-6f10-492b-9813-19131deb71b1
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /shirker
+    ws-path: /api/v3/download.getFile
     ws-headers:
-      Host: dp4.scproxy.top
-  - name: 美国+俄克拉何马州欧塞奇、罗杰斯、塔尔萨与瓦戈纳县塔尔萨市HostWinds有限公司
+      Host: ssrsub.v03.ssrsub.com
+  - name: 美国+加利福尼亚州卡宁康特利Multacom公司
     type: trojan
-    server: da.ddmmy.top
-    port: '50087'
-    password: BD8DB-5SD151S5-6D5D1V
-  - name: 美国 V2CROSS.COM
+    server: cc.tross.top
+    port: '60528'
+    password: sfgdg225v5ddfs
+  - name: 美国 CloudFlare节点 - 3
     type: vmess
-    server: 170.187.200.114
+    server: quiz.vidio.com
     port: 443
-    uuid: 927094d3-d678-4763-8591-e240d0bcae87
+    uuid: 92869d41-a98a-40ba-b79d-2eeb7ffe2433
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /chat
+    ws-path: /worryfree
     ws-headers:
-      Host: ''
+      Host: dynamic-sg1b.obfs.xyz
     tls: true
-  - name: 香港 V2CROSS.COM
-    type: vmess
-    server: 156.245.8.93
-    port: 55948
-    uuid: 93503dd5-245a-4eb1-ae2a-57ab9f2b3c29
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: ''
-    ws-headers:
-      Host: ''
-  - name: 美国 V2CROSS.COM - 2
-    type: vmess
-    server: vsg1.0bad.com
-    port: 443
-    uuid: 927094d3-d678-4763-8591-e240d0bcae87
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /chat
-    ws-headers: {}
-    tls: true
-  - name: 澳大利亚+悉尼Oracle云计算数据中心
-    type: trojan
-    server: wangqifei.tk
-    port: 59973?type=tcp&sni=wangqifei.tk&allowInsecure=1
-    password: S1k6yPgFhc
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
+      - 日本东京+xTom%2FAS23959
       - 美国 CloudFlare节点
-      - 美国+俄克拉何马州欧塞奇、罗杰斯、塔尔萨与瓦戈纳县塔尔萨市HostWinds有限公司
-      - 美国 V2CROSS.COM
-      - 香港 V2CROSS.COM
-      - 美国 V2CROSS.COM - 2
-      - 澳大利亚+悉尼Oracle云计算数据中心
+      - 美国 CloudFlare节点 - 2
+      - 美国+加利福尼亚州卡宁康特利Multacom公司
+      - 美国 CloudFlare节点 - 3
   - name: 自动选择
     type: url-test
     proxies:
+      - 日本东京+xTom%2FAS23959
       - 美国 CloudFlare节点
-      - 美国+俄克拉何马州欧塞奇、罗杰斯、塔尔萨与瓦戈纳县塔尔萨市HostWinds有限公司
-      - 美国 V2CROSS.COM
-      - 香港 V2CROSS.COM
-      - 美国 V2CROSS.COM - 2
-      - 澳大利亚+悉尼Oracle云计算数据中心
+      - 美国 CloudFlare节点 - 2
+      - 美国+加利福尼亚州卡宁康特利Multacom公司
+      - 美国 CloudFlare节点 - 3
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
+      - 日本东京+xTom%2FAS23959
       - 美国 CloudFlare节点
-      - 美国+俄克拉何马州欧塞奇、罗杰斯、塔尔萨与瓦戈纳县塔尔萨市HostWinds有限公司
-      - 美国 V2CROSS.COM
-      - 香港 V2CROSS.COM
-      - 美国 V2CROSS.COM - 2
-      - 澳大利亚+悉尼Oracle云计算数据中心
+      - 美国 CloudFlare节点 - 2
+      - 美国+加利福尼亚州卡宁康特利Multacom公司
+      - 美国 CloudFlare节点 - 3
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
