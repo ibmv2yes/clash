@@ -1,112 +1,126 @@
 proxies:
-  - name: 美国 V2CROSS.COM
-    type: vmess
-    server: 170.114.45.122
-    port: 443
-    uuid: 8f74ec8a-971c-11ed-a8fc-0242ac120002
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /db698b16-d216-11ed-8e14-5ad705867cff
-    ws-headers:
-      Host: db698b16-d216-11ed-8e14-5ad705867cff.asmandll.com
-    tls: true
-  - name: 加拿大 魁北克省博阿努瓦OVH数据中心
-    type: vmess
-    server: ca1-vmess.greenssh.xyz
-    port: 80
-    uuid: 2557e01c-dbcc-4d34-a259-11ae69f5f041
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: ''
   - name: 美国 CloudFlare节点
     type: vmess
-    server: 104.22.59.195
+    server: 104.21.94.37
     port: 443
-    uuid: a1560b52-b580-4aad-b8cd-9cd2ec5264b4
+    uuid: 00BBF5B8-173E-6818-9927-5AD1AA073C7D
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /vmessws
+    ws-path: /speedtest
     ws-headers:
-      Host: 1.239000.xyz
+      Host: Kansas.v2ray.online
     tls: true
   - name: 美国 CloudFlare节点 - 2
     type: vmess
-    server: quiz.vidio.com
+    server: v2ray.online
     port: 443
-    uuid: 92869d41-a98a-40ba-b79d-2eeb7ffe2433
+    uuid: 00BBF5B8-173E-6818-9927-5AD1AA073C7D
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /worryfree
+    ws-path: /speedtest
     ws-headers:
-      Host: dynamic-sg1b.obfs.xyz
-    tls: true
-  - name: 美国 V2CROSS.COM - 2
-    type: vmess
-    server: 170.187.200.114
-    port: 443
-    uuid: 927094d3-d678-4763-8591-e240d0bcae87
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /chat
-    ws-headers:
-      Host: ''
+      Host: Kansas.v2ray.online
     tls: true
   - name: 美国 CloudFlare节点 - 3
     type: vmess
-    server: hd.mamadcucu.com
-    port: 2052
-    uuid: 8ed9aec2-e02e-4a27-fe02-c3e20452e4c7
+    server: cdn.yuntujisu.ml
+    port: 2095
+    uuid: 3d50d828-4ec6-45aa-8465-710434a45e75
     alterId: 0
     cipher: auto
     udp: true
     network: ws
     ws-path: /
     ws-headers:
-      Host: h4.mamadcucu.com
+      Host: nanous.ytjs114514.ml
+  - name: 美国 CloudFlare节点 - 4
+    type: vmess
+    server: cf-lt.sharecentre.online
+    port: 8080
+    uuid: e2952737-6f10-492b-9813-19131deb71b1
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /api/v3/download.getFile
+    ws-headers:
+      Host: ssrsub.v01.ssrsub.com
+  - name: 美国 CloudFlare节点 - 5
+    type: vmess
+    server: aaaa.wxx.gay
+    port: 443
+    uuid: 651d6330-e902-11ed-aad0-000017022008
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /look
+    ws-headers:
+      Host: ''
+    tls: true
+  - name: 南非 V2CROSS.COM
+    type: vmess
+    server: 156.225.67.101
+    port: 49188
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 CloudFlare节点 - 6
+    type: vmess
+    server: cf-lt.sharecentre.online
+    port: 80
+    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /shirker
+    ws-headers:
+      Host: dp4.scproxy.top
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 V2CROSS.COM
-      - 加拿大 魁北克省博阿努瓦OVH数据中心
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
-      - 美国 V2CROSS.COM - 2
       - 美国 CloudFlare节点 - 3
+      - 美国 CloudFlare节点 - 4
+      - 美国 CloudFlare节点 - 5
+      - 南非 V2CROSS.COM
+      - 美国 CloudFlare节点 - 6
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 V2CROSS.COM
-      - 加拿大 魁北克省博阿努瓦OVH数据中心
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
-      - 美国 V2CROSS.COM - 2
       - 美国 CloudFlare节点 - 3
+      - 美国 CloudFlare节点 - 4
+      - 美国 CloudFlare节点 - 5
+      - 南非 V2CROSS.COM
+      - 美国 CloudFlare节点 - 6
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 V2CROSS.COM
-      - 加拿大 魁北克省博阿努瓦OVH数据中心
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
-      - 美国 V2CROSS.COM - 2
       - 美国 CloudFlare节点 - 3
+      - 美国 CloudFlare节点 - 4
+      - 美国 CloudFlare节点 - 5
+      - 南非 V2CROSS.COM
+      - 美国 CloudFlare节点 - 6
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
