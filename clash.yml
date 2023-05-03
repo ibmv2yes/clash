@@ -1,39 +1,41 @@
 proxies:
   - name: 美国 CloudFlare节点
     type: vmess
-    server: cf.noaries.de
-    port: 2082
-    uuid: 314c1387-618c-4689-97fc-4bc9a1ae5e05
+    server: 104.22.59.195
+    port: 443
+    uuid: a1560b52-b580-4aad-b8cd-9cd2ec5264b4
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /vmessws
+    ws-headers:
+      Host: 1.239000.xyz
+    tls: true
+  - name: 澳大利亚 Lyndhurst Secondary College
+    type: vmess
+    server: 203.30.188.100
+    port: 8880
+    uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958
     alterId: 0
     cipher: auto
     udp: true
     network: ws
     ws-path: /
     ws-headers:
-      Host: ir2.nmsl.ninja
+      Host: lg.trump2023.net
   - name: 美国 CloudFlare节点 - 2
     type: vmess
-    server: cf-lt.sharecentre.online
-    port: 80
-    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
+    server: v2ray3.webgfw.top
+    port: 2083
+    uuid: 1ace515b-a76b-4378-83ac-0ee3833b98be
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /shirker
+    ws-path: /X9piqfat/
     ws-headers:
-      Host: dp4.scproxy.top
-  - name: 美国 Merit网络公司
-    type: vmess
-    server: ssv3-iddoctor.cloud.okteto.net
-    port: 443
-    uuid: 4b6499a4-a112-43db-8e6c-704b982f0c83
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /vmess
-    ws-headers: {}
+      Host: v2ray3.webgfw.top
     tls: true
   - name: 美国 CloudFlare节点 - 3
     type: vmess
@@ -48,30 +50,30 @@ proxies:
     ws-headers:
       Host: dynamic-sg1b.obfs.xyz
     tls: true
-  - name: 美国 加利福尼亚州洛杉矶Sharktech数据中心
+  - name: 美国 CloudFlare节点 - 4
     type: vmess
-    server: 67.21.84.209
-    port: 36088
-    uuid: b9a305a9-1ff2-4ec1-b338-933555833baa
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: ''
-    ws-headers:
-      Host: ''
-  - name: 美国 加利福尼亚州洛杉矶Krypt数据中心
-    type: vmess
-    server: 174.139.126.251
-    port: 33547
-    uuid: 51695a30-3915-4b9e-9a7f-bc10b5033a41
-    alterId: 64
+    server: i.vpchi.tk
+    port: 2082
+    uuid: 1cbcbeff-de07-4f43-8ca9-4cb3a2a508ab
+    alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /us15/getData
+    ws-path: ''
     ws-headers:
-      Host: us15.verichains.co
+      Host: ''
+  - name: 美国 CloudFlare节点 - 5
+    type: vmess
+    server: v2ray3.webgfw.top
+    port: 2083
+    uuid: 07e90bec-b70d-414c-a00e-c844f1ea3345
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /X9piqfat/
+    ws-headers:
+      Host: v2ray3.webgfw.top
     tls: true
 proxy-groups:
   - name: Free-servers
@@ -80,31 +82,31 @@ proxy-groups:
       - 自动选择
       - 故障转移
       - 美国 CloudFlare节点
+      - 澳大利亚 Lyndhurst Secondary College
       - 美国 CloudFlare节点 - 2
-      - 美国 Merit网络公司
       - 美国 CloudFlare节点 - 3
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
-      - 美国 加利福尼亚州洛杉矶Krypt数据中心
+      - 美国 CloudFlare节点 - 4
+      - 美国 CloudFlare节点 - 5
   - name: 自动选择
     type: url-test
     proxies:
       - 美国 CloudFlare节点
+      - 澳大利亚 Lyndhurst Secondary College
       - 美国 CloudFlare节点 - 2
-      - 美国 Merit网络公司
       - 美国 CloudFlare节点 - 3
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
-      - 美国 加利福尼亚州洛杉矶Krypt数据中心
+      - 美国 CloudFlare节点 - 4
+      - 美国 CloudFlare节点 - 5
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
       - 美国 CloudFlare节点
+      - 澳大利亚 Lyndhurst Secondary College
       - 美国 CloudFlare节点 - 2
-      - 美国 Merit网络公司
       - 美国 CloudFlare节点 - 3
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
-      - 美国 加利福尼亚州洛杉矶Krypt数据中心
+      - 美国 CloudFlare节点 - 4
+      - 美国 CloudFlare节点 - 5
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
