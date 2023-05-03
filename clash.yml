@@ -1,20 +1,28 @@
 proxies:
-  - name: 澳大利亚+悉尼Oracle云计算数据中心
-    type: trojan
-    server: wangqifei.tk
-    port: 59973?type=tcp&sni=wangqifei.tk&allowInsecure=1
-    password: S1k6yPgFhc
-  - name: 美国 V2CROSS.COM
+  - name: 美国 CloudFlare节点
     type: vmess
-    server: vsg1.0bad.com
-    port: 443
-    uuid: 927094d3-d678-4763-8591-e240d0bcae87
+    server: 104.16.253.232
+    port: 80
+    uuid: 53ae65be-81ee-4766-8a09-da43c44c4d30
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /chat
-    ws-headers: {}
+    ws-path: /qwer
+    ws-headers:
+      Host: mlj.vtcss.top
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: 172.67.156.138
+    port: 443
+    uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /speedtest
+    ws-headers:
+      Host: Kansas.kotick.site
     tls: true
   - name: 日本 V2CROSS.COM
     type: vmess
@@ -38,48 +46,51 @@ proxies:
     cipher: auto
     udp: true
     network: tcp
-    ws-headers: {}
-  - name: 美国 V2CROSS.COM - 2
+    ws-path: ''
+    ws-headers:
+      Host: ''
+  - name: 美国 CloudFlare节点 - 3
     type: vmess
-    server: tamin.ir
-    port: 80
-    uuid: bca6b3de-009e-4cae-ba2d-a8b2ce171a4d
+    server: new6.huvicloud.com
+    port: 443
+    uuid: a11ca760-9ef9-4a63-95c9-4c5c32d56251
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /
+    ws-path: /huvi
     ws-headers:
-      Host: dash.dayz-gone.website
+      Host: ''
+    tls: true
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 澳大利亚+悉尼Oracle云计算数据中心
-      - 美国 V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 - 2
       - 日本 V2CROSS.COM
       - 澳大利亚 悉尼OVH
-      - 美国 V2CROSS.COM - 2
+      - 美国 CloudFlare节点 - 3
   - name: 自动选择
     type: url-test
     proxies:
-      - 澳大利亚+悉尼Oracle云计算数据中心
-      - 美国 V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 - 2
       - 日本 V2CROSS.COM
       - 澳大利亚 悉尼OVH
-      - 美国 V2CROSS.COM - 2
+      - 美国 CloudFlare节点 - 3
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 澳大利亚+悉尼Oracle云计算数据中心
-      - 美国 V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 - 2
       - 日本 V2CROSS.COM
       - 澳大利亚 悉尼OVH
-      - 美国 V2CROSS.COM - 2
+      - 美国 CloudFlare节点 - 3
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
