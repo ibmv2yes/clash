@@ -1,30 +1,52 @@
 proxies:
-  - name: 澳大利亚 悉尼OVH
+  - name: 美国加利福尼亚州洛杉矶 PetaExpress
     type: vmess
-    server: 139.99.245.165
-    port: 50002
+    server: 198.2.232.164
+    port: 54342
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
     udp: true
     network: tcp
-    ws-path: ''
-    ws-headers:
-      Host: ''
-  - name: 美国 V2CROSS.COM
+    ws-headers: {}
+  - name: 美国 CloudFlare节点
     type: vmess
-    server: 170.114.45.122
+    server: 104.22.59.195
     port: 443
-    uuid: 8f74ec8a-971c-11ed-a8fc-0242ac120002
+    uuid: a1560b52-b580-4aad-b8cd-9cd2ec5264b4
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /db698b16-d216-11ed-8e14-5ad705867cff
+    ws-path: /vmessws
     ws-headers:
-      Host: db698b16-d216-11ed-8e14-5ad705867cff.asmandll.com
+      Host: 1.239000.xyz
     tls: true
-  - name: 美国 CloudFlare节点
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: cf.yxjnode.com
+    port: 80
+    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /yxzbp
+    ws-headers:
+      Host: buyvm2.yxjnode.com
+  - name: 美国 惠普HP
+    type: vmess
+    server: hk3.af49c4e4c2ef.sanfen004.me
+    port: 443
+    uuid: 30ba67cf-776c-48be-8bb5-578878830228
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /zh-cn
+    ws-headers: {}
+    tls: true
+  - name: 美国 CloudFlare节点 - 3
     type: vmess
     server: dallas.starsea.vip
     port: 443
@@ -37,60 +59,35 @@ proxies:
     ws-headers:
       Host: ''
     tls: true
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: cf.noaries.de
-    port: 2082
-    uuid: 314c1387-618c-4689-97fc-4bc9a1ae5e05
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: ir2.nmsl.ninja
-  - name: 美国 V2CROSS.COM - 2
-    type: vmess
-    server: 170.187.200.114
-    port: 443
-    uuid: 927094d3-d678-4763-8591-e240d0bcae87
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /chat
-    ws-headers:
-      Host: ''
-    tls: true
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 澳大利亚 悉尼OVH
-      - 美国 V2CROSS.COM
+      - 美国加利福尼亚州洛杉矶 PetaExpress
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
-      - 美国 V2CROSS.COM - 2
+      - 美国 惠普HP
+      - 美国 CloudFlare节点 - 3
   - name: 自动选择
     type: url-test
     proxies:
-      - 澳大利亚 悉尼OVH
-      - 美国 V2CROSS.COM
+      - 美国加利福尼亚州洛杉矶 PetaExpress
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
-      - 美国 V2CROSS.COM - 2
+      - 美国 惠普HP
+      - 美国 CloudFlare节点 - 3
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 澳大利亚 悉尼OVH
-      - 美国 V2CROSS.COM
+      - 美国加利福尼亚州洛杉矶 PetaExpress
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
-      - 美国 V2CROSS.COM - 2
+      - 美国 惠普HP
+      - 美国 CloudFlare节点 - 3
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
