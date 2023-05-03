@@ -1,88 +1,16 @@
 proxies:
-  - name: 美国 DXC Technology
+  - name: 美国加利福尼亚州洛杉矶 PetaExpress
     type: vmess
-    server: azjp.untilmu.com
-    port: 16627
-    uuid: 659d6261-efba-40dc-b086-2fd05d89d051
-    alterId: 0
+    server: 198.2.204.249
+    port: 46802
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
     cipher: auto
     udp: true
-    network: ws
-    ws-path: /azjp
-    ws-headers: {}
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: quiz.vidio.com
-    port: 443
-    uuid: 92869d41-a98a-40ba-b79d-2eeb7ffe2433
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /worryfree
-    ws-headers:
-      Host: dynamic-sg1b.obfs.xyz
-    tls: true
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: cf-lt.sharecentre.online
-    port: 8080
-    uuid: e2952737-6f10-492b-9813-19131deb71b1
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /api/v3/download.getFile
-    ws-headers:
-      Host: ssrsub.v03.ssrsub.com
-  - name: 美国 CloudFlare节点 - 3
-    type: vmess
-    server: 104.22.59.195
-    port: 443
-    uuid: a1560b52-b580-4aad-b8cd-9cd2ec5264b4
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /vmessws
-    ws-headers:
-      Host: 1.239000.xyz
-    tls: true
-  - name: 美国+Microsoft数据中心
-    type: trojan
-    server: sg.stablize.top
-    port: '443'
-    password: 9014ea56-3fec-43d8-bed6-af7bcb5e2cb3
-  - name: 美国 V2CROSS.COM
-    type: vmess
-    server: 170.187.200.114
-    port: 443
-    uuid: 927094d3-d678-4763-8591-e240d0bcae87
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /chat
-    ws-headers:
-      Host: ''
-    tls: true
-  - name: 美国 CloudFlare节点 - 4
-    type: vmess
-    server: hd.mamadcucu.com
-    port: 2052
-    uuid: 8ed9aec2-e02e-4a27-fe02-c3e20452e4c7
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
+    network: tcp
     ws-path: /
     ws-headers:
-      Host: h4.mamadcucu.com
-  - name: 美国+加利福尼亚州洛杉矶Level3通信(DIA)
-    type: trojan
-    server: ap.stablize.top
-    port: '443'
-    password: 10f94506-9bf9-4dbb-9542-3ff13893b190
+      Host: ''
   - name: 南非 V2CROSS.COM
     type: vmess
     server: 156.225.67.138
@@ -95,47 +23,101 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
+  - name: 美国 滴滴盾CN2高防节点(dididun.com)
+    type: vmess
+    server: 137.175.3.230
+    port: 53042
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-headers: {}
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: v2ray.online
+    port: 443
+    uuid: 00BBF5B8-173E-6818-9927-5AD1AA073C7D
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /speedtest
+    ws-headers:
+      Host: Kansas.v2ray.online
+    tls: true
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: quiz.vidio.com
+    port: 443
+    uuid: 92869d41-a98a-40ba-b79d-2eeb7ffe2433
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /worryfree
+    ws-headers:
+      Host: dynamic-sg1b.obfs.xyz
+    tls: true
+  - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: cf.yxjnode.com
+    port: 80
+    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /yxzbp
+    ws-headers:
+      Host: buyvm2.yxjnode.com
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: vsg1.0bad.com
+    port: 443
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /chat
+    ws-headers: {}
+    tls: true
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 DXC Technology
+      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 南非 V2CROSS.COM
+      - 美国 滴滴盾CN2高防节点(dididun.com)
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
       - 美国 CloudFlare节点 - 3
-      - 美国+Microsoft数据中心
       - 美国 V2CROSS.COM
-      - 美国 CloudFlare节点 - 4
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
-      - 南非 V2CROSS.COM
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 DXC Technology
+      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 南非 V2CROSS.COM
+      - 美国 滴滴盾CN2高防节点(dididun.com)
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
       - 美国 CloudFlare节点 - 3
-      - 美国+Microsoft数据中心
       - 美国 V2CROSS.COM
-      - 美国 CloudFlare节点 - 4
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
-      - 南非 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 DXC Technology
+      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 南非 V2CROSS.COM
+      - 美国 滴滴盾CN2高防节点(dididun.com)
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
       - 美国 CloudFlare节点 - 3
-      - 美国+Microsoft数据中心
       - 美国 V2CROSS.COM
-      - 美国 CloudFlare节点 - 4
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
-      - 南非 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
