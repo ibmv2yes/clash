@@ -1,22 +1,40 @@
 proxies:
-  - name: 日本东京+xTom%2FAS23959
-    type: trojan
-    server: vir.troaa.top
-    port: '53559'
-    password: e3c70763-89cf-4267-831d-61a98467c6dc
   - name: 美国 CloudFlare节点
     type: vmess
-    server: new3.hucloud-dns.xyz
-    port: 443
-    uuid: 1c8ad3f2-835c-4fda-b9b6-881d3cadfd8e
+    server: 172.67.204.32
+    port: 2086
+    uuid: 33d04ad6-c7da-3ba1-8941-3845978209a9
     alterId: 0
     cipher: auto
     udp: true
     network: ws
     ws-path: /
     ws-headers:
-      Host: ''
+      Host: uk01-cdn.airport-v2.com
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: 143.42.99.183
+    port: 443
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /chat
+    ws-headers: {}
     tls: true
+  - name: 美国 加利福尼亚州洛杉矶ColoCrossing数据中心
+    type: vmess
+    server: yangandhuan.top
+    port: 38662
+    uuid: 2d58993b-607d-4235-93a4-4363e2c71e1a
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /54321
+    ws-headers:
+      Host: yangandhuan.top
   - name: 美国 CloudFlare节点 - 2
     type: vmess
     server: cf-lt.sharecentre.online
@@ -28,54 +46,63 @@ proxies:
     network: ws
     ws-path: /api/v3/download.getFile
     ws-headers:
-      Host: ssrsub.v03.ssrsub.com
-  - name: 美国+加利福尼亚州卡宁康特利Multacom公司
-    type: trojan
-    server: cc.tross.top
-    port: '60528'
-    password: sfgdg225v5ddfs
+      Host: ssrsub.v02.ssrsub.com
   - name: 美国 CloudFlare节点 - 3
     type: vmess
-    server: quiz.vidio.com
-    port: 443
-    uuid: 92869d41-a98a-40ba-b79d-2eeb7ffe2433
+    server: inf.314156.xyz
+    port: 80
+    uuid: 5b3b5d3f-68a1-4afe-8a9e-a55f30af98e3
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /worryfree
+    ws-path: /workerConfig
     ws-headers:
-      Host: dynamic-sg1b.obfs.xyz
-    tls: true
+      Host: inf.314156.xyz
+  - name: 美国 CloudFlare节点 - 4
+    type: vmess
+    server: cf.yxjnode.com
+    port: 80
+    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /yxzbp
+    ws-headers:
+      Host: buyvm2.yxjnode.com
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 日本东京+xTom%2FAS23959
       - 美国 CloudFlare节点
+      - 美国 V2CROSS.COM
+      - 美国 加利福尼亚州洛杉矶ColoCrossing数据中心
       - 美国 CloudFlare节点 - 2
-      - 美国+加利福尼亚州卡宁康特利Multacom公司
       - 美国 CloudFlare节点 - 3
+      - 美国 CloudFlare节点 - 4
   - name: 自动选择
     type: url-test
     proxies:
-      - 日本东京+xTom%2FAS23959
       - 美国 CloudFlare节点
+      - 美国 V2CROSS.COM
+      - 美国 加利福尼亚州洛杉矶ColoCrossing数据中心
       - 美国 CloudFlare节点 - 2
-      - 美国+加利福尼亚州卡宁康特利Multacom公司
       - 美国 CloudFlare节点 - 3
+      - 美国 CloudFlare节点 - 4
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 日本东京+xTom%2FAS23959
       - 美国 CloudFlare节点
+      - 美国 V2CROSS.COM
+      - 美国 加利福尼亚州洛杉矶ColoCrossing数据中心
       - 美国 CloudFlare节点 - 2
-      - 美国+加利福尼亚州卡宁康特利Multacom公司
       - 美国 CloudFlare节点 - 3
+      - 美国 CloudFlare节点 - 4
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
