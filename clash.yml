@@ -1,94 +1,85 @@
 proxies:
-  - name: 马来西亚 V2CROSS.COM
+  - name: 澳大利亚+悉尼Oracle云计算数据中心
+    type: trojan
+    server: wangqifei.tk
+    port: 59973?type=tcp&sni=wangqifei.tk&allowInsecure=1
+    password: S1k6yPgFhc
+  - name: 美国 V2CROSS.COM
     type: vmess
-    server: join-bede.vmessorg.fun
-    port: 80
-    uuid: b91105c9-2061-40e6-9219-d04d5b4869d3
+    server: vsg1.0bad.com
+    port: 443
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /
+    ws-path: /chat
+    ws-headers: {}
+    tls: true
+  - name: 日本 V2CROSS.COM
+    type: vmess
+    server: jp06-alt-vm0.entry.jpojpoh.art
+    port: 28783
+    uuid: 21c670ff-c739-3072-9286-7d2a1d300fcb
+    alterId: 1
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: ''
     ws-headers:
       Host: ''
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: cf-lt.sharecentre.online
-    port: 80
-    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /shirker
-    ws-headers:
-      Host: dp4.scproxy.top
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: cf.dalazhi.eu.org
-    port: 443
-    uuid: 896dfa91-7bfa-4335-8b3b-6d8cebed164d
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /bexcvws
-    ws-headers:
-      Host: tj1.dalazhi.eu.org
     tls: true
-  - name: 美国 CloudFlare节点 - 3
+  - name: 澳大利亚 悉尼OVH
     type: vmess
-    server: hd.mamadcucu.com
-    port: 2052
-    uuid: 8ed9aec2-e02e-4a27-fe02-c3e20452e4c7
+    server: 139.99.245.165
+    port: 50002
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-headers: {}
+  - name: 美国 V2CROSS.COM - 2
+    type: vmess
+    server: tamin.ir
+    port: 80
+    uuid: bca6b3de-009e-4cae-ba2d-a8b2ce171a4d
     alterId: 0
     cipher: auto
     udp: true
     network: ws
     ws-path: /
     ws-headers:
-      Host: h4.mamadcucu.com
-  - name: 美国 CloudFlare节点 - 4
-    type: vmess
-    server: cf.yxjnode.com
-    port: 80
-    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /yxzbp
-    ws-headers:
-      Host: buyvm2.yxjnode.com
+      Host: dash.dayz-gone.website
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 马来西亚 V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
+      - 澳大利亚+悉尼Oracle云计算数据中心
+      - 美国 V2CROSS.COM
+      - 日本 V2CROSS.COM
+      - 澳大利亚 悉尼OVH
+      - 美国 V2CROSS.COM - 2
   - name: 自动选择
     type: url-test
     proxies:
-      - 马来西亚 V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
+      - 澳大利亚+悉尼Oracle云计算数据中心
+      - 美国 V2CROSS.COM
+      - 日本 V2CROSS.COM
+      - 澳大利亚 悉尼OVH
+      - 美国 V2CROSS.COM - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 马来西亚 V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
+      - 澳大利亚+悉尼Oracle云计算数据中心
+      - 美国 V2CROSS.COM
+      - 日本 V2CROSS.COM
+      - 澳大利亚 悉尼OVH
+      - 美国 V2CROSS.COM - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
