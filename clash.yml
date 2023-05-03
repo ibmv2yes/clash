@@ -1,52 +1,42 @@
 proxies:
-  - name: 美国加利福尼亚州洛杉矶 PetaExpress
-    type: vmess
-    server: 198.2.204.249
-    port: 46802
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 南非 V2CROSS.COM
-    type: vmess
-    server: 156.225.67.138
-    port: 48113
-    uuid: 964bf499-9ec0-4378-92b6-87d8d861b2d0
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国 滴滴盾CN2高防节点(dididun.com)
-    type: vmess
-    server: 137.175.3.230
-    port: 53042
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-headers: {}
   - name: 美国 CloudFlare节点
     type: vmess
-    server: v2ray.online
-    port: 443
-    uuid: 00BBF5B8-173E-6818-9927-5AD1AA073C7D
+    server: inf.314156.xyz
+    port: 80
+    uuid: 5b3b5d3f-68a1-4afe-8a9e-a55f30af98e3
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /speedtest
+    ws-path: /workerConfig
     ws-headers:
-      Host: Kansas.v2ray.online
-    tls: true
+      Host: inf.314156.xyz
   - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: 104.22.59.195
+    port: 443
+    uuid: a1560b52-b580-4aad-b8cd-9cd2ec5264b4
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /vmessws
+    ws-headers:
+      Host: 1.239000.xyz
+    tls: true
+  - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: dallas.starsea.vip
+    port: 443
+    uuid: c5e52b78-c01b-4884-baad-01cd2a74fce3
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers: {}
+    tls: true
+  - name: 美国 CloudFlare节点 - 4
     type: vmess
     server: quiz.vidio.com
     port: 443
@@ -59,65 +49,47 @@ proxies:
     ws-headers:
       Host: dynamic-sg1b.obfs.xyz
     tls: true
-  - name: 美国 CloudFlare节点 - 3
+  - name: 美国 CloudFlare节点 - 5
     type: vmess
-    server: cf.yxjnode.com
+    server: cf-lt.sharecentre.online
     port: 80
-    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
+    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /yxzbp
+    ws-path: /shirker
     ws-headers:
-      Host: buyvm2.yxjnode.com
-  - name: 美国 V2CROSS.COM
-    type: vmess
-    server: vsg1.0bad.com
-    port: 443
-    uuid: 927094d3-d678-4763-8591-e240d0bcae87
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /chat
-    ws-headers: {}
-    tls: true
+      Host: dp4.scproxy.top
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 南非 V2CROSS.COM
-      - 美国 滴滴盾CN2高防节点(dididun.com)
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
       - 美国 CloudFlare节点 - 3
-      - 美国 V2CROSS.COM
+      - 美国 CloudFlare节点 - 4
+      - 美国 CloudFlare节点 - 5
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 南非 V2CROSS.COM
-      - 美国 滴滴盾CN2高防节点(dididun.com)
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
       - 美国 CloudFlare节点 - 3
-      - 美国 V2CROSS.COM
+      - 美国 CloudFlare节点 - 4
+      - 美国 CloudFlare节点 - 5
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 南非 V2CROSS.COM
-      - 美国 滴滴盾CN2高防节点(dididun.com)
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
       - 美国 CloudFlare节点 - 3
-      - 美国 V2CROSS.COM
+      - 美国 CloudFlare节点 - 4
+      - 美国 CloudFlare节点 - 5
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
