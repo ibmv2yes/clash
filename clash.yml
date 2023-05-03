@@ -1,63 +1,65 @@
 proxies:
-  - name: 美国加利福尼亚州洛杉矶 PetaExpress
-    type: vmess
-    server: 198.2.232.164
-    port: 54342
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-headers: {}
   - name: 美国 CloudFlare节点
     type: vmess
-    server: 104.22.59.195
-    port: 443
-    uuid: a1560b52-b580-4aad-b8cd-9cd2ec5264b4
+    server: cf-lt.sharecentre.online
+    port: 8080
+    uuid: e2952737-6f10-492b-9813-19131deb71b1
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /vmessws
+    ws-path: /api/v3/download.getFile
     ws-headers:
-      Host: 1.239000.xyz
+      Host: ssrsub.v01.ssrsub.com
+  - name: 马来西亚 V2CROSS.COM
+    type: vmess
+    server: join-bede.vmessorg.fun
+    port: 80
+    uuid: b91105c9-2061-40e6-9219-d04d5b4869d3
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 印度尼西亚 V2CROSS.COM
+    type: vmess
+    server: free-id.ajunstores.me
+    port: 443
+    uuid: 694caa03-3b2f-476b-8b6c-711115a2c128
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /vmess
+    ws-headers:
+      Host: free-id.ajunstores.me
+    tls: true
+  - name: 日本 V2CROSS.COM
+    type: vmess
+    server: jp2.ulifeai.com
+    port: 443
+    uuid: 168b4363-92b4-4994-a4e8-9e4f5015b48c
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /52566/
+    ws-headers: {}
     tls: true
   - name: 美国 CloudFlare节点 - 2
     type: vmess
-    server: cf.yxjnode.com
-    port: 80
-    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /yxzbp
-    ws-headers:
-      Host: buyvm2.yxjnode.com
-  - name: 美国 惠普HP
-    type: vmess
-    server: hk3.af49c4e4c2ef.sanfen004.me
+    server: quiz.vidio.com
     port: 443
-    uuid: 30ba67cf-776c-48be-8bb5-578878830228
+    uuid: 92869d41-a98a-40ba-b79d-2eeb7ffe2433
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /zh-cn
-    ws-headers: {}
-    tls: true
-  - name: 美国 CloudFlare节点 - 3
-    type: vmess
-    server: dallas.starsea.vip
-    port: 443
-    uuid: c5e52b78-c01b-4884-baad-01cd2a74fce3
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: ''
+    ws-path: /worryfree
     ws-headers:
-      Host: ''
+      Host: dynamic-sg1b.obfs.xyz
     tls: true
 proxy-groups:
   - name: Free-servers
@@ -65,29 +67,29 @@ proxy-groups:
     proxies:
       - 自动选择
       - 故障转移
-      - 美国加利福尼亚州洛杉矶 PetaExpress
       - 美国 CloudFlare节点
+      - 马来西亚 V2CROSS.COM
+      - 印度尼西亚 V2CROSS.COM
+      - 日本 V2CROSS.COM
       - 美国 CloudFlare节点 - 2
-      - 美国 惠普HP
-      - 美国 CloudFlare节点 - 3
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国加利福尼亚州洛杉矶 PetaExpress
       - 美国 CloudFlare节点
+      - 马来西亚 V2CROSS.COM
+      - 印度尼西亚 V2CROSS.COM
+      - 日本 V2CROSS.COM
       - 美国 CloudFlare节点 - 2
-      - 美国 惠普HP
-      - 美国 CloudFlare节点 - 3
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国加利福尼亚州洛杉矶 PetaExpress
       - 美国 CloudFlare节点
+      - 马来西亚 V2CROSS.COM
+      - 印度尼西亚 V2CROSS.COM
+      - 日本 V2CROSS.COM
       - 美国 CloudFlare节点 - 2
-      - 美国 惠普HP
-      - 美国 CloudFlare节点 - 3
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
