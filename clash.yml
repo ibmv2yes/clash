@@ -1,30 +1,4 @@
 proxies:
-  - name: 欧盟 V2CROSS.COM
-    type: vmess
-    server: 45.85.119.1
-    port: 443
-    uuid: 8f74ec8a-971c-11ed-a8fc-0242ac120002
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /8701b594-d144-11ed-8e14-5ad705867cff
-    ws-headers:
-      Host: 8701b594-d144-11ed-8e14-5ad705867cff.asmandll.com
-    tls: true
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: cf.dalazhi.eu.org
-    port: 443
-    uuid: 896dfa91-7bfa-4335-8b3b-6d8cebed164d
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /bexcvws
-    ws-headers:
-      Host: tj1.dalazhi.eu.org
-    tls: true
   - name: 美国 DXC Technology
     type: vmess
     server: azjp.untilmu.com
@@ -36,34 +10,52 @@ proxies:
     network: ws
     ws-path: /azjp
     ws-headers: {}
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: quiz.vidio.com
+    port: 443
+    uuid: 92869d41-a98a-40ba-b79d-2eeb7ffe2433
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /worryfree
+    ws-headers:
+      Host: dynamic-sg1b.obfs.xyz
+    tls: true
   - name: 美国 CloudFlare节点 - 2
     type: vmess
-    server: new6.huvicloud.com
-    port: 443
-    uuid: a11ca760-9ef9-4a63-95c9-4c5c32d56251
+    server: cf-lt.sharecentre.online
+    port: 8080
+    uuid: e2952737-6f10-492b-9813-19131deb71b1
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /huvi
+    ws-path: /api/v3/download.getFile
     ws-headers:
-      Host: ''
-    tls: true
-  - name: 美国 得克萨斯州
+      Host: ssrsub.v03.ssrsub.com
+  - name: 美国 CloudFlare节点 - 3
     type: vmess
-    server: gcphk.musekidan.com
-    port: 16617
-    uuid: 659d6261-efba-40dc-b086-2fd05d89d051
+    server: 104.22.59.195
+    port: 443
+    uuid: a1560b52-b580-4aad-b8cd-9cd2ec5264b4
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /sg
-    ws-headers: {}
+    ws-path: /vmessws
+    ws-headers:
+      Host: 1.239000.xyz
     tls: true
-  - name: 美国 加利福尼亚州费利蒙Linode数据中心
+  - name: 美国+Microsoft数据中心
+    type: trojan
+    server: sg.stablize.top
+    port: '443'
+    password: 9014ea56-3fec-43d8-bed6-af7bcb5e2cb3
+  - name: 美国 V2CROSS.COM
     type: vmess
-    server: vus2.0bad.com
+    server: 170.187.200.114
     port: 443
     uuid: 927094d3-d678-4763-8591-e240d0bcae87
     alterId: 0
@@ -72,40 +64,78 @@ proxies:
     network: ws
     ws-path: /chat
     ws-headers:
-      Host: vus2.0bad.com
+      Host: ''
     tls: true
+  - name: 美国 CloudFlare节点 - 4
+    type: vmess
+    server: hd.mamadcucu.com
+    port: 2052
+    uuid: 8ed9aec2-e02e-4a27-fe02-c3e20452e4c7
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: h4.mamadcucu.com
+  - name: 美国+加利福尼亚州洛杉矶Level3通信(DIA)
+    type: trojan
+    server: ap.stablize.top
+    port: '443'
+    password: 10f94506-9bf9-4dbb-9542-3ff13893b190
+  - name: 南非 V2CROSS.COM
+    type: vmess
+    server: 156.225.67.138
+    port: 48113
+    uuid: 964bf499-9ec0-4378-92b6-87d8d861b2d0
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 欧盟 V2CROSS.COM
-      - 美国 CloudFlare节点
       - 美国 DXC Technology
+      - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
-      - 美国 得克萨斯州
-      - 美国 加利福尼亚州费利蒙Linode数据中心
+      - 美国 CloudFlare节点 - 3
+      - 美国+Microsoft数据中心
+      - 美国 V2CROSS.COM
+      - 美国 CloudFlare节点 - 4
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
+      - 南非 V2CROSS.COM
   - name: 自动选择
     type: url-test
     proxies:
-      - 欧盟 V2CROSS.COM
-      - 美国 CloudFlare节点
       - 美国 DXC Technology
+      - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
-      - 美国 得克萨斯州
-      - 美国 加利福尼亚州费利蒙Linode数据中心
+      - 美国 CloudFlare节点 - 3
+      - 美国+Microsoft数据中心
+      - 美国 V2CROSS.COM
+      - 美国 CloudFlare节点 - 4
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
+      - 南非 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 欧盟 V2CROSS.COM
-      - 美国 CloudFlare节点
       - 美国 DXC Technology
+      - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
-      - 美国 得克萨斯州
-      - 美国 加利福尼亚州费利蒙Linode数据中心
+      - 美国 CloudFlare节点 - 3
+      - 美国+Microsoft数据中心
+      - 美国 V2CROSS.COM
+      - 美国 CloudFlare节点 - 4
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
+      - 南非 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
