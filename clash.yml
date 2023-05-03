@@ -1,80 +1,17 @@
 proxies:
   - name: 美国 CloudFlare节点
     type: vmess
-    server: 104.21.94.37
-    port: 443
-    uuid: 00BBF5B8-173E-6818-9927-5AD1AA073C7D
+    server: cf.noaries.de
+    port: 2082
+    uuid: 314c1387-618c-4689-97fc-4bc9a1ae5e05
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /speedtest
+    ws-path: /
     ws-headers:
-      Host: Kansas.v2ray.online
-    tls: true
+      Host: ir2.nmsl.ninja
   - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: v2ray.online
-    port: 443
-    uuid: 00BBF5B8-173E-6818-9927-5AD1AA073C7D
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /speedtest
-    ws-headers:
-      Host: Kansas.v2ray.online
-    tls: true
-  - name: 美国 CloudFlare节点 - 3
-    type: vmess
-    server: cdn.yuntujisu.ml
-    port: 2095
-    uuid: 3d50d828-4ec6-45aa-8465-710434a45e75
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: nanous.ytjs114514.ml
-  - name: 美国 CloudFlare节点 - 4
-    type: vmess
-    server: cf-lt.sharecentre.online
-    port: 8080
-    uuid: e2952737-6f10-492b-9813-19131deb71b1
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /api/v3/download.getFile
-    ws-headers:
-      Host: ssrsub.v01.ssrsub.com
-  - name: 美国 CloudFlare节点 - 5
-    type: vmess
-    server: aaaa.wxx.gay
-    port: 443
-    uuid: 651d6330-e902-11ed-aad0-000017022008
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /look
-    ws-headers:
-      Host: ''
-    tls: true
-  - name: 南非 V2CROSS.COM
-    type: vmess
-    server: 156.225.67.101
-    port: 49188
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国 CloudFlare节点 - 6
     type: vmess
     server: cf-lt.sharecentre.online
     port: 80
@@ -86,6 +23,56 @@ proxies:
     ws-path: /shirker
     ws-headers:
       Host: dp4.scproxy.top
+  - name: 美国 Merit网络公司
+    type: vmess
+    server: ssv3-iddoctor.cloud.okteto.net
+    port: 443
+    uuid: 4b6499a4-a112-43db-8e6c-704b982f0c83
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /vmess
+    ws-headers: {}
+    tls: true
+  - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: quiz.vidio.com
+    port: 443
+    uuid: 92869d41-a98a-40ba-b79d-2eeb7ffe2433
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /worryfree
+    ws-headers:
+      Host: dynamic-sg1b.obfs.xyz
+    tls: true
+  - name: 美国 加利福尼亚州洛杉矶Sharktech数据中心
+    type: vmess
+    server: 67.21.84.209
+    port: 36088
+    uuid: b9a305a9-1ff2-4ec1-b338-933555833baa
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: ''
+    ws-headers:
+      Host: ''
+  - name: 美国 加利福尼亚州洛杉矶Krypt数据中心
+    type: vmess
+    server: 174.139.126.251
+    port: 33547
+    uuid: 51695a30-3915-4b9e-9a7f-bc10b5033a41
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /us15/getData
+    ws-headers:
+      Host: us15.verichains.co
+    tls: true
 proxy-groups:
   - name: Free-servers
     type: select
@@ -94,21 +81,19 @@ proxy-groups:
       - 故障转移
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
+      - 美国 Merit网络公司
       - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
-      - 美国 CloudFlare节点 - 5
-      - 南非 V2CROSS.COM
-      - 美国 CloudFlare节点 - 6
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 美国 加利福尼亚州洛杉矶Krypt数据中心
   - name: 自动选择
     type: url-test
     proxies:
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
+      - 美国 Merit网络公司
       - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
-      - 美国 CloudFlare节点 - 5
-      - 南非 V2CROSS.COM
-      - 美国 CloudFlare节点 - 6
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 美国 加利福尼亚州洛杉矶Krypt数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
@@ -116,11 +101,10 @@ proxy-groups:
     proxies:
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
+      - 美国 Merit网络公司
       - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
-      - 美国 CloudFlare节点 - 5
-      - 南非 V2CROSS.COM
-      - 美国 CloudFlare节点 - 6
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 美国 加利福尼亚州洛杉矶Krypt数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
