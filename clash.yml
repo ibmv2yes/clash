@@ -1,31 +1,6 @@
 proxies:
   - name: 美国 CloudFlare节点
     type: vmess
-    server: hd.mamadcucu.com
-    port: 2052
-    uuid: 8ed9aec2-e02e-4a27-fe02-c3e20452e4c7
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: h4.mamadcucu.com
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: quiz.vidio.com
-    port: 443
-    uuid: 92869d41-a98a-40ba-b79d-2eeb7ffe2433
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /worryfree
-    ws-headers:
-      Host: dynamic-sg1b.obfs.xyz
-    tls: true
-  - name: 美国 CloudFlare节点 - 3
-    type: vmess
     server: cf-lt.sharecentre.online
     port: 80
     uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
@@ -35,31 +10,75 @@ proxies:
     network: ws
     ws-path: /shirker
     ws-headers:
-      Host: lv2.sharecentrepro.org
-  - name: 美国 CloudFlare节点 - 4
+      Host: dp4.scproxy.top
+  - name: 美国+加利福尼亚州洛杉矶Level3通信(DIA)
+    type: trojan
+    server: ap.stablize.top
+    port: '443'
+    password: 9478e27c-6bdd-4f0e-ba46-90d9739e1e34
+  - name: 马来西亚 V2CROSS.COM
     type: vmess
-    server: cf-lt.sharecentre.online
-    port: 8080
-    uuid: e2952737-6f10-492b-9813-19131deb71b1
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /api/v3/download.getFile
-    ws-headers:
-      Host: ssrsub.v03.ssrsub.com
-  - name: 美国 CloudFlare节点 - 5
-    type: vmess
-    server: cf.yxjnode.com
+    server: join-bede.vmessorg.fun
     port: 80
-    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
+    uuid: b91105c9-2061-40e6-9219-d04d5b4869d3
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /yxzbp
+    ws-path: /
     ws-headers:
-      Host: buyvm2.yxjnode.com
+      Host: ''
+  - name: 美国 Merit网络公司
+    type: vmess
+    server: ssv3-iddoctor.cloud.okteto.net
+    port: 443
+    uuid: 4b6499a4-a112-43db-8e6c-704b982f0c83
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /vmess
+    ws-headers: {}
+    tls: true
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: 170.187.200.114
+    port: 443
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /chat
+    ws-headers:
+      Host: ''
+    tls: true
+  - name: 印度尼西亚 V2CROSS.COM
+    type: vmess
+    server: free-id.ajunstores.me
+    port: 443
+    uuid: 694caa03-3b2f-476b-8b6c-711115a2c128
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /vmess
+    ws-headers:
+      Host: free-id.ajunstores.me
+    tls: true
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: 104.22.59.195
+    port: 443
+    uuid: a1560b52-b580-4aad-b8cd-9cd2ec5264b4
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /vmessws
+    ws-headers:
+      Host: 1.239000.xyz
+    tls: true
 proxy-groups:
   - name: Free-servers
     type: select
@@ -67,28 +86,34 @@ proxy-groups:
       - 自动选择
       - 故障转移
       - 美国 CloudFlare节点
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
+      - 马来西亚 V2CROSS.COM
+      - 美国 Merit网络公司
+      - 美国 V2CROSS.COM
+      - 印度尼西亚 V2CROSS.COM
       - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
-      - 美国 CloudFlare节点 - 5
   - name: 自动选择
     type: url-test
     proxies:
       - 美国 CloudFlare节点
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
+      - 马来西亚 V2CROSS.COM
+      - 美国 Merit网络公司
+      - 美国 V2CROSS.COM
+      - 印度尼西亚 V2CROSS.COM
       - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
-      - 美国 CloudFlare节点 - 5
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
       - 美国 CloudFlare节点
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
+      - 马来西亚 V2CROSS.COM
+      - 美国 Merit网络公司
+      - 美国 V2CROSS.COM
+      - 印度尼西亚 V2CROSS.COM
       - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
-      - 美国 CloudFlare节点 - 5
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
