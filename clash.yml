@@ -1,99 +1,34 @@
 proxies:
-  - name: 美国 CloudFlare节点
+  - name: 德国 V2CROSS.COM
     type: vmess
-    server: cf.yxjnode.com
-    port: 80
-    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
+    server: 92.223.30.8
+    port: 2087
+    uuid: 33d04ad6-c7da-3ba1-8941-3845978209a9
     alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /yxzbp
-    ws-headers:
-      Host: buyvm2.yxjnode.com
-  - name: 美国 加利福尼亚州洛杉矶Sharktech数据中心
-    type: vmess
-    server: 67.21.90.30
-    port: 42216
-    uuid: 28dd6c26-05a5-4bba-8a5d-052b70ac13b2
-    alterId: 64
     cipher: auto
     udp: true
     network: tcp
     ws-path: ''
-    ws-headers:
-      Host: ''
-  - name: 美国 V2CROSS.COM
-    type: vmess
-    server: 137.175.57.23
-    port: 53940
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 荷兰 V2CROSS.COM
-    type: vmess
-    server: 91.199.84.125
-    port: 80
-    uuid: 2cfc4c58-88cb-4e00-9977-ef0a37559a22
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers: {}
-  - name: 日本 东京BGP.NET数据中心
-    type: vmess
-    server: 27.124.45.119
-    port: 50002
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 日本+M247网络
-    type: ss
-    server: 185.172.113.182
-    port: '810'
-    cipher: chacha20-ietf-poly1305
-    password: G!yBwPWH3Vao
-  - name: 上海市 联通
-    type: vmess
-    server: 223.167.41.222
-    port: 63082
-    uuid: 55329786-3769-3d15-a552-ba42e4d8bae6
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: ''
-    ws-headers:
-      Host: hkt3-cdn.tencent.best
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: scaleway.696960.xyz
-    port: 443
-    uuid: e357cd63-f1a5-4c8e-c42e-26da11207fee
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /root/
     ws-headers:
       Host: ''
     tls: true
-  - name: 美国 Cloudinnovation数据中心
+  - name: 美国 CloudFlare节点
     type: vmess
-    server: 154.85.1.41
-    port: 44187
-    uuid: d3133484-f2bf-4b0c-8d38-f8e645b65687
+    server: cf-lt.sharecentre.online
+    port: 8080
+    uuid: e2952737-6f10-492b-9813-19131deb71b1
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /api/v3/download.getFile
+    ws-headers:
+      Host: ssrsub.v02.ssrsub.com
+  - name: 英国 社会保险安全部
+    type: vmess
+    server: 51.195.35.150
+    port: 30812
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
     udp: true
@@ -101,7 +36,7 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国 加利福尼亚州洛杉矶Sharktech数据中心 - 2
+  - name: 美国 加利福尼亚州洛杉矶Sharktech数据中心
     type: vmess
     server: 67.21.72.41
     port: 443
@@ -114,46 +49,27 @@ proxies:
     ws-headers:
       Host: www.17080100.xyz
     tls: true
-  - name: 美国 加利福尼亚州洛杉矶Sharktech数据中心 - 3
+  - name: 美国 V2CROSS.COM
     type: vmess
-    server: 64.32.20.95
-    port: 43339
-    uuid: c1bad9a6-1482-4941-a0c4-e85f3cbbcb5a
+    server: 137.175.57.23
+    port: 53940
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
     udp: true
     network: tcp
-    ws-path: ''
+    ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国 CloudFlare节点 - 3
+  - name: 日本+M247网络
+    type: ss
+    server: 185.172.113.182
+    port: '804'
+    cipher: chacha20-ietf-poly1305
+    password: G!yBwPWH3Vao
+  - name: 美国 CloudFlare节点 - 2
     type: vmess
-    server: 172.67.86.15
-    port: 443
-    uuid: 69165d37-2097-4637-a802-be1e3bd94701
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /qwer
-    ws-headers:
-      Host: mlj.vtcss.top
-    tls: true
-  - name: 巴西圣保罗 CloudFlare节点
-    type: vmess
-    server: 188.114.99.23
-    port: 80
-    uuid: 65487b86-e5ce-4166-9f39-b72909cb34ad
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /qwer00
-    ws-headers:
-      Host: yok01.vtcss.top
-  - name: 巴西圣保罗 CloudFlare节点 - 2
-    type: vmess
-    server: 188.114.97.71
+    server: 108.162.196.157
     port: 443
     uuid: 662f4e74-b075-4d85-d68d-61c51882429f
     alterId: 0
@@ -164,23 +80,11 @@ proxies:
     ws-headers:
       Host: yok01.vtcss.top
     tls: true
-  - name: 新加坡 Linode数据中心
+  - name: 荷兰 北荷兰省阿姆斯特丹Sharktech数据中心
     type: vmess
-    server: 139.162.63.139
-    port: 80
-    uuid: 869c698e-688e-4717-8f2f-3e40bf9275b4
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
-    type: vmess
-    server: 23.225.28.186
-    port: 50034
-    uuid: 2278efe4-ad0c-47ce-9480-068608368d76
+    server: 45.58.186.81
+    port: 51140
+    uuid: 4a138e19-0595-4d51-83c6-fd276cf7d307
     alterId: 64
     cipher: auto
     udp: true
@@ -188,98 +92,130 @@ proxies:
     ws-path: ''
     ws-headers:
       Host: ''
-  - name: 广东省深圳市 电信
+  - name: 俄罗斯 V2CROSS.COM
     type: vmess
-    server: 14.116.151.100
-    port: 63093
-    uuid: 311f3c4b-90a1-3c5c-a4fe-215cc7c90d02
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-headers: {}
-    tls: true
-  - name: 美国 CloudFlare节点 - 4
-    type: vmess
-    server: www.udemy.com
+    server: 185.143.220.25
     port: 443
-    uuid: 92869d41-a98a-40ba-b79d-2eeb7ffe2433
+    uuid: f28e354e-c2d1-4983-9b07-5acaf1b3b3e5
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /worryfree
+    ws-path: /6e9EtZ2dL
     ws-headers:
-      Host: dynamic-sg1b.obfs.xyz
+      Host: ''
     tls: true
+  - name: 荷兰 V2CROSS.COM
+    type: vmess
+    server: 91.199.84.125
+    port: 80
+    uuid: 2cfc4c58-88cb-4e00-9977-ef0a37559a22
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers: {}
+  - name: 美国弗吉尼亚州阿什本 CloudFlare节点
+    type: vmess
+    server: 173.245.49.206
+    port: 443
+    uuid: 69165d37-2097-4637-a802-be1e3bd94701
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /qwer
+    ws-headers:
+      Host: mlj.vtcss.top
+    tls: true
+  - name: 日本+M247网络 - 2
+    type: ss
+    server: 185.172.113.182
+    port: '811'
+    cipher: chacha20-ietf-poly1305
+    password: G!yBwPWH3Vao
+  - name: 美国 V2CROSS.COM - 2
+    type: vmess
+    server: 170.187.200.114
+    port: 443
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /chat
+    ws-headers:
+      Host: ''
+    tls: true
+  - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: 198.41.196.202
+    port: 80
+    uuid: 65487b86-e5ce-4166-9f39-b72909cb34ad
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /qwer00
+    ws-headers:
+      Host: yok01.vtcss.top
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
+      - 德国 V2CROSS.COM
       - 美国 CloudFlare节点
+      - 英国 社会保险安全部
       - 美国 加利福尼亚州洛杉矶Sharktech数据中心
       - 美国 V2CROSS.COM
-      - 荷兰 V2CROSS.COM
-      - 日本 东京BGP.NET数据中心
       - 日本+M247网络
-      - 上海市 联通
       - 美国 CloudFlare节点 - 2
-      - 美国 Cloudinnovation数据中心
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心 - 2
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心 - 3
+      - 荷兰 北荷兰省阿姆斯特丹Sharktech数据中心
+      - 俄罗斯 V2CROSS.COM
+      - 荷兰 V2CROSS.COM
+      - 美国弗吉尼亚州阿什本 CloudFlare节点
+      - 日本+M247网络 - 2
+      - 美国 V2CROSS.COM - 2
       - 美国 CloudFlare节点 - 3
-      - 巴西圣保罗 CloudFlare节点
-      - 巴西圣保罗 CloudFlare节点 - 2
-      - 新加坡 Linode数据中心
-      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
-      - 广东省深圳市 电信
-      - 美国 CloudFlare节点 - 4
   - name: 自动选择
     type: url-test
     proxies:
+      - 德国 V2CROSS.COM
       - 美国 CloudFlare节点
+      - 英国 社会保险安全部
       - 美国 加利福尼亚州洛杉矶Sharktech数据中心
       - 美国 V2CROSS.COM
-      - 荷兰 V2CROSS.COM
-      - 日本 东京BGP.NET数据中心
       - 日本+M247网络
-      - 上海市 联通
       - 美国 CloudFlare节点 - 2
-      - 美国 Cloudinnovation数据中心
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心 - 2
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心 - 3
+      - 荷兰 北荷兰省阿姆斯特丹Sharktech数据中心
+      - 俄罗斯 V2CROSS.COM
+      - 荷兰 V2CROSS.COM
+      - 美国弗吉尼亚州阿什本 CloudFlare节点
+      - 日本+M247网络 - 2
+      - 美国 V2CROSS.COM - 2
       - 美国 CloudFlare节点 - 3
-      - 巴西圣保罗 CloudFlare节点
-      - 巴西圣保罗 CloudFlare节点 - 2
-      - 新加坡 Linode数据中心
-      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
-      - 广东省深圳市 电信
-      - 美国 CloudFlare节点 - 4
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
+      - 德国 V2CROSS.COM
       - 美国 CloudFlare节点
+      - 英国 社会保险安全部
       - 美国 加利福尼亚州洛杉矶Sharktech数据中心
       - 美国 V2CROSS.COM
-      - 荷兰 V2CROSS.COM
-      - 日本 东京BGP.NET数据中心
       - 日本+M247网络
-      - 上海市 联通
       - 美国 CloudFlare节点 - 2
-      - 美国 Cloudinnovation数据中心
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心 - 2
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心 - 3
+      - 荷兰 北荷兰省阿姆斯特丹Sharktech数据中心
+      - 俄罗斯 V2CROSS.COM
+      - 荷兰 V2CROSS.COM
+      - 美国弗吉尼亚州阿什本 CloudFlare节点
+      - 日本+M247网络 - 2
+      - 美国 V2CROSS.COM - 2
       - 美国 CloudFlare节点 - 3
-      - 巴西圣保罗 CloudFlare节点
-      - 巴西圣保罗 CloudFlare节点 - 2
-      - 新加坡 Linode数据中心
-      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
-      - 广东省深圳市 电信
-      - 美国 CloudFlare节点 - 4
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
