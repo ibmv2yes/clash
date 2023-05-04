@@ -1,15 +1,16 @@
 proxies:
-  - name: 广东省深圳市 电信
+  - name: 美国 Cloudinnovation数据中心
     type: vmess
-    server: 14.116.151.100
-    port: 63090
-    uuid: 311f3c4b-90a1-3c5c-a4fe-215cc7c90d02
-    alterId: 0
+    server: 154.85.0.242
+    port: 45362
+    uuid: 6e79eea4-5f72-4683-ad0e-5339f013421b
+    alterId: 64
     cipher: auto
     udp: true
     network: tcp
-    ws-headers: {}
-    tls: true
+    ws-path: /
+    ws-headers:
+      Host: ''
   - name: 印度尼西亚 V2CROSS.COM
     type: vmess
     server: free-id.ajunstores.me
@@ -20,46 +21,87 @@ proxies:
     udp: true
     network: ws
     ws-path: /vmess
-    ws-headers:
-      Host: free-id.ajunstores.me
+    ws-headers: {}
     tls: true
   - name: 美国 CloudFlare节点
     type: vmess
-    server: scaleway.696960.xyz
-    port: 443
-    uuid: e357cd63-f1a5-4c8e-c42e-26da11207fee
+    server: hd.mamadcucu.com
+    port: 2052
+    uuid: 8ed9aec2-e02e-4a27-fe02-c3e20452e4c7
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /root/
+    ws-path: /
+    ws-headers:
+      Host: h4.mamadcucu.com
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: cf-lt.sharecentre.online
+    port: 8080
+    uuid: e2952737-6f10-492b-9813-19131deb71b1
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /api/v3/download.getFile
+    ws-headers:
+      Host: ssrsub.v03.ssrsub.com
+  - name: 美国+加利福尼亚州卡宁康特利Multacom公司
+    type: trojan
+    server: cc.tross.top
+    port: '60528'
+    password: sfgdg225v5ddfs
+  - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: cdnjs.com
+    port: 443
+    uuid: B6076D16-1F56-4D56-80E7-1B45FEE195E9
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /speedtest
+    ws-headers:
+      Host: Kansas.kotick.site
+    tls: true
+  - name: 美国 CloudFlare节点 - 4
+    type: vmess
+    server: cf-lt.sharecentre.online
+    port: 80
+    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /shirker
+    ws-headers:
+      Host: dp4.scproxy.top
+  - name: 俄罗斯 V2CROSS.COM
+    type: vmess
+    server: 185.143.220.25
+    port: 443
+    uuid: f28e354e-c2d1-4983-9b07-5acaf1b3b3e5
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /6e9EtZ2dL
     ws-headers:
       Host: ''
     tls: true
-  - name: 上海市 联通
+  - name: 俄罗斯 V2CROSS.COM - 2
     type: vmess
-    server: 223.167.41.222
-    port: 63082
-    uuid: 55329786-3769-3d15-a552-ba42e4d8bae6
+    server: 185.143.220.25
+    port: 443
+    uuid: f28e354e-c2d1-4983-9b07-5acaf1b3b3e5
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: ''
+    ws-path: /6e9EtZ2dL
     ws-headers:
-      Host: hkt3-cdn.tencent.best
-  - name: 上海市 联通 - 2
-    type: vmess
-    server: 223.167.41.41
-    port: 63088
-    uuid: 311f3c4b-90a1-3c5c-a4fe-215cc7c90d02
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /mugua
-    ws-headers:
-      Host: tw-load-balancer.myn1des.com
+      Host: ''
     tls: true
 proxy-groups:
   - name: Free-servers
@@ -67,29 +109,41 @@ proxy-groups:
     proxies:
       - 自动选择
       - 故障转移
-      - 广东省深圳市 电信
+      - 美国 Cloudinnovation数据中心
       - 印度尼西亚 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 上海市 联通
-      - 上海市 联通 - 2
+      - 美国 CloudFlare节点 - 2
+      - 美国+加利福尼亚州卡宁康特利Multacom公司
+      - 美国 CloudFlare节点 - 3
+      - 美国 CloudFlare节点 - 4
+      - 俄罗斯 V2CROSS.COM
+      - 俄罗斯 V2CROSS.COM - 2
   - name: 自动选择
     type: url-test
     proxies:
-      - 广东省深圳市 电信
+      - 美国 Cloudinnovation数据中心
       - 印度尼西亚 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 上海市 联通
-      - 上海市 联通 - 2
+      - 美国 CloudFlare节点 - 2
+      - 美国+加利福尼亚州卡宁康特利Multacom公司
+      - 美国 CloudFlare节点 - 3
+      - 美国 CloudFlare节点 - 4
+      - 俄罗斯 V2CROSS.COM
+      - 俄罗斯 V2CROSS.COM - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 广东省深圳市 电信
+      - 美国 Cloudinnovation数据中心
       - 印度尼西亚 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 上海市 联通
-      - 上海市 联通 - 2
+      - 美国 CloudFlare节点 - 2
+      - 美国+加利福尼亚州卡宁康特利Multacom公司
+      - 美国 CloudFlare节点 - 3
+      - 美国 CloudFlare节点 - 4
+      - 俄罗斯 V2CROSS.COM
+      - 俄罗斯 V2CROSS.COM - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
