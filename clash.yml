@@ -1,77 +1,60 @@
 proxies:
-  - name: 俄罗斯 V2CROSS.COM
+  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
     type: vmess
-    server: 185.143.220.25
-    port: 443
-    uuid: f28e354e-c2d1-4983-9b07-5acaf1b3b3e5
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /6e9EtZ2dL
-    ws-headers:
-      Host: ''
-    tls: true
-  - name: 新加坡+Amazon数据中心
-    type: trojan
-    server: 18.141.206.28
-    port: 51118?sni=sg1.hneko.online
-    password: a1b5ee2e-1e69-451c-b5dd-7c6c577a4bcc
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: cf.yxjnode.com
-    port: 80
-    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /yxzbp
-    ws-headers:
-      Host: buyvm2.yxjnode.com
-  - name: 日本 东京PEG TECH
-    type: vmess
-    server: 104.233.191.182
-    port: 443
+    server: 192.74.243.41
+    port: 49206
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
     udp: true
-    network: ws
-    ws-path: /path/031730091420
-    ws-headers:
-      Host: ''
-    tls: true
-  - name: 澳大利亚 Lyndhurst Secondary College
-    type: vmess
-    server: 203.30.188.100
-    port: 8880
-    uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
+    network: tcp
     ws-path: /
     ws-headers:
-      Host: lg.trump2023.net
-  - name: 美国 CloudFlare节点 - 2
+      Host: ''
+  - name: 美国 CloudFlare节点
     type: vmess
-    server: Kansas.kotick.site
-    port: 443
-    uuid: 29408F66-9AC8-4176-A314-4FF16A29B658
+    server: 172.67.65.43
+    port: 2053
+    uuid: d6616014-a47e-4040-8286-34a2207c5b7c
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /speedtest
+    ws-path: /10029
+    ws-headers:
+      Host: b.v2ray2333.tk
+    tls: true
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: aaaa.wxx.gay
+    port: 443
+    uuid: 252b65c2-ea30-11ed-bee2-000017022008
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /look
     ws-headers:
       Host: ''
     tls: true
-  - name: 美国 加利福尼亚州圣何塞PEG TECH
+  - name: 美国 CloudFlare节点 - 3
     type: vmess
-    server: 142.4.112.19
-    port: 51091
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    server: aaaa.wxx.gay
+    port: 443
+    uuid: 252b65c2-ea30-11ed-bee2-000017022008
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /look
+    ws-headers:
+      Host: ''
+    tls: true
+  - name: 南非 V2CROSS.COM
+    type: vmess
+    server: 156.225.67.143
+    port: 55281
+    uuid: 990006bd-cb20-482f-9c97-f5fc65359605
     alterId: 64
     cipher: auto
     udp: true
@@ -85,35 +68,29 @@ proxy-groups:
     proxies:
       - 自动选择
       - 故障转移
-      - 俄罗斯 V2CROSS.COM
-      - 新加坡+Amazon数据中心
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
       - 美国 CloudFlare节点
-      - 日本 东京PEG TECH
-      - 澳大利亚 Lyndhurst Secondary College
       - 美国 CloudFlare节点 - 2
-      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国 CloudFlare节点 - 3
+      - 南非 V2CROSS.COM
   - name: 自动选择
     type: url-test
     proxies:
-      - 俄罗斯 V2CROSS.COM
-      - 新加坡+Amazon数据中心
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
       - 美国 CloudFlare节点
-      - 日本 东京PEG TECH
-      - 澳大利亚 Lyndhurst Secondary College
       - 美国 CloudFlare节点 - 2
-      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国 CloudFlare节点 - 3
+      - 南非 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 俄罗斯 V2CROSS.COM
-      - 新加坡+Amazon数据中心
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
       - 美国 CloudFlare节点
-      - 日本 东京PEG TECH
-      - 澳大利亚 Lyndhurst Secondary College
       - 美国 CloudFlare节点 - 2
-      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国 CloudFlare节点 - 3
+      - 南非 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
