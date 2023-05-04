@@ -1,5 +1,85 @@
 proxies:
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: 172.67.156.138
+    port: 443
+    uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /speedtest
+    ws-headers:
+      Host: Kansas.kotick.site
+    tls: true
+  - name: 日本+M247网络
+    type: ss
+    server: 185.172.113.182
+    port: '804'
+    cipher: chacha20-ietf-poly1305
+    password: G!yBwPWH3Vao
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: inf.314156.xyz
+    port: 443
+    uuid: 5b3b5d3f-68a1-4afe-8a9e-a55f30af98e3
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /workerConfig
+    ws-headers: {}
+    tls: true
   - name: 美国 V2CROSS.COM
+    type: vmess
+    server: 137.175.15.246
+    port: 45232
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 加利福尼亚州圣何塞PEG TECH
+    type: vmess
+    server: 142.4.100.35
+    port: 45409
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: cdnjs.com
+    port: 443
+    uuid: B6076D16-1F56-4D56-80E7-1B45FEE195E9
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /speedtest
+    ws-headers:
+      Host: Kansas.kotick.site
+    tls: true
+  - name: 美国 CloudFlare节点 - 4
+    type: vmess
+    server: cf-lt.sharecentre.online
+    port: 8080
+    uuid: e2952737-6f10-492b-9813-19131deb71b1
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /api/v3/download.getFile
+    ws-headers:
+      Host: ssrsub.v03.ssrsub.com
+  - name: 美国 V2CROSS.COM - 2
     type: vmess
     server: 137.175.9.194
     port: 57402
@@ -11,61 +91,36 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国 V2CROSS.COM - 2
+  - name: 美国 CloudFlare节点 - 5
     type: vmess
-    server: 170.187.200.114
-    port: 443
-    uuid: 927094d3-d678-4763-8591-e240d0bcae87
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /chat
-    ws-headers:
-      Host: ''
-    tls: true
-  - name: 美国 V2CROSS.COM - 3
-    type: vmess
-    server: 170.187.200.114
-    port: 443
-    uuid: 927094d3-d678-4763-8591-e240d0bcae87
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /chat
-    ws-headers:
-      Host: ''
-    tls: true
-  - name: 日本 东京Linode数据中心
-    type: vmess
-    server: v13.jiedian.stream
-    port: 80
-    uuid: faa80861-9c79-4e63-875d-1b906f5383e6
+    server: hd.mamadcucu.com
+    port: 2095
+    uuid: 19350d64-6868-4a64-e501-9c0df903d788
     alterId: 0
     cipher: auto
     udp: true
     network: ws
     ws-path: /
     ws-headers:
-      Host: gw.alicdn.com
-  - name: 美国+V2CROSS.COM
-    type: trojan
-    server: dm.ddiantao.com
-    port: '443'
-    password: 402d12bf-775a-4dba-9e41-81ed6aa03400
-  - name: 美国 CloudFlare节点
+      Host: h3.mamadcucu.com
+  - name: 日本+M247网络 - 2
+    type: ss
+    server: 185.172.113.182
+    port: '800'
+    cipher: chacha20-ietf-poly1305
+    password: G!yBwPWH3Vao
+  - name: 美国 CloudFlare节点 - 6
     type: vmess
-    server: v2-ca1.silverdragon.cn
+    server: 172.66.46.15
     port: 443
-    uuid: e790e3bf-c553-40ed-b2b6-436afd3f5f5c
+    uuid: 12612e87-8003-44a8-b4e8-ec4a325e9016
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /ca/v2wss
+    ws-path: /ou
     ws-headers:
-      Host: v2-ca1.silverdragon.cn
+      Host: z.zorro.tk
     tls: true
 proxy-groups:
   - name: Free-servers
@@ -73,32 +128,47 @@ proxy-groups:
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 V2CROSS.COM
-      - 美国 V2CROSS.COM - 2
-      - 美国 V2CROSS.COM - 3
-      - 日本 东京Linode数据中心
-      - 美国+V2CROSS.COM
       - 美国 CloudFlare节点
+      - 日本+M247网络
+      - 美国 CloudFlare节点 - 2
+      - 美国 V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国 CloudFlare节点 - 3
+      - 美国 CloudFlare节点 - 4
+      - 美国 V2CROSS.COM - 2
+      - 美国 CloudFlare节点 - 5
+      - 日本+M247网络 - 2
+      - 美国 CloudFlare节点 - 6
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 V2CROSS.COM
-      - 美国 V2CROSS.COM - 2
-      - 美国 V2CROSS.COM - 3
-      - 日本 东京Linode数据中心
-      - 美国+V2CROSS.COM
       - 美国 CloudFlare节点
+      - 日本+M247网络
+      - 美国 CloudFlare节点 - 2
+      - 美国 V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国 CloudFlare节点 - 3
+      - 美国 CloudFlare节点 - 4
+      - 美国 V2CROSS.COM - 2
+      - 美国 CloudFlare节点 - 5
+      - 日本+M247网络 - 2
+      - 美国 CloudFlare节点 - 6
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 V2CROSS.COM
-      - 美国 V2CROSS.COM - 2
-      - 美国 V2CROSS.COM - 3
-      - 日本 东京Linode数据中心
-      - 美国+V2CROSS.COM
       - 美国 CloudFlare节点
+      - 日本+M247网络
+      - 美国 CloudFlare节点 - 2
+      - 美国 V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国 CloudFlare节点 - 3
+      - 美国 CloudFlare节点 - 4
+      - 美国 V2CROSS.COM - 2
+      - 美国 CloudFlare节点 - 5
+      - 日本+M247网络 - 2
+      - 美国 CloudFlare节点 - 6
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
