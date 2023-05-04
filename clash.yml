@@ -1,26 +1,13 @@
 proxies:
-  - name: 美国 CloudFlare节点
+  - name: 广东省深圳市 电信
     type: vmess
-    server: cf.yxjnode.com
-    port: 80
-    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
+    server: 14.116.151.100
+    port: 63090
+    uuid: 311f3c4b-90a1-3c5c-a4fe-215cc7c90d02
     alterId: 0
     cipher: auto
     udp: true
-    network: ws
-    ws-path: /yxzbp
-    ws-headers:
-      Host: buyvm2.yxjnode.com
-  - name: 美国 V2CROSS.COM
-    type: vmess
-    server: vde2.0bad.com
-    port: 443
-    uuid: 927094d3-d678-4763-8591-e240d0bcae87
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /chat
+    network: tcp
     ws-headers: {}
     tls: true
   - name: 印度尼西亚 V2CROSS.COM
@@ -33,55 +20,76 @@ proxies:
     udp: true
     network: ws
     ws-path: /vmess
-    ws-headers: {}
+    ws-headers:
+      Host: free-id.ajunstores.me
     tls: true
-  - name: 美国 加利福尼亚州费利蒙Linode数据中心
+  - name: 美国 CloudFlare节点
     type: vmess
-    server: vus3.0bad.com
+    server: scaleway.696960.xyz
     port: 443
-    uuid: 927094d3-d678-4763-8591-e240d0bcae87
+    uuid: e357cd63-f1a5-4c8e-c42e-26da11207fee
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /chat
+    ws-path: /root/
     ws-headers:
-      Host: vus3.0bad.com
+      Host: ''
     tls: true
-  - name: 美国+V2CROSS.COM
-    type: trojan
-    server: dm.ddiantao.com
-    port: '443'
-    password: 402d12bf-775a-4dba-9e41-81ed6aa03400
+  - name: 上海市 联通
+    type: vmess
+    server: 223.167.41.222
+    port: 63082
+    uuid: 55329786-3769-3d15-a552-ba42e4d8bae6
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: ''
+    ws-headers:
+      Host: hkt3-cdn.tencent.best
+  - name: 上海市 联通 - 2
+    type: vmess
+    server: 223.167.41.41
+    port: 63088
+    uuid: 311f3c4b-90a1-3c5c-a4fe-215cc7c90d02
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /mugua
+    ws-headers:
+      Host: tw-load-balancer.myn1des.com
+    tls: true
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 CloudFlare节点
-      - 美国 V2CROSS.COM
+      - 广东省深圳市 电信
       - 印度尼西亚 V2CROSS.COM
-      - 美国 加利福尼亚州费利蒙Linode数据中心
-      - 美国+V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 上海市 联通
+      - 上海市 联通 - 2
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 CloudFlare节点
-      - 美国 V2CROSS.COM
+      - 广东省深圳市 电信
       - 印度尼西亚 V2CROSS.COM
-      - 美国 加利福尼亚州费利蒙Linode数据中心
-      - 美国+V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 上海市 联通
+      - 上海市 联通 - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 CloudFlare节点
-      - 美国 V2CROSS.COM
+      - 广东省深圳市 电信
       - 印度尼西亚 V2CROSS.COM
-      - 美国 加利福尼亚州费利蒙Linode数据中心
-      - 美国+V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 上海市 联通
+      - 上海市 联通 - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
