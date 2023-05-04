@@ -1,28 +1,9 @@
 proxies:
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: 172.67.204.32
-    port: 2086
-    uuid: 33d04ad6-c7da-3ba1-8941-3845978209a9
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: uk01-cdn.airport-v2.com
-  - name: 美国 V2CROSS.COM
-    type: vmess
-    server: 143.42.99.183
-    port: 443
-    uuid: 927094d3-d678-4763-8591-e240d0bcae87
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /chat
-    ws-headers: {}
-    tls: true
+  - name: 澳大利亚+悉尼Oracle云计算数据中心
+    type: trojan
+    server: wangqifei.tk
+    port: 59973?type=tcp&sni=wangqifei.tk&allowInsecure=1
+    password: S1k6yPgFhc
   - name: 美国 加利福尼亚州洛杉矶ColoCrossing数据中心
     type: vmess
     server: yangandhuan.top
@@ -35,7 +16,32 @@ proxies:
     ws-path: /54321
     ws-headers:
       Host: yangandhuan.top
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: 172.67.93.208
+    port: 80
+    uuid: 65487b86-e5ce-4166-9f39-b72909cb34ad
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /qwer01
+    ws-headers:
+      Host: tok.vtcss.top
   - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: new6.huvicloud.com
+    port: 443
+    uuid: a11ca760-9ef9-4a63-95c9-4c5c32d56251
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /huvi
+    ws-headers:
+      Host: ''
+    tls: true
+  - name: 美国 CloudFlare节点 - 3
     type: vmess
     server: cf-lt.sharecentre.online
     port: 8080
@@ -46,63 +52,36 @@ proxies:
     network: ws
     ws-path: /api/v3/download.getFile
     ws-headers:
-      Host: ssrsub.v02.ssrsub.com
-  - name: 美国 CloudFlare节点 - 3
-    type: vmess
-    server: inf.314156.xyz
-    port: 80
-    uuid: 5b3b5d3f-68a1-4afe-8a9e-a55f30af98e3
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /workerConfig
-    ws-headers:
-      Host: inf.314156.xyz
-  - name: 美国 CloudFlare节点 - 4
-    type: vmess
-    server: cf.yxjnode.com
-    port: 80
-    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /yxzbp
-    ws-headers:
-      Host: buyvm2.yxjnode.com
+      Host: ssrsub.v01.ssrsub.com
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 CloudFlare节点
-      - 美国 V2CROSS.COM
+      - 澳大利亚+悉尼Oracle云计算数据中心
       - 美国 加利福尼亚州洛杉矶ColoCrossing数据中心
+      - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
       - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 CloudFlare节点
-      - 美国 V2CROSS.COM
+      - 澳大利亚+悉尼Oracle云计算数据中心
       - 美国 加利福尼亚州洛杉矶ColoCrossing数据中心
+      - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
       - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 CloudFlare节点
-      - 美国 V2CROSS.COM
+      - 澳大利亚+悉尼Oracle云计算数据中心
       - 美国 加利福尼亚州洛杉矶ColoCrossing数据中心
+      - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
       - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
