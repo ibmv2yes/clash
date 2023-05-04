@@ -1,64 +1,7 @@
 proxies:
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: 104.22.59.195
-    port: 443
-    uuid: a1560b52-b580-4aad-b8cd-9cd2ec5264b4
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /vmessws
-    ws-headers:
-      Host: 1.239000.xyz
-    tls: true
-  - name: 印度尼西亚 V2CROSS.COM
-    type: vmess
-    server: free-id.ajunstores.me
-    port: 443
-    uuid: 694caa03-3b2f-476b-8b6c-711115a2c128
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /vmess
-    ws-headers:
-      Host: free-id.ajunstores.me
-    tls: true
-  - name: 印度尼西亚 V2CROSS.COM - 2
-    type: vmess
-    server: free-id.ajunstores.me
-    port: 443
-    uuid: 694caa03-3b2f-476b-8b6c-711115a2c128
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /vmess
-    ws-headers: {}
-    tls: true
   - name: 上海市 联通
     type: vmess
-    server: 223.167.41.222
-    port: 63078
-    uuid: 55329786-3769-3d15-a552-ba42e4d8bae6
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: ''
-    ws-headers:
-      Host: hk-balancer.airport-v2.com
-    tls: true
-  - name: 日本+M247网络
-    type: ss
-    server: 185.172.113.182
-    port: '810'
-    cipher: chacha20-ietf-poly1305
-    password: G!yBwPWH3Vao
-  - name: 上海市 联通 - 2
-    type: vmess
-    server: 223.167.41.202
+    server: 223.167.41.41
     port: 63078
     uuid: 33d04ad6-c7da-3ba1-8941-3845978209a9
     alterId: 0
@@ -69,82 +12,94 @@ proxies:
     ws-headers:
       Host: hk-balancer.airport-v2.com
     tls: true
-  - name: 广东省深圳市 电信
+  - name: 美国 V2CROSS.COM
     type: vmess
-    server: 14.116.151.100
-    port: 63093
-    uuid: 311f3c4b-90a1-3c5c-a4fe-215cc7c90d02
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-headers: {}
-    tls: true
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: cf-lt.sharecentre.online
-    port: 80
-    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
+    server: 170.187.200.114
+    port: 443
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /shirker
-    ws-headers:
-      Host: dp3.scproxy.top
-  - name: 美国加利福尼亚州洛杉矶 PetaExpress
-    type: vmess
-    server: 198.2.204.251
-    port: 46802
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
+    ws-path: /chat
     ws-headers:
       Host: ''
+    tls: true
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: inf.314156.xyz
+    port: 80
+    uuid: 5b3b5d3f-68a1-4afe-8a9e-a55f30af98e3
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /workerConfig
+    ws-headers:
+      Host: inf.314156.xyz
+  - name: 日本+M247网络
+    type: ss
+    server: 185.172.113.182
+    port: '811'
+    cipher: chacha20-ietf-poly1305
+    password: G!yBwPWH3Vao
+  - name: 美国+加利福尼亚州卡宁康特利Multacom公司
+    type: trojan
+    server: cc.tross.top
+    port: '60528'
+    password: sfgdg225v5ddfs
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: cf.yxjnode.com
+    port: 80
+    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /yxzbp
+    ws-headers:
+      Host: buyvm2.yxjnode.com
+  - name: 广东省揭阳市+移动
+    type: trojan
+    server: frontend.yijianlian.app
+    port: 54590?allowInsecure=1&tfo=1
+    password: b5e4e360-5946-470b-aad0-db98f50faa57
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 CloudFlare节点
-      - 印度尼西亚 V2CROSS.COM
-      - 印度尼西亚 V2CROSS.COM - 2
       - 上海市 联通
+      - 美国 V2CROSS.COM
+      - 美国 CloudFlare节点
       - 日本+M247网络
-      - 上海市 联通 - 2
-      - 广东省深圳市 电信
+      - 美国+加利福尼亚州卡宁康特利Multacom公司
       - 美国 CloudFlare节点 - 2
-      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 广东省揭阳市+移动
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 CloudFlare节点
-      - 印度尼西亚 V2CROSS.COM
-      - 印度尼西亚 V2CROSS.COM - 2
       - 上海市 联通
+      - 美国 V2CROSS.COM
+      - 美国 CloudFlare节点
       - 日本+M247网络
-      - 上海市 联通 - 2
-      - 广东省深圳市 电信
+      - 美国+加利福尼亚州卡宁康特利Multacom公司
       - 美国 CloudFlare节点 - 2
-      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 广东省揭阳市+移动
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 CloudFlare节点
-      - 印度尼西亚 V2CROSS.COM
-      - 印度尼西亚 V2CROSS.COM - 2
       - 上海市 联通
+      - 美国 V2CROSS.COM
+      - 美国 CloudFlare节点
       - 日本+M247网络
-      - 上海市 联通 - 2
-      - 广东省深圳市 电信
+      - 美国+加利福尼亚州卡宁康特利Multacom公司
       - 美国 CloudFlare节点 - 2
-      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 广东省揭阳市+移动
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
