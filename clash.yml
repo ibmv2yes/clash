@@ -1,72 +1,94 @@
 proxies:
-  - name: 美国 V2CROSS.COM
+  - name: 韩国 首尔Amazon数据中心
     type: vmess
-    server: vde2.0bad.com
-    port: 443
-    uuid: 927094d3-d678-4763-8591-e240d0bcae87
+    server: 00000000000000000000000008.node-for-smallairport.win
+    port: 1521
+    uuid: 132da563-3590-4203-9d93-cb3b52a4b51b
     alterId: 0
     cipher: auto
     udp: true
-    network: ws
-    ws-path: /chat
+    network: tcp
     ws-headers: {}
-    tls: true
-  - name: 日本东京+xTom%2FAS23959
-    type: trojan
-    server: vir.troaa.top
-    port: '53559'
-    password: e3c70763-89cf-4267-831d-61a98467c6dc
   - name: 美国 CloudFlare节点
     type: vmess
-    server: cf-lt.sharecentre.online
-    port: 80
-    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
+    server: quiz.vidio.com
+    port: 443
+    uuid: 92869d41-a98a-40ba-b79d-2eeb7ffe2433
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /shirker
+    ws-path: /worryfree
     ws-headers:
-      Host: dp4.scproxy.top
-  - name: 美国+得克萨斯州
-    type: trojan
-    server: clash.ktq.ltd
-    port: 443?type=tcp&sni=clash.ktq.ltd&allowInsecure=1
-    password: xiemo59444880
-  - name: 美国+Microsoft公司
-    type: trojan
-    server: azrb.untilmu.com
-    port: 16627?type=tcp&sni=azrb.untilmu.com&allowInsecure=1
-    password: 9464c92d-56d0-437e-8c6e-eaa6a767abbc
+      Host: dynamic-sg1b.obfs.xyz
+    tls: true
+  - name: 俄罗斯 V2CROSS.COM
+    type: vmess
+    server: 185.143.220.25
+    port: 443
+    uuid: f28e354e-c2d1-4983-9b07-5acaf1b3b3e5
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /6e9EtZ2dL
+    ws-headers:
+      Host: ''
+    tls: true
+  - name: 美国 加利福尼亚州圣何塞ColoCrossing数据中心
+    type: vmess
+    server: rn.blowm1k.club
+    port: 443
+    uuid: 3af44882-71a3-4ad3-9ff2-508eb47cdf2c
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /233blog
+    ws-headers: {}
+    tls: true
+  - name: 印度尼西亚 V2CROSS.COM
+    type: vmess
+    server: free-id.ajunstores.me
+    port: 443
+    uuid: 694caa03-3b2f-476b-8b6c-711115a2c128
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /vmess
+    ws-headers:
+      Host: free-id.ajunstores.me
+    tls: true
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 V2CROSS.COM
-      - 日本东京+xTom%2FAS23959
+      - 韩国 首尔Amazon数据中心
       - 美国 CloudFlare节点
-      - 美国+得克萨斯州
-      - 美国+Microsoft公司
+      - 俄罗斯 V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞ColoCrossing数据中心
+      - 印度尼西亚 V2CROSS.COM
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 V2CROSS.COM
-      - 日本东京+xTom%2FAS23959
+      - 韩国 首尔Amazon数据中心
       - 美国 CloudFlare节点
-      - 美国+得克萨斯州
-      - 美国+Microsoft公司
+      - 俄罗斯 V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞ColoCrossing数据中心
+      - 印度尼西亚 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 V2CROSS.COM
-      - 日本东京+xTom%2FAS23959
+      - 韩国 首尔Amazon数据中心
       - 美国 CloudFlare节点
-      - 美国+得克萨斯州
-      - 美国+Microsoft公司
+      - 俄罗斯 V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞ColoCrossing数据中心
+      - 印度尼西亚 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
