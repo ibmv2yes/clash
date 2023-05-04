@@ -1,52 +1,14 @@
 proxies:
-  - name: 韩国 首尔Amazon数据中心
+  - name: 美国 加利福尼亚州洛杉矶PetaExpress
     type: vmess
-    server: 00000000000000000000000008.node-for-smallairport.win
-    port: 1521
-    uuid: 132da563-3590-4203-9d93-cb3b52a4b51b
-    alterId: 0
+    server: 107.148.5.161
+    port: 53002
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
     cipher: auto
     udp: true
     network: tcp
     ws-headers: {}
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: quiz.vidio.com
-    port: 443
-    uuid: 92869d41-a98a-40ba-b79d-2eeb7ffe2433
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /worryfree
-    ws-headers:
-      Host: dynamic-sg1b.obfs.xyz
-    tls: true
-  - name: 俄罗斯 V2CROSS.COM
-    type: vmess
-    server: 185.143.220.25
-    port: 443
-    uuid: f28e354e-c2d1-4983-9b07-5acaf1b3b3e5
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /6e9EtZ2dL
-    ws-headers:
-      Host: ''
-    tls: true
-  - name: 美国 加利福尼亚州圣何塞ColoCrossing数据中心
-    type: vmess
-    server: rn.blowm1k.club
-    port: 443
-    uuid: 3af44882-71a3-4ad3-9ff2-508eb47cdf2c
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /233blog
-    ws-headers: {}
-    tls: true
   - name: 印度尼西亚 V2CROSS.COM
     type: vmess
     server: free-id.ajunstores.me
@@ -60,35 +22,74 @@ proxies:
     ws-headers:
       Host: free-id.ajunstores.me
     tls: true
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: new3.hucloud-dns.xyz
+    port: 443
+    uuid: 1c8ad3f2-835c-4fda-b9b6-881d3cadfd8e
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: ''
+    tls: true
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: 170.187.200.114
+    port: 443
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /chat
+    ws-headers:
+      Host: ''
+    tls: true
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: 104.22.59.195
+    port: 443
+    uuid: a1560b52-b580-4aad-b8cd-9cd2ec5264b4
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /vmessws
+    ws-headers:
+      Host: 1.239000.xyz
+    tls: true
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 韩国 首尔Amazon数据中心
-      - 美国 CloudFlare节点
-      - 俄罗斯 V2CROSS.COM
-      - 美国 加利福尼亚州圣何塞ColoCrossing数据中心
+      - 美国 加利福尼亚州洛杉矶PetaExpress
       - 印度尼西亚 V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 美国 V2CROSS.COM
+      - 美国 CloudFlare节点 - 2
   - name: 自动选择
     type: url-test
     proxies:
-      - 韩国 首尔Amazon数据中心
-      - 美国 CloudFlare节点
-      - 俄罗斯 V2CROSS.COM
-      - 美国 加利福尼亚州圣何塞ColoCrossing数据中心
+      - 美国 加利福尼亚州洛杉矶PetaExpress
       - 印度尼西亚 V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 美国 V2CROSS.COM
+      - 美国 CloudFlare节点 - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 韩国 首尔Amazon数据中心
-      - 美国 CloudFlare节点
-      - 俄罗斯 V2CROSS.COM
-      - 美国 加利福尼亚州圣何塞ColoCrossing数据中心
+      - 美国 加利福尼亚州洛杉矶PetaExpress
       - 印度尼西亚 V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 美国 V2CROSS.COM
+      - 美国 CloudFlare节点 - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
