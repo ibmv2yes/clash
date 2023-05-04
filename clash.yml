@@ -1,48 +1,6 @@
 proxies:
   - name: 美国 CloudFlare节点
     type: vmess
-    server: cf-lt.sharecentre.online
-    port: 80
-    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /shirker
-    ws-headers:
-      Host: dp4.scproxy.top
-  - name: 印度尼西亚 V2CROSS.COM
-    type: vmess
-    server: free-id.ajunstores.me
-    port: 443
-    uuid: 694caa03-3b2f-476b-8b6c-711115a2c128
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /vmess
-    ws-headers:
-      Host: free-id.ajunstores.me
-    tls: true
-  - name: 美国 Cloudinnovation数据中心
-    type: vmess
-    server: 154.85.0.242
-    port: 45362
-    uuid: 6e79eea4-5f72-4683-ad0e-5339f013421b
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: ''
-    ws-headers:
-      Host: ''
-  - name: 美国+加利福尼亚州卡宁康特利Multacom公司
-    type: trojan
-    server: cc.tross.top
-    port: '60528'
-    password: sfgdg225v5ddfs
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
     server: cf.yxjnode.com
     port: 80
     uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
@@ -53,6 +11,48 @@ proxies:
     ws-path: /yxzbp
     ws-headers:
       Host: buyvm2.yxjnode.com
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: vde2.0bad.com
+    port: 443
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /chat
+    ws-headers: {}
+    tls: true
+  - name: 印度尼西亚 V2CROSS.COM
+    type: vmess
+    server: free-id.ajunstores.me
+    port: 443
+    uuid: 694caa03-3b2f-476b-8b6c-711115a2c128
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /vmess
+    ws-headers: {}
+    tls: true
+  - name: 美国 加利福尼亚州费利蒙Linode数据中心
+    type: vmess
+    server: vus3.0bad.com
+    port: 443
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /chat
+    ws-headers:
+      Host: vus3.0bad.com
+    tls: true
+  - name: 美国+V2CROSS.COM
+    type: trojan
+    server: dm.ddiantao.com
+    port: '443'
+    password: 402d12bf-775a-4dba-9e41-81ed6aa03400
 proxy-groups:
   - name: Free-servers
     type: select
@@ -60,28 +60,28 @@ proxy-groups:
       - 自动选择
       - 故障转移
       - 美国 CloudFlare节点
+      - 美国 V2CROSS.COM
       - 印度尼西亚 V2CROSS.COM
-      - 美国 Cloudinnovation数据中心
-      - 美国+加利福尼亚州卡宁康特利Multacom公司
-      - 美国 CloudFlare节点 - 2
+      - 美国 加利福尼亚州费利蒙Linode数据中心
+      - 美国+V2CROSS.COM
   - name: 自动选择
     type: url-test
     proxies:
       - 美国 CloudFlare节点
+      - 美国 V2CROSS.COM
       - 印度尼西亚 V2CROSS.COM
-      - 美国 Cloudinnovation数据中心
-      - 美国+加利福尼亚州卡宁康特利Multacom公司
-      - 美国 CloudFlare节点 - 2
+      - 美国 加利福尼亚州费利蒙Linode数据中心
+      - 美国+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
       - 美国 CloudFlare节点
+      - 美国 V2CROSS.COM
       - 印度尼西亚 V2CROSS.COM
-      - 美国 Cloudinnovation数据中心
-      - 美国+加利福尼亚州卡宁康特利Multacom公司
-      - 美国 CloudFlare节点 - 2
+      - 美国 加利福尼亚州费利蒙Linode数据中心
+      - 美国+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
