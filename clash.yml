@@ -1,22 +1,18 @@
 proxies:
-  - name: 澳大利亚+悉尼Oracle云计算数据中心
-    type: trojan
-    server: wangqifei.tk
-    port: 59973?type=tcp&sni=wangqifei.tk&allowInsecure=1
-    password: S1k6yPgFhc
-  - name: 美国 加利福尼亚州洛杉矶ColoCrossing数据中心
+  - name: 美国 CloudFlare节点
     type: vmess
-    server: yangandhuan.top
-    port: 38662
-    uuid: 2d58993b-607d-4235-93a4-4363e2c71e1a
+    server: surongwei.eu.org
+    port: 443
+    uuid: 6093eefb-7ab6-41df-aba0-d5fa58147e10
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /54321
+    ws-path: /reffs7y26g0ua
     ws-headers:
-      Host: yangandhuan.top
-  - name: 美国 CloudFlare节点
+      Host: surongwei.eu.org
+    tls: true
+  - name: 美国 CloudFlare节点 - 2
     type: vmess
     server: 172.67.93.208
     port: 80
@@ -28,60 +24,72 @@ proxies:
     ws-path: /qwer01
     ws-headers:
       Host: tok.vtcss.top
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: new6.huvicloud.com
-    port: 443
-    uuid: a11ca760-9ef9-4a63-95c9-4c5c32d56251
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /huvi
-    ws-headers:
-      Host: ''
-    tls: true
   - name: 美国 CloudFlare节点 - 3
     type: vmess
-    server: cf-lt.sharecentre.online
-    port: 8080
-    uuid: e2952737-6f10-492b-9813-19131deb71b1
+    server: quiz.vidio.com
+    port: 443
+    uuid: 92869d41-a98a-40ba-b79d-2eeb7ffe2433
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /api/v3/download.getFile
+    ws-path: /worryfree
     ws-headers:
-      Host: ssrsub.v01.ssrsub.com
+      Host: dynamic-sg1b.obfs.xyz
+    tls: true
+  - name: 美国 CloudFlare节点 - 4
+    type: vmess
+    server: 172.64.195.14
+    port: 80
+    uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: lg.v2ray20.xyz
+  - name: 香港 V2CROSS.COM
+    type: vmess
+    server: 156.245.8.93
+    port: 55948
+    uuid: 93503dd5-245a-4eb1-ae2a-57ab9f2b3c29
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: ''
+    ws-headers:
+      Host: ''
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 澳大利亚+悉尼Oracle云计算数据中心
-      - 美国 加利福尼亚州洛杉矶ColoCrossing数据中心
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
       - 美国 CloudFlare节点 - 3
+      - 美国 CloudFlare节点 - 4
+      - 香港 V2CROSS.COM
   - name: 自动选择
     type: url-test
     proxies:
-      - 澳大利亚+悉尼Oracle云计算数据中心
-      - 美国 加利福尼亚州洛杉矶ColoCrossing数据中心
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
       - 美国 CloudFlare节点 - 3
+      - 美国 CloudFlare节点 - 4
+      - 香港 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 澳大利亚+悉尼Oracle云计算数据中心
-      - 美国 加利福尼亚州洛杉矶ColoCrossing数据中心
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
       - 美国 CloudFlare节点 - 3
+      - 美国 CloudFlare节点 - 4
+      - 香港 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
