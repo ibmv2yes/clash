@@ -1,56 +1,45 @@
 proxies:
   - name: 美国 V2CROSS.COM
     type: vmess
-    server: 137.175.69.234
-    port: 44920
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 卢森堡 root.lu数据中心
-    type: vmess
-    server: dbamwv.76898102.xyz
-    port: 2082
-    uuid: d264f990-a6a5-3832-bf37-1fccaed298dd
+    server: 192.203.230.86
+    port: 80
+    uuid: a442dacf-cbb3-488a-9744-61494ea38630
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /tadvchk
-    ws-headers:
-      Host: dbamwv.76898102.xyz
-  - name: 美国 加利福尼亚州圣何塞PEG TECH
-    type: vmess
-    server: 142.4.114.25
-    port: 55502
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
     ws-path: /
     ws-headers:
-      Host: ''
+      Host: us-1.acyun.cf
+  - name: 美国+V2CROSS.COM
+    type: ss
+    server: 172.99.188.99
+    port: '2375'
+    cipher: aes-256-gcm
+    password: faBAoD54k87UJG7
   - name: 美国 V2CROSS.COM - 2
     type: vmess
-    server: 45.136.235.11
-    port: 41632
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
+    server: vde2.0bad.com
+    port: 443
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
+    alterId: 0
     cipher: auto
     udp: true
-    network: tcp
-    ws-path: /
+    network: ws
+    ws-path: /chat
     ws-headers:
-      Host: ''
-  - name: 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+      Host: vde2.0bad.com
+    tls: true
+  - name: 美国+V2CROSS.COM - 2
+    type: ss
+    server: 172.99.188.99
+    port: '8888'
+    cipher: aes-256-gcm
+    password: Y6R9pAtvxxzmGC
+  - name: 美国 Datability
     type: vmess
-    server: 107.167.29.142
-    port: 41032
+    server: 140.99.149.45
+    port: 53082
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -59,43 +48,92 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
+  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
+    type: vmess
+    server: 192.74.249.137
+    port: 46712
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 V2CROSS.COM - 3
+    type: vmess
+    server: 137.175.18.91
+    port: 42002
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国+V2CROSS.COM - 3
+    type: ss
+    server: 172.99.188.99
+    port: '5001'
+    cipher: aes-256-gcm
+    password: Y6R9pAtvxxzmGC
+  - name: 俄罗斯+莫斯科justhost.ru
+    type: ss
+    server: 45.129.3.99
+    port: '22233'
+    cipher: aes-256-gcm
+    password: dongtaiwang.com
+  - name: 美国+V2CROSS.COM - 4
+    type: ss
+    server: >-
+      ak1663.www.outline.network.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou
+    port: '5000'
+    cipher: aes-256-gcm
+    password: Y6R9pAtvxxzmGC
+  - name: 美国弗吉尼亚州阿什本 CloudFlare节点
+    type: vmess
+    server: cf-lt.sharecentre.online
+    port: 8080
+    uuid: e2952737-6f10-492b-9813-19131deb71b1
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /api/v3/download.getFile
+    ws-headers:
+      Host: ssrsub.v03.ssrsub.com
+  - name: 法国+格拉沃利讷OVH数据中心
+    type: ss
+    server: 54.36.174.181
+    port: '5600'
+    cipher: aes-256-gcm
+    password: Y6R9pAtvxxzmGC
+  - name: 美国 Akamai科技公司CDN网络节点
+    type: vmess
+    server: vin1.0bad.com
+    port: 443
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /chat
+    ws-headers:
+      Host: vin1.0bad.com
+    tls: true
   - name: 美国 CloudFlare节点
     type: vmess
-    server: inf.314156.xyz
-    port: 80
-    uuid: 5b3b5d3f-68a1-4afe-8a9e-a55f30af98e3
+    server: cf.noaries.de
+    port: 2082
+    uuid: 314c1387-618c-4689-97fc-4bc9a1ae5e05
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /workerConfig
-    ws-headers:
-      Host: inf.314156.xyz
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: v2ray3.webgfw.top
-    port: 2083
-    uuid: 07e90bec-b70d-414c-a00e-c844f1ea3345
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /X9piqfat/
-    ws-headers:
-      Host: ''
-    tls: true
-  - name: 美国 华盛顿Cogent通信公司
-    type: vmess
-    server: 38.63.17.180
-    port: 50702
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
     ws-path: /
     ws-headers:
-      Host: ''
+      Host: ir2.nmsl.ninja
 proxy-groups:
   - name: Free-servers
     type: select
@@ -103,37 +141,55 @@ proxy-groups:
       - 自动选择
       - 故障转移
       - 美国 V2CROSS.COM
-      - 卢森堡 root.lu数据中心
-      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国+V2CROSS.COM
       - 美国 V2CROSS.COM - 2
-      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+      - 美国+V2CROSS.COM - 2
+      - 美国 Datability
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 美国 V2CROSS.COM - 3
+      - 美国+V2CROSS.COM - 3
+      - 俄罗斯+莫斯科justhost.ru
+      - 美国+V2CROSS.COM - 4
+      - 美国弗吉尼亚州阿什本 CloudFlare节点
+      - 法国+格拉沃利讷OVH数据中心
+      - 美国 Akamai科技公司CDN网络节点
       - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 美国 华盛顿Cogent通信公司
   - name: 自动选择
     type: url-test
     proxies:
       - 美国 V2CROSS.COM
-      - 卢森堡 root.lu数据中心
-      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国+V2CROSS.COM
       - 美国 V2CROSS.COM - 2
-      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+      - 美国+V2CROSS.COM - 2
+      - 美国 Datability
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 美国 V2CROSS.COM - 3
+      - 美国+V2CROSS.COM - 3
+      - 俄罗斯+莫斯科justhost.ru
+      - 美国+V2CROSS.COM - 4
+      - 美国弗吉尼亚州阿什本 CloudFlare节点
+      - 法国+格拉沃利讷OVH数据中心
+      - 美国 Akamai科技公司CDN网络节点
       - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 美国 华盛顿Cogent通信公司
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
       - 美国 V2CROSS.COM
-      - 卢森堡 root.lu数据中心
-      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国+V2CROSS.COM
       - 美国 V2CROSS.COM - 2
-      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+      - 美国+V2CROSS.COM - 2
+      - 美国 Datability
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 美国 V2CROSS.COM - 3
+      - 美国+V2CROSS.COM - 3
+      - 俄罗斯+莫斯科justhost.ru
+      - 美国+V2CROSS.COM - 4
+      - 美国弗吉尼亚州阿什本 CloudFlare节点
+      - 法国+格拉沃利讷OVH数据中心
+      - 美国 Akamai科技公司CDN网络节点
       - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 美国 华盛顿Cogent通信公司
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
