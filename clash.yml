@@ -1,4 +1,17 @@
 proxies:
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: 170.187.200.114
+    port: 443
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /chat
+    ws-headers:
+      Host: ''
+    tls: true
   - name: 美国 CloudFlare节点
     type: vmess
     server: cf.yxjnode.com
@@ -11,46 +24,9 @@ proxies:
     ws-path: /yxzbp
     ws-headers:
       Host: buyvm2.yxjnode.com
-  - name: 美国 CloudFlare节点 - 2
+  - name: 美国 V2CROSS.COM - 2
     type: vmess
-    server: i.vpchi.tk
-    port: 2082
-    uuid: 1cbcbeff-de07-4f43-8ca9-4cb3a2a508ab
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 日本 东京都Amazon数据中心
-    type: vmess
-    server: jp04-vm0.entry.srthdw.art
-    port: 446
-    uuid: b2a2c706-12e0-3335-8a62-31925219a712
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 巴勒斯坦 V2CROSS.COM
-    type: vmess
-    server: weii.eu.org
-    port: 31809
-    uuid: 90d8a3f1-997d-46d5-f88d-0a0faf473623
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /ws
-    ws-headers:
-      Host: ''
-    tls: true
-  - name: 美国 V2CROSS.COM
-    type: vmess
-    server: vus5.0bad.com
+    server: 170.187.200.114
     port: 443
     uuid: 927094d3-d678-4763-8591-e240d0bcae87
     alterId: 0
@@ -61,10 +37,10 @@ proxies:
     ws-headers:
       Host: ''
     tls: true
-  - name: 美国 加利福尼亚州圣何塞PEG TECH
+  - name: 美国 V2CROSS.COM - 3
     type: vmess
-    server: 142.4.100.35
-    port: 45409
+    server: 137.175.15.246
+    port: 45232
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -73,114 +49,56 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 欧盟 V2CROSS.COM
+  - name: 美国 加利福尼亚州圣何塞ColoCrossing数据中心
     type: vmess
-    server: 45.86.11.189
-    port: 59442
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 香港 BGP.NET CN2数据中心
-    type: vmess
-    server: 202.79.172.53
+    server: rn.blowm1k.club
     port: 443
-    uuid: 30216206-14b7-40e7-995d-61c1219ba584
-    alterId: 64
+    uuid: 3af44882-71a3-4ad3-9ff2-508eb47cdf2c
+    alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /path/220128071100
+    ws-path: /233blog
     ws-headers:
-      Host: ''
+      Host: rn.blowm1k.club
     tls: true
-  - name: 美国 加利福尼亚州洛杉矶市SharkTech数据中心
-    type: vmess
-    server: 107.167.7.19
-    port: 41654
-    uuid: bdee202c-8fae-441f-a588-7bc4d3887019
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 英国 V2CROSS.COM
-    type: vmess
-    server: 171.22.134.4
-    port: 53433
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国加利福尼亚州洛杉矶 PetaExpress
-    type: vmess
-    server: 198.2.204.251
-    port: 46802
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
+  - name: 广东省揭阳市+移动
+    type: trojan
+    server: frontend.yijianlian.app
+    port: 54590?allowInsecure=1&tfo=1
+    password: b5e4e360-5946-470b-aad0-db98f50faa57
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 日本 东京都Amazon数据中心
-      - 巴勒斯坦 V2CROSS.COM
       - 美国 V2CROSS.COM
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 欧盟 V2CROSS.COM
-      - 香港 BGP.NET CN2数据中心
-      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
-      - 英国 V2CROSS.COM
-      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 美国 CloudFlare节点
+      - 美国 V2CROSS.COM - 2
+      - 美国 V2CROSS.COM - 3
+      - 美国 加利福尼亚州圣何塞ColoCrossing数据中心
+      - 广东省揭阳市+移动
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 日本 东京都Amazon数据中心
-      - 巴勒斯坦 V2CROSS.COM
       - 美国 V2CROSS.COM
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 欧盟 V2CROSS.COM
-      - 香港 BGP.NET CN2数据中心
-      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
-      - 英国 V2CROSS.COM
-      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 美国 CloudFlare节点
+      - 美国 V2CROSS.COM - 2
+      - 美国 V2CROSS.COM - 3
+      - 美国 加利福尼亚州圣何塞ColoCrossing数据中心
+      - 广东省揭阳市+移动
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 日本 东京都Amazon数据中心
-      - 巴勒斯坦 V2CROSS.COM
       - 美国 V2CROSS.COM
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 欧盟 V2CROSS.COM
-      - 香港 BGP.NET CN2数据中心
-      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
-      - 英国 V2CROSS.COM
-      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 美国 CloudFlare节点
+      - 美国 V2CROSS.COM - 2
+      - 美国 V2CROSS.COM - 3
+      - 美国 加利福尼亚州圣何塞ColoCrossing数据中心
+      - 广东省揭阳市+移动
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
