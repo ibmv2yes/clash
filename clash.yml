@@ -1,4 +1,136 @@
 proxies:
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: v2ray3.webgfw.top
+    port: 2083
+    uuid: 07e90bec-b70d-414c-a00e-c844f1ea3345
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /X9piqfat/
+    ws-headers:
+      Host: ''
+    tls: true
+  - name: 瑞典+V2CROSS.COM
+    type: ss
+    server: 167.88.63.79
+    port: '8009'
+    cipher: aes-256-gcm
+    password: XKFKl2rULjIp74
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: cf-lt.sharecentre.online
+    port: 8080
+    uuid: e2952737-6f10-492b-9813-19131deb71b1
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /api/v3/download.getFile
+    ws-headers:
+      Host: ssrsub.v03.ssrsub.com
+  - name: 日本 V2CROSS.COM
+    type: vmess
+    server: jp02-vm0.entry.srthdw.art
+    port: 444
+    uuid: 21c670ff-c739-3072-9286-7d2a1d300fcb
+    alterId: 1
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 欧盟 V2CROSS.COM
+    type: vmess
+    server: 45.12.144.83
+    port: 47127
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
+    type: vmess
+    server: 192.74.233.77
+    port: 53327
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: cf-lt.sharecentre.online
+    port: 80
+    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /shirker
+    ws-headers:
+      Host: lv1.sharecentrepro.org
+  - name: 广东省深圳市 电信
+    type: vmess
+    server: 14.116.151.100
+    port: 63094
+    uuid: 55329786-3769-3d15-a552-ba42e4d8bae6
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-headers: {}
+    tls: true
+  - name: 巴勒斯坦 V2CROSS.COM
+    type: vmess
+    server: weii.eu.org
+    port: 31809
+    uuid: 90d8a3f1-997d-46d5-f88d-0a0faf473623
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /ws
+    ws-headers:
+      Host: ''
+    tls: true
+  - name: 美国+V2CROSS.COM
+    type: trojan
+    server: tempest-us.aikun.online
+    port: 443?type=tcp&allowInsecure=1
+    password: 11e247e5-136d-45f1-844a-a7f054d36bab
+  - name: 美国 CloudFlare节点 - 4
+    type: vmess
+    server: i.vpchi.tk
+    port: 2082
+    uuid: 1cbcbeff-de07-4f43-8ca9-4cb3a2a508ab
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 加利福尼亚州圣何塞PEG TECH
+    type: vmess
+    server: 142.4.126.66
+    port: 31002
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
   - name: 美国 V2CROSS.COM
     type: vmess
     server: 170.187.200.114
@@ -12,19 +144,49 @@ proxies:
     ws-headers:
       Host: ''
     tls: true
-  - name: 美国 CloudFlare节点
+  - name: 瑞典+V2CROSS.COM - 2
+    type: ss
+    server: 167.88.63.79
+    port: '3306'
+    cipher: aes-256-gcm
+    password: Y6R9pAtvxxzmGC
+  - name: 美国 Cloudinnovation数据中心
     type: vmess
-    server: cf.yxjnode.com
-    port: 80
-    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
-    alterId: 0
+    server: 154.85.1.41
+    port: 44187
+    uuid: d3133484-f2bf-4b0c-8d38-f8e645b65687
+    alterId: 64
     cipher: auto
     udp: true
-    network: ws
-    ws-path: /yxzbp
+    network: tcp
+    ws-path: /
     ws-headers:
-      Host: buyvm2.yxjnode.com
+      Host: ''
+  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心 - 2
+    type: vmess
+    server: 192.74.237.51
+    port: 30003
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
   - name: 美国 V2CROSS.COM - 2
+    type: vmess
+    server: 137.175.9.194
+    port: 57402
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 V2CROSS.COM - 3
     type: vmess
     server: 170.187.200.114
     port: 443
@@ -37,68 +199,74 @@ proxies:
     ws-headers:
       Host: ''
     tls: true
-  - name: 美国 V2CROSS.COM - 3
-    type: vmess
-    server: 137.175.15.246
-    port: 45232
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国 加利福尼亚州圣何塞ColoCrossing数据中心
-    type: vmess
-    server: rn.blowm1k.club
-    port: 443
-    uuid: 3af44882-71a3-4ad3-9ff2-508eb47cdf2c
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /233blog
-    ws-headers:
-      Host: rn.blowm1k.club
-    tls: true
-  - name: 广东省揭阳市+移动
-    type: trojan
-    server: frontend.yijianlian.app
-    port: 54590?allowInsecure=1&tfo=1
-    password: b5e4e360-5946-470b-aad0-db98f50faa57
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点
+      - 瑞典+V2CROSS.COM
+      - 美国 CloudFlare节点 - 2
+      - 日本 V2CROSS.COM
+      - 欧盟 V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 美国 CloudFlare节点 - 3
+      - 广东省深圳市 电信
+      - 巴勒斯坦 V2CROSS.COM
+      - 美国+V2CROSS.COM
+      - 美国 CloudFlare节点 - 4
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国 V2CROSS.COM
+      - 瑞典+V2CROSS.COM - 2
+      - 美国 Cloudinnovation数据中心
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心 - 2
       - 美国 V2CROSS.COM - 2
       - 美国 V2CROSS.COM - 3
-      - 美国 加利福尼亚州圣何塞ColoCrossing数据中心
-      - 广东省揭阳市+移动
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点
+      - 瑞典+V2CROSS.COM
+      - 美国 CloudFlare节点 - 2
+      - 日本 V2CROSS.COM
+      - 欧盟 V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 美国 CloudFlare节点 - 3
+      - 广东省深圳市 电信
+      - 巴勒斯坦 V2CROSS.COM
+      - 美国+V2CROSS.COM
+      - 美国 CloudFlare节点 - 4
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国 V2CROSS.COM
+      - 瑞典+V2CROSS.COM - 2
+      - 美国 Cloudinnovation数据中心
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心 - 2
       - 美国 V2CROSS.COM - 2
       - 美国 V2CROSS.COM - 3
-      - 美国 加利福尼亚州圣何塞ColoCrossing数据中心
-      - 广东省揭阳市+移动
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点
+      - 瑞典+V2CROSS.COM
+      - 美国 CloudFlare节点 - 2
+      - 日本 V2CROSS.COM
+      - 欧盟 V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 美国 CloudFlare节点 - 3
+      - 广东省深圳市 电信
+      - 巴勒斯坦 V2CROSS.COM
+      - 美国+V2CROSS.COM
+      - 美国 CloudFlare节点 - 4
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国 V2CROSS.COM
+      - 瑞典+V2CROSS.COM - 2
+      - 美国 Cloudinnovation数据中心
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心 - 2
       - 美国 V2CROSS.COM - 2
       - 美国 V2CROSS.COM - 3
-      - 美国 加利福尼亚州圣何塞ColoCrossing数据中心
-      - 广东省揭阳市+移动
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
