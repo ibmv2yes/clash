@@ -1,134 +1,9 @@
 proxies:
-  - name: 英国 社会保险安全部
+  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
     type: vmess
-    server: 51.195.35.150
-    port: 30812
+    server: 192.74.255.21
+    port: 59322
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 江苏省扬州市 移动
-    type: vmess
-    server: 223.111.129.116
-    port: 63087
-    uuid: 55329786-3769-3d15-a552-ba42e4d8bae6
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-headers: {}
-    tls: true
-  - name: 美国+加利福尼亚州洛杉矶Level3通信(DIA)
-    type: trojan
-    server: sg.stablize.top
-    port: '443'
-    password: a85ddae0-3f7d-4f55-bd1d-436062e3a966
-  - name: 新加坡+Amazon数据中心
-    type: trojan
-    server: sg2.hneko.online
-    port: '51117'
-    password: a1b5ee2e-1e69-451c-b5dd-7c6c577a4bcc
-  - name: 上海市 联通
-    type: vmess
-    server: 223.167.41.222
-    port: 63082
-    uuid: 55329786-3769-3d15-a552-ba42e4d8bae6
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: ''
-    ws-headers:
-      Host: hkt3-cdn.tencent.best
-  - name: 美国弗吉尼亚州阿什本 CloudFlare节点
-    type: vmess
-    server: cf-lt.sharecentre.online
-    port: 80
-    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /shirker
-    ws-headers:
-      Host: ca.ilovescp.com
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: hd.mamadcucu.com
-    port: 2095
-    uuid: 19350d64-6868-4a64-e501-9c0df903d788
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: h3.mamadcucu.com
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: aaaa.wxx.gay
-    port: 443
-    uuid: 4f95e994-eaf9-11ed-adda-000017022008
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /look
-    ws-headers:
-      Host: ''
-    tls: true
-  - name: 美国 加利福尼亚州洛杉矶Sharktech数据中心
-    type: vmess
-    server: 67.21.72.41
-    port: 443
-    uuid: 2566d00f-218c-48f7-9a36-13d3d6f1a724
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /path/173418141123
-    ws-headers: {}
-    tls: true
-  - name: 日本+V2CROSS.COM
-    type: trojan
-    server: jp11.hneko.online
-    port: '56334'
-    password: a1b5ee2e-1e69-451c-b5dd-7c6c577a4bcc
-  - name: 美国 CloudFlare节点 - 3
-    type: vmess
-    server: v2ray2.ibgfw.top
-    port: 2083
-    uuid: c05fd079-7a3a-4779-816f-30fe65713e16
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /378wmUMF/
-    ws-headers:
-      Host: ''
-    tls: true
-  - name: 日本 东京都Amazon数据中心
-    type: vmess
-    server: jp06-alt-vm0.entry.jpojpoh.art
-    port: 28783
-    uuid: 21c670ff-c739-3072-9286-7d2a1d300fcb
-    alterId: 1
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-    tls: true
-  - name: 南非 V2CROSS.COM
-    type: vmess
-    server: 156.225.67.78
-    port: 45042
-    uuid: 3e016c4d-986e-42df-838c-6046f3d89ecf
     alterId: 64
     cipher: auto
     udp: true
@@ -148,76 +23,158 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国 CloudFlare节点 - 4
+  - name: 香港+Microsoft数据中心
+    type: trojan
+    server: kr.mjt001.com
+    port: '443'
+    password: ad3f9bf7-d8d1-47df-a6bd-77ff50037339
+  - name: 卢森堡 V2CROSS.COM
     type: vmess
-    server: cf-lt.sharecentre.online
-    port: 80
-    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
+    server: 107.189.5.112
+    port: 7341
+    uuid: 2c7eb798-b8ce-41d9-8ca0-e649e99716e3
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /shirker
+    ws-path: /1kgn7K
     ws-headers:
-      Host: dp4.scproxy.top
+      Host: gbdfesed.uk
+    tls: true
+  - name: 美国+弗吉尼亚州阿什本Amazon数据中心
+    type: trojan
+    server: usa2.hneko.online
+    port: '41144'
+    password: a1b5ee2e-1e69-451c-b5dd-7c6c577a4bcc
+  - name: 俄罗斯 V2CROSS.COM
+    type: vmess
+    server: 185.143.220.25
+    port: 443
+    uuid: f28e354e-c2d1-4983-9b07-5acaf1b3b3e5
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /6e9EtZ2dL
+    ws-headers:
+      Host: ''
+    tls: true
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: cf.noaries.de
+    port: 2082
+    uuid: 314c1387-618c-4689-97fc-4bc9a1ae5e05
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: ir2.nmsl.ninja
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: cdnjs.com
+    port: 443
+    uuid: F86EFDE3-B236-493C-A903-998DCEA823E2
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /speedtest
+    ws-headers:
+      Host: Lille.kotick.site
+    tls: true
+  - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: v2ray2.ibgfw.top
+    port: 2083
+    uuid: c05fd079-7a3a-4779-816f-30fe65713e16
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /378wmUMF/
+    ws-headers:
+      Host: ''
+    tls: true
+  - name: 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+    type: vmess
+    server: 107.167.29.142
+    port: 41032
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国+加利福尼亚州洛杉矶Level3通信(DIA)
+    type: trojan
+    server: sg.stablize.top
+    port: '443'
+    password: a85ddae0-3f7d-4f55-bd1d-436062e3a966
+  - name: 美国 CloudFlare节点 - 4
+    type: vmess
+    server: camtlebb.76898102.xyz
+    port: 2095
+    uuid: bbe033d3-d3be-3110-b81a-4fed343e2fc2
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /funsdfrh
+    ws-headers:
+      Host: camtleb.76898102.xyz
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 英国 社会保险安全部
-      - 江苏省扬州市 移动
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
-      - 新加坡+Amazon数据中心
-      - 上海市 联通
-      - 美国弗吉尼亚州阿什本 CloudFlare节点
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 欧盟 V2CROSS.COM
+      - 香港+Microsoft数据中心
+      - 卢森堡 V2CROSS.COM
+      - 美国+弗吉尼亚州阿什本Amazon数据中心
+      - 俄罗斯 V2CROSS.COM
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
-      - 日本+V2CROSS.COM
       - 美国 CloudFlare节点 - 3
-      - 日本 东京都Amazon数据中心
-      - 南非 V2CROSS.COM
-      - 欧盟 V2CROSS.COM
+      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
       - 美国 CloudFlare节点 - 4
   - name: 自动选择
     type: url-test
     proxies:
-      - 英国 社会保险安全部
-      - 江苏省扬州市 移动
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
-      - 新加坡+Amazon数据中心
-      - 上海市 联通
-      - 美国弗吉尼亚州阿什本 CloudFlare节点
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 欧盟 V2CROSS.COM
+      - 香港+Microsoft数据中心
+      - 卢森堡 V2CROSS.COM
+      - 美国+弗吉尼亚州阿什本Amazon数据中心
+      - 俄罗斯 V2CROSS.COM
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
-      - 日本+V2CROSS.COM
       - 美国 CloudFlare节点 - 3
-      - 日本 东京都Amazon数据中心
-      - 南非 V2CROSS.COM
-      - 欧盟 V2CROSS.COM
+      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
       - 美国 CloudFlare节点 - 4
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 英国 社会保险安全部
-      - 江苏省扬州市 移动
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
-      - 新加坡+Amazon数据中心
-      - 上海市 联通
-      - 美国弗吉尼亚州阿什本 CloudFlare节点
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 欧盟 V2CROSS.COM
+      - 香港+Microsoft数据中心
+      - 卢森堡 V2CROSS.COM
+      - 美国+弗吉尼亚州阿什本Amazon数据中心
+      - 俄罗斯 V2CROSS.COM
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
-      - 日本+V2CROSS.COM
       - 美国 CloudFlare节点 - 3
-      - 日本 东京都Amazon数据中心
-      - 南非 V2CROSS.COM
-      - 欧盟 V2CROSS.COM
+      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
       - 美国 CloudFlare节点 - 4
     url: http://www.gstatic.com/generate_204
     interval: 86400
