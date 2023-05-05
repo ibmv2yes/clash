@@ -1,32 +1,8 @@
 proxies:
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: inf.314156.xyz
-    port: 80
-    uuid: 5b3b5d3f-68a1-4afe-8a9e-a55f30af98e3
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /workerConfig
-    ws-headers:
-      Host: inf.314156.xyz
-  - name: 美国 V2CROSS.COM
-    type: vmess
-    server: camtlebb.76898102.xyz
-    port: 2095
-    uuid: bbe033d3-d3be-3110-b81a-4fed343e2fc2
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /funsdfrh
-    ws-headers:
-      Host: camtleb.76898102.xyz
   - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
     type: vmess
-    server: 192.74.255.21
-    port: 59322
+    server: 192.74.239.23
+    port: 41288
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -35,23 +11,19 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 韩国+首尔Amazon数据中心
-    type: trojan
-    server: kr1.hneko.online
-    port: '56337'
-    password: a1b5ee2e-1e69-451c-b5dd-7c6c577a4bcc
-  - name: 美国 V2CROSS.COM - 2
+  - name: 美国 CloudFlare节点
     type: vmess
-    server: sgddnsfz.apcloudcdn.com
-    port: 80
-    uuid: d0634311-d055-4640-ba14-48f27afecd0a
+    server: v2-ca1.silverdragon.cn
+    port: 443
+    uuid: e790e3bf-c553-40ed-b2b6-436afd3f5f5c
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /
+    ws-path: /ca/v2wss
     ws-headers:
-      Host: sgddnsfz.apcloudcdn.com
+      Host: v2-ca1.silverdragon.cn
+    tls: true
   - name: 美国 CloudFlare节点 - 2
     type: vmess
     server: cf-lt.sharecentre.online
@@ -63,11 +35,11 @@ proxies:
     network: ws
     ws-path: /shirker
     ws-headers:
-      Host: ca.ilovescp.com
-  - name: 美国 Datability
+      Host: lv1.sharecentrepro.org
+  - name: 美国 加利福尼亚州圣何塞PEG TECH
     type: vmess
-    server: 140.99.149.45
-    port: 53082
+    server: 142.4.114.25
+    port: 55502
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -76,6 +48,12 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
+  - name: 瑞典+V2CROSS.COM
+    type: ss
+    server: 167.88.63.79
+    port: '7307'
+    cipher: aes-256-gcm
+    password: FoOiGlkAA9yPEGP
   - name: 美国 加利福尼亚州洛杉矶Sharktech数据中心
     type: vmess
     server: 67.21.72.41
@@ -86,17 +64,42 @@ proxies:
     udp: true
     network: ws
     ws-path: /path/173418141123
+    ws-headers:
+      Host: www.17080100.xyz
+    tls: true
+  - name: 广东省深圳市 电信
+    type: vmess
+    server: 14.116.151.100
+    port: 63090
+    uuid: 311f3c4b-90a1-3c5c-a4fe-215cc7c90d02
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
     ws-headers: {}
     tls: true
-  - name: 美国+弗吉尼亚州阿什本Amazon数据中心
-    type: trojan
-    server: usa2.hneko.online
-    port: '41144'
-    password: a1b5ee2e-1e69-451c-b5dd-7c6c577a4bcc
   - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心 - 2
     type: vmess
-    server: 192.74.249.147
-    port: 50042
+    server: 192.74.228.179
+    port: 42857
+    uuid: 051b844f-efe3-4847-92aa-66b5de0b6d4e
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 瑞典+V2CROSS.COM - 2
+    type: ss
+    server: 167.88.63.79
+    port: '8009'
+    cipher: aes-256-gcm
+    password: XKFKl2rULjIp74
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: 137.175.1.8
+    port: 53403
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -105,96 +108,50 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国 CloudFlare节点 - 3
-    type: vmess
-    server: cf-lt.sharecentre.online
-    port: 80
-    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /shirker
-    ws-headers:
-      Host: dp4.scproxy.top
-  - name: 美国 CloudFlare节点 - 4
-    type: vmess
-    server: i.vpchi.tk
-    port: 2082
-    uuid: 1cbcbeff-de07-4f43-8ca9-4cb3a2a508ab
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国 CloudFlare节点 - 5
-    type: vmess
-    server: aaaa.wxx.gay
-    port: 443
-    uuid: 4f95e994-eaf9-11ed-adda-000017022008
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /look
-    ws-headers:
-      Host: ''
-    tls: true
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 CloudFlare节点
-      - 美国 V2CROSS.COM
       - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 韩国+首尔Amazon数据中心
-      - 美国 V2CROSS.COM - 2
+      - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
-      - 美国 Datability
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 瑞典+V2CROSS.COM
       - 美国 加利福尼亚州洛杉矶Sharktech数据中心
-      - 美国+弗吉尼亚州阿什本Amazon数据中心
+      - 广东省深圳市 电信
       - 美国 加利福尼亚州圣何塞PEG TECH数据中心 - 2
-      - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
-      - 美国 CloudFlare节点 - 5
+      - 瑞典+V2CROSS.COM - 2
+      - 美国 V2CROSS.COM
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 CloudFlare节点
-      - 美国 V2CROSS.COM
       - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 韩国+首尔Amazon数据中心
-      - 美国 V2CROSS.COM - 2
+      - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
-      - 美国 Datability
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 瑞典+V2CROSS.COM
       - 美国 加利福尼亚州洛杉矶Sharktech数据中心
-      - 美国+弗吉尼亚州阿什本Amazon数据中心
+      - 广东省深圳市 电信
       - 美国 加利福尼亚州圣何塞PEG TECH数据中心 - 2
-      - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
-      - 美国 CloudFlare节点 - 5
+      - 瑞典+V2CROSS.COM - 2
+      - 美国 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 CloudFlare节点
-      - 美国 V2CROSS.COM
       - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 韩国+首尔Amazon数据中心
-      - 美国 V2CROSS.COM - 2
+      - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
-      - 美国 Datability
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 瑞典+V2CROSS.COM
       - 美国 加利福尼亚州洛杉矶Sharktech数据中心
-      - 美国+弗吉尼亚州阿什本Amazon数据中心
+      - 广东省深圳市 电信
       - 美国 加利福尼亚州圣何塞PEG TECH数据中心 - 2
-      - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
-      - 美国 CloudFlare节点 - 5
+      - 瑞典+V2CROSS.COM - 2
+      - 美国 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
