@@ -1,10 +1,10 @@
 proxies:
-  - name: 英国 社会保险安全部
+  - name: 日本 东京都Amazon数据中心
     type: vmess
-    server: 51.195.35.150
-    port: 30812
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
+    server: jp04-vm0.entry.srthdw.art
+    port: 446
+    uuid: b2a2c706-12e0-3335-8a62-31925219a712
+    alterId: 0
     cipher: auto
     udp: true
     network: tcp
@@ -23,22 +23,35 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国 CloudFlare节点 - 2
+  - name: 美国 弗吉尼亚州阿什本Spotify
     type: vmess
-    server: inf.314156.xyz
-    port: 80
-    uuid: 5b3b5d3f-68a1-4afe-8a9e-a55f30af98e3
+    server: vus3.0bad.com
+    port: 443
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /workerConfig
+    ws-path: /chat
     ws-headers:
-      Host: inf.314156.xyz
-  - name: 美国 V2CROSS.COM
+      Host: ''
+    tls: true
+  - name: 美国 CloudFlare节点 - 2
     type: vmess
-    server: 137.175.52.22
-    port: 33002
+    server: hd.mamadcucu.com
+    port: 2095
+    uuid: 19350d64-6868-4a64-e501-9c0df903d788
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: h3.mamadcucu.com
+  - name: 美国加利福尼亚州洛杉矶 PetaExpress
+    type: vmess
+    server: 198.2.204.251
+    port: 46802
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -47,63 +60,113 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国 CloudFlare节点 - 3
+  - name: 美国 V2CROSS.COM
     type: vmess
-    server: hd.mamadcucu.com
-    port: 2052
-    uuid: 8ed9aec2-e02e-4a27-fe02-c3e20452e4c7
-    alterId: 0
+    server: 137.175.57.23
+    port: 53940
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
     cipher: auto
     udp: true
-    network: ws
+    network: tcp
     ws-path: /
     ws-headers:
-      Host: h4.mamadcucu.com
-  - name: 上海市 联通
+      Host: ''
+  - name: 日本+M247网络
+    type: ss
+    server: 185.172.113.182
+    port: '810'
+    cipher: chacha20-ietf-poly1305
+    password: G!yBwPWH3Vao
+  - name: 南非 V2CROSS.COM
     type: vmess
-    server: 223.167.41.41
-    port: 63088
-    uuid: 55329786-3769-3d15-a552-ba42e4d8bae6
-    alterId: 0
+    server: 156.225.67.17
+    port: 41599
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 香港 BGP.NET CN2数据中心
+    type: vmess
+    server: 202.79.172.53
+    port: 443
+    uuid: 30216206-14b7-40e7-995d-61c1219ba584
+    alterId: 64
     cipher: auto
     udp: true
     network: ws
-    ws-path: /mugua
+    ws-path: /path/220128071100
     ws-headers:
-      Host: tw-load-balancer.myn1des.com
+      Host: ''
     tls: true
+  - name: 美国 Cloudinnovation数据中心
+    type: vmess
+    server: 154.85.1.41
+    port: 44187
+    uuid: d3133484-f2bf-4b0c-8d38-f8e645b65687
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 上海市+电信
+    type: trojan
+    server: official.taipeicitygovernment.kiev.ua
+    port: '8443'
+    password: 5505f6ba-cd37-30ce-8f92-be4120c83d7f
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 英国 社会保险安全部
+      - 日本 东京都Amazon数据中心
       - 美国 CloudFlare节点
+      - 美国 弗吉尼亚州阿什本Spotify
       - 美国 CloudFlare节点 - 2
+      - 美国加利福尼亚州洛杉矶 PetaExpress
       - 美国 V2CROSS.COM
-      - 美国 CloudFlare节点 - 3
-      - 上海市 联通
+      - 日本+M247网络
+      - 南非 V2CROSS.COM
+      - 香港 BGP.NET CN2数据中心
+      - 美国 Cloudinnovation数据中心
+      - 上海市+电信
   - name: 自动选择
     type: url-test
     proxies:
-      - 英国 社会保险安全部
+      - 日本 东京都Amazon数据中心
       - 美国 CloudFlare节点
+      - 美国 弗吉尼亚州阿什本Spotify
       - 美国 CloudFlare节点 - 2
+      - 美国加利福尼亚州洛杉矶 PetaExpress
       - 美国 V2CROSS.COM
-      - 美国 CloudFlare节点 - 3
-      - 上海市 联通
+      - 日本+M247网络
+      - 南非 V2CROSS.COM
+      - 香港 BGP.NET CN2数据中心
+      - 美国 Cloudinnovation数据中心
+      - 上海市+电信
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 英国 社会保险安全部
+      - 日本 东京都Amazon数据中心
       - 美国 CloudFlare节点
+      - 美国 弗吉尼亚州阿什本Spotify
       - 美国 CloudFlare节点 - 2
+      - 美国加利福尼亚州洛杉矶 PetaExpress
       - 美国 V2CROSS.COM
-      - 美国 CloudFlare节点 - 3
-      - 上海市 联通
+      - 日本+M247网络
+      - 南非 V2CROSS.COM
+      - 香港 BGP.NET CN2数据中心
+      - 美国 Cloudinnovation数据中心
+      - 上海市+电信
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
