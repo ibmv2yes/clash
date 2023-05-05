@@ -1,4 +1,16 @@
 proxies:
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: inf.314156.xyz
+    port: 80
+    uuid: 5b3b5d3f-68a1-4afe-8a9e-a55f30af98e3
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /workerConfig
+    ws-headers:
+      Host: inf.314156.xyz
   - name: 美国 V2CROSS.COM
     type: vmess
     server: camtlebb.76898102.xyz
@@ -11,46 +23,10 @@ proxies:
     ws-path: /funsdfrh
     ws-headers:
       Host: camtleb.76898102.xyz
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: v2-ca1.silverdragon.cn
-    port: 443
-    uuid: e790e3bf-c553-40ed-b2b6-436afd3f5f5c
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /ca/v2wss
-    ws-headers:
-      Host: v2-ca1.silverdragon.cn
-    tls: true
-  - name: 美国 Cloudinnovation数据中心
-    type: vmess
-    server: 154.85.0.234
-    port: 56120
-    uuid: 078eb24d-8d1d-4fbd-b914-ee58a897a35e
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 广东省深圳市 电信
-    type: vmess
-    server: 14.116.151.100
-    port: 63090
-    uuid: 311f3c4b-90a1-3c5c-a4fe-215cc7c90d02
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-headers: {}
-    tls: true
   - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
     type: vmess
-    server: 192.74.237.51
-    port: 30003
+    server: 192.74.255.21
+    port: 59322
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -59,35 +35,68 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 香港 BGP.NET CN2数据中心
+  - name: 韩国+首尔Amazon数据中心
+    type: trojan
+    server: kr1.hneko.online
+    port: '56337'
+    password: a1b5ee2e-1e69-451c-b5dd-7c6c577a4bcc
+  - name: 美国 V2CROSS.COM - 2
     type: vmess
-    server: 202.79.172.53
-    port: 443
-    uuid: 30216206-14b7-40e7-995d-61c1219ba584
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /path/220128071100
-    ws-headers:
-      Host: ''
-    tls: true
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: inf.314156.xyz
+    server: sgddnsfz.apcloudcdn.com
     port: 80
-    uuid: 5b3b5d3f-68a1-4afe-8a9e-a55f30af98e3
+    uuid: d0634311-d055-4640-ba14-48f27afecd0a
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /workerConfig
+    ws-path: /
     ws-headers:
-      Host: inf.314156.xyz
-  - name: 美国 加利福尼亚州圣何塞PEG TECH
+      Host: sgddnsfz.apcloudcdn.com
+  - name: 美国 CloudFlare节点 - 2
     type: vmess
-    server: 142.4.100.35
-    port: 45409
+    server: cf-lt.sharecentre.online
+    port: 80
+    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /shirker
+    ws-headers:
+      Host: ca.ilovescp.com
+  - name: 美国 Datability
+    type: vmess
+    server: 140.99.149.45
+    port: 53082
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 加利福尼亚州洛杉矶Sharktech数据中心
+    type: vmess
+    server: 67.21.72.41
+    port: 443
+    uuid: 2566d00f-218c-48f7-9a36-13d3d6f1a724
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /path/173418141123
+    ws-headers: {}
+    tls: true
+  - name: 美国+弗吉尼亚州阿什本Amazon数据中心
+    type: trojan
+    server: usa2.hneko.online
+    port: '41144'
+    password: a1b5ee2e-1e69-451c-b5dd-7c6c577a4bcc
+  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心 - 2
+    type: vmess
+    server: 192.74.249.147
+    port: 50042
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -97,6 +106,30 @@ proxies:
     ws-headers:
       Host: ''
   - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: cf-lt.sharecentre.online
+    port: 80
+    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /shirker
+    ws-headers:
+      Host: dp4.scproxy.top
+  - name: 美国 CloudFlare节点 - 4
+    type: vmess
+    server: i.vpchi.tk
+    port: 2082
+    uuid: 1cbcbeff-de07-4f43-8ca9-4cb3a2a508ab
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 CloudFlare节点 - 5
     type: vmess
     server: aaaa.wxx.gay
     port: 443
@@ -109,78 +142,59 @@ proxies:
     ws-headers:
       Host: ''
     tls: true
-  - name: 加拿大 V2CROSS.COM
-    type: vmess
-    server: 199.212.90.14
-    port: 443
-    uuid: 6147F065-9AC0-4081-A5A3-A2EB4EBB8958
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /speedtest
-    ws-headers:
-      Host: Lille.kotick.site
-    tls: true
-  - name: 美国 V2CROSS.COM - 2
-    type: vmess
-    server: 146.190.89.189
-    port: 31361
-    uuid: 0f2311e2-93a9-4f6e-b6a0-633edaca90dc
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: ''
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 美国 Cloudinnovation数据中心
-      - 广东省深圳市 电信
+      - 美国 V2CROSS.COM
       - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 香港 BGP.NET CN2数据中心
-      - 美国 CloudFlare节点 - 2
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国 CloudFlare节点 - 3
-      - 加拿大 V2CROSS.COM
+      - 韩国+首尔Amazon数据中心
       - 美国 V2CROSS.COM - 2
+      - 美国 CloudFlare节点 - 2
+      - 美国 Datability
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 美国+弗吉尼亚州阿什本Amazon数据中心
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心 - 2
+      - 美国 CloudFlare节点 - 3
+      - 美国 CloudFlare节点 - 4
+      - 美国 CloudFlare节点 - 5
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 美国 Cloudinnovation数据中心
-      - 广东省深圳市 电信
+      - 美国 V2CROSS.COM
       - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 香港 BGP.NET CN2数据中心
-      - 美国 CloudFlare节点 - 2
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国 CloudFlare节点 - 3
-      - 加拿大 V2CROSS.COM
+      - 韩国+首尔Amazon数据中心
       - 美国 V2CROSS.COM - 2
+      - 美国 CloudFlare节点 - 2
+      - 美国 Datability
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 美国+弗吉尼亚州阿什本Amazon数据中心
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心 - 2
+      - 美国 CloudFlare节点 - 3
+      - 美国 CloudFlare节点 - 4
+      - 美国 CloudFlare节点 - 5
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 美国 Cloudinnovation数据中心
-      - 广东省深圳市 电信
+      - 美国 V2CROSS.COM
       - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 香港 BGP.NET CN2数据中心
-      - 美国 CloudFlare节点 - 2
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国 CloudFlare节点 - 3
-      - 加拿大 V2CROSS.COM
+      - 韩国+首尔Amazon数据中心
       - 美国 V2CROSS.COM - 2
+      - 美国 CloudFlare节点 - 2
+      - 美国 Datability
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 美国+弗吉尼亚州阿什本Amazon数据中心
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心 - 2
+      - 美国 CloudFlare节点 - 3
+      - 美国 CloudFlare节点 - 4
+      - 美国 CloudFlare节点 - 5
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
