@@ -1,51 +1,40 @@
 proxies:
-  - name: 新加坡 Amazon数据中心
+  - name: 英国 社会保险安全部
     type: vmess
-    server: 13.251.81.120
-    port: 2087
-    uuid: 55329786-3769-3d15-a552-ba42e4d8bae6
+    server: 51.195.35.150
+    port: 30812
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: i.vpchi.tk
+    port: 2082
+    uuid: 1cbcbeff-de07-4f43-8ca9-4cb3a2a508ab
     alterId: 0
     cipher: auto
     udp: true
-    network: tcp
-    ws-headers: {}
-    tls: true
-  - name: 美国 加利福尼亚州圣何塞PEG TECH
-    type: vmess
-    server: 142.4.126.66
-    port: 31002
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
+    network: ws
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 欧盟 V2CROSS.COM
+  - name: 美国 CloudFlare节点 - 2
     type: vmess
-    server: 45.86.11.189
-    port: 59442
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
+    server: inf.314156.xyz
+    port: 80
+    uuid: 5b3b5d3f-68a1-4afe-8a9e-a55f30af98e3
+    alterId: 0
     cipher: auto
     udp: true
-    network: tcp
-    ws-path: /
+    network: ws
+    ws-path: /workerConfig
     ws-headers:
-      Host: ''
-  - name: 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
-    type: vmess
-    server: 23.225.28.186
-    port: 50034
-    uuid: 2278efe4-ad0c-47ce-9480-068608368d76
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: ''
-    ws-headers:
-      Host: ''
+      Host: inf.314156.xyz
   - name: 美国 V2CROSS.COM
     type: vmess
     server: 137.175.52.22
@@ -58,92 +47,30 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+  - name: 美国 CloudFlare节点 - 3
     type: vmess
-    server: 107.167.16.85
-    port: 45689
-    uuid: 7640a1e7-9701-428e-a4b2-19b3e7dd6f9f
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: ''
-    ws-headers:
-      Host: ''
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: cf-lt.sharecentre.online
-    port: 80
-    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /shirker
-    ws-headers:
-      Host: dp4.scproxy.top
-  - name: 美国 CloudFlare公司CDN节点(shopify)
-    type: vmess
-    server: 23.227.38.39
-    port: 8880
-    uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958
+    server: hd.mamadcucu.com
+    port: 2052
+    uuid: 8ed9aec2-e02e-4a27-fe02-c3e20452e4c7
     alterId: 0
     cipher: auto
     udp: true
     network: ws
     ws-path: /
     ws-headers:
-      Host: lg.trump2023.net
-  - name: 香港 V2CROSS.COM
+      Host: h4.mamadcucu.com
+  - name: 上海市 联通
     type: vmess
-    server: 156.245.8.93
-    port: 48822
-    uuid: 93503dd5-245a-4eb1-ae2a-57ab9f2b3c29
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: ''
-    ws-headers:
-      Host: ''
-  - name: 美国 V2CROSS.COM - 2
-    type: vmess
-    server: 170.114.45.122
-    port: 443
-    uuid: 8f74ec8a-971c-11ed-a8fc-0242ac120002
+    server: 223.167.41.41
+    port: 63088
+    uuid: 55329786-3769-3d15-a552-ba42e4d8bae6
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /db698b16-d216-11ed-8e14-5ad705867cff
+    ws-path: /mugua
     ws-headers:
-      Host: db698b16-d216-11ed-8e14-5ad705867cff.asmandll.com
-    tls: true
-  - name: 俄罗斯 V2CROSS.COM
-    type: vmess
-    server: 185.143.220.25
-    port: 443
-    uuid: f28e354e-c2d1-4983-9b07-5acaf1b3b3e5
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /6e9EtZ2dL
-    ws-headers:
-      Host: ''
-    tls: true
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: www.udemy.com
-    port: 443
-    uuid: 92869d41-a98a-40ba-b79d-2eeb7ffe2433
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /worryfree
-    ws-headers:
-      Host: dynamic-sg1b.obfs.xyz
+      Host: tw-load-balancer.myn1des.com
     tls: true
 proxy-groups:
   - name: Free-servers
@@ -151,50 +78,32 @@ proxy-groups:
     proxies:
       - 自动选择
       - 故障转移
-      - 新加坡 Amazon数据中心
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 欧盟 V2CROSS.COM
-      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
-      - 美国 V2CROSS.COM
-      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+      - 英国 社会保险安全部
       - 美国 CloudFlare节点
-      - 美国 CloudFlare公司CDN节点(shopify)
-      - 香港 V2CROSS.COM
-      - 美国 V2CROSS.COM - 2
-      - 俄罗斯 V2CROSS.COM
       - 美国 CloudFlare节点 - 2
+      - 美国 V2CROSS.COM
+      - 美国 CloudFlare节点 - 3
+      - 上海市 联通
   - name: 自动选择
     type: url-test
     proxies:
-      - 新加坡 Amazon数据中心
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 欧盟 V2CROSS.COM
-      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
-      - 美国 V2CROSS.COM
-      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+      - 英国 社会保险安全部
       - 美国 CloudFlare节点
-      - 美国 CloudFlare公司CDN节点(shopify)
-      - 香港 V2CROSS.COM
-      - 美国 V2CROSS.COM - 2
-      - 俄罗斯 V2CROSS.COM
       - 美国 CloudFlare节点 - 2
+      - 美国 V2CROSS.COM
+      - 美国 CloudFlare节点 - 3
+      - 上海市 联通
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 新加坡 Amazon数据中心
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 欧盟 V2CROSS.COM
-      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
-      - 美国 V2CROSS.COM
-      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+      - 英国 社会保险安全部
       - 美国 CloudFlare节点
-      - 美国 CloudFlare公司CDN节点(shopify)
-      - 香港 V2CROSS.COM
-      - 美国 V2CROSS.COM - 2
-      - 俄罗斯 V2CROSS.COM
       - 美国 CloudFlare节点 - 2
+      - 美国 V2CROSS.COM
+      - 美国 CloudFlare节点 - 3
+      - 上海市 联通
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
