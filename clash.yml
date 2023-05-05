@@ -1,83 +1,5 @@
 proxies:
-  - name: 美国 Datability
-    type: vmess
-    server: 140.99.149.45
-    port: 53082
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国 CloudFlare公司CDN节点(shopify)
-    type: vmess
-    server: 23.227.38.99
-    port: 443
-    uuid: 86d37526-5758-4cec-862f-df404b313086
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /3G6WPDL7
-    ws-headers:
-      Host: 1.freek1.xyz
-    tls: true
-  - name: 美国+V2CROSS.COM
-    type: trojan
-    server: 152.70.74.66
-    port: '443'
-    password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
-  - name: 英国 V2CROSS.COM
-    type: vmess
-    server: 171.22.134.4
-    port: 53433
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国加利福尼亚州洛杉矶 PetaExpress
-    type: vmess
-    server: 198.2.206.34
-    port: 33012
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /hax1
-    ws-headers:
-      Host: hax1.freeair.eu.org
   - name: 美国 V2CROSS.COM
-    type: vmess
-    server: 192.203.230.86
-    port: 80
-    uuid: a442dacf-cbb3-488a-9744-61494ea38630
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: us-1.acyun.cf
-  - name: 美国加利福尼亚州洛杉矶 PetaExpress - 2
-    type: vmess
-    server: 198.2.204.154
-    port: 50502
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国 V2CROSS.COM - 2
     type: vmess
     server: 137.175.69.234
     port: 44920
@@ -89,22 +11,46 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国 Amazon EC2服务器
+  - name: 卢森堡 root.lu数据中心
     type: vmess
-    server: 00000000000000000000000007.node-for-smallairport.win
-    port: 3389
-    uuid: 132da563-3590-4203-9d93-cb3b52a4b51b
+    server: dbamwv.76898102.xyz
+    port: 2082
+    uuid: d264f990-a6a5-3832-bf37-1fccaed298dd
     alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /tadvchk
+    ws-headers:
+      Host: dbamwv.76898102.xyz
+  - name: 美国 加利福尼亚州圣何塞PEG TECH
+    type: vmess
+    server: 142.4.114.25
+    port: 55502
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
     cipher: auto
     udp: true
     network: tcp
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国加利福尼亚州洛杉矶 PetaExpress - 3
+  - name: 美国 V2CROSS.COM - 2
     type: vmess
-    server: 198.2.206.37
-    port: 33012
+    server: 45.136.235.11
+    port: 41632
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+    type: vmess
+    server: 107.167.29.142
+    port: 41032
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -115,63 +61,79 @@ proxies:
       Host: ''
   - name: 美国 CloudFlare节点
     type: vmess
-    server: hd.mamadcucu.com
-    port: 2095
-    uuid: 19350d64-6868-4a64-e501-9c0df903d788
+    server: inf.314156.xyz
+    port: 80
+    uuid: 5b3b5d3f-68a1-4afe-8a9e-a55f30af98e3
     alterId: 0
     cipher: auto
     udp: true
     network: ws
+    ws-path: /workerConfig
+    ws-headers:
+      Host: inf.314156.xyz
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: v2ray3.webgfw.top
+    port: 2083
+    uuid: 07e90bec-b70d-414c-a00e-c844f1ea3345
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /X9piqfat/
+    ws-headers:
+      Host: ''
+    tls: true
+  - name: 美国 华盛顿Cogent通信公司
+    type: vmess
+    server: 38.63.17.180
+    port: 50702
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
     ws-path: /
     ws-headers:
-      Host: h3.mamadcucu.com
+      Host: ''
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 Datability
-      - 美国 CloudFlare公司CDN节点(shopify)
-      - 美国+V2CROSS.COM
-      - 英国 V2CROSS.COM
-      - 美国加利福尼亚州洛杉矶 PetaExpress
       - 美国 V2CROSS.COM
-      - 美国加利福尼亚州洛杉矶 PetaExpress - 2
+      - 卢森堡 root.lu数据中心
+      - 美国 加利福尼亚州圣何塞PEG TECH
       - 美国 V2CROSS.COM - 2
-      - 美国 Amazon EC2服务器
-      - 美国加利福尼亚州洛杉矶 PetaExpress - 3
+      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
       - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 - 2
+      - 美国 华盛顿Cogent通信公司
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 Datability
-      - 美国 CloudFlare公司CDN节点(shopify)
-      - 美国+V2CROSS.COM
-      - 英国 V2CROSS.COM
-      - 美国加利福尼亚州洛杉矶 PetaExpress
       - 美国 V2CROSS.COM
-      - 美国加利福尼亚州洛杉矶 PetaExpress - 2
+      - 卢森堡 root.lu数据中心
+      - 美国 加利福尼亚州圣何塞PEG TECH
       - 美国 V2CROSS.COM - 2
-      - 美国 Amazon EC2服务器
-      - 美国加利福尼亚州洛杉矶 PetaExpress - 3
+      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
       - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 - 2
+      - 美国 华盛顿Cogent通信公司
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 Datability
-      - 美国 CloudFlare公司CDN节点(shopify)
-      - 美国+V2CROSS.COM
-      - 英国 V2CROSS.COM
-      - 美国加利福尼亚州洛杉矶 PetaExpress
       - 美国 V2CROSS.COM
-      - 美国加利福尼亚州洛杉矶 PetaExpress - 2
+      - 卢森堡 root.lu数据中心
+      - 美国 加利福尼亚州圣何塞PEG TECH
       - 美国 V2CROSS.COM - 2
-      - 美国 Amazon EC2服务器
-      - 美国加利福尼亚州洛杉矶 PetaExpress - 3
+      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
       - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 - 2
+      - 美国 华盛顿Cogent通信公司
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
