@@ -1,8 +1,8 @@
 proxies:
-  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
+  - name: 美国 加利福尼亚州圣何塞PEG TECH
     type: vmess
-    server: 192.74.255.21
-    port: 59322
+    server: 142.4.119.198
+    port: 53986
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -10,55 +10,12 @@ proxies:
     network: tcp
     ws-path: /
     ws-headers:
-      Host: ''
-  - name: 欧盟 V2CROSS.COM
-    type: vmess
-    server: 45.12.144.83
-    port: 47127
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 香港+Microsoft数据中心
+      Host: new3.hucloud-dns.xyz
+  - name: 美国+加利福尼亚州洛杉矶Level3通信(DIA)
     type: trojan
-    server: kr.mjt001.com
+    server: sg.stablize.top
     port: '443'
-    password: ad3f9bf7-d8d1-47df-a6bd-77ff50037339
-  - name: 卢森堡 V2CROSS.COM
-    type: vmess
-    server: 107.189.5.112
-    port: 7341
-    uuid: 2c7eb798-b8ce-41d9-8ca0-e649e99716e3
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /1kgn7K
-    ws-headers:
-      Host: gbdfesed.uk
-    tls: true
-  - name: 美国+弗吉尼亚州阿什本Amazon数据中心
-    type: trojan
-    server: usa2.hneko.online
-    port: '41144'
-    password: a1b5ee2e-1e69-451c-b5dd-7c6c577a4bcc
-  - name: 俄罗斯 V2CROSS.COM
-    type: vmess
-    server: 185.143.220.25
-    port: 443
-    uuid: f28e354e-c2d1-4983-9b07-5acaf1b3b3e5
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /6e9EtZ2dL
-    ws-headers:
-      Host: ''
-    tls: true
+    password: a85ddae0-3f7d-4f55-bd1d-436062e3a966
   - name: 美国 CloudFlare节点
     type: vmess
     server: cf.noaries.de
@@ -71,36 +28,10 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ir2.nmsl.ninja
-  - name: 美国 CloudFlare节点 - 2
+  - name: 美国 Datability
     type: vmess
-    server: cdnjs.com
-    port: 443
-    uuid: F86EFDE3-B236-493C-A903-998DCEA823E2
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /speedtest
-    ws-headers:
-      Host: Lille.kotick.site
-    tls: true
-  - name: 美国 CloudFlare节点 - 3
-    type: vmess
-    server: v2ray2.ibgfw.top
-    port: 2083
-    uuid: c05fd079-7a3a-4779-816f-30fe65713e16
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /378wmUMF/
-    ws-headers:
-      Host: ''
-    tls: true
-  - name: 美国 加利福尼亚州洛杉矶市SharkTech数据中心
-    type: vmess
-    server: 107.167.29.142
-    port: 41032
+    server: 140.99.149.45
+    port: 53082
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -109,12 +40,17 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国+加利福尼亚州洛杉矶Level3通信(DIA)
+  - name: 美国+Microsoft公司
     type: trojan
-    server: sg.stablize.top
+    server: uk.stablize.top
     port: '443'
-    password: a85ddae0-3f7d-4f55-bd1d-436062e3a966
-  - name: 美国 CloudFlare节点 - 4
+    password: 9478e27c-6bdd-4f0e-ba46-90d9739e1e34
+  - name: 美国+弗吉尼亚州阿什本Amazon数据中心
+    type: trojan
+    server: usa6.hneko.online
+    port: '41113'
+    password: a1b5ee2e-1e69-451c-b5dd-7c6c577a4bcc
+  - name: 美国 CloudFlare节点 - 2
     type: vmess
     server: camtlebb.76898102.xyz
     port: 2095
@@ -126,56 +62,102 @@ proxies:
     ws-path: /funsdfrh
     ws-headers:
       Host: camtleb.76898102.xyz
+  - name: 香港+Microsoft数据中心
+    type: trojan
+    server: kr.mjt001.com
+    port: '443'
+    password: ad3f9bf7-d8d1-47df-a6bd-77ff50037339
+  - name: 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+    type: vmess
+    server: 23.224.110.184
+    port: 443
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /path/080712342310
+    ws-headers:
+      Host: ''
+    tls: true
+  - name: 美国+弗吉尼亚州阿什本Amazon数据中心 - 2
+    type: trojan
+    server: usa3.hneko.online
+    port: '54444'
+    password: a1b5ee2e-1e69-451c-b5dd-7c6c577a4bcc
+  - name: 加拿大 V2CROSS.COM
+    type: vmess
+    server: 199.212.90.14
+    port: 443
+    uuid: 6147F065-9AC0-4081-A5A3-A2EB4EBB8958
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /speedtest
+    ws-headers:
+      Host: Lille.kotick.site
+    tls: true
+  - name: 台湾省 中华电信(HiNet)数据中心
+    type: vmess
+    server: 60.251.3.75
+    port: 47711
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-headers: {}
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 欧盟 V2CROSS.COM
-      - 香港+Microsoft数据中心
-      - 卢森堡 V2CROSS.COM
-      - 美国+弗吉尼亚州阿什本Amazon数据中心
-      - 俄罗斯 V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
-      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+      - 美国 加利福尼亚州圣何塞PEG TECH
       - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
-      - 美国 CloudFlare节点 - 4
+      - 美国 CloudFlare节点
+      - 美国 Datability
+      - 美国+Microsoft公司
+      - 美国+弗吉尼亚州阿什本Amazon数据中心
+      - 美国 CloudFlare节点 - 2
+      - 香港+Microsoft数据中心
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 美国+弗吉尼亚州阿什本Amazon数据中心 - 2
+      - 加拿大 V2CROSS.COM
+      - 台湾省 中华电信(HiNet)数据中心
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 欧盟 V2CROSS.COM
-      - 香港+Microsoft数据中心
-      - 卢森堡 V2CROSS.COM
-      - 美国+弗吉尼亚州阿什本Amazon数据中心
-      - 俄罗斯 V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
-      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+      - 美国 加利福尼亚州圣何塞PEG TECH
       - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
-      - 美国 CloudFlare节点 - 4
+      - 美国 CloudFlare节点
+      - 美国 Datability
+      - 美国+Microsoft公司
+      - 美国+弗吉尼亚州阿什本Amazon数据中心
+      - 美国 CloudFlare节点 - 2
+      - 香港+Microsoft数据中心
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 美国+弗吉尼亚州阿什本Amazon数据中心 - 2
+      - 加拿大 V2CROSS.COM
+      - 台湾省 中华电信(HiNet)数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 欧盟 V2CROSS.COM
-      - 香港+Microsoft数据中心
-      - 卢森堡 V2CROSS.COM
-      - 美国+弗吉尼亚州阿什本Amazon数据中心
-      - 俄罗斯 V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
-      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+      - 美国 加利福尼亚州圣何塞PEG TECH
       - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
-      - 美国 CloudFlare节点 - 4
+      - 美国 CloudFlare节点
+      - 美国 Datability
+      - 美国+Microsoft公司
+      - 美国+弗吉尼亚州阿什本Amazon数据中心
+      - 美国 CloudFlare节点 - 2
+      - 香港+Microsoft数据中心
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 美国+弗吉尼亚州阿什本Amazon数据中心 - 2
+      - 加拿大 V2CROSS.COM
+      - 台湾省 中华电信(HiNet)数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
