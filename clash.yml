@@ -1,8 +1,8 @@
 proxies:
   - name: 美国 V2CROSS.COM
     type: vmess
-    server: 137.175.15.246
-    port: 45232
+    server: 45.136.235.11
+    port: 41632
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -11,6 +11,32 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: aaaa.wxx.gay
+    port: 443
+    uuid: 4f95e994-eaf9-11ed-adda-000017022008
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /look
+    ws-headers:
+      Host: ''
+    tls: true
+  - name: 美国 加利福尼亚州圣何塞ColoCrossing数据中心
+    type: vmess
+    server: rn.blowm1k.club
+    port: 443
+    uuid: 3af44882-71a3-4ad3-9ff2-508eb47cdf2c
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /233blog
+    ws-headers:
+      Host: ''
+    tls: true
   - name: 美国 加利福尼亚州圣何塞PEG TECH
     type: vmess
     server: 142.4.126.66
@@ -23,118 +49,42 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: v2-ca1.silverdragon.cn
-    port: 443
-    uuid: e790e3bf-c553-40ed-b2b6-436afd3f5f5c
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /ca/v2wss
-    ws-headers:
-      Host: v2-ca1.silverdragon.cn
-    tls: true
   - name: 美国 CloudFlare节点 - 2
     type: vmess
-    server: hd.mamadcucu.com
-    port: 2095
-    uuid: 19350d64-6868-4a64-e501-9c0df903d788
+    server: cf-lt.sharecentre.online
+    port: 8080
+    uuid: e2952737-6f10-492b-9813-19131deb71b1
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /
+    ws-path: /api/v3/download.getFile
     ws-headers:
-      Host: h3.mamadcucu.com
-  - name: 美国 CloudFlare节点 - 3
+      Host: ssrsub.v01.ssrsub.com
+  - name: 美国 加利福尼亚州圣何塞PEG TECH - 2
     type: vmess
-    server: inf.314156.xyz
-    port: 80
-    uuid: 5b3b5d3f-68a1-4afe-8a9e-a55f30af98e3
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /workerConfig
-    ws-headers:
-      Host: inf.314156.xyz
-  - name: 上海市 联通
-    type: vmess
-    server: 223.167.41.41
-    port: 63078
-    uuid: 33d04ad6-c7da-3ba1-8941-3845978209a9
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: ''
-    ws-headers:
-      Host: hk-balancer.airport-v2.com
-    tls: true
-  - name: 美国 CloudFlare公司CDN节点(shopify)
-    type: vmess
-    server: 23.227.38.39
-    port: 8880
-    uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: lg.trump2023.net
-  - name: 江苏省扬州市 移动
-    type: vmess
-    server: 223.111.129.116
-    port: 63078
-    uuid: 55329786-3769-3d15-a552-ba42e4d8bae6
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: ''
-    ws-headers:
-      Host: hk-balancer.airport-v2.com
-    tls: true
-  - name: 美国 加利福尼亚州洛杉矶Sharktech数据中心
-    type: vmess
-    server: 67.21.72.41
-    port: 443
-    uuid: 2566d00f-218c-48f7-9a36-13d3d6f1a724
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /path/173418141123
-    ws-headers:
-      Host: www.17080100.xyz
-    tls: true
-  - name: 广东省深圳市 电信
-    type: vmess
-    server: 14.116.151.100
-    port: 63093
-    uuid: 311f3c4b-90a1-3c5c-a4fe-215cc7c90d02
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-headers: {}
-    tls: true
-  - name: 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
-    type: vmess
-    server: 23.224.110.184
-    port: 443
+    server: 142.4.114.25
+    port: 55502
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
     udp: true
-    network: ws
-    ws-path: /path/080712342310
+    network: tcp
+    ws-path: /
     ws-headers:
       Host: ''
-    tls: true
+  - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: cf.yxjnode.com
+    port: 80
+    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /yxzbp
+    ws-headers:
+      Host: buyvm2.yxjnode.com
 proxy-groups:
   - name: Free-servers
     type: select
@@ -142,46 +92,34 @@ proxy-groups:
       - 自动选择
       - 故障转移
       - 美国 V2CROSS.COM
-      - 美国 加利福尼亚州圣何塞PEG TECH
       - 美国 CloudFlare节点
+      - 美国 加利福尼亚州圣何塞ColoCrossing数据中心
+      - 美国 加利福尼亚州圣何塞PEG TECH
       - 美国 CloudFlare节点 - 2
+      - 美国 加利福尼亚州圣何塞PEG TECH - 2
       - 美国 CloudFlare节点 - 3
-      - 上海市 联通
-      - 美国 CloudFlare公司CDN节点(shopify)
-      - 江苏省扬州市 移动
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
-      - 广东省深圳市 电信
-      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
   - name: 自动选择
     type: url-test
     proxies:
       - 美国 V2CROSS.COM
-      - 美国 加利福尼亚州圣何塞PEG TECH
       - 美国 CloudFlare节点
+      - 美国 加利福尼亚州圣何塞ColoCrossing数据中心
+      - 美国 加利福尼亚州圣何塞PEG TECH
       - 美国 CloudFlare节点 - 2
+      - 美国 加利福尼亚州圣何塞PEG TECH - 2
       - 美国 CloudFlare节点 - 3
-      - 上海市 联通
-      - 美国 CloudFlare公司CDN节点(shopify)
-      - 江苏省扬州市 移动
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
-      - 广东省深圳市 电信
-      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
       - 美国 V2CROSS.COM
-      - 美国 加利福尼亚州圣何塞PEG TECH
       - 美国 CloudFlare节点
+      - 美国 加利福尼亚州圣何塞ColoCrossing数据中心
+      - 美国 加利福尼亚州圣何塞PEG TECH
       - 美国 CloudFlare节点 - 2
+      - 美国 加利福尼亚州圣何塞PEG TECH - 2
       - 美国 CloudFlare节点 - 3
-      - 上海市 联通
-      - 美国 CloudFlare公司CDN节点(shopify)
-      - 江苏省扬州市 移动
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
-      - 广东省深圳市 电信
-      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
