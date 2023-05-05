@@ -1,9 +1,15 @@
 proxies:
+  - name: 日本+M247网络
+    type: ss
+    server: 185.172.113.182
+    port: '800'
+    cipher: chacha20-ietf-poly1305
+    password: G!yBwPWH3Vao
   - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
     type: vmess
-    server: 192.74.228.179
-    port: 42857
-    uuid: 051b844f-efe3-4847-92aa-66b5de0b6d4e
+    server: 192.74.255.21
+    port: 59322
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
     udp: true
@@ -11,68 +17,14 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 广东省深圳市 电信
+  - name: 美国+加利福尼亚州洛杉矶Level3通信(DIA)
+    type: trojan
+    server: uk.stablize.top
+    port: '443'
+    password: 9478e27c-6bdd-4f0e-ba46-90d9739e1e34
+  - name: 美国 俄勒冈州波特兰Amazon数据中心
     type: vmess
-    server: 14.116.151.100
-    port: 63093
-    uuid: 311f3c4b-90a1-3c5c-a4fe-215cc7c90d02
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-headers: {}
-    tls: true
-  - name: 印度尼西亚 V2CROSS.COM
-    type: vmess
-    server: free-id.ajunstores.me
-    port: 443
-    uuid: 694caa03-3b2f-476b-8b6c-711115a2c128
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /vmess
-    ws-headers: {}
-    tls: true
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: inf.314156.xyz
-    port: 443
-    uuid: 5b3b5d3f-68a1-4afe-8a9e-a55f30af98e3
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /workerConfig
-    ws-headers: {}
-    tls: true
-  - name: 广东省深圳市 电信 - 2
-    type: vmess
-    server: 14.116.151.100
-    port: 63090
-    uuid: 311f3c4b-90a1-3c5c-a4fe-215cc7c90d02
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-headers: {}
-    tls: true
-  - name: 美国 V2CROSS.COM
-    type: vmess
-    server: vus5.0bad.com
-    port: 443
-    uuid: 927094d3-d678-4763-8591-e240d0bcae87
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /chat
-    ws-headers:
-      Host: ''
-    tls: true
-  - name: 台湾省桃园市 中华电信
-    type: vmess
-    server: v08.jiedian.stream
+    server: v22.jiedian.stream
     port: 80
     uuid: faa80861-9c79-4e63-875d-1b906f5383e6
     alterId: 0
@@ -82,22 +34,10 @@ proxies:
     ws-path: /
     ws-headers:
       Host: gw.alicdn.com
-  - name: 美国 CloudFlare节点 - 2
+  - name: 英国 社会保险安全部
     type: vmess
-    server: hd.mamadcucu.com
-    port: 2095
-    uuid: 19350d64-6868-4a64-e501-9c0df903d788
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: h3.mamadcucu.com
-  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心 - 2
-    type: vmess
-    server: 192.74.242.147
-    port: 44667
+    server: 51.195.35.150
+    port: 30812
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -106,139 +46,35 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 日本 东京都Amazon数据中心
-    type: vmess
-    server: jp04-vm0.entry.srthdw.art
-    port: 446
-    uuid: b2a2c706-12e0-3335-8a62-31925219a712
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 香港 V2CROSS.COM
-    type: vmess
-    server: 156.245.8.93
-    port: 48822
-    uuid: 93503dd5-245a-4eb1-ae2a-57ab9f2b3c29
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: ''
-    ws-headers:
-      Host: ''
-  - name: 印度尼西亚 V2CROSS.COM - 2
-    type: vmess
-    server: free-id.ajunstores.me
-    port: 443
-    uuid: 694caa03-3b2f-476b-8b6c-711115a2c128
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /vmess
-    ws-headers:
-      Host: free-id.ajunstores.me
-    tls: true
-  - name: 美国 V2CROSS.COM - 2
-    type: vmess
-    server: vde2.0bad.com
-    port: 443
-    uuid: 927094d3-d678-4763-8591-e240d0bcae87
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /chat
-    ws-headers: {}
-    tls: true
-  - name: 日本 东京BGP.NET数据中心
-    type: vmess
-    server: 27.124.45.119
-    port: 50002
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国 CloudFlare节点 - 3
-    type: vmess
-    server: quiz.vidio.com
-    port: 443
-    uuid: 92869d41-a98a-40ba-b79d-2eeb7ffe2433
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /worryfree
-    ws-headers:
-      Host: dynamic-sg1b.obfs.xyz
-    tls: true
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
+      - 日本+M247网络
       - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 广东省深圳市 电信
-      - 印度尼西亚 V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 广东省深圳市 电信 - 2
-      - 美国 V2CROSS.COM
-      - 台湾省桃园市 中华电信
-      - 美国 CloudFlare节点 - 2
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心 - 2
-      - 日本 东京都Amazon数据中心
-      - 香港 V2CROSS.COM
-      - 印度尼西亚 V2CROSS.COM - 2
-      - 美国 V2CROSS.COM - 2
-      - 日本 东京BGP.NET数据中心
-      - 美国 CloudFlare节点 - 3
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
+      - 美国 俄勒冈州波特兰Amazon数据中心
+      - 英国 社会保险安全部
   - name: 自动选择
     type: url-test
     proxies:
+      - 日本+M247网络
       - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 广东省深圳市 电信
-      - 印度尼西亚 V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 广东省深圳市 电信 - 2
-      - 美国 V2CROSS.COM
-      - 台湾省桃园市 中华电信
-      - 美国 CloudFlare节点 - 2
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心 - 2
-      - 日本 东京都Amazon数据中心
-      - 香港 V2CROSS.COM
-      - 印度尼西亚 V2CROSS.COM - 2
-      - 美国 V2CROSS.COM - 2
-      - 日本 东京BGP.NET数据中心
-      - 美国 CloudFlare节点 - 3
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
+      - 美国 俄勒冈州波特兰Amazon数据中心
+      - 英国 社会保险安全部
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
+      - 日本+M247网络
       - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 广东省深圳市 电信
-      - 印度尼西亚 V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 广东省深圳市 电信 - 2
-      - 美国 V2CROSS.COM
-      - 台湾省桃园市 中华电信
-      - 美国 CloudFlare节点 - 2
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心 - 2
-      - 日本 东京都Amazon数据中心
-      - 香港 V2CROSS.COM
-      - 印度尼西亚 V2CROSS.COM - 2
-      - 美国 V2CROSS.COM - 2
-      - 日本 东京BGP.NET数据中心
-      - 美国 CloudFlare节点 - 3
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
+      - 美国 俄勒冈州波特兰Amazon数据中心
+      - 英国 社会保险安全部
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
