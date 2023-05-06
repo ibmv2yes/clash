@@ -1,45 +1,58 @@
 proxies:
+  - name: 美国加利福尼亚州洛杉矶 PetaExpress
+    type: vmess
+    server: 198.2.205.113
+    port: 53002
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
+    type: vmess
+    server: 192.74.249.147
+    port: 50042
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
   - name: 美国 CloudFlare节点
     type: vmess
-    server: 162.159.58.13
-    port: 8880
-    uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958
+    server: cdn-xjp4.cqjsl.xyz
+    port: 443
+    uuid: 48dc34e8-561b-4d4b-8a9e-58c06dbfb1da
     alterId: 0
     cipher: auto
     udp: true
     network: ws
     ws-path: /
     ws-headers:
-      Host: lg.trump2023.net
-  - name: 俄罗斯 V2CROSS.COM
-    type: vmess
-    server: 185.143.220.25
-    port: 443
-    uuid: f28e354e-c2d1-4983-9b07-5acaf1b3b3e5
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /6e9EtZ2dL
-    ws-headers:
-      Host: ''
+      Host: cdn-xjp4.cqjsl.xyz
     tls: true
   - name: 美国 CloudFlare节点 - 2
     type: vmess
-    server: i.vpchi.tk
-    port: 2082
-    uuid: 1cbcbeff-de07-4f43-8ca9-4cb3a2a508ab
+    server: v2ray3.webgfw.top
+    port: 2083
+    uuid: 1ace515b-a76b-4378-83ac-0ee3833b98be
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /
+    ws-path: /X9piqfat/
     ws-headers:
-      Host: ''
-  - name: 美国加利福尼亚州洛杉矶 PetaExpress
+      Host: v2ray3.webgfw.top
+    tls: true
+  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心 - 2
     type: vmess
-    server: 198.2.204.246
-    port: 46802
+    server: 192.74.231.173
+    port: 49202
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -60,18 +73,43 @@ proxies:
     ws-path: /api/v3/download.getFile
     ws-headers:
       Host: ssrsub.v03.ssrsub.com
+  - name: 美国 Akamai科技公司CDN网络节点
+    type: vmess
+    server: vin1.0bad.com
+    port: 443
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /chat
+    ws-headers:
+      Host: vin1.0bad.com
+    tls: true
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: 192.203.230.86
+    port: 80
+    uuid: a442dacf-cbb3-488a-9744-61494ea38630
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: us-1.acyun.cf
   - name: 美国 CloudFlare节点 - 4
     type: vmess
-    server: 162.159.58.85
+    server: 108.162.193.69
     port: 443
-    uuid: 2e6e9c6e-6c41-4d8f-b06e-e52b27220ff9
+    uuid: e883ff76-3bb4-4008-c068-6b5b1d960ea7
     alterId: 0
     cipher: auto
     udp: true
     network: ws
     ws-path: /qwer07
     ws-headers:
-      Host: yusa.vtcss.top
+      Host: uyaa.vtcss.top
     tls: true
 proxy-groups:
   - name: Free-servers
@@ -79,31 +117,40 @@ proxy-groups:
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 CloudFlare节点
-      - 俄罗斯 V2CROSS.COM
-      - 美国 CloudFlare节点 - 2
       - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 - 2
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心 - 2
       - 美国 CloudFlare节点 - 3
+      - 美国 Akamai科技公司CDN网络节点
+      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点 - 4
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 CloudFlare节点
-      - 俄罗斯 V2CROSS.COM
-      - 美国 CloudFlare节点 - 2
       - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 - 2
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心 - 2
       - 美国 CloudFlare节点 - 3
+      - 美国 Akamai科技公司CDN网络节点
+      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点 - 4
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 CloudFlare节点
-      - 俄罗斯 V2CROSS.COM
-      - 美国 CloudFlare节点 - 2
       - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 - 2
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心 - 2
       - 美国 CloudFlare节点 - 3
+      - 美国 Akamai科技公司CDN网络节点
+      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点 - 4
     url: http://www.gstatic.com/generate_204
     interval: 86400
