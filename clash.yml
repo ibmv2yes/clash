@@ -1,7 +1,56 @@
 proxies:
   - name: 美国 CloudFlare节点
     type: vmess
-    server: 108.162.193.69
+    server: scaleway.696960.xyz
+    port: 443
+    uuid: e357cd63-f1a5-4c8e-c42e-26da11207fee
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /root/
+    ws-headers:
+      Host: ''
+    tls: true
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: 45.136.235.11
+    port: 41632
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: 104.21.44.220
+    port: 2086
+    uuid: 311f3c4b-90a1-3c5c-a4fe-215cc7c90d02
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: ag01-cdn.myn1des.com
+  - name: 台湾省 中华电信
+    type: vmess
+    server: 61.220.198.102
+    port: 58002
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国弗吉尼亚州阿什本 CloudFlare节点
+    type: vmess
+    server: 173.245.49.40
     port: 443
     uuid: e883ff76-3bb4-4008-c068-6b5b1d960ea7
     alterId: 0
@@ -12,22 +61,45 @@ proxies:
     ws-headers:
       Host: uyaa.vtcss.top
     tls: true
-  - name: 江苏省扬州市 移动
+  - name: 美国 V2CROSS.COM - 2
     type: vmess
-    server: 223.111.129.116
-    port: 63078
-    uuid: 311f3c4b-90a1-3c5c-a4fe-215cc7c90d02
+    server: 192.203.230.86
+    port: 80
+    uuid: a442dacf-cbb3-488a-9744-61494ea38630
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: ''
+    ws-path: /
     ws-headers:
-      Host: hk-balancer.airport-v2.com
-    tls: true
-  - name: 美国 CloudFlare节点 - 2
+      Host: us-1.acyun.cf
+  - name: 美国 CloudFlare节点 - 3
     type: vmess
-    server: visa.com
+    server: hd.mamadcucu.com
+    port: 2052
+    uuid: 8ed9aec2-e02e-4a27-fe02-c3e20452e4c7
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: h4.mamadcucu.com
+  - name: 欧盟 V2CROSS.COM
+    type: vmess
+    server: 45.86.11.189
+    port: 59442
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 CloudFlare节点 - 4
+    type: vmess
+    server: cf-lt.sharecentre.online
     port: 80
     uuid: 373f2d71-79ca-47a4-974f-79b2590e8c60
     alterId: 0
@@ -36,16 +108,11 @@ proxies:
     network: ws
     ws-path: /api/v3/download.getFile
     ws-headers:
-      Host: ssrsub.v03.ssrsub.com
-  - name: 美国+V2CROSS.COM
-    type: trojan
-    server: tempest-us.aikun.online
-    port: '443'
-    password: 11e247e5-136d-45f1-844a-a7f054d36bab
-  - name: 美国 加利福尼亚州圣何塞PEG TECH
+      Host: ssrsub.v02.ssrsub.com
+  - name: 美国 加利福尼亚州洛杉矶Sharktech数据中心
     type: vmess
-    server: 142.4.106.248
-    port: 52902
+    server: 170.178.167.140
+    port: 50002
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -54,91 +121,16 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国 CloudFlare节点 - 3
+  - name: 德国 法兰克福Oracle云计算数据中心
     type: vmess
-    server: 162.159.58.85
-    port: 443
-    uuid: 2e6e9c6e-6c41-4d8f-b06e-e52b27220ff9
+    server: 130.61.111.167
+    port: 21872
+    uuid: 9a7a75d4-ab7e-4ba0-bbfa-a4acddc18084
     alterId: 0
     cipher: auto
     udp: true
-    network: ws
-    ws-path: /qwer07
-    ws-headers:
-      Host: yusa.vtcss.top
-    tls: true
-  - name: 日本 东京PEG TECH
-    type: vmess
-    server: 104.233.191.182
-    port: 443
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /path/031730091420
-    ws-headers:
-      Host: ''
-    tls: true
-  - name: 卢森堡 V2CROSS.COM
-    type: vmess
-    server: 107.189.5.112
-    port: 7341
-    uuid: 2c7eb798-b8ce-41d9-8ca0-e649e99716e3
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /1kgn7K
-    ws-headers:
-      Host: gbdfesed.uk
-    tls: true
-  - name: 澳大利亚 V2CROSS.COM
-    type: vmess
-    server: 143.92.56.218
-    port: 52333
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
     network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国加利福尼亚州洛杉矶 PetaExpress
-    type: vmess
-    server: 198.2.206.34
-    port: 33012
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /hax1
-    ws-headers:
-      Host: hax1.freeair.eu.org
-  - name: 美国 加利福尼亚州洛杉矶市SharkTech数据中心
-    type: vmess
-    server: 107.167.29.93
-    port: 45585
-    uuid: 465dec1a-e09b-4bb6-9905-70f75d6035c8
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国 Datability
-    type: vmess
-    server: 140.99.48.42
-    port: 56102
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
+    ws-path: ''
     ws-headers:
       Host: ''
 proxy-groups:
@@ -148,49 +140,46 @@ proxy-groups:
       - 自动选择
       - 故障转移
       - 美国 CloudFlare节点
-      - 江苏省扬州市 移动
+      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点 - 2
-      - 美国+V2CROSS.COM
-      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 台湾省 中华电信
+      - 美国弗吉尼亚州阿什本 CloudFlare节点
+      - 美国 V2CROSS.COM - 2
       - 美国 CloudFlare节点 - 3
-      - 日本 东京PEG TECH
-      - 卢森堡 V2CROSS.COM
-      - 澳大利亚 V2CROSS.COM
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
-      - 美国 Datability
+      - 欧盟 V2CROSS.COM
+      - 美国 CloudFlare节点 - 4
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 德国 法兰克福Oracle云计算数据中心
   - name: 自动选择
     type: url-test
     proxies:
       - 美国 CloudFlare节点
-      - 江苏省扬州市 移动
+      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点 - 2
-      - 美国+V2CROSS.COM
-      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 台湾省 中华电信
+      - 美国弗吉尼亚州阿什本 CloudFlare节点
+      - 美国 V2CROSS.COM - 2
       - 美国 CloudFlare节点 - 3
-      - 日本 东京PEG TECH
-      - 卢森堡 V2CROSS.COM
-      - 澳大利亚 V2CROSS.COM
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
-      - 美国 Datability
+      - 欧盟 V2CROSS.COM
+      - 美国 CloudFlare节点 - 4
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 德国 法兰克福Oracle云计算数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
       - 美国 CloudFlare节点
-      - 江苏省扬州市 移动
+      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点 - 2
-      - 美国+V2CROSS.COM
-      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 台湾省 中华电信
+      - 美国弗吉尼亚州阿什本 CloudFlare节点
+      - 美国 V2CROSS.COM - 2
       - 美国 CloudFlare节点 - 3
-      - 日本 东京PEG TECH
-      - 卢森堡 V2CROSS.COM
-      - 澳大利亚 V2CROSS.COM
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
-      - 美国 Datability
+      - 欧盟 V2CROSS.COM
+      - 美国 CloudFlare节点 - 4
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 德国 法兰克福Oracle云计算数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
