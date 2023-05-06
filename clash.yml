@@ -1,16 +1,4 @@
 proxies:
-  - name: 美国加利福尼亚州洛杉矶 PetaExpress
-    type: vmess
-    server: 198.2.205.113
-    port: 53002
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
   - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
     type: vmess
     server: 192.74.249.147
@@ -23,19 +11,54 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
+  - name: 美国 加利福尼亚州圣何塞PEG TECH
+    type: vmess
+    server: 142.4.97.76
+    port: 44942
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
   - name: 美国 CloudFlare节点
     type: vmess
-    server: cdn-xjp4.cqjsl.xyz
-    port: 443
-    uuid: 48dc34e8-561b-4d4b-8a9e-58c06dbfb1da
+    server: cf-lt.sharecentre.online
+    port: 80
+    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
     alterId: 0
     cipher: auto
     udp: true
     network: ws
+    ws-path: /shirker
+    ws-headers:
+      Host: nl.ilovescp.com
+  - name: 美国 加利福尼亚州圣何塞PEG TECH - 2
+    type: vmess
+    server: 142.4.118.250
+    port: 57402
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
     ws-path: /
     ws-headers:
-      Host: cdn-xjp4.cqjsl.xyz
-    tls: true
+      Host: ''
+  - name: 美国 加利福尼亚州森尼韦尔市PEG TECH公司
+    type: vmess
+    server: 142.0.132.43
+    port: 50015
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
   - name: 美国 CloudFlare节点 - 2
     type: vmess
     server: v2ray3.webgfw.top
@@ -49,67 +72,18 @@ proxies:
     ws-headers:
       Host: v2ray3.webgfw.top
     tls: true
-  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心 - 2
-    type: vmess
-    server: 192.74.231.173
-    port: 49202
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
   - name: 美国 CloudFlare节点 - 3
     type: vmess
-    server: cf-lt.sharecentre.online
-    port: 8080
-    uuid: e2952737-6f10-492b-9813-19131deb71b1
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /api/v3/download.getFile
-    ws-headers:
-      Host: ssrsub.v03.ssrsub.com
-  - name: 美国 Akamai科技公司CDN网络节点
-    type: vmess
-    server: vin1.0bad.com
+    server: cdnjs.com
     port: 443
-    uuid: 927094d3-d678-4763-8591-e240d0bcae87
+    uuid: B6076D16-1F56-4D56-80E7-1B45FEE195E9
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /chat
+    ws-path: /speedtest
     ws-headers:
-      Host: vin1.0bad.com
-    tls: true
-  - name: 美国 V2CROSS.COM
-    type: vmess
-    server: 192.203.230.86
-    port: 80
-    uuid: a442dacf-cbb3-488a-9744-61494ea38630
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: us-1.acyun.cf
-  - name: 美国 CloudFlare节点 - 4
-    type: vmess
-    server: 108.162.193.69
-    port: 443
-    uuid: e883ff76-3bb4-4008-c068-6b5b1d960ea7
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /qwer07
-    ws-headers:
-      Host: uyaa.vtcss.top
+      Host: Kansas.kotick.site
     tls: true
 proxy-groups:
   - name: Free-servers
@@ -117,41 +91,35 @@ proxy-groups:
     proxies:
       - 自动选择
       - 故障转移
-      - 美国加利福尼亚州洛杉矶 PetaExpress
       - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 美国 加利福尼亚州圣何塞PEG TECH
       - 美国 CloudFlare节点
+      - 美国 加利福尼亚州圣何塞PEG TECH - 2
+      - 美国 加利福尼亚州森尼韦尔市PEG TECH公司
       - 美国 CloudFlare节点 - 2
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心 - 2
       - 美国 CloudFlare节点 - 3
-      - 美国 Akamai科技公司CDN网络节点
-      - 美国 V2CROSS.COM
-      - 美国 CloudFlare节点 - 4
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国加利福尼亚州洛杉矶 PetaExpress
       - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 美国 加利福尼亚州圣何塞PEG TECH
       - 美国 CloudFlare节点
+      - 美国 加利福尼亚州圣何塞PEG TECH - 2
+      - 美国 加利福尼亚州森尼韦尔市PEG TECH公司
       - 美国 CloudFlare节点 - 2
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心 - 2
       - 美国 CloudFlare节点 - 3
-      - 美国 Akamai科技公司CDN网络节点
-      - 美国 V2CROSS.COM
-      - 美国 CloudFlare节点 - 4
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国加利福尼亚州洛杉矶 PetaExpress
       - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 美国 加利福尼亚州圣何塞PEG TECH
       - 美国 CloudFlare节点
+      - 美国 加利福尼亚州圣何塞PEG TECH - 2
+      - 美国 加利福尼亚州森尼韦尔市PEG TECH公司
       - 美国 CloudFlare节点 - 2
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心 - 2
       - 美国 CloudFlare节点 - 3
-      - 美国 Akamai科技公司CDN网络节点
-      - 美国 V2CROSS.COM
-      - 美国 CloudFlare节点 - 4
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
