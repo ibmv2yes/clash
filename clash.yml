@@ -1,21 +1,37 @@
 proxies:
-  - name: 俄罗斯 V2CROSS.COM
+  - name: 美国+加利福尼亚州洛杉矶Level3通信(DIA)
+    type: trojan
+    server: uk.stablize.top
+    port: '443'
+    password: 9478e27c-6bdd-4f0e-ba46-90d9739e1e34
+  - name: 美国 Cloudinnovation数据中心
     type: vmess
-    server: 185.143.220.25
-    port: 443
-    uuid: f28e354e-c2d1-4983-9b07-5acaf1b3b3e5
+    server: 154.85.0.234
+    port: 56120
+    uuid: 078eb24d-8d1d-4fbd-b914-ee58a897a35e
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: cf.noaries.de
+    port: 2082
+    uuid: 314c1387-618c-4689-97fc-4bc9a1ae5e05
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /6e9EtZ2dL
+    ws-path: /
     ws-headers:
-      Host: ''
-    tls: true
-  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      Host: ir2.nmsl.ninja
+  - name: 美国 V2CROSS.COM
     type: vmess
-    server: 192.74.249.147
-    port: 50042
+    server: 45.136.235.11
+    port: 41632
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -24,37 +40,29 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国 V2CROSS.COM
+  - name: 美国+V2CROSS.COM
+    type: trojan
+    server: tempest-us.aikun.online
+    port: '443'
+    password: 11e247e5-136d-45f1-844a-a7f054d36bab
+  - name: 美国 Cloudinnovation数据中心 - 2
     type: vmess
-    server: 192.203.230.86
-    port: 80
-    uuid: a442dacf-cbb3-488a-9744-61494ea38630
-    alterId: 0
+    server: 154.85.0.225
+    port: 48822
+    uuid: 418048af-a293-4b99-9b0c-98ca4690dd24
+    alterId: 64
     cipher: auto
     udp: true
-    network: ws
+    network: tcp
     ws-path: /
     ws-headers:
-      Host: us-1.acyun.cf
-  - name: 美国 CloudFlare节点
+      Host: ''
+  - name: 日本 V2CROSS.COM
     type: vmess
-    server: cdnjs.com
-    port: 443
-    uuid: F86EFDE3-B236-493C-A903-998DCEA823E2
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /speedtest
-    ws-headers:
-      Host: Lille.kotick.site
-    tls: true
-  - name: 美国 V2CROSS.COM - 2
-    type: vmess
-    server: 137.175.18.91
-    port: 42002
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
+    server: jp02-vm0.entry.srthdw.art
+    port: 444
+    uuid: 21c670ff-c739-3072-9286-7d2a1d300fcb
+    alterId: 1
     cipher: auto
     udp: true
     network: tcp
@@ -67,29 +75,35 @@ proxy-groups:
     proxies:
       - 自动选择
       - 故障转移
-      - 俄罗斯 V2CROSS.COM
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 美国 V2CROSS.COM
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
+      - 美国 Cloudinnovation数据中心
       - 美国 CloudFlare节点
-      - 美国 V2CROSS.COM - 2
+      - 美国 V2CROSS.COM
+      - 美国+V2CROSS.COM
+      - 美国 Cloudinnovation数据中心 - 2
+      - 日本 V2CROSS.COM
   - name: 自动选择
     type: url-test
     proxies:
-      - 俄罗斯 V2CROSS.COM
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 美国 V2CROSS.COM
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
+      - 美国 Cloudinnovation数据中心
       - 美国 CloudFlare节点
-      - 美国 V2CROSS.COM - 2
+      - 美国 V2CROSS.COM
+      - 美国+V2CROSS.COM
+      - 美国 Cloudinnovation数据中心 - 2
+      - 日本 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 俄罗斯 V2CROSS.COM
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 美国 V2CROSS.COM
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
+      - 美国 Cloudinnovation数据中心
       - 美国 CloudFlare节点
-      - 美国 V2CROSS.COM - 2
+      - 美国 V2CROSS.COM
+      - 美国+V2CROSS.COM
+      - 美国 Cloudinnovation数据中心 - 2
+      - 日本 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
