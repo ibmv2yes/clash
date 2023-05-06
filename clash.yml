@@ -1,7 +1,73 @@
 proxies:
-  - name: 美国 Linode数据中心
+  - name: 美国 惠普HP
     type: vmess
-    server: vus3.0bad.com
+    server: hk3.af49c4e4c2ef.sanfen004.me
+    port: 443
+    uuid: 30ba67cf-776c-48be-8bb5-578878830228
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /zh-cn
+    ws-headers:
+      Host: ''
+    tls: true
+  - name: 澳大利亚 V2CROSS.COM
+    type: vmess
+    server: 143.92.56.218
+    port: 52333
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 Cloudinnovation数据中心
+    type: vmess
+    server: 154.84.1.50
+    port: 49920
+    uuid: bd249e37-7359-41ee-84a7-09e49e0ec5c4
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: ''
+    ws-headers:
+      Host: ''
+  - name: 广东省深圳市 电信
+    type: vmess
+    server: 14.116.151.100
+    port: 63093
+    uuid: 311f3c4b-90a1-3c5c-a4fe-215cc7c90d02
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-headers: {}
+    tls: true
+  - name: 美国+V2CROSS.COM
+    type: trojan
+    server: 152.70.74.66
+    port: 443?security=tls&type=tcp&headerType=none
+    password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
+  - name: 俄罗斯 V2CROSS.COM
+    type: vmess
+    server: 185.143.220.25
+    port: 443
+    uuid: f28e354e-c2d1-4983-9b07-5acaf1b3b3e5
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /6e9EtZ2dL
+    ws-headers:
+      Host: ''
+    tls: true
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: 170.187.200.114
     port: 443
     uuid: 927094d3-d678-4763-8591-e240d0bcae87
     alterId: 0
@@ -9,85 +75,44 @@ proxies:
     udp: true
     network: ws
     ws-path: /chat
-    ws-headers: {}
-    tls: true
-  - name: 美国 V2CROSS.COM
-    type: vmess
-    server: 146.190.89.189
-    port: 31361
-    uuid: 0f2311e2-93a9-4f6e-b6a0-633edaca90dc
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: cf-lt.sharecentre.online
-    port: 8080
-    uuid: e2952737-6f10-492b-9813-19131deb71b1
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /api/v3/download.getFile
-    ws-headers:
-      Host: ssrsub.v01.ssrsub.com
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: hd.mamadcucu.com
-    port: 2095
-    uuid: 19350d64-6868-4a64-e501-9c0df903d788
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: h3.mamadcucu.com
-  - name: 澳大利亚 Cranbourne Secondary College
-    type: vmess
-    server: 203.30.191.100
-    port: 8880
-    uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: lg.trump2023.net
+    tls: true
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 Linode数据中心
+      - 美国 惠普HP
+      - 澳大利亚 V2CROSS.COM
+      - 美国 Cloudinnovation数据中心
+      - 广东省深圳市 电信
+      - 美国+V2CROSS.COM
+      - 俄罗斯 V2CROSS.COM
       - 美国 V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 澳大利亚 Cranbourne Secondary College
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 Linode数据中心
+      - 美国 惠普HP
+      - 澳大利亚 V2CROSS.COM
+      - 美国 Cloudinnovation数据中心
+      - 广东省深圳市 电信
+      - 美国+V2CROSS.COM
+      - 俄罗斯 V2CROSS.COM
       - 美国 V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 澳大利亚 Cranbourne Secondary College
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 Linode数据中心
+      - 美国 惠普HP
+      - 澳大利亚 V2CROSS.COM
+      - 美国 Cloudinnovation数据中心
+      - 广东省深圳市 电信
+      - 美国+V2CROSS.COM
+      - 俄罗斯 V2CROSS.COM
       - 美国 V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 澳大利亚 Cranbourne Secondary College
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
