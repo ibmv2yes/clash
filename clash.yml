@@ -1,8 +1,37 @@
 proxies:
+  - name: 美国 华盛顿Cogent通信公司
+    type: vmess
+    server: 38.63.17.166
+    port: 50702
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国+加利福尼亚州洛杉矶Level3通信(DIA)
+    type: trojan
+    server: uk.stablize.top
+    port: '443'
+    password: 9478e27c-6bdd-4f0e-ba46-90d9739e1e34
+  - name: 美国 Datability
+    type: vmess
+    server: 140.99.149.45
+    port: 53082
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
   - name: 美国 加利福尼亚州圣何塞PEG TECH
     type: vmess
-    server: 142.4.118.250
-    port: 57402
+    server: 142.4.126.77
+    port: 31002
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -11,66 +40,23 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 卢森堡 V2CROSS.COM
-    type: vmess
-    server: 107.189.5.112
-    port: 7341
-    uuid: 2c7eb798-b8ce-41d9-8ca0-e649e99716e3
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /1kgn7K
-    ws-headers:
-      Host: gbdfesed.uk
-    tls: true
-  - name: 上海市+电信
-    type: trojan
-    server: official.taipeicitygovernment.kiev.ua
-    port: 8443?sni=66.42.40.132
-    password: 5505f6ba-cd37-30ce-8f92-be4120c83d7f
-  - name: 美国 加利福尼亚州洛杉矶Sharktech数据中心
-    type: vmess
-    server: 170.178.179.189
-    port: 443
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /path/031730091420
-    ws-headers:
-      Host: ''
-    tls: true
-  - name: 美国 V2CROSS.COM
-    type: vmess
-    server: 192.203.230.86
-    port: 80
-    uuid: a442dacf-cbb3-488a-9744-61494ea38630
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: us-1.acyun.cf
-  - name: 美国加利福尼亚州洛杉矶 PetaExpress
-    type: vmess
-    server: 198.2.206.34
-    port: 33012
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /hax1
-    ws-headers:
-      Host: hax1.freeair.eu.org
   - name: 欧盟 V2CROSS.COM
     type: vmess
-    server: 45.12.144.79
+    server: 45.12.144.83
     port: 47127
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 南非 V2CROSS.COM
+    type: vmess
+    server: 156.225.67.78
+    port: 45043
+    uuid: 3e016c4d-986e-42df-838c-6046f3d89ecf
     alterId: 64
     cipher: auto
     udp: true
@@ -78,15 +64,10 @@ proxies:
     ws-path: ''
     ws-headers:
       Host: ''
-  - name: 美国+V2CROSS.COM
-    type: trojan
-    server: 152.70.74.66
-    port: 443?security=tls&type=tcp&headerType=none
-    password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
-  - name: 美国 Datability
+  - name: 澳大利亚 V2CROSS.COM
     type: vmess
-    server: 140.99.48.26
-    port: 57102
+    server: 143.92.56.218
+    port: 52333
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -95,62 +76,41 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: cf-lt.sharecentre.online
-    port: 80
-    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /shirker
-    ws-headers:
-      Host: nl.ilovescp.com
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 卢森堡 V2CROSS.COM
-      - 上海市+电信
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
-      - 美国 V2CROSS.COM
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 欧盟 V2CROSS.COM
-      - 美国+V2CROSS.COM
+      - 美国 华盛顿Cogent通信公司
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
       - 美国 Datability
-      - 美国 CloudFlare节点
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 欧盟 V2CROSS.COM
+      - 南非 V2CROSS.COM
+      - 澳大利亚 V2CROSS.COM
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 卢森堡 V2CROSS.COM
-      - 上海市+电信
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
-      - 美国 V2CROSS.COM
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 欧盟 V2CROSS.COM
-      - 美国+V2CROSS.COM
+      - 美国 华盛顿Cogent通信公司
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
       - 美国 Datability
-      - 美国 CloudFlare节点
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 欧盟 V2CROSS.COM
+      - 南非 V2CROSS.COM
+      - 澳大利亚 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 卢森堡 V2CROSS.COM
-      - 上海市+电信
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
-      - 美国 V2CROSS.COM
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 欧盟 V2CROSS.COM
-      - 美国+V2CROSS.COM
+      - 美国 华盛顿Cogent通信公司
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
       - 美国 Datability
-      - 美国 CloudFlare节点
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 欧盟 V2CROSS.COM
+      - 南非 V2CROSS.COM
+      - 澳大利亚 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
