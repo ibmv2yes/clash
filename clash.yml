@@ -1,4 +1,131 @@
 proxies:
+  - name: 香港 电讯盈科有限公司
+    type: vmess
+    server: hkt2.amazonwebservicess.com
+    port: 80
+    uuid: 6a3aa35d-27c9-42de-bd4c-f0fcd8b9d822
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /filestreamingservice/files/20f813e2-036a-42a8-92e2-a3a55a0b239b
+    ws-headers:
+      Host: ''
+  - name: 欧盟 V2CROSS.COM
+    type: vmess
+    server: 45.12.144.79
+    port: 47127
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: ''
+    ws-headers:
+      Host: ''
+  - name: 美国 Datability
+    type: vmess
+    server: 140.99.48.26
+    port: 57102
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: 137.175.52.17
+    port: 33002
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: dynamic-sg1b.obfs.xyz
+  - name: 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+    type: vmess
+    server: 23.224.191.6
+    port: 443
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /path/220128071100
+    ws-headers:
+      Host: ''
+    tls: true
+  - name: 上海市+电信
+    type: trojan
+    server: official.taipeicitygovernment.kiev.ua
+    port: '8443'
+    password: 5505f6ba-cd37-30ce-8f92-be4120c83d7f
+  - name: 美国 加利福尼亚州洛杉矶Sharktech数据中心
+    type: vmess
+    server: 67.21.77.73
+    port: 47140
+    uuid: fabb30e8-3a2c-4149-9651-2758f7712481
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: ''
+    ws-headers:
+      Host: ''
+  - name: 日本 东京BGP.NET数据中心
+    type: vmess
+    server: 27.124.45.119
+    port: 50002
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 V2CROSS.COM - 2
+    type: vmess
+    server: mci.bamarambash.monster
+    port: 443
+    uuid: 8f74ec8a-971c-11ed-a8fc-0242ac120002
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /db698b16-d216-11ed-8e14-5ad705867cff
+    ws-headers:
+      Host: db698b16-d216-11ed-8e14-5ad705867cff.asmandll.com
+    tls: true
+  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
+    type: vmess
+    server: 192.74.243.53
+    port: 49206
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 澳大利亚 Canterbury Girls' Secondary College
+    type: vmess
+    server: dbamwv.76898102.xyz
+    port: 2082
+    uuid: d264f990-a6a5-3832-bf37-1fccaed298dd
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /tadvchk
+    ws-headers:
+      Host: dbamwv.76898102.xyz
   - name: 美国 CloudFlare节点
     type: vmess
     server: scaleway.696960.xyz
@@ -12,83 +139,87 @@ proxies:
     ws-headers:
       Host: ''
     tls: true
-  - name: 法国 OVH数据中心
+  - name: 美国 CloudFlare节点 - 2
     type: vmess
-    server: 54.37.206.205
-    port: 54002
+    server: cf-lt.sharecentre.online
+    port: 80
+    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /shirker
+    ws-headers:
+      Host: nl.ilovescp.com
+  - name: 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心 - 2
+    type: vmess
+    server: 23.224.191.5
+    port: 443
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
     udp: true
-    network: tcp
-    ws-path: /
+    network: ws
+    ws-path: /path/220128071100
     ws-headers:
       Host: ''
-  - name: 英国 社会保险安全部
-    type: vmess
-    server: 51.195.35.150
-    port: 30812
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国 V2CROSS.COM
-    type: vmess
-    server: 108.186.116.175
-    port: 55005
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国 V2CROSS.COM - 2
-    type: vmess
-    server: 45.136.235.11
-    port: 41632
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
+    tls: true
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 CloudFlare节点
-      - 法国 OVH数据中心
-      - 英国 社会保险安全部
+      - 香港 电讯盈科有限公司
+      - 欧盟 V2CROSS.COM
+      - 美国 Datability
       - 美国 V2CROSS.COM
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 上海市+电信
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 日本 东京BGP.NET数据中心
       - 美国 V2CROSS.COM - 2
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 澳大利亚 Canterbury Girls' Secondary College
+      - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 - 2
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心 - 2
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 CloudFlare节点
-      - 法国 OVH数据中心
-      - 英国 社会保险安全部
+      - 香港 电讯盈科有限公司
+      - 欧盟 V2CROSS.COM
+      - 美国 Datability
       - 美国 V2CROSS.COM
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 上海市+电信
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 日本 东京BGP.NET数据中心
       - 美国 V2CROSS.COM - 2
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 澳大利亚 Canterbury Girls' Secondary College
+      - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 - 2
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心 - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 CloudFlare节点
-      - 法国 OVH数据中心
-      - 英国 社会保险安全部
+      - 香港 电讯盈科有限公司
+      - 欧盟 V2CROSS.COM
+      - 美国 Datability
       - 美国 V2CROSS.COM
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 上海市+电信
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 日本 东京BGP.NET数据中心
       - 美国 V2CROSS.COM - 2
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 澳大利亚 Canterbury Girls' Secondary College
+      - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 - 2
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心 - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
