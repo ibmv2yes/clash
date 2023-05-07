@@ -1,4 +1,17 @@
 proxies:
+  - name: 美国 惠普HP
+    type: vmess
+    server: hk2.c2bfe79372be.sanfen004.me
+    port: 443
+    uuid: 30ba67cf-776c-48be-8bb5-578878830228
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /zh-cn
+    ws-headers:
+      Host: www.microsoft.com
+    tls: true
   - name: 美国加利福尼亚州洛杉矶 PetaExpress
     type: vmess
     server: 198.2.203.58
@@ -11,156 +24,80 @@ proxies:
     ws-headers: {}
   - name: 美国+Xerox
     type: trojan
+    server: sg3.cnamazon.sbs
+    port: '443'
+    password: 88a7eb00-f011-4b70-ac2c-a06ef3962b70
+  - name: 美国+Xerox - 2
+    type: trojan
     server: sg5.cnamazon.sbs
     port: '443'
     password: 88a7eb00-f011-4b70-ac2c-a06ef3962b70
   - name: 美国 CloudFlare节点
     type: vmess
-    server: aaaa.wxx.gay
+    server: ming2.kiwireich.com
     port: 443
-    uuid: a5e7a43e-ec8b-11ed-b878-000017022008
+    uuid: 18e5f40f-bda6-4c15-9334-e87cda6047af
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /look
+    ws-path: /ray
     ws-headers:
       Host: ''
     tls: true
-  - name: 日本+V2CROSS.COM
-    type: trojan
-    server: jp4.cnamazon.sbs
-    port: '443'
-    password: 88a7eb00-f011-4b70-ac2c-a06ef3962b70
-  - name: 美国+惠普HP
-    type: trojan
-    server: hk3.cnamazon.sbs
-    port: '443'
-    password: 88a7eb00-f011-4b70-ac2c-a06ef3962b70
-  - name: 美国+Xerox - 2
-    type: trojan
-    server: us1.cnamazon.sbs
-    port: '443'
-    password: 88a7eb00-f011-4b70-ac2c-a06ef3962b70
-  - name: 台湾省台北市+scloud.sg
-    type: trojan
-    server: bgptw2.cnamazon.sbs
-    port: '443'
-    password: 88a7eb00-f011-4b70-ac2c-a06ef3962b70
-  - name: 美国+密苏里州堪萨斯城Heymman+Servers
-    type: ss
-    server: 185.199.224.245
-    port: '41111'
-    cipher: aes-256-gcm
-    password: dongtaiwang.com
-  - name: 美国 Datability
+  - name: 美国 加利福尼亚州费里蒙Linode数据中心
     type: vmess
-    server: 140.99.48.26
-    port: 57102
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 新加坡+Google云计算数据中心
-    type: ss
-    server: wj-sg-02.wujie.bio
-    port: '9306'
-    cipher: chacha20-ietf-poly1305
-    password: 4b89f977-b22c-4d8a-bdaf-4c5e1b2acb15
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: 172.64.195.14
-    port: 80
-    uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a
+    server: vus2.0bad.com
+    port: 443
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /
-    ws-headers:
-      Host: lg.v2ray20.xyz
-  - name: 美国 加利福尼亚州洛杉矶Krypt机房
-    type: vmess
-    server: 98.126.31.99
-    port: 42321
-    uuid: c8fde75a-630b-4f84-8c99-eff6765ab1a2
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /us7/getData
+    ws-path: /chat
     ws-headers:
       Host: ''
     tls: true
-  - name: 台湾省 中华电信(HiNet)数据中心
-    type: vmess
-    server: 60.251.3.76
-    port: 47711
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
+  - name: 加拿大+V2CROSS.COM
+    type: trojan
+    server: bgptw4.cnamazon.sbs
+    port: '443'
+    password: 88a7eb00-f011-4b70-ac2c-a06ef3962b70
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
+      - 美国 惠普HP
       - 美国加利福尼亚州洛杉矶 PetaExpress
       - 美国+Xerox
-      - 美国 CloudFlare节点
-      - 日本+V2CROSS.COM
-      - 美国+惠普HP
       - 美国+Xerox - 2
-      - 台湾省台北市+scloud.sg
-      - 美国+密苏里州堪萨斯城Heymman+Servers
-      - 美国 Datability
-      - 新加坡+Google云计算数据中心
-      - 美国 CloudFlare节点 - 2
-      - 美国 加利福尼亚州洛杉矶Krypt机房
-      - 台湾省 中华电信(HiNet)数据中心
+      - 美国 CloudFlare节点
+      - 美国 加利福尼亚州费里蒙Linode数据中心
+      - 加拿大+V2CROSS.COM
   - name: 自动选择
     type: url-test
     proxies:
+      - 美国 惠普HP
       - 美国加利福尼亚州洛杉矶 PetaExpress
       - 美国+Xerox
-      - 美国 CloudFlare节点
-      - 日本+V2CROSS.COM
-      - 美国+惠普HP
       - 美国+Xerox - 2
-      - 台湾省台北市+scloud.sg
-      - 美国+密苏里州堪萨斯城Heymman+Servers
-      - 美国 Datability
-      - 新加坡+Google云计算数据中心
-      - 美国 CloudFlare节点 - 2
-      - 美国 加利福尼亚州洛杉矶Krypt机房
-      - 台湾省 中华电信(HiNet)数据中心
+      - 美国 CloudFlare节点
+      - 美国 加利福尼亚州费里蒙Linode数据中心
+      - 加拿大+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
+      - 美国 惠普HP
       - 美国加利福尼亚州洛杉矶 PetaExpress
       - 美国+Xerox
-      - 美国 CloudFlare节点
-      - 日本+V2CROSS.COM
-      - 美国+惠普HP
       - 美国+Xerox - 2
-      - 台湾省台北市+scloud.sg
-      - 美国+密苏里州堪萨斯城Heymman+Servers
-      - 美国 Datability
-      - 新加坡+Google云计算数据中心
-      - 美国 CloudFlare节点 - 2
-      - 美国 加利福尼亚州洛杉矶Krypt机房
-      - 台湾省 中华电信(HiNet)数据中心
+      - 美国 CloudFlare节点
+      - 美国 加利福尼亚州费里蒙Linode数据中心
+      - 加拿大+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
