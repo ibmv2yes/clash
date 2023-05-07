@@ -1,56 +1,38 @@
 proxies:
-  - name: 美国 CloudFlare节点
+  - name: 美国 V2CROSS.COM
     type: vmess
-    server: 172.66.43.240
-    port: 443
-    uuid: 12612e87-8003-44a8-b4e8-ec4a325e9016
+    server: 192.203.230.86
+    port: 80
+    uuid: a442dacf-cbb3-488a-9744-61494ea38630
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /ou
+    ws-path: /
     ws-headers:
-      Host: z.zorro.tk
-    tls: true
-  - name: 美国+惠普HP
-    type: trojan
-    server: hk2.microsoftjs.top
-    port: '80'
-    password: e5d13389-59bf-4ae8-8237-d8dec8195e60
-  - name: 加拿大+V2CROSS.COM
-    type: trojan
-    server: tw2.microsoftjs.top
-    port: '443'
-    password: e5d13389-59bf-4ae8-8237-d8dec8195e60
-  - name: 台湾省彰化县 中华电信
+      Host: us-1.acyun.cf
+  - name: 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
     type: vmess
-    server: 1.170.221.19
-    port: 7885
-    uuid: 12a17fa9-b2b4-4c69-aef5-79886ba859bf
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /yn09Nrg8a
-    ws-headers:
-      Host: fghyhhonline.uk
-    tls: true
-  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
-    type: vmess
-    server: 192.74.228.177
-    port: 42857
-    uuid: 051b844f-efe3-4847-92aa-66b5de0b6d4e
+    server: 23.224.14.142
+    port: 55332
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
     udp: true
     network: tcp
-    ws-path: /
+    ws-path: /shirker
     ws-headers:
       Host: ''
-  - name: 美国 华盛顿Cogent通信公司
+  - name: 美国+V2CROSS.COM
+    type: ss
+    server: 172.99.188.99
+    port: '4444'
+    cipher: aes-256-gcm
+    password: pKEW8JPByTVTLtM
+  - name: 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心 - 2
     type: vmess
-    server: 38.63.17.164
-    port: 50702
+    server: 23.225.33.171
+    port: 56662
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -59,108 +41,116 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国+惠普HP - 2
-    type: trojan
-    server: hk5.microsoftjs.top
-    port: '443'
-    password: e5d13389-59bf-4ae8-8237-d8dec8195e60
+  - name: 美国加利福尼亚州洛杉矶 PetaExpress
+    type: vmess
+    server: 198.2.204.250
+    port: 46802
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国加利福尼亚州洛杉矶 PetaExpress - 2
+    type: vmess
+    server: 198.2.205.113
+    port: 53002
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
   - name: 台湾省台北市+scloud.sg
     type: trojan
-    server: bgptw1.cnamazon.sbs
+    server: tw4.microsoftjs.top
     port: '443'
-    password: 88a7eb00-f011-4b70-ac2c-a06ef3962b70
-  - name: 美国 CloudFlare节点 - 2
+    password: e5d13389-59bf-4ae8-8237-d8dec8195e60
+  - name: 美国 V2CROSS.COM - 2
     type: vmess
-    server: cf.yxjnode.com
+    server: 192.203.230.86
     port: 80
-    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
+    uuid: a442dacf-cbb3-488a-9744-61494ea38630
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /yxzbp
+    ws-path: /
     ws-headers:
-      Host: dp1.yxjnode.com
-  - name: 美国 CloudFlare节点 - 3
-    type: vmess
-    server: 108.162.193.69
-    port: 443
-    uuid: e883ff76-3bb4-4008-c068-6b5b1d960ea7
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /qwer07
-    ws-headers:
-      Host: uyaa.vtcss.top
-    tls: true
+      Host: us-1.acyun.cf
   - name: 美国+乔治亚州
     type: trojan
     server: usjjs.ndy58850.me
     port: '26656'
     password: 799c66fa-1188-4d89-bc94-9a6b9587c1b0
-  - name: 美国 CloudFlare节点 - 4
+  - name: 罗马尼亚 V2CROSS.COM
     type: vmess
-    server: cf-lt.sharecentre.online
+    server: 185.244.208.115
     port: 80
-    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
+    uuid: 2cfc4c58-88cb-4e00-9977-ef0a37559a22
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /shirker
+    ws-path: /
     ws-headers:
-      Host: lv1.sharecentrepro.org
+      Host: ''
+  - name: 美国+V2CROSS.COM - 2
+    type: trojan
+    server: 152.70.74.66
+    port: 443?security=tls&type=tcp&headerType=none
+    password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 CloudFlare节点
-      - 美国+惠普HP
-      - 加拿大+V2CROSS.COM
-      - 台湾省彰化县 中华电信
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 美国 华盛顿Cogent通信公司
-      - 美国+惠普HP - 2
+      - 美国 V2CROSS.COM
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 美国+V2CROSS.COM
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心 - 2
+      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 美国加利福尼亚州洛杉矶 PetaExpress - 2
       - 台湾省台北市+scloud.sg
-      - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
+      - 美国 V2CROSS.COM - 2
       - 美国+乔治亚州
-      - 美国 CloudFlare节点 - 4
+      - 罗马尼亚 V2CROSS.COM
+      - 美国+V2CROSS.COM - 2
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 CloudFlare节点
-      - 美国+惠普HP
-      - 加拿大+V2CROSS.COM
-      - 台湾省彰化县 中华电信
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 美国 华盛顿Cogent通信公司
-      - 美国+惠普HP - 2
+      - 美国 V2CROSS.COM
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 美国+V2CROSS.COM
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心 - 2
+      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 美国加利福尼亚州洛杉矶 PetaExpress - 2
       - 台湾省台北市+scloud.sg
-      - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
+      - 美国 V2CROSS.COM - 2
       - 美国+乔治亚州
-      - 美国 CloudFlare节点 - 4
+      - 罗马尼亚 V2CROSS.COM
+      - 美国+V2CROSS.COM - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 CloudFlare节点
-      - 美国+惠普HP
-      - 加拿大+V2CROSS.COM
-      - 台湾省彰化县 中华电信
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 美国 华盛顿Cogent通信公司
-      - 美国+惠普HP - 2
+      - 美国 V2CROSS.COM
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 美国+V2CROSS.COM
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心 - 2
+      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 美国加利福尼亚州洛杉矶 PetaExpress - 2
       - 台湾省台北市+scloud.sg
-      - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
+      - 美国 V2CROSS.COM - 2
       - 美国+乔治亚州
-      - 美国 CloudFlare节点 - 4
+      - 罗马尼亚 V2CROSS.COM
+      - 美国+V2CROSS.COM - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
