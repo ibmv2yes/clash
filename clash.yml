@@ -1,4 +1,76 @@
 proxies:
+  - name: 美国加利福尼亚州洛杉矶 PetaExpress
+    type: vmess
+    server: 198.2.206.35
+    port: 33012
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
+    type: vmess
+    server: 192.74.243.53
+    port: 49206
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 浙江省+移动数据上网公共出口
+    type: ss
+    server: gtm-sg-6wr31eq5o8g.gtm-i1d8.com
+    port: '2051'
+    cipher: aes-128-gcm
+    password: Kad0X9
+  - name: 加拿大+V2CROSS.COM
+    type: trojan
+    server: bgptw3.cnamazon.sbs
+    port: 443?peer=tlsdata.cnamazon.sbs&tfo=1
+    password: 88a7eb00-f011-4b70-ac2c-a06ef3962b70
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: cf.yxjnode.com
+    port: 80
+    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /yxzbp
+    ws-headers:
+      Host: dp1.yxjnode.com
+  - name: 美国加利福尼亚州洛杉矶 PetaExpress - 2
+    type: vmess
+    server: 198.2.208.188
+    port: 35402
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 江苏省扬州市 移动
+    type: vmess
+    server: 223.111.129.116
+    port: 63078
+    uuid: 55329786-3769-3d15-a552-ba42e4d8bae6
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: ''
+    ws-headers:
+      Host: hk-balancer.airport-v2.com
+    tls: true
   - name: 美国 Datability
     type: vmess
     server: 140.99.149.45
@@ -11,171 +83,59 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 英国 V2CROSS.COM
+  - name: 美国加利福尼亚州洛杉矶 PetaExpress - 3
     type: vmess
-    server: 171.22.134.5
-    port: 443
+    server: 198.2.204.246
+    port: 46802
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
     udp: true
-    network: ws
-    ws-path: /path/1683346065217
-    ws-headers:
-      Host: www.28848492.xyz
-    tls: true
-  - name: 广东省深圳市 电信
-    type: vmess
-    server: 14.116.151.100
-    port: 63094
-    uuid: 55329786-3769-3d15-a552-ba42e4d8bae6
-    alterId: 0
-    cipher: auto
-    udp: true
     network: tcp
-    ws-headers: {}
-    tls: true
-  - name: 美国弗吉尼亚州阿什本 CloudFlare节点
-    type: vmess
-    server: 173.245.49.40
-    port: 443
-    uuid: e883ff76-3bb4-4008-c068-6b5b1d960ea7
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /qwer07
-    ws-headers:
-      Host: uyaa.vtcss.top
-    tls: true
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: 108.162.193.69
-    port: 443
-    uuid: e883ff76-3bb4-4008-c068-6b5b1d960ea7
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /qwer07
-    ws-headers:
-      Host: uyaa.vtcss.top
-    tls: true
-  - name: 罗马尼亚+V2CROSS.COM
-    type: trojan
-    server: fr2.stealthtunnel.net
-    port: 60606?type=tcp&allowInsecure=1
-    password: 72A2478A-FE5F-6CFC-74F0-2781E6E5DDCF
-  - name: 浙江省+移动数据上网公共出口
-    type: ss
-    server: gtm-sg-6wr31eq5o8g.gtm-i1d8.com
-    port: '2051'
-    cipher: aes-128-gcm
-    password: Kad0X9
-  - name: 美国 V2CROSS.COM
-    type: vmess
-    server: mci.bamarambash.monster
-    port: 443
-    uuid: 8f74ec8a-971c-11ed-a8fc-0242ac120002
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /db698b16-d216-11ed-8e14-5ad705867cff
-    ws-headers:
-      Host: db698b16-d216-11ed-8e14-5ad705867cff.asmandll.com
-    tls: true
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: aaaa.wxx.gay
-    port: 443
-    uuid: 101b4758-ec27-11ed-8445-000017022008
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /look
+    ws-path: /
     ws-headers:
       Host: ''
-    tls: true
-  - name: 美国 V2CROSS.COM - 2
-    type: vmess
-    server: vde1.0bad.com
-    port: 443
-    uuid: 927094d3-d678-4763-8591-e240d0bcae87
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /chat
-    ws-headers:
-      Host: vde1.0bad.com
-    tls: true
-  - name: 美国+Microsoft数据中心
-    type: trojan
-    server: ap.stablize.top
-    port: '443'
-    password: 9478e27c-6bdd-4f0e-ba46-90d9739e1e34
-  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
-    type: vmess
-    server: 192.74.228.173
-    port: 42857
-    uuid: 051b844f-efe3-4847-92aa-66b5de0b6d4e
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-headers: {}
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 Datability
-      - 英国 V2CROSS.COM
-      - 广东省深圳市 电信
-      - 美国弗吉尼亚州阿什本 CloudFlare节点
-      - 美国 CloudFlare节点
-      - 罗马尼亚+V2CROSS.COM
-      - 浙江省+移动数据上网公共出口
-      - 美国 V2CROSS.COM
-      - 美国 CloudFlare节点 - 2
-      - 美国 V2CROSS.COM - 2
-      - 美国+Microsoft数据中心
+      - 美国加利福尼亚州洛杉矶 PetaExpress
       - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 浙江省+移动数据上网公共出口
+      - 加拿大+V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 美国加利福尼亚州洛杉矶 PetaExpress - 2
+      - 江苏省扬州市 移动
+      - 美国 Datability
+      - 美国加利福尼亚州洛杉矶 PetaExpress - 3
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 Datability
-      - 英国 V2CROSS.COM
-      - 广东省深圳市 电信
-      - 美国弗吉尼亚州阿什本 CloudFlare节点
-      - 美国 CloudFlare节点
-      - 罗马尼亚+V2CROSS.COM
-      - 浙江省+移动数据上网公共出口
-      - 美国 V2CROSS.COM
-      - 美国 CloudFlare节点 - 2
-      - 美国 V2CROSS.COM - 2
-      - 美国+Microsoft数据中心
+      - 美国加利福尼亚州洛杉矶 PetaExpress
       - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 浙江省+移动数据上网公共出口
+      - 加拿大+V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 美国加利福尼亚州洛杉矶 PetaExpress - 2
+      - 江苏省扬州市 移动
+      - 美国 Datability
+      - 美国加利福尼亚州洛杉矶 PetaExpress - 3
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 Datability
-      - 英国 V2CROSS.COM
-      - 广东省深圳市 电信
-      - 美国弗吉尼亚州阿什本 CloudFlare节点
-      - 美国 CloudFlare节点
-      - 罗马尼亚+V2CROSS.COM
-      - 浙江省+移动数据上网公共出口
-      - 美国 V2CROSS.COM
-      - 美国 CloudFlare节点 - 2
-      - 美国 V2CROSS.COM - 2
-      - 美国+Microsoft数据中心
+      - 美国加利福尼亚州洛杉矶 PetaExpress
       - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 浙江省+移动数据上网公共出口
+      - 加拿大+V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 美国加利福尼亚州洛杉矶 PetaExpress - 2
+      - 江苏省扬州市 移动
+      - 美国 Datability
+      - 美国加利福尼亚州洛杉矶 PetaExpress - 3
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
