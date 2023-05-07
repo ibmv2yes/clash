@@ -1,41 +1,48 @@
 proxies:
   - name: 美国 CloudFlare节点
     type: vmess
-    server: cf.yxjnode.com
-    port: 80
-    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
+    server: 172.67.10.69
+    port: 443
+    uuid: e883ff76-3bb4-4008-c068-6b5b1d960ea7
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /yxzbp
+    ws-path: /qwer07
     ws-headers:
-      Host: dp1.yxjnode.com
-  - name: 美国 Datability
-    type: vmess
-    server: 140.99.59.228
-    port: 55512
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
+      Host: uyaa.vtcss.top
+    tls: true
+  - name: 美国+Xerox
+    type: trojan
+    server: sg3.cnamazon.sbs
+    port: '443'
+    password: 88a7eb00-f011-4b70-ac2c-a06ef3962b70
+  - name: 美国+V2CROSS.COM
+    type: trojan
+    server: 152.70.74.66
+    port: 443?security=tls&type=tcp&headerType=none
+    password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
+  - name: 香港+Amazon数据中心
+    type: trojan
+    server: hk9.microsoftjs.top
+    port: '443'
+    password: e5d13389-59bf-4ae8-8237-d8dec8195e60
+  - name: 美国+Xerox - 2
+    type: trojan
+    server: sg5.cnamazon.sbs
+    port: '443'
+    password: 88a7eb00-f011-4b70-ac2c-a06ef3962b70
+  - name: 加拿大+V2CROSS.COM
+    type: trojan
+    server: tw2.microsoftjs.top
+    port: '443'
+    password: e5d13389-59bf-4ae8-8237-d8dec8195e60
+  - name: 台湾省台北市+scloud.sg
+    type: trojan
+    server: bgptw2.cnamazon.sbs
+    port: '443'
+    password: 88a7eb00-f011-4b70-ac2c-a06ef3962b70
   - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: cf.yxjnode.com
-    port: 80
-    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /yxzbp
-    ws-headers:
-      Host: dp1.yxjnode.com
-  - name: 美国 CloudFlare节点 - 3
     type: vmess
     server: 108.162.193.69
     port: 443
@@ -48,79 +55,10 @@ proxies:
     ws-headers:
       Host: uyaa.vtcss.top
     tls: true
-  - name: 美国 惠普HP
-    type: vmess
-    server: hk2.c2bfe79372be.sanfen004.me
-    port: 443
-    uuid: 30ba67cf-776c-48be-8bb5-578878830228
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /zh-cn
-    ws-headers:
-      Host: www.microsoft.com
-    tls: true
-  - name: 日本+V2CROSS.COM
-    type: trojan
-    server: jp5.cnamazon.sbs
-    port: '443'
-    password: 88a7eb00-f011-4b70-ac2c-a06ef3962b70
-  - name: 美国+V2CROSS.COM
-    type: ss
-    server: 172.99.188.99
-    port: '5000'
-    cipher: aes-256-gcm
-    password: Y6R9pAtvxxzmGC
-  - name: 日本+V2CROSS.COM - 2
-    type: trojan
-    server: in1.cnamazon.sbs
-    port: '443'
-    password: 88a7eb00-f011-4b70-ac2c-a06ef3962b70
-  - name: 香港 V2CROSS.COM
-    type: vmess
-    server: 156.245.8.93
-    port: 48821
-    uuid: 93503dd5-245a-4eb1-ae2a-57ab9f2b3c29
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
   - name: 美国 加利福尼亚州圣何塞PEG TECH
     type: vmess
-    server: 142.4.106.242
-    port: 52902
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-headers: {}
-  - name: 美国+V2CROSS.COM - 2
-    type: ss
-    server: 172.99.188.99
-    port: '5000'
-    cipher: aes-256-gcm
-    password: Y6R9pAtvxxzmGC
-  - name: 亚太地区 V2CROSS.COM
-    type: vmess
-    server: natsg1.bytevirt.net
-    port: 32253
-    uuid: 1751669b-e73b-45a6-96b1-dafc2894c13e
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国 Datability - 2
-    type: vmess
-    server: 140.99.59.254
-    port: 55512
+    server: 142.4.127.10
+    port: 53013
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -129,41 +67,6 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国 V2CROSS.COM
-    type: vmess
-    server: vus5.0bad.com
-    port: 443
-    uuid: 927094d3-d678-4763-8591-e240d0bcae87
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /chat
-    ws-headers:
-      Host: vus5.0bad.com
-    tls: true
-  - name: 美国 CloudFlare节点 - 4
-    type: vmess
-    server: visa.com
-    port: 80
-    uuid: 373f2d71-79ca-47a4-974f-79b2590e8c60
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /api/v3/download.getFile
-    ws-headers:
-      Host: ssrsub.v03.ssrsub.com
-  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
-    type: vmess
-    server: 192.74.228.173
-    port: 42857
-    uuid: 051b844f-efe3-4847-92aa-66b5de0b6d4e
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-headers: {}
 proxy-groups:
   - name: Free-servers
     type: select
@@ -171,61 +74,40 @@ proxy-groups:
       - 自动选择
       - 故障转移
       - 美国 CloudFlare节点
-      - 美国 Datability
-      - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
-      - 美国 惠普HP
-      - 日本+V2CROSS.COM
+      - 美国+Xerox
       - 美国+V2CROSS.COM
-      - 日本+V2CROSS.COM - 2
-      - 香港 V2CROSS.COM
+      - 香港+Amazon数据中心
+      - 美国+Xerox - 2
+      - 加拿大+V2CROSS.COM
+      - 台湾省台北市+scloud.sg
+      - 美国 CloudFlare节点 - 2
       - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国+V2CROSS.COM - 2
-      - 亚太地区 V2CROSS.COM
-      - 美国 Datability - 2
-      - 美国 V2CROSS.COM
-      - 美国 CloudFlare节点 - 4
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
   - name: 自动选择
     type: url-test
     proxies:
       - 美国 CloudFlare节点
-      - 美国 Datability
-      - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
-      - 美国 惠普HP
-      - 日本+V2CROSS.COM
+      - 美国+Xerox
       - 美国+V2CROSS.COM
-      - 日本+V2CROSS.COM - 2
-      - 香港 V2CROSS.COM
+      - 香港+Amazon数据中心
+      - 美国+Xerox - 2
+      - 加拿大+V2CROSS.COM
+      - 台湾省台北市+scloud.sg
+      - 美国 CloudFlare节点 - 2
       - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国+V2CROSS.COM - 2
-      - 亚太地区 V2CROSS.COM
-      - 美国 Datability - 2
-      - 美国 V2CROSS.COM
-      - 美国 CloudFlare节点 - 4
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
       - 美国 CloudFlare节点
-      - 美国 Datability
-      - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
-      - 美国 惠普HP
-      - 日本+V2CROSS.COM
+      - 美国+Xerox
       - 美国+V2CROSS.COM
-      - 日本+V2CROSS.COM - 2
-      - 香港 V2CROSS.COM
+      - 香港+Amazon数据中心
+      - 美国+Xerox - 2
+      - 加拿大+V2CROSS.COM
+      - 台湾省台北市+scloud.sg
+      - 美国 CloudFlare节点 - 2
       - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国+V2CROSS.COM - 2
-      - 亚太地区 V2CROSS.COM
-      - 美国 Datability - 2
-      - 美国 V2CROSS.COM
-      - 美国 CloudFlare节点 - 4
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
