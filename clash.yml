@@ -1,8 +1,20 @@
 proxies:
-  - name: 美国 华盛顿Cogent通信公司
+  - name: 美国 V2CROSS.COM
     type: vmess
-    server: 38.63.17.166
-    port: 50702
+    server: 192.203.230.86
+    port: 80
+    uuid: a442dacf-cbb3-488a-9744-61494ea38630
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: us-1.acyun.cf
+  - name: 台湾省 中华电信
+    type: vmess
+    server: 61.220.198.102
+    port: 58002
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -11,59 +23,45 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国+加利福尼亚州洛杉矶Level3通信(DIA)
-    type: trojan
-    server: uk.stablize.top
-    port: '443'
-    password: 9478e27c-6bdd-4f0e-ba46-90d9739e1e34
-  - name: 美国 Datability
+  - name: 加拿大 V2CROSS.COM
     type: vmess
-    server: 140.99.149.45
-    port: 53082
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
+    server: 199.212.90.14
+    port: 443
+    uuid: 6147F065-9AC0-4081-A5A3-A2EB4EBB8958
+    alterId: 0
     cipher: auto
     udp: true
-    network: tcp
-    ws-path: /
+    network: ws
+    ws-path: /speedtest
     ws-headers:
-      Host: ''
-  - name: 美国 加利福尼亚州圣何塞PEG TECH
+      Host: Lille.kotick.site
+    tls: true
+  - name: 美国 V2CROSS.COM - 2
     type: vmess
-    server: 142.4.126.77
-    port: 31002
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
+    server: 143.42.99.183
+    port: 443
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
+    alterId: 0
     cipher: auto
     udp: true
-    network: tcp
-    ws-path: /
+    network: ws
+    ws-path: /chat
     ws-headers:
       Host: ''
-  - name: 欧盟 V2CROSS.COM
+    tls: true
+  - name: 美国 惠普HP
     type: vmess
-    server: 45.12.144.83
-    port: 47127
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
+    server: hk2.c2bfe79372be.sanfen004.me
+    port: 443
+    uuid: 30ba67cf-776c-48be-8bb5-578878830228
+    alterId: 0
     cipher: auto
     udp: true
-    network: tcp
-    ws-path: /
+    network: ws
+    ws-path: /zh-cn
     ws-headers:
-      Host: ''
-  - name: 南非 V2CROSS.COM
-    type: vmess
-    server: 156.225.67.78
-    port: 45043
-    uuid: 3e016c4d-986e-42df-838c-6046f3d89ecf
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: ''
-    ws-headers:
-      Host: ''
+      Host: www.microsoft.com
+    tls: true
   - name: 澳大利亚 V2CROSS.COM
     type: vmess
     server: 143.92.56.218
@@ -82,34 +80,31 @@ proxy-groups:
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 华盛顿Cogent通信公司
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
-      - 美国 Datability
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 欧盟 V2CROSS.COM
-      - 南非 V2CROSS.COM
+      - 美国 V2CROSS.COM
+      - 台湾省 中华电信
+      - 加拿大 V2CROSS.COM
+      - 美国 V2CROSS.COM - 2
+      - 美国 惠普HP
       - 澳大利亚 V2CROSS.COM
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 华盛顿Cogent通信公司
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
-      - 美国 Datability
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 欧盟 V2CROSS.COM
-      - 南非 V2CROSS.COM
+      - 美国 V2CROSS.COM
+      - 台湾省 中华电信
+      - 加拿大 V2CROSS.COM
+      - 美国 V2CROSS.COM - 2
+      - 美国 惠普HP
       - 澳大利亚 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 华盛顿Cogent通信公司
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
-      - 美国 Datability
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 欧盟 V2CROSS.COM
-      - 南非 V2CROSS.COM
+      - 美国 V2CROSS.COM
+      - 台湾省 中华电信
+      - 加拿大 V2CROSS.COM
+      - 美国 V2CROSS.COM - 2
+      - 美国 惠普HP
       - 澳大利亚 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
