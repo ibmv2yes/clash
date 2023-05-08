@@ -1,19 +1,33 @@
 proxies:
-  - name: 美国 CloudFlare节点
+  - name: 日本 V2CROSS.COM
     type: vmess
-    server: 190.93.244.3
-    port: 8880
-    uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958
+    server: jp2.ulifeai.com
+    port: 443
+    uuid: 168b4363-92b4-4994-a4e8-9e4f5015b48c
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /
+    ws-path: /52566/
     ws-headers:
-      Host: lg.trump2023.net
-  - name: 美国 CloudFlare节点 - 2
+      Host: ''
+    tls: true
+  - name: 香港 V2CROSS.COM
     type: vmess
-    server: 162.159.58.13
+    server: 156.245.8.241
+    port: 443
+    uuid: 29a5d48e-24f1-48fd-a5e1-9a46cb31032f
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /path/1683346065302
+    ws-headers:
+      Host: www.41758112.xyz
+    tls: true
+  - name: 丹麦 V2CROSS.COM
+    type: vmess
+    server: 185.162.228.229
     port: 8880
     uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958
     alterId: 0
@@ -25,7 +39,32 @@ proxies:
       Host: lg.trump2023.net
   - name: 美国 V2CROSS.COM
     type: vmess
-    server: ua2.25c9e320-7b14-48c9-8127-3393c7a16a2a.cloudspeed.online
+    server: 108.186.116.177
+    port: 55005
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: aaaa.wxx.gay
+    port: 443
+    uuid: ce6ea69a-ed54-11ed-922a-000017022008
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /look
+    ws-headers:
+      Host: ''
+    tls: true
+  - name: 美国 V2CROSS.COM - 2
+    type: vmess
+    server: de2.25c9e320-7b14-48c9-8127-3393c7a16a2a.cloudspeed.online
     port: 80
     uuid: 2da0d552-b9f4-4802-b4d8-d20be2d1a590
     alterId: 0
@@ -34,60 +73,70 @@ proxies:
     network: ws
     ws-path: /aws-china-media/QAcTKp3Ic-M.mp4
     ws-headers:
-      Host: ua-media.ispeed.online
-  - name: 美国 V2CROSS.COM - 2
+      Host: de-media.ispeed.online
+  - name: 日本 东京PEG TECH
     type: vmess
-    server: 137.175.18.90
-    port: 42002
+    server: 104.233.191.182
+    port: 443
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
     udp: true
-    network: tcp
-    ws-path: /
+    network: ws
+    ws-path: /path/031730091420
     ws-headers:
       Host: ''
-  - name: 美国加利福尼亚州洛杉矶 PetaExpress
+    tls: true
+  - name: 美国 V2CROSS.COM - 3
     type: vmess
-    server: 198.2.205.113
-    port: 53002
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
+    server: 192.203.230.86
+    port: 80
+    uuid: a442dacf-cbb3-488a-9744-61494ea38630
+    alterId: 0
     cipher: auto
     udp: true
-    network: tcp
+    network: ws
     ws-path: /
     ws-headers:
-      Host: ''
+      Host: us-1.acyun.cf
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
+      - 日本 V2CROSS.COM
+      - 香港 V2CROSS.COM
+      - 丹麦 V2CROSS.COM
       - 美国 V2CROSS.COM
+      - 美国 CloudFlare节点
       - 美国 V2CROSS.COM - 2
-      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 日本 东京PEG TECH
+      - 美国 V2CROSS.COM - 3
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
+      - 日本 V2CROSS.COM
+      - 香港 V2CROSS.COM
+      - 丹麦 V2CROSS.COM
       - 美国 V2CROSS.COM
+      - 美国 CloudFlare节点
       - 美国 V2CROSS.COM - 2
-      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 日本 东京PEG TECH
+      - 美国 V2CROSS.COM - 3
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
+      - 日本 V2CROSS.COM
+      - 香港 V2CROSS.COM
+      - 丹麦 V2CROSS.COM
       - 美国 V2CROSS.COM
+      - 美国 CloudFlare节点
       - 美国 V2CROSS.COM - 2
-      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 日本 东京PEG TECH
+      - 美国 V2CROSS.COM - 3
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
