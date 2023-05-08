@@ -1,20 +1,31 @@
 proxies:
-  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
+  - name: 广东省深圳市 电信
     type: vmess
-    server: 192.74.237.50
-    port: 30003
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
+    server: 14.116.151.100
+    port: 63090
+    uuid: 311f3c4b-90a1-3c5c-a4fe-215cc7c90d02
+    alterId: 0
     cipher: auto
     udp: true
     network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心 - 2
+    ws-headers: {}
+    tls: true
+  - name: 日本 东京Linode数据中心
     type: vmess
-    server: 192.74.230.39
-    port: 54434
+    server: vjp1.0bad.com
+    port: 443
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /chat
+    ws-headers: {}
+    tls: true
+  - name: 美国加利福尼亚州洛杉矶 PetaExpress
+    type: vmess
+    server: 198.2.206.45
+    port: 33012
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -27,68 +38,56 @@ proxies:
     type: vmess
     server: cf-lt.sharecentre.online
     port: 80
-    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
+    uuid: 373f2d71-79ca-47a4-974f-79b2590e8c60
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /shirker
+    ws-path: /api/v3/download.getFile
     ws-headers:
-      Host: ca.ilovescp.com
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: v2ray3.webgfw.top
-    port: 2083
-    uuid: 4cc72565-0d05-41e6-bc34-72aba9da544f
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /X9piqfat/
-    ws-headers:
-      Host: v2ray3.webgfw.top
-    tls: true
-  - name: 美国 CloudFlare节点 - 3
-    type: vmess
-    server: 172.67.13.13
-    port: 80
-    uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: lg.v2ray20.xyz
+      Host: ssrsub.v02.ssrsub.com
+  - name: 美国+DXC+Technology
+    type: trojan
+    server: fscjp.fscloud123456789.com
+    port: '443'
+    password: 7dc3a0b7-0930-42da-a6be-2a8623cdcfb4
+  - name: 美国+Microsoft数据中心
+    type: trojan
+    server: fscjp.fscloud123456789.com
+    port: '443'
+    password: 7dc3a0b7-0930-42da-a6be-2a8623cdcfb4
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心 - 2
+      - 广东省深圳市 电信
+      - 日本 东京Linode数据中心
+      - 美国加利福尼亚州洛杉矶 PetaExpress
       - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
+      - 美国+DXC+Technology
+      - 美国+Microsoft数据中心
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心 - 2
+      - 广东省深圳市 电信
+      - 日本 东京Linode数据中心
+      - 美国加利福尼亚州洛杉矶 PetaExpress
       - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
+      - 美国+DXC+Technology
+      - 美国+Microsoft数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心 - 2
+      - 广东省深圳市 电信
+      - 日本 东京Linode数据中心
+      - 美国加利福尼亚州洛杉矶 PetaExpress
       - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
+      - 美国+DXC+Technology
+      - 美国+Microsoft数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
