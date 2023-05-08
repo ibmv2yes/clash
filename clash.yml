@@ -1,4 +1,16 @@
 proxies:
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: 192.203.230.86
+    port: 80
+    uuid: a442dacf-cbb3-488a-9744-61494ea38630
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: us-1.acyun.cf
   - name: 美国 CloudFlare节点
     type: vmess
     server: cf-lt.sharecentre.online
@@ -13,7 +25,7 @@ proxies:
       Host: ssrsub.v02.ssrsub.com
   - name: 美国 华盛顿Cogent通信公司
     type: vmess
-    server: 38.40.158.248
+    server: 38.40.158.246
     port: 45002
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
@@ -23,73 +35,76 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国 Cloudinnovation数据中心
+  - name: 日本 东京PEG TECH
     type: vmess
-    server: 154.85.1.2
+    server: 104.233.191.182
     port: 443
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
     udp: true
     network: ws
-    ws-path: /path/1683346065217
+    ws-path: /path/031730091420
     ws-headers:
-      Host: www.42077230.xyz
+      Host: ''
     tls: true
-  - name: 美国 CloudFlare节点 - 2
+  - name: 美国 V2CROSS.COM - 2
     type: vmess
-    server: cf.yxjnode.com
-    port: 80
-    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
+    server: 170.114.45.122
+    port: 443
+    uuid: 8f74ec8a-971c-11ed-a8fc-0242ac120002
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /yxzbp
+    ws-path: /db698b16-d216-11ed-8e14-5ad705867cff
     ws-headers:
-      Host: dp1.yxjnode.com
-  - name: 日本 V2CROSS.COM
+      Host: db698b16-d216-11ed-8e14-5ad705867cff.asmandll.com
+    tls: true
+  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
     type: vmess
-    server: jp01-alt-vm0.entry.srthdw.art
-    port: 21583
-    uuid: 22acc467-7440-386a-927a-d84be554b37e
-    alterId: 1
+    server: 192.74.234.82
+    port: 51302
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
     cipher: auto
     udp: true
     network: tcp
-    ws-path: /hlsrthe214/8u4692j
+    ws-path: /
     ws-headers:
-      Host: jp01-alt-vm0.entry.srthdw.art
-    tls: true
+      Host: ''
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
+      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点
       - 美国 华盛顿Cogent通信公司
-      - 美国 Cloudinnovation数据中心
-      - 美国 CloudFlare节点 - 2
-      - 日本 V2CROSS.COM
+      - 日本 东京PEG TECH
+      - 美国 V2CROSS.COM - 2
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
   - name: 自动选择
     type: url-test
     proxies:
+      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点
       - 美国 华盛顿Cogent通信公司
-      - 美国 Cloudinnovation数据中心
-      - 美国 CloudFlare节点 - 2
-      - 日本 V2CROSS.COM
+      - 日本 东京PEG TECH
+      - 美国 V2CROSS.COM - 2
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
+      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点
       - 美国 华盛顿Cogent通信公司
-      - 美国 Cloudinnovation数据中心
-      - 美国 CloudFlare节点 - 2
-      - 日本 V2CROSS.COM
+      - 日本 东京PEG TECH
+      - 美国 V2CROSS.COM - 2
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
