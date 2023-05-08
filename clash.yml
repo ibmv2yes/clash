@@ -1,59 +1,41 @@
 proxies:
-  - name: 美国 CloudFlare节点
+  - name: 日本 东京PEG TECH
     type: vmess
-    server: 172.67.235.29
-    port: 80
-    uuid: bf663a96-d2ee-4c67-e2db-759faf345ffe
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /qwer07
-    ws-headers:
-      Host: yusa.vtcss.top
-  - name: 美国+Nokia
-    type: trojan
-    server: wangqifei.tk
-    port: '59973'
-    password: S1k6yPgFhc
-  - name: 加拿大 V2CROSS.COM
-    type: vmess
-    server: 199.212.90.14
+    server: 104.233.191.182
     port: 443
-    uuid: 6147F065-9AC0-4081-A5A3-A2EB4EBB8958
-    alterId: 0
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
     cipher: auto
     udp: true
     network: ws
-    ws-path: /speedtest
-    ws-headers:
-      Host: Lille.kotick.site
-    tls: true
-  - name: 美国 Merit网络公司
-    type: vmess
-    server: ssv5-iddoctor.cloud.okteto.net
-    port: 443
-    uuid: 4b6499a4-a112-43db-8e6c-704b982f0c83
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /vmess
-    ws-headers:
-      Host: ssv5-iddoctor.cloud.okteto.net
-    tls: true
-  - name: 日本 东京Amazon数据中心
-    type: vmess
-    server: jp03-alt-vm0.entry.srthdw.art
-    port: 21585
-    uuid: 1bc52308-0bd9-30d0-90fd-cef337875d10
-    alterId: 1
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
+    ws-path: /path/031730091420
     ws-headers:
       Host: ''
+    tls: true
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: 162.159.58.13
+    port: 8880
+    uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: lg.trump2023.net
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: atal.foriran.nl
+    port: 443
+    uuid: a6e6b3e0-b8a7-4123-8ab4-573a9241a259
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /UcM6L7nnEW8E0h3Y
+    ws-headers:
+      Host: atal.foriran.nl
     tls: true
   - name: 日本 东京Linode数据中心
     type: vmess
@@ -67,38 +49,132 @@ proxies:
     ws-path: /chat
     ws-headers: {}
     tls: true
+  - name: 日本 V2CROSS.COM
+    type: vmess
+    server: jp01-alt-vm0.entry.srthdw.art
+    port: 21583
+    uuid: 22acc467-7440-386a-927a-d84be554b37e
+    alterId: 1
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /hlsrthe214/8u4692j
+    ws-headers:
+      Host: jp01-alt-vm0.entry.srthdw.art
+    tls: true
+  - name: 美国+V2CROSS.COM
+    type: trojan
+    server: 152.70.74.66
+    port: 443?security=tls&type=tcp&headerType=none
+    password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
+  - name: 美国加利福尼亚州洛杉矶 PetaExpress
+    type: vmess
+    server: 198.2.204.250
+    port: 46802
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: ua2.25c9e320-7b14-48c9-8127-3393c7a16a2a.cloudspeed.online
+    port: 80
+    uuid: 2da0d552-b9f4-4802-b4d8-d20be2d1a590
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /aws-china-media/QAcTKp3Ic-M.mp4
+    ws-headers:
+      Host: ua-media.ispeed.online
+  - name: 欧盟 V2CROSS.COM
+    type: vmess
+    server: 45.85.119.1
+    port: 443
+    uuid: 8f74ec8a-971c-11ed-a8fc-0242ac120002
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /8701b594-d144-11ed-8e14-5ad705867cff
+    ws-headers:
+      Host: 8701b594-d144-11ed-8e14-5ad705867cff.asmandll.com
+    tls: true
+  - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: 190.93.245.4
+    port: 80
+    uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: lg.v2ray20.xyz
+  - name: 美国加利福尼亚州洛杉矶 PetaExpress - 2
+    type: vmess
+    server: 198.2.205.113
+    port: 53002
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
+      - 日本 东京PEG TECH
       - 美国 CloudFlare节点
-      - 美国+Nokia
-      - 加拿大 V2CROSS.COM
-      - 美国 Merit网络公司
-      - 日本 东京Amazon数据中心
+      - 美国 CloudFlare节点 - 2
       - 日本 东京Linode数据中心
+      - 日本 V2CROSS.COM
+      - 美国+V2CROSS.COM
+      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 美国 V2CROSS.COM
+      - 欧盟 V2CROSS.COM
+      - 美国 CloudFlare节点 - 3
+      - 美国加利福尼亚州洛杉矶 PetaExpress - 2
   - name: 自动选择
     type: url-test
     proxies:
+      - 日本 东京PEG TECH
       - 美国 CloudFlare节点
-      - 美国+Nokia
-      - 加拿大 V2CROSS.COM
-      - 美国 Merit网络公司
-      - 日本 东京Amazon数据中心
+      - 美国 CloudFlare节点 - 2
       - 日本 东京Linode数据中心
+      - 日本 V2CROSS.COM
+      - 美国+V2CROSS.COM
+      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 美国 V2CROSS.COM
+      - 欧盟 V2CROSS.COM
+      - 美国 CloudFlare节点 - 3
+      - 美国加利福尼亚州洛杉矶 PetaExpress - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
+      - 日本 东京PEG TECH
       - 美国 CloudFlare节点
-      - 美国+Nokia
-      - 加拿大 V2CROSS.COM
-      - 美国 Merit网络公司
-      - 日本 东京Amazon数据中心
+      - 美国 CloudFlare节点 - 2
       - 日本 东京Linode数据中心
+      - 日本 V2CROSS.COM
+      - 美国+V2CROSS.COM
+      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 美国 V2CROSS.COM
+      - 欧盟 V2CROSS.COM
+      - 美国 CloudFlare节点 - 3
+      - 美国加利福尼亚州洛杉矶 PetaExpress - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
