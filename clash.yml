@@ -1,74 +1,88 @@
 proxies:
+  - name: 日本 东京Linode数据中心
+    type: vmess
+    server: vjp1.0bad.com
+    port: 443
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /chat
+    ws-headers: {}
+    tls: true
   - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
     type: vmess
-    server: 192.74.243.45
-    port: 49206
+    server: 192.74.234.82
+    port: 51302
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
     udp: true
     network: tcp
-    ws-path: /video
-    ws-headers:
-      Host: ''
-  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心 - 2
-    type: vmess
-    server: 192.74.228.177
-    port: 42857
-    uuid: 051b844f-efe3-4847-92aa-66b5de0b6d4e
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 荷兰 V2CROSS.COM
+  - name: 美国 Merit网络公司
     type: vmess
-    server: 91.199.84.125
-    port: 80
-    uuid: 2cfc4c58-88cb-4e00-9977-ef0a37559a22
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 澳大利亚 Cranbourne Secondary College
-    type: vmess
-    server: 203.30.191.2
-    port: 80
-    uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: lg.v2ray20.xyz
-  - name: 美国 加利福尼亚州洛杉矶PetaExpress
-    type: vmess
-    server: 107.148.242.216
-    port: 54082
-    uuid: dcca1294-7097-44b7-bd49-5f51c73f532f
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国 惠普HP
-    type: vmess
-    server: hk5.af49c4e4c2ef.sanfen004.me
+    server: ssv5-iddoctor.cloud.okteto.net
     port: 443
-    uuid: 30ba67cf-776c-48be-8bb5-578878830228
+    uuid: 4b6499a4-a112-43db-8e6c-704b982f0c83
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /zh-cn
+    ws-path: /vmess
+    ws-headers:
+      Host: ssv5-iddoctor.cloud.okteto.net
+    tls: true
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: atal.foriran.nl
+    port: 443
+    uuid: a6e6b3e0-b8a7-4123-8ab4-573a9241a259
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /UcM6L7nnEW8E0h3Y
+    ws-headers:
+      Host: atal.foriran.nl
+    tls: true
+  - name: 美国 华盛顿Cogent通信公司
+    type: vmess
+    server: 38.40.158.246
+    port: 45002
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: cf.yxjnode.com
+    port: 80
+    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /yxzbp
+    ws-headers:
+      Host: dp1.yxjnode.com
+  - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: scaleway.696960.xyz
+    port: 443
+    uuid: e357cd63-f1a5-4c8e-c42e-26da11207fee
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /root/
     ws-headers:
       Host: ''
     tls: true
@@ -78,32 +92,35 @@ proxy-groups:
     proxies:
       - 自动选择
       - 故障转移
+      - 日本 东京Linode数据中心
       - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心 - 2
-      - 荷兰 V2CROSS.COM
-      - 澳大利亚 Cranbourne Secondary College
-      - 美国 加利福尼亚州洛杉矶PetaExpress
-      - 美国 惠普HP
+      - 美国 Merit网络公司
+      - 美国 CloudFlare节点
+      - 美国 华盛顿Cogent通信公司
+      - 美国 CloudFlare节点 - 2
+      - 美国 CloudFlare节点 - 3
   - name: 自动选择
     type: url-test
     proxies:
+      - 日本 东京Linode数据中心
       - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心 - 2
-      - 荷兰 V2CROSS.COM
-      - 澳大利亚 Cranbourne Secondary College
-      - 美国 加利福尼亚州洛杉矶PetaExpress
-      - 美国 惠普HP
+      - 美国 Merit网络公司
+      - 美国 CloudFlare节点
+      - 美国 华盛顿Cogent通信公司
+      - 美国 CloudFlare节点 - 2
+      - 美国 CloudFlare节点 - 3
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
+      - 日本 东京Linode数据中心
       - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心 - 2
-      - 荷兰 V2CROSS.COM
-      - 澳大利亚 Cranbourne Secondary College
-      - 美国 加利福尼亚州洛杉矶PetaExpress
-      - 美国 惠普HP
+      - 美国 Merit网络公司
+      - 美国 CloudFlare节点
+      - 美国 华盛顿Cogent通信公司
+      - 美国 CloudFlare节点 - 2
+      - 美国 CloudFlare节点 - 3
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
