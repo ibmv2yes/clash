@@ -1,55 +1,43 @@
 proxies:
-  - name: 西班牙 V2CROSS.COM
-    type: vmess
-    server: mtn.cpionline.co
-    port: 443
-    uuid: a6e6b3e0-b8a7-4123-8ab4-573a9241a259
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /UcM6L7nnEW8E0h3Y
-    ws-headers:
-      Host: totole.foriran.nl
-    tls: true
   - name: 美国 CloudFlare节点
     type: vmess
-    server: ussfo.looooooongnet.lol
+    server: 172.66.43.240
     port: 443
-    uuid: 50087501-50f9-4fbf-b4e2-e964f9f86e85
+    uuid: 12612e87-8003-44a8-b4e8-ec4a325e9016
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /
+    ws-path: /ou
     ws-headers:
-      Host: ussfo.looooooongnet.lol
-    tls: true
-  - name: 立陶宛 V2CROSS.COM
-    type: vmess
-    server: mcix.cpionline.co
-    port: 443
-    uuid: a6e6b3e0-b8a7-4123-8ab4-573a9241a259
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /UcM6L7nnEW8E0h3Y
-    ws-headers:
-      Host: matal.foriran.nl
+      Host: z.zorro.tk
     tls: true
   - name: 美国 V2CROSS.COM
     type: vmess
-    server: 137.175.18.109
-    port: 50004
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
+    server: 170.187.200.114
+    port: 443
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
+    alterId: 0
     cipher: auto
     udp: true
-    network: tcp
-    ws-path: /
+    network: ws
+    ws-path: /chat
     ws-headers:
       Host: ''
+    tls: true
+  - name: 美国 加利福尼亚州弗里蒙特市Linode公司
+    type: vmess
+    server: vus3.0bad.com
+    port: 443
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /chat
+    ws-headers:
+      Host: vus3.0bad.com
+    tls: true
   - name: 美国 CloudFlare节点 - 2
     type: vmess
     server: cf-lt.sharecentre.online
@@ -61,36 +49,49 @@ proxies:
     network: ws
     ws-path: /shirker
     ws-headers:
-      Host: dp3.scproxy.top
+      Host: ca.ilovescp.com
+  - name: 日本 东京Linode数据中心
+    type: vmess
+    server: vjp1.0bad.com
+    port: 443
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /chat
+    ws-headers:
+      Host: vjp1.0bad.com
+    tls: true
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 西班牙 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 立陶宛 V2CROSS.COM
       - 美国 V2CROSS.COM
+      - 美国 加利福尼亚州弗里蒙特市Linode公司
       - 美国 CloudFlare节点 - 2
+      - 日本 东京Linode数据中心
   - name: 自动选择
     type: url-test
     proxies:
-      - 西班牙 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 立陶宛 V2CROSS.COM
       - 美国 V2CROSS.COM
+      - 美国 加利福尼亚州弗里蒙特市Linode公司
       - 美国 CloudFlare节点 - 2
+      - 日本 东京Linode数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 西班牙 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 立陶宛 V2CROSS.COM
       - 美国 V2CROSS.COM
+      - 美国 加利福尼亚州弗里蒙特市Linode公司
       - 美国 CloudFlare节点 - 2
+      - 日本 东京Linode数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
