@@ -1,67 +1,81 @@
 proxies:
-  - name: 美国 CloudFlare节点
+  - name: 美国 加利福尼亚州洛杉矶Sharktech数据中心
     type: vmess
-    server: 172.66.43.240
-    port: 443
-    uuid: 12612e87-8003-44a8-b4e8-ec4a325e9016
-    alterId: 0
+    server: 64.32.4.34
+    port: 43166
+    uuid: 8653004f-de67-44c2-9cce-e0830933fb03
+    alterId: 64
     cipher: auto
     udp: true
-    network: ws
-    ws-path: /ou
-    ws-headers:
-      Host: z.zorro.tk
-    tls: true
-  - name: 美国 V2CROSS.COM
-    type: vmess
-    server: 170.187.200.114
-    port: 443
-    uuid: 927094d3-d678-4763-8591-e240d0bcae87
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /chat
+    network: tcp
+    ws-path: ''
     ws-headers:
       Host: ''
-    tls: true
-  - name: 美国 加利福尼亚州弗里蒙特市Linode公司
+  - name: 日本+V2CROSS.COM
+    type: trojan
+    server: jp-csjc.syjd.xyz
+    port: 443?type=tcp&allowInsecure=1
+    password: 11c25054-04d2-4738-87b2-cabba73ca718
+  - name: 美国 V2CROSS.COM
     type: vmess
-    server: vus3.0bad.com
-    port: 443
-    uuid: 927094d3-d678-4763-8591-e240d0bcae87
+    server: 137.175.18.89
+    port: 42002
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: cf.yxjnode.com
+    port: 80
+    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /chat
+    ws-path: /yxzbp
     ws-headers:
-      Host: vus3.0bad.com
-    tls: true
+      Host: dp1.yxjnode.com
+  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
+    type: vmess
+    server: 192.74.237.50
+    port: 30003
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
   - name: 美国 CloudFlare节点 - 2
     type: vmess
-    server: cf-lt.sharecentre.online
+    server: cf.yxjnode.com
     port: 80
-    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
+    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /shirker
+    ws-path: /yxzbp
     ws-headers:
-      Host: ca.ilovescp.com
-  - name: 日本 东京Linode数据中心
+      Host: dp1.yxjnode.com
+  - name: 美国 CloudFlare节点 - 3
     type: vmess
-    server: vjp1.0bad.com
+    server: mcix.cpionline.co
     port: 443
-    uuid: 927094d3-d678-4763-8591-e240d0bcae87
+    uuid: a6e6b3e0-b8a7-4123-8ab4-573a9241a259
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /chat
+    ws-path: /UcM6L7nnEW8E0h3Y
     ws-headers:
-      Host: vjp1.0bad.com
+      Host: matal.foriran.nl
     tls: true
 proxy-groups:
   - name: Free-servers
@@ -69,29 +83,35 @@ proxy-groups:
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 CloudFlare节点
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 日本+V2CROSS.COM
       - 美国 V2CROSS.COM
-      - 美国 加利福尼亚州弗里蒙特市Linode公司
+      - 美国 CloudFlare节点
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
       - 美国 CloudFlare节点 - 2
-      - 日本 东京Linode数据中心
+      - 美国 CloudFlare节点 - 3
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 CloudFlare节点
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 日本+V2CROSS.COM
       - 美国 V2CROSS.COM
-      - 美国 加利福尼亚州弗里蒙特市Linode公司
+      - 美国 CloudFlare节点
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
       - 美国 CloudFlare节点 - 2
-      - 日本 东京Linode数据中心
+      - 美国 CloudFlare节点 - 3
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 CloudFlare节点
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 日本+V2CROSS.COM
       - 美国 V2CROSS.COM
-      - 美国 加利福尼亚州弗里蒙特市Linode公司
+      - 美国 CloudFlare节点
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
       - 美国 CloudFlare节点 - 2
-      - 日本 东京Linode数据中心
+      - 美国 CloudFlare节点 - 3
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
