@@ -1,56 +1,43 @@
 proxies:
-  - name: 美国 CloudFlare节点
+  - name: 美国 Amazon EC2服务器
     type: vmess
-    server: 108.162.196.40
-    port: 443
-    uuid: e883ff76-3bb4-4008-c068-6b5b1d960ea7
+    server: in2.25c9e320-7b14-48c9-8127-3393c7a16a2a.cloudspeed.online
+    port: 80
+    uuid: 12b6c675-edc3-4da8-b3e2-525f4ccdd3f3
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /qwer08
+    ws-path: /aws-china-media/QAcTKp3Ic-M.mp4
     ws-headers:
-      Host: uyaa.vtcss.top
-    tls: true
-  - name: 美国 华盛顿Cogent通信公司
+      Host: media.amazonwebservices.com
+  - name: 美国 CloudFlare节点
     type: vmess
-    server: 38.40.158.246
-    port: 45002
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
+    server: cf-lt.sharecentre.online
+    port: 80
+    uuid: 373f2d71-79ca-47a4-974f-79b2590e8c60
+    alterId: 0
     cipher: auto
     udp: true
-    network: tcp
+    network: ws
+    ws-path: /api/v3/download.getFile
+    ws-headers:
+      Host: ssrsub.v01.ssrsub.com
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: cpanel.tajsub.com
+    port: 2082
+    uuid: 1ff4a26a-9c7d-4dcc-8497-cfce50499852
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 日本 V2CROSS.COM
+  - name: 巴西圣保罗 CloudFlare节点
     type: vmess
-    server: jp02-vm0.entry.srthdw.art
-    port: 444
-    uuid: 21c670ff-c739-3072-9286-7d2a1d300fcb
-    alterId: 1
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国 华盛顿Cogent通信公司 - 2
-    type: vmess
-    server: 38.40.158.248
-    port: 45002
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: 190.93.246.103
+    server: 188.114.99.104
     port: 80
     uuid: 53ae65be-81ee-4766-8a09-da43c44c4d30
     alterId: 0
@@ -60,35 +47,63 @@ proxies:
     ws-path: /qwer08
     ws-headers:
       Host: uyaa.vtcss.top
+  - name: 日本 东京Linode数据中心
+    type: vmess
+    server: vjp1.0bad.com
+    port: 443
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /chat
+    ws-headers:
+      Host: vjp1.0bad.com
+    tls: true
+  - name: 卢森堡 V2CROSS.COM
+    type: vmess
+    server: lsb.jiegebuyao.top
+    port: 49276
+    uuid: 63071c80-8286-4237-84e3-d83ea146dee7
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
+      - 美国 Amazon EC2服务器
       - 美国 CloudFlare节点
-      - 美国 华盛顿Cogent通信公司
-      - 日本 V2CROSS.COM
-      - 美国 华盛顿Cogent通信公司 - 2
-      - 美国 CloudFlare节点 - 2
+      - 美国 V2CROSS.COM
+      - 巴西圣保罗 CloudFlare节点
+      - 日本 东京Linode数据中心
+      - 卢森堡 V2CROSS.COM
   - name: 自动选择
     type: url-test
     proxies:
+      - 美国 Amazon EC2服务器
       - 美国 CloudFlare节点
-      - 美国 华盛顿Cogent通信公司
-      - 日本 V2CROSS.COM
-      - 美国 华盛顿Cogent通信公司 - 2
-      - 美国 CloudFlare节点 - 2
+      - 美国 V2CROSS.COM
+      - 巴西圣保罗 CloudFlare节点
+      - 日本 东京Linode数据中心
+      - 卢森堡 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
+      - 美国 Amazon EC2服务器
       - 美国 CloudFlare节点
-      - 美国 华盛顿Cogent通信公司
-      - 日本 V2CROSS.COM
-      - 美国 华盛顿Cogent通信公司 - 2
-      - 美国 CloudFlare节点 - 2
+      - 美国 V2CROSS.COM
+      - 巴西圣保罗 CloudFlare节点
+      - 日本 东京Linode数据中心
+      - 卢森堡 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
