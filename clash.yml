@@ -1,124 +1,93 @@
 proxies:
-  - name: 美国 CloudFlare节点
+  - name: 日本 东京都Amazon数据中心
     type: vmess
-    server: cf-lt.sharecentre.online
-    port: 80
-    uuid: 373f2d71-79ca-47a4-974f-79b2590e8c60
+    server: jp04-vm0.entry.srthdw.art
+    port: 446
+    uuid: b2a2c706-12e0-3335-8a62-31925219a712
     alterId: 0
     cipher: auto
     udp: true
-    network: ws
-    ws-path: /api/v3/download.getFile
+    network: tcp
+    ws-path: /
     ws-headers:
-      Host: ssrsub.v01.ssrsub.com
-  - name: 美国+V2CROSS.COM
-    type: trojan
-    server: 152.70.74.66
-    port: 443?security=tls&type=tcp&headerType=none
-    password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
-  - name: 中国 阿里云
+      Host: ''
+  - name: 美国 华盛顿Cogent通信公司
     type: vmess
-    server: 8.219.216.27
-    port: 2095
-    uuid: 19350d64-6868-4a64-e501-9c0df903d788
+    server: 38.40.158.248
+    port: 45002
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 丹麦 V2CROSS.COM
+    type: vmess
+    server: 185.162.228.229
+    port: 8880
+    uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958
     alterId: 0
     cipher: auto
     udp: true
     network: ws
     ws-path: /
     ws-headers:
-      Host: h3.mamadcucu.com
-  - name: 美国 CloudFlare节点 - 2
+      Host: lg.trump2023.net
+  - name: 日本 V2CROSS.COM
     type: vmess
-    server: visa.com
-    port: 80
-    uuid: 373f2d71-79ca-47a4-974f-79b2590e8c60
-    alterId: 0
+    server: jp02-vm0.entry.srthdw.art
+    port: 444
+    uuid: 21c670ff-c739-3072-9286-7d2a1d300fcb
+    alterId: 1
     cipher: auto
     udp: true
-    network: ws
-    ws-path: /api/v3/download.getFile
-    ws-headers:
-      Host: ssrsub.v03.ssrsub.com
-  - name: 美国 CloudFlare节点 - 3
-    type: vmess
-    server: 172.67.140.104
-    port: 2086
-    uuid: 7feb22ed-8283-3313-a09f-c5dc1402333b
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
+    network: tcp
     ws-path: /
     ws-headers:
-      Host: ag01-cdn.myn1des.com
-  - name: 美国 CloudFlare节点 - 4
+      Host: ''
+  - name: 美国 V2CROSS.COM
     type: vmess
-    server: hd.mamadcucu.com
-    port: 2052
-    uuid: 8ed9aec2-e02e-4a27-fe02-c3e20452e4c7
-    alterId: 0
+    server: 137.175.52.18
+    port: 33002
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
     cipher: auto
     udp: true
-    network: ws
+    network: tcp
     ws-path: /
     ws-headers:
-      Host: h4.mamadcucu.com
-  - name: 美国 CloudFlare节点 - 5
-    type: vmess
-    server: cf.yxjnode.com
-    port: 80
-    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /yxzbp
-    ws-headers:
-      Host: buyvm2.yxjnode.com
-  - name: 美国+加利福尼亚州洛杉矶Level3通信(DIA)
-    type: trojan
-    server: ap.stablize.top
-    port: '443'
-    password: 9478e27c-6bdd-4f0e-ba46-90d9739e1e34
+      Host: ''
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 CloudFlare节点
-      - 美国+V2CROSS.COM
-      - 中国 阿里云
-      - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
-      - 美国 CloudFlare节点 - 5
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
+      - 日本 东京都Amazon数据中心
+      - 美国 华盛顿Cogent通信公司
+      - 丹麦 V2CROSS.COM
+      - 日本 V2CROSS.COM
+      - 美国 V2CROSS.COM
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 CloudFlare节点
-      - 美国+V2CROSS.COM
-      - 中国 阿里云
-      - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
-      - 美国 CloudFlare节点 - 5
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
+      - 日本 东京都Amazon数据中心
+      - 美国 华盛顿Cogent通信公司
+      - 丹麦 V2CROSS.COM
+      - 日本 V2CROSS.COM
+      - 美国 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 CloudFlare节点
-      - 美国+V2CROSS.COM
-      - 中国 阿里云
-      - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
-      - 美国 CloudFlare节点 - 5
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
+      - 日本 东京都Amazon数据中心
+      - 美国 华盛顿Cogent通信公司
+      - 丹麦 V2CROSS.COM
+      - 日本 V2CROSS.COM
+      - 美国 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
