@@ -1,25 +1,25 @@
 proxies:
-  - name: 美国 加利福尼亚州洛杉矶Sharktech数据中心
+  - name: 美国 CloudFlare节点
     type: vmess
-    server: 64.32.4.34
-    port: 43166
-    uuid: 8653004f-de67-44c2-9cce-e0830933fb03
-    alterId: 64
+    server: visa.com
+    port: 80
+    uuid: 373f2d71-79ca-47a4-974f-79b2590e8c60
+    alterId: 0
     cipher: auto
     udp: true
-    network: tcp
-    ws-path: ''
+    network: ws
+    ws-path: /api/v3/download.getFile
     ws-headers:
-      Host: ''
-  - name: 日本+V2CROSS.COM
+      Host: ssrsub.v01.ssrsub.com
+  - name: 越南+V2CROSS.COM
     type: trojan
-    server: jp-csjc.syjd.xyz
-    port: 443?type=tcp&allowInsecure=1
-    password: 11c25054-04d2-4738-87b2-cabba73ca718
-  - name: 美国 V2CROSS.COM
+    server: gmloadip0.csadata4g.me
+    port: 443?type=tcp&sni=dl.kgvn.garenanow.com&allowInsecure=1
+    password: e505ff62-bc60-4113-b922-b40919396462
+  - name: 美国 华盛顿Cogent通信公司
     type: vmess
-    server: 137.175.18.89
-    port: 42002
+    server: 38.40.158.248
+    port: 45002
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -28,18 +28,25 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国 CloudFlare节点
+  - name: 加拿大+V2CROSS.COM
+    type: ss
+    server: 38.64.138.145
+    port: '8080'
+    cipher: aes-256-gcm
+    password: KixLvKzwjekG00rm
+  - name: 欧盟 V2CROSS.COM
     type: vmess
-    server: cf.yxjnode.com
-    port: 80
-    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
+    server: 45.85.119.1
+    port: 443
+    uuid: 8f74ec8a-971c-11ed-a8fc-0242ac120002
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /yxzbp
+    ws-path: /8701b594-d144-11ed-8e14-5ad705867cff
     ws-headers:
-      Host: dp1.yxjnode.com
+      Host: 8701b594-d144-11ed-8e14-5ad705867cff.asmandll.com
+    tls: true
   - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
     type: vmess
     server: 192.74.237.50
@@ -52,6 +59,28 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
+  - name: 美国 加利福尼亚州圣何塞PEG TECH
+    type: vmess
+    server: 142.4.106.247
+    port: 52902
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: 137.175.18.109
+    port: 50004
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-headers: {}
   - name: 美国 CloudFlare节点 - 2
     type: vmess
     server: cf.yxjnode.com
@@ -64,54 +93,62 @@ proxies:
     ws-path: /yxzbp
     ws-headers:
       Host: dp1.yxjnode.com
-  - name: 美国 CloudFlare节点 - 3
+  - name: 欧盟 V2CROSS.COM - 2
     type: vmess
-    server: mcix.cpionline.co
-    port: 443
-    uuid: a6e6b3e0-b8a7-4123-8ab4-573a9241a259
-    alterId: 0
+    server: 45.86.11.147
+    port: 39182
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
     cipher: auto
     udp: true
-    network: ws
-    ws-path: /UcM6L7nnEW8E0h3Y
+    network: tcp
+    ws-path: /
     ws-headers:
-      Host: matal.foriran.nl
-    tls: true
+      Host: ''
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
-      - 日本+V2CROSS.COM
-      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点
+      - 越南+V2CROSS.COM
+      - 美国 华盛顿Cogent通信公司
+      - 加拿大+V2CROSS.COM
+      - 欧盟 V2CROSS.COM
       - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
+      - 欧盟 V2CROSS.COM - 2
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
-      - 日本+V2CROSS.COM
-      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点
+      - 越南+V2CROSS.COM
+      - 美国 华盛顿Cogent通信公司
+      - 加拿大+V2CROSS.COM
+      - 欧盟 V2CROSS.COM
       - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
+      - 欧盟 V2CROSS.COM - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
-      - 日本+V2CROSS.COM
-      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点
+      - 越南+V2CROSS.COM
+      - 美国 华盛顿Cogent通信公司
+      - 加拿大+V2CROSS.COM
+      - 欧盟 V2CROSS.COM
       - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
+      - 欧盟 V2CROSS.COM - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
