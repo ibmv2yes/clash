@@ -1,42 +1,18 @@
 proxies:
   - name: 美国 CloudFlare节点
     type: vmess
-    server: ra.679888.xyz
+    server: 172.67.128.250
     port: 443
-    uuid: 98c731fc-3ced-4537-bb55-ec27f531a4b6
+    uuid: 7a37ba6e-3d7c-4bfd-dd08-8e5d5f5a4240
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /cef3646850fee/
+    ws-path: /
     ws-headers:
-      Host: ''
+      Host: v2.lrios.tk
     tls: true
-  - name: 美国 加利福尼亚州圣何塞PEG TECH
-    type: vmess
-    server: 142.4.119.205
-    port: 53986
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
   - name: 日本 东京Amazon数据中心
-    type: vmess
-    server: jp05-vm0.entry.srthdw.art
-    port: 30591
-    uuid: 22acc467-7440-386a-927a-d84be554b37e
-    alterId: 1
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 日本 东京Amazon数据中心 - 2
     type: vmess
     server: jp03-alt-vm0.entry.srthdw.art
     port: 21585
@@ -49,36 +25,6 @@ proxies:
     ws-headers:
       Host: ''
     tls: true
-  - name: 加拿大蒙特利尔+V2CROSS.COM
-    type: ss
-    server: 134.195.196.230
-    port: '5500'
-    cipher: aes-256-gcm
-    password: KixLvKzwjekG00rm
-  - name: 欧盟 V2CROSS.COM
-    type: vmess
-    server: 45.86.11.147
-    port: 39182
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 中国 阿里云
-    type: vmess
-    server: 8.219.216.27
-    port: 2095
-    uuid: 19350d64-6868-4a64-e501-9c0df903d788
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: h3.mamadcucu.com
   - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
     type: vmess
     server: 192.74.231.178
@@ -89,18 +35,43 @@ proxies:
     udp: true
     network: tcp
     ws-headers: {}
-  - name: 美国 华盛顿Cogent通信公司
+  - name: 日本 V2CROSS.COM
     type: vmess
-    server: 38.40.158.248
-    port: 45002
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
+    server: jp01-alt-vm0.entry.srthdw.art
+    port: 21583
+    uuid: 22acc467-7440-386a-927a-d84be554b37e
+    alterId: 1
     cipher: auto
     udp: true
     network: tcp
-    ws-path: /
+    ws-path: /hlsrthe214/8u4692j
+    ws-headers:
+      Host: jp01-alt-vm0.entry.srthdw.art
+    tls: true
+  - name: 广东省深圳市 电信
+    type: vmess
+    server: 14.116.151.100
+    port: 63090
+    uuid: 311f3c4b-90a1-3c5c-a4fe-215cc7c90d02
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-headers: {}
+    tls: true
+  - name: 日本 V2CROSS.COM - 2
+    type: vmess
+    server: 43.206.157.32
+    port: 443
+    uuid: 168b4363-92b4-4994-a4e8-9e4f5015b48c
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /52566/
     ws-headers:
       Host: ''
+    tls: true
 proxy-groups:
   - name: Free-servers
     type: select
@@ -108,40 +79,31 @@ proxy-groups:
       - 自动选择
       - 故障转移
       - 美国 CloudFlare节点
-      - 美国 加利福尼亚州圣何塞PEG TECH
       - 日本 东京Amazon数据中心
-      - 日本 东京Amazon数据中心 - 2
-      - 加拿大蒙特利尔+V2CROSS.COM
-      - 欧盟 V2CROSS.COM
-      - 中国 阿里云
       - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 美国 华盛顿Cogent通信公司
+      - 日本 V2CROSS.COM
+      - 广东省深圳市 电信
+      - 日本 V2CROSS.COM - 2
   - name: 自动选择
     type: url-test
     proxies:
       - 美国 CloudFlare节点
-      - 美国 加利福尼亚州圣何塞PEG TECH
       - 日本 东京Amazon数据中心
-      - 日本 东京Amazon数据中心 - 2
-      - 加拿大蒙特利尔+V2CROSS.COM
-      - 欧盟 V2CROSS.COM
-      - 中国 阿里云
       - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 美国 华盛顿Cogent通信公司
+      - 日本 V2CROSS.COM
+      - 广东省深圳市 电信
+      - 日本 V2CROSS.COM - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
       - 美国 CloudFlare节点
-      - 美国 加利福尼亚州圣何塞PEG TECH
       - 日本 东京Amazon数据中心
-      - 日本 东京Amazon数据中心 - 2
-      - 加拿大蒙特利尔+V2CROSS.COM
-      - 欧盟 V2CROSS.COM
-      - 中国 阿里云
       - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 美国 华盛顿Cogent通信公司
+      - 日本 V2CROSS.COM
+      - 广东省深圳市 电信
+      - 日本 V2CROSS.COM - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
