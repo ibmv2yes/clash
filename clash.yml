@@ -1,22 +1,44 @@
 proxies:
-  - name: 日本 东京Amazon数据中心
+  - name: 美国 V2CROSS.COM
     type: vmess
-    server: jp03-alt-vm0.entry.srthdw.art
-    port: 21585
-    uuid: 1bc52308-0bd9-30d0-90fd-cef337875d10
-    alterId: 1
+    server: 45.136.235.10
+    port: 41632
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
     cipher: auto
     udp: true
     network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-    tls: true
+    ws-headers: {}
   - name: 美国 CloudFlare节点
     type: vmess
-    server: cdnjs.com
+    server: mci.bamarambash.monster
     port: 443
-    uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF
+    uuid: 8f74ec8a-971c-11ed-a8fc-0242ac120002
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /db698b16-d216-11ed-8e14-5ad705867cff
+    ws-headers:
+      Host: db698b16-d216-11ed-8e14-5ad705867cff.asmandll.com
+    tls: true
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: cf-lt.sharecentre.online
+    port: 80
+    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /shirker
+    ws-headers:
+      Host: lv1.sharecentrepro.org
+  - name: 加拿大 V2CROSS.COM
+    type: vmess
+    server: 199.212.90.14
+    port: 443
+    uuid: 6147F065-9AC0-4081-A5A3-A2EB4EBB8958
     alterId: 0
     cipher: auto
     udp: true
@@ -25,34 +47,24 @@ proxies:
     ws-headers:
       Host: Lille.kotick.site
     tls: true
-  - name: 日本 V2CROSS.COM
+  - name: 美国 CloudFlare节点 - 3
     type: vmess
-    server: jp2.ulifeai.com
+    server: mci.ircf.space
     port: 443
-    uuid: 168b4363-92b4-4994-a4e8-9e4f5015b48c
+    uuid: a6e6b3e0-b8a7-4123-8ab4-573a9241a259
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /52566/
+    ws-path: /UcM6L7nnEW8E0h3Y
     ws-headers:
-      Host: ''
+      Host: hasan.foriran.nl
     tls: true
-  - name: 美国+V2CROSS.COM
-    type: trojan
-    server: 223.ndy58850.me
-    port: 58850?peer=223.ndy58850.me
-    password: 9bea679c-ce35-4a9e-a664-90857f74f0a4
-  - name: 新加坡+DigitalOcean数据中心
-    type: trojan
-    server: sg.520748.xyz
-    port: '10016'
-    password: e9cbf46d-b166-4325-9d83-b197c2072e17
-  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
+  - name: 美国 加利福尼亚州圣何塞PEG TECH
     type: vmess
-    server: 192.74.228.172
-    port: 42857
-    uuid: 051b844f-efe3-4847-92aa-66b5de0b6d4e
+    server: 142.4.97.71
+    port: 44942
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
     udp: true
@@ -60,46 +72,47 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 日本+东京Amazon数据中心
-    type: trojan
-    server: jp01.studentplanner.uk
-    port: '443'
-    password: c2e0cb10-3c0f-4b41-8939-af235800cf07
+  - name: 瑞典+V2CROSS.COM
+    type: ss
+    server: 167.88.63.79
+    port: '9101'
+    cipher: aes-256-gcm
+    password: e4FCWrgpkji3QY
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 日本 东京Amazon数据中心
+      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 日本 V2CROSS.COM
-      - 美国+V2CROSS.COM
-      - 新加坡+DigitalOcean数据中心
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 日本+东京Amazon数据中心
+      - 美国 CloudFlare节点 - 2
+      - 加拿大 V2CROSS.COM
+      - 美国 CloudFlare节点 - 3
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 瑞典+V2CROSS.COM
   - name: 自动选择
     type: url-test
     proxies:
-      - 日本 东京Amazon数据中心
+      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 日本 V2CROSS.COM
-      - 美国+V2CROSS.COM
-      - 新加坡+DigitalOcean数据中心
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 日本+东京Amazon数据中心
+      - 美国 CloudFlare节点 - 2
+      - 加拿大 V2CROSS.COM
+      - 美国 CloudFlare节点 - 3
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 瑞典+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 日本 东京Amazon数据中心
+      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 日本 V2CROSS.COM
-      - 美国+V2CROSS.COM
-      - 新加坡+DigitalOcean数据中心
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 日本+东京Amazon数据中心
+      - 美国 CloudFlare节点 - 2
+      - 加拿大 V2CROSS.COM
+      - 美国 CloudFlare节点 - 3
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 瑞典+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
