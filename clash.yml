@@ -1,8 +1,20 @@
 proxies:
-  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
+  - name: 日本 东京Amazon数据中心
     type: vmess
-    server: 192.74.231.178
-    port: 49202
+    server: jp05-vm0.entry.srthdw.art
+    port: 30591
+    uuid: 22acc467-7440-386a-927a-d84be554b37e
+    alterId: 1
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 Datability
+    type: vmess
+    server: 140.99.148.53
+    port: 47839
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -11,131 +23,72 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 俄罗斯 V2CROSS.COM
+  - name: 日本 东京都Amazon数据中心
     type: vmess
-    server: aparat.persianmizban.com
-    port: 4433
-    uuid: 88790a1b-f059-40c7-9c9d-b7c943b4420b
+    server: jp04-vm0.entry.srthdw.art
+    port: 446
+    uuid: b2a2c706-12e0-3335-8a62-31925219a712
     alterId: 0
     cipher: auto
     udp: true
     network: tcp
-    ws-path: ''
-    ws-headers:
-      Host: ''
-    tls: true
-  - name: 新加坡 OVH
-    type: vmess
-    server: sing2.tltvpn.xyz
-    port: 80
-    uuid: 022e3c2a-f4bf-423e-8c05-7f26fff93674
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
     ws-path: /
     ws-headers:
-      Host: dl.kgvn.garenanow.com
+      Host: ''
   - name: 美国 CloudFlare节点
     type: vmess
-    server: 172.66.46.15
+    server: 172.67.128.250
     port: 443
-    uuid: 12612e87-8003-44a8-b4e8-ec4a325e9016
+    uuid: 7a37ba6e-3d7c-4bfd-dd08-8e5d5f5a4240
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /ou
+    ws-path: /
     ws-headers:
-      Host: z.zorro.tk
+      Host: v2.lrios.tk
     tls: true
-  - name: 欧盟 V2CROSS.COM
+  - name: 日本 东京都Amazon数据中心 - 2
     type: vmess
-    server: 45.86.11.147
-    port: 39182
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
+    server: jp04-vm0.entry.srthdw.art
+    port: 446
+    uuid: b2a2c706-12e0-3335-8a62-31925219a712
+    alterId: 0
     cipher: auto
     udp: true
     network: tcp
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国 V2CROSS.COM
-    type: vmess
-    server: 45.136.235.10
-    port: 41632
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: cf-lt.sharecentre.online
-    port: 80
-    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /shirker
-    ws-headers:
-      Host: nl.sharecentrepro.com
-  - name: 日本 V2CROSS.COM
-    type: vmess
-    server: jp2.ulifeai.com
-    port: 443
-    uuid: 168b4363-92b4-4994-a4e8-9e4f5015b48c
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /52566/
-    ws-headers:
-      Host: ''
-    tls: true
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 俄罗斯 V2CROSS.COM
-      - 新加坡 OVH
+      - 日本 东京Amazon数据中心
+      - 美国 Datability
+      - 日本 东京都Amazon数据中心
       - 美国 CloudFlare节点
-      - 欧盟 V2CROSS.COM
-      - 美国 V2CROSS.COM
-      - 美国 CloudFlare节点 - 2
-      - 日本 V2CROSS.COM
+      - 日本 东京都Amazon数据中心 - 2
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 俄罗斯 V2CROSS.COM
-      - 新加坡 OVH
+      - 日本 东京Amazon数据中心
+      - 美国 Datability
+      - 日本 东京都Amazon数据中心
       - 美国 CloudFlare节点
-      - 欧盟 V2CROSS.COM
-      - 美国 V2CROSS.COM
-      - 美国 CloudFlare节点 - 2
-      - 日本 V2CROSS.COM
+      - 日本 东京都Amazon数据中心 - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 俄罗斯 V2CROSS.COM
-      - 新加坡 OVH
+      - 日本 东京Amazon数据中心
+      - 美国 Datability
+      - 日本 东京都Amazon数据中心
       - 美国 CloudFlare节点
-      - 欧盟 V2CROSS.COM
-      - 美国 V2CROSS.COM
-      - 美国 CloudFlare节点 - 2
-      - 日本 V2CROSS.COM
+      - 日本 东京都Amazon数据中心 - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
