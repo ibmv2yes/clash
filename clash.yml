@@ -1,70 +1,17 @@
 proxies:
-  - name: 日本 V2CROSS.COM
-    type: vmess
-    server: jp01-alt-vm0.entry.srthdw.art
-    port: 21583
-    uuid: 22acc467-7440-386a-927a-d84be554b37e
-    alterId: 1
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /hlsrthe214/8u4692j
-    ws-headers:
-      Host: jp01-alt-vm0.entry.srthdw.art
-    tls: true
-  - name: 美国+华盛顿Cogent通信公司
-    type: ss
-    server: 38.75.136.21
-    port: '5001'
-    cipher: aes-256-gcm
-    password: Y6R9pAtvxxzmGC
-  - name: 日本 V2CROSS.COM - 2
-    type: vmess
-    server: 43.206.157.32
-    port: 443
-    uuid: 168b4363-92b4-4994-a4e8-9e4f5015b48c
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /52566/
-    ws-headers: {}
-    tls: true
   - name: 美国 CloudFlare节点
     type: vmess
-    server: mci.bamarambash.monster
+    server: ra.679888.xyz
     port: 443
-    uuid: 8f74ec8a-971c-11ed-a8fc-0242ac120002
+    uuid: 98c731fc-3ced-4537-bb55-ec27f531a4b6
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /db698b16-d216-11ed-8e14-5ad705867cff
+    ws-path: /cef3646850fee/
     ws-headers:
-      Host: db698b16-d216-11ed-8e14-5ad705867cff.asmandll.com
+      Host: ''
     tls: true
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: zendesk1.grab.com
-    port: 2082
-    uuid: 1c20ff57-7da2-4665-971e-5b73cf96b362
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /vmess
-    ws-headers:
-      Host: sg1.createxray.me
-  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
-    type: vmess
-    server: 192.74.242.153
-    port: 44667
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-headers: {}
   - name: 美国 加利福尼亚州圣何塞PEG TECH
     type: vmess
     server: 142.4.119.205
@@ -77,56 +24,124 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国 CloudFlare节点 - 3
+  - name: 日本 东京Amazon数据中心
     type: vmess
-    server: visa.com
-    port: 80
-    uuid: 373f2d71-79ca-47a4-974f-79b2590e8c60
+    server: jp05-vm0.entry.srthdw.art
+    port: 30591
+    uuid: 22acc467-7440-386a-927a-d84be554b37e
+    alterId: 1
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 日本 东京Amazon数据中心 - 2
+    type: vmess
+    server: jp03-alt-vm0.entry.srthdw.art
+    port: 21585
+    uuid: 1bc52308-0bd9-30d0-90fd-cef337875d10
+    alterId: 1
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+    tls: true
+  - name: 加拿大蒙特利尔+V2CROSS.COM
+    type: ss
+    server: 134.195.196.230
+    port: '5500'
+    cipher: aes-256-gcm
+    password: KixLvKzwjekG00rm
+  - name: 欧盟 V2CROSS.COM
+    type: vmess
+    server: 45.86.11.147
+    port: 39182
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 中国 阿里云
+    type: vmess
+    server: 8.219.216.27
+    port: 2095
+    uuid: 19350d64-6868-4a64-e501-9c0df903d788
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /api/v3/download.getFile
+    ws-path: /
     ws-headers:
-      Host: ssrsub.v03.ssrsub.com
+      Host: h3.mamadcucu.com
+  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
+    type: vmess
+    server: 192.74.231.178
+    port: 49202
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-headers: {}
+  - name: 美国 华盛顿Cogent通信公司
+    type: vmess
+    server: 38.40.158.248
+    port: 45002
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 日本 V2CROSS.COM
-      - 美国+华盛顿Cogent通信公司
-      - 日本 V2CROSS.COM - 2
       - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
       - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国 CloudFlare节点 - 3
+      - 日本 东京Amazon数据中心
+      - 日本 东京Amazon数据中心 - 2
+      - 加拿大蒙特利尔+V2CROSS.COM
+      - 欧盟 V2CROSS.COM
+      - 中国 阿里云
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 美国 华盛顿Cogent通信公司
   - name: 自动选择
     type: url-test
     proxies:
-      - 日本 V2CROSS.COM
-      - 美国+华盛顿Cogent通信公司
-      - 日本 V2CROSS.COM - 2
       - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
       - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国 CloudFlare节点 - 3
+      - 日本 东京Amazon数据中心
+      - 日本 东京Amazon数据中心 - 2
+      - 加拿大蒙特利尔+V2CROSS.COM
+      - 欧盟 V2CROSS.COM
+      - 中国 阿里云
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 美国 华盛顿Cogent通信公司
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 日本 V2CROSS.COM
-      - 美国+华盛顿Cogent通信公司
-      - 日本 V2CROSS.COM - 2
       - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
       - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国 CloudFlare节点 - 3
+      - 日本 东京Amazon数据中心
+      - 日本 东京Amazon数据中心 - 2
+      - 加拿大蒙特利尔+V2CROSS.COM
+      - 欧盟 V2CROSS.COM
+      - 中国 阿里云
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 美国 华盛顿Cogent通信公司
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
