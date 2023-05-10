@@ -1,57 +1,34 @@
 proxies:
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: kr07.wxfz.gq
+    port: 443
+    uuid: 95b2d587-b23c-49aa-da6a-9ccdb82b5675
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /cctv13.m3u8?ed=2048
+    ws-headers:
+      Host: kr07.wxfz.gq
+    tls: true
   - name: 美国 CloudFlare节点
     type: vmess
-    server: cf.yxjnode.com
-    port: 80
-    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /yxzbp
-    ws-headers:
-      Host: dp1.yxjnode.com
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: 104.24.53.68
-    port: 80
-    uuid: 53ae65be-81ee-4766-8a09-da43c44c4d30
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /qwer08
-    ws-headers:
-      Host: uyaa.vtcss.top
-  - name: 美国 CloudFlare节点 - 3
-    type: vmess
-    server: cf.yxjnode.com
-    port: 80
-    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /yxzbp
-    ws-headers:
-      Host: dp1.yxjnode.com
-  - name: 美国 CloudFlare节点 - 4
-    type: vmess
-    server: cdnjs.com
+    server: 108.162.196.159
     port: 443
-    uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF
+    uuid: 2e6e9c6e-6c41-4d8f-b06e-e52b27220ff9
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /speedtest
+    ws-path: /qwer09
     ws-headers:
-      Host: Lille.kotick.site
+      Host: yvsos.vtcss.top
     tls: true
-  - name: 美国加利福尼亚州洛杉矶 PetaExpress
+  - name: 美国 加利福尼亚州洛杉矶市SharkTech数据中心
     type: vmess
-    server: 198.2.204.249
-    port: 46802
+    server: 107.167.12.26
+    port: 41702
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -60,66 +37,84 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国 CloudFlare节点 - 5
+  - name: 日本 V2CROSS.COM
     type: vmess
-    server: ming2.kiwireich.com
+    server: 43.206.157.32
     port: 443
-    uuid: 18e5f40f-bda6-4c15-9334-e87cda6047af
+    uuid: 168b4363-92b4-4994-a4e8-9e4f5015b48c
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /ray
+    ws-path: /52566/
     ws-headers:
       Host: ''
     tls: true
-  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
+  - name: 美国 加利福尼亚州费利蒙Linode数据中心
     type: vmess
-    server: 192.74.228.172
-    port: 42857
-    uuid: 051b844f-efe3-4847-92aa-66b5de0b6d4e
-    alterId: 64
+    server: vus2.0bad.com
+    port: 443
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
+    alterId: 0
     cipher: auto
     udp: true
-    network: tcp
-    ws-path: /
+    network: ws
+    ws-path: /chat
     ws-headers:
       Host: ''
+    tls: true
+  - name: 香港+Amazon数据中心
+    type: trojan
+    server: agroup.node4.t.nodelist-gfwairport1.download
+    port: '50001'
+    password: ca76834c-3e07-4c44-8347-ec19c26087cb
+  - name: 美国 V2CROSS.COM - 2
+    type: vmess
+    server: 192.203.230.86
+    port: 80
+    uuid: a442dacf-cbb3-488a-9744-61494ea38630
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: us-1.acyun.cf
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
+      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 美国 CloudFlare节点 - 5
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+      - 日本 V2CROSS.COM
+      - 美国 加利福尼亚州费利蒙Linode数据中心
+      - 香港+Amazon数据中心
+      - 美国 V2CROSS.COM - 2
   - name: 自动选择
     type: url-test
     proxies:
+      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 美国 CloudFlare节点 - 5
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+      - 日本 V2CROSS.COM
+      - 美国 加利福尼亚州费利蒙Linode数据中心
+      - 香港+Amazon数据中心
+      - 美国 V2CROSS.COM - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
+      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 美国 CloudFlare节点 - 5
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+      - 日本 V2CROSS.COM
+      - 美国 加利福尼亚州费利蒙Linode数据中心
+      - 香港+Amazon数据中心
+      - 美国 V2CROSS.COM - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
