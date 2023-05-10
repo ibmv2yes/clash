@@ -1,115 +1,102 @@
 proxies:
-  - name: 美国 加利福尼亚州洛杉矶Sharktech数据中心
-    type: vmess
-    server: 64.32.20.34
-    port: 54042
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-headers: {}
   - name: 美国 CloudFlare节点
     type: vmess
-    server: 108.162.196.40
+    server: 172.67.128.250
     port: 443
-    uuid: e883ff76-3bb4-4008-c068-6b5b1d960ea7
+    uuid: 7a37ba6e-3d7c-4bfd-dd08-8e5d5f5a4240
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /qwer08
-    ws-headers:
-      Host: uyaa.vtcss.top
-    tls: true
-  - name: 美国 V2CROSS.COM
-    type: vmess
-    server: 45.136.235.10
-    port: 41632
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-headers: {}
-  - name: 日本 V2CROSS.COM
-    type: vmess
-    server: 43.206.157.32
-    port: 443
-    uuid: 168b4363-92b4-4994-a4e8-9e4f5015b48c
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /52566/
-    ws-headers:
-      Host: ''
-    tls: true
-  - name: 俄罗斯 V2CROSS.COM
-    type: vmess
-    server: 185.143.220.25
-    port: 443
-    uuid: f28e354e-c2d1-4983-9b07-5acaf1b3b3e5
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /6e9EtZ2dL
-    ws-headers:
-      Host: ''
-    tls: true
-  - name: 日本 东京都Amazon数据中心
-    type: vmess
-    server: jp04-vm0.entry.srthdw.art
-    port: 446
-    uuid: b2a2c706-12e0-3335-8a62-31925219a712
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
     ws-path: /
     ws-headers:
-      Host: ''
-  - name: 美国+DXC+Technology
+      Host: v2.lrios.tk
+    tls: true
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: cf.noaries.de
+    port: 2082
+    uuid: 314c1387-618c-4689-97fc-4bc9a1ae5e05
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: ir2.nmsl.ninja
+  - name: 美国弗吉尼亚州阿什本 CloudFlare节点
+    type: vmess
+    server: cf-lt.sharecentre.online
+    port: 80
+    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /shirker
+    ws-headers:
+      Host: nl.sharecentrepro.com
+  - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: HKG.MIFJUN.ORG
+    port: 8080
+    uuid: c76bf073-d8c6-4d2d-aa5f-3bbdd3b6d0b2
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: HKG.MIFJUN.ORG
+  - name: 日本+V2CROSS.COM
     type: trojan
-    server: japan.tltvpn.xyz
-    port: '443'
-    password: 022e3c2a-f4bf-423e-8c05-7f26fff93674
+    server: 43.198.88.70
+    port: 443?sni=4-193-105-141.nhost.00cdn.com
+    password: e9751f11-d8d1-4a02-81eb-3ba7691e975c
+  - name: 美国 CloudFlare节点 - 4
+    type: vmess
+    server: cf.yxjnode.com
+    port: 80
+    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /yxzbp
+    ws-headers:
+      Host: dp1.yxjnode.com
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
       - 美国 CloudFlare节点
-      - 美国 V2CROSS.COM
-      - 日本 V2CROSS.COM
-      - 俄罗斯 V2CROSS.COM
-      - 日本 东京都Amazon数据中心
-      - 美国+DXC+Technology
+      - 美国 CloudFlare节点 - 2
+      - 美国弗吉尼亚州阿什本 CloudFlare节点
+      - 美国 CloudFlare节点 - 3
+      - 日本+V2CROSS.COM
+      - 美国 CloudFlare节点 - 4
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
       - 美国 CloudFlare节点
-      - 美国 V2CROSS.COM
-      - 日本 V2CROSS.COM
-      - 俄罗斯 V2CROSS.COM
-      - 日本 东京都Amazon数据中心
-      - 美国+DXC+Technology
+      - 美国 CloudFlare节点 - 2
+      - 美国弗吉尼亚州阿什本 CloudFlare节点
+      - 美国 CloudFlare节点 - 3
+      - 日本+V2CROSS.COM
+      - 美国 CloudFlare节点 - 4
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
       - 美国 CloudFlare节点
-      - 美国 V2CROSS.COM
-      - 日本 V2CROSS.COM
-      - 俄罗斯 V2CROSS.COM
-      - 日本 东京都Amazon数据中心
-      - 美国+DXC+Technology
+      - 美国 CloudFlare节点 - 2
+      - 美国弗吉尼亚州阿什本 CloudFlare节点
+      - 美国 CloudFlare节点 - 3
+      - 日本+V2CROSS.COM
+      - 美国 CloudFlare节点 - 4
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
