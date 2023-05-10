@@ -1,17 +1,70 @@
 proxies:
-  - name: 西班牙 V2CROSS.COM
+  - name: 日本 V2CROSS.COM
     type: vmess
-    server: mtn.cpionline.co
+    server: jp01-alt-vm0.entry.srthdw.art
+    port: 21583
+    uuid: 22acc467-7440-386a-927a-d84be554b37e
+    alterId: 1
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /hlsrthe214/8u4692j
+    ws-headers:
+      Host: jp01-alt-vm0.entry.srthdw.art
+    tls: true
+  - name: 美国+华盛顿Cogent通信公司
+    type: ss
+    server: 38.75.136.21
+    port: '5001'
+    cipher: aes-256-gcm
+    password: Y6R9pAtvxxzmGC
+  - name: 日本 V2CROSS.COM - 2
+    type: vmess
+    server: 43.206.157.32
     port: 443
-    uuid: a6e6b3e0-b8a7-4123-8ab4-573a9241a259
+    uuid: 168b4363-92b4-4994-a4e8-9e4f5015b48c
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /UcM6L7nnEW8E0h3Y
-    ws-headers:
-      Host: totole.foriran.nl
+    ws-path: /52566/
+    ws-headers: {}
     tls: true
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: mci.bamarambash.monster
+    port: 443
+    uuid: 8f74ec8a-971c-11ed-a8fc-0242ac120002
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /db698b16-d216-11ed-8e14-5ad705867cff
+    ws-headers:
+      Host: db698b16-d216-11ed-8e14-5ad705867cff.asmandll.com
+    tls: true
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: zendesk1.grab.com
+    port: 2082
+    uuid: 1c20ff57-7da2-4665-971e-5b73cf96b362
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /vmess
+    ws-headers:
+      Host: sg1.createxray.me
+  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
+    type: vmess
+    server: 192.74.242.153
+    port: 44667
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-headers: {}
   - name: 美国 加利福尼亚州圣何塞PEG TECH
     type: vmess
     server: 142.4.119.205
@@ -24,179 +77,56 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+  - name: 美国 CloudFlare节点 - 3
     type: vmess
-    server: 107.167.12.26
-    port: 41702
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 日本 V2CROSS.COM
-    type: vmess
-    server: 43.206.157.32
-    port: 443
-    uuid: 168b4363-92b4-4994-a4e8-9e4f5015b48c
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /52566/
-    ws-headers: {}
-    tls: true
-  - name: 日本 东京Amazon数据中心
-    type: vmess
-    server: jp02-vm0.entry.srthdw.art
-    port: 444
-    uuid: 21c670ff-c739-3072-9286-7d2a1d300fcb
-    alterId: 1
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 俄罗斯+V2CROSS.COM
-    type: ss
-    server: 185.143.220.137
-    port: '11111'
-    cipher: aes-256-gcm
-    password: dongtaiwang.com
-  - name: 美国 Datability
-    type: vmess
-    server: 140.99.148.53
-    port: 47839
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-headers: {}
-  - name: 美国 V2CROSS.COM
-    type: vmess
-    server: vsg1.0bad.com
-    port: 443
-    uuid: 927094d3-d678-4763-8591-e240d0bcae87
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /chat
-    ws-headers:
-      Host: ''
-    tls: true
-  - name: 美国 滴滴盾CN2高防节点(dididun.com)
-    type: vmess
-    server: 137.175.3.232
-    port: 53042
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国+V2CROSS.COM
-    type: trojan
-    server: 152.70.74.66
-    port: 443?security=tls&type=tcp&headerType=none
-    password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: cf.yxjnode.com
+    server: visa.com
     port: 80
-    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
+    uuid: 373f2d71-79ca-47a4-974f-79b2590e8c60
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /yxzbp
+    ws-path: /api/v3/download.getFile
     ws-headers:
-      Host: dp1.yxjnode.com
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: ming2.kiwireich.com
-    port: 443
-    uuid: 18e5f40f-bda6-4c15-9334-e87cda6047af
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /ray
-    ws-headers:
-      Host: ''
-    tls: true
-  - name: 日本 东京Amazon数据中心 - 2
-    type: vmess
-    server: jp03-alt-vm0.entry.srthdw.art
-    port: 21585
-    uuid: 1bc52308-0bd9-30d0-90fd-cef337875d10
-    alterId: 1
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-    tls: true
+      Host: ssrsub.v03.ssrsub.com
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 西班牙 V2CROSS.COM
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
       - 日本 V2CROSS.COM
-      - 日本 东京Amazon数据中心
-      - 俄罗斯+V2CROSS.COM
-      - 美国 Datability
-      - 美国 V2CROSS.COM
-      - 美国 滴滴盾CN2高防节点(dididun.com)
-      - 美国+V2CROSS.COM
+      - 美国+华盛顿Cogent通信公司
+      - 日本 V2CROSS.COM - 2
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
-      - 日本 东京Amazon数据中心 - 2
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国 CloudFlare节点 - 3
   - name: 自动选择
     type: url-test
     proxies:
-      - 西班牙 V2CROSS.COM
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
       - 日本 V2CROSS.COM
-      - 日本 东京Amazon数据中心
-      - 俄罗斯+V2CROSS.COM
-      - 美国 Datability
-      - 美国 V2CROSS.COM
-      - 美国 滴滴盾CN2高防节点(dididun.com)
-      - 美国+V2CROSS.COM
+      - 美国+华盛顿Cogent通信公司
+      - 日本 V2CROSS.COM - 2
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
-      - 日本 东京Amazon数据中心 - 2
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国 CloudFlare节点 - 3
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 西班牙 V2CROSS.COM
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
       - 日本 V2CROSS.COM
-      - 日本 东京Amazon数据中心
-      - 俄罗斯+V2CROSS.COM
-      - 美国 Datability
-      - 美国 V2CROSS.COM
-      - 美国 滴滴盾CN2高防节点(dididun.com)
-      - 美国+V2CROSS.COM
+      - 美国+华盛顿Cogent通信公司
+      - 日本 V2CROSS.COM - 2
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
-      - 日本 东京Amazon数据中心 - 2
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国 CloudFlare节点 - 3
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
