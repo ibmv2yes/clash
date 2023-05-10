@@ -1,76 +1,5 @@
 proxies:
-  - name: 美国+加利福尼亚州洛杉矶Level3通信(DIA)
-    type: trojan
-    server: uk.stablize.top
-    port: '443'
-    password: 9478e27c-6bdd-4f0e-ba46-90d9739e1e34
-  - name: 美国 V2CROSS.COM
-    type: vmess
-    server: 192.203.230.86
-    port: 80
-    uuid: a442dacf-cbb3-488a-9744-61494ea38630
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: us-1.acyun.cf
   - name: 美国 CloudFlare节点
-    type: vmess
-    server: zendesk1.grab.com
-    port: 2082
-    uuid: 1c20ff57-7da2-4665-971e-5b73cf96b362
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /vmess
-    ws-headers:
-      Host: sg1.createxray.me
-  - name: 日本+V2CROSS.COM
-    type: trojan
-    server: aws-jp.aikun.online
-    port: '443'
-    password: 1d636482-5f7b-41d3-ac42-241c00935fbb
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: HKG.MIFJUN.ORG
-    port: 8080
-    uuid: c76bf073-d8c6-4d2d-aa5f-3bbdd3b6d0b2
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: HKG.MIFJUN.ORG
-  - name: 美国 CloudFlare节点 - 3
-    type: vmess
-    server: cf-lt.sharecentre.online
-    port: 80
-    uuid: 373f2d71-79ca-47a4-974f-79b2590e8c60
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /api/v3/download.getFile
-    ws-headers:
-      Host: ssrsub.v03.ssrsub.com
-  - name: 加拿大 V2CROSS.COM
-    type: vmess
-    server: 199.212.90.14
-    port: 443
-    uuid: 6147F065-9AC0-4081-A5A3-A2EB4EBB8958
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /speedtest
-    ws-headers:
-      Host: Lille.kotick.site
-    tls: true
-  - name: 美国 CloudFlare节点 - 4
     type: vmess
     server: cf.yxjnode.com
     port: 80
@@ -82,22 +11,47 @@ proxies:
     ws-path: /yxzbp
     ws-headers:
       Host: dp1.yxjnode.com
-  - name: 美国 CloudFlare节点 - 5
+  - name: 美国 CloudFlare节点 - 2
     type: vmess
-    server: 172.67.73.39
+    server: 104.24.53.68
     port: 80
-    uuid: b8458948-a630-4e6d-809a-230b2223ff3d
+    uuid: 53ae65be-81ee-4766-8a09-da43c44c4d30
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /xrayvws
+    ws-path: /qwer08
     ws-headers:
-      Host: f.tun4.live
-  - name: 英国 V2CROSS.COM
+      Host: uyaa.vtcss.top
+  - name: 美国 CloudFlare节点 - 3
     type: vmess
-    server: 171.22.134.3
-    port: 53433
+    server: cf.yxjnode.com
+    port: 80
+    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /yxzbp
+    ws-headers:
+      Host: dp1.yxjnode.com
+  - name: 美国 CloudFlare节点 - 4
+    type: vmess
+    server: cdnjs.com
+    port: 443
+    uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /speedtest
+    ws-headers:
+      Host: Lille.kotick.site
+    tls: true
+  - name: 美国加利福尼亚州洛杉矶 PetaExpress
+    type: vmess
+    server: 198.2.204.249
+    port: 46802
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -106,58 +60,66 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国+加利福尼亚州洛杉矶Level3通信(DIA) - 2
-    type: trojan
-    server: ap.stablize.top
-    port: '443'
-    password: 9478e27c-6bdd-4f0e-ba46-90d9739e1e34
+  - name: 美国 CloudFlare节点 - 5
+    type: vmess
+    server: ming2.kiwireich.com
+    port: 443
+    uuid: 18e5f40f-bda6-4c15-9334-e87cda6047af
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /ray
+    ws-headers:
+      Host: ''
+    tls: true
+  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
+    type: vmess
+    server: 192.74.228.172
+    port: 42857
+    uuid: 051b844f-efe3-4847-92aa-66b5de0b6d4e
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
-      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 日本+V2CROSS.COM
       - 美国 CloudFlare节点 - 2
       - 美国 CloudFlare节点 - 3
-      - 加拿大 V2CROSS.COM
       - 美国 CloudFlare节点 - 4
+      - 美国加利福尼亚州洛杉矶 PetaExpress
       - 美国 CloudFlare节点 - 5
-      - 英国 V2CROSS.COM
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA) - 2
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
-      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 日本+V2CROSS.COM
       - 美国 CloudFlare节点 - 2
       - 美国 CloudFlare节点 - 3
-      - 加拿大 V2CROSS.COM
       - 美国 CloudFlare节点 - 4
+      - 美国加利福尼亚州洛杉矶 PetaExpress
       - 美国 CloudFlare节点 - 5
-      - 英国 V2CROSS.COM
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA) - 2
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
-      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 日本+V2CROSS.COM
       - 美国 CloudFlare节点 - 2
       - 美国 CloudFlare节点 - 3
-      - 加拿大 V2CROSS.COM
       - 美国 CloudFlare节点 - 4
+      - 美国加利福尼亚州洛杉矶 PetaExpress
       - 美国 CloudFlare节点 - 5
-      - 英国 V2CROSS.COM
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA) - 2
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
