@@ -1,137 +1,117 @@
 proxies:
-  - name: 日本 东京Amazon数据中心
+  - name: 安徽省 移动(全省通用)
     type: vmess
-    server: jp03-alt-vm0.entry.srthdw.art
-    port: 21585
-    uuid: 1bc52308-0bd9-30d0-90fd-cef337875d10
-    alterId: 1
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-    tls: true
-  - name: 美国+V2CROSS.COM
-    type: ss
-    server: 172.99.190.149
-    port: '5500'
-    cipher: aes-256-gcm
-    password: KixLvKzwjekG00rm
-  - name: 美国 V2CROSS.COM
-    type: vmess
-    server: 192.203.230.86
-    port: 80
-    uuid: a442dacf-cbb3-488a-9744-61494ea38630
+    server: 6q59.cdn.node.a.tddns-ounk.com
+    port: 40261
+    uuid: 72bea5d3-7591-3ca4-9d61-3c89bd6e45a5
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /
-    ws-headers:
-      Host: us-1.acyun.cf
-  - name: 美国+V2CROSS.COM - 2
-    type: trojan
-    server: tempest-us.aikun.online
-    port: '443'
-    password: ff81ed1c-366d-422f-9362-6d10b116d1cf
+    ws-path: /d1af668b-cff6-464a-9415-a7782ead72d5.j.live003.m3u8
+    ws-headers: {}
   - name: 美国 CloudFlare节点
     type: vmess
-    server: 172.67.128.250
-    port: 443
-    uuid: 7a37ba6e-3d7c-4bfd-dd08-8e5d5f5a4240
+    server: 104.21.53.35
+    port: 80
+    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /yxzbp
+    ws-headers:
+      Host: buyvm1.yxjnode.com
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: cf.noaries.de
+    port: 2082
+    uuid: 314c1387-618c-4689-97fc-4bc9a1ae5e05
     alterId: 0
     cipher: auto
     udp: true
     network: ws
     ws-path: /
     ws-headers:
-      Host: v2.lrios.tk
-    tls: true
-  - name: 日本 东京PEG TECH
+      Host: ir2.nmsl.ninja
+  - name: 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
     type: vmess
-    server: 104.233.191.182
+    server: 23.224.110.183
     port: 443
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
     udp: true
     network: ws
-    ws-path: /path/031730091420
+    ws-path: /path/080712342310
     ws-headers:
       Host: ''
     tls: true
-  - name: 乌克兰+V2CROSS.COM
-    type: ss
-    server: 193.108.118.34
-    port: '8091'
-    cipher: aes-256-gcm
-    password: PCnnH6SQSnfoS27
-  - name: 日本 东京都Amazon数据中心
+  - name: 美国 CloudFlare节点 - 3
     type: vmess
-    server: jp04-vm0.entry.srthdw.art
-    port: 446
-    uuid: b2a2c706-12e0-3335-8a62-31925219a712
+    server: cf-lt.sharecentre.online
+    port: 80
+    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
     alterId: 0
     cipher: auto
     udp: true
-    network: tcp
-    ws-path: /
+    network: ws
+    ws-path: /shirker
     ws-headers:
-      Host: ''
-  - name: 美国加利福尼亚州洛杉矶 PetaExpress
+      Host: lv1.sharecentrepro.org
+  - name: 美国+华盛顿Cogent通信公司
+    type: trojan
+    server: 38.150.13.140
+    port: '57063'
+    password: Hu4CFM0wJ3
+  - name: 日本 V2CROSS.COM
     type: vmess
-    server: 198.2.204.249
-    port: 46802
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
+    server: jp2.ulifeai.com
+    port: 443
+    uuid: 168b4363-92b4-4994-a4e8-9e4f5015b48c
+    alterId: 0
     cipher: auto
     udp: true
-    network: tcp
-    ws-path: /
+    network: ws
+    ws-path: /52566/
     ws-headers:
       Host: ''
+    tls: true
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 日本 东京Amazon数据中心
-      - 美国+V2CROSS.COM
-      - 美国 V2CROSS.COM
-      - 美国+V2CROSS.COM - 2
+      - 安徽省 移动(全省通用)
       - 美国 CloudFlare节点
-      - 日本 东京PEG TECH
-      - 乌克兰+V2CROSS.COM
-      - 日本 东京都Amazon数据中心
-      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 美国 CloudFlare节点 - 2
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 美国 CloudFlare节点 - 3
+      - 美国+华盛顿Cogent通信公司
+      - 日本 V2CROSS.COM
   - name: 自动选择
     type: url-test
     proxies:
-      - 日本 东京Amazon数据中心
-      - 美国+V2CROSS.COM
-      - 美国 V2CROSS.COM
-      - 美国+V2CROSS.COM - 2
+      - 安徽省 移动(全省通用)
       - 美国 CloudFlare节点
-      - 日本 东京PEG TECH
-      - 乌克兰+V2CROSS.COM
-      - 日本 东京都Amazon数据中心
-      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 美国 CloudFlare节点 - 2
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 美国 CloudFlare节点 - 3
+      - 美国+华盛顿Cogent通信公司
+      - 日本 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 日本 东京Amazon数据中心
-      - 美国+V2CROSS.COM
-      - 美国 V2CROSS.COM
-      - 美国+V2CROSS.COM - 2
+      - 安徽省 移动(全省通用)
       - 美国 CloudFlare节点
-      - 日本 东京PEG TECH
-      - 乌克兰+V2CROSS.COM
-      - 日本 东京都Amazon数据中心
-      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 美国 CloudFlare节点 - 2
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 美国 CloudFlare节点 - 3
+      - 美国+华盛顿Cogent通信公司
+      - 日本 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
