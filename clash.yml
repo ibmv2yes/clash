@@ -1,35 +1,4 @@
 proxies:
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: scaleway.696960.xyz
-    port: 443
-    uuid: e357cd63-f1a5-4c8e-c42e-26da11207fee
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /root/
-    ws-headers:
-      Host: ''
-    tls: true
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: 141.101.114.2
-    port: 80
-    uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: lg.v2ray20.xyz
-  - name: 瑞典+V2CROSS.COM
-    type: ss
-    server: 167.88.63.79
-    port: '8882'
-    cipher: aes-256-gcm
-    password: kDWvXYZoTBcGkC4
   - name: 加拿大 V2CROSS.COM
     type: vmess
     server: 199.212.90.14
@@ -43,40 +12,101 @@ proxies:
     ws-headers:
       Host: Lille.kotick.site
     tls: true
-  - name: 美国+V2CROSS.COM
+  - name: 新加坡+Amazon数据中心
     type: trojan
-    server: tempest-us.aikun.online
+    server: aws-sg.aikun.online
     port: '443'
     password: ff81ed1c-366d-422f-9362-6d10b116d1cf
+  - name: 新加坡+Amazon数据中心 - 2
+    type: trojan
+    server: aws-sg.aikun.online
+    port: '443'
+    password: ff81ed1c-366d-422f-9362-6d10b116d1cf
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: cf.yxjnode.com
+    port: 80
+    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /yxzbp
+    ws-headers:
+      Host: dp1.yxjnode.com
+  - name: 欧盟 V2CROSS.COM
+    type: vmess
+    server: mcix.ipcf.cloud
+    port: 443
+    uuid: CBDB1902-6B9B-4872-B20C-E94A3BD2F63D
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /speedtest
+    ws-headers:
+      Host: Dusseldorf.kotick.site
+    tls: true
+  - name: 中国 阿里云
+    type: vmess
+    server: cdn.chigua.tk
+    port: 443
+    uuid: ecbeaa2d-7748-42b1-a603-9d5402d3effe
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /waugfuiawfwafgvhwoa
+    ws-headers:
+      Host: hax_eu5.v50.one
+    tls: true
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: cf.yxjnode.com
+    port: 80
+    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /yxzbp
+    ws-headers:
+      Host: dp1.yxjnode.com
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 瑞典+V2CROSS.COM
       - 加拿大 V2CROSS.COM
-      - 美国+V2CROSS.COM
+      - 新加坡+Amazon数据中心
+      - 新加坡+Amazon数据中心 - 2
+      - 美国 CloudFlare节点
+      - 欧盟 V2CROSS.COM
+      - 中国 阿里云
+      - 美国 CloudFlare节点 - 2
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 瑞典+V2CROSS.COM
       - 加拿大 V2CROSS.COM
-      - 美国+V2CROSS.COM
+      - 新加坡+Amazon数据中心
+      - 新加坡+Amazon数据中心 - 2
+      - 美国 CloudFlare节点
+      - 欧盟 V2CROSS.COM
+      - 中国 阿里云
+      - 美国 CloudFlare节点 - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 瑞典+V2CROSS.COM
       - 加拿大 V2CROSS.COM
-      - 美国+V2CROSS.COM
+      - 新加坡+Amazon数据中心
+      - 新加坡+Amazon数据中心 - 2
+      - 美国 CloudFlare节点
+      - 欧盟 V2CROSS.COM
+      - 中国 阿里云
+      - 美国 CloudFlare节点 - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
