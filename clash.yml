@@ -1,49 +1,38 @@
 proxies:
-  - name: 美国+V2CROSS.COM
-    type: ss
-    server: 172.99.190.61
-    port: '7002'
-    cipher: aes-256-gcm
-    password: RexnBgU7EV5ADxG
-  - name: 美国+惠普HP
-    type: trojan
-    server: awshk7-tg-data.amazonwebservicess.com
-    port: '443'
-    password: 05e34875-a77c-4156-8bc8-f815f235905a
+  - name: 新加坡 腾讯云
+    type: vmess
+    server: 43.156.50.163
+    port: 32249
+    uuid: e1e1241a-6617-4f33-be96-8d15f9c82ca7
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /sg4/getData
+    ws-headers:
+      Host: ''
+    tls: true
   - name: 台湾省台北市+scloud.sg
     type: trojan
-    server: 165.154.226.167
+    server: stw6-tg-data.amazonwebservicess.com
     port: '443'
     password: 05e34875-a77c-4156-8bc8-f815f235905a
-  - name: 香港 腾讯云
+  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
     type: vmess
-    server: 43.154.122.126
-    port: 48122
-    uuid: 82adc998-88ab-4c87-8b86-5bc39e80f5b2
+    server: 192.74.228.181
+    port: 443
+    uuid: 051b844f-efe3-4847-92aa-66b5de0b6d4e
     alterId: 64
     cipher: auto
     udp: true
     network: ws
-    ws-path: /hk1/getData
+    ws-path: /path/1683715826870
     ws-headers:
-      Host: ''
+      Host: www.59274706.xyz
     tls: true
-  - name: 美国 华盛顿Cogent通信公司
+  - name: 美国加利福尼亚州洛杉矶 PetaExpress
     type: vmess
-    server: 38.54.107.246
-    port: 49423
-    uuid: ca6a1049-6a16-47d4-9784-cf01705bcf88
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /tw1/getData
-    ws-headers:
-      Host: ''
-    tls: true
-  - name: 美国 华盛顿Cogent通信公司 - 2
-    type: vmess
-    server: 38.63.0.68
+    server: 198.2.208.189
     port: 443
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
@@ -52,39 +41,43 @@ proxies:
     network: ws
     ws-path: /path/1683543024453
     ws-headers:
-      Host: www.19458162.xyz
+      Host: www.62317155.xyz
     tls: true
-  - name: 日本 V2CROSS.COM
+  - name: 美国 Datability
     type: vmess
-    server: jp01-alt-vm0.entry.srthdw.art
-    port: 21585
-    uuid: 1bc52308-0bd9-30d0-90fd-cef337875d10
-    alterId: 1
+    server: 140.99.48.24
+    port: 57102
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
     cipher: auto
     udp: true
     network: tcp
     ws-path: /
     ws-headers:
       Host: ''
-    tls: true
-  - name: 美国 CloudFlare节点
+  - name: 美国 V2CROSS.COM
     type: vmess
-    server: yvsos.vtcss.top
+    server: 192.203.230.86
     port: 80
-    uuid: bf663a96-d2ee-4c67-e2db-759faf345ffe
+    uuid: a442dacf-cbb3-488a-9744-61494ea38630
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /qwer09
+    ws-path: /
     ws-headers:
-      Host: yvsos.vtcss.top
-  - name: 欧盟 V2CROSS.COM
+      Host: us-1.acyun.cf
+  - name: 美国+惠普HP
+    type: trojan
+    server: awshk7-tg-data.amazonwebservicess.com
+    port: '443'
+    password: 05e34875-a77c-4156-8bc8-f815f235905a
+  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心 - 2
     type: vmess
-    server: 45.94.42.160
-    port: 48059
-    uuid: 85572cdd-aaf5-487b-a1f5-2f9e4a94d919
-    alterId: 0
+    server: 192.74.228.172
+    port: 42857
+    uuid: 051b844f-efe3-4847-92aa-66b5de0b6d4e
+    alterId: 64
     cipher: auto
     udp: true
     network: tcp
@@ -93,7 +86,7 @@ proxies:
       Host: ''
   - name: 加拿大+V2CROSS.COM
     type: trojan
-    server: scloudtw1-tg-data.amazonwebservicess.com
+    server: 165.154.253.249
     port: '443'
     password: 05e34875-a77c-4156-8bc8-f815f235905a
 proxy-groups:
@@ -102,43 +95,40 @@ proxy-groups:
     proxies:
       - 自动选择
       - 故障转移
-      - 美国+V2CROSS.COM
-      - 美国+惠普HP
+      - 新加坡 腾讯云
       - 台湾省台北市+scloud.sg
-      - 香港 腾讯云
-      - 美国 华盛顿Cogent通信公司
-      - 美国 华盛顿Cogent通信公司 - 2
-      - 日本 V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 欧盟 V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 美国 Datability
+      - 美国 V2CROSS.COM
+      - 美国+惠普HP
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心 - 2
       - 加拿大+V2CROSS.COM
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国+V2CROSS.COM
-      - 美国+惠普HP
+      - 新加坡 腾讯云
       - 台湾省台北市+scloud.sg
-      - 香港 腾讯云
-      - 美国 华盛顿Cogent通信公司
-      - 美国 华盛顿Cogent通信公司 - 2
-      - 日本 V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 欧盟 V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 美国 Datability
+      - 美国 V2CROSS.COM
+      - 美国+惠普HP
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心 - 2
       - 加拿大+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国+V2CROSS.COM
-      - 美国+惠普HP
+      - 新加坡 腾讯云
       - 台湾省台北市+scloud.sg
-      - 香港 腾讯云
-      - 美国 华盛顿Cogent通信公司
-      - 美国 华盛顿Cogent通信公司 - 2
-      - 日本 V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 欧盟 V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 美国 Datability
+      - 美国 V2CROSS.COM
+      - 美国+惠普HP
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心 - 2
       - 加拿大+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
