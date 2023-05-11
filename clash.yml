@@ -1,53 +1,59 @@
 proxies:
-  - name: 加拿大 V2CROSS.COM
+  - name: 日本 东京Amazon数据中心
     type: vmess
-    server: 199.212.90.14
+    server: jp02-vm0.entry.srthdw.art
+    port: 446
+    uuid: 22acc467-7440-386a-927a-d84be554b37e
+    alterId: 1
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国弗吉尼亚州阿什本 CloudFlare节点
+    type: vmess
+    server: 173.245.49.130
     port: 443
-    uuid: 6147F065-9AC0-4081-A5A3-A2EB4EBB8958
+    uuid: 9588cb0f-5102-4e66-d5fb-f96cba9acdda
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /speedtest
+    ws-path: /qazxcv
     ws-headers:
-      Host: Lille.kotick.site
+      Host: tou.vtcss.top
     tls: true
-  - name: 新加坡+Amazon数据中心
+  - name: 美国加利福尼亚州洛杉矶 PetaExpress
+    type: vmess
+    server: 198.2.204.249
+    port: 46802
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国+V2CROSS.COM
     type: trojan
-    server: aws-sg.aikun.online
-    port: '443'
-    password: ff81ed1c-366d-422f-9362-6d10b116d1cf
-  - name: 新加坡+Amazon数据中心 - 2
-    type: trojan
-    server: aws-sg.aikun.online
-    port: '443'
-    password: ff81ed1c-366d-422f-9362-6d10b116d1cf
+    server: 152.70.74.66
+    port: 443?security=tls&type=tcp&headerType=none
+    password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
   - name: 美国 CloudFlare节点
     type: vmess
-    server: cf.yxjnode.com
+    server: cf-lt.sharecentre.online
     port: 80
-    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
+    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /yxzbp
+    ws-path: /shirker
     ws-headers:
-      Host: dp1.yxjnode.com
-  - name: 欧盟 V2CROSS.COM
-    type: vmess
-    server: mcix.ipcf.cloud
-    port: 443
-    uuid: CBDB1902-6B9B-4872-B20C-E94A3BD2F63D
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /speedtest
-    ws-headers:
-      Host: Dusseldorf.kotick.site
-    tls: true
-  - name: 中国 阿里云
+      Host: dp4.scproxy.top
+  - name: 日本 东京阿里云
     type: vmess
     server: cdn.chigua.tk
     port: 443
@@ -60,53 +66,95 @@ proxies:
     ws-headers:
       Host: hax_eu5.v50.one
     tls: true
-  - name: 美国 CloudFlare节点 - 2
+  - name: 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
     type: vmess
-    server: cf.yxjnode.com
-    port: 80
-    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
+    server: 23.224.110.183
+    port: 443
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /path/080712342310
+    ws-headers:
+      Host: ''
+    tls: true
+  - name: 美国 华盛顿Cogent通信公司
+    type: vmess
+    server: 38.54.107.246
+    port: 49423
+    uuid: ca6a1049-6a16-47d4-9784-cf01705bcf88
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /tw1/getData
+    ws-headers:
+      Host: ''
+    tls: true
+  - name: 日本 V2CROSS.COM
+    type: vmess
+    server: 43.206.157.32
+    port: 443
+    uuid: 168b4363-92b4-4994-a4e8-9e4f5015b48c
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /yxzbp
+    ws-path: /52566/
     ws-headers:
-      Host: dp1.yxjnode.com
+      Host: ''
+    tls: true
+  - name: 美国+V2CROSS.COM - 2
+    type: ss
+    server: 172.99.190.149
+    port: '8080'
+    cipher: aes-256-gcm
+    password: KixLvKzwjekG00rm
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 加拿大 V2CROSS.COM
-      - 新加坡+Amazon数据中心
-      - 新加坡+Amazon数据中心 - 2
+      - 日本 东京Amazon数据中心
+      - 美国弗吉尼亚州阿什本 CloudFlare节点
+      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 美国+V2CROSS.COM
       - 美国 CloudFlare节点
-      - 欧盟 V2CROSS.COM
-      - 中国 阿里云
-      - 美国 CloudFlare节点 - 2
+      - 日本 东京阿里云
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 美国 华盛顿Cogent通信公司
+      - 日本 V2CROSS.COM
+      - 美国+V2CROSS.COM - 2
   - name: 自动选择
     type: url-test
     proxies:
-      - 加拿大 V2CROSS.COM
-      - 新加坡+Amazon数据中心
-      - 新加坡+Amazon数据中心 - 2
+      - 日本 东京Amazon数据中心
+      - 美国弗吉尼亚州阿什本 CloudFlare节点
+      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 美国+V2CROSS.COM
       - 美国 CloudFlare节点
-      - 欧盟 V2CROSS.COM
-      - 中国 阿里云
-      - 美国 CloudFlare节点 - 2
+      - 日本 东京阿里云
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 美国 华盛顿Cogent通信公司
+      - 日本 V2CROSS.COM
+      - 美国+V2CROSS.COM - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 加拿大 V2CROSS.COM
-      - 新加坡+Amazon数据中心
-      - 新加坡+Amazon数据中心 - 2
+      - 日本 东京Amazon数据中心
+      - 美国弗吉尼亚州阿什本 CloudFlare节点
+      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 美国+V2CROSS.COM
       - 美国 CloudFlare节点
-      - 欧盟 V2CROSS.COM
-      - 中国 阿里云
-      - 美国 CloudFlare节点 - 2
+      - 日本 东京阿里云
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 美国 华盛顿Cogent通信公司
+      - 日本 V2CROSS.COM
+      - 美国+V2CROSS.COM - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
