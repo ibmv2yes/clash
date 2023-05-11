@@ -1,49 +1,27 @@
 proxies:
-  - name: 日本 东京Amazon数据中心
+  - name: 美国 CloudFlare节点
     type: vmess
-    server: jp05-vm0.entry.srthdw.art
-    port: 30591
-    uuid: 22acc467-7440-386a-927a-d84be554b37e
-    alterId: 1
+    server: new8.huvicloud.com
+    port: 443
+    uuid: a11ca760-9ef9-4a63-95c9-4c5c32d56251
+    alterId: 0
     cipher: auto
     udp: true
-    network: tcp
+    network: ws
     ws-path: /
     ws-headers:
-      Host: ''
-  - name: 日本+V2CROSS.COM
-    type: trojan
-    server: hk1.cnamazon.sbs
-    port: 443?peer=tlsdata.cnamazon.sbs&tfo=1
-    password: 6cc96992-cfab-48ca-9e16-963c4a0aa585
-  - name: 加拿大+V2CROSS.COM
-    type: ss
-    server: 38.64.138.145
-    port: '8091'
-    cipher: aes-256-gcm
-    password: PCnnH6SQSnfoS27
-  - name: 加拿大+V2CROSS.COM - 2
-    type: ss
-    server: 38.64.138.145
-    port: '6379'
-    cipher: aes-256-gcm
-    password: zDNVedRFPQexG9v
-  - name: 瑞典+V2CROSS.COM
-    type: ss
-    server: 167.88.63.99
-    port: '7306'
-    cipher: aes-256-gcm
-    password: FoOiGlkAA9yPEGP
+      Host: new8.huvicloud.com
+    tls: true
   - name: 美国+V2CROSS.COM
     type: ss
     server: 172.99.190.149
-    port: '3389'
+    port: '5001'
     cipher: aes-256-gcm
     password: Y6R9pAtvxxzmGC
   - name: 美国 加利福尼亚州圣何塞PEG TECH
     type: vmess
-    server: 142.4.104.194
-    port: 56002
+    server: 142.4.119.202
+    port: 53986
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -52,63 +30,63 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国+V2CROSS.COM - 2
-    type: ss
-    server: 172.99.190.61
-    port: '8000'
-    cipher: aes-256-gcm
-    password: KixLvKzwjekG00rm
-  - name: 美国 Datability
-    type: vmess
-    server: 140.99.48.24
-    port: 57102
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: 173.245.59.78
-    port: 443
-    uuid: e883ff76-3bb4-4008-c068-6b5b1d960ea7
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /qwer08
-    ws-headers:
-      Host: uyaa.vtcss.top
-    tls: true
-  - name: 日本 东京Amazon数据中心 - 2
-    type: vmess
-    server: jp03-alt-vm0.entry.srthdw.art
-    port: 21585
-    uuid: 1bc52308-0bd9-30d0-90fd-cef337875d10
-    alterId: 1
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-    tls: true
   - name: 美国 CloudFlare节点 - 2
     type: vmess
-    server: cf.noaries.de
-    port: 2082
-    uuid: 314c1387-618c-4689-97fc-4bc9a1ae5e05
+    server: 172.67.73.39
+    port: 80
+    uuid: b8458948-a630-4e6d-809a-230b2223ff3d
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /xrayvws
+    ws-headers:
+      Host: f.tun4.live
+  - name: 澳大利亚 V2CROSS.COM
+    type: vmess
+    server: 37.123.193.104
+    port: 24762
+    uuid: b55f08d7-440f-4bdb-daed-007e894d870d
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: ''
+    ws-headers:
+      Host: ''
+    tls: true
+  - name: 欧盟 V2CROSS.COM
+    type: vmess
+    server: 45.88.176.24
+    port: 41092
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: new6.huvicloud.com
+    port: 443
+    uuid: a11ca760-9ef9-4a63-95c9-4c5c32d56251
     alterId: 0
     cipher: auto
     udp: true
     network: ws
     ws-path: /
     ws-headers:
-      Host: ir2.nmsl.ninja
-  - name: 美国 CloudFlare节点 - 3
+      Host: new6.huvicloud.com
+    tls: true
+  - name: 加拿大+V2CROSS.COM
+    type: ss
+    server: 38.64.138.145
+    port: '2375'
+    cipher: aes-256-gcm
+    password: faBAoD54k87UJG7
+  - name: 美国 CloudFlare节点 - 4
     type: vmess
     server: 108.162.196.40
     port: 443
@@ -121,74 +99,136 @@ proxies:
     ws-headers:
       Host: uyaa.vtcss.top
     tls: true
-  - name: 美国 CloudFlare节点 - 4
+  - name: 日本 V2CROSS.COM
     type: vmess
-    server: cf.yxjnode.com
+    server: jp01-alt-vm0.entry.srthdw.art
+    port: 21583
+    uuid: 22acc467-7440-386a-927a-d84be554b37e
+    alterId: 1
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /hlsrthe214/8u4692j
+    ws-headers:
+      Host: jp01-alt-vm0.entry.srthdw.art
+    tls: true
+  - name: 美国 CloudFlare节点 - 5
+    type: vmess
+    server: 172.67.13.13
     port: 80
-    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
+    uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /yxzbp
+    ws-path: /
     ws-headers:
-      Host: dp1.yxjnode.com
+      Host: lg.v2ray20.xyz
+  - name: 日本 阿里云
+    type: vmess
+    server: cdn.chigua.tk
+    port: 443
+    uuid: ecbeaa2d-7748-42b1-a603-9d5402d3effe
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /waugfuiawfwafgvhwoa
+    ws-headers:
+      Host: hax_eu5.v50.one
+    tls: true
+  - name: 欧盟 V2CROSS.COM - 2
+    type: vmess
+    server: 45.85.119.1
+    port: 443
+    uuid: 8f74ec8a-971c-11ed-a8fc-0242ac120002
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /8701b594-d144-11ed-8e14-5ad705867cff
+    ws-headers:
+      Host: 8701b594-d144-11ed-8e14-5ad705867cff.asmandll.com
+    tls: true
+  - name: 瑞典+V2CROSS.COM
+    type: ss
+    server: 167.88.63.99
+    port: '8090'
+    cipher: aes-256-gcm
+    password: PCnnH6SQSnfoS27
+  - name: 日本+V2CROSS.COM
+    type: trojan
+    server: jp4.cnamazon.sbs
+    port: 443?peer=tlsdata.cnamazon.sbs&tfo=1
+    password: 6cc96992-cfab-48ca-9e16-963c4a0aa585
+  - name: 瑞典+V2CROSS.COM - 2
+    type: ss
+    server: 167.88.63.99
+    port: '8091'
+    cipher: aes-256-gcm
+    password: PCnnH6SQSnfoS27
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 日本 东京Amazon数据中心
-      - 日本+V2CROSS.COM
-      - 加拿大+V2CROSS.COM
-      - 加拿大+V2CROSS.COM - 2
-      - 瑞典+V2CROSS.COM
+      - 美国 CloudFlare节点
       - 美国+V2CROSS.COM
       - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国+V2CROSS.COM - 2
-      - 美国 Datability
-      - 美国 CloudFlare节点
-      - 日本 东京Amazon数据中心 - 2
       - 美国 CloudFlare节点 - 2
+      - 澳大利亚 V2CROSS.COM
+      - 欧盟 V2CROSS.COM
       - 美国 CloudFlare节点 - 3
+      - 加拿大+V2CROSS.COM
       - 美国 CloudFlare节点 - 4
+      - 日本 V2CROSS.COM
+      - 美国 CloudFlare节点 - 5
+      - 日本 阿里云
+      - 欧盟 V2CROSS.COM - 2
+      - 瑞典+V2CROSS.COM
+      - 日本+V2CROSS.COM
+      - 瑞典+V2CROSS.COM - 2
   - name: 自动选择
     type: url-test
     proxies:
-      - 日本 东京Amazon数据中心
-      - 日本+V2CROSS.COM
-      - 加拿大+V2CROSS.COM
-      - 加拿大+V2CROSS.COM - 2
-      - 瑞典+V2CROSS.COM
+      - 美国 CloudFlare节点
       - 美国+V2CROSS.COM
       - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国+V2CROSS.COM - 2
-      - 美国 Datability
-      - 美国 CloudFlare节点
-      - 日本 东京Amazon数据中心 - 2
       - 美国 CloudFlare节点 - 2
+      - 澳大利亚 V2CROSS.COM
+      - 欧盟 V2CROSS.COM
       - 美国 CloudFlare节点 - 3
+      - 加拿大+V2CROSS.COM
       - 美国 CloudFlare节点 - 4
+      - 日本 V2CROSS.COM
+      - 美国 CloudFlare节点 - 5
+      - 日本 阿里云
+      - 欧盟 V2CROSS.COM - 2
+      - 瑞典+V2CROSS.COM
+      - 日本+V2CROSS.COM
+      - 瑞典+V2CROSS.COM - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 日本 东京Amazon数据中心
-      - 日本+V2CROSS.COM
-      - 加拿大+V2CROSS.COM
-      - 加拿大+V2CROSS.COM - 2
-      - 瑞典+V2CROSS.COM
+      - 美国 CloudFlare节点
       - 美国+V2CROSS.COM
       - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国+V2CROSS.COM - 2
-      - 美国 Datability
-      - 美国 CloudFlare节点
-      - 日本 东京Amazon数据中心 - 2
       - 美国 CloudFlare节点 - 2
+      - 澳大利亚 V2CROSS.COM
+      - 欧盟 V2CROSS.COM
       - 美国 CloudFlare节点 - 3
+      - 加拿大+V2CROSS.COM
       - 美国 CloudFlare节点 - 4
+      - 日本 V2CROSS.COM
+      - 美国 CloudFlare节点 - 5
+      - 日本 阿里云
+      - 欧盟 V2CROSS.COM - 2
+      - 瑞典+V2CROSS.COM
+      - 日本+V2CROSS.COM
+      - 瑞典+V2CROSS.COM - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
