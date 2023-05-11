@@ -1,84 +1,65 @@
 proxies:
-  - name: 日本 东京都Amazon数据中心
+  - name: 新加坡 腾讯云
     type: vmess
-    server: jp04-vm0.entry.srthdw.art
-    port: 446
-    uuid: b2a2c706-12e0-3335-8a62-31925219a712
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国加利福尼亚州洛杉矶 PetaExpress
-    type: vmess
-    server: 198.2.204.249
-    port: 46802
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    server: 43.156.131.164
+    port: 43860
+    uuid: be3fdec2-86e1-4d51-969b-704b1efc3158
     alterId: 64
     cipher: auto
     udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 日本 V2CROSS.COM
-    type: vmess
-    server: 43.206.157.32
-    port: 443
-    uuid: 168b4363-92b4-4994-a4e8-9e4f5015b48c
-    alterId: 0
-    cipher: auto
-    udp: true
     network: ws
-    ws-path: /52566/
-    ws-headers:
-      Host: ''
-    tls: true
-  - name: 美国 V2CROSS.COM
-    type: vmess
-    server: vsg1.0bad.com
-    port: 443
-    uuid: 927094d3-d678-4763-8591-e240d0bcae87
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /chat
-    ws-headers:
-      Host: ''
-    tls: true
-  - name: 美国+V2CROSS.COM
-    type: trojan
-    server: tempest-us.aikun.online
-    port: '443'
-    password: ff81ed1c-366d-422f-9362-6d10b116d1cf
-  - name: 俄罗斯 V2CROSS.COM
-    type: vmess
-    server: 185.143.220.25
-    port: 443
-    uuid: f28e354e-c2d1-4983-9b07-5acaf1b3b3e5
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /6e9EtZ2dL
+    ws-path: /sg2/getData
     ws-headers:
       Host: ''
     tls: true
   - name: 美国 CloudFlare节点
     type: vmess
-    server: 141.101.123.147
-    port: 443
-    uuid: 9588cb0f-5102-4e66-d5fb-f96cba9acdda
+    server: cf-lt.sharecentre.online
+    port: 80
+    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /qazxcv
+    ws-path: /shirker
     ws-headers:
-      Host: tou.vtcss.top
+      Host: ca.ilovescp.com
+  - name: 韩国首尔 oracle云
+    type: vmess
+    server: kr-1.vuex.eu.org
+    port: 9898
+    uuid: 9eae255d-2e1c-4d1b-aff7-c357c8b4a910
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 亚太地区 V2CROSS.COM
+    type: vmess
+    server: natsg1.bytevirt.net
+    port: 32253
+    uuid: 1751669b-e73b-45a6-96b1-dafc2894c13e
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: scaleway.696960.xyz
+    port: 443
+    uuid: e357cd63-f1a5-4c8e-c42e-26da11207fee
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /root/
+    ws-headers:
+      Host: ''
     tls: true
 proxy-groups:
   - name: Free-servers
@@ -86,35 +67,29 @@ proxy-groups:
     proxies:
       - 自动选择
       - 故障转移
-      - 日本 东京都Amazon数据中心
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 日本 V2CROSS.COM
-      - 美国 V2CROSS.COM
-      - 美国+V2CROSS.COM
-      - 俄罗斯 V2CROSS.COM
+      - 新加坡 腾讯云
       - 美国 CloudFlare节点
+      - 韩国首尔 oracle云
+      - 亚太地区 V2CROSS.COM
+      - 美国 CloudFlare节点 - 2
   - name: 自动选择
     type: url-test
     proxies:
-      - 日本 东京都Amazon数据中心
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 日本 V2CROSS.COM
-      - 美国 V2CROSS.COM
-      - 美国+V2CROSS.COM
-      - 俄罗斯 V2CROSS.COM
+      - 新加坡 腾讯云
       - 美国 CloudFlare节点
+      - 韩国首尔 oracle云
+      - 亚太地区 V2CROSS.COM
+      - 美国 CloudFlare节点 - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 日本 东京都Amazon数据中心
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 日本 V2CROSS.COM
-      - 美国 V2CROSS.COM
-      - 美国+V2CROSS.COM
-      - 俄罗斯 V2CROSS.COM
+      - 新加坡 腾讯云
       - 美国 CloudFlare节点
+      - 韩国首尔 oracle云
+      - 亚太地区 V2CROSS.COM
+      - 美国 CloudFlare节点 - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
