@@ -1,63 +1,25 @@
 proxies:
-  - name: 美国 CloudFlare节点
+  - name: 美国+V2CROSS.COM
+    type: ss
+    server: 172.99.190.149
+    port: '9101'
+    cipher: aes-256-gcm
+    password: e4FCWrgpkji3QY
+  - name: 亚太地区 V2CROSS.COM
     type: vmess
-    server: 108.162.196.40
-    port: 443
-    uuid: e883ff76-3bb4-4008-c068-6b5b1d960ea7
+    server: natsg1.bytevirt.net
+    port: 32253
+    uuid: 1751669b-e73b-45a6-96b1-dafc2894c13e
     alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /qwer08
-    ws-headers:
-      Host: uyaa.vtcss.top
-    tls: true
-  - name: 美国 加利福尼亚州圣何塞PEG TECH
-    type: vmess
-    server: 142.4.97.71
-    port: 44942
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
     cipher: auto
     udp: true
     network: tcp
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国 CloudFlare节点 - 2
+  - name: 美国 CloudFlare节点
     type: vmess
-    server: 141.101.123.147
-    port: 443
-    uuid: 9588cb0f-5102-4e66-d5fb-f96cba9acdda
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /qazxcv
-    ws-headers:
-      Host: tou.vtcss.top
-    tls: true
-  - name: 美国+V2CROSS.COM
-    type: trojan
-    server: 152.70.74.66
-    port: 443?security=tls&type=tcp&headerType=none
-    password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
-  - name: 日本 V2CROSS.COM
-    type: vmess
-    server: 43.206.157.32
-    port: 443
-    uuid: 168b4363-92b4-4994-a4e8-9e4f5015b48c
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /52566/
-    ws-headers:
-      Host: ''
-    tls: true
-  - name: 美国 CloudFlare节点 - 3
-    type: vmess
-    server: 172.67.37.142
+    server: 108.162.193.35
     port: 80
     uuid: bf663a96-d2ee-4c67-e2db-759faf345ffe
     alterId: 0
@@ -67,33 +29,45 @@ proxies:
     ws-path: /qwer09
     ws-headers:
       Host: yvsos.vtcss.top
-  - name: 南非 V2CROSS.COM
+  - name: 美国加利福尼亚州洛杉矶 PetaExpress
     type: vmess
-    server: 156.225.67.136
+    server: 198.2.200.107
     port: 443
-    uuid: 964bf499-9ec0-4378-92b6-87d8d861b2d0
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
     udp: true
     network: ws
-    ws-path: /path/1683777876380
+    ws-path: /path/1683715826870
     ws-headers:
-      Host: www.81678034.xyz
+      Host: www.54092415.xyz
     tls: true
-  - name: 美国 CloudFlare节点 - 4
+  - name: 俄罗斯 V2CROSS.COM
     type: vmess
-    server: 172.67.156.138
+    server: 185.143.220.25
     port: 443
-    uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF
+    uuid: f28e354e-c2d1-4983-9b07-5acaf1b3b3e5
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /speedtest
+    ws-path: /6e9EtZ2dL
     ws-headers:
-      Host: Kansas.kotick.site
+      Host: ''
     tls: true
-  - name: 亚太地区 V2CROSS.COM
+  - name: 美国 加利福尼亚州森尼韦尔市PEG TECH公司
+    type: vmess
+    server: 142.0.132.44
+    port: 50015
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 亚太地区 V2CROSS.COM - 2
     type: vmess
     server: 103.156.184.210
     port: 2087
@@ -112,41 +86,35 @@ proxy-groups:
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 CloudFlare节点
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国 CloudFlare节点 - 2
       - 美国+V2CROSS.COM
-      - 日本 V2CROSS.COM
-      - 美国 CloudFlare节点 - 3
-      - 南非 V2CROSS.COM
-      - 美国 CloudFlare节点 - 4
       - 亚太地区 V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 俄罗斯 V2CROSS.COM
+      - 美国 加利福尼亚州森尼韦尔市PEG TECH公司
+      - 亚太地区 V2CROSS.COM - 2
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 CloudFlare节点
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国 CloudFlare节点 - 2
       - 美国+V2CROSS.COM
-      - 日本 V2CROSS.COM
-      - 美国 CloudFlare节点 - 3
-      - 南非 V2CROSS.COM
-      - 美国 CloudFlare节点 - 4
       - 亚太地区 V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 俄罗斯 V2CROSS.COM
+      - 美国 加利福尼亚州森尼韦尔市PEG TECH公司
+      - 亚太地区 V2CROSS.COM - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 CloudFlare节点
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国 CloudFlare节点 - 2
       - 美国+V2CROSS.COM
-      - 日本 V2CROSS.COM
-      - 美国 CloudFlare节点 - 3
-      - 南非 V2CROSS.COM
-      - 美国 CloudFlare节点 - 4
       - 亚太地区 V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 俄罗斯 V2CROSS.COM
+      - 美国 加利福尼亚州森尼韦尔市PEG TECH公司
+      - 亚太地区 V2CROSS.COM - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
