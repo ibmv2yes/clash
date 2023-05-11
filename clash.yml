@@ -1,72 +1,50 @@
 proxies:
-  - name: 安徽省 移动(全省通用)
-    type: vmess
-    server: 6q59.cdn.node.a.tddns-ounk.com
-    port: 40261
-    uuid: 72bea5d3-7591-3ca4-9d61-3c89bd6e45a5
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /d1af668b-cff6-464a-9415-a7782ead72d5.j.live003.m3u8
-    ws-headers: {}
   - name: 美国 CloudFlare节点
     type: vmess
-    server: 104.21.53.35
-    port: 80
-    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /yxzbp
-    ws-headers:
-      Host: buyvm1.yxjnode.com
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: cf.noaries.de
-    port: 2082
-    uuid: 314c1387-618c-4689-97fc-4bc9a1ae5e05
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: ir2.nmsl.ninja
-  - name: 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
-    type: vmess
-    server: 23.224.110.183
+    server: 108.162.196.40
     port: 443
+    uuid: e883ff76-3bb4-4008-c068-6b5b1d960ea7
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /qwer08
+    ws-headers:
+      Host: uyaa.vtcss.top
+    tls: true
+  - name: 美国 加利福尼亚州圣何塞PEG TECH
+    type: vmess
+    server: 142.4.97.71
+    port: 44942
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
     udp: true
-    network: ws
-    ws-path: /path/080712342310
+    network: tcp
+    ws-path: /
     ws-headers:
       Host: ''
-    tls: true
-  - name: 美国 CloudFlare节点 - 3
+  - name: 美国 CloudFlare节点 - 2
     type: vmess
-    server: cf-lt.sharecentre.online
-    port: 80
-    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
+    server: 141.101.123.147
+    port: 443
+    uuid: 9588cb0f-5102-4e66-d5fb-f96cba9acdda
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /shirker
+    ws-path: /qazxcv
     ws-headers:
-      Host: lv1.sharecentrepro.org
-  - name: 美国+华盛顿Cogent通信公司
+      Host: tou.vtcss.top
+    tls: true
+  - name: 美国+V2CROSS.COM
     type: trojan
-    server: 38.150.13.140
-    port: '57063'
-    password: Hu4CFM0wJ3
+    server: 152.70.74.66
+    port: 443?security=tls&type=tcp&headerType=none
+    password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
   - name: 日本 V2CROSS.COM
     type: vmess
-    server: jp2.ulifeai.com
+    server: 43.206.157.32
     port: 443
     uuid: 168b4363-92b4-4994-a4e8-9e4f5015b48c
     alterId: 0
@@ -77,41 +55,98 @@ proxies:
     ws-headers:
       Host: ''
     tls: true
+  - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: 172.67.37.142
+    port: 80
+    uuid: bf663a96-d2ee-4c67-e2db-759faf345ffe
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /qwer09
+    ws-headers:
+      Host: yvsos.vtcss.top
+  - name: 南非 V2CROSS.COM
+    type: vmess
+    server: 156.225.67.136
+    port: 443
+    uuid: 964bf499-9ec0-4378-92b6-87d8d861b2d0
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /path/1683777876380
+    ws-headers:
+      Host: www.81678034.xyz
+    tls: true
+  - name: 美国 CloudFlare节点 - 4
+    type: vmess
+    server: 172.67.156.138
+    port: 443
+    uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /speedtest
+    ws-headers:
+      Host: Kansas.kotick.site
+    tls: true
+  - name: 亚太地区 V2CROSS.COM
+    type: vmess
+    server: 103.156.184.210
+    port: 2087
+    uuid: 311f3c4b-90a1-3c5c-a4fe-215cc7c90d02
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+    tls: true
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 安徽省 移动(全省通用)
       - 美国 CloudFlare节点
+      - 美国 加利福尼亚州圣何塞PEG TECH
       - 美国 CloudFlare节点 - 2
-      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
-      - 美国 CloudFlare节点 - 3
-      - 美国+华盛顿Cogent通信公司
+      - 美国+V2CROSS.COM
       - 日本 V2CROSS.COM
+      - 美国 CloudFlare节点 - 3
+      - 南非 V2CROSS.COM
+      - 美国 CloudFlare节点 - 4
+      - 亚太地区 V2CROSS.COM
   - name: 自动选择
     type: url-test
     proxies:
-      - 安徽省 移动(全省通用)
       - 美国 CloudFlare节点
+      - 美国 加利福尼亚州圣何塞PEG TECH
       - 美国 CloudFlare节点 - 2
-      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
-      - 美国 CloudFlare节点 - 3
-      - 美国+华盛顿Cogent通信公司
+      - 美国+V2CROSS.COM
       - 日本 V2CROSS.COM
+      - 美国 CloudFlare节点 - 3
+      - 南非 V2CROSS.COM
+      - 美国 CloudFlare节点 - 4
+      - 亚太地区 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 安徽省 移动(全省通用)
       - 美国 CloudFlare节点
+      - 美国 加利福尼亚州圣何塞PEG TECH
       - 美国 CloudFlare节点 - 2
-      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
-      - 美国 CloudFlare节点 - 3
-      - 美国+华盛顿Cogent通信公司
+      - 美国+V2CROSS.COM
       - 日本 V2CROSS.COM
+      - 美国 CloudFlare节点 - 3
+      - 南非 V2CROSS.COM
+      - 美国 CloudFlare节点 - 4
+      - 亚太地区 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
