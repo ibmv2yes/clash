@@ -1,52 +1,20 @@
 proxies:
-  - name: 新加坡 腾讯云
+  - name: 日本 东京都Amazon数据中心
     type: vmess
-    server: 43.156.50.163
-    port: 32249
-    uuid: e1e1241a-6617-4f33-be96-8d15f9c82ca7
-    alterId: 64
+    server: jp04-vm0.entry.srthdw.art
+    port: 446
+    uuid: b2a2c706-12e0-3335-8a62-31925219a712
+    alterId: 0
     cipher: auto
     udp: true
-    network: ws
-    ws-path: /sg4/getData
+    network: tcp
+    ws-path: /
     ws-headers:
       Host: ''
-    tls: true
-  - name: 台湾省台北市+scloud.sg
-    type: trojan
-    server: stw6-tg-data.amazonwebservicess.com
-    port: '443'
-    password: 05e34875-a77c-4156-8bc8-f815f235905a
-  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
-    type: vmess
-    server: 192.74.228.181
-    port: 443
-    uuid: 051b844f-efe3-4847-92aa-66b5de0b6d4e
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /path/1683715826870
-    ws-headers:
-      Host: www.59274706.xyz
-    tls: true
   - name: 美国加利福尼亚州洛杉矶 PetaExpress
     type: vmess
-    server: 198.2.208.189
-    port: 443
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /path/1683543024453
-    ws-headers:
-      Host: www.62317155.xyz
-    tls: true
-  - name: 美国 Datability
-    type: vmess
-    server: 140.99.48.24
-    port: 57102
+    server: 198.2.204.249
+    port: 46802
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -55,81 +23,98 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国 V2CROSS.COM
+  - name: 日本 V2CROSS.COM
     type: vmess
-    server: 192.203.230.86
-    port: 80
-    uuid: a442dacf-cbb3-488a-9744-61494ea38630
+    server: 43.206.157.32
+    port: 443
+    uuid: 168b4363-92b4-4994-a4e8-9e4f5015b48c
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /
-    ws-headers:
-      Host: us-1.acyun.cf
-  - name: 美国+惠普HP
-    type: trojan
-    server: awshk7-tg-data.amazonwebservicess.com
-    port: '443'
-    password: 05e34875-a77c-4156-8bc8-f815f235905a
-  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心 - 2
-    type: vmess
-    server: 192.74.228.172
-    port: 42857
-    uuid: 051b844f-efe3-4847-92aa-66b5de0b6d4e
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
+    ws-path: /52566/
     ws-headers:
       Host: ''
-  - name: 加拿大+V2CROSS.COM
+    tls: true
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: vsg1.0bad.com
+    port: 443
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /chat
+    ws-headers:
+      Host: ''
+    tls: true
+  - name: 美国+V2CROSS.COM
     type: trojan
-    server: 165.154.253.249
+    server: tempest-us.aikun.online
     port: '443'
-    password: 05e34875-a77c-4156-8bc8-f815f235905a
+    password: ff81ed1c-366d-422f-9362-6d10b116d1cf
+  - name: 俄罗斯 V2CROSS.COM
+    type: vmess
+    server: 185.143.220.25
+    port: 443
+    uuid: f28e354e-c2d1-4983-9b07-5acaf1b3b3e5
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /6e9EtZ2dL
+    ws-headers:
+      Host: ''
+    tls: true
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: 141.101.123.147
+    port: 443
+    uuid: 9588cb0f-5102-4e66-d5fb-f96cba9acdda
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /qazxcv
+    ws-headers:
+      Host: tou.vtcss.top
+    tls: true
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 新加坡 腾讯云
-      - 台湾省台北市+scloud.sg
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 日本 东京都Amazon数据中心
       - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 美国 Datability
+      - 日本 V2CROSS.COM
       - 美国 V2CROSS.COM
-      - 美国+惠普HP
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心 - 2
-      - 加拿大+V2CROSS.COM
+      - 美国+V2CROSS.COM
+      - 俄罗斯 V2CROSS.COM
+      - 美国 CloudFlare节点
   - name: 自动选择
     type: url-test
     proxies:
-      - 新加坡 腾讯云
-      - 台湾省台北市+scloud.sg
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 日本 东京都Amazon数据中心
       - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 美国 Datability
+      - 日本 V2CROSS.COM
       - 美国 V2CROSS.COM
-      - 美国+惠普HP
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心 - 2
-      - 加拿大+V2CROSS.COM
+      - 美国+V2CROSS.COM
+      - 俄罗斯 V2CROSS.COM
+      - 美国 CloudFlare节点
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 新加坡 腾讯云
-      - 台湾省台北市+scloud.sg
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 日本 东京都Amazon数据中心
       - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 美国 Datability
+      - 日本 V2CROSS.COM
       - 美国 V2CROSS.COM
-      - 美国+惠普HP
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心 - 2
-      - 加拿大+V2CROSS.COM
+      - 美国+V2CROSS.COM
+      - 俄罗斯 V2CROSS.COM
+      - 美国 CloudFlare节点
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
