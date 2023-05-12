@@ -1,38 +1,13 @@
 proxies:
-  - name: 英国+V2CROSS.COM
-    type: ss
-    server: >-
-      ak1749.www.outline.network.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou
-    port: '4444'
-    cipher: aes-256-gcm
-    password: pKEW8JPByTVTLtM
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: 108.162.196.40
-    port: 443
-    uuid: e883ff76-3bb4-4008-c068-6b5b1d960ea7
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /qwer08
-    ws-headers:
-      Host: uyaa.vtcss.top
-    tls: true
-  - name: 美国+Xerox
-    type: trojan
-    server: awssg17-data.amazon-azure.com
-    port: 443?type=tcp&security=tls&sni=data.amazon-azure.com
-    password: 794d739c-89a0-444c-b2e7-acce12af3042
   - name: 日本+V2CROSS.COM
     type: trojan
-    server: awsjp11-data.amazon-azure.com
-    port: 443?type=tcp&sni=data.amazon-azure.com&allowInsecure=1
-    password: 4062b33c-be7a-4b69-94f5-4c738a4def8f
-  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
+    server: awsjp16-data.amazon-azure.com
+    port: 443?type=tcp&security=tls&sni=data.amazon-azure.com
+    password: 4aeda200-44c9-4168-8f2a-a00a72176d35
+  - name: 美国 加利福尼亚州圣何塞PEG TECH
     type: vmess
-    server: 192.74.229.215
-    port: 51592
+    server: 142.4.106.243
+    port: 52902
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -41,9 +16,15 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
+  - name: 北美地区+V2CROSS.COM
+    type: ss
+    server: 169.197.141.187
+    port: '8882'
+    cipher: aes-256-gcm
+    password: kDWvXYZoTBcGkC4
   - name: 欧盟 V2CROSS.COM
     type: vmess
-    server: mcix.ipcf.cloud
+    server: 45.85.118.165
     port: 443
     uuid: CBDB1902-6B9B-4872-B20C-E94A3BD2F63D
     alterId: 0
@@ -54,38 +35,133 @@ proxies:
     ws-headers:
       Host: Dusseldorf.kotick.site
     tls: true
+  - name: 北美地区+V2CROSS.COM - 2
+    type: ss
+    server: 169.197.141.187
+    port: '8091'
+    cipher: aes-256-gcm
+    password: PCnnH6SQSnfoS27
+  - name: 英国+V2CROSS.COM
+    type: ss
+    server: >-
+      ak1749.www.outline.network.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou
+    port: '4444'
+    cipher: aes-256-gcm
+    password: pKEW8JPByTVTLtM
+  - name: 美国+V2CROSS.COM
+    type: ss
+    server: 172.99.190.149
+    port: '8091'
+    cipher: aes-256-gcm
+    password: PCnnH6SQSnfoS27
+  - name: 北美地区+V2CROSS.COM - 3
+    type: ss
+    server: 169.197.141.187
+    port: '6379'
+    cipher: aes-256-gcm
+    password: zDNVedRFPQexG9v
+  - name: 美国+V2CROSS.COM - 2
+    type: trojan
+    server: 152.70.74.66
+    port: 443?security=tls&type=tcp&headerType=none
+    password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
+  - name: 美国+Xerox
+    type: trojan
+    server: awssg20-data.amazon-azure.com
+    port: 443?type=tcp&security=tls&sni=data.amazon-azure.com
+    password: 794d739c-89a0-444c-b2e7-acce12af3042
+  - name: 日本+V2CROSS.COM - 2
+    type: trojan
+    server: awsjp15-data.amazon-azure.com
+    port: 443?type=tcp&security=tls&sni=data.amazon-azure.com
+    password: 794d739c-89a0-444c-b2e7-acce12af3042
+  - name: 美国+Xerox - 2
+    type: trojan
+    server: awssg17-data.amazon-azure.com
+    port: 443?type=tcp&security=tls&sni=data.amazon-azure.com
+    password: 794d739c-89a0-444c-b2e7-acce12af3042
+  - name: 香港 阿里云
+    type: vmess
+    server: la3.121219.xyz
+    port: 443
+    uuid: 64b3d82f-d673-3bb0-bf3a-fdc338f4aad9
+    alterId: 4
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /v2ray
+    ws-headers:
+      Host: ''
+    tls: true
+  - name: 日本+V2CROSS.COM - 3
+    type: trojan
+    server: awsjp3-data.amazon-azure.com
+    port: 443?type=tcp&security=tls&sni=data.amazon-azure.com
+    password: 794d739c-89a0-444c-b2e7-acce12af3042
+  - name: 美国+Xerox - 3
+    type: trojan
+    server: azsg2-tg-data.amazonwebservicess.com
+    port: 443?type=tcp&security=tls&sni=data.amazonwebservicess.com
+    password: 794d739c-89a0-444c-b2e7-acce12af3042
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 英国+V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 美国+Xerox
       - 日本+V2CROSS.COM
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 北美地区+V2CROSS.COM
       - 欧盟 V2CROSS.COM
+      - 北美地区+V2CROSS.COM - 2
+      - 英国+V2CROSS.COM
+      - 美国+V2CROSS.COM
+      - 北美地区+V2CROSS.COM - 3
+      - 美国+V2CROSS.COM - 2
+      - 美国+Xerox
+      - 日本+V2CROSS.COM - 2
+      - 美国+Xerox - 2
+      - 香港 阿里云
+      - 日本+V2CROSS.COM - 3
+      - 美国+Xerox - 3
   - name: 自动选择
     type: url-test
     proxies:
-      - 英国+V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 美国+Xerox
       - 日本+V2CROSS.COM
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 北美地区+V2CROSS.COM
       - 欧盟 V2CROSS.COM
+      - 北美地区+V2CROSS.COM - 2
+      - 英国+V2CROSS.COM
+      - 美国+V2CROSS.COM
+      - 北美地区+V2CROSS.COM - 3
+      - 美国+V2CROSS.COM - 2
+      - 美国+Xerox
+      - 日本+V2CROSS.COM - 2
+      - 美国+Xerox - 2
+      - 香港 阿里云
+      - 日本+V2CROSS.COM - 3
+      - 美国+Xerox - 3
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 英国+V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 美国+Xerox
       - 日本+V2CROSS.COM
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 北美地区+V2CROSS.COM
       - 欧盟 V2CROSS.COM
+      - 北美地区+V2CROSS.COM - 2
+      - 英国+V2CROSS.COM
+      - 美国+V2CROSS.COM
+      - 北美地区+V2CROSS.COM - 3
+      - 美国+V2CROSS.COM - 2
+      - 美国+Xerox
+      - 日本+V2CROSS.COM - 2
+      - 美国+Xerox - 2
+      - 香港 阿里云
+      - 日本+V2CROSS.COM - 3
+      - 美国+Xerox - 3
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
