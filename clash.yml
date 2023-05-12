@@ -1,120 +1,127 @@
 proxies:
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: cf.noaries.de
+    port: 2082
+    uuid: 314c1387-618c-4689-97fc-4bc9a1ae5e05
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: ir2.nmsl.ninja
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: 172.67.247.250
+    port: 80
+    uuid: 53ae65be-81ee-4766-8a09-da43c44c4d30
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /qwer11
+    ws-headers:
+      Host: uyaa.vtcss.top
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: 192.203.230.86
+    port: 80
+    uuid: a442dacf-cbb3-488a-9744-61494ea38630
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: us-1.acyun.cf
+  - name: 澳大利亚 Cranbourne Secondary College
+    type: vmess
+    server: 203.30.191.2
+    port: 80
+    uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: lg.v2ray20.xyz
+  - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: 162.159.58.14
+    port: 80
+    uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: lg.v2ray20.xyz
   - name: 美国+V2CROSS.COM
     type: ss
     server: 172.99.190.149
-    port: '9101'
+    port: '5601'
     cipher: aes-256-gcm
-    password: e4FCWrgpkji3QY
-  - name: 亚太地区 V2CROSS.COM
+    password: Y6R9pAtvxxzmGC
+  - name: 日本 V2CROSS.COM
     type: vmess
-    server: natsg1.bytevirt.net
-    port: 32253
-    uuid: 1751669b-e73b-45a6-96b1-dafc2894c13e
-    alterId: 0
+    server: jp01-alt-vm0.entry.srthdw.art
+    port: 21585
+    uuid: 1bc52308-0bd9-30d0-90fd-cef337875d10
+    alterId: 1
     cipher: auto
     udp: true
     network: tcp
-    ws-path: /
+    ws-path: /hlsrthe214/8u4692j
     ws-headers:
-      Host: ''
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: 108.162.193.35
-    port: 80
-    uuid: bf663a96-d2ee-4c67-e2db-759faf345ffe
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /qwer09
-    ws-headers:
-      Host: yvsos.vtcss.top
-  - name: 美国加利福尼亚州洛杉矶 PetaExpress
-    type: vmess
-    server: 198.2.200.107
-    port: 443
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /path/1683715826870
-    ws-headers:
-      Host: www.54092415.xyz
+      Host: jp01-alt-vm0.entry.srthdw.art
     tls: true
-  - name: 俄罗斯 V2CROSS.COM
-    type: vmess
-    server: 185.143.220.25
-    port: 443
-    uuid: f28e354e-c2d1-4983-9b07-5acaf1b3b3e5
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /6e9EtZ2dL
-    ws-headers:
-      Host: ''
-    tls: true
-  - name: 美国 加利福尼亚州森尼韦尔市PEG TECH公司
-    type: vmess
-    server: 142.0.132.44
-    port: 50015
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 亚太地区 V2CROSS.COM - 2
-    type: vmess
-    server: 103.156.184.210
-    port: 2087
-    uuid: 311f3c4b-90a1-3c5c-a4fe-215cc7c90d02
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-    tls: true
+  - name: 美国+V2CROSS.COM - 2
+    type: ss
+    server: 172.99.190.149
+    port: '8090'
+    cipher: aes-256-gcm
+    password: PCnnH6SQSnfoS27
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国+V2CROSS.COM
-      - 亚太地区 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 俄罗斯 V2CROSS.COM
-      - 美国 加利福尼亚州森尼韦尔市PEG TECH公司
-      - 亚太地区 V2CROSS.COM - 2
+      - 美国 CloudFlare节点 - 2
+      - 美国 V2CROSS.COM
+      - 澳大利亚 Cranbourne Secondary College
+      - 美国 CloudFlare节点 - 3
+      - 美国+V2CROSS.COM
+      - 日本 V2CROSS.COM
+      - 美国+V2CROSS.COM - 2
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国+V2CROSS.COM
-      - 亚太地区 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 俄罗斯 V2CROSS.COM
-      - 美国 加利福尼亚州森尼韦尔市PEG TECH公司
-      - 亚太地区 V2CROSS.COM - 2
+      - 美国 CloudFlare节点 - 2
+      - 美国 V2CROSS.COM
+      - 澳大利亚 Cranbourne Secondary College
+      - 美国 CloudFlare节点 - 3
+      - 美国+V2CROSS.COM
+      - 日本 V2CROSS.COM
+      - 美国+V2CROSS.COM - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国+V2CROSS.COM
-      - 亚太地区 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 俄罗斯 V2CROSS.COM
-      - 美国 加利福尼亚州森尼韦尔市PEG TECH公司
-      - 亚太地区 V2CROSS.COM - 2
+      - 美国 CloudFlare节点 - 2
+      - 美国 V2CROSS.COM
+      - 澳大利亚 Cranbourne Secondary College
+      - 美国 CloudFlare节点 - 3
+      - 美国+V2CROSS.COM
+      - 日本 V2CROSS.COM
+      - 美国+V2CROSS.COM - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
