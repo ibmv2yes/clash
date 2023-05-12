@@ -1,14 +1,9 @@
 proxies:
-  - name: 日本+V2CROSS.COM
-    type: trojan
-    server: awsjp16-data.amazon-azure.com
-    port: 443?type=tcp&security=tls&sni=data.amazon-azure.com
-    password: 4aeda200-44c9-4168-8f2a-a00a72176d35
-  - name: 美国 加利福尼亚州圣何塞PEG TECH
+  - name: 荷兰 北荷兰省阿姆斯特丹Sharktech数据中心
     type: vmess
-    server: 142.4.106.243
-    port: 52902
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    server: 45.58.186.85
+    port: 51140
+    uuid: 4a138e19-0595-4d51-83c6-fd276cf7d307
     alterId: 64
     cipher: auto
     udp: true
@@ -16,152 +11,177 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 北美地区+V2CROSS.COM
-    type: ss
-    server: 169.197.141.187
-    port: '8882'
-    cipher: aes-256-gcm
-    password: kDWvXYZoTBcGkC4
-  - name: 欧盟 V2CROSS.COM
+  - name: 美国+Xerox
+    type: trojan
+    server: awssg13-tg-data.amazonwebservicess.com
+    port: 443?type=tcp&security=tls&sni=data.amazonwebservicess.com
+    password: 4aeda200-44c9-4168-8f2a-a00a72176d35
+  - name: 美国 CloudFlare节点
     type: vmess
-    server: 45.85.118.165
+    server: cdnjs.com
     port: 443
-    uuid: CBDB1902-6B9B-4872-B20C-E94A3BD2F63D
+    uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF
     alterId: 0
     cipher: auto
     udp: true
     network: ws
     ws-path: /speedtest
     ws-headers:
-      Host: Dusseldorf.kotick.site
+      Host: Kansas.kotick.site
     tls: true
-  - name: 北美地区+V2CROSS.COM - 2
-    type: ss
-    server: 169.197.141.187
-    port: '8091'
-    cipher: aes-256-gcm
-    password: PCnnH6SQSnfoS27
-  - name: 英国+V2CROSS.COM
-    type: ss
-    server: >-
-      ak1749.www.outline.network.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou
-    port: '4444'
-    cipher: aes-256-gcm
-    password: pKEW8JPByTVTLtM
-  - name: 美国+V2CROSS.COM
-    type: ss
-    server: 172.99.190.149
-    port: '8091'
-    cipher: aes-256-gcm
-    password: PCnnH6SQSnfoS27
-  - name: 北美地区+V2CROSS.COM - 3
-    type: ss
-    server: 169.197.141.187
-    port: '6379'
-    cipher: aes-256-gcm
-    password: zDNVedRFPQexG9v
-  - name: 美国+V2CROSS.COM - 2
-    type: trojan
-    server: 152.70.74.66
-    port: 443?security=tls&type=tcp&headerType=none
-    password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
-  - name: 美国+Xerox
-    type: trojan
-    server: awssg20-data.amazon-azure.com
-    port: 443?type=tcp&security=tls&sni=data.amazon-azure.com
-    password: 794d739c-89a0-444c-b2e7-acce12af3042
-  - name: 日本+V2CROSS.COM - 2
-    type: trojan
-    server: awsjp15-data.amazon-azure.com
-    port: 443?type=tcp&security=tls&sni=data.amazon-azure.com
-    password: 794d739c-89a0-444c-b2e7-acce12af3042
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: 108.162.196.40
+    port: 443
+    uuid: e883ff76-3bb4-4008-c068-6b5b1d960ea7
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /qwer08
+    ws-headers:
+      Host: uyaa.vtcss.top
+    tls: true
   - name: 美国+Xerox - 2
     type: trojan
     server: awssg17-data.amazon-azure.com
     port: 443?type=tcp&security=tls&sni=data.amazon-azure.com
     password: 794d739c-89a0-444c-b2e7-acce12af3042
-  - name: 香港 阿里云
-    type: vmess
-    server: la3.121219.xyz
-    port: 443
-    uuid: 64b3d82f-d673-3bb0-bf3a-fdc338f4aad9
-    alterId: 4
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /v2ray
-    ws-headers:
-      Host: ''
-    tls: true
-  - name: 日本+V2CROSS.COM - 3
+  - name: 日本+V2CROSS.COM
     type: trojan
     server: awsjp3-data.amazon-azure.com
     port: 443?type=tcp&security=tls&sni=data.amazon-azure.com
     password: 794d739c-89a0-444c-b2e7-acce12af3042
+  - name: 美国+加利福尼亚州洛杉矶Level3通信(DIA)
+    type: trojan
+    server: sg.stablize.top
+    port: '443'
+    password: 01f34a05-ab03-469e-b8ec-86a6976354fa
+  - name: 日本 V2CROSS.COM
+    type: vmess
+    server: jp06-vm0.entry.jpojpoh.art
+    port: 28787
+    uuid: 1bc52308-0bd9-30d0-90fd-cef337875d10
+    alterId: 1
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /hlsrthe214/8u4692j
+    ws-headers:
+      Host: jp06-vm0.entry.jpojpoh.art
+    tls: true
+  - name: 安徽省+移动(全省通用)
+    type: trojan
+    server: 111.38.40.129
+    port: >-
+      61009?type=tcp&security=tls&sni=65-108-102-32.nhost.00cdn.com&allowInsecure=1
+    password: e4486755-be73-42eb-acde-3b2bc3500709
+  - name: 安徽省+移动(全省通用) - 2
+    type: trojan
+    server: 111.38.40.129
+    port: >-
+      12210?type=tcp&security=tls&sni=65-108-102-32.nhost.00cdn.com&allowInsecure=1
+    password: e4486755-be73-42eb-acde-3b2bc3500709
+  - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: 108.162.196.40
+    port: 443
+    uuid: e883ff76-3bb4-4008-c068-6b5b1d960ea7
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /qwer08
+    ws-headers:
+      Host: uyaa.vtcss.top
+    tls: true
+  - name: 美国 加利福尼亚州弗里蒙特市Linode公司
+    type: vmess
+    server: vus2.0bad.com
+    port: 443
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /chat
+    ws-headers:
+      Host: vus2.0bad.com
+    tls: true
   - name: 美国+Xerox - 3
     type: trojan
-    server: azsg2-tg-data.amazonwebservicess.com
-    port: 443?type=tcp&security=tls&sni=data.amazonwebservicess.com
-    password: 794d739c-89a0-444c-b2e7-acce12af3042
+    server: awssg3-data.amazon-azure.com
+    port: 443?type=tcp&security=tls&sni=data.amazon-azure.com
+    password: 4aeda200-44c9-4168-8f2a-a00a72176d35
+  - name: 美国+华盛顿Cogent通信公司
+    type: trojan
+    server: 38.150.13.140
+    port: '57063'
+    password: Hu4CFM0wJ3
+  - name: 美国+Microsoft数据中心
+    type: trojan
+    server: kr.stablize.top
+    port: '443'
+    password: 74ce4fc1-af95-4291-863e-8bec07ed1e77
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 日本+V2CROSS.COM
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 北美地区+V2CROSS.COM
-      - 欧盟 V2CROSS.COM
-      - 北美地区+V2CROSS.COM - 2
-      - 英国+V2CROSS.COM
-      - 美国+V2CROSS.COM
-      - 北美地区+V2CROSS.COM - 3
-      - 美国+V2CROSS.COM - 2
+      - 荷兰 北荷兰省阿姆斯特丹Sharktech数据中心
       - 美国+Xerox
-      - 日本+V2CROSS.COM - 2
+      - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 - 2
       - 美国+Xerox - 2
-      - 香港 阿里云
-      - 日本+V2CROSS.COM - 3
+      - 日本+V2CROSS.COM
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
+      - 日本 V2CROSS.COM
+      - 安徽省+移动(全省通用)
+      - 安徽省+移动(全省通用) - 2
+      - 美国 CloudFlare节点 - 3
+      - 美国 加利福尼亚州弗里蒙特市Linode公司
       - 美国+Xerox - 3
+      - 美国+华盛顿Cogent通信公司
+      - 美国+Microsoft数据中心
   - name: 自动选择
     type: url-test
     proxies:
-      - 日本+V2CROSS.COM
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 北美地区+V2CROSS.COM
-      - 欧盟 V2CROSS.COM
-      - 北美地区+V2CROSS.COM - 2
-      - 英国+V2CROSS.COM
-      - 美国+V2CROSS.COM
-      - 北美地区+V2CROSS.COM - 3
-      - 美国+V2CROSS.COM - 2
+      - 荷兰 北荷兰省阿姆斯特丹Sharktech数据中心
       - 美国+Xerox
-      - 日本+V2CROSS.COM - 2
+      - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 - 2
       - 美国+Xerox - 2
-      - 香港 阿里云
-      - 日本+V2CROSS.COM - 3
+      - 日本+V2CROSS.COM
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
+      - 日本 V2CROSS.COM
+      - 安徽省+移动(全省通用)
+      - 安徽省+移动(全省通用) - 2
+      - 美国 CloudFlare节点 - 3
+      - 美国 加利福尼亚州弗里蒙特市Linode公司
       - 美国+Xerox - 3
+      - 美国+华盛顿Cogent通信公司
+      - 美国+Microsoft数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 日本+V2CROSS.COM
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 北美地区+V2CROSS.COM
-      - 欧盟 V2CROSS.COM
-      - 北美地区+V2CROSS.COM - 2
-      - 英国+V2CROSS.COM
-      - 美国+V2CROSS.COM
-      - 北美地区+V2CROSS.COM - 3
-      - 美国+V2CROSS.COM - 2
+      - 荷兰 北荷兰省阿姆斯特丹Sharktech数据中心
       - 美国+Xerox
-      - 日本+V2CROSS.COM - 2
+      - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 - 2
       - 美国+Xerox - 2
-      - 香港 阿里云
-      - 日本+V2CROSS.COM - 3
+      - 日本+V2CROSS.COM
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
+      - 日本 V2CROSS.COM
+      - 安徽省+移动(全省通用)
+      - 安徽省+移动(全省通用) - 2
+      - 美国 CloudFlare节点 - 3
+      - 美国 加利福尼亚州弗里蒙特市Linode公司
       - 美国+Xerox - 3
+      - 美国+华盛顿Cogent通信公司
+      - 美国+Microsoft数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
