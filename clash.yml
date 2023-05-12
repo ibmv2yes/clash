@@ -1,60 +1,45 @@
 proxies:
-  - name: 日本+V2CROSS.COM
-    type: trojan
-    server: jp3.cnamazon.sbs
-    port: 443?type=tcp&allowInsecure=1
-    password: 6cc96992-cfab-48ca-9e16-963c4a0aa585
-  - name: 日本+V2CROSS.COM - 2
-    type: trojan
-    server: 43.206.124.106
-    port: 443?type=tcp&security=tls&sni=data.amazon-azure.com
-    password: 4aeda200-44c9-4168-8f2a-a00a72176d35
-  - name: 丹麦 V2CROSS.COM
-    type: vmess
-    server: cf6.biger.club
-    port: 2087
-    uuid: a0142720-5702-4a4c-8134-1f57bf74adf3
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: us2.biger.club
-    tls: true
-  - name: 美国+V2CROSS.COM
-    type: ss
-    server: 172.99.190.149
-    port: '3389'
-    cipher: aes-256-gcm
-    password: Y6R9pAtvxxzmGC
   - name: 美国 CloudFlare节点
     type: vmess
-    server: 108.162.193.35
+    server: 172.67.247.250
     port: 80
-    uuid: bf663a96-d2ee-4c67-e2db-759faf345ffe
+    uuid: 53ae65be-81ee-4766-8a09-da43c44c4d30
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /qwer09
+    ws-path: /qwer11
     ws-headers:
-      Host: yvsos.vtcss.top
-  - name: 日本+V2CROSS.COM - 3
-    type: trojan
-    server: awsjp16-data.amazon-azure.com
-    port: 443?type=tcp&security=tls&sni=data.amazon-azure.com
-    password: 4aeda200-44c9-4168-8f2a-a00a72176d35
-  - name: 美国+V2CROSS.COM - 2
-    type: ss
-    server: 172.99.190.149
-    port: '8091'
-    cipher: aes-256-gcm
-    password: PCnnH6SQSnfoS27
-  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      Host: uyaa.vtcss.top
+  - name: 美国 CloudFlare节点 - 2
     type: vmess
-    server: 192.74.229.215
-    port: 51592
+    server: cf-lt.sharecentre.online
+    port: 80
+    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /shirker
+    ws-headers:
+      Host: ny1.sharecentrepro.org
+  - name: 欧盟 V2CROSS.COM
+    type: vmess
+    server: mcix.ipcf.cloud
+    port: 443
+    uuid: CBDB1902-6B9B-4872-B20C-E94A3BD2F63D
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /speedtest
+    ws-headers:
+      Host: Dusseldorf.kotick.site
+    tls: true
+  - name: 美国 加利福尼亚州森尼韦尔市PEG TECH公司
+    type: vmess
+    server: 142.0.132.45
+    port: 50015
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -63,44 +48,113 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
+  - name: 日本 V2CROSS.COM
+    type: vmess
+    server: 43.206.157.32
+    port: 443
+    uuid: 168b4363-92b4-4994-a4e8-9e4f5015b48c
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /52566/
+    ws-headers:
+      Host: ''
+    tls: true
+  - name: 美国 加利福尼亚州圣何塞PEG TECH
+    type: vmess
+    server: 142.4.106.243
+    port: 52902
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国+Microsoft数据中心
+    type: trojan
+    server: sg.stablize.top
+    port: '443'
+    password: 01f34a05-ab03-469e-b8ec-86a6976354fa
+  - name: 英国+V2CROSS.COM
+    type: ss
+    server: >-
+      ak1749.www.outline.network.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou
+    port: '4444'
+    cipher: aes-256-gcm
+    password: pKEW8JPByTVTLtM
+  - name: 日本 V2CROSS.COM - 2
+    type: vmess
+    server: jp06-vm0.entry.jpojpoh.art
+    port: 28787
+    uuid: 1bc52308-0bd9-30d0-90fd-cef337875d10
+    alterId: 1
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /hlsrthe214/8u4692j
+    ws-headers:
+      Host: jp06-vm0.entry.jpojpoh.art
+    tls: true
+  - name: 美国+Xerox
+    type: trojan
+    server: awssg13-tg-data.amazonwebservicess.com
+    port: 443?type=tcp&security=tls&sni=data.amazonwebservicess.com
+    password: 4aeda200-44c9-4168-8f2a-a00a72176d35
+  - name: 美国+惠普HP
+    type: trojan
+    server: hk2.microsoftjs.top
+    port: '80'
+    password: 932fb8f8-e1ca-4339-9d71-2d74757fca41
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 日本+V2CROSS.COM
-      - 日本+V2CROSS.COM - 2
-      - 丹麦 V2CROSS.COM
-      - 美国+V2CROSS.COM
       - 美国 CloudFlare节点
-      - 日本+V2CROSS.COM - 3
-      - 美国+V2CROSS.COM - 2
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 美国 CloudFlare节点 - 2
+      - 欧盟 V2CROSS.COM
+      - 美国 加利福尼亚州森尼韦尔市PEG TECH公司
+      - 日本 V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国+Microsoft数据中心
+      - 英国+V2CROSS.COM
+      - 日本 V2CROSS.COM - 2
+      - 美国+Xerox
+      - 美国+惠普HP
   - name: 自动选择
     type: url-test
     proxies:
-      - 日本+V2CROSS.COM
-      - 日本+V2CROSS.COM - 2
-      - 丹麦 V2CROSS.COM
-      - 美国+V2CROSS.COM
       - 美国 CloudFlare节点
-      - 日本+V2CROSS.COM - 3
-      - 美国+V2CROSS.COM - 2
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 美国 CloudFlare节点 - 2
+      - 欧盟 V2CROSS.COM
+      - 美国 加利福尼亚州森尼韦尔市PEG TECH公司
+      - 日本 V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国+Microsoft数据中心
+      - 英国+V2CROSS.COM
+      - 日本 V2CROSS.COM - 2
+      - 美国+Xerox
+      - 美国+惠普HP
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 日本+V2CROSS.COM
-      - 日本+V2CROSS.COM - 2
-      - 丹麦 V2CROSS.COM
-      - 美国+V2CROSS.COM
       - 美国 CloudFlare节点
-      - 日本+V2CROSS.COM - 3
-      - 美国+V2CROSS.COM - 2
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 美国 CloudFlare节点 - 2
+      - 欧盟 V2CROSS.COM
+      - 美国 加利福尼亚州森尼韦尔市PEG TECH公司
+      - 日本 V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国+Microsoft数据中心
+      - 英国+V2CROSS.COM
+      - 日本 V2CROSS.COM - 2
+      - 美国+Xerox
+      - 美国+惠普HP
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
