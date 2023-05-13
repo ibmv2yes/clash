@@ -1,29 +1,89 @@
 proxies:
   - name: 美国 CloudFlare节点
     type: vmess
-    server: 172.67.156.138
+    server: 108.162.196.159
     port: 443
-    uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF
+    uuid: 2e6e9c6e-6c41-4d8f-b06e-e52b27220ff9
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /qwer09
+    ws-headers:
+      Host: yvsos.vtcss.top
+    tls: true
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: 198.41.207.68
+    port: 443
+    uuid: 2e6e9c6e-6c41-4d8f-b06e-e52b27220ff9
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /qwer09
+    ws-headers:
+      Host: yvsos.vtcss.top
+    tls: true
+  - name: 巴西圣保罗 CloudFlare节点
+    type: vmess
+    server: 188.114.98.163
+    port: 80
+    uuid: 75778c69-9a2f-4480-f70b-6220db531f9a
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: yuolee.vtcss.top
+  - name: 香港 特别行政区
+    type: vmess
+    server: 202.81.231.150
+    port: 80
+    uuid: 1d1c1d94-6987-4658-a4dc-8821a30fe7e0
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: idnusanet.vpnexecutive.my.id
+  - name: 美国+V2CROSS.COM
+    type: trojan
+    server: 152.70.74.66
+    port: 443?security=tls&type=tcp&headerType=none
+    password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
+  - name: 加拿大 V2CROSS.COM
+    type: vmess
+    server: 199.212.90.14
+    port: 443
+    uuid: 6147F065-9AC0-4081-A5A3-A2EB4EBB8958
     alterId: 0
     cipher: auto
     udp: true
     network: ws
     ws-path: /speedtest
     ws-headers:
-      Host: Kansas.kotick.site
+      Host: Lille.kotick.site
     tls: true
-  - name: 日本 东京Amazon数据中心
+  - name: 美国 CloudFlare节点 - 3
     type: vmess
-    server: jp04-vm0.entry.srthdw.art
-    port: 446
-    uuid: b2a2c706-12e0-3335-8a62-31925219a712
+    server: 172.67.247.250
+    port: 80
+    uuid: 53ae65be-81ee-4766-8a09-da43c44c4d30
     alterId: 0
     cipher: auto
     udp: true
-    network: tcp
-    ws-path: /
+    network: ws
+    ws-path: /qwer11
     ws-headers:
-      Host: ''
+      Host: uyaa.vtcss.top
+  - name: 日本+V2CROSS.COM
+    type: trojan
+    server: 43.206.255.205
+    port: 443?type=tcp&security=tls&sni=data.amazon-azure.com
+    password: 794d739c-89a0-444c-b2e7-acce12af3042
   - name: 广东省佛山市 移动
     type: vmess
     server: 8.v2-ray.cyou
@@ -36,10 +96,22 @@ proxies:
     ws-path: /
     ws-headers:
       Host: 8.v2-ray.cyou
-  - name: 美国加利福尼亚州洛杉矶 PetaExpress
+  - name: 香港 特别行政区 - 2
     type: vmess
-    server: 198.2.206.39
-    port: 33012
+    server: 202.81.231.150
+    port: 80
+    uuid: 1d1c1d94-6987-4658-a4dc-8821a30fe7e0
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: idnusanet.vpnexecutive.my.id
+  - name: 美国 加利福尼亚州洛杉矶县洛杉矶市Multacom公司
+    type: vmess
+    server: 198.52.121.214
+    port: 50002
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -47,29 +119,17 @@ proxies:
     network: tcp
     ws-path: /
     ws-headers:
-      Host: ''
-  - name: 日本+V2CROSS.COM
+      Host: h3.mamadcucu.com
+  - name: 日本+V2CROSS.COM - 2
     type: trojan
-    server: awsjp1-data.amazon-azure.com
+    server: awskr2-data.amazon-azure.com
     port: 443?type=tcp&security=tls&sni=data.amazon-azure.com
-    password: 4aeda200-44c9-4168-8f2a-a00a72176d35
-  - name: 美国 加利福尼亚州森尼韦尔市PEG TECH公司
+    password: 794d739c-89a0-444c-b2e7-acce12af3042
+  - name: 美国 CloudFlare节点 - 4
     type: vmess
-    server: 142.0.130.8
-    port: 53452
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: 104.20.87.180
-    port: 443
-    uuid: 2e6e9c6e-6c41-4d8f-b06e-e52b27220ff9
+    server: 104.24.48.208
+    port: 80
+    uuid: bf663a96-d2ee-4c67-e2db-759faf345ffe
     alterId: 0
     cipher: auto
     udp: true
@@ -77,36 +137,18 @@ proxies:
     ws-path: /qwer09
     ws-headers:
       Host: yvsos.vtcss.top
-    tls: true
-  - name: 美国 加利福尼亚州圣何塞PEG TECH
+  - name: 美国 CloudFlare节点 - 5
     type: vmess
-    server: 142.4.112.19
-    port: 51091
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
+    server: 104.16.178.57
+    port: 80
+    uuid: bf663a96-d2ee-4c67-e2db-759faf345ffe
+    alterId: 0
     cipher: auto
     udp: true
-    network: tcp
-    ws-path: /
+    network: ws
+    ws-path: /qwer09
     ws-headers:
-      Host: ''
-  - name: 上海市+电信
-    type: trojan
-    server: official.taipeicitygovernment.kiev.ua
-    port: '8443'
-    password: 5505f6ba-cd37-30ce-8f92-be4120c83d7f
-  - name: 美国加利福尼亚州洛杉矶 PetaExpress - 2
-    type: vmess
-    server: 198.2.192.239
-    port: 46680
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
+      Host: yvsos.vtcss.top
   - name: 日本 V2CROSS.COM
     type: vmess
     server: jp06-vm0.entry.jpojpoh.art
@@ -120,60 +162,6 @@ proxies:
     ws-headers:
       Host: jp06-vm0.entry.jpojpoh.art
     tls: true
-  - name: 美国+Xerox
-    type: trojan
-    server: awssg20-data.amazon-azure.com
-    port: 443?type=tcp&security=tls&sni=data.amazon-azure.com
-    password: 794d739c-89a0-444c-b2e7-acce12af3042
-  - name: 俄罗斯 V2CROSS.COM
-    type: vmess
-    server: 185.143.220.25
-    port: 443
-    uuid: f28e354e-c2d1-4983-9b07-5acaf1b3b3e5
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /6e9EtZ2dL
-    ws-headers:
-      Host: ''
-    tls: true
-  - name: 日本 阿里云
-    type: vmess
-    server: cdncf.scyu.app
-    port: 8080
-    uuid: d1fca18b-00ce-4024-8cc8-4b49a4dd5e52
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /api/v3/download.getFile
-    ws-headers:
-      Host: ssrsub.v02.ssrsub.com
-  - name: 美国 CloudFlare节点 - 3
-    type: vmess
-    server: 104.20.15.128
-    port: 80
-    uuid: bf663a96-d2ee-4c67-e2db-759faf345ffe
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /qwer09
-    ws-headers:
-      Host: yvsos.vtcss.top
-  - name: 重庆市 移动
-    type: vmess
-    server: 36.134.16.190
-    port: 11023
-    uuid: 8c042a38-71c1-1dcb-00df-54880236e0dc
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
 proxy-groups:
   - name: Free-servers
     type: select
@@ -181,61 +169,58 @@ proxy-groups:
       - 自动选择
       - 故障转移
       - 美国 CloudFlare节点
-      - 日本 东京Amazon数据中心
-      - 广东省佛山市 移动
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 日本+V2CROSS.COM
-      - 美国 加利福尼亚州森尼韦尔市PEG TECH公司
       - 美国 CloudFlare节点 - 2
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 上海市+电信
-      - 美国加利福尼亚州洛杉矶 PetaExpress - 2
-      - 日本 V2CROSS.COM
-      - 美国+Xerox
-      - 俄罗斯 V2CROSS.COM
-      - 日本 阿里云
+      - 巴西圣保罗 CloudFlare节点
+      - 香港 特别行政区
+      - 美国+V2CROSS.COM
+      - 加拿大 V2CROSS.COM
       - 美国 CloudFlare节点 - 3
-      - 重庆市 移动
+      - 日本+V2CROSS.COM
+      - 广东省佛山市 移动
+      - 香港 特别行政区 - 2
+      - 美国 加利福尼亚州洛杉矶县洛杉矶市Multacom公司
+      - 日本+V2CROSS.COM - 2
+      - 美国 CloudFlare节点 - 4
+      - 美国 CloudFlare节点 - 5
+      - 日本 V2CROSS.COM
   - name: 自动选择
     type: url-test
     proxies:
       - 美国 CloudFlare节点
-      - 日本 东京Amazon数据中心
-      - 广东省佛山市 移动
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 日本+V2CROSS.COM
-      - 美国 加利福尼亚州森尼韦尔市PEG TECH公司
       - 美国 CloudFlare节点 - 2
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 上海市+电信
-      - 美国加利福尼亚州洛杉矶 PetaExpress - 2
-      - 日本 V2CROSS.COM
-      - 美国+Xerox
-      - 俄罗斯 V2CROSS.COM
-      - 日本 阿里云
+      - 巴西圣保罗 CloudFlare节点
+      - 香港 特别行政区
+      - 美国+V2CROSS.COM
+      - 加拿大 V2CROSS.COM
       - 美国 CloudFlare节点 - 3
-      - 重庆市 移动
+      - 日本+V2CROSS.COM
+      - 广东省佛山市 移动
+      - 香港 特别行政区 - 2
+      - 美国 加利福尼亚州洛杉矶县洛杉矶市Multacom公司
+      - 日本+V2CROSS.COM - 2
+      - 美国 CloudFlare节点 - 4
+      - 美国 CloudFlare节点 - 5
+      - 日本 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
       - 美国 CloudFlare节点
-      - 日本 东京Amazon数据中心
-      - 广东省佛山市 移动
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 日本+V2CROSS.COM
-      - 美国 加利福尼亚州森尼韦尔市PEG TECH公司
       - 美国 CloudFlare节点 - 2
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 上海市+电信
-      - 美国加利福尼亚州洛杉矶 PetaExpress - 2
-      - 日本 V2CROSS.COM
-      - 美国+Xerox
-      - 俄罗斯 V2CROSS.COM
-      - 日本 阿里云
+      - 巴西圣保罗 CloudFlare节点
+      - 香港 特别行政区
+      - 美国+V2CROSS.COM
+      - 加拿大 V2CROSS.COM
       - 美国 CloudFlare节点 - 3
-      - 重庆市 移动
+      - 日本+V2CROSS.COM
+      - 广东省佛山市 移动
+      - 香港 特别行政区 - 2
+      - 美国 加利福尼亚州洛杉矶县洛杉矶市Multacom公司
+      - 日本+V2CROSS.COM - 2
+      - 美国 CloudFlare节点 - 4
+      - 美国 CloudFlare节点 - 5
+      - 日本 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
