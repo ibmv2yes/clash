@@ -1,34 +1,8 @@
 proxies:
-  - name: 美国 CloudFlare节点
+  - name: 美国加利福尼亚州洛杉矶 PetaExpress
     type: vmess
-    server: v2ray2.ibgfw.top
-    port: 2083
-    uuid: ea01fefd-5c94-4735-94b5-32dbfd45dfb9
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /378wmUMF/
-    ws-headers:
-      Host: v2ray2.ibgfw.top
-    tls: true
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: new6.huvicloud.com
-    port: 443
-    uuid: a11ca760-9ef9-4a63-95c9-4c5c32d56251
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: new6.huvicloud.com
-    tls: true
-  - name: 美国 V2CROSS.COM
-    type: vmess
-    server: 137.175.18.87
-    port: 42002
+    server: 198.2.206.35
+    port: 33012
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -39,8 +13,66 @@ proxies:
       Host: ''
   - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
     type: vmess
-    server: 192.74.242.149
-    port: 44667
+    server: 192.74.228.171
+    port: 42857
+    uuid: 051b844f-efe3-4847-92aa-66b5de0b6d4e
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: n1674862929.gofdwgy.cn
+  - name: 美国加利福尼亚州洛杉矶 PetaExpress - 2
+    type: vmess
+    server: 198.2.206.34
+    port: 33012
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /hax1
+    ws-headers:
+      Host: hax1.freeair.eu.org
+  - name: 澳大利亚 悉尼OVH
+    type: vmess
+    server: 139.99.180.115
+    port: 33505
+    uuid: 6c04a273-7302-4e09-9ced-aedaaa7461af
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+    type: vmess
+    server: 172.247.67.22
+    port: 42940
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /shirker
+    ws-headers:
+      Host: uk1.scproxy.top
+  - name: 日本+V2CROSS.COM
+    type: trojan
+    server: awsjp18-data.amazon-azure.com
+    port: 443?type=tcp&security=tls&sni=data.amazon-azure.com
+    password: 794d739c-89a0-444c-b2e7-acce12af3042
+  - name: 美国+Microsoft数据中心
+    type: trojan
+    server: sg.stablize.top
+    port: '443'
+    password: 01f34a05-ab03-469e-b8ec-86a6976354fa
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: 137.175.69.228
+    port: 44920
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -49,103 +81,59 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 日本+V2CROSS.COM
-    type: trojan
-    server: awshk16-data.amazon-azure.com
-    port: 443?type=tcp&security=tls&sni=data.amazon-azure.com
-    password: 794d739c-89a0-444c-b2e7-acce12af3042
-  - name: 美国 CloudFlare节点 - 3
+  - name: 欧盟 V2CROSS.COM
     type: vmess
-    server: 104.21.30.82
-    port: 2096
-    uuid: 408e2686-9e0d-4014-841e-7ca5da55a215
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: ho3ino
-    ws-headers:
-      Host: h.h3io.co
-    tls: true
-  - name: 美国 CloudFlare节点 - 4
-    type: vmess
-    server: cdnjs.com
-    port: 443
-    uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /speedtest
-    ws-headers:
-      Host: Lille.kotick.site
-    tls: true
-  - name: 美国加利福尼亚州洛杉矶 PetaExpress
-    type: vmess
-    server: 198.2.208.184
-    port: 443
+    server: 45.12.144.79
+    port: 47127
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
     udp: true
-    network: ws
-    ws-path: /path/1683977437020
-    ws-headers:
-      Host: www.62317155.xyz
-    tls: true
-  - name: 美国 V2CROSS.COM - 2
-    type: vmess
-    server: 192.203.230.86
-    port: 80
-    uuid: a442dacf-cbb3-488a-9744-61494ea38630
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
+    network: tcp
     ws-path: /
     ws-headers:
-      Host: us-1.acyun.cf
+      Host: ''
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 美国 V2CROSS.COM
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 日本+V2CROSS.COM
-      - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
       - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 美国 V2CROSS.COM - 2
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 美国加利福尼亚州洛杉矶 PetaExpress - 2
+      - 澳大利亚 悉尼OVH
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 日本+V2CROSS.COM
+      - 美国+Microsoft数据中心
+      - 美国 V2CROSS.COM
+      - 欧盟 V2CROSS.COM
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 美国 V2CROSS.COM
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 日本+V2CROSS.COM
-      - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
       - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 美国 V2CROSS.COM - 2
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 美国加利福尼亚州洛杉矶 PetaExpress - 2
+      - 澳大利亚 悉尼OVH
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 日本+V2CROSS.COM
+      - 美国+Microsoft数据中心
+      - 美国 V2CROSS.COM
+      - 欧盟 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 美国 V2CROSS.COM
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 日本+V2CROSS.COM
-      - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
       - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 美国 V2CROSS.COM - 2
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 美国加利福尼亚州洛杉矶 PetaExpress - 2
+      - 澳大利亚 悉尼OVH
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 日本+V2CROSS.COM
+      - 美国+Microsoft数据中心
+      - 美国 V2CROSS.COM
+      - 欧盟 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
