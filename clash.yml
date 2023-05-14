@@ -1,25 +1,32 @@
 proxies:
-  - name: 澳大利亚 Doncaster Secondary College
+  - name: 日本 东京Amazon数据中心
     type: vmess
-    server: asbiasncs.114514782.xyz
-    port: 2052
-    uuid: 6dd2d28d-f285-3efc-a568-99eae8c0e8c4
+    server: jp05-vm0.entry.srthdw.art
+    port: 30591
+    uuid: 22acc467-7440-386a-927a-d84be554b37e
+    alterId: 1
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 香港 特别行政区
+    type: vmess
+    server: 202.81.231.150
+    port: 80
+    uuid: 1d1c1d94-6987-4658-a4dc-8821a30fe7e0
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /auvbwbs
+    ws-path: /
     ws-headers:
-      Host: ''
-  - name: 日本+V2CROSS.COM
-    type: trojan
-    server: awshk16-data.amazon-azure.com
-    port: 443?type=tcp&security=tls&sni=data.amazon-azure.com
-    password: 794d739c-89a0-444c-b2e7-acce12af3042
-  - name: 美国 加利福尼亚州森尼韦尔市PEG TECH公司
+      Host: idnusanet.vpnexecutive.my.id
+  - name: 美国 加利福尼亚州圣何塞PEG TECH
     type: vmess
-    server: 142.0.132.43
-    port: 50015
+    server: 142.4.114.25
+    port: 55502
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -41,11 +48,11 @@ proxies:
     ws-headers:
       Host: ''
     tls: true
-  - name: 乌克兰 V2CROSS.COM
+  - name: 法国 V2CROSS.COM
     type: vmess
-    server: 195.123.243.21
+    server: 62.233.57.53
     port: 10000
-    uuid: 1a7c30aa-f185-11ed-aa5c-52ac0064f50a
+    uuid: 326c7980-f181-11ed-812a-6bc0aa557bf7
     alterId: 0
     cipher: auto
     udp: true
@@ -53,43 +60,303 @@ proxies:
     ws-path: /vpnjantit
     ws-headers:
       Host: ''
-  - name: 美国+Xerox
+  - name: 美国 加利福尼亚州圣何塞PEG TECH - 2
+    type: vmess
+    server: 142.4.99.78
+    port: 43379
+    uuid: b65da4af-a12a-4a59-9316-4549e12ba62c
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 加利福尼亚州圣何塞PEG TECH - 3
+    type: vmess
+    server: 142.4.127.10
+    port: 53013
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
+    type: vmess
+    server: 192.74.228.174
+    port: 42857
+    uuid: 051b844f-efe3-4847-92aa-66b5de0b6d4e
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 日本 东京都Amazon数据中心
+    type: vmess
+    server: jp03-alt-vm0.entry.srthdw.art
+    port: 21585
+    uuid: 1bc52308-0bd9-30d0-90fd-cef337875d10
+    alterId: 1
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+    tls: true
+  - name: 美国 Datability
+    type: vmess
+    server: 140.99.59.227
+    port: 55512
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 加利福尼亚州洛杉矶Krypt机房
+    type: vmess
+    server: 98.126.31.99
+    port: 42321
+    uuid: c8fde75a-630b-4f84-8c99-eff6765ab1a2
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /us7/getData
+    ws-headers:
+      Host: ''
+    tls: true
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: 172.67.156.138
+    port: 443
+    uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /speedtest
+    ws-headers:
+      Host: Kansas.kotick.site
+    tls: true
+  - name: 日本+V2CROSS.COM
     type: trojan
-    server: awssg19-data.amazon-azure.com
-    port: 443?type=tcp&security=tls&sni=data.amazon-azure.com
-    password: 794d739c-89a0-444c-b2e7-acce12af3042
+    server: jp4.cnamazon.sbs
+    port: '443'
+    password: 6cc96992-cfab-48ca-9e16-963c4a0aa585
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: 172.67.247.250
+    port: 80
+    uuid: 53ae65be-81ee-4766-8a09-da43c44c4d30
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /qwer11
+    ws-headers:
+      Host: uyaa.vtcss.top
+  - name: 英国 社会保险安全部
+    type: vmess
+    server: au1-vmess.greenssh.xyz
+    port: 80
+    uuid: b3703935-6e7b-4012-ad7e-b44ccddc776f
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /vmess
+    ws-headers:
+      Host: au1-vmess.greenssh.xyz
+  - name: 美国 CloudFlare公司CDN节点(shopify)
+    type: vmess
+    server: cf1.biger.club
+    port: 2087
+    uuid: 01a8951a-4bd4-45f7-88b3-a4ab354896fe
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: cr1.biger.club
+    tls: true
+  - name: 德国 黑森州法兰克福Linode数据中心
+    type: vmess
+    server: vde2.0bad.com
+    port: 443
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /chat
+    ws-headers: {}
+    tls: true
+  - name: 香港 腾讯云 - 2
+    type: vmess
+    server: 43.154.76.92
+    port: 48527
+    uuid: 784272d2-bd2d-438a-bbd4-1271bb1f1b0d
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /hk15/getData
+    ws-headers:
+      Host: ''
+    tls: true
+  - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: tech.noaries.de
+    port: 80
+    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /shirker
+    ws-headers:
+      Host: nl.sharecentrepro.com
+  - name: 美国 CloudFlare节点 - 4
+    type: vmess
+    server: cf-lt.sharecentre.online
+    port: 8080
+    uuid: d1fca18b-00ce-4024-8cc8-4b49a4dd5e52
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /api/v3/download.getFile
+    ws-headers:
+      Host: ssrsub.v01.ssrsub.com
+  - name: 美国 CloudFlare节点 - 5
+    type: vmess
+    server: 141.101.115.32
+    port: 80
+    uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: lg.v2ray20.xyz
+  - name: 日本 东京Amazon数据中心 - 2
+    type: vmess
+    server: jp04-vm0.entry.srthdw.art
+    port: 446
+    uuid: 22acc467-7440-386a-927a-d84be554b37e
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: jp04-vm0.entry.srthdw.art
+  - name: 美国 华盛顿Cogent通信公司
+    type: vmess
+    server: 38.63.17.179
+    port: 50702
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 澳大利亚 Doncaster Secondary College
-      - 日本+V2CROSS.COM
-      - 美国 加利福尼亚州森尼韦尔市PEG TECH公司
+      - 日本 东京Amazon数据中心
+      - 香港 特别行政区
+      - 美国 加利福尼亚州圣何塞PEG TECH
       - 香港 腾讯云
-      - 乌克兰 V2CROSS.COM
-      - 美国+Xerox
+      - 法国 V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH - 2
+      - 美国 加利福尼亚州圣何塞PEG TECH - 3
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 日本 东京都Amazon数据中心
+      - 美国 Datability
+      - 美国 加利福尼亚州洛杉矶Krypt机房
+      - 美国 CloudFlare节点
+      - 日本+V2CROSS.COM
+      - 美国 CloudFlare节点 - 2
+      - 英国 社会保险安全部
+      - 美国 CloudFlare公司CDN节点(shopify)
+      - 德国 黑森州法兰克福Linode数据中心
+      - 香港 腾讯云 - 2
+      - 美国 CloudFlare节点 - 3
+      - 美国 CloudFlare节点 - 4
+      - 美国 CloudFlare节点 - 5
+      - 日本 东京Amazon数据中心 - 2
+      - 美国 华盛顿Cogent通信公司
   - name: 自动选择
     type: url-test
     proxies:
-      - 澳大利亚 Doncaster Secondary College
-      - 日本+V2CROSS.COM
-      - 美国 加利福尼亚州森尼韦尔市PEG TECH公司
+      - 日本 东京Amazon数据中心
+      - 香港 特别行政区
+      - 美国 加利福尼亚州圣何塞PEG TECH
       - 香港 腾讯云
-      - 乌克兰 V2CROSS.COM
-      - 美国+Xerox
+      - 法国 V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH - 2
+      - 美国 加利福尼亚州圣何塞PEG TECH - 3
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 日本 东京都Amazon数据中心
+      - 美国 Datability
+      - 美国 加利福尼亚州洛杉矶Krypt机房
+      - 美国 CloudFlare节点
+      - 日本+V2CROSS.COM
+      - 美国 CloudFlare节点 - 2
+      - 英国 社会保险安全部
+      - 美国 CloudFlare公司CDN节点(shopify)
+      - 德国 黑森州法兰克福Linode数据中心
+      - 香港 腾讯云 - 2
+      - 美国 CloudFlare节点 - 3
+      - 美国 CloudFlare节点 - 4
+      - 美国 CloudFlare节点 - 5
+      - 日本 东京Amazon数据中心 - 2
+      - 美国 华盛顿Cogent通信公司
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 澳大利亚 Doncaster Secondary College
-      - 日本+V2CROSS.COM
-      - 美国 加利福尼亚州森尼韦尔市PEG TECH公司
+      - 日本 东京Amazon数据中心
+      - 香港 特别行政区
+      - 美国 加利福尼亚州圣何塞PEG TECH
       - 香港 腾讯云
-      - 乌克兰 V2CROSS.COM
-      - 美国+Xerox
+      - 法国 V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH - 2
+      - 美国 加利福尼亚州圣何塞PEG TECH - 3
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 日本 东京都Amazon数据中心
+      - 美国 Datability
+      - 美国 加利福尼亚州洛杉矶Krypt机房
+      - 美国 CloudFlare节点
+      - 日本+V2CROSS.COM
+      - 美国 CloudFlare节点 - 2
+      - 英国 社会保险安全部
+      - 美国 CloudFlare公司CDN节点(shopify)
+      - 德国 黑森州法兰克福Linode数据中心
+      - 香港 腾讯云 - 2
+      - 美国 CloudFlare节点 - 3
+      - 美国 CloudFlare节点 - 4
+      - 美国 CloudFlare节点 - 5
+      - 日本 东京Amazon数据中心 - 2
+      - 美国 华盛顿Cogent通信公司
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
