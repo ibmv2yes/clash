@@ -1,56 +1,19 @@
 proxies:
-  - name: 新加坡 腾讯云
+  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
     type: vmess
-    server: 43.156.131.164
-    port: 43860
-    uuid: be3fdec2-86e1-4d51-969b-704b1efc3158
+    server: 192.74.234.84
+    port: 51302
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
     udp: true
-    network: ws
-    ws-path: /sg2/getData
-    ws-headers:
-      Host: ''
-    tls: true
-  - name: 广东省佛山市 移动
-    type: vmess
-    server: 8.v2-ray.cyou
-    port: 23608
-    uuid: 0dd19d20-ec86-3680-b256-87237bafa89e
-    alterId: 2
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: 8.v2-ray.cyou
-  - name: 重庆市 移动
-    type: vmess
-    server: 36.134.16.171
-    port: 11023
-    uuid: 8c042a38-71c1-1dcb-00df-54880236e0dc
-    alterId: 0
-    cipher: auto
-    udp: true
     network: tcp
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国 V2CROSS.COM
+  - name: 澳大利亚 Cranbourne Secondary College
     type: vmess
-    server: 192.203.230.86
-    port: 80
-    uuid: a442dacf-cbb3-488a-9744-61494ea38630
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: us-1.acyun.cf
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: 172.64.194.13
+    server: 203.30.191.100
     port: 8880
     uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958
     alterId: 0
@@ -60,12 +23,19 @@ proxies:
     ws-path: /
     ws-headers:
       Host: lg.trump2023.net
-  - name: 美国+密苏里州堪萨斯城Heymman+Servers
-    type: ss
-    server: 185.199.224.245
-    port: '41111'
-    cipher: aes-256-gcm
-    password: dongtaiwang.com
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: v2-ca1.silverdragon.cn
+    port: 443
+    uuid: e790e3bf-c553-40ed-b2b6-436afd3f5f5c
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /ca/v2wss
+    ws-headers:
+      Host: v2-ca1.silverdragon.cn
+    tls: true
   - name: 美国 加利福尼亚州圣何塞PEG TECH
     type: vmess
     server: 142.4.112.18
@@ -78,78 +48,10 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国+Xerox
-    type: trojan
-    server: awssg16-data.amazon-azure.com
-    port: 443?type=tcp&sni=data.amazon-azure.com&allowInsecure=1
-    password: 4aeda200-44c9-4168-8f2a-a00a72176d35
-  - name: 亚太地区 V2CROSS.COM
+  - name: 美国 Datability
     type: vmess
-    server: 103.177.33.19
-    port: 443
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /path/243535322906
-    ws-headers:
-      Host: 103.177.33.19
-    tls: true
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: hktadfvb.114514782.xyz
-    port: 443
-    uuid: 2c9204d5-54bd-4dde-82e0-e9956ce954b5
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /waugfuigvhwoa
-    ws-headers:
-      Host: nl_nat.v50.one
-    tls: true
-  - name: 西班牙 V2CROSS.COM
-    type: vmess
-    server: 185.18.250.217
-    port: 443
-    uuid: C5E2E4E0-92C7-4531-AF46-7173D648B600
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /speedtest
-    ws-headers:
-      Host: Dusseldorf.kotick.site
-    tls: true
-  - name: 美国 V2CROSS.COM - 2
-    type: vmess
-    server: form.tajsub.com
-    port: 2086
-    uuid: 93a3fd23-96df-49df-80e9-854fe154bbbf
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: form.tajsub.com
-  - name: 美国 CloudFlare节点 - 3
-    type: vmess
-    server: tech.noaries.de
-    port: 80
-    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /shirker
-    ws-headers:
-      Host: nl.sharecentrepro.com
-  - name: 美国 加利福尼亚州圣何塞PEG TECH - 2
-    type: vmess
-    server: 142.4.97.75
-    port: 44942
+    server: 140.99.59.228
+    port: 55512
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -158,62 +60,152 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
+  - name: 日本 东京Amazon数据中心
+    type: vmess
+    server: jp04-vm0.entry.srthdw.art
+    port: 446
+    uuid: 22acc467-7440-386a-927a-d84be554b37e
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: jp04-vm0.entry.srthdw.art
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: 172.67.247.250
+    port: 80
+    uuid: 53ae65be-81ee-4766-8a09-da43c44c4d30
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /qwer11
+    ws-headers:
+      Host: uyaa.vtcss.top
+  - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: cf.noaries.de
+    port: 2082
+    uuid: 314c1387-618c-4689-97fc-4bc9a1ae5e05
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: ir2.nmsl.ninja
+  - name: 美国+密苏里州堪萨斯城Heymman+Servers
+    type: ss
+    server: 185.199.224.245
+    port: '41111'
+    cipher: aes-256-gcm
+    password: dongtaiwang.com
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: 137.175.18.90
+    port: 42002
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 V2CROSS.COM - 2
+    type: vmess
+    server: 192.203.230.6
+    port: 443
+    uuid: a875b3de-131d-4425-f0bf-b56e30d5b571
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /123
+    ws-headers:
+      Host: eu3.glucy.top
+    tls: true
+  - name: 香港 腾讯云
+    type: vmess
+    server: 43.154.76.92
+    port: 48527
+    uuid: 784272d2-bd2d-438a-bbd4-1271bb1f1b0d
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /hk15/getData
+    ws-headers:
+      Host: ''
+    tls: true
+  - name: 日本 东京Amazon数据中心 - 2
+    type: vmess
+    server: jp06-vm0.entry.jpojpoh.art
+    port: 28787
+    uuid: 1bc52308-0bd9-30d0-90fd-cef337875d10
+    alterId: 1
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: jp06-vm0.entry.jpojpoh.art
+    tls: true
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 新加坡 腾讯云
-      - 广东省佛山市 移动
-      - 重庆市 移动
-      - 美国 V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 澳大利亚 Cranbourne Secondary College
       - 美国 CloudFlare节点
-      - 美国+密苏里州堪萨斯城Heymman+Servers
       - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国+Xerox
-      - 亚太地区 V2CROSS.COM
+      - 美国 Datability
+      - 日本 东京Amazon数据中心
       - 美国 CloudFlare节点 - 2
-      - 西班牙 V2CROSS.COM
-      - 美国 V2CROSS.COM - 2
       - 美国 CloudFlare节点 - 3
-      - 美国 加利福尼亚州圣何塞PEG TECH - 2
+      - 美国+密苏里州堪萨斯城Heymman+Servers
+      - 美国 V2CROSS.COM
+      - 美国 V2CROSS.COM - 2
+      - 香港 腾讯云
+      - 日本 东京Amazon数据中心 - 2
   - name: 自动选择
     type: url-test
     proxies:
-      - 新加坡 腾讯云
-      - 广东省佛山市 移动
-      - 重庆市 移动
-      - 美国 V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 澳大利亚 Cranbourne Secondary College
       - 美国 CloudFlare节点
-      - 美国+密苏里州堪萨斯城Heymman+Servers
       - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国+Xerox
-      - 亚太地区 V2CROSS.COM
+      - 美国 Datability
+      - 日本 东京Amazon数据中心
       - 美国 CloudFlare节点 - 2
-      - 西班牙 V2CROSS.COM
-      - 美国 V2CROSS.COM - 2
       - 美国 CloudFlare节点 - 3
-      - 美国 加利福尼亚州圣何塞PEG TECH - 2
+      - 美国+密苏里州堪萨斯城Heymman+Servers
+      - 美国 V2CROSS.COM
+      - 美国 V2CROSS.COM - 2
+      - 香港 腾讯云
+      - 日本 东京Amazon数据中心 - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 新加坡 腾讯云
-      - 广东省佛山市 移动
-      - 重庆市 移动
-      - 美国 V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 澳大利亚 Cranbourne Secondary College
       - 美国 CloudFlare节点
-      - 美国+密苏里州堪萨斯城Heymman+Servers
       - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国+Xerox
-      - 亚太地区 V2CROSS.COM
+      - 美国 Datability
+      - 日本 东京Amazon数据中心
       - 美国 CloudFlare节点 - 2
-      - 西班牙 V2CROSS.COM
-      - 美国 V2CROSS.COM - 2
       - 美国 CloudFlare节点 - 3
-      - 美国 加利福尼亚州圣何塞PEG TECH - 2
+      - 美国+密苏里州堪萨斯城Heymman+Servers
+      - 美国 V2CROSS.COM
+      - 美国 V2CROSS.COM - 2
+      - 香港 腾讯云
+      - 日本 东京Amazon数据中心 - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
