@@ -1,72 +1,8 @@
 proxies:
-  - name: 美国 CloudFlare节点
+  - name: 美国 加利福尼亚州森尼韦尔市PEG TECH公司
     type: vmess
-    server: aaaa.wxx.gay
-    port: 443
-    uuid: f7b6ba12-f2d4-11ed-b979-000017022008
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /look
-    ws-headers:
-      Host: ''
-    tls: true
-  - name: 重庆市 移动
-    type: vmess
-    server: 36.134.16.190
-    port: 11023
-    uuid: 8c042a38-71c1-1dcb-00df-54880236e0dc
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国 V2CROSS.COM
-    type: vmess
-    server: usa.serverr.store
-    port: 21607
-    uuid: 80b02ea0-7aa2-444e-b7b4-1246a47928b3
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: ''
-    tls: true
-  - name: 日本 东京Linode数据中心
-    type: vmess
-    server: 172.104.64.90
-    port: 443
-    uuid: 927094d3-d678-4763-8591-e240d0bcae87
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /chat
-    ws-headers:
-      Host: ''
-    tls: true
-  - name: 印度 V2CROSS.COM
-    type: vmess
-    server: hktadfvb.114514782.xyz
-    port: 443
-    uuid: 2c9204d5-54bd-4dde-82e0-e9956ce954b5
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /waugfuigvhwoa
-    ws-headers:
-      Host: nl_nat.v50.one
-    tls: true
-  - name: 欧盟 V2CROSS.COM
-    type: vmess
-    server: 45.92.160.186
-    port: 58402
+    server: 142.0.132.38
+    port: 50015
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -75,45 +11,7 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 日本 东京Amazon数据中心
-    type: vmess
-    server: jp01-alt-vm0.entry.srthdw.art
-    port: 21585
-    uuid: 1bc52308-0bd9-30d0-90fd-cef337875d10
-    alterId: 1
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-    tls: true
-  - name: 香港 特别行政区
-    type: vmess
-    server: 202.81.231.150
-    port: 80
-    uuid: 1d1c1d94-6987-4658-a4dc-8821a30fe7e0
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: idnusanet.vpnexecutive.my.id
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: cfcdn.sanfencdn.net
-    port: 443
-    uuid: dd8314cc-3754-416d-9456-0991f2e74753
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /zh-cn
-    ws-headers:
-      Host: us2.sanfencdn.net
-    tls: true
-  - name: 美国 V2CROSS.COM - 2
+  - name: 美国 V2CROSS.COM
     type: vmess
     server: 192.203.230.86
     port: 80
@@ -125,6 +23,32 @@ proxies:
     ws-path: /
     ws-headers:
       Host: us-1.acyun.cf
+  - name: 亚太地区 V2CROSS.COM
+    type: vmess
+    server: 103.177.33.19
+    port: 443
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /path/243535322906
+    ws-headers:
+      Host: 103.177.33.19
+    tls: true
+  - name: 香港 腾讯云
+    type: vmess
+    server: 43.154.76.92
+    port: 48527
+    uuid: 784272d2-bd2d-438a-bbd4-1271bb1f1b0d
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /hk15/getData
+    ws-headers:
+      Host: ''
+    tls: true
   - name: 加拿大 V2CROSS.COM
     type: vmess
     server: 199.212.90.14
@@ -138,99 +62,56 @@ proxies:
     ws-headers:
       Host: Lille.kotick.site
     tls: true
-  - name: 美国 CloudFlare节点 - 3
+  - name: 加拿大+V2CROSS.COM
+    type: trojan
+    server: bgptw3.cnamazon.sbs
+    port: 443?type=tcp&sni=tlsdata.cnamazon.sbs&allowInsecure=1
+    password: a7d5f659-6ad2-4288-b63a-3d42bdf5b122
+  - name: 美国 加利福尼亚州圣何塞PEG TECH
     type: vmess
-    server: cf-lt.sharecentre.online
-    port: 80
-    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
-    alterId: 0
+    server: 142.4.104.195
+    port: 56002
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
     cipher: auto
     udp: true
-    network: ws
-    ws-path: /shirker
-    ws-headers:
-      Host: lv3.sharecentrepro.org
-  - name: 美国 CloudFlare节点 - 4
-    type: vmess
-    server: 172.64.194.13
-    port: 8880
-    uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: lg.trump2023.net
-  - name: 台湾省南投县 中华电信
-    type: vmess
-    server: storage.pshare.live
-    port: 34810
-    uuid: d1ac9bd2-8ae9-473d-b08b-78db9f53ebfb
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /test
-    ws-headers:
-      Host: storage.pshare.live
-    tls: true
+    network: tcp
+    ws-headers: {}
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 CloudFlare节点
-      - 重庆市 移动
+      - 美国 加利福尼亚州森尼韦尔市PEG TECH公司
       - 美国 V2CROSS.COM
-      - 日本 东京Linode数据中心
-      - 印度 V2CROSS.COM
-      - 欧盟 V2CROSS.COM
-      - 日本 东京Amazon数据中心
-      - 香港 特别行政区
-      - 美国 CloudFlare节点 - 2
-      - 美国 V2CROSS.COM - 2
+      - 亚太地区 V2CROSS.COM
+      - 香港 腾讯云
       - 加拿大 V2CROSS.COM
-      - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
-      - 台湾省南投县 中华电信
+      - 加拿大+V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 CloudFlare节点
-      - 重庆市 移动
+      - 美国 加利福尼亚州森尼韦尔市PEG TECH公司
       - 美国 V2CROSS.COM
-      - 日本 东京Linode数据中心
-      - 印度 V2CROSS.COM
-      - 欧盟 V2CROSS.COM
-      - 日本 东京Amazon数据中心
-      - 香港 特别行政区
-      - 美国 CloudFlare节点 - 2
-      - 美国 V2CROSS.COM - 2
+      - 亚太地区 V2CROSS.COM
+      - 香港 腾讯云
       - 加拿大 V2CROSS.COM
-      - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
-      - 台湾省南投县 中华电信
+      - 加拿大+V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 CloudFlare节点
-      - 重庆市 移动
+      - 美国 加利福尼亚州森尼韦尔市PEG TECH公司
       - 美国 V2CROSS.COM
-      - 日本 东京Linode数据中心
-      - 印度 V2CROSS.COM
-      - 欧盟 V2CROSS.COM
-      - 日本 东京Amazon数据中心
-      - 香港 特别行政区
-      - 美国 CloudFlare节点 - 2
-      - 美国 V2CROSS.COM - 2
+      - 亚太地区 V2CROSS.COM
+      - 香港 腾讯云
       - 加拿大 V2CROSS.COM
-      - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
-      - 台湾省南投县 中华电信
+      - 加拿大+V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
