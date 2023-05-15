@@ -1,8 +1,72 @@
 proxies:
-  - name: 美国加利福尼亚州洛杉矶 PetaExpress
+  - name: 美国 CloudFlare节点
     type: vmess
-    server: 198.2.204.246
-    port: 46802
+    server: aaaa.wxx.gay
+    port: 443
+    uuid: f7b6ba12-f2d4-11ed-b979-000017022008
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /look
+    ws-headers:
+      Host: ''
+    tls: true
+  - name: 重庆市 移动
+    type: vmess
+    server: 36.134.16.190
+    port: 11023
+    uuid: 8c042a38-71c1-1dcb-00df-54880236e0dc
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: usa.serverr.store
+    port: 21607
+    uuid: 80b02ea0-7aa2-444e-b7b4-1246a47928b3
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: ''
+    tls: true
+  - name: 日本 东京Linode数据中心
+    type: vmess
+    server: 172.104.64.90
+    port: 443
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /chat
+    ws-headers:
+      Host: ''
+    tls: true
+  - name: 印度 V2CROSS.COM
+    type: vmess
+    server: hktadfvb.114514782.xyz
+    port: 443
+    uuid: 2c9204d5-54bd-4dde-82e0-e9956ce954b5
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /waugfuigvhwoa
+    ws-headers:
+      Host: nl_nat.v50.one
+    tls: true
+  - name: 欧盟 V2CROSS.COM
+    type: vmess
+    server: 45.92.160.186
+    port: 58402
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -11,18 +75,56 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国 CloudFlare节点
+  - name: 日本 东京Amazon数据中心
     type: vmess
-    server: 172.67.247.250
+    server: jp01-alt-vm0.entry.srthdw.art
+    port: 21585
+    uuid: 1bc52308-0bd9-30d0-90fd-cef337875d10
+    alterId: 1
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+    tls: true
+  - name: 香港 特别行政区
+    type: vmess
+    server: 202.81.231.150
     port: 80
-    uuid: 53ae65be-81ee-4766-8a09-da43c44c4d30
+    uuid: 1d1c1d94-6987-4658-a4dc-8821a30fe7e0
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /qwer11
+    ws-path: /
     ws-headers:
-      Host: uyaa.vtcss.top
+      Host: idnusanet.vpnexecutive.my.id
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: cfcdn.sanfencdn.net
+    port: 443
+    uuid: dd8314cc-3754-416d-9456-0991f2e74753
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /zh-cn
+    ws-headers:
+      Host: us2.sanfencdn.net
+    tls: true
+  - name: 美国 V2CROSS.COM - 2
+    type: vmess
+    server: 192.203.230.86
+    port: 80
+    uuid: a442dacf-cbb3-488a-9744-61494ea38630
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: us-1.acyun.cf
   - name: 加拿大 V2CROSS.COM
     type: vmess
     server: 199.212.90.14
@@ -36,109 +138,42 @@ proxies:
     ws-headers:
       Host: Lille.kotick.site
     tls: true
-  - name: 美国 加利福尼亚州圣何塞PEG TECH
+  - name: 美国 CloudFlare节点 - 3
     type: vmess
-    server: 142.4.127.11
-    port: 53013
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 日本 东京Amazon数据中心
-    type: vmess
-    server: jp04-vm0.entry.srthdw.art
-    port: 446
-    uuid: 22acc467-7440-386a-927a-d84be554b37e
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: jp04-vm0.entry.srthdw.art
-  - name: 欧盟 V2CROSS.COM
-    type: vmess
-    server: 45.92.160.186
-    port: 58402
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 香港 BGP.NET CN2数据中心
-    type: vmess
-    server: 202.79.172.78
-    port: 443
-    uuid: d71ae8be-c664-4d25-9909-f9e2b28aa7d9
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /path/243535322906
-    ws-headers:
-      Host: 202.79.172.78
-    tls: true
-  - name: 美国 V2CROSS.COM
-    type: vmess
-    server: cf-cdn.tiktokcloud.top
-    port: 8080
-    uuid: d0ca7a73-1c01-4655-817d-0b64e511bd0e
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /jntm=2048
-    ws-headers:
-      Host: ru.91ip.xyz
-  - name: 美国+Xerox
-    type: trojan
-    server: sg2.cnamazon.sbs
-    port: 443?type=tcp&sni=tlsdata.cnamazon.sbs&allowInsecure=1
-    password: fe455c1d-33ab-439d-acdb-449bba167fb1
-  - name: 美国 V2CROSS.COM - 2
-    type: vmess
-    server: 192.203.230.86
+    server: cf-lt.sharecentre.online
     port: 80
-    uuid: a442dacf-cbb3-488a-9744-61494ea38630
+    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /shirker
+    ws-headers:
+      Host: lv3.sharecentrepro.org
+  - name: 美国 CloudFlare节点 - 4
+    type: vmess
+    server: 172.64.194.13
+    port: 8880
+    uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958
     alterId: 0
     cipher: auto
     udp: true
     network: ws
     ws-path: /
     ws-headers:
-      Host: us-1.acyun.cf
-  - name: 亚太地区 V2CROSS.COM
+      Host: lg.trump2023.net
+  - name: 台湾省南投县 中华电信
     type: vmess
-    server: natanet.nirezzvpn.my.id
-    port: 443
-    uuid: e501c778-8baf-4747-ad61-f75017b6f845
+    server: storage.pshare.live
+    port: 34810
+    uuid: d1ac9bd2-8ae9-473d-b08b-78db9f53ebfb
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /vmess
+    ws-path: /test
     ws-headers:
-      Host: natanet.nirezzvpn.my.id
-    tls: true
-  - name: 美国 V2CROSS.COM - 3
-    type: vmess
-    server: usa.serverr.store
-    port: 21607
-    uuid: 80b02ea0-7aa2-444e-b7b4-1246a47928b3
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: ''
+      Host: storage.pshare.live
     tls: true
 proxy-groups:
   - name: Free-servers
@@ -146,50 +181,56 @@ proxy-groups:
     proxies:
       - 自动选择
       - 故障转移
-      - 美国加利福尼亚州洛杉矶 PetaExpress
       - 美国 CloudFlare节点
-      - 加拿大 V2CROSS.COM
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 日本 东京Amazon数据中心
-      - 欧盟 V2CROSS.COM
-      - 香港 BGP.NET CN2数据中心
+      - 重庆市 移动
       - 美国 V2CROSS.COM
-      - 美国+Xerox
+      - 日本 东京Linode数据中心
+      - 印度 V2CROSS.COM
+      - 欧盟 V2CROSS.COM
+      - 日本 东京Amazon数据中心
+      - 香港 特别行政区
+      - 美国 CloudFlare节点 - 2
       - 美国 V2CROSS.COM - 2
-      - 亚太地区 V2CROSS.COM
-      - 美国 V2CROSS.COM - 3
+      - 加拿大 V2CROSS.COM
+      - 美国 CloudFlare节点 - 3
+      - 美国 CloudFlare节点 - 4
+      - 台湾省南投县 中华电信
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国加利福尼亚州洛杉矶 PetaExpress
       - 美国 CloudFlare节点
-      - 加拿大 V2CROSS.COM
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 日本 东京Amazon数据中心
-      - 欧盟 V2CROSS.COM
-      - 香港 BGP.NET CN2数据中心
+      - 重庆市 移动
       - 美国 V2CROSS.COM
-      - 美国+Xerox
+      - 日本 东京Linode数据中心
+      - 印度 V2CROSS.COM
+      - 欧盟 V2CROSS.COM
+      - 日本 东京Amazon数据中心
+      - 香港 特别行政区
+      - 美国 CloudFlare节点 - 2
       - 美国 V2CROSS.COM - 2
-      - 亚太地区 V2CROSS.COM
-      - 美国 V2CROSS.COM - 3
+      - 加拿大 V2CROSS.COM
+      - 美国 CloudFlare节点 - 3
+      - 美国 CloudFlare节点 - 4
+      - 台湾省南投县 中华电信
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国加利福尼亚州洛杉矶 PetaExpress
       - 美国 CloudFlare节点
-      - 加拿大 V2CROSS.COM
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 日本 东京Amazon数据中心
-      - 欧盟 V2CROSS.COM
-      - 香港 BGP.NET CN2数据中心
+      - 重庆市 移动
       - 美国 V2CROSS.COM
-      - 美国+Xerox
+      - 日本 东京Linode数据中心
+      - 印度 V2CROSS.COM
+      - 欧盟 V2CROSS.COM
+      - 日本 东京Amazon数据中心
+      - 香港 特别行政区
+      - 美国 CloudFlare节点 - 2
       - 美国 V2CROSS.COM - 2
-      - 亚太地区 V2CROSS.COM
-      - 美国 V2CROSS.COM - 3
+      - 加拿大 V2CROSS.COM
+      - 美国 CloudFlare节点 - 3
+      - 美国 CloudFlare节点 - 4
+      - 台湾省南投县 中华电信
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
