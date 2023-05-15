@@ -1,70 +1,19 @@
 proxies:
-  - name: 美国 CloudFlare节点
+  - name: 美国加利福尼亚州洛杉矶 PetaExpress
     type: vmess
-    server: tech.noaries.de
-    port: 80
-    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
-    alterId: 0
+    server: 198.2.204.246
+    port: 46802
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
     cipher: auto
     udp: true
-    network: ws
-    ws-path: /shirker
-    ws-headers:
-      Host: nl.sharecentrepro.com
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: 172.67.94.59
-    port: 443
-    uuid: 9588cb0f-5102-4e66-d5fb-f96cba9acdda
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /qazxcv00
-    ws-headers:
-      Host: tou.vtcss.top
-    tls: true
-  - name: 澳大利亚 Pascal Vale Girls Secondary College
-    type: vmess
-    server: hktadfvb.114514782.xyz
-    port: 443
-    uuid: 2c9204d5-54bd-4dde-82e0-e9956ce954b5
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /waugfuigvhwoa
-    ws-headers:
-      Host: nl_nat.v50.one
-    tls: true
-  - name: 美国 CloudFlare节点 - 3
-    type: vmess
-    server: tech.noaries.de
-    port: 80
-    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /shirker
-    ws-headers:
-      Host: nl.sharecentrepro.com
-  - name: 美国 CloudFlare节点 - 4
-    type: vmess
-    server: aaaa.wxx.gay
-    port: 443
-    uuid: f7b6ba12-f2d4-11ed-b979-000017022008
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /look
+    network: tcp
+    ws-path: /
     ws-headers:
       Host: ''
-    tls: true
-  - name: 美国加利福尼亚州圣何塞 Cloudflare节点
+  - name: 美国 CloudFlare节点
     type: vmess
-    server: 103.21.244.37
+    server: 172.67.247.250
     port: 80
     uuid: 53ae65be-81ee-4766-8a09-da43c44c4d30
     alterId: 0
@@ -74,181 +23,173 @@ proxies:
     ws-path: /qwer11
     ws-headers:
       Host: uyaa.vtcss.top
-  - name: 美国+加利福尼亚州洛杉矶Level3通信(DIA)
+  - name: 加拿大 V2CROSS.COM
+    type: vmess
+    server: 199.212.90.14
+    port: 443
+    uuid: 6147F065-9AC0-4081-A5A3-A2EB4EBB8958
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /speedtest
+    ws-headers:
+      Host: Lille.kotick.site
+    tls: true
+  - name: 美国 加利福尼亚州圣何塞PEG TECH
+    type: vmess
+    server: 142.4.127.11
+    port: 53013
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 日本 东京Amazon数据中心
+    type: vmess
+    server: jp04-vm0.entry.srthdw.art
+    port: 446
+    uuid: 22acc467-7440-386a-927a-d84be554b37e
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: jp04-vm0.entry.srthdw.art
+  - name: 欧盟 V2CROSS.COM
+    type: vmess
+    server: 45.92.160.186
+    port: 58402
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 香港 BGP.NET CN2数据中心
+    type: vmess
+    server: 202.79.172.78
+    port: 443
+    uuid: d71ae8be-c664-4d25-9909-f9e2b28aa7d9
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /path/243535322906
+    ws-headers:
+      Host: 202.79.172.78
+    tls: true
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: cf-cdn.tiktokcloud.top
+    port: 8080
+    uuid: d0ca7a73-1c01-4655-817d-0b64e511bd0e
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /jntm=2048
+    ws-headers:
+      Host: ru.91ip.xyz
+  - name: 美国+Xerox
     type: trojan
-    server: sg.stablize.top
-    port: '443'
-    password: 01f34a05-ab03-469e-b8ec-86a6976354fa
-  - name: 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+    server: sg2.cnamazon.sbs
+    port: 443?type=tcp&sni=tlsdata.cnamazon.sbs&allowInsecure=1
+    password: fe455c1d-33ab-439d-acdb-449bba167fb1
+  - name: 美国 V2CROSS.COM - 2
     type: vmess
-    server: 23.224.14.142
-    port: 55332
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /shirker
-    ws-headers:
-      Host: ''
-  - name: 美国 CloudFlare节点 - 5
-    type: vmess
-    server: 172.67.70.11
-    port: 8880
-    uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: lg.trump2023.net
-  - name: 美国 CloudFlare节点 - 6
-    type: vmess
-    server: 141.101.114.2
+    server: 192.203.230.86
     port: 80
-    uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a
+    uuid: a442dacf-cbb3-488a-9744-61494ea38630
     alterId: 0
     cipher: auto
     udp: true
     network: ws
     ws-path: /
     ws-headers:
-      Host: lg.v2ray20.xyz
-  - name: 美国 Datability
+      Host: us-1.acyun.cf
+  - name: 亚太地区 V2CROSS.COM
     type: vmess
-    server: 140.99.59.228
-    port: 55512
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
+    server: natanet.nirezzvpn.my.id
+    port: 443
+    uuid: e501c778-8baf-4747-ad61-f75017b6f845
+    alterId: 0
     cipher: auto
     udp: true
-    network: tcp
+    network: ws
+    ws-path: /vmess
+    ws-headers:
+      Host: natanet.nirezzvpn.my.id
+    tls: true
+  - name: 美国 V2CROSS.COM - 3
+    type: vmess
+    server: usa.serverr.store
+    port: 21607
+    uuid: 80b02ea0-7aa2-444e-b7b4-1246a47928b3
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 丹麦 V2CROSS.COM
-    type: vmess
-    server: 185.162.228.229
-    port: 8880
-    uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: lg.trump2023.net
-  - name: 广东省佛山市 移动
-    type: vmess
-    server: 8.v2-ray.cyou
-    port: 23608
-    uuid: 0dd19d20-ec86-3680-b256-87237bafa89e
-    alterId: 2
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: 8.v2-ray.cyou
-  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
-    type: vmess
-    server: 192.74.242.138
-    port: 44667
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国 CloudFlare节点 - 7
-    type: vmess
-    server: cf-lt.sharecentre.online
-    port: 8080
-    uuid: d1fca18b-00ce-4024-8cc8-4b49a4dd5e52
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /api/v3/download.getFile
-    ws-headers:
-      Host: ssrsub.v03.ssrsub.com
-  - name: 中国 阿里云
-    type: vmess
-    server: cdncf.scyu.app
-    port: 8080
-    uuid: d1fca18b-00ce-4024-8cc8-4b49a4dd5e52
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /api/v3/download.getFile
-    ws-headers:
-      Host: ssrsub.v02.ssrsub.com
+    tls: true
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
+      - 美国加利福尼亚州洛杉矶 PetaExpress
       - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 澳大利亚 Pascal Vale Girls Secondary College
-      - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
-      - 美国加利福尼亚州圣何塞 Cloudflare节点
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
-      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
-      - 美国 CloudFlare节点 - 5
-      - 美国 CloudFlare节点 - 6
-      - 美国 Datability
-      - 丹麦 V2CROSS.COM
-      - 广东省佛山市 移动
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 美国 CloudFlare节点 - 7
-      - 中国 阿里云
+      - 加拿大 V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 日本 东京Amazon数据中心
+      - 欧盟 V2CROSS.COM
+      - 香港 BGP.NET CN2数据中心
+      - 美国 V2CROSS.COM
+      - 美国+Xerox
+      - 美国 V2CROSS.COM - 2
+      - 亚太地区 V2CROSS.COM
+      - 美国 V2CROSS.COM - 3
   - name: 自动选择
     type: url-test
     proxies:
+      - 美国加利福尼亚州洛杉矶 PetaExpress
       - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 澳大利亚 Pascal Vale Girls Secondary College
-      - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
-      - 美国加利福尼亚州圣何塞 Cloudflare节点
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
-      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
-      - 美国 CloudFlare节点 - 5
-      - 美国 CloudFlare节点 - 6
-      - 美国 Datability
-      - 丹麦 V2CROSS.COM
-      - 广东省佛山市 移动
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 美国 CloudFlare节点 - 7
-      - 中国 阿里云
+      - 加拿大 V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 日本 东京Amazon数据中心
+      - 欧盟 V2CROSS.COM
+      - 香港 BGP.NET CN2数据中心
+      - 美国 V2CROSS.COM
+      - 美国+Xerox
+      - 美国 V2CROSS.COM - 2
+      - 亚太地区 V2CROSS.COM
+      - 美国 V2CROSS.COM - 3
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
+      - 美国加利福尼亚州洛杉矶 PetaExpress
       - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 澳大利亚 Pascal Vale Girls Secondary College
-      - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
-      - 美国加利福尼亚州圣何塞 Cloudflare节点
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
-      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
-      - 美国 CloudFlare节点 - 5
-      - 美国 CloudFlare节点 - 6
-      - 美国 Datability
-      - 丹麦 V2CROSS.COM
-      - 广东省佛山市 移动
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 美国 CloudFlare节点 - 7
-      - 中国 阿里云
+      - 加拿大 V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 日本 东京Amazon数据中心
+      - 欧盟 V2CROSS.COM
+      - 香港 BGP.NET CN2数据中心
+      - 美国 V2CROSS.COM
+      - 美国+Xerox
+      - 美国 V2CROSS.COM - 2
+      - 亚太地区 V2CROSS.COM
+      - 美国 V2CROSS.COM - 3
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
