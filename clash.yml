@@ -1,4 +1,91 @@
 proxies:
+  - name: 日本 东京Amazon数据中心
+    type: vmess
+    server: jp03-alt-vm0.entry.srthdw.art
+    port: 21585
+    uuid: 1bc52308-0bd9-30d0-90fd-cef337875d10
+    alterId: 1
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+    tls: true
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: 104.17.200.168
+    port: 443
+    uuid: 8e3075a0-f0b1-11ed-b634-205c6d5f5d78
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /53nij47x
+    ws-headers:
+      Host: nl.0rd.net
+    tls: true
+  - name: 伊朗 V2CROSS.COM
+    type: vmess
+    server: de63.thugiping.cloud
+    port: 443
+    uuid: c9a22360-3f66-48c8-89ab-13799b05a730
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+    tls: true
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: kamnaf.ml
+    port: 2095
+    uuid: 1b7594df-1a43-4961-f3a9-741f8b8bee48
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 法国 V2CROSS.COM
+    type: vmess
+    server: 51.89.74.241
+    port: 51102
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 重庆市 移动
+    type: vmess
+    server: 36.134.16.190
+    port: 11023
+    uuid: 8c042a38-71c1-1dcb-00df-54880236e0dc
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 加利福尼亚州圣何塞PEG TECH
+    type: vmess
+    server: 142.4.112.18
+    port: 51091
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
   - name: 美国 V2CROSS.COM
     type: vmess
     server: 192.203.230.6
@@ -12,128 +99,75 @@ proxies:
     ws-headers:
       Host: eu3.glucy.top
     tls: true
-  - name: 美国加利福尼亚州圣何塞 Cloudflare节点
+  - name: 瑞典 Oracle Corporation
     type: vmess
-    server: 103.21.244.37
+    server: opc.jp.quick-connect.buzz
     port: 80
-    uuid: 53ae65be-81ee-4766-8a09-da43c44c4d30
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /qwer11
-    ws-headers:
-      Host: uyaa.vtcss.top
-  - name: 美国 V2CROSS.COM - 2
-    type: vmess
-    server: form.tajsub.com
-    port: 2086
-    uuid: 93a3fd23-96df-49df-80e9-854fe154bbbf
+    uuid: 580dd3ed-d79a-46a7-a623-a5be28f7a2da
     alterId: 0
     cipher: auto
     udp: true
     network: ws
     ws-path: /
     ws-headers:
-      Host: form.tajsub.com
-  - name: 法国 V2CROSS.COM
+      Host: dm.toutiao.com
+  - name: 新加坡 腾讯云
     type: vmess
-    server: 51.89.74.241
-    port: 51102
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    server: 43.156.131.164
+    port: 43860
+    uuid: be3fdec2-86e1-4d51-969b-704b1efc3158
     alterId: 64
     cipher: auto
     udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国加利福尼亚州洛杉矶 CeRaNetworks
-    type: vmess
-    server: 23.225.117.37
-    port: 48829
-    uuid: bb25859e-f6da-4101-989f-b4dd67a22682
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: 172.67.247.250
-    port: 80
-    uuid: 53ae65be-81ee-4766-8a09-da43c44c4d30
-    alterId: 0
-    cipher: auto
-    udp: true
     network: ws
-    ws-path: /qwer11
-    ws-headers:
-      Host: uyaa.vtcss.top
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: cf-lt.sharecentre.online
-    port: 80
-    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /shirker
-    ws-headers:
-      Host: uk1.scproxy.top
-  - name: 日本 东京Amazon数据中心
-    type: vmess
-    server: jp05-vm0.entry.srthdw.art
-    port: 30591
-    uuid: 22acc467-7440-386a-927a-d84be554b37e
-    alterId: 1
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
+    ws-path: /sg2/getData
     ws-headers:
       Host: ''
+    tls: true
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 V2CROSS.COM
-      - 美国加利福尼亚州圣何塞 Cloudflare节点
-      - 美国 V2CROSS.COM - 2
-      - 法国 V2CROSS.COM
-      - 美国加利福尼亚州洛杉矶 CeRaNetworks
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
       - 日本 东京Amazon数据中心
+      - 美国 CloudFlare节点
+      - 伊朗 V2CROSS.COM
+      - 美国 CloudFlare节点 - 2
+      - 法国 V2CROSS.COM
+      - 重庆市 移动
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国 V2CROSS.COM
+      - 瑞典 Oracle Corporation
+      - 新加坡 腾讯云
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 V2CROSS.COM
-      - 美国加利福尼亚州圣何塞 Cloudflare节点
-      - 美国 V2CROSS.COM - 2
-      - 法国 V2CROSS.COM
-      - 美国加利福尼亚州洛杉矶 CeRaNetworks
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
       - 日本 东京Amazon数据中心
+      - 美国 CloudFlare节点
+      - 伊朗 V2CROSS.COM
+      - 美国 CloudFlare节点 - 2
+      - 法国 V2CROSS.COM
+      - 重庆市 移动
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国 V2CROSS.COM
+      - 瑞典 Oracle Corporation
+      - 新加坡 腾讯云
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 V2CROSS.COM
-      - 美国加利福尼亚州圣何塞 Cloudflare节点
-      - 美国 V2CROSS.COM - 2
-      - 法国 V2CROSS.COM
-      - 美国加利福尼亚州洛杉矶 CeRaNetworks
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
       - 日本 东京Amazon数据中心
+      - 美国 CloudFlare节点
+      - 伊朗 V2CROSS.COM
+      - 美国 CloudFlare节点 - 2
+      - 法国 V2CROSS.COM
+      - 重庆市 移动
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国 V2CROSS.COM
+      - 瑞典 Oracle Corporation
+      - 新加坡 腾讯云
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
