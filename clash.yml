@@ -1,105 +1,18 @@
 proxies:
-  - name: 香港 特别行政区
-    type: vmess
-    server: 202.81.231.150
-    port: 80
-    uuid: 1d1c1d94-6987-4658-a4dc-8821a30fe7e0
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: idnusanet.vpnexecutive.my.id
   - name: 美国 V2CROSS.COM
     type: vmess
-    server: 137.175.1.7
-    port: 53403
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国+加利福尼亚州洛杉矶Level3通信(DIA)
-    type: trojan
-    server: sg.stablize.top
-    port: '443'
-    password: 01f34a05-ab03-469e-b8ec-86a6976354fa
-  - name: 日本+V2CROSS.COM
-    type: trojan
-    server: awsjp1-data.amazon-azure.com
-    port: 443?type=tcp&security=tls&sni=data.amazon-azure.com
-    password: 4aeda200-44c9-4168-8f2a-a00a72176d35
-  - name: 美国+Xerox
-    type: trojan
-    server: awssg16-data.amazon-azure.com
-    port: 443?type=tcp&sni=data.amazon-azure.com&allowInsecure=1
-    password: 4aeda200-44c9-4168-8f2a-a00a72176d35
-  - name: 美国 加利福尼亚州洛杉矶PetaExpress
-    type: vmess
-    server: 107.148.195.26
-    port: 42014
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
-    type: vmess
-    server: 23.224.15.180
-    port: 50002
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: gzzz.8bqyato.ml
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: 141.101.114.2
-    port: 80
-    uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: lg.v2ray20.xyz
-  - name: 美国 华盛顿Cogent通信公司
-    type: vmess
-    server: 38.63.17.164
-    port: 50702
+    server: 137.175.41.196
+    port: 50004
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
     udp: true
     network: tcp
     ws-headers: {}
-  - name: 美国 CloudFlare节点 - 2
+  - name: 美国 华盛顿Cogent通信公司
     type: vmess
-    server: 172.64.195.14
-    port: 80
-    uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: lg.v2ray20.xyz
-  - name: 美国 Datability
-    type: vmess
-    server: 140.99.149.45
-    port: 53082
+    server: 38.63.17.179
+    port: 50702
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -109,6 +22,121 @@ proxies:
     ws-headers:
       Host: ''
   - name: 美国 V2CROSS.COM - 2
+    type: vmess
+    server: 137.175.52.17
+    port: 33002
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: dynamic-sg1b.obfs.xyz
+  - name: 丹麦 V2CROSS.COM
+    type: vmess
+    server: 185.162.228.229
+    port: 8880
+    uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: lg.trump2023.net
+  - name: 美国+Xerox
+    type: trojan
+    server: awssg19-data.amazon-azure.com
+    port: 443?type=tcp&security=tls&sni=data.amazon-azure.com
+    password: 794d739c-89a0-444c-b2e7-acce12af3042
+  - name: 美国 Datability
+    type: vmess
+    server: 140.99.59.228
+    port: 55512
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: tech.noaries.de
+    port: 80
+    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /shirker
+    ws-headers:
+      Host: nl.sharecentrepro.com
+  - name: 美国 Datability - 2
+    type: vmess
+    server: 140.99.59.254
+    port: 55512
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 加利福尼亚州圣何塞PEG TECH
+    type: vmess
+    server: 142.4.104.195
+    port: 56002
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-headers: {}
+  - name: 美国+V2CROSS.COM
+    type: trojan
+    server: 152.70.74.66
+    port: 443?security=tls&type=tcp&headerType=none
+    password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
+  - name: 日本+V2CROSS.COM
+    type: trojan
+    server: awshk18-data.amazon-azure.com
+    port: '443'
+    password: 4062b33c-be7a-4b69-94f5-4c738a4def8f
+  - name: 香港 腾讯云
+    type: vmess
+    server: 43.154.76.92
+    port: 48527
+    uuid: 784272d2-bd2d-438a-bbd4-1271bb1f1b0d
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /hk15/getData
+    ws-headers:
+      Host: ''
+    tls: true
+  - name: 伊朗 V2CROSS.COM
+    type: vmess
+    server: 88.135.42.250
+    port: 27337
+    uuid: eb737b33-b747-42e8-c6ba-75a9e00ad1fe
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /wss27337
+    ws-headers:
+      Host: ''
+  - name: 美国+Xerox - 2
+    type: trojan
+    server: sg9.microsoft-orgwly.vip
+    port: 443?type=tcp&allowInsecure=1
+    password: d7ad2dba-4008-4b25-a4b6-6c8ebb99de46
+  - name: 美国 V2CROSS.COM - 3
     type: vmess
     server: 137.175.69.228
     port: 44920
@@ -120,41 +148,6 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国 CloudFlare节点 - 3
-    type: vmess
-    server: 172.67.70.13
-    port: 80
-    uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: lg.v2ray20.xyz
-  - name: 美国 CloudFlare节点 - 4
-    type: vmess
-    server: new8.huvicloud.com
-    port: 443
-    uuid: a11ca760-9ef9-4a63-95c9-4c5c32d56251
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: new8.huvicloud.com
-    tls: true
-  - name: 美国 V2CROSS.COM - 3
-    type: vmess
-    server: 137.175.41.196
-    port: 50004
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-headers: {}
   - name: 美国 华盛顿Cogent通信公司 - 2
     type: vmess
     server: 38.63.17.164
@@ -167,22 +160,10 @@ proxies:
     ws-path: ''
     ws-headers:
       Host: ''
-  - name: 美国 华盛顿州西雅图市亚马逊(Amazon)公司数据中心
-    type: vmess
-    server: jp02-vm0.entry.srthdw.art
-    port: 444
-    uuid: 21c670ff-c739-3072-9286-7d2a1d300fcb
-    alterId: 1
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: jp02-vm0.entry.srthdw.art
   - name: 美国加利福尼亚州洛杉矶 PetaExpress
     type: vmess
-    server: 198.2.203.58
-    port: 44502
+    server: 198.2.204.246
+    port: 46802
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -191,10 +172,10 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国 Datability - 2
+  - name: 美国 加利福尼亚州洛杉矶PetaExpress
     type: vmess
-    server: 140.99.59.230
-    port: 55512
+    server: 107.148.195.26
+    port: 42014
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -203,26 +184,11 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国+Xerox - 2
-    type: trojan
-    server: sg9.microsoft-orgwly.vip
-    port: 443?type=tcp&allowInsecure=1
-    password: d7ad2dba-4008-4b25-a4b6-6c8ebb99de46
-  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
+  - name: 美国 加利福尼亚州洛杉矶MULTACOM数据中心
     type: vmess
-    server: 192.74.228.174
-    port: 42857
-    uuid: 051b844f-efe3-4847-92aa-66b5de0b6d4e
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-headers: {}
-  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心 - 2
-    type: vmess
-    server: 192.74.234.84
-    port: 51302
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    server: 173.82.55.92
+    port: 34412
+    uuid: 82620a6e-dbfd-4d57-8a59-9004a4bb9e92
     alterId: 64
     cipher: auto
     udp: true
@@ -236,80 +202,71 @@ proxy-groups:
     proxies:
       - 自动选择
       - 故障转移
-      - 香港 特别行政区
       - 美国 V2CROSS.COM
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
-      - 日本+V2CROSS.COM
-      - 美国+Xerox
-      - 美国 加利福尼亚州洛杉矶PetaExpress
-      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
-      - 美国 CloudFlare节点
       - 美国 华盛顿Cogent通信公司
-      - 美国 CloudFlare节点 - 2
-      - 美国 Datability
       - 美国 V2CROSS.COM - 2
-      - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
+      - 丹麦 V2CROSS.COM
+      - 美国+Xerox
+      - 美国 Datability
+      - 美国 CloudFlare节点
+      - 美国 Datability - 2
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国+V2CROSS.COM
+      - 日本+V2CROSS.COM
+      - 香港 腾讯云
+      - 伊朗 V2CROSS.COM
+      - 美国+Xerox - 2
       - 美国 V2CROSS.COM - 3
       - 美国 华盛顿Cogent通信公司 - 2
-      - 美国 华盛顿州西雅图市亚马逊(Amazon)公司数据中心
       - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 美国 Datability - 2
-      - 美国+Xerox - 2
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心 - 2
+      - 美国 加利福尼亚州洛杉矶PetaExpress
+      - 美国 加利福尼亚州洛杉矶MULTACOM数据中心
   - name: 自动选择
     type: url-test
     proxies:
-      - 香港 特别行政区
       - 美国 V2CROSS.COM
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
-      - 日本+V2CROSS.COM
-      - 美国+Xerox
-      - 美国 加利福尼亚州洛杉矶PetaExpress
-      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
-      - 美国 CloudFlare节点
       - 美国 华盛顿Cogent通信公司
-      - 美国 CloudFlare节点 - 2
-      - 美国 Datability
       - 美国 V2CROSS.COM - 2
-      - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
+      - 丹麦 V2CROSS.COM
+      - 美国+Xerox
+      - 美国 Datability
+      - 美国 CloudFlare节点
+      - 美国 Datability - 2
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国+V2CROSS.COM
+      - 日本+V2CROSS.COM
+      - 香港 腾讯云
+      - 伊朗 V2CROSS.COM
+      - 美国+Xerox - 2
       - 美国 V2CROSS.COM - 3
       - 美国 华盛顿Cogent通信公司 - 2
-      - 美国 华盛顿州西雅图市亚马逊(Amazon)公司数据中心
       - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 美国 Datability - 2
-      - 美国+Xerox - 2
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心 - 2
+      - 美国 加利福尼亚州洛杉矶PetaExpress
+      - 美国 加利福尼亚州洛杉矶MULTACOM数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 香港 特别行政区
       - 美国 V2CROSS.COM
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
-      - 日本+V2CROSS.COM
-      - 美国+Xerox
-      - 美国 加利福尼亚州洛杉矶PetaExpress
-      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
-      - 美国 CloudFlare节点
       - 美国 华盛顿Cogent通信公司
-      - 美国 CloudFlare节点 - 2
-      - 美国 Datability
       - 美国 V2CROSS.COM - 2
-      - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
+      - 丹麦 V2CROSS.COM
+      - 美国+Xerox
+      - 美国 Datability
+      - 美国 CloudFlare节点
+      - 美国 Datability - 2
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国+V2CROSS.COM
+      - 日本+V2CROSS.COM
+      - 香港 腾讯云
+      - 伊朗 V2CROSS.COM
+      - 美国+Xerox - 2
       - 美国 V2CROSS.COM - 3
       - 美国 华盛顿Cogent通信公司 - 2
-      - 美国 华盛顿州西雅图市亚马逊(Amazon)公司数据中心
       - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 美国 Datability - 2
-      - 美国+Xerox - 2
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心 - 2
+      - 美国 加利福尼亚州洛杉矶PetaExpress
+      - 美国 加利福尼亚州洛杉矶MULTACOM数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
