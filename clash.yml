@@ -1,96 +1,139 @@
 proxies:
-  - name: 重庆市 移动
+  - name: 美国 V2CROSS.COM
     type: vmess
-    server: 36.134.16.190
-    port: 11023
-    uuid: 8c042a38-71c1-1dcb-00df-54880236e0dc
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 伊朗 V2CROSS.COM
-    type: vmess
-    server: de63.thugiping.cloud
+    server: 192.203.230.6
     port: 443
-    uuid: c9a22360-3f66-48c8-89ab-13799b05a730
+    uuid: a875b3de-131d-4425-f0bf-b56e30d5b571
     alterId: 0
     cipher: auto
     udp: true
-    network: tcp
-    ws-path: /
+    network: ws
+    ws-path: /123
     ws-headers:
-      Host: ''
+      Host: eu3.glucy.top
     tls: true
-  - name: 日本 东京阿里云
+  - name: 美国加利福尼亚州圣何塞 Cloudflare节点
     type: vmess
-    server: cdn.chigua.tk
+    server: 103.21.244.37
     port: 80
-    uuid: 01925169-e2ff-483c-89f2-6e778dcdd450
+    uuid: 53ae65be-81ee-4766-8a09-da43c44c4d30
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /qwer11
+    ws-headers:
+      Host: uyaa.vtcss.top
+  - name: 美国 V2CROSS.COM - 2
+    type: vmess
+    server: form.tajsub.com
+    port: 2086
+    uuid: 93a3fd23-96df-49df-80e9-854fe154bbbf
     alterId: 0
     cipher: auto
     udp: true
     network: ws
     ws-path: /
     ws-headers:
-      Host: us-1.acyun.cf
-  - name: 香港 BGP.NET CN2数据中心
+      Host: form.tajsub.com
+  - name: 法国 V2CROSS.COM
     type: vmess
-    server: 202.79.172.78
-    port: 443
-    uuid: d71ae8be-c664-4d25-9909-f9e2b28aa7d9
+    server: 51.89.74.241
+    port: 51102
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
     udp: true
-    network: ws
-    ws-path: /path/243535322906
-    ws-headers:
-      Host: 202.79.172.78
-    tls: true
-  - name: 香港 BGP.NET CN2数据中心 - 2
-    type: vmess
-    server: 202.79.171.155
-    port: 443
-    uuid: 7f37da61-c734-41b4-a8c2-eccfd6ca48f0
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /path/080712342310
+    network: tcp
+    ws-path: /
     ws-headers:
       Host: ''
-    tls: true
+  - name: 美国加利福尼亚州洛杉矶 CeRaNetworks
+    type: vmess
+    server: 23.225.117.37
+    port: 48829
+    uuid: bb25859e-f6da-4101-989f-b4dd67a22682
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: 172.67.247.250
+    port: 80
+    uuid: 53ae65be-81ee-4766-8a09-da43c44c4d30
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /qwer11
+    ws-headers:
+      Host: uyaa.vtcss.top
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: cf-lt.sharecentre.online
+    port: 80
+    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /shirker
+    ws-headers:
+      Host: uk1.scproxy.top
+  - name: 日本 东京Amazon数据中心
+    type: vmess
+    server: jp05-vm0.entry.srthdw.art
+    port: 30591
+    uuid: 22acc467-7440-386a-927a-d84be554b37e
+    alterId: 1
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 重庆市 移动
-      - 伊朗 V2CROSS.COM
-      - 日本 东京阿里云
-      - 香港 BGP.NET CN2数据中心
-      - 香港 BGP.NET CN2数据中心 - 2
+      - 美国 V2CROSS.COM
+      - 美国加利福尼亚州圣何塞 Cloudflare节点
+      - 美国 V2CROSS.COM - 2
+      - 法国 V2CROSS.COM
+      - 美国加利福尼亚州洛杉矶 CeRaNetworks
+      - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 - 2
+      - 日本 东京Amazon数据中心
   - name: 自动选择
     type: url-test
     proxies:
-      - 重庆市 移动
-      - 伊朗 V2CROSS.COM
-      - 日本 东京阿里云
-      - 香港 BGP.NET CN2数据中心
-      - 香港 BGP.NET CN2数据中心 - 2
+      - 美国 V2CROSS.COM
+      - 美国加利福尼亚州圣何塞 Cloudflare节点
+      - 美国 V2CROSS.COM - 2
+      - 法国 V2CROSS.COM
+      - 美国加利福尼亚州洛杉矶 CeRaNetworks
+      - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 - 2
+      - 日本 东京Amazon数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 重庆市 移动
-      - 伊朗 V2CROSS.COM
-      - 日本 东京阿里云
-      - 香港 BGP.NET CN2数据中心
-      - 香港 BGP.NET CN2数据中心 - 2
+      - 美国 V2CROSS.COM
+      - 美国加利福尼亚州圣何塞 Cloudflare节点
+      - 美国 V2CROSS.COM - 2
+      - 法国 V2CROSS.COM
+      - 美国加利福尼亚州洛杉矶 CeRaNetworks
+      - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 - 2
+      - 日本 东京Amazon数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
