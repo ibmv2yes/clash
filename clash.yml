@@ -1,53 +1,6 @@
 proxies:
   - name: 美国 CloudFlare节点
     type: vmess
-    server: 172.67.247.250
-    port: 80
-    uuid: 53ae65be-81ee-4766-8a09-da43c44c4d30
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /qwer11
-    ws-headers:
-      Host: uyaa.vtcss.top
-  - name: 美国+惠普HP
-    type: trojan
-    server: awshk15-data.amazon-azure.com
-    port: 443?peer=data.amazon-azure.com&tfo=1
-    password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
-  - name: 美国+惠普HP - 2
-    type: trojan
-    server: awshk13-data.amazon-azure.com
-    port: 443?peer=data.amazon-azure.com&tfo=1
-    password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: 172.67.72.194
-    port: 80
-    uuid: 074c70d1-7479-4781-cf6d-e76515d4b0b3
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: vc.scyu.app
-  - name: 美国 CloudFlare公司CDN节点(shopify)
-    type: vmess
-    server: 23.227.39.1
-    port: 443
-    uuid: ef36c4b6-5160-40ad-bb85-bee68b5ec931
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /v2raydns
-    ws-headers:
-      Host: cadns.mainssh.xyz
-    tls: true
-  - name: 美国 CloudFlare节点 - 3
-    type: vmess
     server: cf-lt.sharecentre.online
     port: 8080
     uuid: d1fca18b-00ce-4024-8cc8-4b49a4dd5e52
@@ -58,6 +11,86 @@ proxies:
     ws-path: /api/v3/download.getFile
     ws-headers:
       Host: ssrsub.v03.ssrsub.com
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: tech.noaries.de
+    port: 80
+    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /shirker
+    ws-headers:
+      Host: nl.sharecentrepro.com
+  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
+    type: vmess
+    server: 192.74.234.84
+    port: 51302
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国+惠普HP
+    type: trojan
+    server: awshk8-data.amazon-azure.com
+    port: 443?peer=data.amazon-azure.com&tfo=1
+    password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
+  - name: 重庆市 移动
+    type: vmess
+    server: 36.134.16.171
+    port: 11023
+    uuid: 8c042a38-71c1-1dcb-00df-54880236e0dc
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: tech.noaries.de
+    port: 80
+    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /shirker
+    ws-headers:
+      Host: nl.sharecentrepro.com
+  - name: 日本 东京PEG TECH
+    type: vmess
+    server: 104.233.191.182
+    port: 443
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /path/031730091420
+    ws-headers: {}
+    tls: true
+  - name: 俄罗斯 V2CROSS.COM
+    type: vmess
+    server: ru1.elkcloud.gq
+    port: 80
+    uuid: 330516f2-45c3-3d8b-bd7c-ae1b530377d5
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-headers: {}
+  - name: 美国+惠普HP - 2
+    type: trojan
+    server: awshk4-tg-data.amazonwebservicess.com
+    port: 443?peer=data.amazonwebservicess.com&tfo=1
+    password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
   - name: 日本 东京Amazon数据中心
     type: vmess
     server: jp05-vm0.entry.srthdw.art
@@ -70,43 +103,6 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国 CloudFlare节点 - 4
-    type: vmess
-    server: cf-lt.sharecentre.online
-    port: 8080
-    uuid: d1fca18b-00ce-4024-8cc8-4b49a4dd5e52
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /api/v3/download.getFile
-    ws-headers:
-      Host: ssrsub.v03.ssrsub.com
-  - name: 美国 CloudFlare节点 - 5
-    type: vmess
-    server: tech.noaries.de
-    port: 80
-    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /shirker
-    ws-headers:
-      Host: nl.sharecentrepro.com
-  - name: 日本 V2CROSS.COM
-    type: vmess
-    server: jp01-alt-vm0.entry.srthdw.art
-    port: 21583
-    uuid: 22acc467-7440-386a-927a-d84be554b37e
-    alterId: 1
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: jp01-alt-vm0.entry.srthdw.art
-    tls: true
 proxy-groups:
   - name: Free-servers
     type: select
@@ -114,43 +110,43 @@ proxy-groups:
       - 自动选择
       - 故障转移
       - 美国 CloudFlare节点
-      - 美国+惠普HP
-      - 美国+惠普HP - 2
       - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare公司CDN节点(shopify)
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 美国+惠普HP
+      - 重庆市 移动
       - 美国 CloudFlare节点 - 3
+      - 日本 东京PEG TECH
+      - 俄罗斯 V2CROSS.COM
+      - 美国+惠普HP - 2
       - 日本 东京Amazon数据中心
-      - 美国 CloudFlare节点 - 4
-      - 美国 CloudFlare节点 - 5
-      - 日本 V2CROSS.COM
   - name: 自动选择
     type: url-test
     proxies:
       - 美国 CloudFlare节点
-      - 美国+惠普HP
-      - 美国+惠普HP - 2
       - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare公司CDN节点(shopify)
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 美国+惠普HP
+      - 重庆市 移动
       - 美国 CloudFlare节点 - 3
+      - 日本 东京PEG TECH
+      - 俄罗斯 V2CROSS.COM
+      - 美国+惠普HP - 2
       - 日本 东京Amazon数据中心
-      - 美国 CloudFlare节点 - 4
-      - 美国 CloudFlare节点 - 5
-      - 日本 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
       - 美国 CloudFlare节点
-      - 美国+惠普HP
-      - 美国+惠普HP - 2
       - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare公司CDN节点(shopify)
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 美国+惠普HP
+      - 重庆市 移动
       - 美国 CloudFlare节点 - 3
+      - 日本 东京PEG TECH
+      - 俄罗斯 V2CROSS.COM
+      - 美国+惠普HP - 2
       - 日本 东京Amazon数据中心
-      - 美国 CloudFlare节点 - 4
-      - 美国 CloudFlare节点 - 5
-      - 日本 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
