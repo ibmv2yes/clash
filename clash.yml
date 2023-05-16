@@ -1,211 +1,88 @@
 proxies:
-  - name: 美国+惠普HP
-    type: trojan
-    server: awshk7-tg-data.amazonwebservicess.com
-    port: '443'
-    password: 4aeda200-44c9-4168-8f2a-a00a72176d35
-  - name: 香港 特别行政区
+  - name: 重庆市 移动
     type: vmess
-    server: 202.81.231.150
-    port: 80
-    uuid: 1d1c1d94-6987-4658-a4dc-8821a30fe7e0
+    server: 36.134.16.171
+    port: 11023
+    uuid: 8c042a38-71c1-1dcb-00df-54880236e0dc
     alterId: 0
     cipher: auto
     udp: true
-    network: ws
+    network: tcp
     ws-path: /
     ws-headers:
-      Host: idnusanet.vpnexecutive.my.id
-  - name: 香港+Microsoft数据中心
+      Host: ''
+  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
+    type: vmess
+    server: 192.74.231.179
+    port: 49202
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国+Microsoft数据中心
     type: trojan
-    server: hinet.mjt001.com
+    server: br.mjt001.com
     port: '443'
     password: af4dc66a-ec88-4057-9e46-777b584577f7
-  - name: 美国 CloudFlare公司CDN节点(shopify)
-    type: vmess
-    server: 23.227.39.1
-    port: 443
-    uuid: ef36c4b6-5160-40ad-bb85-bee68b5ec931
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /v2raydns
-    ws-headers:
-      Host: cadns.mainssh.xyz
-    tls: true
   - name: 美国 CloudFlare节点
     type: vmess
-    server: 172.64.163.100
+    server: 172.67.156.138
     port: 443
-    uuid: 572c716a-e532-4567-b698-6a513c12d460
+    uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /v2raydns
+    ws-path: /speedtest
     ws-headers:
-      Host: usdns.mainssh.xyz
+      Host: Kansas.kotick.site
     tls: true
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: 172.67.13.11
-    port: 8880
-    uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: lg.trump2023.net
+  - name: 美国+Microsoft数据中心 - 2
+    type: trojan
+    server: tr.mjt001.com
+    port: '443'
+    password: af4dc66a-ec88-4057-9e46-777b584577f7
   - name: 美国+V2CROSS.COM
     type: trojan
     server: us2.trojanvh.xyz
     port: '80'
     password: 255c924c-1314-4084-9a9e-1d1a82a5cf49
-  - name: 亚太地区+V2CROSS.COM
-    type: trojan
-    server: 103.169.7.11
-    port: '80'
-    password: c0d9da22-2569-4bed-a395-607d9e7ae687
-  - name: 美国 CloudFlare节点 - 3
-    type: vmess
-    server: 172.67.247.250
-    port: 80
-    uuid: 53ae65be-81ee-4766-8a09-da43c44c4d30
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /qwer11
-    ws-headers:
-      Host: uyaa.vtcss.top
-  - name: 美国 CloudFlare节点 - 4
-    type: vmess
-    server: cf.yxjnode.com
-    port: 80
-    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /yxzbp
-    ws-headers:
-      Host: dp1.yxjnode.com
-  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
-    type: vmess
-    server: 192.74.234.84
-    port: 51302
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国 CloudFlare节点 - 5
-    type: vmess
-    server: cf-lt.sharecentre.online
-    port: 8080
-    uuid: d1fca18b-00ce-4024-8cc8-4b49a4dd5e52
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /api/v3/download.getFile
-    ws-headers:
-      Host: ssrsub.v03.ssrsub.com
-  - name: 加拿大+V2CROSS.COM
-    type: trojan
-    server: stw3-tg-data.amazonwebservicess.com
-    port: '443'
-    password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
-  - name: 欧盟 V2CROSS.COM
-    type: vmess
-    server: 45.88.176.12
-    port: 53332
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 新加坡 腾讯云
-    type: vmess
-    server: 43.156.131.164
-    port: 59886
-    uuid: be3fdec2-86e1-4d51-969b-704b1efc3158
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /sg2/getData
-    ws-headers:
-      Host: ''
-    tls: true
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国+惠普HP
-      - 香港 特别行政区
-      - 香港+Microsoft数据中心
-      - 美国 CloudFlare公司CDN节点(shopify)
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 美国+V2CROSS.COM
-      - 亚太地区+V2CROSS.COM
-      - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
+      - 重庆市 移动
       - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 美国 CloudFlare节点 - 5
-      - 加拿大+V2CROSS.COM
-      - 欧盟 V2CROSS.COM
-      - 新加坡 腾讯云
+      - 美国+Microsoft数据中心
+      - 美国 CloudFlare节点
+      - 美国+Microsoft数据中心 - 2
+      - 美国+V2CROSS.COM
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国+惠普HP
-      - 香港 特别行政区
-      - 香港+Microsoft数据中心
-      - 美国 CloudFlare公司CDN节点(shopify)
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 美国+V2CROSS.COM
-      - 亚太地区+V2CROSS.COM
-      - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
+      - 重庆市 移动
       - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 美国 CloudFlare节点 - 5
-      - 加拿大+V2CROSS.COM
-      - 欧盟 V2CROSS.COM
-      - 新加坡 腾讯云
+      - 美国+Microsoft数据中心
+      - 美国 CloudFlare节点
+      - 美国+Microsoft数据中心 - 2
+      - 美国+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国+惠普HP
-      - 香港 特别行政区
-      - 香港+Microsoft数据中心
-      - 美国 CloudFlare公司CDN节点(shopify)
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 美国+V2CROSS.COM
-      - 亚太地区+V2CROSS.COM
-      - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
+      - 重庆市 移动
       - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 美国 CloudFlare节点 - 5
-      - 加拿大+V2CROSS.COM
-      - 欧盟 V2CROSS.COM
-      - 新加坡 腾讯云
+      - 美国+Microsoft数据中心
+      - 美国 CloudFlare节点
+      - 美国+Microsoft数据中心 - 2
+      - 美国+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
