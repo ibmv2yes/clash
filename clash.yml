@@ -1,4 +1,17 @@
 proxies:
+  - name: 伊朗 V2CROSS.COM
+    type: vmess
+    server: de63.thugiping.cloud
+    port: 443
+    uuid: c9a22360-3f66-48c8-89ab-13799b05a730
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+    tls: true
   - name: 美国 CloudFlare节点
     type: vmess
     server: cf-lt.sharecentre.online
@@ -11,22 +24,10 @@ proxies:
     ws-path: /api/v3/download.getFile
     ws-headers:
       Host: ssrsub.v03.ssrsub.com
-  - name: 美国 CloudFlare节点 - 2
+  - name: 欧盟 V2CROSS.COM
     type: vmess
-    server: tech.noaries.de
-    port: 80
-    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /shirker
-    ws-headers:
-      Host: nl.sharecentrepro.com
-  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
-    type: vmess
-    server: 192.74.234.84
-    port: 51302
+    server: 45.12.144.80
+    port: 47127
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -35,11 +36,18 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国+惠普HP
-    type: trojan
-    server: awshk8-data.amazon-azure.com
-    port: 443?peer=data.amazon-azure.com&tfo=1
-    password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
+  - name: 澳大利亚 悉尼OVH
+    type: vmess
+    server: 139.99.131.113
+    port: 33505
+    uuid: 6c04a273-7302-4e09-9ced-aedaaa7461af
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: ''
+    ws-headers:
+      Host: ''
   - name: 重庆市 移动
     type: vmess
     server: 36.134.16.171
@@ -52,101 +60,112 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国 CloudFlare节点 - 3
-    type: vmess
-    server: tech.noaries.de
-    port: 80
-    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /shirker
-    ws-headers:
-      Host: nl.sharecentrepro.com
-  - name: 日本 东京PEG TECH
-    type: vmess
-    server: 104.233.191.182
-    port: 443
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /path/031730091420
-    ws-headers: {}
-    tls: true
-  - name: 俄罗斯 V2CROSS.COM
-    type: vmess
-    server: ru1.elkcloud.gq
-    port: 80
-    uuid: 330516f2-45c3-3d8b-bd7c-ae1b530377d5
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-headers: {}
-  - name: 美国+惠普HP - 2
+  - name: 美国+惠普HP
     type: trojan
-    server: awshk4-tg-data.amazonwebservicess.com
-    port: 443?peer=data.amazonwebservicess.com&tfo=1
+    server: awshk14-data.amazon-azure.com
+    port: 443?peer=data.amazon-azure.com&tfo=1
     password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
-  - name: 日本 东京Amazon数据中心
+  - name: 广东省深圳市 移动
     type: vmess
-    server: jp05-vm0.entry.srthdw.art
-    port: 30593
-    uuid: 1bc52308-0bd9-30d0-90fd-cef337875d10
-    alterId: 1
+    server: iepl2.airtcp.vip
+    port: 12302
+    uuid: 05266f8e-249b-3630-be8f-fc56efaa21cd
+    alterId: 2
     cipher: auto
     udp: true
     network: tcp
-    ws-path: /
+    ws-path: ''
     ws-headers:
       Host: ''
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: cf-lt.sharecentre.online
+    port: 8080
+    uuid: d1fca18b-00ce-4024-8cc8-4b49a4dd5e52
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /api/v3/download.getFile
+    ws-headers:
+      Host: ssrsub.v03.ssrsub.com
+  - name: 美国+惠普HP - 2
+    type: trojan
+    server: awshk15-data.amazon-azure.com
+    port: 443?peer=data.amazon-azure.com&tfo=1
+    password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
+  - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: 104.21.53.35
+    port: 80
+    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /yxzbp
+    ws-headers:
+      Host: dp3.yxjnode.com
+  - name: 美国 CloudFlare节点 - 4
+    type: vmess
+    server: HK01.ANRUN-IX.TOP
+    port: 443
+    uuid: 2c2aeac9-ba73-42f9-92a8-489c6d78ead1
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: HK01.ANRUN-IX.TOP
+    tls: true
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
+      - 伊朗 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 美国+惠普HP
+      - 欧盟 V2CROSS.COM
+      - 澳大利亚 悉尼OVH
       - 重庆市 移动
-      - 美国 CloudFlare节点 - 3
-      - 日本 东京PEG TECH
-      - 俄罗斯 V2CROSS.COM
+      - 美国+惠普HP
+      - 广东省深圳市 移动
+      - 美国 CloudFlare节点 - 2
       - 美国+惠普HP - 2
-      - 日本 东京Amazon数据中心
+      - 美国 CloudFlare节点 - 3
+      - 美国 CloudFlare节点 - 4
   - name: 自动选择
     type: url-test
     proxies:
+      - 伊朗 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 美国+惠普HP
+      - 欧盟 V2CROSS.COM
+      - 澳大利亚 悉尼OVH
       - 重庆市 移动
-      - 美国 CloudFlare节点 - 3
-      - 日本 东京PEG TECH
-      - 俄罗斯 V2CROSS.COM
+      - 美国+惠普HP
+      - 广东省深圳市 移动
+      - 美国 CloudFlare节点 - 2
       - 美国+惠普HP - 2
-      - 日本 东京Amazon数据中心
+      - 美国 CloudFlare节点 - 3
+      - 美国 CloudFlare节点 - 4
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
+      - 伊朗 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 美国+惠普HP
+      - 欧盟 V2CROSS.COM
+      - 澳大利亚 悉尼OVH
       - 重庆市 移动
-      - 美国 CloudFlare节点 - 3
-      - 日本 东京PEG TECH
-      - 俄罗斯 V2CROSS.COM
+      - 美国+惠普HP
+      - 广东省深圳市 移动
+      - 美国 CloudFlare节点 - 2
       - 美国+惠普HP - 2
-      - 日本 东京Amazon数据中心
+      - 美国 CloudFlare节点 - 3
+      - 美国 CloudFlare节点 - 4
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
