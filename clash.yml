@@ -1,9 +1,21 @@
 proxies:
-  - name: 美国+加利福尼亚州洛杉矶Level3通信(DIA)
+  - name: 台湾省台北市+scloud.sg
     type: trojan
-    server: sa.mjt001.com
-    port: 443?type=tcp&sni=sa.mjt001.com&allowInsecure=1
-    password: af4dc66a-ec88-4057-9e46-777b584577f7
+    server: stw5-tg-data.amazonwebservicess.com
+    port: 443?peer=data.amazonwebservicess.com&tfo=1
+    password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: 192.203.230.86
+    port: 80
+    uuid: a442dacf-cbb3-488a-9744-61494ea38630
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: us-1.acyun.cf
   - name: 日本 东京Amazon数据中心
     type: vmess
     server: jp05-vm0.entry.srthdw.art
@@ -16,47 +28,39 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国 RF Engineering
-    type: vmess
-    server: 141.193.213.31
-    port: 443
-    uuid: 6147F065-9AC0-4081-A5A3-A2EB4EBB8958
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /speedtest
-    ws-headers:
-      Host: Lille.kotick.site
-    tls: true
+  - name: 美国+Microsoft数据中心
+    type: trojan
+    server: sg.mjt001.com
+    port: '443'
+    password: af4dc66a-ec88-4057-9e46-777b584577f7
+  - name: 美国+加利福尼亚州洛杉矶Level3通信(DIA)
+    type: trojan
+    server: uk.mjt001.com
+    port: '443'
+    password: af4dc66a-ec88-4057-9e46-777b584577f7
+  - name: 美国+V2CROSS.COM
+    type: trojan
+    server: us2.trojanvh.xyz
+    port: '80'
+    password: 255c924c-1314-4084-9a9e-1d1a82a5cf49
+  - name: 美国+Microsoft数据中心 - 2
+    type: trojan
+    server: tr.mjt001.com
+    port: '443'
+    password: af4dc66a-ec88-4057-9e46-777b584577f7
+  - name: 日本东京+Amazon数据中心
+    type: trojan
+    server: kh.mjt001.com
+    port: 443?type=tcp&allowInsecure=1
+    password: af4dc66a-ec88-4057-9e46-777b584577f7
+  - name: 美国+加利福尼亚州洛杉矶Level3通信(DIA) - 2
+    type: trojan
+    server: ua.mjt001.com
+    port: 443?type=tcp&sni=ua.mjt001.com&allowInsecure=1
+    password: af4dc66a-ec88-4057-9e46-777b584577f7
   - name: 美国 CloudFlare节点
     type: vmess
-    server: 104.24.16.109
-    port: 80
-    uuid: c5c9844d-050e-44f1-cb6d-ec5166772631
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /qwer
-    ws-headers:
-      Host: zslbs.vtcss.top
-  - name: 巴西圣保罗 CloudFlare节点
-    type: vmess
-    server: 188.114.97.3
-    port: 443
-    uuid: 8357816b-68e4-4a2b-830c-e9bdd369ea22
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /7ouWwj1jH2IbuOfQj2chg
-    ws-headers:
-      Host: hendostan.foriran.nl
-    tls: true
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: cdnjs.com
+    server: www.gov.tw
     port: 443
     uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF
     alterId: 0
@@ -65,94 +69,67 @@ proxies:
     network: ws
     ws-path: /speedtest
     ws-headers:
-      Host: Lille.kotick.site
+      Host: Kansas.kotick.site
     tls: true
-  - name: 美国 CloudFlare节点 - 3
+  - name: 日本 东京Amazon数据中心 - 2
     type: vmess
-    server: cf-lt.sharecentre.online
-    port: 80
-    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
-    alterId: 0
+    server: jp02-vm0.entry.srthdw.art
+    port: 448
+    uuid: 1bc52308-0bd9-30d0-90fd-cef337875d10
+    alterId: 1
     cipher: auto
     udp: true
-    network: ws
-    ws-path: /shirker
+    network: tcp
+    ws-path: /hls/cctv5phd.m3u8
     ws-headers:
-      Host: uk1.scproxy.top
-  - name: 美国+V2CROSS.COM
-    type: trojan
-    server: us2.trojanvh.xyz
-    port: '80'
-    password: 255c924c-1314-4084-9a9e-1d1a82a5cf49
-  - name: 美国+Microsoft数据中心
-    type: trojan
-    server: sg.mjt001.com
-    port: '443'
-    password: af4dc66a-ec88-4057-9e46-777b584577f7
-  - name: 美国+加利福尼亚州洛杉矶Level3通信(DIA) - 2
-    type: trojan
-    server: ar.mjt001.com
-    port: '443'
-    password: af4dc66a-ec88-4057-9e46-777b584577f7
-  - name: 美国 CloudFlare节点 - 4
-    type: vmess
-    server: tech.noaries.de
-    port: 80
-    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /shirker
-    ws-headers:
-      Host: nl.sharecentrepro.com
+      Host: jp02-vm0.entry.srthdw.art
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
+      - 台湾省台北市+scloud.sg
+      - 美国 V2CROSS.COM
       - 日本 东京Amazon数据中心
-      - 美国 RF Engineering
-      - 美国 CloudFlare节点
-      - 巴西圣保罗 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
-      - 美国+V2CROSS.COM
       - 美国+Microsoft数据中心
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
+      - 美国+V2CROSS.COM
+      - 美国+Microsoft数据中心 - 2
+      - 日本东京+Amazon数据中心
       - 美国+加利福尼亚州洛杉矶Level3通信(DIA) - 2
-      - 美国 CloudFlare节点 - 4
+      - 美国 CloudFlare节点
+      - 日本 东京Amazon数据中心 - 2
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
+      - 台湾省台北市+scloud.sg
+      - 美国 V2CROSS.COM
       - 日本 东京Amazon数据中心
-      - 美国 RF Engineering
-      - 美国 CloudFlare节点
-      - 巴西圣保罗 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
-      - 美国+V2CROSS.COM
       - 美国+Microsoft数据中心
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
+      - 美国+V2CROSS.COM
+      - 美国+Microsoft数据中心 - 2
+      - 日本东京+Amazon数据中心
       - 美国+加利福尼亚州洛杉矶Level3通信(DIA) - 2
-      - 美国 CloudFlare节点 - 4
+      - 美国 CloudFlare节点
+      - 日本 东京Amazon数据中心 - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
+      - 台湾省台北市+scloud.sg
+      - 美国 V2CROSS.COM
       - 日本 东京Amazon数据中心
-      - 美国 RF Engineering
-      - 美国 CloudFlare节点
-      - 巴西圣保罗 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
-      - 美国+V2CROSS.COM
       - 美国+Microsoft数据中心
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
+      - 美国+V2CROSS.COM
+      - 美国+Microsoft数据中心 - 2
+      - 日本东京+Amazon数据中心
       - 美国+加利福尼亚州洛杉矶Level3通信(DIA) - 2
-      - 美国 CloudFlare节点 - 4
+      - 美国 CloudFlare节点
+      - 日本 东京Amazon数据中心 - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
