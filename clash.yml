@@ -1,62 +1,37 @@
 proxies:
-  - name: 加拿大+V2CROSS.COM
+  - name: 美国+惠普HP
     type: trojan
-    server: scloudtw1-tg-data.amazonwebservicess.com
+    server: awshk7-tg-data.amazonwebservicess.com
+    port: '443'
+    password: 4aeda200-44c9-4168-8f2a-a00a72176d35
+  - name: 美国+惠普HP - 2
+    type: trojan
+    server: awshk9-tg-data.amazonwebservicess.com
     port: '443'
     password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
-  - name: 美国 V2CROSS.COM
-    type: vmess
-    server: form.tajsub.com
-    port: 2086
-    uuid: 93a3fd23-96df-49df-80e9-854fe154bbbf
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: form.tajsub.com
-  - name: 加拿大+V2CROSS.COM - 2
+  - name: 美国+惠普HP - 3
     type: trojan
-    server: stw5-tg-data.amazonwebservicess.com
+    server: awshk5-tg-data.amazonwebservicess.com
     port: 443?peer=data.amazonwebservicess.com&tfo=1
     password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
-  - name: 美国+加利福尼亚州洛杉矶Level3通信(DIA)
-    type: trojan
-    server: pt.mjt001.com
-    port: '443'
-    password: af4dc66a-ec88-4057-9e46-777b584577f7
-  - name: 美国加利福尼亚州圣何塞 Cloudflare节点
-    type: vmess
-    server: 103.21.244.37
-    port: 80
-    uuid: 53ae65be-81ee-4766-8a09-da43c44c4d30
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /qwer11
-    ws-headers:
-      Host: uyaa.vtcss.top
   - name: 美国 CloudFlare节点
     type: vmess
-    server: 172.67.31.105
-    port: 443
-    uuid: 39304f36-8a9c-4692-9b31-d2997532f567
+    server: cf-lt.sharecentre.online
+    port: 8080
+    uuid: d1fca18b-00ce-4024-8cc8-4b49a4dd5e52
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /qwer
+    ws-path: /api/v3/download.getFile
     ws-headers:
-      Host: zslbs.vtcss.top
-    tls: true
-  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      Host: ssrsub.v03.ssrsub.com
+  - name: 日本 东京Amazon数据中心
     type: vmess
-    server: 192.74.234.83
-    port: 51302
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
+    server: jp05-vm0.entry.srthdw.art
+    port: 30593
+    uuid: 1bc52308-0bd9-30d0-90fd-cef337875d10
+    alterId: 1
     cipher: auto
     udp: true
     network: tcp
@@ -65,54 +40,62 @@ proxies:
       Host: ''
   - name: 美国 CloudFlare节点 - 2
     type: vmess
-    server: cf.yxjnode.com
-    port: 80
-    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
+    server: kamnaf.ml
+    port: 2095
+    uuid: 1b7594df-1a43-4961-f3a9-741f8b8bee48
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /yxzbp
+    ws-path: /
     ws-headers:
-      Host: dp1.yxjnode.com
+      Host: ''
+  - name: 伊朗 V2CROSS.COM
+    type: vmess
+    server: de63.thugiping.cloud
+    port: 443
+    uuid: c9a22360-3f66-48c8-89ab-13799b05a730
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-headers: {}
+    tls: true
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 加拿大+V2CROSS.COM
-      - 美国 V2CROSS.COM
-      - 加拿大+V2CROSS.COM - 2
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
-      - 美国加利福尼亚州圣何塞 Cloudflare节点
+      - 美国+惠普HP
+      - 美国+惠普HP - 2
+      - 美国+惠普HP - 3
       - 美国 CloudFlare节点
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 日本 东京Amazon数据中心
       - 美国 CloudFlare节点 - 2
+      - 伊朗 V2CROSS.COM
   - name: 自动选择
     type: url-test
     proxies:
-      - 加拿大+V2CROSS.COM
-      - 美国 V2CROSS.COM
-      - 加拿大+V2CROSS.COM - 2
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
-      - 美国加利福尼亚州圣何塞 Cloudflare节点
+      - 美国+惠普HP
+      - 美国+惠普HP - 2
+      - 美国+惠普HP - 3
       - 美国 CloudFlare节点
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 日本 东京Amazon数据中心
       - 美国 CloudFlare节点 - 2
+      - 伊朗 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 加拿大+V2CROSS.COM
-      - 美国 V2CROSS.COM
-      - 加拿大+V2CROSS.COM - 2
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
-      - 美国加利福尼亚州圣何塞 Cloudflare节点
+      - 美国+惠普HP
+      - 美国+惠普HP - 2
+      - 美国+惠普HP - 3
       - 美国 CloudFlare节点
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 日本 东京Amazon数据中心
       - 美国 CloudFlare节点 - 2
+      - 伊朗 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
