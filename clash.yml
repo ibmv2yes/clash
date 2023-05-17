@@ -1,85 +1,68 @@
 proxies:
+  - name: 重庆市 移动
+    type: vmess
+    server: 36.134.16.171
+    port: 11023
+    uuid: 8c042a38-71c1-1dcb-00df-54880236e0dc
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
   - name: 美国+惠普HP
+    type: trojan
+    server: awshk5-tg-data.amazonwebservicess.com
+    port: 443?peer=data.amazonwebservicess.com&tfo=1
+    password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
+  - name: 美国+加利福尼亚州洛杉矶Level3通信(DIA)
+    type: trojan
+    server: ch.mjt001.com
+    port: 443?type=tcp&sni=ch.mjt001.com&allowInsecure=1
+    password: af4dc66a-ec88-4057-9e46-777b584577f7
+  - name: 美国+惠普HP - 2
     type: trojan
     server: awshk19-data.amazon-azure.com
     port: 443?peer=data.amazon-azure.com&tfo=1
     password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
-  - name: 美国 CloudFlare节点
+  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
     type: vmess
-    server: 172.66.43.240
-    port: 443
-    uuid: 12612e87-8003-44a8-b4e8-ec4a325e9016
-    alterId: 0
+    server: 192.74.234.84
+    port: 51302
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
     cipher: auto
     udp: true
-    network: ws
-    ws-path: /ou
-    ws-headers:
-      Host: z.zorro.tk
-    tls: true
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: tech.noaries.de
-    port: 80
-    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /shirker
-    ws-headers:
-      Host: nl.sharecentrepro.com
-  - name: 香港 特别行政区
-    type: vmess
-    server: 202.81.231.150
-    port: 80
-    uuid: 1d1c1d94-6987-4658-a4dc-8821a30fe7e0
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
+    network: tcp
     ws-path: /
     ws-headers:
-      Host: idnusanet.vpnexecutive.my.id
-  - name: 美国 CloudFlare节点 - 3
+      Host: ''
+  - name: 加拿大+V2CROSS.COM
+    type: trojan
+    server: stw10-tg-data.amazonwebservicess.com
+    port: 443?peer=data.amazonwebservicess.com&tfo=1
+    password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
+  - name: 日本 东京Amazon数据中心
     type: vmess
-    server: en.foriran.live
-    port: 443
-    uuid: 8357816b-68e4-4a2b-830c-e9bdd369ea22
+    server: jp04-vm0.entry.srthdw.art
+    port: 446
+    uuid: 22acc467-7440-386a-927a-d84be554b37e
     alterId: 0
     cipher: auto
     udp: true
-    network: ws
-    ws-path: /7ouWwj1jH2IbuOfQj2chg
+    network: tcp
+    ws-path: /
     ws-headers:
-      Host: en.foriran.live
-    tls: true
-  - name: 美国 RF Engineering
-    type: vmess
-    server: 141.193.213.31
-    port: 443
-    uuid: 6147F065-9AC0-4081-A5A3-A2EB4EBB8958
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /speedtest
-    ws-headers:
-      Host: Lille.kotick.site
-    tls: true
-  - name: 美国+惠普HP - 2
+      Host: jp04-vm0.entry.srthdw.art
+  - name: 美国+加利福尼亚州洛杉矶Level3通信(DIA) - 2
     type: trojan
-    server: awshk7-tg-data.amazonwebservicess.com
-    port: '443'
-    password: 4aeda200-44c9-4168-8f2a-a00a72176d35
-  - name: 美国+Microsoft数据中心
-    type: trojan
-    server: tr.mjt001.com
-    port: '443'
+    server: sg.mjt001.com
+    port: 443?type=tcp&sni=sg.mjt001.com&allowInsecure=1
     password: af4dc66a-ec88-4057-9e46-777b584577f7
-  - name: 美国 CloudFlare节点 - 4
+  - name: 日本 东京阿里云
     type: vmess
-    server: cf-lt.sharecentre.online
+    server: cdncf.scyu.app
     port: 8080
     uuid: d1fca18b-00ce-4024-8cc8-4b49a4dd5e52
     alterId: 0
@@ -88,24 +71,56 @@ proxies:
     network: ws
     ws-path: /api/v3/download.getFile
     ws-headers:
-      Host: ssrsub.v01.ssrsub.com
-  - name: 日本东京+Amazon数据中心
+      Host: ssrsub.v03.ssrsub.com
+  - name: 美国+V2CROSS.COM
     type: trojan
-    server: br.mjt001.com
+    server: 152.70.74.66
+    port: 443?security=tls&type=tcp&headerType=none
+    password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
+  - name: 香港+Microsoft数据中心
+    type: trojan
+    server: uk.mjt001.com
     port: '443'
     password: af4dc66a-ec88-4057-9e46-777b584577f7
-  - name: 美国加利福尼亚州洛杉矶 PetaExpress
+  - name: 美国+加利福尼亚州洛杉矶Level3通信(DIA) - 3
+    type: trojan
+    server: hinet.mjt001.com
+    port: '443'
+    password: af4dc66a-ec88-4057-9e46-777b584577f7
+  - name: 台湾省台北市+scloud.sg
+    type: trojan
+    server: bgptw1.cnamazon.sbs
+    port: 443?type=tcp&allowInsecure=1
+    password: bc2a1eb1-a706-4ee5-95a6-732a6c324142
+  - name: 美国 CloudFlare节点
     type: vmess
-    server: 198.2.200.105
-    port: 443
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
+    server: 104.24.16.109
+    port: 80
+    uuid: c5c9844d-050e-44f1-cb6d-ec5166772631
+    alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /path/1683543024453
+    ws-path: /qwer
     ws-headers:
-      Host: www.54092415.xyz
+      Host: zslbs.vtcss.top
+  - name: 美国+惠普HP - 3
+    type: trojan
+    server: awshk8-data.amazon-azure.com
+    port: 443?type=tcp&allowInsecure=1
+    password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: tou.vtcss.top
+    port: 443
+    uuid: 9588cb0f-5102-4e66-d5fb-f96cba9acdda
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /qazxcv00
+    ws-headers:
+      Host: tou.vtcss.top
     tls: true
 proxy-groups:
   - name: Free-servers
@@ -113,47 +128,62 @@ proxy-groups:
     proxies:
       - 自动选择
       - 故障转移
+      - 重庆市 移动
       - 美国+惠普HP
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 香港 特别行政区
-      - 美国 CloudFlare节点 - 3
-      - 美国 RF Engineering
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
       - 美国+惠普HP - 2
-      - 美国+Microsoft数据中心
-      - 美国 CloudFlare节点 - 4
-      - 日本东京+Amazon数据中心
-      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 加拿大+V2CROSS.COM
+      - 日本 东京Amazon数据中心
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA) - 2
+      - 日本 东京阿里云
+      - 美国+V2CROSS.COM
+      - 香港+Microsoft数据中心
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA) - 3
+      - 台湾省台北市+scloud.sg
+      - 美国 CloudFlare节点
+      - 美国+惠普HP - 3
+      - 美国 CloudFlare节点 - 2
   - name: 自动选择
     type: url-test
     proxies:
+      - 重庆市 移动
       - 美国+惠普HP
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 香港 特别行政区
-      - 美国 CloudFlare节点 - 3
-      - 美国 RF Engineering
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
       - 美国+惠普HP - 2
-      - 美国+Microsoft数据中心
-      - 美国 CloudFlare节点 - 4
-      - 日本东京+Amazon数据中心
-      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 加拿大+V2CROSS.COM
+      - 日本 东京Amazon数据中心
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA) - 2
+      - 日本 东京阿里云
+      - 美国+V2CROSS.COM
+      - 香港+Microsoft数据中心
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA) - 3
+      - 台湾省台北市+scloud.sg
+      - 美国 CloudFlare节点
+      - 美国+惠普HP - 3
+      - 美国 CloudFlare节点 - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
+      - 重庆市 移动
       - 美国+惠普HP
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 香港 特别行政区
-      - 美国 CloudFlare节点 - 3
-      - 美国 RF Engineering
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
       - 美国+惠普HP - 2
-      - 美国+Microsoft数据中心
-      - 美国 CloudFlare节点 - 4
-      - 日本东京+Amazon数据中心
-      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 加拿大+V2CROSS.COM
+      - 日本 东京Amazon数据中心
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA) - 2
+      - 日本 东京阿里云
+      - 美国+V2CROSS.COM
+      - 香港+Microsoft数据中心
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA) - 3
+      - 台湾省台北市+scloud.sg
+      - 美国 CloudFlare节点
+      - 美国+惠普HP - 3
+      - 美国 CloudFlare节点 - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
