@@ -1,43 +1,33 @@
 proxies:
-  - name: 加拿大+V2CROSS.COM
-    type: trojan
-    server: stw3-tg-data.amazonwebservicess.com
-    port: '443'
-    password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
-  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
+  - name: 美国 CloudFlare节点
     type: vmess
-    server: 192.74.228.176
-    port: 42857
-    uuid: 051b844f-efe3-4847-92aa-66b5de0b6d4e
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国+V2CROSS.COM
-    type: trojan
-    server: us2.trojanvh.xyz
-    port: '80'
-    password: 011eb011-c68e-4f92-80eb-f9bbef707bef
-  - name: 日本 东京Amazon数据中心
-    type: vmess
-    server: jp04-vm0.entry.srthdw.art
-    port: 446
-    uuid: 22acc467-7440-386a-927a-d84be554b37e
+    server: cf.yxjnode.com
+    port: 80
+    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
     alterId: 0
     cipher: auto
     udp: true
-    network: tcp
-    ws-path: /
+    network: ws
+    ws-path: /yxzbp
     ws-headers:
-      Host: jp04-vm0.entry.srthdw.art
-  - name: 日本 东京Amazon数据中心 - 2
+      Host: dp1.yxjnode.com
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: 172.67.247.250
+    port: 80
+    uuid: 53ae65be-81ee-4766-8a09-da43c44c4d30
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /qwer11
+    ws-headers:
+      Host: uyaa.vtcss.top
+  - name: 日本 东京Amazon数据中心
     type: vmess
     server: jp03-alt-vm0.entry.srthdw.art
-    port: 21585
-    uuid: 1bc52308-0bd9-30d0-90fd-cef337875d10
+    port: 21583
+    uuid: 22acc467-7440-386a-927a-d84be554b37e
     alterId: 1
     cipher: auto
     udp: true
@@ -46,92 +36,19 @@ proxies:
     ws-headers:
       Host: ''
     tls: true
-  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心 - 2
+  - name: 新加坡 腾讯云
     type: vmess
-    server: 192.74.228.172
-    port: 42857
-    uuid: 051b844f-efe3-4847-92aa-66b5de0b6d4e
+    server: 43.156.131.164
+    port: 43860
+    uuid: be3fdec2-86e1-4d51-969b-704b1efc3158
     alterId: 64
     cipher: auto
     udp: true
-    network: tcp
-    ws-path: /
+    network: ws
+    ws-path: /sg2/getData
     ws-headers:
       Host: ''
-  - name: 美国加利福尼亚州洛杉矶 PetaExpress
-    type: vmess
-    server: 198.2.208.181
-    port: 443
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /path/1684145765058
-    ws-headers:
-      Host: www.62317155.xyz
     tls: true
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: cfcdn.sanfencdn.net
-    port: 443
-    uuid: 951a393a-b557-4590-88b6-30948e1e0b8d
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /zh-cn
-    ws-headers:
-      Host: us1.sanfencdn.net
-    tls: true
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: 172.67.22.103
-    port: 443
-    uuid: 39304f36-8a9c-4692-9b31-d2997532f567
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /qwer
-    ws-headers:
-      Host: zslbs.vtcss.top
-    tls: true
-  - name: 美国 V2CROSS.COM
-    type: vmess
-    server: 206.168.191.67
-    port: 80
-    uuid: 7997b5a0-f2f9-11ed-b436-205c6d5f5d78
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /r2vt59x8
-    ws-headers:
-      Host: 206.168.191.67
-  - name: 美国 CloudFlare节点 - 3
-    type: vmess
-    server: HKG.MIFJUN.ORG
-    port: 80
-    uuid: c76bf073-d8c6-4d2d-aa5f-3bbdd3b6d0b2
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: HKG.MIFJUN.ORG
-  - name: 乌克兰+哈尔科夫州哈尔科夫Friendhosting有限责任公司
-    type: ss
-    server: 195.28.182.217
-    port: '51348'
-    cipher: chacha20-ietf-poly1305
-    password: shwoghRia
-  - name: 日本+V2CROSS.COM
-    type: trojan
-    server: fscsg.fscloud123456789.com
-    port: 443?type=tcp&security=tls&allowInsecure=1
-    password: 514b8c92-12da-4219-b06c-56ecc67dfa23
   - name: 加拿大 V2CROSS.COM
     type: vmess
     server: 23.227.60.184
@@ -145,62 +62,143 @@ proxies:
     ws-headers:
       Host: Dusseldorf.kotick.site
     tls: true
+  - name: 香港 腾讯云
+    type: vmess
+    server: 43.154.76.92
+    port: 48527
+    uuid: 784272d2-bd2d-438a-bbd4-1271bb1f1b0d
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /hk15/getData
+    ws-headers:
+      Host: ''
+    tls: true
+  - name: 美国+Microsoft数据中心
+    type: trojan
+    server: fscsg.fscloud123456789.com
+    port: 443?type=tcp&security=tls&allowInsecure=1
+    password: 514b8c92-12da-4219-b06c-56ecc67dfa23
+  - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: tech.noaries.de
+    port: 80
+    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /shirker
+    ws-headers:
+      Host: nl.sharecentrepro.com
+  - name: 台湾省台北市+scloud.sg
+    type: trojan
+    server: stw6-tg-data.amazonwebservicess.com
+    port: '443'
+    password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
+  - name: 美国 华盛顿Cogent通信公司
+    type: vmess
+    server: 38.60.208.68
+    port: 20037
+    uuid: a529cf39-d753-41e5-a72a-64cf8d48f469
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /tk2/getData
+    ws-headers:
+      Host: ''
+    tls: true
+  - name: 伊朗 V2CROSS.COM
+    type: vmess
+    server: de63.thugiping.cloud
+    port: 443
+    uuid: c9a22360-3f66-48c8-89ab-13799b05a730
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-headers: {}
+    tls: true
+  - name: 美国 CloudFlare节点 - 4
+    type: vmess
+    server: 172.67.134.123
+    port: 443
+    uuid: 8357816b-68e4-4a2b-830c-e9bdd369ea22
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /7ouWwj1jH2IbuOfQj2chg
+    ws-headers:
+      Host: en.foriran.live
+    tls: true
+  - name: 德国 黑森州法兰克福Choopa数据中心
+    type: vmess
+    server: 45.77.65.66
+    port: 2096
+    uuid: 3f9cf9f3-a8d4-4999-dd5e-8068fdc0c37e
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: ''
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 加拿大+V2CROSS.COM
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 美国+V2CROSS.COM
-      - 日本 东京Amazon数据中心
-      - 日本 东京Amazon数据中心 - 2
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心 - 2
-      - 美国加利福尼亚州洛杉矶 PetaExpress
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
-      - 美国 V2CROSS.COM
-      - 美国 CloudFlare节点 - 3
-      - 乌克兰+哈尔科夫州哈尔科夫Friendhosting有限责任公司
-      - 日本+V2CROSS.COM
+      - 日本 东京Amazon数据中心
+      - 新加坡 腾讯云
       - 加拿大 V2CROSS.COM
+      - 香港 腾讯云
+      - 美国+Microsoft数据中心
+      - 美国 CloudFlare节点 - 3
+      - 台湾省台北市+scloud.sg
+      - 美国 华盛顿Cogent通信公司
+      - 伊朗 V2CROSS.COM
+      - 美国 CloudFlare节点 - 4
+      - 德国 黑森州法兰克福Choopa数据中心
   - name: 自动选择
     type: url-test
     proxies:
-      - 加拿大+V2CROSS.COM
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 美国+V2CROSS.COM
-      - 日本 东京Amazon数据中心
-      - 日本 东京Amazon数据中心 - 2
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心 - 2
-      - 美国加利福尼亚州洛杉矶 PetaExpress
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
-      - 美国 V2CROSS.COM
-      - 美国 CloudFlare节点 - 3
-      - 乌克兰+哈尔科夫州哈尔科夫Friendhosting有限责任公司
-      - 日本+V2CROSS.COM
+      - 日本 东京Amazon数据中心
+      - 新加坡 腾讯云
       - 加拿大 V2CROSS.COM
+      - 香港 腾讯云
+      - 美国+Microsoft数据中心
+      - 美国 CloudFlare节点 - 3
+      - 台湾省台北市+scloud.sg
+      - 美国 华盛顿Cogent通信公司
+      - 伊朗 V2CROSS.COM
+      - 美国 CloudFlare节点 - 4
+      - 德国 黑森州法兰克福Choopa数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 加拿大+V2CROSS.COM
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 美国+V2CROSS.COM
-      - 日本 东京Amazon数据中心
-      - 日本 东京Amazon数据中心 - 2
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心 - 2
-      - 美国加利福尼亚州洛杉矶 PetaExpress
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
-      - 美国 V2CROSS.COM
-      - 美国 CloudFlare节点 - 3
-      - 乌克兰+哈尔科夫州哈尔科夫Friendhosting有限责任公司
-      - 日本+V2CROSS.COM
+      - 日本 东京Amazon数据中心
+      - 新加坡 腾讯云
       - 加拿大 V2CROSS.COM
+      - 香港 腾讯云
+      - 美国+Microsoft数据中心
+      - 美国 CloudFlare节点 - 3
+      - 台湾省台北市+scloud.sg
+      - 美国 华盛顿Cogent通信公司
+      - 伊朗 V2CROSS.COM
+      - 美国 CloudFlare节点 - 4
+      - 德国 黑森州法兰克福Choopa数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
