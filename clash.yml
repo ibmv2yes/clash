@@ -1,27 +1,35 @@
 proxies:
-  - name: 美国+Microsoft数据中心
-    type: trojan
-    server: fscsg.fscloud123456789.com
-    port: '443'
-    password: 298a5185-2019-46a6-bc2a-42fe3ddbe876
-  - name: 澳大利亚 V2CROSS.COM
+  - name: 香港 特别行政区
     type: vmess
-    server: 140.83.63.38
-    port: 24445
-    uuid: 94c5ef37-4d82-49f9-c624-f01259374a17
-    alterId: 64
+    server: 202.81.231.150
+    port: 80
+    uuid: 1d1c1d94-6987-4658-a4dc-8821a30fe7e0
+    alterId: 0
     cipher: auto
     udp: true
-    network: tcp
+    network: ws
     ws-path: /
     ws-headers:
-      Host: ''
-  - name: 美国+V2CROSS.COM
-    type: trojan
-    server: 135.148.149.209
-    port: '80'
-    password: 255c924c-1314-4084-9a9e-1d1a82a5cf49
+      Host: idnusanet.vpnexecutive.my.id
   - name: 美国 CloudFlare节点
+    type: vmess
+    server: 104.18.1.74
+    port: 2096
+    uuid: 408e2686-9e0d-4014-841e-7ca5da55a215
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: ho3ino
+    ws-headers:
+      Host: h.h3io.co
+    tls: true
+  - name: 台湾省台北市+scloud.sg
+    type: trojan
+    server: stw3-tg-data.amazonwebservicess.com
+    port: '443'
+    password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
+  - name: 美国 CloudFlare节点 - 2
     type: vmess
     server: new8.huvicloud.com
     port: 443
@@ -34,49 +42,34 @@ proxies:
     ws-headers:
       Host: new8.huvicloud.com
     tls: true
-  - name: 美国+V2CROSS.COM - 2
-    type: trojan
-    server: us2.trojanvh.xyz
-    port: '80'
-    password: 255c924c-1314-4084-9a9e-1d1a82a5cf49
-  - name: 美国 加利福尼亚州圣何塞PEG TECH
+  - name: 美国 CloudFlare节点 - 3
     type: vmess
-    server: 142.4.112.17
-    port: 51091
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国 加利福尼亚州费利蒙Linode数据中心
-    type: vmess
-    server: vus4.0bad.com
-    port: 443
-    uuid: 927094d3-d678-4763-8591-e240d0bcae87
+    server: cdn.chigua.tk
+    port: 80
+    uuid: 01925169-e2ff-483c-89f2-6e778dcdd450
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /chat
+    ws-path: /
     ws-headers:
-      Host: ''
-    tls: true
-  - name: 日本 东京Amazon数据中心
-    type: vmess
-    server: jp06-vm0.entry.jpojpoh.art
-    port: 28787
-    uuid: 1bc52308-0bd9-30d0-90fd-cef337875d10
-    alterId: 1
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /hlsrthe214/8u4692j
-    ws-headers:
-      Host: jp06-vm0.entry.jpojpoh.art
-    tls: true
+      Host: us-1.acyun.cf
+  - name: 瑞典+V2CROSS.COM
+    type: ss
+    server: 167.88.63.79
+    port: '2375'
+    cipher: aes-256-gcm
+    password: faBAoD54k87UJG7
+  - name: 美国+V2CROSS.COM
+    type: trojan
+    server: 152.70.74.66
+    port: 443?security=tls&type=tcp&headerType=none
+    password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
+  - name: 加拿大+V2CROSS.COM
+    type: trojan
+    server: stw6-tg-data.amazonwebservicess.com
+    port: '443'
+    password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
   - name: 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
     type: vmess
     server: 23.224.110.246
@@ -90,87 +83,77 @@ proxies:
     ws-headers:
       Host: www.77039717.xyz
     tls: true
-  - name: 美国 CloudFlare节点 - 2
+  - name: 美国 CloudFlare节点 - 4
     type: vmess
-    server: cdnjs.com
-    port: 443
-    uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF
+    server: cdncf.scyu.app
+    port: 8080
+    uuid: d1fca18b-00ce-4024-8cc8-4b49a4dd5e52
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /speedtest
+    ws-path: /api/v3/download.getFile
     ws-headers:
-      Host: Lille.kotick.site
-    tls: true
-  - name: 加拿大+V2CROSS.COM
-    type: trojan
-    server: stw7-tg-data.amazonwebservicess.com
-    port: '443'
-    password: 4aeda200-44c9-4168-8f2a-a00a72176d35
-  - name: 美国 CloudFlare公司CDN节点(shopify)
+      Host: ssrsub.v03.ssrsub.com
+  - name: 美国 CloudFlare节点 - 5
     type: vmess
-    server: 23.227.38.99
-    port: 443
-    uuid: 86d37526-5758-4cec-862f-df404b313086
+    server: 172.67.247.250
+    port: 80
+    uuid: 53ae65be-81ee-4766-8a09-da43c44c4d30
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /3G6WPDL7
+    ws-path: /qwer11
     ws-headers:
-      Host: 1.freek1.xyz
-    tls: true
+      Host: uyaa.vtcss.top
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国+Microsoft数据中心
-      - 澳大利亚 V2CROSS.COM
-      - 美国+V2CROSS.COM
+      - 香港 特别行政区
       - 美国 CloudFlare节点
-      - 美国+V2CROSS.COM - 2
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国 加利福尼亚州费利蒙Linode数据中心
-      - 日本 东京Amazon数据中心
-      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 台湾省台北市+scloud.sg
       - 美国 CloudFlare节点 - 2
+      - 美国 CloudFlare节点 - 3
+      - 瑞典+V2CROSS.COM
+      - 美国+V2CROSS.COM
       - 加拿大+V2CROSS.COM
-      - 美国 CloudFlare公司CDN节点(shopify)
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 美国 CloudFlare节点 - 4
+      - 美国 CloudFlare节点 - 5
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国+Microsoft数据中心
-      - 澳大利亚 V2CROSS.COM
-      - 美国+V2CROSS.COM
+      - 香港 特别行政区
       - 美国 CloudFlare节点
-      - 美国+V2CROSS.COM - 2
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国 加利福尼亚州费利蒙Linode数据中心
-      - 日本 东京Amazon数据中心
-      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 台湾省台北市+scloud.sg
       - 美国 CloudFlare节点 - 2
+      - 美国 CloudFlare节点 - 3
+      - 瑞典+V2CROSS.COM
+      - 美国+V2CROSS.COM
       - 加拿大+V2CROSS.COM
-      - 美国 CloudFlare公司CDN节点(shopify)
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 美国 CloudFlare节点 - 4
+      - 美国 CloudFlare节点 - 5
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国+Microsoft数据中心
-      - 澳大利亚 V2CROSS.COM
-      - 美国+V2CROSS.COM
+      - 香港 特别行政区
       - 美国 CloudFlare节点
-      - 美国+V2CROSS.COM - 2
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国 加利福尼亚州费利蒙Linode数据中心
-      - 日本 东京Amazon数据中心
-      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 台湾省台北市+scloud.sg
       - 美国 CloudFlare节点 - 2
+      - 美国 CloudFlare节点 - 3
+      - 瑞典+V2CROSS.COM
+      - 美国+V2CROSS.COM
       - 加拿大+V2CROSS.COM
-      - 美国 CloudFlare公司CDN节点(shopify)
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 美国 CloudFlare节点 - 4
+      - 美国 CloudFlare节点 - 5
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
