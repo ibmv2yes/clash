@@ -1,62 +1,74 @@
 proxies:
+  - name: 加拿大+V2CROSS.COM
+    type: trojan
+    server: stw6-tg-data.amazonwebservicess.com
+    port: '443'
+    password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
+  - name: 日本 东京Amazon数据中心
+    type: vmess
+    server: jp05-vm0.entry.srthdw.art
+    port: 30593
+    uuid: 1bc52308-0bd9-30d0-90fd-cef337875d10
+    alterId: 1
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
   - name: 美国 CloudFlare节点
     type: vmess
-    server: cdn.chigua.tk
-    port: 80
-    uuid: 01925169-e2ff-483c-89f2-6e778dcdd450
+    server: 104.20.127.237
+    port: 443
+    uuid: e883ff76-3bb4-4008-c068-6b5b1d960ea7
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /
+    ws-path: /qwer09
     ws-headers:
-      Host: us-1.acyun.cf
-  - name: 台湾省台北市+scloud.sg
-    type: trojan
-    server: stw10-tg-data.amazonwebservicess.com
-    port: 443?peer=data.amazonwebservicess.com&tfo=1
-    password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
+      Host: uyaa.vtcss.top
+    tls: true
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: 206.168.191.67
+    port: 80
+    uuid: 7997b5a0-f2f9-11ed-b436-205c6d5f5d78
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /r2vt59x8
+    ws-headers:
+      Host: 206.168.191.67
+  - name: 新加坡 DigitalOcean数据中心
+    type: vmess
+    server: sg.fuzzypn.me
+    port: 80
+    uuid: a1a2cfbe-ba38-429d-a31d-ce94cd50cae6
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /fuzzypn
+    ws-headers:
+      Host: Dl.kgvn.garenanow.com
   - name: 美国 CloudFlare节点 - 2
     type: vmess
-    server: HKG.MIFJUN.ORG
-    port: 80
-    uuid: c76bf073-d8c6-4d2d-aa5f-3bbdd3b6d0b2
+    server: cu.wfitech.net
+    port: 443
+    uuid: 030ae75a-1a4a-45cc-88f1-f1b7d9fe15f3
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /
+    ws-path: /KS4XxcnoWPTpuA9VAxnFIAPLD
     ws-headers:
-      Host: HKG.MIFJUN.ORG
-  - name: 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
-    type: vmess
-    server: 23.224.110.246
-    port: 443
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /path/1684230882527
-    ws-headers:
-      Host: www.77039717.xyz
-    tls: true
-  - name: 美国 CloudFlare公司CDN节点(shopify)
-    type: vmess
-    server: 23.227.38.99
-    port: 443
-    uuid: 86d37526-5758-4cec-862f-df404b313086
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /3G6WPDL7
-    ws-headers:
-      Host: 1.freek1.xyz
+      Host: cu.wfitech.net
     tls: true
   - name: 美国 CloudFlare节点 - 3
     type: vmess
-    server: cf-lt.sharecentre.online
+    server: cdncf.scyu.app
     port: 8080
     uuid: d1fca18b-00ce-4024-8cc8-4b49a4dd5e52
     alterId: 0
@@ -66,30 +78,58 @@ proxies:
     ws-path: /api/v3/download.getFile
     ws-headers:
       Host: ssrsub.v03.ssrsub.com
+  - name: 加拿大+V2CROSS.COM - 2
+    type: trojan
+    server: bgptw2.cnamazon.sbs
+    port: '443'
+    password: 4658738d-c3f1-4ebf-ad7a-ee603e3f9690
+  - name: 台湾省台北市+scloud.sg
+    type: trojan
+    server: stw10-tg-data.amazonwebservicess.com
+    port: 443?peer=data.amazonwebservicess.com&tfo=1
+    password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
   - name: 美国 CloudFlare节点 - 4
     type: vmess
-    server: cdn.chigua.tk
-    port: 80
-    uuid: 01925169-e2ff-483c-89f2-6e778dcdd450
+    server: 172.67.134.123
+    port: 443
+    uuid: 8357816b-68e4-4a2b-830c-e9bdd369ea22
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /
+    ws-path: /7ouWwj1jH2IbuOfQj2chg
     ws-headers:
-      Host: us-1.acyun.cf
+      Host: en.foriran.live
+    tls: true
   - name: 美国 CloudFlare节点 - 5
     type: vmess
-    server: cfcdn.sanfencdn.net
-    port: 443
-    uuid: 951a393a-b557-4590-88b6-30948e1e0b8d
+    server: 104.25.5.175
+    port: 80
+    uuid: 53ae65be-81ee-4766-8a09-da43c44c4d30
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /zh-cn
+    ws-path: /qwer11
     ws-headers:
-      Host: us1.sanfencdn.net
+      Host: uyaa.vtcss.top
+  - name: 俄罗斯+西伯利亚JustHost
+    type: trojan
+    server: bgptru1.cnamazon.sbs
+    port: 443?type=tcp&sni=tlsdata.cnamazon.sbs&allowInsecure=1
+    password: 4658738d-c3f1-4ebf-ad7a-ee603e3f9690
+  - name: 美国 CloudFlare节点 - 6
+    type: vmess
+    server: 104.22.45.103
+    port: 443
+    uuid: 9F858CE1-7E02-4863-AA24-D90F8D3437D7
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /speedtest/Amsterdam.kotick.site
+    ws-headers:
+      Host: cool-field-4b5b.walidfree18.workers.dev
     tls: true
 proxy-groups:
   - name: Free-servers
@@ -97,38 +137,53 @@ proxy-groups:
     proxies:
       - 自动选择
       - 故障转移
+      - 加拿大+V2CROSS.COM
+      - 日本 东京Amazon数据中心
       - 美国 CloudFlare节点
-      - 台湾省台北市+scloud.sg
+      - 美国 V2CROSS.COM
+      - 新加坡 DigitalOcean数据中心
       - 美国 CloudFlare节点 - 2
-      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
-      - 美国 CloudFlare公司CDN节点(shopify)
       - 美国 CloudFlare节点 - 3
+      - 加拿大+V2CROSS.COM - 2
+      - 台湾省台北市+scloud.sg
       - 美国 CloudFlare节点 - 4
       - 美国 CloudFlare节点 - 5
+      - 俄罗斯+西伯利亚JustHost
+      - 美国 CloudFlare节点 - 6
   - name: 自动选择
     type: url-test
     proxies:
+      - 加拿大+V2CROSS.COM
+      - 日本 东京Amazon数据中心
       - 美国 CloudFlare节点
-      - 台湾省台北市+scloud.sg
+      - 美国 V2CROSS.COM
+      - 新加坡 DigitalOcean数据中心
       - 美国 CloudFlare节点 - 2
-      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
-      - 美国 CloudFlare公司CDN节点(shopify)
       - 美国 CloudFlare节点 - 3
+      - 加拿大+V2CROSS.COM - 2
+      - 台湾省台北市+scloud.sg
       - 美国 CloudFlare节点 - 4
       - 美国 CloudFlare节点 - 5
+      - 俄罗斯+西伯利亚JustHost
+      - 美国 CloudFlare节点 - 6
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
+      - 加拿大+V2CROSS.COM
+      - 日本 东京Amazon数据中心
       - 美国 CloudFlare节点
-      - 台湾省台北市+scloud.sg
+      - 美国 V2CROSS.COM
+      - 新加坡 DigitalOcean数据中心
       - 美国 CloudFlare节点 - 2
-      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
-      - 美国 CloudFlare公司CDN节点(shopify)
       - 美国 CloudFlare节点 - 3
+      - 加拿大+V2CROSS.COM - 2
+      - 台湾省台北市+scloud.sg
       - 美国 CloudFlare节点 - 4
       - 美国 CloudFlare节点 - 5
+      - 俄罗斯+西伯利亚JustHost
+      - 美国 CloudFlare节点 - 6
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
