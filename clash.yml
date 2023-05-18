@@ -1,117 +1,48 @@
 proxies:
-  - name: 伊朗 V2CROSS.COM
+  - name: 日本 东京Amazon数据中心
     type: vmess
-    server: de63.thugiping.cloud
-    port: 443
-    uuid: c9a22360-3f66-48c8-89ab-13799b05a730
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-headers: {}
-    tls: true
-  - name: 美国+Microsoft数据中心
-    type: trojan
-    server: ap.stablize.top
-    port: '443'
-    password: 7561d9a0-af44-405d-81ae-f056fbc03675
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: cf-lt.sharecentre.online
-    port: 80
-    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /shirker
-    ws-headers:
-      Host: lv3.sharecentrepro.org
-  - name: 澳大利亚 V2CROSS.COM
-    type: vmess
-    server: 140.83.63.38
-    port: 24445
-    uuid: 94c5ef37-4d82-49f9-c624-f01259374a17
-    alterId: 64
+    server: jp01-alt-vm0.entry.srthdw.art
+    port: 21585
+    uuid: 1bc52308-0bd9-30d0-90fd-cef337875d10
+    alterId: 1
     cipher: auto
     udp: true
     network: tcp
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 瑞典+V2CROSS.COM
-    type: ss
-    server: 167.88.63.79
-    port: '8881'
-    cipher: aes-256-gcm
-    password: kDWvXYZoTBcGkC4
-  - name: 德国 V2CROSS.COM
-    type: vmess
-    server: 185.16.61.119
-    port: 80
-    uuid: a442dacf-cbb3-488a-9744-61494ea38630
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: 185.16.61.119
-  - name: 美国+Microsoft数据中心 - 2
+    tls: true
+  - name: 美国+Microsoft数据中心
     type: trojan
     server: fscus.fscloud123456789.com
     port: '443'
     password: 02d79af1-e121-401a-a294-fc72a50eb8b8
-  - name: 美国 CloudFlare节点 - 2
+  - name: 日本 东京Amazon数据中心 - 2
     type: vmess
-    server: 172.67.134.123
-    port: 443
-    uuid: 8357816b-68e4-4a2b-830c-e9bdd369ea22
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /7ouWwj1jH2IbuOfQj2chg
-    ws-headers:
-      Host: en.foriran.live
-    tls: true
-  - name: 加拿大+V2CROSS.COM
-    type: trojan
-    server: stw7-tg-data.amazonwebservicess.com
-    port: '443'
-    password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
-  - name: 美国+V2CROSS.COM
-    type: trojan
-    server: 152.70.74.66
-    port: 443?security=tls&type=tcp&headerType=none
-    password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
-  - name: 欧盟 V2CROSS.COM
-    type: vmess
-    server: 45.12.144.80
-    port: 47127
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
+    server: jp06-vm0.entry.jpojpoh.art
+    port: 28787
+    uuid: 1bc52308-0bd9-30d0-90fd-cef337875d10
+    alterId: 1
     cipher: auto
     udp: true
     network: tcp
-    ws-path: /
+    ws-path: /hlsrthe214/8u4692j
     ws-headers:
-      Host: ''
-  - name: 美国 CloudFlare节点 - 3
+      Host: jp06-vm0.entry.jpojpoh.art
+    tls: true
+  - name: 俄罗斯+V2CROSS.COM
+    type: trojan
+    server: bgptru1.cnamazon.sbs
+    port: 443?type=tcp&sni=tlsdata.cnamazon.sbs&allowInsecure=1
+    password: 4658738d-c3f1-4ebf-ad7a-ee603e3f9690
+  - name: 美国+V2CROSS.COM
+    type: trojan
+    server: us2.trojanvh.xyz
+    port: '80'
+    password: 255c924c-1314-4084-9a9e-1d1a82a5cf49
+  - name: 美国 RF Engineering
     type: vmess
-    server: cf-lt.sharecentre.online
-    port: 80
-    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /shirker
-    ws-headers:
-      Host: dp3.scproxy.top
-  - name: 加拿大 V2CROSS.COM
-    type: vmess
-    server: 199.212.90.14
+    server: 141.193.213.31
     port: 443
     uuid: 6147F065-9AC0-4081-A5A3-A2EB4EBB8958
     alterId: 0
@@ -122,18 +53,60 @@ proxies:
     ws-headers:
       Host: Lille.kotick.site
     tls: true
-  - name: 美国 CloudFlare节点 - 4
+  - name: 加拿大+V2CROSS.COM
+    type: trojan
+    server: stw8-tg-data.amazonwebservicess.com
+    port: 443?type=tcp&allowInsecure=1
+    password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
+  - name: 美国 CloudFlare节点
     type: vmess
-    server: 104.16.6.2
-    port: 443
-    uuid: bd1829b0-f15d-11ed-b230-205c6d5f5d78
+    server: v2ray3.webgfw.top
+    port: 2083
+    uuid: ea9de06d-2436-42e9-8187-9e6d5fc40407
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /d3207pxi
+    ws-path: /X9piqfat/
     ws-headers:
-      Host: fr-1.0rd.net
+      Host: ''
+    tls: true
+  - name: 日本 东京Amazon数据中心 - 3
+    type: vmess
+    server: jp05-vm0.entry.srthdw.art
+    port: 30593
+    uuid: 1bc52308-0bd9-30d0-90fd-cef337875d10
+    alterId: 1
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: cf-lt.sharecentre.online
+    port: 80
+    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /shirker
+    ws-headers:
+      Host: ca.ilovescp.com
+  - name: 日本 东京Amazon数据中心 - 4
+    type: vmess
+    server: jp06-vm0.entry.jpojpoh.art
+    port: 28785
+    uuid: 22acc467-7440-386a-927a-d84be554b37e
+    alterId: 1
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
     tls: true
 proxy-groups:
   - name: Free-servers
@@ -141,56 +114,47 @@ proxy-groups:
     proxies:
       - 自动选择
       - 故障转移
-      - 伊朗 V2CROSS.COM
+      - 日本 东京Amazon数据中心
       - 美国+Microsoft数据中心
-      - 美国 CloudFlare节点
-      - 澳大利亚 V2CROSS.COM
-      - 瑞典+V2CROSS.COM
-      - 德国 V2CROSS.COM
-      - 美国+Microsoft数据中心 - 2
-      - 美国 CloudFlare节点 - 2
-      - 加拿大+V2CROSS.COM
+      - 日本 东京Amazon数据中心 - 2
+      - 俄罗斯+V2CROSS.COM
       - 美国+V2CROSS.COM
-      - 欧盟 V2CROSS.COM
-      - 美国 CloudFlare节点 - 3
-      - 加拿大 V2CROSS.COM
-      - 美国 CloudFlare节点 - 4
+      - 美国 RF Engineering
+      - 加拿大+V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 日本 东京Amazon数据中心 - 3
+      - 美国 CloudFlare节点 - 2
+      - 日本 东京Amazon数据中心 - 4
   - name: 自动选择
     type: url-test
     proxies:
-      - 伊朗 V2CROSS.COM
+      - 日本 东京Amazon数据中心
       - 美国+Microsoft数据中心
-      - 美国 CloudFlare节点
-      - 澳大利亚 V2CROSS.COM
-      - 瑞典+V2CROSS.COM
-      - 德国 V2CROSS.COM
-      - 美国+Microsoft数据中心 - 2
-      - 美国 CloudFlare节点 - 2
-      - 加拿大+V2CROSS.COM
+      - 日本 东京Amazon数据中心 - 2
+      - 俄罗斯+V2CROSS.COM
       - 美国+V2CROSS.COM
-      - 欧盟 V2CROSS.COM
-      - 美国 CloudFlare节点 - 3
-      - 加拿大 V2CROSS.COM
-      - 美国 CloudFlare节点 - 4
+      - 美国 RF Engineering
+      - 加拿大+V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 日本 东京Amazon数据中心 - 3
+      - 美国 CloudFlare节点 - 2
+      - 日本 东京Amazon数据中心 - 4
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 伊朗 V2CROSS.COM
+      - 日本 东京Amazon数据中心
       - 美国+Microsoft数据中心
-      - 美国 CloudFlare节点
-      - 澳大利亚 V2CROSS.COM
-      - 瑞典+V2CROSS.COM
-      - 德国 V2CROSS.COM
-      - 美国+Microsoft数据中心 - 2
-      - 美国 CloudFlare节点 - 2
-      - 加拿大+V2CROSS.COM
+      - 日本 东京Amazon数据中心 - 2
+      - 俄罗斯+V2CROSS.COM
       - 美国+V2CROSS.COM
-      - 欧盟 V2CROSS.COM
-      - 美国 CloudFlare节点 - 3
-      - 加拿大 V2CROSS.COM
-      - 美国 CloudFlare节点 - 4
+      - 美国 RF Engineering
+      - 加拿大+V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 日本 东京Amazon数据中心 - 3
+      - 美国 CloudFlare节点 - 2
+      - 日本 东京Amazon数据中心 - 4
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
