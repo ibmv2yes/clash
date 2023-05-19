@@ -1,76 +1,58 @@
 proxies:
-  - name: 英国+伦敦DigitalOcean数据中心
-    type: trojan
-    server: yingguo1.zhoushuren.me
-    port: '58850'
-    password: bf0cd4b6-80a0-47d9-83d7-b887516eebe7
-  - name: 美国 CloudFlare节点
+  - name: 美国加利福尼亚州圣何塞 Cloudflare节点
     type: vmess
-    server: 104.21.53.35
+    server: 103.21.244.37
     port: 80
-    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
+    uuid: 53ae65be-81ee-4766-8a09-da43c44c4d30
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /yxzbp
+    ws-path: /qwer11
     ws-headers:
-      Host: dp3.yxjnode.com
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: 104.18.21.81
-    port: 443
-    uuid: 3E271C5F-28FF-4704-B8E5-CC2B39AB7F60
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /speedtest
-    ws-headers:
-      Host: Dusseldorf.kotick.site
-    tls: true
-  - name: 美国 CloudFlare节点 - 3
-    type: vmess
-    server: cdn.twitter.now.cc
-    port: 443
-    uuid: 87283fe7-08e5-403b-a0aa-add7cd68a23e
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /ikun
-    ws-headers:
-      Host: lo.twittei.me
-    tls: true
-  - name: 台湾省台北市+scloud.sg
+      Host: uyaa.vtcss.top
+  - name: 加拿大+V2CROSS.COM
     type: trojan
-    server: stw3-tg-data.amazonwebservicess.com
+    server: stw5-tg-data.amazonwebservicess.com
     port: 443?type=tcp&allowInsecure=1
     password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
-  - name: 美国 CloudFlare节点 - 4
+  - name: 日本 东京Amazon数据中心
     type: vmess
-    server: cf-lt.sharecentre.online
+    server: jp80.6d83777c049a.sanfen004.me
     port: 80
-    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
+    uuid: 951a393a-b557-4590-88b6-30948e1e0b8d
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /shirker
+    ws-path: /zh-cn
     ws-headers:
-      Host: lv3.sharecentrepro.org
-  - name: 加拿大 V2CROSS.COM
+      Host: www.baidu.com
+  - name: 美国 CloudFlare节点
     type: vmess
-    server: 23.227.60.184
-    port: 443
-    uuid: 3E271C5F-28FF-4704-B8E5-CC2B39AB7F60
+    server: www.speedtest.net
+    port: 2087
+    uuid: d61e2d0e-09a4-4b6a-9efe-c4cfebf2148c
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /speedtest
+    ws-path: /
     ws-headers:
-      Host: Dusseldorf.kotick.site
+      Host: one.nikannetwork.xyz
+    tls: true
+  - name: 美国加利福尼亚州洛杉矶 PetaExpress
+    type: vmess
+    server: 198.2.206.39
+    port: 443
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /path/1684063265777
+    ws-headers:
+      Host: www.14787414.com
     tls: true
 proxy-groups:
   - name: Free-servers
@@ -78,35 +60,29 @@ proxy-groups:
     proxies:
       - 自动选择
       - 故障转移
-      - 英国+伦敦DigitalOcean数据中心
+      - 美国加利福尼亚州圣何塞 Cloudflare节点
+      - 加拿大+V2CROSS.COM
+      - 日本 东京Amazon数据中心
       - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
-      - 台湾省台北市+scloud.sg
-      - 美国 CloudFlare节点 - 4
-      - 加拿大 V2CROSS.COM
+      - 美国加利福尼亚州洛杉矶 PetaExpress
   - name: 自动选择
     type: url-test
     proxies:
-      - 英国+伦敦DigitalOcean数据中心
+      - 美国加利福尼亚州圣何塞 Cloudflare节点
+      - 加拿大+V2CROSS.COM
+      - 日本 东京Amazon数据中心
       - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
-      - 台湾省台北市+scloud.sg
-      - 美国 CloudFlare节点 - 4
-      - 加拿大 V2CROSS.COM
+      - 美国加利福尼亚州洛杉矶 PetaExpress
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 英国+伦敦DigitalOcean数据中心
+      - 美国加利福尼亚州圣何塞 Cloudflare节点
+      - 加拿大+V2CROSS.COM
+      - 日本 东京Amazon数据中心
       - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
-      - 台湾省台北市+scloud.sg
-      - 美国 CloudFlare节点 - 4
-      - 加拿大 V2CROSS.COM
+      - 美国加利福尼亚州洛杉矶 PetaExpress
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
