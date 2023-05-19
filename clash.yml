@@ -1,155 +1,224 @@
 proxies:
-  - name: 广东省潮州市+电信
-    type: ss
-    server: sczx.bzlxzl.com
-    port: '57054'
-    cipher: chacha20-ietf-poly1305
-    password: sEQZx5
-  - name: 巴西圣保罗 CloudFlare节点
+  - name: 美国 V2CROSS.COM
     type: vmess
-    server: 188.114.97.7
-    port: 443
-    uuid: 9aa6b5ad-c0fc-47f4-a837-f72179d7b662
+    server: 206.168.191.67
+    port: 80
+    uuid: 7997b5a0-f2f9-11ed-b436-205c6d5f5d78
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /Lsv4s7nS0ErewnEN
+    ws-path: /r2vt59x8
     ws-headers:
-      Host: channel2.unlimiteddev.tk
-    tls: true
-  - name: 伊朗 V2CROSS.COM
-    type: vmess
-    server: de63.thugiping.cloud
-    port: 443
-    uuid: c9a22360-3f66-48c8-89ab-13799b05a730
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-headers: {}
-    tls: true
-  - name: 广东省潮州市+电信 - 2
+      Host: 206.168.191.67
+  - name: 美国+Xerox
+    type: trojan
+    server: 13.215.140.145
+    port: '443'
+    password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
+  - name: 广东省广州市+电信
+    type: ss
+    server: sczx.bzlxzl.com
+    port: '57033'
+    cipher: chacha20-ietf-poly1305
+    password: sEQZx5
+  - name: 广东省广州市+电信 - 2
+    type: ss
+    server: sczx.bzlxzl.com
+    port: '57037'
+    cipher: chacha20-ietf-poly1305
+    password: sEQZx5
+  - name: 广东省潮州市+电信
     type: ss
     server: sczx.bzlxzl.com
     port: '57024'
     cipher: chacha20-ietf-poly1305
     password: sEQZx5
-  - name: 湖南省+联通
-    type: trojan
-    server: 116.163.29.150
-    port: 50056?type=tcp&security=tls&allowInsecure=1
-    password: be3f4300-d75d-4585-9b94-d1bff193f583
   - name: 美国+Microsoft数据中心
     type: trojan
-    server: jp.mjt001.com
+    server: tr.mjt001.com
     port: '443'
     password: 9d3b1e0e-252a-4c67-9628-8b62e77197e7
+  - name: 日本 东京Amazon数据中心
+    type: vmess
+    server: jp80.6d83777c049a.sanfen004.me
+    port: 80
+    uuid: 951a393a-b557-4590-88b6-30948e1e0b8d
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /zh-cn
+    ws-headers:
+      Host: www.baidu.com
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: cfcdn.sanfencdn.net
+    port: 443
+    uuid: 951a393a-b557-4590-88b6-30948e1e0b8d
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /zh-cn
+    ws-headers:
+      Host: us1.sanfencdn.net
+    tls: true
   - name: 香港+特别行政区
     type: trojan
     server: hk04.trojanyyds.xyz
     port: 443?peer=hk04.trojanyyds.xyz&tfo=1
     password: 331365d8-3ce5-484d-a226-33312bcc3217
+  - name: 美国+Xerox - 2
+    type: trojan
+    server: awssg17-data.amazon-azure.com
+    port: 443?sni=data.amazon-azure.com
+    password: 794d739c-89a0-444c-b2e7-acce12af3042
+  - name: 湖南省+联通
+    type: trojan
+    server: 116.163.45.179
+    port: 50040?type=tcp&security=tls&allowInsecure=1
+    password: be3f4300-d75d-4585-9b94-d1bff193f583
+  - name: 广东省潮州市+电信 - 2
+    type: ss
+    server: sczx.bzlxzl.com
+    port: '57042'
+    cipher: chacha20-ietf-poly1305
+    password: sEQZx5
+  - name: 美国+Microsoft数据中心 - 2
+    type: trojan
+    server: hinet.mjt001.com
+    port: '443'
+    password: 9d3b1e0e-252a-4c67-9628-8b62e77197e7
+  - name: 广东省广州市+电信 - 3
+    type: ss
+    server: sczx.bzlxzl.com
+    port: '57027'
+    cipher: chacha20-ietf-poly1305
+    password: sEQZx5
   - name: 广东省潮州市+电信 - 3
     type: ss
     server: sczx.bzlxzl.com
-    port: '57001'
+    port: '57045'
     cipher: chacha20-ietf-poly1305
     password: sEQZx5
-  - name: 湖南省+联通 - 2
-    type: trojan
-    server: 116.163.29.150
-    port: 50010?type=tcp&security=tls&allowInsecure=1
-    password: be3f4300-d75d-4585-9b94-d1bff193f583
-  - name: 香港+特别行政区 - 2
-    type: trojan
-    server: hk01.trojanyyds.xyz
-    port: 443?peer=hk01.trojanyyds.xyz&tfo=1
-    password: 331365d8-3ce5-484d-a226-33312bcc3217
-  - name: 日本 东京Amazon数据中心
+  - name: 广东省潮州市+电信 - 4
+    type: ss
+    server: sczx.bzlxzl.com
+    port: '57026'
+    cipher: chacha20-ietf-poly1305
+    password: sEQZx5
+  - name: 广东省潮州市+电信 - 5
+    type: ss
+    server: sczx.bzlxzl.com
+    port: '57020'
+    cipher: chacha20-ietf-poly1305
+    password: sEQZx5
+  - name: 美国 Cloudinnovation数据中心
     type: vmess
-    server: jp04-vm0.entry.srthdw.art
-    port: 448
-    uuid: 1bc52308-0bd9-30d0-90fd-cef337875d10
-    alterId: 0
+    server: 154.85.1.118
+    port: 49221
+    uuid: 418048af-a293-4b99-9b0c-98ca4690dd24
+    alterId: 64
     cipher: auto
     udp: true
     network: tcp
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 罗马尼亚 V2CROSS.COM
+  - name: 广东省潮州市+电信 - 6
+    type: ss
+    server: sczx.bzlxzl.com
+    port: '57022'
+    cipher: chacha20-ietf-poly1305
+    password: sEQZx5
+  - name: 美国 CloudFlare节点 - 2
     type: vmess
-    server: psm.ircf.space
+    server: 104.18.21.81
     port: 443
-    uuid: DCE76061-EE65-49DB-997C-A6A880DADE3A
+    uuid: 3E271C5F-28FF-4704-B8E5-CC2B39AB7F60
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /speedtest/Amsterdam.kotick.site
+    ws-path: /speedtest
     ws-headers:
-      Host: raspy-leaf-a6f0.lille7737.workers.dev
+      Host: Dusseldorf.kotick.site
     tls: true
-  - name: 广东省潮州市+电信 - 4
-    type: ss
-    server: sczx.bzlxzl.com
-    port: '57056'
-    cipher: chacha20-ietf-poly1305
-    password: sEQZx5
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
+      - 美国 V2CROSS.COM
+      - 美国+Xerox
+      - 广东省广州市+电信
+      - 广东省广州市+电信 - 2
       - 广东省潮州市+电信
-      - 巴西圣保罗 CloudFlare节点
-      - 伊朗 V2CROSS.COM
-      - 广东省潮州市+电信 - 2
-      - 湖南省+联通
       - 美国+Microsoft数据中心
-      - 香港+特别行政区
-      - 广东省潮州市+电信 - 3
-      - 湖南省+联通 - 2
-      - 香港+特别行政区 - 2
       - 日本 东京Amazon数据中心
-      - 罗马尼亚 V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 香港+特别行政区
+      - 美国+Xerox - 2
+      - 湖南省+联通
+      - 广东省潮州市+电信 - 2
+      - 美国+Microsoft数据中心 - 2
+      - 广东省广州市+电信 - 3
+      - 广东省潮州市+电信 - 3
       - 广东省潮州市+电信 - 4
+      - 广东省潮州市+电信 - 5
+      - 美国 Cloudinnovation数据中心
+      - 广东省潮州市+电信 - 6
+      - 美国 CloudFlare节点 - 2
   - name: 自动选择
     type: url-test
     proxies:
+      - 美国 V2CROSS.COM
+      - 美国+Xerox
+      - 广东省广州市+电信
+      - 广东省广州市+电信 - 2
       - 广东省潮州市+电信
-      - 巴西圣保罗 CloudFlare节点
-      - 伊朗 V2CROSS.COM
-      - 广东省潮州市+电信 - 2
-      - 湖南省+联通
       - 美国+Microsoft数据中心
-      - 香港+特别行政区
-      - 广东省潮州市+电信 - 3
-      - 湖南省+联通 - 2
-      - 香港+特别行政区 - 2
       - 日本 东京Amazon数据中心
-      - 罗马尼亚 V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 香港+特别行政区
+      - 美国+Xerox - 2
+      - 湖南省+联通
+      - 广东省潮州市+电信 - 2
+      - 美国+Microsoft数据中心 - 2
+      - 广东省广州市+电信 - 3
+      - 广东省潮州市+电信 - 3
       - 广东省潮州市+电信 - 4
+      - 广东省潮州市+电信 - 5
+      - 美国 Cloudinnovation数据中心
+      - 广东省潮州市+电信 - 6
+      - 美国 CloudFlare节点 - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
+      - 美国 V2CROSS.COM
+      - 美国+Xerox
+      - 广东省广州市+电信
+      - 广东省广州市+电信 - 2
       - 广东省潮州市+电信
-      - 巴西圣保罗 CloudFlare节点
-      - 伊朗 V2CROSS.COM
-      - 广东省潮州市+电信 - 2
-      - 湖南省+联通
       - 美国+Microsoft数据中心
-      - 香港+特别行政区
-      - 广东省潮州市+电信 - 3
-      - 湖南省+联通 - 2
-      - 香港+特别行政区 - 2
       - 日本 东京Amazon数据中心
-      - 罗马尼亚 V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 香港+特别行政区
+      - 美国+Xerox - 2
+      - 湖南省+联通
+      - 广东省潮州市+电信 - 2
+      - 美国+Microsoft数据中心 - 2
+      - 广东省广州市+电信 - 3
+      - 广东省潮州市+电信 - 3
       - 广东省潮州市+电信 - 4
+      - 广东省潮州市+电信 - 5
+      - 美国 Cloudinnovation数据中心
+      - 广东省潮州市+电信 - 6
+      - 美国 CloudFlare节点 - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
