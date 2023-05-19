@@ -1,246 +1,200 @@
 proxies:
-  - name: 广东省潮州市+电信
-    type: ss
-    server: sczx.bzlxzl.com
-    port: '57010'
-    cipher: chacha20-ietf-poly1305
-    password: sEQZx5
-  - name: 加拿大 V2CROSS.COM
-    type: vmess
-    server: 23.227.60.184
-    port: 443
-    uuid: 3E271C5F-28FF-4704-B8E5-CC2B39AB7F60
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /speedtest
-    ws-headers:
-      Host: Dusseldorf.kotick.site
-    tls: true
-  - name: 香港 电讯盈科有限公司
-    type: vmess
-    server: 112.118.195.16
-    port: 80
-    uuid: b2947942-701b-4de2-91cd-f6810d5d03bc
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: sg2.freeiq.cf
-  - name: 广东省广州市+电信IDC机房
-    type: ss
-    server: sczx.bzlxzl.com
-    port: '57029'
-    cipher: chacha20-ietf-poly1305
-    password: sEQZx5
-  - name: 广东省广州市+电信IDC机房 - 2
-    type: ss
-    server: sczx.bzlxzl.com
-    port: '57053'
-    cipher: chacha20-ietf-poly1305
-    password: sEQZx5
-  - name: 香港+特别行政区
+  - name: 美国+V2CROSS.COM
     type: trojan
-    server: hk03.trojanyyds.xyz
-    port: 443?peer=hk03.trojanyyds.xyz&tfo=1
-    password: 331365d8-3ce5-484d-a226-33312bcc3217
-  - name: 美国加利福尼亚州洛杉矶 PetaExpress
-    type: vmess
-    server: 198.2.216.129
-    port: 50002
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: 20-24-33-134.nhost.00cdn.com
-  - name: 广东省广州市+电信IDC机房 - 3
-    type: ss
-    server: sczx.bzlxzl.com
-    port: '57040'
-    cipher: chacha20-ietf-poly1305
-    password: sEQZx5
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: 172.67.134.123
-    port: 443
-    uuid: 8357816b-68e4-4a2b-830c-e9bdd369ea22
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /7ouWwj1jH2IbuOfQj2chg
-    ws-headers:
-      Host: en.foriran.live
-    tls: true
-  - name: 台湾省台北市+scloud.sg
-    type: trojan
-    server: stw3-tg-data.amazonwebservicess.com
-    port: 443?type=tcp&allowInsecure=1
-    password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
-  - name: 香港+特别行政区 - 2
-    type: trojan
-    server: hk04.trojanyyds.xyz
-    port: 443?peer=hk04.trojanyyds.xyz&tfo=1
-    password: 331365d8-3ce5-484d-a226-33312bcc3217
-  - name: 广东省潮州市+电信 - 2
-    type: ss
-    server: sczx.bzlxzl.com
-    port: '57008'
-    cipher: chacha20-ietf-poly1305
-    password: sEQZx5
-  - name: 广东省潮州市+电信 - 3
-    type: ss
-    server: sczx.bzlxzl.com
-    port: '57021'
-    cipher: chacha20-ietf-poly1305
-    password: sEQZx5
-  - name: 广东省广州市+电信IDC机房 - 4
-    type: ss
-    server: sczx.bzlxzl.com
-    port: '57012'
-    cipher: chacha20-ietf-poly1305
-    password: sEQZx5
-  - name: 美国 加利福尼亚州圣何塞PEG TECH
-    type: vmess
-    server: 142.4.97.77
-    port: 44942
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 广东省潮州市+电信 - 4
-    type: ss
-    server: sczx.bzlxzl.com
-    port: '57003'
-    cipher: chacha20-ietf-poly1305
-    password: sEQZx5
-  - name: 德国 黑森州法兰克福Choopa数据中心
-    type: vmess
-    server: 45.77.65.66
-    port: 2053
-    uuid: 4134efe7-d935-416c-c2cc-24943e4a80ca
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: 172.67.156.138
-    port: 443
-    uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /speedtest
-    ws-headers:
-      Host: Kansas.kotick.site
-    tls: true
+    server: mf3.zhoushuren.me
+    port: '25565'
+    password: bf0cd4b6-80a0-47d9-83d7-b887516eebe7
   - name: 湖南省+联通
     type: trojan
     server: 116.163.29.150
-    port: 50032?type=tcp&security=tls&allowInsecure=1
+    port: 50066?type=tcp&security=tls&allowInsecure=1
     password: be3f4300-d75d-4585-9b94-d1bff193f583
-  - name: 日本东京都品川区+Linode
+  - name: 加拿大+V2CROSS.COM
     type: trojan
-    server: linjp1.zhoushuren.me
-    port: '25565'
-    password: bf0cd4b6-80a0-47d9-83d7-b887516eebe7
+    server: stw8-tg-data.amazonwebservicess.com
+    port: '443'
+    password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
   - name: 湖南省+联通 - 2
     type: trojan
     server: 116.163.29.150
+    port: 50006?type=tcp&security=tls&allowInsecure=1
+    password: be3f4300-d75d-4585-9b94-d1bff193f583
+  - name: 湖南省+联通 - 3
+    type: trojan
+    server: 116.163.45.179
+    port: 50044?type=tcp&security=tls&allowInsecure=1
+    password: be3f4300-d75d-4585-9b94-d1bff193f583
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: 104.20.127.237
+    port: 443
+    uuid: e883ff76-3bb4-4008-c068-6b5b1d960ea7
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /qwer09
+    ws-headers:
+      Host: uyaa.vtcss.top
+    tls: true
+  - name: 德国 黑森州法兰克福Choopa数据中心
+    type: vmess
+    server: 209.250.236.70
+    port: 443
+    uuid: 59F5150D-9CFB-4780-8F22-EC2C9932EE39
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /speedtest
+    ws-headers:
+      Host: Amsterdam.kotick.site
+    tls: true
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: www.speedtest.net
+    port: 2087
+    uuid: d61e2d0e-09a4-4b6a-9efe-c4cfebf2148c
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: one.nikannetwork.xyz
+    tls: true
+  - name: 日本 东京Amazon数据中心
+    type: vmess
+    server: jp01-alt-vm0.entry.srthdw.art
+    port: 21583
+    uuid: 22acc467-7440-386a-927a-d84be554b37e
+    alterId: 1
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: jp01-alt-vm0.entry.srthdw.art
+    tls: true
+  - name: 湖南省+联通 - 4
+    type: trojan
+    server: 116.163.29.150
+    port: 50050?type=tcp&security=tls&allowInsecure=1
+    password: be3f4300-d75d-4585-9b94-d1bff193f583
+  - name: 美国+V2CROSS.COM - 2
+    type: trojan
+    server: mf2.zhoushuren.me
+    port: '25565'
+    password: bf0cd4b6-80a0-47d9-83d7-b887516eebe7
+  - name: 日本 东京Amazon数据中心 - 2
+    type: vmess
+    server: jp04-vm0.entry.srthdw.art
+    port: 446
+    uuid: 22acc467-7440-386a-927a-d84be554b37e
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: jp04-vm0.entry.srthdw.art
+  - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: cu.wfitech.net
+    port: 443
+    uuid: 030ae75a-1a4a-45cc-88f1-f1b7d9fe15f3
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /KS4XxcnoWPTpuA9VAxnFIAPLD
+    ws-headers:
+      Host: cu.wfitech.net
+    tls: true
+  - name: 湖南省+联通 - 5
+    type: trojan
+    server: 116.163.45.179
     port: 50038?type=tcp&security=tls&allowInsecure=1
     password: be3f4300-d75d-4585-9b94-d1bff193f583
+  - name: 加拿大+V2CROSS.COM - 2
+    type: trojan
+    server: jp1117.ljydw.top
+    port: '80'
+    password: e75e5cdb-f43d-4082-8885-59f6264cd80a
+  - name: 欧盟 V2CROSS.COM
+    type: vmess
+    server: 45.88.176.30
+    port: 41092
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 广东省潮州市+电信
-      - 加拿大 V2CROSS.COM
-      - 香港 电讯盈科有限公司
-      - 广东省广州市+电信IDC机房
-      - 广东省广州市+电信IDC机房 - 2
-      - 香港+特别行政区
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 广东省广州市+电信IDC机房 - 3
+      - 美国+V2CROSS.COM
+      - 湖南省+联通
+      - 加拿大+V2CROSS.COM
+      - 湖南省+联通 - 2
+      - 湖南省+联通 - 3
       - 美国 CloudFlare节点
-      - 台湾省台北市+scloud.sg
-      - 香港+特别行政区 - 2
-      - 广东省潮州市+电信 - 2
-      - 广东省潮州市+电信 - 3
-      - 广东省广州市+电信IDC机房 - 4
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 广东省潮州市+电信 - 4
       - 德国 黑森州法兰克福Choopa数据中心
       - 美国 CloudFlare节点 - 2
-      - 湖南省+联通
-      - 日本东京都品川区+Linode
-      - 湖南省+联通 - 2
+      - 日本 东京Amazon数据中心
+      - 湖南省+联通 - 4
+      - 美国+V2CROSS.COM - 2
+      - 日本 东京Amazon数据中心 - 2
+      - 美国 CloudFlare节点 - 3
+      - 湖南省+联通 - 5
+      - 加拿大+V2CROSS.COM - 2
+      - 欧盟 V2CROSS.COM
   - name: 自动选择
     type: url-test
     proxies:
-      - 广东省潮州市+电信
-      - 加拿大 V2CROSS.COM
-      - 香港 电讯盈科有限公司
-      - 广东省广州市+电信IDC机房
-      - 广东省广州市+电信IDC机房 - 2
-      - 香港+特别行政区
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 广东省广州市+电信IDC机房 - 3
+      - 美国+V2CROSS.COM
+      - 湖南省+联通
+      - 加拿大+V2CROSS.COM
+      - 湖南省+联通 - 2
+      - 湖南省+联通 - 3
       - 美国 CloudFlare节点
-      - 台湾省台北市+scloud.sg
-      - 香港+特别行政区 - 2
-      - 广东省潮州市+电信 - 2
-      - 广东省潮州市+电信 - 3
-      - 广东省广州市+电信IDC机房 - 4
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 广东省潮州市+电信 - 4
       - 德国 黑森州法兰克福Choopa数据中心
       - 美国 CloudFlare节点 - 2
-      - 湖南省+联通
-      - 日本东京都品川区+Linode
-      - 湖南省+联通 - 2
+      - 日本 东京Amazon数据中心
+      - 湖南省+联通 - 4
+      - 美国+V2CROSS.COM - 2
+      - 日本 东京Amazon数据中心 - 2
+      - 美国 CloudFlare节点 - 3
+      - 湖南省+联通 - 5
+      - 加拿大+V2CROSS.COM - 2
+      - 欧盟 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 广东省潮州市+电信
-      - 加拿大 V2CROSS.COM
-      - 香港 电讯盈科有限公司
-      - 广东省广州市+电信IDC机房
-      - 广东省广州市+电信IDC机房 - 2
-      - 香港+特别行政区
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 广东省广州市+电信IDC机房 - 3
+      - 美国+V2CROSS.COM
+      - 湖南省+联通
+      - 加拿大+V2CROSS.COM
+      - 湖南省+联通 - 2
+      - 湖南省+联通 - 3
       - 美国 CloudFlare节点
-      - 台湾省台北市+scloud.sg
-      - 香港+特别行政区 - 2
-      - 广东省潮州市+电信 - 2
-      - 广东省潮州市+电信 - 3
-      - 广东省广州市+电信IDC机房 - 4
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 广东省潮州市+电信 - 4
       - 德国 黑森州法兰克福Choopa数据中心
       - 美国 CloudFlare节点 - 2
-      - 湖南省+联通
-      - 日本东京都品川区+Linode
-      - 湖南省+联通 - 2
+      - 日本 东京Amazon数据中心
+      - 湖南省+联通 - 4
+      - 美国+V2CROSS.COM - 2
+      - 日本 东京Amazon数据中心 - 2
+      - 美国 CloudFlare节点 - 3
+      - 湖南省+联通 - 5
+      - 加拿大+V2CROSS.COM - 2
+      - 欧盟 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
