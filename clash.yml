@@ -1,143 +1,92 @@
 proxies:
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: cf.yxjnode.com
-    port: 80
-    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /yxzbp
-    ws-headers:
-      Host: dp1.yxjnode.com
   - name: 广东省广州市+电信
     type: ss
     server: sczx.bzlxzl.com
-    port: '57036'
+    port: '57012'
     cipher: chacha20-ietf-poly1305
     password: sEQZx5
-  - name: 广东省潮州市+电信
-    type: ss
-    server: sczx.bzlxzl.com
-    port: '57063'
-    cipher: chacha20-ietf-poly1305
-    password: sEQZx5
-  - name: 美国+加利福尼亚州洛杉矶Level3通信(DIA)
+  - name: 湖南省+联通
     type: trojan
-    server: lux.mjt001.com
-    port: '443'
-    password: 9d3b1e0e-252a-4c67-9628-8b62e77197e7
-  - name: 欧盟 V2CROSS.COM
-    type: vmess
-    server: 45.88.176.30
-    port: 41092
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国+加利福尼亚州洛杉矶Level3通信(DIA) - 2
-    type: trojan
-    server: hinet.mjt001.com
-    port: '443'
-    password: 9d3b1e0e-252a-4c67-9628-8b62e77197e7
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: 172.67.247.250
-    port: 80
-    uuid: 53ae65be-81ee-4766-8a09-da43c44c4d30
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /qwer11
-    ws-headers:
-      Host: uyaa.vtcss.top
-  - name: 美国+加利福尼亚州洛杉矶Level3通信(DIA) - 3
-    type: trojan
-    server: usla.mjt001.com
-    port: '443'
-    password: 9d3b1e0e-252a-4c67-9628-8b62e77197e7
-  - name: 美国 CloudFlare节点 - 3
-    type: vmess
-    server: www.speedtest.net
-    port: 2087
-    uuid: d61e2d0e-09a4-4b6a-9efe-c4cfebf2148c
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: one.nikannetwork.xyz
-    tls: true
-  - name: 美国 V2CROSS.COM
-    type: vmess
-    server: 137.175.52.18
-    port: 33002
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
+    server: 116.163.29.150
+    port: 50018?type=tcp&security=tls&allowInsecure=1
+    password: be3f4300-d75d-4585-9b94-d1bff193f583
   - name: 美国+Microsoft数据中心
     type: trojan
-    server: ch.mjt001.com
+    server: il.mjt001.com
     port: '443'
-    password: 9d3b1e0e-252a-4c67-9628-8b62e77197e7
-  - name: 美国+加利福尼亚州洛杉矶Level3通信(DIA) - 4
+    password: 2f31805a-b9e0-4b7b-808f-c7971332d068
+  - name: 香港 腾讯云
+    type: vmess
+    server: 43.154.122.126
+    port: 48122
+    uuid: 82adc998-88ab-4c87-8b86-5bc39e80f5b2
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /hk1/getData
+    ws-headers:
+      Host: ''
+    tls: true
+  - name: 湖南省+联通 - 2
     type: trojan
-    server: hinet.mjt001.com
+    server: 116.163.29.150
+    port: 50032?type=tcp&security=tls&allowInsecure=1
+    password: be3f4300-d75d-4585-9b94-d1bff193f583
+  - name: 湖南省+联通 - 3
+    type: trojan
+    server: 116.163.45.179
+    port: 50036?type=tcp&security=tls&allowInsecure=1
+    password: be3f4300-d75d-4585-9b94-d1bff193f583
+  - name: 美国加利福尼亚州洛杉矶 PetaExpress
+    type: vmess
+    server: 198.2.206.39
+    port: 443
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /path/1684063265777
+    ws-headers:
+      Host: www.14787414.com
+    tls: true
+  - name: 日本+V2CROSS.COM
+    type: trojan
+    server: pl.mjt001.com
     port: '443'
     password: 9d3b1e0e-252a-4c67-9628-8b62e77197e7
   - name: 广东省广州市+电信 - 2
     type: ss
     server: sczx.bzlxzl.com
-    port: '57043'
+    port: '57007'
     cipher: chacha20-ietf-poly1305
     password: sEQZx5
-  - name: 广东省广州市+电信 - 3
+  - name: 广东省潮州市+电信
     type: ss
     server: sczx.bzlxzl.com
-    port: '57032'
+    port: '57046'
     cipher: chacha20-ietf-poly1305
     password: sEQZx5
-  - name: 日本 东京Amazon数据中心
+  - name: 广东省潮州市+电信 - 2
+    type: ss
+    server: sczx.bzlxzl.com
+    port: '57011'
+    cipher: chacha20-ietf-poly1305
+    password: sEQZx5
+  - name: 美国加利福尼亚州洛杉矶 PetaExpress - 2
     type: vmess
-    server: jp05-vm0.entry.srthdw.art
-    port: 30593
-    uuid: 1bc52308-0bd9-30d0-90fd-cef337875d10
-    alterId: 1
+    server: 198.2.216.129
+    port: 50002
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
     cipher: auto
     udp: true
     network: tcp
     ws-path: /
     ws-headers:
-      Host: ''
-  - name: 美国+加利福尼亚州洛杉矶Level3通信(DIA) - 5
-    type: trojan
-    server: kr.mjt001.com
-    port: '443'
-    password: 9d3b1e0e-252a-4c67-9628-8b62e77197e7
-  - name: 美国+Microsoft数据中心 - 2
-    type: trojan
-    server: uk.mjt001.com
-    port: '443'
-    password: 9d3b1e0e-252a-4c67-9628-8b62e77197e7
-  - name: 广东省广州市+电信 - 4
-    type: ss
-    server: sczx.bzlxzl.com
-    port: '57007'
-    cipher: chacha20-ietf-poly1305
-    password: sEQZx5
-  - name: 美国 CloudFlare节点 - 4
+      Host: 20-24-33-134.nhost.00cdn.com
+  - name: 美国 CloudFlare节点
     type: vmess
     server: cf-lt.sharecentre.online
     port: 80
@@ -148,134 +97,107 @@ proxies:
     network: ws
     ws-path: /shirker
     ws-headers:
-      Host: lv3.sharecentrepro.org
-  - name: 广东省潮州市+电信 - 2
+      Host: ca.ilovescp.com
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: cdn.chigua.tk
+    port: 80
+    uuid: 01925169-e2ff-483c-89f2-6e778dcdd450
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: us-1.acyun.cf
+  - name: 广东省广州市+电信 - 3
     type: ss
     server: sczx.bzlxzl.com
-    port: '57026'
+    port: '57064'
     cipher: chacha20-ietf-poly1305
     password: sEQZx5
-  - name: 美国+加利福尼亚州洛杉矶Level3通信(DIA) - 6
-    type: trojan
-    server: usla.mjt001.com
-    port: '443'
-    password: 9d3b1e0e-252a-4c67-9628-8b62e77197e7
-  - name: 美国+Microsoft数据中心 - 3
-    type: trojan
-    server: hk04.trojanyyds.xyz
-    port: 443?peer=hk04.trojanyyds.xyz&tfo=1
-    password: 331365d8-3ce5-484d-a226-33312bcc3217
-  - name: 德国 黑森州法兰克福Choopa数据中心
+  - name: 日本 东京Amazon数据中心
     type: vmess
-    server: 209.250.236.70
-    port: 443
-    uuid: 59F5150D-9CFB-4780-8F22-EC2C9932EE39
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /speedtest
-    ws-headers:
-      Host: Amsterdam.kotick.site
-    tls: true
-  - name: 美国 CloudFlare节点 - 5
-    type: vmess
-    server: tech.noaries.de
+    server: jp80.6d83777c049a.sanfen004.me
     port: 80
-    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
+    uuid: 951a393a-b557-4590-88b6-30948e1e0b8d
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /shirker
+    ws-path: /zh-cn
     ws-headers:
-      Host: nl.sharecentrepro.com
+      Host: www.baidu.com
+  - name: 湖南省+联通 - 4
+    type: trojan
+    server: 116.163.29.150
+    port: 50006?type=tcp&security=tls&allowInsecure=1
+    password: be3f4300-d75d-4585-9b94-d1bff193f583
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 CloudFlare节点
       - 广东省广州市+电信
-      - 广东省潮州市+电信
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
-      - 欧盟 V2CROSS.COM
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA) - 2
-      - 美国 CloudFlare节点 - 2
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA) - 3
-      - 美国 CloudFlare节点 - 3
-      - 美国 V2CROSS.COM
+      - 湖南省+联通
       - 美国+Microsoft数据中心
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA) - 4
+      - 香港 腾讯云
+      - 湖南省+联通 - 2
+      - 湖南省+联通 - 3
+      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 日本+V2CROSS.COM
       - 广东省广州市+电信 - 2
+      - 广东省潮州市+电信
+      - 广东省潮州市+电信 - 2
+      - 美国加利福尼亚州洛杉矶 PetaExpress - 2
+      - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 - 2
       - 广东省广州市+电信 - 3
       - 日本 东京Amazon数据中心
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA) - 5
-      - 美国+Microsoft数据中心 - 2
-      - 广东省广州市+电信 - 4
-      - 美国 CloudFlare节点 - 4
-      - 广东省潮州市+电信 - 2
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA) - 6
-      - 美国+Microsoft数据中心 - 3
-      - 德国 黑森州法兰克福Choopa数据中心
-      - 美国 CloudFlare节点 - 5
+      - 湖南省+联通 - 4
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 CloudFlare节点
       - 广东省广州市+电信
-      - 广东省潮州市+电信
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
-      - 欧盟 V2CROSS.COM
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA) - 2
-      - 美国 CloudFlare节点 - 2
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA) - 3
-      - 美国 CloudFlare节点 - 3
-      - 美国 V2CROSS.COM
+      - 湖南省+联通
       - 美国+Microsoft数据中心
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA) - 4
+      - 香港 腾讯云
+      - 湖南省+联通 - 2
+      - 湖南省+联通 - 3
+      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 日本+V2CROSS.COM
       - 广东省广州市+电信 - 2
+      - 广东省潮州市+电信
+      - 广东省潮州市+电信 - 2
+      - 美国加利福尼亚州洛杉矶 PetaExpress - 2
+      - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 - 2
       - 广东省广州市+电信 - 3
       - 日本 东京Amazon数据中心
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA) - 5
-      - 美国+Microsoft数据中心 - 2
-      - 广东省广州市+电信 - 4
-      - 美国 CloudFlare节点 - 4
-      - 广东省潮州市+电信 - 2
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA) - 6
-      - 美国+Microsoft数据中心 - 3
-      - 德国 黑森州法兰克福Choopa数据中心
-      - 美国 CloudFlare节点 - 5
+      - 湖南省+联通 - 4
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 CloudFlare节点
       - 广东省广州市+电信
-      - 广东省潮州市+电信
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
-      - 欧盟 V2CROSS.COM
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA) - 2
-      - 美国 CloudFlare节点 - 2
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA) - 3
-      - 美国 CloudFlare节点 - 3
-      - 美国 V2CROSS.COM
+      - 湖南省+联通
       - 美国+Microsoft数据中心
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA) - 4
+      - 香港 腾讯云
+      - 湖南省+联通 - 2
+      - 湖南省+联通 - 3
+      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 日本+V2CROSS.COM
       - 广东省广州市+电信 - 2
+      - 广东省潮州市+电信
+      - 广东省潮州市+电信 - 2
+      - 美国加利福尼亚州洛杉矶 PetaExpress - 2
+      - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 - 2
       - 广东省广州市+电信 - 3
       - 日本 东京Amazon数据中心
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA) - 5
-      - 美国+Microsoft数据中心 - 2
-      - 广东省广州市+电信 - 4
-      - 美国 CloudFlare节点 - 4
-      - 广东省潮州市+电信 - 2
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA) - 6
-      - 美国+Microsoft数据中心 - 3
-      - 德国 黑森州法兰克福Choopa数据中心
-      - 美国 CloudFlare节点 - 5
+      - 湖南省+联通 - 4
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
