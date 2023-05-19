@@ -1,200 +1,112 @@
 proxies:
-  - name: 美国+V2CROSS.COM
+  - name: 英国+伦敦DigitalOcean数据中心
     type: trojan
-    server: mf3.zhoushuren.me
-    port: '25565'
+    server: yingguo1.zhoushuren.me
+    port: '58850'
     password: bf0cd4b6-80a0-47d9-83d7-b887516eebe7
-  - name: 湖南省+联通
-    type: trojan
-    server: 116.163.29.150
-    port: 50066?type=tcp&security=tls&allowInsecure=1
-    password: be3f4300-d75d-4585-9b94-d1bff193f583
-  - name: 加拿大+V2CROSS.COM
-    type: trojan
-    server: stw8-tg-data.amazonwebservicess.com
-    port: '443'
-    password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
-  - name: 湖南省+联通 - 2
-    type: trojan
-    server: 116.163.29.150
-    port: 50006?type=tcp&security=tls&allowInsecure=1
-    password: be3f4300-d75d-4585-9b94-d1bff193f583
-  - name: 湖南省+联通 - 3
-    type: trojan
-    server: 116.163.45.179
-    port: 50044?type=tcp&security=tls&allowInsecure=1
-    password: be3f4300-d75d-4585-9b94-d1bff193f583
   - name: 美国 CloudFlare节点
     type: vmess
-    server: 104.20.127.237
-    port: 443
-    uuid: e883ff76-3bb4-4008-c068-6b5b1d960ea7
+    server: 104.21.53.35
+    port: 80
+    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /qwer09
+    ws-path: /yxzbp
     ws-headers:
-      Host: uyaa.vtcss.top
-    tls: true
-  - name: 德国 黑森州法兰克福Choopa数据中心
+      Host: dp3.yxjnode.com
+  - name: 美国 CloudFlare节点 - 2
     type: vmess
-    server: 209.250.236.70
+    server: 104.18.21.81
     port: 443
-    uuid: 59F5150D-9CFB-4780-8F22-EC2C9932EE39
+    uuid: 3E271C5F-28FF-4704-B8E5-CC2B39AB7F60
     alterId: 0
     cipher: auto
     udp: true
     network: ws
     ws-path: /speedtest
     ws-headers:
-      Host: Amsterdam.kotick.site
+      Host: Dusseldorf.kotick.site
     tls: true
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: www.speedtest.net
-    port: 2087
-    uuid: d61e2d0e-09a4-4b6a-9efe-c4cfebf2148c
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: one.nikannetwork.xyz
-    tls: true
-  - name: 日本 东京Amazon数据中心
-    type: vmess
-    server: jp01-alt-vm0.entry.srthdw.art
-    port: 21583
-    uuid: 22acc467-7440-386a-927a-d84be554b37e
-    alterId: 1
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: jp01-alt-vm0.entry.srthdw.art
-    tls: true
-  - name: 湖南省+联通 - 4
-    type: trojan
-    server: 116.163.29.150
-    port: 50050?type=tcp&security=tls&allowInsecure=1
-    password: be3f4300-d75d-4585-9b94-d1bff193f583
-  - name: 美国+V2CROSS.COM - 2
-    type: trojan
-    server: mf2.zhoushuren.me
-    port: '25565'
-    password: bf0cd4b6-80a0-47d9-83d7-b887516eebe7
-  - name: 日本 东京Amazon数据中心 - 2
-    type: vmess
-    server: jp04-vm0.entry.srthdw.art
-    port: 446
-    uuid: 22acc467-7440-386a-927a-d84be554b37e
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: jp04-vm0.entry.srthdw.art
   - name: 美国 CloudFlare节点 - 3
     type: vmess
-    server: cu.wfitech.net
+    server: cdn.twitter.now.cc
     port: 443
-    uuid: 030ae75a-1a4a-45cc-88f1-f1b7d9fe15f3
+    uuid: 87283fe7-08e5-403b-a0aa-add7cd68a23e
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /KS4XxcnoWPTpuA9VAxnFIAPLD
+    ws-path: /ikun
     ws-headers:
-      Host: cu.wfitech.net
+      Host: lo.twittei.me
     tls: true
-  - name: 湖南省+联通 - 5
+  - name: 台湾省台北市+scloud.sg
     type: trojan
-    server: 116.163.45.179
-    port: 50038?type=tcp&security=tls&allowInsecure=1
-    password: be3f4300-d75d-4585-9b94-d1bff193f583
-  - name: 加拿大+V2CROSS.COM - 2
-    type: trojan
-    server: jp1117.ljydw.top
-    port: '80'
-    password: e75e5cdb-f43d-4082-8885-59f6264cd80a
-  - name: 欧盟 V2CROSS.COM
+    server: stw3-tg-data.amazonwebservicess.com
+    port: 443?type=tcp&allowInsecure=1
+    password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
+  - name: 美国 CloudFlare节点 - 4
     type: vmess
-    server: 45.88.176.30
-    port: 41092
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
+    server: cf-lt.sharecentre.online
+    port: 80
+    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
+    alterId: 0
     cipher: auto
     udp: true
-    network: tcp
-    ws-path: /
+    network: ws
+    ws-path: /shirker
     ws-headers:
-      Host: ''
+      Host: lv3.sharecentrepro.org
+  - name: 加拿大 V2CROSS.COM
+    type: vmess
+    server: 23.227.60.184
+    port: 443
+    uuid: 3E271C5F-28FF-4704-B8E5-CC2B39AB7F60
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /speedtest
+    ws-headers:
+      Host: Dusseldorf.kotick.site
+    tls: true
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国+V2CROSS.COM
-      - 湖南省+联通
-      - 加拿大+V2CROSS.COM
-      - 湖南省+联通 - 2
-      - 湖南省+联通 - 3
+      - 英国+伦敦DigitalOcean数据中心
       - 美国 CloudFlare节点
-      - 德国 黑森州法兰克福Choopa数据中心
       - 美国 CloudFlare节点 - 2
-      - 日本 东京Amazon数据中心
-      - 湖南省+联通 - 4
-      - 美国+V2CROSS.COM - 2
-      - 日本 东京Amazon数据中心 - 2
       - 美国 CloudFlare节点 - 3
-      - 湖南省+联通 - 5
-      - 加拿大+V2CROSS.COM - 2
-      - 欧盟 V2CROSS.COM
+      - 台湾省台北市+scloud.sg
+      - 美国 CloudFlare节点 - 4
+      - 加拿大 V2CROSS.COM
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国+V2CROSS.COM
-      - 湖南省+联通
-      - 加拿大+V2CROSS.COM
-      - 湖南省+联通 - 2
-      - 湖南省+联通 - 3
+      - 英国+伦敦DigitalOcean数据中心
       - 美国 CloudFlare节点
-      - 德国 黑森州法兰克福Choopa数据中心
       - 美国 CloudFlare节点 - 2
-      - 日本 东京Amazon数据中心
-      - 湖南省+联通 - 4
-      - 美国+V2CROSS.COM - 2
-      - 日本 东京Amazon数据中心 - 2
       - 美国 CloudFlare节点 - 3
-      - 湖南省+联通 - 5
-      - 加拿大+V2CROSS.COM - 2
-      - 欧盟 V2CROSS.COM
+      - 台湾省台北市+scloud.sg
+      - 美国 CloudFlare节点 - 4
+      - 加拿大 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国+V2CROSS.COM
-      - 湖南省+联通
-      - 加拿大+V2CROSS.COM
-      - 湖南省+联通 - 2
-      - 湖南省+联通 - 3
+      - 英国+伦敦DigitalOcean数据中心
       - 美国 CloudFlare节点
-      - 德国 黑森州法兰克福Choopa数据中心
       - 美国 CloudFlare节点 - 2
-      - 日本 东京Amazon数据中心
-      - 湖南省+联通 - 4
-      - 美国+V2CROSS.COM - 2
-      - 日本 东京Amazon数据中心 - 2
       - 美国 CloudFlare节点 - 3
-      - 湖南省+联通 - 5
-      - 加拿大+V2CROSS.COM - 2
-      - 欧盟 V2CROSS.COM
+      - 台湾省台北市+scloud.sg
+      - 美国 CloudFlare节点 - 4
+      - 加拿大 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
