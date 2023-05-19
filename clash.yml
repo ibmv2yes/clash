@@ -1,4 +1,15 @@
 proxies:
+  - name: 广东省潮州市+电信
+    type: ss
+    server: sczx.bzlxzl.com
+    port: '57027'
+    cipher: chacha20-ietf-poly1305
+    password: sEQZx5
+  - name: 美国+加利福尼亚州洛杉矶Level3通信(DIA)
+    type: trojan
+    server: kr.mjt001.com
+    port: '443'
+    password: 9d3b1e0e-252a-4c67-9628-8b62e77197e7
   - name: 美国 CloudFlare节点
     type: vmess
     server: cdn.twitter.now.cc
@@ -12,16 +23,56 @@ proxies:
     ws-headers:
       Host: lo.twittei.me
     tls: true
-  - name: 广东省潮州市+电信
+  - name: 美国+加利福尼亚州洛杉矶Level3通信(DIA) - 2
+    type: trojan
+    server: fr.mjt001.com
+    port: '443'
+    password: 9d3b1e0e-252a-4c67-9628-8b62e77197e7
+  - name: 广东省广州市+电信
     type: ss
     server: sczx.bzlxzl.com
-    port: '57033'
+    port: '57005'
     cipher: chacha20-ietf-poly1305
     password: sEQZx5
-  - name: 日本 东京Amazon数据中心
+  - name: 广东省潮州市+电信 - 2
+    type: ss
+    server: sczx.bzlxzl.com
+    port: '57026'
+    cipher: chacha20-ietf-poly1305
+    password: sEQZx5
+  - name: 广东省广州市+电信 - 2
+    type: ss
+    server: sczx.bzlxzl.com
+    port: '57052'
+    cipher: chacha20-ietf-poly1305
+    password: sEQZx5
+  - name: 美国+Microsoft数据中心
+    type: trojan
+    server: ch.mjt001.com
+    port: '443'
+    password: 9d3b1e0e-252a-4c67-9628-8b62e77197e7
+  - name: 广东省潮州市+电信 - 3
+    type: ss
+    server: sczx.bzlxzl.com
+    port: '57053'
+    cipher: chacha20-ietf-poly1305
+    password: sEQZx5
+  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
     type: vmess
-    server: jp80.6d83777c049a.sanfen004.me
-    port: 80
+    server: 192.74.228.172
+    port: 42857
+    uuid: 051b844f-efe3-4847-92aa-66b5de0b6d4e
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: cfcdn.sanfencdn.net
+    port: 443
     uuid: 951a393a-b557-4590-88b6-30948e1e0b8d
     alterId: 0
     cipher: auto
@@ -29,113 +80,80 @@ proxies:
     network: ws
     ws-path: /zh-cn
     ws-headers:
-      Host: www.baidu.com
-  - name: 德国 黑森州法兰克福Choopa数据中心
+      Host: us1.sanfencdn.net
+    tls: true
+  - name: 美国 CloudFlare节点 - 3
     type: vmess
-    server: 45.77.65.66
-    port: 2053
-    uuid: 4134efe7-d935-416c-c2cc-24943e4a80ca
+    server: tech.noaries.de
+    port: 80
+    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /
+    ws-path: /shirker
     ws-headers:
-      Host: ''
-  - name: 广东省潮州市+电信 - 2
-    type: ss
-    server: sczx.bzlxzl.com
-    port: '57052'
-    cipher: chacha20-ietf-poly1305
-    password: sEQZx5
-  - name: 广东省潮州市+电信 - 3
-    type: ss
-    server: sczx.bzlxzl.com
-    port: '57098'
-    cipher: chacha20-ietf-poly1305
-    password: sEQZx5
-  - name: 美国+Microsoft数据中心
-    type: trojan
-    server: fr.mjt001.com
-    port: '443'
-    password: 9d3b1e0e-252a-4c67-9628-8b62e77197e7
-  - name: 欧盟 V2CROSS.COM
-    type: vmess
-    server: 45.88.176.30
-    port: 41092
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
+      Host: nl.sharecentrepro.com
   - name: 广东省潮州市+电信 - 4
     type: ss
     server: sczx.bzlxzl.com
-    port: '57004'
+    port: '57048'
     cipher: chacha20-ietf-poly1305
     password: sEQZx5
-  - name: 广东省潮州市+电信 - 5
+  - name: 广东省广州市+电信 - 3
     type: ss
     server: sczx.bzlxzl.com
-    port: '57037'
+    port: '57014'
     cipher: chacha20-ietf-poly1305
     password: sEQZx5
-  - name: 广东省潮州市+电信 - 6
-    type: ss
-    server: sczx.bzlxzl.com
-    port: '57049'
-    cipher: chacha20-ietf-poly1305
-    password: sEQZx5
-  - name: 美国 CloudFlare节点 - 2
+  - name: 美国 CloudFlare节点 - 4
     type: vmess
-    server: cf.noaries.de
-    port: 2082
-    uuid: 314c1387-618c-4689-97fc-4bc9a1ae5e05
+    server: 141.101.114.2
+    port: 80
+    uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a
     alterId: 0
     cipher: auto
     udp: true
     network: ws
     ws-path: /
     ws-headers:
-      Host: ir2.nmsl.ninja
-  - name: 广东省潮州市+电信 - 7
-    type: ss
-    server: sczx.bzlxzl.com
-    port: '57020'
-    cipher: chacha20-ietf-poly1305
-    password: sEQZx5
-  - name: 广东省潮州市+电信 - 8
-    type: ss
-    server: sczx.bzlxzl.com
-    port: '57097'
-    cipher: chacha20-ietf-poly1305
-    password: sEQZx5
-  - name: 美国 CloudFlare节点 - 3
+      Host: lg.v2ray20.xyz
+  - name: 美国 CloudFlare节点 - 5
     type: vmess
-    server: 104.18.1.74
-    port: 2096
-    uuid: 408e2686-9e0d-4014-841e-7ca5da55a215
+    server: cdnjs.com
+    port: 443
+    uuid: F86EFDE3-B236-493C-A903-998DCEA823E2
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: ho3ino
+    ws-path: /speedtest
     ws-headers:
-      Host: h.h3io.co
+      Host: Lille.kotick.site
     tls: true
-  - name: 广东省潮州市+电信 - 9
+  - name: 日本 东京Amazon数据中心
+    type: vmess
+    server: jp01-alt-vm0.entry.srthdw.art
+    port: 21583
+    uuid: 22acc467-7440-386a-927a-d84be554b37e
+    alterId: 1
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: jp01-alt-vm0.entry.srthdw.art
+    tls: true
+  - name: 广东省潮州市+电信 - 5
     type: ss
     server: sczx.bzlxzl.com
-    port: '57047'
+    port: '57056'
     cipher: chacha20-ietf-poly1305
     password: sEQZx5
-  - name: 澳大利亚 悉尼OVH
+  - name: 美国 加利福尼亚州圣何塞PEG TECH
     type: vmess
-    server: 139.99.162.120
-    port: 50002
+    server: 142.4.125.53
+    port: 50044
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -144,89 +162,160 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 广东省潮州市+电信 - 10
+  - name: 日本 东京Amazon数据中心 - 2
+    type: vmess
+    server: jp05-vm0.entry.srthdw.art
+    port: 30593
+    uuid: 1bc52308-0bd9-30d0-90fd-cef337875d10
+    alterId: 1
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国+加利福尼亚州洛杉矶Level3通信(DIA) - 3
+    type: trojan
+    server: pl.mjt001.com
+    port: '443'
+    password: 9d3b1e0e-252a-4c67-9628-8b62e77197e7
+  - name: 广东省潮州市+电信 - 6
     type: ss
     server: sczx.bzlxzl.com
-    port: '57024'
+    port: '57026'
     cipher: chacha20-ietf-poly1305
     password: sEQZx5
-  - name: 广东省潮州市+电信 - 11
+  - name: 广东省广州市+电信 - 4
     type: ss
     server: sczx.bzlxzl.com
-    port: '57058'
+    port: '57068'
     cipher: chacha20-ietf-poly1305
     password: sEQZx5
+  - name: 广东省广州市+电信 - 5
+    type: ss
+    server: sczx.bzlxzl.com
+    port: '57008'
+    cipher: chacha20-ietf-poly1305
+    password: sEQZx5
+  - name: 加拿大+V2CROSS.COM
+    type: trojan
+    server: stw8-tg-data.amazonwebservicess.com
+    port: '443'
+    password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
+  - name: 广东省广州市+电信 - 6
+    type: ss
+    server: sczx.bzlxzl.com
+    port: '57025'
+    cipher: chacha20-ietf-poly1305
+    password: sEQZx5
+  - name: 美国+加利福尼亚州洛杉矶Level3通信(DIA) - 4
+    type: trojan
+    server: usla.mjt001.com
+    port: '443'
+    password: 9d3b1e0e-252a-4c67-9628-8b62e77197e7
+  - name: 美国+加利福尼亚州洛杉矶Level3通信(DIA) - 5
+    type: trojan
+    server: ua.mjt001.com
+    port: '443'
+    password: 9d3b1e0e-252a-4c67-9628-8b62e77197e7
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 CloudFlare节点
       - 广东省潮州市+电信
-      - 日本 东京Amazon数据中心
-      - 德国 黑森州法兰克福Choopa数据中心
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
+      - 美国 CloudFlare节点
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA) - 2
+      - 广东省广州市+电信
       - 广东省潮州市+电信 - 2
-      - 广东省潮州市+电信 - 3
+      - 广东省广州市+电信 - 2
       - 美国+Microsoft数据中心
-      - 欧盟 V2CROSS.COM
-      - 广东省潮州市+电信 - 4
-      - 广东省潮州市+电信 - 5
-      - 广东省潮州市+电信 - 6
+      - 广东省潮州市+电信 - 3
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
       - 美国 CloudFlare节点 - 2
-      - 广东省潮州市+电信 - 7
-      - 广东省潮州市+电信 - 8
       - 美国 CloudFlare节点 - 3
-      - 广东省潮州市+电信 - 9
-      - 澳大利亚 悉尼OVH
-      - 广东省潮州市+电信 - 10
-      - 广东省潮州市+电信 - 11
+      - 广东省潮州市+电信 - 4
+      - 广东省广州市+电信 - 3
+      - 美国 CloudFlare节点 - 4
+      - 美国 CloudFlare节点 - 5
+      - 日本 东京Amazon数据中心
+      - 广东省潮州市+电信 - 5
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 日本 东京Amazon数据中心 - 2
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA) - 3
+      - 广东省潮州市+电信 - 6
+      - 广东省广州市+电信 - 4
+      - 广东省广州市+电信 - 5
+      - 加拿大+V2CROSS.COM
+      - 广东省广州市+电信 - 6
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA) - 4
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA) - 5
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 CloudFlare节点
       - 广东省潮州市+电信
-      - 日本 东京Amazon数据中心
-      - 德国 黑森州法兰克福Choopa数据中心
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
+      - 美国 CloudFlare节点
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA) - 2
+      - 广东省广州市+电信
       - 广东省潮州市+电信 - 2
-      - 广东省潮州市+电信 - 3
+      - 广东省广州市+电信 - 2
       - 美国+Microsoft数据中心
-      - 欧盟 V2CROSS.COM
-      - 广东省潮州市+电信 - 4
-      - 广东省潮州市+电信 - 5
-      - 广东省潮州市+电信 - 6
+      - 广东省潮州市+电信 - 3
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
       - 美国 CloudFlare节点 - 2
-      - 广东省潮州市+电信 - 7
-      - 广东省潮州市+电信 - 8
       - 美国 CloudFlare节点 - 3
-      - 广东省潮州市+电信 - 9
-      - 澳大利亚 悉尼OVH
-      - 广东省潮州市+电信 - 10
-      - 广东省潮州市+电信 - 11
+      - 广东省潮州市+电信 - 4
+      - 广东省广州市+电信 - 3
+      - 美国 CloudFlare节点 - 4
+      - 美国 CloudFlare节点 - 5
+      - 日本 东京Amazon数据中心
+      - 广东省潮州市+电信 - 5
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 日本 东京Amazon数据中心 - 2
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA) - 3
+      - 广东省潮州市+电信 - 6
+      - 广东省广州市+电信 - 4
+      - 广东省广州市+电信 - 5
+      - 加拿大+V2CROSS.COM
+      - 广东省广州市+电信 - 6
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA) - 4
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA) - 5
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 CloudFlare节点
       - 广东省潮州市+电信
-      - 日本 东京Amazon数据中心
-      - 德国 黑森州法兰克福Choopa数据中心
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
+      - 美国 CloudFlare节点
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA) - 2
+      - 广东省广州市+电信
       - 广东省潮州市+电信 - 2
-      - 广东省潮州市+电信 - 3
+      - 广东省广州市+电信 - 2
       - 美国+Microsoft数据中心
-      - 欧盟 V2CROSS.COM
-      - 广东省潮州市+电信 - 4
-      - 广东省潮州市+电信 - 5
-      - 广东省潮州市+电信 - 6
+      - 广东省潮州市+电信 - 3
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
       - 美国 CloudFlare节点 - 2
-      - 广东省潮州市+电信 - 7
-      - 广东省潮州市+电信 - 8
       - 美国 CloudFlare节点 - 3
-      - 广东省潮州市+电信 - 9
-      - 澳大利亚 悉尼OVH
-      - 广东省潮州市+电信 - 10
-      - 广东省潮州市+电信 - 11
+      - 广东省潮州市+电信 - 4
+      - 广东省广州市+电信 - 3
+      - 美国 CloudFlare节点 - 4
+      - 美国 CloudFlare节点 - 5
+      - 日本 东京Amazon数据中心
+      - 广东省潮州市+电信 - 5
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 日本 东京Amazon数据中心 - 2
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA) - 3
+      - 广东省潮州市+电信 - 6
+      - 广东省广州市+电信 - 4
+      - 广东省广州市+电信 - 5
+      - 加拿大+V2CROSS.COM
+      - 广东省广州市+电信 - 6
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA) - 4
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA) - 5
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
