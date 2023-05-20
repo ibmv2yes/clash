@@ -1,120 +1,112 @@
 proxies:
   - name: 美国 CloudFlare节点
     type: vmess
-    server: 104.23.104.188
+    server: 104.18.21.81
     port: 443
-    uuid: 39304f36-8a9c-4692-9b31-d2997532f567
+    uuid: 3E271C5F-28FF-4704-B8E5-CC2B39AB7F60
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /qwer
+    ws-path: /speedtest
     ws-headers:
-      Host: zslbs.vtcss.top
-    tls: true
-  - name: 台湾省台北市+scloud.sg
-    type: trojan
-    server: stw5-tg-data.amazonwebservicess.com
-    port: 443?type=tcp&allowInsecure=1
-    password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
-  - name: 加拿大+V2CROSS.COM
-    type: trojan
-    server: scloudtw2-tg-data.amazonwebservicess.com
-    port: '443'
-    password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
-  - name: 美国加利福尼亚州圣何塞 Cloudflare节点
-    type: vmess
-    server: 103.21.244.37
-    port: 80
-    uuid: 53ae65be-81ee-4766-8a09-da43c44c4d30
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /qwer11
-    ws-headers:
-      Host: uyaa.vtcss.top
-  - name: 巴西圣保罗 CloudFlare节点
-    type: vmess
-    server: 188.114.99.91
-    port: 443
-    uuid: 39304f36-8a9c-4692-9b31-d2997532f567
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /qwer
-    ws-headers:
-      Host: zslbs.vtcss.top
+      Host: Dusseldorf.kotick.site
     tls: true
   - name: 美国 CloudFlare节点 - 2
     type: vmess
-    server: 104.18.1.74
-    port: 2096
-    uuid: 408e2686-9e0d-4014-841e-7ca5da55a215
+    server: cf-lt.sharecentre.online
+    port: 80
+    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: ho3ino
+    ws-path: /shirker
     ws-headers:
-      Host: h.h3io.co
+      Host: ca.ilovescp.com
+  - name: 加拿大 V2CROSS.COM
+    type: vmess
+    server: 199.212.90.14
+    port: 443
+    uuid: 6147F065-9AC0-4081-A5A3-A2EB4EBB8958
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /speedtest
+    ws-headers:
+      Host: Lille.kotick.site
     tls: true
   - name: 美国 CloudFlare节点 - 3
     type: vmess
-    server: 104.25.5.175
+    server: cf.yxjnode.com
     port: 80
-    uuid: 53ae65be-81ee-4766-8a09-da43c44c4d30
+    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /qwer11
+    ws-path: /yxzbp
     ws-headers:
-      Host: uyaa.vtcss.top
+      Host: dp4.yxjnode.com
+  - name: 欧盟 V2CROSS.COM
+    type: vmess
+    server: 45.12.112.102
+    port: 40002
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国+V2CROSS.COM
+    type: trojan
+    server: 168.119.64.242
+    port: 443?type=tcp&sni=channel1.unlimiteddev.tk&allowInsecure=1
+    password: 9aa6b5ad-c0fc-47f4-a837-f72179d7b662
+  - name: 美国+V2CROSS.COM - 2
+    type: trojan
+    server: 152.70.74.66
+    port: 443?security=tls&type=tcp&headerType=none
+    password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
+  - name: 美国 加利福尼亚州圣何塞PEG TECH
+    type: vmess
+    server: 142.4.97.77
+    port: 44942
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 巴西圣保罗 CloudFlare节点
+    type: vmess
+    server: 188.114.99.190
+    port: 2095
+    uuid: 67597b31-fba2-42ba-b3df-b7264d346235
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /tg@hkaa0
+    ws-headers:
+      Host: jp.wyhkaa0.ga
   - name: 美国 CloudFlare节点 - 4
     type: vmess
-    server: 172.67.247.250
+    server: 104.24.16.109
     port: 80
-    uuid: 53ae65be-81ee-4766-8a09-da43c44c4d30
+    uuid: c5c9844d-050e-44f1-cb6d-ec5166772631
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /qwer11
+    ws-path: /qwer
     ws-headers:
-      Host: uyaa.vtcss.top
-  - name: 中国 阿里云
-    type: vmess
-    server: cdn.twitter.now.cc
-    port: 443
-    uuid: 87283fe7-08e5-403b-a0aa-add7cd68a23e
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /ikun
-    ws-headers:
-      Host: lo.twittei.me
-    tls: true
-  - name: 美国+麻省理工学院
-    type: trojan
-    server: 18.102.68.105
-    port: '443'
-    password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
-  - name: 巴西圣保罗 CloudFlare节点 - 2
-    type: vmess
-    server: 188.114.97.7
-    port: 443
-    uuid: 9aa6b5ad-c0fc-47f4-a837-f72179d7b662
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /Lsv4s7nS0ErewnEN
-    ws-headers:
-      Host: channel2.unlimiteddev.tk
-    tls: true
+      Host: zslbs.vtcss.top
 proxy-groups:
   - name: Free-servers
     type: select
@@ -122,46 +114,43 @@ proxy-groups:
       - 自动选择
       - 故障转移
       - 美国 CloudFlare节点
-      - 台湾省台北市+scloud.sg
-      - 加拿大+V2CROSS.COM
-      - 美国加利福尼亚州圣何塞 Cloudflare节点
-      - 巴西圣保罗 CloudFlare节点
       - 美国 CloudFlare节点 - 2
+      - 加拿大 V2CROSS.COM
       - 美国 CloudFlare节点 - 3
+      - 欧盟 V2CROSS.COM
+      - 美国+V2CROSS.COM
+      - 美国+V2CROSS.COM - 2
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 巴西圣保罗 CloudFlare节点
       - 美国 CloudFlare节点 - 4
-      - 中国 阿里云
-      - 美国+麻省理工学院
-      - 巴西圣保罗 CloudFlare节点 - 2
   - name: 自动选择
     type: url-test
     proxies:
       - 美国 CloudFlare节点
-      - 台湾省台北市+scloud.sg
-      - 加拿大+V2CROSS.COM
-      - 美国加利福尼亚州圣何塞 Cloudflare节点
-      - 巴西圣保罗 CloudFlare节点
       - 美国 CloudFlare节点 - 2
+      - 加拿大 V2CROSS.COM
       - 美国 CloudFlare节点 - 3
+      - 欧盟 V2CROSS.COM
+      - 美国+V2CROSS.COM
+      - 美国+V2CROSS.COM - 2
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 巴西圣保罗 CloudFlare节点
       - 美国 CloudFlare节点 - 4
-      - 中国 阿里云
-      - 美国+麻省理工学院
-      - 巴西圣保罗 CloudFlare节点 - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
       - 美国 CloudFlare节点
-      - 台湾省台北市+scloud.sg
-      - 加拿大+V2CROSS.COM
-      - 美国加利福尼亚州圣何塞 Cloudflare节点
-      - 巴西圣保罗 CloudFlare节点
       - 美国 CloudFlare节点 - 2
+      - 加拿大 V2CROSS.COM
       - 美国 CloudFlare节点 - 3
+      - 欧盟 V2CROSS.COM
+      - 美国+V2CROSS.COM
+      - 美国+V2CROSS.COM - 2
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 巴西圣保罗 CloudFlare节点
       - 美国 CloudFlare节点 - 4
-      - 中国 阿里云
-      - 美国+麻省理工学院
-      - 巴西圣保罗 CloudFlare节点 - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
