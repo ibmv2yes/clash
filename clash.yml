@@ -1,122 +1,91 @@
 proxies:
-  - name: 乌克兰+V2CROSS.COM
-    type: ss
-    server: 193.108.118.79
-    port: '8091'
-    cipher: aes-256-gcm
-    password: PCnnH6SQSnfoS27
+  - name: 美国加利福尼亚州洛杉矶 PetaExpress
+    type: vmess
+    server: 198.2.203.57
+    port: 44502
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 湖南省 移动
+    type: vmess
+    server: 120.226.50.68
+    port: 59902
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+    type: vmess
+    server: 107.167.4.122
+    port: 46766
+    uuid: 9838c1b4-c3fd-49b5-8a59-2ff05385f17c
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
   - name: 美国 CloudFlare节点
     type: vmess
-    server: cfcdn.sanfencdn.net
+    server: cf.noaries.de
+    port: 2052
+    uuid: 67c5ce45-7b48-473e-bf25-e4c830b0ed24
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /aries?ed=2048
+    ws-headers:
+      Host: azstu-it.iiio.wiki
+  - name: 日本+东京Amazon数据中心
+    type: trojan
+    server: fscus.fscloud123456789.com
+    port: '443'
+    password: 8a7d181d-0a3c-4266-b2b1-336124d1d943
+  - name: 瑞典 Oracle Corporation
+    type: vmess
+    server: 141.147.153.244
+    port: 41545
+    uuid: d47d7135-0954-46ab-a190-17b6c8630a85
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+    type: vmess
+    server: 23.224.110.182
     port: 443
-    uuid: dd8314cc-3754-416d-9456-0991f2e74753
-    alterId: 0
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
     cipher: auto
     udp: true
     network: ws
-    ws-path: /zh-cn
+    ws-path: /path/080712342310
     ws-headers:
-      Host: us2.sanfencdn.net
+      Host: ''
     tls: true
-  - name: 日本 东京Amazon数据中心
+  - name: 浙江省嘉兴市+电信IDC机房
+    type: ss
+    server: gzdx.jcnode.top
+    port: '23001'
+    cipher: aes-256-gcm
+    password: 052bc769-0489-49c7-97f2-51b3bb8e5486
+  - name: 美国 V2CROSS.COM
     type: vmess
-    server: jp04-vm0.entry.srthdw.art
-    port: 446
-    uuid: 22acc467-7440-386a-927a-d84be554b37e
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: jp04-vm0.entry.srthdw.art
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: cf-lt.sharecentre.online
-    port: 80
-    uuid: f809b651-3924-4a80-abde-6c8536fbb229
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /api/v3/download.getFile
-    ws-headers:
-      Host: ssrsub.v01.ssrsub.com
-  - name: 美国 CloudFlare节点 - 3
-    type: vmess
-    server: 104.19.129.247
-    port: 80
-    uuid: c5c9844d-050e-44f1-cb6d-ec5166772631
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /qwer
-    ws-headers:
-      Host: zslbs.vtcss.top
-  - name: 美国 加利福尼亚州圣何塞PEG TECH
-    type: vmess
-    server: 142.4.108.24
-    port: 55102
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 俄罗斯 新西伯利亚ADMAN数据中心
-    type: vmess
-    server: 185.133.40.192
-    port: 35059
-    uuid: 8d78c2a8-acaa-467d-9234-d2606624506d
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国弗吉尼亚州阿什本 CloudFlare节点
-    type: vmess
-    server: 173.245.49.88
-    port: 80
-    uuid: c5c9844d-050e-44f1-cb6d-ec5166772631
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /qwer
-    ws-headers:
-      Host: zslbs.vtcss.top
-  - name: 美国 CloudFlare节点 - 4
-    type: vmess
-    server: tech.noaries.de
-    port: 80
-    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /shirker
-    ws-headers:
-      Host: nl.sharecentrepro.com
-  - name: 澳大利亚 悉尼OVH
-    type: vmess
-    server: 139.99.245.165
-    port: 50002
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /v2ray
-    ws-headers:
-      Host: 134.195.96.178
-  - name: 美国 CloudFlare节点 - 5
-    type: vmess
-    server: kontakt.az
+    server: 170.114.45.224
     port: 443
     uuid: DC615FCF-98B5-4D06-AA18-A6A1F65FF6D3
     alterId: 0
@@ -125,20 +94,7 @@ proxies:
     network: ws
     ws-path: /speedtest
     ws-headers:
-      Host: Amsterdam.kotick.site
-    tls: true
-  - name: 日本 东京Amazon数据中心 - 2
-    type: vmess
-    server: jp01-alt-vm0.entry.srthdw.art
-    port: 21585
-    uuid: 1bc52308-0bd9-30d0-90fd-cef337875d10
-    alterId: 1
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
+      Host: Kansas.kotick.site
     tls: true
 proxy-groups:
   - name: Free-servers
@@ -146,50 +102,41 @@ proxy-groups:
     proxies:
       - 自动选择
       - 故障转移
-      - 乌克兰+V2CROSS.COM
+      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 湖南省 移动
+      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
       - 美国 CloudFlare节点
-      - 日本 东京Amazon数据中心
-      - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 俄罗斯 新西伯利亚ADMAN数据中心
-      - 美国弗吉尼亚州阿什本 CloudFlare节点
-      - 美国 CloudFlare节点 - 4
-      - 澳大利亚 悉尼OVH
-      - 美国 CloudFlare节点 - 5
-      - 日本 东京Amazon数据中心 - 2
+      - 日本+东京Amazon数据中心
+      - 瑞典 Oracle Corporation
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 浙江省嘉兴市+电信IDC机房
+      - 美国 V2CROSS.COM
   - name: 自动选择
     type: url-test
     proxies:
-      - 乌克兰+V2CROSS.COM
+      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 湖南省 移动
+      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
       - 美国 CloudFlare节点
-      - 日本 东京Amazon数据中心
-      - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 俄罗斯 新西伯利亚ADMAN数据中心
-      - 美国弗吉尼亚州阿什本 CloudFlare节点
-      - 美国 CloudFlare节点 - 4
-      - 澳大利亚 悉尼OVH
-      - 美国 CloudFlare节点 - 5
-      - 日本 东京Amazon数据中心 - 2
+      - 日本+东京Amazon数据中心
+      - 瑞典 Oracle Corporation
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 浙江省嘉兴市+电信IDC机房
+      - 美国 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 乌克兰+V2CROSS.COM
+      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 湖南省 移动
+      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
       - 美国 CloudFlare节点
-      - 日本 东京Amazon数据中心
-      - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 俄罗斯 新西伯利亚ADMAN数据中心
-      - 美国弗吉尼亚州阿什本 CloudFlare节点
-      - 美国 CloudFlare节点 - 4
-      - 澳大利亚 悉尼OVH
-      - 美国 CloudFlare节点 - 5
-      - 日本 东京Amazon数据中心 - 2
+      - 日本+东京Amazon数据中心
+      - 瑞典 Oracle Corporation
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 浙江省嘉兴市+电信IDC机房
+      - 美国 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
