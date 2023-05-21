@@ -1,9 +1,87 @@
 proxies:
-  - name: 美国弗吉尼亚州阿什本 CloudFlare节点
+  - name: 加拿大+V2CROSS.COM
+    type: trojan
+    server: stw8-tg-data.amazonwebservicess.com
+    port: 443?type=tcp&allowInsecure=1
+    password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
+  - name: 美国 CloudFlare节点
     type: vmess
-    server: 173.245.49.88
+    server: 104.21.53.35
     port: 80
-    uuid: c5c9844d-050e-44f1-cb6d-ec5166772631
+    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /yxzbp
+    ws-headers:
+      Host: buyvm1.yxjnode.com
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: cfcdn.sanfencdn.net
+    port: 443
+    uuid: dd8314cc-3754-416d-9456-0991f2e74753
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /zh-cn
+    ws-headers:
+      Host: us2.sanfencdn.net
+    tls: true
+  - name: 巴西圣保罗 CloudFlare节点
+    type: vmess
+    server: 188.114.98.51
+    port: 2095
+    uuid: 67597b31-fba2-42ba-b3df-b7264d346235
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /tg@hkaa0
+    ws-headers:
+      Host: jp.wyhkaa0.ga
+  - name: 重庆市 移动
+    type: vmess
+    server: 36.134.16.190
+    port: 11023
+    uuid: 8c042a38-71c1-1dcb-00df-54880236e0dc
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 日本 东京阿里云
+    type: vmess
+    server: cdn.chigua.tk
+    port: 80
+    uuid: 01925169-e2ff-483c-89f2-6e778dcdd450
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: us-1.acyun.cf
+  - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: cf-lt.sharecentre.online
+    port: 80
+    uuid: f809b651-3924-4a80-abde-6c8536fbb229
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /api/v3/download.getFile
+    ws-headers:
+      Host: ssrsub.v02.ssrsub.com
+  - name: 美国 CloudFlare节点 - 4
+    type: vmess
+    server: 172.67.31.105
+    port: 443
+    uuid: 39304f36-8a9c-4692-9b31-d2997532f567
     alterId: 0
     cipher: auto
     udp: true
@@ -11,18 +89,7 @@ proxies:
     ws-path: /qwer
     ws-headers:
       Host: zslbs.vtcss.top
-  - name: 湖南省 移动
-    type: vmess
-    server: 120.226.50.68
-    port: 59902
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
+    tls: true
   - name: 美国 CloudFlare公司CDN节点(shopify)
     type: vmess
     server: 23.227.38.0
@@ -36,47 +103,49 @@ proxies:
     ws-headers:
       Host: Kansas.kotick.site
     tls: true
-  - name: 美国 CloudFlare节点
+  - name: 美国 CloudFlare节点 - 5
     type: vmess
-    server: cf-lt.sharecentre.online
-    port: 80
-    uuid: f809b651-3924-4a80-abde-6c8536fbb229
+    server: kontakt.az
+    port: 443
+    uuid: DC615FCF-98B5-4D06-AA18-A6A1F65FF6D3
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /api/v3/download.getFile
+    ws-path: /speedtest
     ws-headers:
-      Host: ssrsub.v01.ssrsub.com
-  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      Host: Amsterdam.kotick.site
+    tls: true
+  - name: 澳大利亚 悉尼OVH
     type: vmess
-    server: 192.74.229.215
-    port: 51592
+    server: 139.99.245.165
+    port: 50002
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
     udp: true
     network: tcp
-    ws-path: /
+    ws-path: /v2ray
     ws-headers:
-      Host: ''
-  - name: 英国 V2CROSS.COM
+      Host: 134.195.96.178
+  - name: 美国 CloudFlare节点 - 6
     type: vmess
-    server: 171.22.134.3
-    port: 53433
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
+    server: scaleway.696960.xyz
+    port: 443
+    uuid: e357cd63-f1a5-4c8e-c42e-26da11207fee
+    alterId: 0
     cipher: auto
     udp: true
-    network: tcp
-    ws-path: /
+    network: ws
+    ws-path: /root/
     ws-headers:
       Host: ''
-  - name: 美国 CloudFlare节点 - 2
+    tls: true
+  - name: 美国 CloudFlare节点 - 7
     type: vmess
-    server: 104.19.129.247
-    port: 80
-    uuid: c5c9844d-050e-44f1-cb6d-ec5166772631
+    server: 172.67.22.103
+    port: 443
+    uuid: 39304f36-8a9c-4692-9b31-d2997532f567
     alterId: 0
     cipher: auto
     udp: true
@@ -84,126 +153,76 @@ proxies:
     ws-path: /qwer
     ws-headers:
       Host: zslbs.vtcss.top
-  - name: 美国加利福尼亚州洛杉矶 PetaExpress
+    tls: true
+  - name: 美国 CloudFlare节点 - 8
     type: vmess
-    server: 198.2.203.57
-    port: 44502
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国 CloudFlare节点 - 3
-    type: vmess
-    server: cf.yxjnode.com
-    port: 80
-    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /yxzbp
-    ws-headers:
-      Host: dp1.yxjnode.com
-  - name: 美国 CloudFlare节点 - 4
-    type: vmess
-    server: cfcdn.sanfencdn.net
+    server: 172.66.46.15
     port: 443
-    uuid: dd8314cc-3754-416d-9456-0991f2e74753
+    uuid: 12612e87-8003-44a8-b4e8-ec4a325e9016
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /zh-cn
+    ws-path: /ou
     ws-headers:
-      Host: us2.sanfencdn.net
+      Host: z.zorro.tk
     tls: true
-  - name: 日本 东京Amazon数据中心
-    type: vmess
-    server: jp01-alt-vm0.entry.srthdw.art
-    port: 21585
-    uuid: 1bc52308-0bd9-30d0-90fd-cef337875d10
-    alterId: 1
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-    tls: true
-  - name: 浙江省 联通
-    type: vmess
-    server: vip1.zhangxuan.best
-    port: 20001
-    uuid: 05266f8e-249b-3630-be8f-fc56efaa21cd
-    alterId: 2
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: ''
-    ws-headers:
-      Host: ''
-  - name: 加拿大+V2CROSS.COM
-    type: trojan
-    server: stw8-tg-data.amazonwebservicess.com
-    port: 443?type=tcp&allowInsecure=1
-    password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国弗吉尼亚州阿什本 CloudFlare节点
-      - 湖南省 移动
-      - 美国 CloudFlare公司CDN节点(shopify)
+      - 加拿大+V2CROSS.COM
       - 美国 CloudFlare节点
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 英国 V2CROSS.COM
       - 美国 CloudFlare节点 - 2
-      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 巴西圣保罗 CloudFlare节点
+      - 重庆市 移动
+      - 日本 东京阿里云
       - 美国 CloudFlare节点 - 3
       - 美国 CloudFlare节点 - 4
-      - 日本 东京Amazon数据中心
-      - 浙江省 联通
-      - 加拿大+V2CROSS.COM
+      - 美国 CloudFlare公司CDN节点(shopify)
+      - 美国 CloudFlare节点 - 5
+      - 澳大利亚 悉尼OVH
+      - 美国 CloudFlare节点 - 6
+      - 美国 CloudFlare节点 - 7
+      - 美国 CloudFlare节点 - 8
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国弗吉尼亚州阿什本 CloudFlare节点
-      - 湖南省 移动
-      - 美国 CloudFlare公司CDN节点(shopify)
+      - 加拿大+V2CROSS.COM
       - 美国 CloudFlare节点
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 英国 V2CROSS.COM
       - 美国 CloudFlare节点 - 2
-      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 巴西圣保罗 CloudFlare节点
+      - 重庆市 移动
+      - 日本 东京阿里云
       - 美国 CloudFlare节点 - 3
       - 美国 CloudFlare节点 - 4
-      - 日本 东京Amazon数据中心
-      - 浙江省 联通
-      - 加拿大+V2CROSS.COM
+      - 美国 CloudFlare公司CDN节点(shopify)
+      - 美国 CloudFlare节点 - 5
+      - 澳大利亚 悉尼OVH
+      - 美国 CloudFlare节点 - 6
+      - 美国 CloudFlare节点 - 7
+      - 美国 CloudFlare节点 - 8
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国弗吉尼亚州阿什本 CloudFlare节点
-      - 湖南省 移动
-      - 美国 CloudFlare公司CDN节点(shopify)
+      - 加拿大+V2CROSS.COM
       - 美国 CloudFlare节点
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 英国 V2CROSS.COM
       - 美国 CloudFlare节点 - 2
-      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 巴西圣保罗 CloudFlare节点
+      - 重庆市 移动
+      - 日本 东京阿里云
       - 美国 CloudFlare节点 - 3
       - 美国 CloudFlare节点 - 4
-      - 日本 东京Amazon数据中心
-      - 浙江省 联通
-      - 加拿大+V2CROSS.COM
+      - 美国 CloudFlare公司CDN节点(shopify)
+      - 美国 CloudFlare节点 - 5
+      - 澳大利亚 悉尼OVH
+      - 美国 CloudFlare节点 - 6
+      - 美国 CloudFlare节点 - 7
+      - 美国 CloudFlare节点 - 8
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
