@@ -1,16 +1,52 @@
 proxies:
   - name: 美国 CloudFlare节点
     type: vmess
-    server: channel2.unlimiteddev.tk
-    port: 443
-    uuid: 9aa6b5ad-c0fc-47f4-a837-f72179d7b662
+    server: cf-lt.sharecentre.online
+    port: 80
+    uuid: f809b651-3924-4a80-abde-6c8536fbb229
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /Lsv4s7nS0ErewnEN
+    ws-path: /api/v3/download.getFile
     ws-headers:
-      Host: channel2.unlimiteddev.tk
+      Host: ssrsub.v01.ssrsub.com
+  - name: 四川省 移动数据上网公共出口
+    type: vmess
+    server: m.lwvzmdu.cn
+    port: 16618
+    uuid: 16925dca-05be-4d7c-b469-6bcbd8a227ce
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: m.lwvzmdu.cn
+  - name: 美国 加利福尼亚州洛杉矶Sharktech数据中心
+    type: vmess
+    server: 67.21.89.136
+    port: 46866
+    uuid: b697d727-cf6c-41dd-a0de-c7a9478e4a4a
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 加拿大 V2CROSS.COM
+    type: vmess
+    server: 23.227.60.184
+    port: 443
+    uuid: 3E271C5F-28FF-4704-B8E5-CC2B39AB7F60
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /speedtest
+    ws-headers:
+      Host: Dusseldorf.kotick.site
     tls: true
   - name: 日本 东京阿里云
     type: vmess
@@ -24,64 +60,24 @@ proxies:
     ws-path: /
     ws-headers:
       Host: us-1.acyun.cf
-  - name: 北美地区 V2CROSS.COM
-    type: vmess
-    server: 107.173.84.58
-    port: 48531
-    uuid: b7883f85-b042-4c0f-a28a-492504ec0be5
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: ''
-    ws-headers:
-      Host: ''
-  - name: 美国 加利福尼亚州洛杉矶Sharktech数据中心
-    type: vmess
-    server: 67.21.89.136
-    port: 46866
-    uuid: b697d727-cf6c-41dd-a0de-c7a9478e4a4a
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 加拿大+V2CROSS.COM
-    type: trojan
-    server: bgptw3.cnamazon.sbs
-    port: 443?sni=tlsdata.cnamazon.sbs
-    password: a7d5f659-6ad2-4288-b63a-3d42bdf5b122
-  - name: 巴西圣保罗 CloudFlare节点
-    type: vmess
-    server: 188.114.98.51
-    port: 2095
-    uuid: 67597b31-fba2-42ba-b3df-b7264d346235
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /tg@hkaa0
-    ws-headers:
-      Host: jp.wyhkaa0.ga
   - name: 美国 CloudFlare节点 - 2
     type: vmess
-    server: scaleway.696960.xyz
+    server: v2-ca1.silverdragon.cn
     port: 443
-    uuid: e357cd63-f1a5-4c8e-c42e-26da11207fee
+    uuid: e790e3bf-c553-40ed-b2b6-436afd3f5f5c
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /root/
-    ws-headers: {}
+    ws-path: /ca/v2wss
+    ws-headers:
+      Host: v2-ca1.silverdragon.cn
     tls: true
-  - name: 美国 CloudFlare公司CDN节点(shopify)
+  - name: 欧盟 V2CROSS.COM
     type: vmess
-    server: 23.227.38.0
+    server: 45.85.119.44
     port: 443
-    uuid: 7757E99E-75C9-46D5-854D-4065BF372100
+    uuid: 3E271C5F-28FF-4704-B8E5-CC2B39AB7F60
     alterId: 0
     cipher: auto
     udp: true
@@ -90,23 +86,6 @@ proxies:
     ws-headers:
       Host: Kansas.kotick.site
     tls: true
-  - name: 浙江省 联通
-    type: vmess
-    server: vip1.zhangxuan.best
-    port: 20001
-    uuid: 05266f8e-249b-3630-be8f-fc56efaa21cd
-    alterId: 2
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: ''
-    ws-headers:
-      Host: ''
-  - name: 美国+V2CROSS.COM
-    type: trojan
-    server: 152.70.74.66
-    port: 443?security=tls&type=tcp&headerType=none
-    password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
 proxy-groups:
   - name: Free-servers
     type: select
@@ -114,43 +93,34 @@ proxy-groups:
       - 自动选择
       - 故障转移
       - 美国 CloudFlare节点
-      - 日本 东京阿里云
-      - 北美地区 V2CROSS.COM
+      - 四川省 移动数据上网公共出口
       - 美国 加利福尼亚州洛杉矶Sharktech数据中心
-      - 加拿大+V2CROSS.COM
-      - 巴西圣保罗 CloudFlare节点
+      - 加拿大 V2CROSS.COM
+      - 日本 东京阿里云
       - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare公司CDN节点(shopify)
-      - 浙江省 联通
-      - 美国+V2CROSS.COM
+      - 欧盟 V2CROSS.COM
   - name: 自动选择
     type: url-test
     proxies:
       - 美国 CloudFlare节点
-      - 日本 东京阿里云
-      - 北美地区 V2CROSS.COM
+      - 四川省 移动数据上网公共出口
       - 美国 加利福尼亚州洛杉矶Sharktech数据中心
-      - 加拿大+V2CROSS.COM
-      - 巴西圣保罗 CloudFlare节点
+      - 加拿大 V2CROSS.COM
+      - 日本 东京阿里云
       - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare公司CDN节点(shopify)
-      - 浙江省 联通
-      - 美国+V2CROSS.COM
+      - 欧盟 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
       - 美国 CloudFlare节点
-      - 日本 东京阿里云
-      - 北美地区 V2CROSS.COM
+      - 四川省 移动数据上网公共出口
       - 美国 加利福尼亚州洛杉矶Sharktech数据中心
-      - 加拿大+V2CROSS.COM
-      - 巴西圣保罗 CloudFlare节点
+      - 加拿大 V2CROSS.COM
+      - 日本 东京阿里云
       - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare公司CDN节点(shopify)
-      - 浙江省 联通
-      - 美国+V2CROSS.COM
+      - 欧盟 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
