@@ -1,5 +1,81 @@
 proxies:
+  - name: 重庆市 移动
+    type: vmess
+    server: 36.134.16.190
+    port: 11023
+    uuid: 8c042a38-71c1-1dcb-00df-54880236e0dc
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
   - name: 美国 CloudFlare节点
+    type: vmess
+    server: cf-lt.sharecentre.online
+    port: 80
+    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /shirker
+    ws-headers:
+      Host: ca.ilovescp.com
+  - name: 伊朗 V2CROSS.COM
+    type: vmess
+    server: de63.thugiping.cloud
+    port: 443
+    uuid: c9a22360-3f66-48c8-89ab-13799b05a730
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-headers: {}
+    tls: true
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: tou.vtcss.top
+    port: 80
+    uuid: cb8cbbc3-137a-4064-8d02-b0ee3ca2c18c
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /qazxcv518
+    ws-headers:
+      Host: ''
+  - name: 重庆市 移动 - 2
+    type: vmess
+    server: 36.134.16.171
+    port: 11023
+    uuid: 8c042a38-71c1-1dcb-00df-54880236e0dc
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 浙江省 联通
+    type: vmess
+    server: vip1.zhangxuan.best
+    port: 20001
+    uuid: 05266f8e-249b-3630-be8f-fc56efaa21cd
+    alterId: 2
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: ''
+    ws-headers:
+      Host: ''
+  - name: 美国+Microsoft数据中心
+    type: trojan
+    server: ap.stablize.top
+    port: '443'
+    password: b327d1e6-3abc-4ce5-81f3-620ea3f10647
+  - name: 美国 CloudFlare节点 - 3
     type: vmess
     server: cfcdn.sanfencdn.net
     port: 443
@@ -12,24 +88,12 @@ proxies:
     ws-headers:
       Host: us2.sanfencdn.net
     tls: true
-  - name: 美国弗吉尼亚州阿什本 CloudFlare节点
+  - name: 日本 东京Amazon数据中心
     type: vmess
-    server: 173.245.49.88
-    port: 80
-    uuid: c5c9844d-050e-44f1-cb6d-ec5166772631
+    server: jp04-vm0.entry.srthdw.art
+    port: 448
+    uuid: 1bc52308-0bd9-30d0-90fd-cef337875d10
     alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /qwer
-    ws-headers:
-      Host: zslbs.vtcss.top
-  - name: 荷兰 北荷兰省阿姆斯特丹Sharktech数据中心
-    type: vmess
-    server: 45.58.186.83
-    port: 51140
-    uuid: 4a138e19-0595-4d51-83c6-fd276cf7d307
-    alterId: 64
     cipher: auto
     udp: true
     network: tcp
@@ -49,70 +113,32 @@ proxies:
     ws-headers:
       Host: vjp2.0bad.com
     tls: true
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: cf-lt.sharecentre.online
-    port: 80
-    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /shirker
-    ws-headers:
-      Host: ca.ilovescp.com
-  - name: 中国 阿里云
-    type: vmess
-    server: cdncf.scyu.app
-    port: 80
-    uuid: f809b651-3924-4a80-abde-6c8536fbb229
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /api/v3/download.getFile
-    ws-headers:
-      Host: ssrsub.v03.ssrsub.com
-  - name: 西班牙 V2CROSS.COM
-    type: vmess
-    server: 185.18.250.80
-    port: 443
-    uuid: 3E271C5F-28FF-4704-B8E5-CC2B39AB7F60
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /speedtest
-    ws-headers:
-      Host: Amsterdam.kotick.site
-    tls: true
-  - name: 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
-    type: vmess
-    server: 23.224.110.182
-    port: 443
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /path/080712342310
-    ws-headers:
-      Host: ''
-    tls: true
-  - name: 美国 加利福尼亚州圣何塞PEG TECH
-    type: vmess
-    server: 142.4.118.150
-    port: 443
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /path/120306182525
-    ws-headers:
-      Host: ''
-    tls: true
   - name: 美国 V2CROSS.COM
+    type: vmess
+    server: 192.203.230.86
+    port: 80
+    uuid: a442dacf-cbb3-488a-9744-61494ea38630
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: us-1.acyun.cf
+  - name: 日本东京 Oracle Cloud
+    type: vmess
+    server: 138.2.2.33
+    port: 443
+    uuid: 3C02DC15-56AE-7889-8936-9A2EA8FF8666
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: ''
+    tls: true
+  - name: 美国 V2CROSS.COM - 2
     type: vmess
     server: 170.114.45.224
     port: 443
@@ -125,73 +151,59 @@ proxies:
     ws-headers:
       Host: Kansas.kotick.site
     tls: true
-  - name: 俄罗斯 新西伯利亚ADMAN数据中心
-    type: vmess
-    server: 185.133.40.192
-    port: 35059
-    uuid: 8d78c2a8-acaa-467d-9234-d2606624506d
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 台湾省台北市+scloud.sg
-    type: trojan
-    server: stw6-tg-data.amazonwebservicess.com
-    port: '443'
-    password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
+      - 重庆市 移动
       - 美国 CloudFlare节点
-      - 美国弗吉尼亚州阿什本 CloudFlare节点
-      - 荷兰 北荷兰省阿姆斯特丹Sharktech数据中心
-      - 日本 东京都品川区Linode数据中心
+      - 伊朗 V2CROSS.COM
       - 美国 CloudFlare节点 - 2
-      - 中国 阿里云
-      - 西班牙 V2CROSS.COM
-      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
-      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 重庆市 移动 - 2
+      - 浙江省 联通
+      - 美国+Microsoft数据中心
+      - 美国 CloudFlare节点 - 3
+      - 日本 东京Amazon数据中心
+      - 日本 东京都品川区Linode数据中心
       - 美国 V2CROSS.COM
-      - 俄罗斯 新西伯利亚ADMAN数据中心
-      - 台湾省台北市+scloud.sg
+      - 日本东京 Oracle Cloud
+      - 美国 V2CROSS.COM - 2
   - name: 自动选择
     type: url-test
     proxies:
+      - 重庆市 移动
       - 美国 CloudFlare节点
-      - 美国弗吉尼亚州阿什本 CloudFlare节点
-      - 荷兰 北荷兰省阿姆斯特丹Sharktech数据中心
-      - 日本 东京都品川区Linode数据中心
+      - 伊朗 V2CROSS.COM
       - 美国 CloudFlare节点 - 2
-      - 中国 阿里云
-      - 西班牙 V2CROSS.COM
-      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
-      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 重庆市 移动 - 2
+      - 浙江省 联通
+      - 美国+Microsoft数据中心
+      - 美国 CloudFlare节点 - 3
+      - 日本 东京Amazon数据中心
+      - 日本 东京都品川区Linode数据中心
       - 美国 V2CROSS.COM
-      - 俄罗斯 新西伯利亚ADMAN数据中心
-      - 台湾省台北市+scloud.sg
+      - 日本东京 Oracle Cloud
+      - 美国 V2CROSS.COM - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
+      - 重庆市 移动
       - 美国 CloudFlare节点
-      - 美国弗吉尼亚州阿什本 CloudFlare节点
-      - 荷兰 北荷兰省阿姆斯特丹Sharktech数据中心
-      - 日本 东京都品川区Linode数据中心
+      - 伊朗 V2CROSS.COM
       - 美国 CloudFlare节点 - 2
-      - 中国 阿里云
-      - 西班牙 V2CROSS.COM
-      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
-      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 重庆市 移动 - 2
+      - 浙江省 联通
+      - 美国+Microsoft数据中心
+      - 美国 CloudFlare节点 - 3
+      - 日本 东京Amazon数据中心
+      - 日本 东京都品川区Linode数据中心
       - 美国 V2CROSS.COM
-      - 俄罗斯 新西伯利亚ADMAN数据中心
-      - 台湾省台北市+scloud.sg
+      - 日本东京 Oracle Cloud
+      - 美国 V2CROSS.COM - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
