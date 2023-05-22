@@ -1,34 +1,16 @@
 proxies:
-  - name: 美国加利福尼亚州洛杉矶 PetaExpress
+  - name: 美国 CloudFlare节点
     type: vmess
-    server: 198.2.208.182
-    port: 443
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
+    server: 141.101.114.2
+    port: 80
+    uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a
+    alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /path/1684405930831
-    ws-headers:
-      Host: www.62317155.xyz
-    tls: true
-  - name: 美国 加利福尼亚州洛杉矶Sharktech数据中心
-    type: vmess
-    server: 170.178.167.140
-    port: 50002
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
     ws-path: /
     ws-headers:
-      Host: ''
-  - name: 加拿大+V2CROSS.COM
-    type: trojan
-    server: 165.154.246.194
-    port: '443'
-    password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
+      Host: lg.v2ray20.xyz
   - name: 美国 V2CROSS.COM
     type: vmess
     server: zfc.windowsupdate1.com
@@ -42,45 +24,64 @@ proxies:
     ws-headers:
       Host: Lille.kotick.site
     tls: true
-  - name: 巴西圣保罗 CloudFlare节点
+  - name: 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
     type: vmess
-    server: 188.114.99.91
+    server: 23.224.110.242
     port: 443
-    uuid: 39304f36-8a9c-4692-9b31-d2997532f567
-    alterId: 0
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
     cipher: auto
     udp: true
     network: ws
-    ws-path: /qwer
+    ws-path: /path/1683715826870
     ws-headers:
-      Host: zslbs.vtcss.top
+      Host: www.77039717.xyz
     tls: true
-  - name: 加拿大+V2CROSS.COM - 2
+  - name: 加拿大+V2CROSS.COM
     type: trojan
-    server: stw3-tg-data.amazonwebservicess.com
-    port: 443?type=tcp&allowInsecure=1
+    server: 165.154.246.194
+    port: '443'
     password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
-  - name: 香港+Amazon数据中心
-    type: trojan
-    server: 18.162.43.169
-    port: 443?sni=download.xn--mes358a9urctx.com
-    password: 7950b4a0-b249-466f-94db-6c3e141d7741
-  - name: 美国 CloudFlare节点
+  - name: 美国加利福尼亚州洛杉矶 PetaExpress
     type: vmess
-    server: cambridge.org
+    server: 198.2.208.182
     port: 443
-    uuid: 3E271C5F-28FF-4704-B8E5-CC2B39AB7F60
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /path/1684405930831
+    ws-headers:
+      Host: www.62317155.xyz
+    tls: true
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: 104.21.53.35
+    port: 80
+    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /speedtest
+    ws-path: /yxzbp
     ws-headers:
-      Host: Lille.kotick.site
-    tls: true
-  - name: 欧盟 V2CROSS.COM
+      Host: buyvm1.yxjnode.com
+  - name: 日本 东京Amazon数据中心
     type: vmess
-    server: 45.14.174.57
+    server: jp05-vm0.entry.srthdw.art
+    port: 30591
+    uuid: 22acc467-7440-386a-927a-d84be554b37e
+    alterId: 1
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 CloudFlare公司CDN节点(shopify)
+    type: vmess
+    server: 23.227.38.0
     port: 443
     uuid: 7757E99E-75C9-46D5-854D-4065BF372100
     alterId: 0
@@ -91,47 +92,74 @@ proxies:
     ws-headers:
       Host: Kansas.kotick.site
     tls: true
+  - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: 104.25.5.175
+    port: 80
+    uuid: 53ae65be-81ee-4766-8a09-da43c44c4d30
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /qwer11
+    ws-headers:
+      Host: uyaa.vtcss.top
+  - name: 台湾省台北市 中华电信
+    type: vmess
+    server: CHT.MIFJUN.ORG
+    port: 80
+    uuid: c76bf073-d8c6-4d2d-aa5f-3bbdd3b6d0b2
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: ''
+    ws-headers:
+      Host: ''
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
-      - 加拿大+V2CROSS.COM
-      - 美国 V2CROSS.COM
-      - 巴西圣保罗 CloudFlare节点
-      - 加拿大+V2CROSS.COM - 2
-      - 香港+Amazon数据中心
       - 美国 CloudFlare节点
-      - 欧盟 V2CROSS.COM
+      - 美国 V2CROSS.COM
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 加拿大+V2CROSS.COM
+      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 美国 CloudFlare节点 - 2
+      - 日本 东京Amazon数据中心
+      - 美国 CloudFlare公司CDN节点(shopify)
+      - 美国 CloudFlare节点 - 3
+      - 台湾省台北市 中华电信
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
-      - 加拿大+V2CROSS.COM
-      - 美国 V2CROSS.COM
-      - 巴西圣保罗 CloudFlare节点
-      - 加拿大+V2CROSS.COM - 2
-      - 香港+Amazon数据中心
       - 美国 CloudFlare节点
-      - 欧盟 V2CROSS.COM
+      - 美国 V2CROSS.COM
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 加拿大+V2CROSS.COM
+      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 美国 CloudFlare节点 - 2
+      - 日本 东京Amazon数据中心
+      - 美国 CloudFlare公司CDN节点(shopify)
+      - 美国 CloudFlare节点 - 3
+      - 台湾省台北市 中华电信
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
-      - 加拿大+V2CROSS.COM
-      - 美国 V2CROSS.COM
-      - 巴西圣保罗 CloudFlare节点
-      - 加拿大+V2CROSS.COM - 2
-      - 香港+Amazon数据中心
       - 美国 CloudFlare节点
-      - 欧盟 V2CROSS.COM
+      - 美国 V2CROSS.COM
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 加拿大+V2CROSS.COM
+      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 美国 CloudFlare节点 - 2
+      - 日本 东京Amazon数据中心
+      - 美国 CloudFlare公司CDN节点(shopify)
+      - 美国 CloudFlare节点 - 3
+      - 台湾省台北市 中华电信
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
