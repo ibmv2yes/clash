@@ -11,100 +11,11 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 加拿大+V2CROSS.COM
+  - name: 日本+V2CROSS.COM
     type: trojan
-    server: scloudtw2-tg-data.amazonwebservicess.com
-    port: 443?type=tcp&allowInsecure=1
-    password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
-  - name: 重庆市 移动
-    type: vmess
-    server: 36.134.16.190
-    port: 11023
-    uuid: 8c042a38-71c1-1dcb-00df-54880236e0dc
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 香港+Amazon数据中心
-    type: trojan
-    server: hk3.microsoft-orgwly.vip
-    port: '443'
+    server: hk8.microsoft-orgwly.vip
+    port: '80'
     password: a132d6ab-fdd0-4d16-b01b-1bfc43fbe015
-  - name: 美国+Amazon数据中心
-    type: trojan
-    server: fr1.microsoft-orgwly.vip
-    port: '24661'
-    password: a132d6ab-fdd0-4d16-b01b-1bfc43fbe015
-  - name: 香港 环球全域电讯
-    type: vmess
-    server: hgc1.pmssr.xyz
-    port: 443
-    uuid: cb59b5eb-17d8-4b9f-9c43-6f038a9db9b0
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /sometimesnaive
-    ws-headers: {}
-    tls: true
-  - name: 美国+Amazon数据中心 - 2
-    type: trojan
-    server: gb2.microsoft-orgwly.vip
-    port: '35623'
-    password: a132d6ab-fdd0-4d16-b01b-1bfc43fbe015
-  - name: 俄罗斯 新西伯利亚ADMAN数据中心
-    type: vmess
-    server: 185.133.40.192
-    port: 35059
-    uuid: 8d78c2a8-acaa-467d-9234-d2606624506d
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 欧盟 V2CROSS.COM
-    type: vmess
-    server: 45.14.174.57
-    port: 443
-    uuid: 7757E99E-75C9-46D5-854D-4065BF372100
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /speedtest
-    ws-headers:
-      Host: Kansas.kotick.site
-    tls: true
-  - name: 德国 阿里云
-    type: vmess
-    server: cdncf.scyu.app
-    port: 80
-    uuid: f809b651-3924-4a80-abde-6c8536fbb229
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /api/v3/download.getFile
-    ws-headers:
-      Host: ssrsub.v03.ssrsub.com
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: 172.67.31.105
-    port: 443
-    uuid: 39304f36-8a9c-4692-9b31-d2997532f567
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /qwer
-    ws-headers:
-      Host: zslbs.vtcss.top
-    tls: true
   - name: 美国 加利福尼亚州洛杉矶PetaExpress
     type: vmess
     server: 107.148.203.82
@@ -117,63 +28,49 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: tech.noaries.de
-    port: 80
-    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /shirker
-    ws-headers:
-      Host: nl.sharecentrepro.com
-  - name: 日本+东京都Amazon数据中心
+  - name: 加拿大+V2CROSS.COM
     type: trojan
-    server: microsoft-jp.syjd.xyz
+    server: scloudtw1-tg-data.amazonwebservicess.com
+    port: 443?type=tcp&allowInsecure=1
+    password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
+  - name: 爱尔兰都柏林+亚马逊云
+    type: trojan
+    server: ie1.microsoft-orgwly.vip
+    port: '35065'
+    password: a132d6ab-fdd0-4d16-b01b-1bfc43fbe015
+  - name: 美国+Amazon+EC2服务器
+    type: trojan
+    server: kr4.microsoft-orgwly.vip
     port: '443'
-    password: 2bb4a580-db46-4010-b814-a9f74001a646
-  - name: 美国 CloudFlare节点 - 3
+    password: a132d6ab-fdd0-4d16-b01b-1bfc43fbe015
+  - name: 美国 CloudFlare节点
     type: vmess
-    server: cf-lt.sharecentre.online
-    port: 80
-    uuid: f809b651-3924-4a80-abde-6c8536fbb229
+    server: cambridge.org
+    port: 443
+    uuid: 3E271C5F-28FF-4704-B8E5-CC2B39AB7F60
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /api/v3/download.getFile
+    ws-path: /speedtest
     ws-headers:
-      Host: ssrsub.v03.ssrsub.com
-  - name: 美国加利福尼亚州洛杉矶 PetaExpress
+      Host: Lille.kotick.site
+    tls: true
+  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
     type: vmess
-    server: 198.2.208.182
-    port: 443
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    server: 192.74.228.171
+    port: 42857
+    uuid: 051b844f-efe3-4847-92aa-66b5de0b6d4e
     alterId: 64
     cipher: auto
     udp: true
-    network: ws
-    ws-path: /path/1684405930831
-    ws-headers:
-      Host: www.62317155.xyz
-    tls: true
-  - name: 美国 V2CROSS.COM
-    type: vmess
-    server: 192.203.230.86
-    port: 80
-    uuid: a442dacf-cbb3-488a-9744-61494ea38630
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
+    network: tcp
     ws-path: /
     ws-headers:
-      Host: us-1.acyun.cf
+      Host: n1674862929.gofdwgy.cn
   - name: 英国 V2CROSS.COM
     type: vmess
-    server: 171.22.134.28
+    server: 171.22.134.3
     port: 53433
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
@@ -183,23 +80,211 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 香港+Amazon数据中心 - 2
+  - name: 美国+加利福尼亚州旧金山Amazon数据中心
+    type: trojan
+    server: us5.microsoft-orgwly.vip
+    port: '12087'
+    password: a132d6ab-fdd0-4d16-b01b-1bfc43fbe015
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: v2-ca1.silverdragon.cn
+    port: 443
+    uuid: e790e3bf-c553-40ed-b2b6-436afd3f5f5c
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /ca/v2wss
+    ws-headers:
+      Host: v2-ca1.silverdragon.cn
+    tls: true
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: downloadvip.cfd
+    port: 443
+    uuid: a250f5a3-4147-41e7-8b36-a40466bf76f0
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /jsjc/us1
+    ws-headers:
+      Host: us1.jsjc.sbs
+    tls: true
+  - name: 美国 加利福尼亚洛杉矶ITLDC Network
+    type: vmess
+    server: 195.123.240.135
+    port: 10000
+    uuid: 664e81e6-f75b-11ed-8126-17d848021134
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /vpnjantit
+    ws-headers:
+      Host: ''
+  - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: aaaa.wxx.gay
+    port: 443
+    uuid: 8b0b57c6-f7f0-11ed-ab45-000017022008
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /look
+    ws-headers:
+      Host: ''
+    tls: true
+  - name: 日本+大阪Amazon数据中心
+    type: trojan
+    server: jp6.microsoft-orgwly.vip
+    port: '34212'
+    password: a132d6ab-fdd0-4d16-b01b-1bfc43fbe015
+  - name: 日本+V2CROSS.COM - 2
+    type: trojan
+    server: in1.microsoft-orgwly.vip
+    port: '32526'
+    password: a132d6ab-fdd0-4d16-b01b-1bfc43fbe015
+  - name: 美国+V2CROSS.COM
+    type: trojan
+    server: 152.70.74.66
+    port: 443?security=tls&type=tcp&headerType=none
+    password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
+  - name: 美国+加利福尼亚州旧金山Amazon数据中心 - 2
+    type: trojan
+    server: us4.microsoft-orgwly.vip
+    port: '12066'
+    password: a132d6ab-fdd0-4d16-b01b-1bfc43fbe015
+  - name: 香港+Amazon数据中心
     type: trojan
     server: microsoft-hk.syjd.xyz
     port: '443'
     password: 2bb4a580-db46-4010-b814-a9f74001a646
-  - name: 日本 东京Amazon数据中心 - 2
+  - name: 美国 V2CROSS.COM - 2
     type: vmess
-    server: jp05-vm0.entry.srthdw.art
-    port: 30593
-    uuid: 1bc52308-0bd9-30d0-90fd-cef337875d10
-    alterId: 1
+    server: 137.175.18.87
+    port: 42002
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
     cipher: auto
     udp: true
     network: tcp
     ws-path: /
     ws-headers:
       Host: ''
+  - name: 美国 CloudFlare节点 - 4
+    type: vmess
+    server: 104.23.104.188
+    port: 443
+    uuid: 39304f36-8a9c-4692-9b31-d2997532f567
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /qwer
+    ws-headers:
+      Host: zslbs.vtcss.top
+    tls: true
+  - name: 美国 CloudFlare节点 - 5
+    type: vmess
+    server: kontakt.az
+    port: 443
+    uuid: DC615FCF-98B5-4D06-AA18-A6A1F65FF6D3
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /speedtest
+    ws-headers:
+      Host: Amsterdam.kotick.site
+    tls: true
+  - name: 印度+孟买Amazon数据中心
+    type: trojan
+    server: in2.microsoft-orgwly.vip
+    port: '32527'
+    password: a132d6ab-fdd0-4d16-b01b-1bfc43fbe015
+  - name: 巴西圣保罗 CloudFlare节点
+    type: vmess
+    server: 188.114.99.91
+    port: 443
+    uuid: 39304f36-8a9c-4692-9b31-d2997532f567
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /qwer
+    ws-headers:
+      Host: zslbs.vtcss.top
+    tls: true
+  - name: 日本 东京Amazon数据中心 - 2
+    type: vmess
+    server: jp04-vm0.entry.srthdw.art
+    port: 446
+    uuid: b2a2c706-12e0-3335-8a62-31925219a712
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 CloudFlare节点 - 6
+    type: vmess
+    server: 104.18.21.81
+    port: 443
+    uuid: 3E271C5F-28FF-4704-B8E5-CC2B39AB7F60
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /speedtest
+    ws-headers:
+      Host: Dusseldorf.kotick.site
+    tls: true
+  - name: 日本+东京Amazon数据中心
+    type: trojan
+    server: jp13.microsoft-orgwly.vip
+    port: '18322'
+    password: a132d6ab-fdd0-4d16-b01b-1bfc43fbe015
+  - name: 美国 CloudFlare节点 - 7
+    type: vmess
+    server: 172.67.31.105
+    port: 443
+    uuid: 39304f36-8a9c-4692-9b31-d2997532f567
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /qwer
+    ws-headers:
+      Host: zslbs.vtcss.top
+    tls: true
+  - name: 西班牙 V2CROSS.COM
+    type: vmess
+    server: 185.18.250.80
+    port: 443
+    uuid: 3E271C5F-28FF-4704-B8E5-CC2B39AB7F60
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /speedtest
+    ws-headers:
+      Host: Amsterdam.kotick.site
+    tls: true
+  - name: 美国 CloudFlare节点 - 8
+    type: vmess
+    server: 141.101.114.2
+    port: 80
+    uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: lg.v2ray20.xyz
 proxy-groups:
   - name: Free-servers
     type: select
@@ -207,73 +292,103 @@ proxy-groups:
       - 自动选择
       - 故障转移
       - 日本 东京Amazon数据中心
-      - 加拿大+V2CROSS.COM
-      - 重庆市 移动
-      - 香港+Amazon数据中心
-      - 美国+Amazon数据中心
-      - 香港 环球全域电讯
-      - 美国+Amazon数据中心 - 2
-      - 俄罗斯 新西伯利亚ADMAN数据中心
-      - 欧盟 V2CROSS.COM
-      - 德国 阿里云
-      - 美国 CloudFlare节点
+      - 日本+V2CROSS.COM
       - 美国 加利福尼亚州洛杉矶PetaExpress
-      - 美国 CloudFlare节点 - 2
-      - 日本+东京都Amazon数据中心
-      - 美国 CloudFlare节点 - 3
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 美国 V2CROSS.COM
+      - 加拿大+V2CROSS.COM
+      - 爱尔兰都柏林+亚马逊云
+      - 美国+Amazon+EC2服务器
+      - 美国 CloudFlare节点
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
       - 英国 V2CROSS.COM
-      - 香港+Amazon数据中心 - 2
+      - 美国+加利福尼亚州旧金山Amazon数据中心
+      - 美国 CloudFlare节点 - 2
+      - 美国 V2CROSS.COM
+      - 美国 加利福尼亚洛杉矶ITLDC Network
+      - 美国 CloudFlare节点 - 3
+      - 日本+大阪Amazon数据中心
+      - 日本+V2CROSS.COM - 2
+      - 美国+V2CROSS.COM
+      - 美国+加利福尼亚州旧金山Amazon数据中心 - 2
+      - 香港+Amazon数据中心
+      - 美国 V2CROSS.COM - 2
+      - 美国 CloudFlare节点 - 4
+      - 美国 CloudFlare节点 - 5
+      - 印度+孟买Amazon数据中心
+      - 巴西圣保罗 CloudFlare节点
       - 日本 东京Amazon数据中心 - 2
+      - 美国 CloudFlare节点 - 6
+      - 日本+东京Amazon数据中心
+      - 美国 CloudFlare节点 - 7
+      - 西班牙 V2CROSS.COM
+      - 美国 CloudFlare节点 - 8
   - name: 自动选择
     type: url-test
     proxies:
       - 日本 东京Amazon数据中心
-      - 加拿大+V2CROSS.COM
-      - 重庆市 移动
-      - 香港+Amazon数据中心
-      - 美国+Amazon数据中心
-      - 香港 环球全域电讯
-      - 美国+Amazon数据中心 - 2
-      - 俄罗斯 新西伯利亚ADMAN数据中心
-      - 欧盟 V2CROSS.COM
-      - 德国 阿里云
-      - 美国 CloudFlare节点
+      - 日本+V2CROSS.COM
       - 美国 加利福尼亚州洛杉矶PetaExpress
-      - 美国 CloudFlare节点 - 2
-      - 日本+东京都Amazon数据中心
-      - 美国 CloudFlare节点 - 3
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 美国 V2CROSS.COM
+      - 加拿大+V2CROSS.COM
+      - 爱尔兰都柏林+亚马逊云
+      - 美国+Amazon+EC2服务器
+      - 美国 CloudFlare节点
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
       - 英国 V2CROSS.COM
-      - 香港+Amazon数据中心 - 2
+      - 美国+加利福尼亚州旧金山Amazon数据中心
+      - 美国 CloudFlare节点 - 2
+      - 美国 V2CROSS.COM
+      - 美国 加利福尼亚洛杉矶ITLDC Network
+      - 美国 CloudFlare节点 - 3
+      - 日本+大阪Amazon数据中心
+      - 日本+V2CROSS.COM - 2
+      - 美国+V2CROSS.COM
+      - 美国+加利福尼亚州旧金山Amazon数据中心 - 2
+      - 香港+Amazon数据中心
+      - 美国 V2CROSS.COM - 2
+      - 美国 CloudFlare节点 - 4
+      - 美国 CloudFlare节点 - 5
+      - 印度+孟买Amazon数据中心
+      - 巴西圣保罗 CloudFlare节点
       - 日本 东京Amazon数据中心 - 2
+      - 美国 CloudFlare节点 - 6
+      - 日本+东京Amazon数据中心
+      - 美国 CloudFlare节点 - 7
+      - 西班牙 V2CROSS.COM
+      - 美国 CloudFlare节点 - 8
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
       - 日本 东京Amazon数据中心
-      - 加拿大+V2CROSS.COM
-      - 重庆市 移动
-      - 香港+Amazon数据中心
-      - 美国+Amazon数据中心
-      - 香港 环球全域电讯
-      - 美国+Amazon数据中心 - 2
-      - 俄罗斯 新西伯利亚ADMAN数据中心
-      - 欧盟 V2CROSS.COM
-      - 德国 阿里云
-      - 美国 CloudFlare节点
+      - 日本+V2CROSS.COM
       - 美国 加利福尼亚州洛杉矶PetaExpress
-      - 美国 CloudFlare节点 - 2
-      - 日本+东京都Amazon数据中心
-      - 美国 CloudFlare节点 - 3
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 美国 V2CROSS.COM
+      - 加拿大+V2CROSS.COM
+      - 爱尔兰都柏林+亚马逊云
+      - 美国+Amazon+EC2服务器
+      - 美国 CloudFlare节点
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
       - 英国 V2CROSS.COM
-      - 香港+Amazon数据中心 - 2
+      - 美国+加利福尼亚州旧金山Amazon数据中心
+      - 美国 CloudFlare节点 - 2
+      - 美国 V2CROSS.COM
+      - 美国 加利福尼亚洛杉矶ITLDC Network
+      - 美国 CloudFlare节点 - 3
+      - 日本+大阪Amazon数据中心
+      - 日本+V2CROSS.COM - 2
+      - 美国+V2CROSS.COM
+      - 美国+加利福尼亚州旧金山Amazon数据中心 - 2
+      - 香港+Amazon数据中心
+      - 美国 V2CROSS.COM - 2
+      - 美国 CloudFlare节点 - 4
+      - 美国 CloudFlare节点 - 5
+      - 印度+孟买Amazon数据中心
+      - 巴西圣保罗 CloudFlare节点
       - 日本 东京Amazon数据中心 - 2
+      - 美国 CloudFlare节点 - 6
+      - 日本+东京Amazon数据中心
+      - 美国 CloudFlare节点 - 7
+      - 西班牙 V2CROSS.COM
+      - 美国 CloudFlare节点 - 8
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
