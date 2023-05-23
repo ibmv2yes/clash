@@ -1,27 +1,9 @@
 proxies:
-  - name: 美国 V2CROSS.COM
+  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
     type: vmess
-    server: 170.114.45.224
-    port: 443
-    uuid: DC615FCF-98B5-4D06-AA18-A6A1F65FF6D3
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /speedtest
-    ws-headers:
-      Host: Kansas.kotick.site
-    tls: true
-  - name: 浙江省+移动数据上网公共出口
-    type: trojan
-    server: cs.xiaohouzi.club
-    port: '49432'
-    password: 82277b90-9f40-3c91-9b5a-e97140f63d8b
-  - name: 美国 加利福尼亚州洛杉矶Sharktech数据中心
-    type: vmess
-    server: 170.178.167.140
-    port: 50002
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    server: 192.74.228.174
+    port: 42857
+    uuid: 051b844f-efe3-4847-92aa-66b5de0b6d4e
     alterId: 64
     cipher: auto
     udp: true
@@ -29,21 +11,49 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 日本 东京Amazon数据中心
+  - name: 加拿大+V2CROSS.COM
+    type: trojan
+    server: 165.154.246.194
+    port: '443'
+    password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
+  - name: 美国 加利福尼亚州圣何塞PEG TECH
     type: vmess
-    server: jp05-vm0.entry.srthdw.art
-    port: 30591
-    uuid: 22acc467-7440-386a-927a-d84be554b37e
-    alterId: 1
+    server: 142.4.99.81
+    port: 43379
+    uuid: b65da4af-a12a-4a59-9316-4549e12ba62c
+    alterId: 64
     cipher: auto
     udp: true
     network: tcp
     ws-path: /
     ws-headers:
       Host: ''
+  - name: 美国 加利福尼亚州圣何塞PEG TECH - 2
+    type: vmess
+    server: 142.4.99.81
+    port: 43379
+    uuid: b65da4af-a12a-4a59-9316-4549e12ba62c
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: ''
+    ws-headers:
+      Host: ''
+  - name: 美国+华盛顿Cogent通信公司
+    type: ss
+    server: 38.150.15.176
+    port: '8388'
+    cipher: aes-256-gcm
+    password: daozhang
+  - name: 美国+Xerox
+    type: trojan
+    server: awssg18-data.amazon-azure.com
+    port: '443'
+    password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
   - name: 美国 CloudFlare节点
     type: vmess
-    server: delivery.cvs.com
+    server: 1o2.ir
     port: 443
     uuid: DC615FCF-98B5-4D06-AA18-A6A1F65FF6D3
     alterId: 0
@@ -52,11 +62,23 @@ proxies:
     network: ws
     ws-path: /speedtest
     ws-headers:
-      Host: Kansas.kotick.site
+      Host: Lille.kotick.site
     tls: true
+  - name: 中国 阿里云
+    type: vmess
+    server: 8.222.192.30
+    port: 80
+    uuid: b2947942-701b-4de2-91cd-f6810d5d03bc
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: sg2.freeiq.cf
   - name: 美国 CloudFlare节点 - 2
     type: vmess
-    server: 104.18.21.81
+    server: cambridge.org
     port: 443
     uuid: 3E271C5F-28FF-4704-B8E5-CC2B39AB7F60
     alterId: 0
@@ -65,71 +87,64 @@ proxies:
     network: ws
     ws-path: /speedtest
     ws-headers:
-      Host: Dusseldorf.kotick.site
+      Host: Lille.kotick.site
     tls: true
-  - name: 美国 CloudFlare公司CDN节点(shopify)
+  - name: 俄罗斯 新西伯利亚ADMAN数据中心
     type: vmess
-    server: 23.227.38.0
-    port: 443
-    uuid: 7757E99E-75C9-46D5-854D-4065BF372100
-    alterId: 0
+    server: 185.133.40.192
+    port: 35059
+    uuid: 8d78c2a8-acaa-467d-9234-d2606624506d
+    alterId: 64
     cipher: auto
     udp: true
-    network: ws
-    ws-path: /speedtest
+    network: tcp
+    ws-path: /
     ws-headers:
-      Host: Kansas.kotick.site
-    tls: true
-  - name: 美国 CloudFlare节点 - 3
-    type: vmess
-    server: 104.19.129.247
-    port: 80
-    uuid: c5c9844d-050e-44f1-cb6d-ec5166772631
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /qwer
-    ws-headers:
-      Host: zslbs.vtcss.top
+      Host: ''
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 V2CROSS.COM
-      - 浙江省+移动数据上网公共出口
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
-      - 日本 东京Amazon数据中心
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 加拿大+V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国 加利福尼亚州圣何塞PEG TECH - 2
+      - 美国+华盛顿Cogent通信公司
+      - 美国+Xerox
       - 美国 CloudFlare节点
+      - 中国 阿里云
       - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare公司CDN节点(shopify)
-      - 美国 CloudFlare节点 - 3
+      - 俄罗斯 新西伯利亚ADMAN数据中心
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 V2CROSS.COM
-      - 浙江省+移动数据上网公共出口
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
-      - 日本 东京Amazon数据中心
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 加拿大+V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国 加利福尼亚州圣何塞PEG TECH - 2
+      - 美国+华盛顿Cogent通信公司
+      - 美国+Xerox
       - 美国 CloudFlare节点
+      - 中国 阿里云
       - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare公司CDN节点(shopify)
-      - 美国 CloudFlare节点 - 3
+      - 俄罗斯 新西伯利亚ADMAN数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 V2CROSS.COM
-      - 浙江省+移动数据上网公共出口
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
-      - 日本 东京Amazon数据中心
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 加拿大+V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国 加利福尼亚州圣何塞PEG TECH - 2
+      - 美国+华盛顿Cogent通信公司
+      - 美国+Xerox
       - 美国 CloudFlare节点
+      - 中国 阿里云
       - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare公司CDN节点(shopify)
-      - 美国 CloudFlare节点 - 3
+      - 俄罗斯 新西伯利亚ADMAN数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
