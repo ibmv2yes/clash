@@ -1,65 +1,16 @@
 proxies:
-  - name: 亚太地区+V2CROSS.COM
-    type: trojan
-    server: 163.123.192.154
-    port: 443?sni=download.xn--mes358a9urctx.com
-    password: 997a9caa-5950-476f-8614-462fb2e0ed18
-  - name: 丹麦 V2CROSS.COM
-    type: vmess
-    server: 195.85.59.181
-    port: 443
-    uuid: DC615FCF-98B5-4D06-AA18-A6A1F65FF6D3
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /speedtest
-    ws-headers:
-      Host: Amsterdam.kotick.site
-    tls: true
-  - name: 美国 Xerox
-    type: vmess
-    server: sg4.f163ab0f2c74.sanfen004.me
-    port: 443
-    uuid: adb800cf-f56b-4c93-964d-07e8cc9eaf05
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: ''
-    ws-headers:
-      Host: ''
-    tls: true
   - name: 美国 CloudFlare节点
     type: vmess
-    server: beenverified.com
-    port: 443
-    uuid: 7757E99E-75C9-46D5-854D-4065BF372100
+    server: cf-lt.sharecentre.online
+    port: 80
+    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /speedtest
+    ws-path: /shirker
     ws-headers:
-      Host: Dusseldorf.kotick.site
-    tls: true
-  - name: 美国+Xerox
-    type: trojan
-    server: awssg18-data.amazon-azure.com
-    port: '443'
-    password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
-  - name: 美国 加利福尼亚州洛杉矶PetaExpress
-    type: vmess
-    server: 107.148.5.160
-    port: 53002
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
+      Host: lv1.sharecentrepro.org
   - name: 美国 V2CROSS.COM
     type: vmess
     server: zfc.windowsupdate1.com
@@ -73,80 +24,88 @@ proxies:
     ws-headers:
       Host: Lille.kotick.site
     tls: true
-  - name: 台湾省台北市+scloud.sg
-    type: trojan
-    server: 165.154.227.191
-    port: '443'
-    password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
-  - name: 美国 CloudFlare节点 - 2
+  - name: 日本东京都品川区 Linode
     type: vmess
-    server: cdnjs.com
+    server: v7.583181.xyz
     port: 443
-    uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF
+    uuid: c59ffd70-a414-4d7d-a061-a2621349fa69
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 V2CROSS.COM - 2
+    type: vmess
+    server: 170.114.45.224
+    port: 443
+    uuid: DC615FCF-98B5-4D06-AA18-A6A1F65FF6D3
     alterId: 0
     cipher: auto
     udp: true
     network: ws
     ws-path: /speedtest
     ws-headers:
-      Host: Lille.kotick.site
+      Host: Kansas.kotick.site
     tls: true
-  - name: 美国 CloudFlare
+  - name: 欧盟 V2CROSS.COM
     type: vmess
-    server: 162.159.24.179
-    port: 80
-    uuid: 53ae65be-81ee-4766-8a09-da43c44c4d30
+    server: 45.14.174.57
+    port: 443
+    uuid: 7757E99E-75C9-46D5-854D-4065BF372100
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /qwer02
+    ws-path: /speedtest
     ws-headers:
-      Host: uyaa.vtcss.top
+      Host: Kansas.kotick.site
+    tls: true
+  - name: 日本 东京阿里云
+    type: vmess
+    server: cdncf.scyu.app
+    port: 80
+    uuid: f809b651-3924-4a80-abde-6c8536fbb229
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /api/v3/download.getFile
+    ws-headers:
+      Host: ssrsub.v01.ssrsub.com
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 亚太地区+V2CROSS.COM
-      - 丹麦 V2CROSS.COM
-      - 美国 Xerox
       - 美国 CloudFlare节点
-      - 美国+Xerox
-      - 美国 加利福尼亚州洛杉矶PetaExpress
       - 美国 V2CROSS.COM
-      - 台湾省台北市+scloud.sg
-      - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare
+      - 日本东京都品川区 Linode
+      - 美国 V2CROSS.COM - 2
+      - 欧盟 V2CROSS.COM
+      - 日本 东京阿里云
   - name: 自动选择
     type: url-test
     proxies:
-      - 亚太地区+V2CROSS.COM
-      - 丹麦 V2CROSS.COM
-      - 美国 Xerox
       - 美国 CloudFlare节点
-      - 美国+Xerox
-      - 美国 加利福尼亚州洛杉矶PetaExpress
       - 美国 V2CROSS.COM
-      - 台湾省台北市+scloud.sg
-      - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare
+      - 日本东京都品川区 Linode
+      - 美国 V2CROSS.COM - 2
+      - 欧盟 V2CROSS.COM
+      - 日本 东京阿里云
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 亚太地区+V2CROSS.COM
-      - 丹麦 V2CROSS.COM
-      - 美国 Xerox
       - 美国 CloudFlare节点
-      - 美国+Xerox
-      - 美国 加利福尼亚州洛杉矶PetaExpress
       - 美国 V2CROSS.COM
-      - 台湾省台北市+scloud.sg
-      - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare
+      - 日本东京都品川区 Linode
+      - 美国 V2CROSS.COM - 2
+      - 欧盟 V2CROSS.COM
+      - 日本 东京阿里云
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
