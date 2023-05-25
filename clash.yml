@@ -1,9 +1,25 @@
 proxies:
-  - name: 加拿大 V2CROSS.COM
+  - name: 美国+Xerox
+    type: trojan
+    server: awssg18-data.amazon-azure.com
+    port: '443'
+    password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
+  - name: 浙江省 移动数据上网公共出口
     type: vmess
-    server: 199.212.90.14
+    server: dc.xmrthnode.com
+    port: 42042
+    uuid: 61a06847-820f-3785-af90-506d3e988a12
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /th
+    ws-headers: {}
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: 104.27.39.113
     port: 443
-    uuid: 76E66799-1763-4EE9-ABD6-5523EE0E416D
+    uuid: 7757E99E-75C9-46D5-854D-4065BF372100
     alterId: 0
     cipher: auto
     udp: true
@@ -12,21 +28,32 @@ proxies:
     ws-headers:
       Host: Lille.kotick.site
     tls: true
-  - name: 美国 CloudFlare节点
+  - name: 上海市+联通
+    type: trojan
+    server: h453998.waihuizhibiaowang.com
+    port: 13343?allowInsecure=1&peer=106-110-192-225.d.cjjd20.com&alpn=h2
+    password: f0aea98a-59b8-4994-9d79-234c876082ff
+  - name: 美国 Xerox
     type: vmess
-    server: 104.21.53.35
-    port: 80
-    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
+    server: sg4.f163ab0f2c74.sanfen004.me
+    port: 443
+    uuid: adb800cf-f56b-4c93-964d-07e8cc9eaf05
     alterId: 0
     cipher: auto
     udp: true
-    network: ws
-    ws-path: /yxzbp
+    network: tcp
+    ws-path: ''
     ws-headers:
-      Host: buyvm1.yxjnode.com
+      Host: ''
+    tls: true
+  - name: 加拿大+V2CROSS.COM
+    type: trojan
+    server: bgptw3.cnamazon.sbs
+    port: '443'
+    password: 14fc8b10-6475-4649-b343-e12b7c3ee93f
   - name: 美国 V2CROSS.COM
     type: vmess
-    server: zfc.windowsupdate1.com
+    server: 170.114.45.224
     port: 443
     uuid: DC615FCF-98B5-4D06-AA18-A6A1F65FF6D3
     alterId: 0
@@ -35,8 +62,13 @@ proxies:
     network: ws
     ws-path: /speedtest
     ws-headers:
-      Host: Lille.kotick.site
+      Host: Kansas.kotick.site
     tls: true
+  - name: 台湾省台北市+scloud.sg
+    type: trojan
+    server: 165.154.227.191
+    port: '443'
+    password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
   - name: 美国 CloudFlare公司CDN节点(shopify)
     type: vmess
     server: 23.227.38.0
@@ -50,118 +82,101 @@ proxies:
     ws-headers:
       Host: Kansas.kotick.site
     tls: true
-  - name: 加拿大+V2CROSS.COM
-    type: trojan
-    server: stw3-tg-data.amazonwebservicess.com
-    port: '443'
-    password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
+  - name: 美国加利福尼亚州洛杉矶 PetaExpress
+    type: vmess
+    server: 198.2.200.105
+    port: 443
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /path/1683543024453
+    ws-headers:
+      Host: www.54092415.xyz
+    tls: true
   - name: 美国 CloudFlare节点 - 2
     type: vmess
-    server: 104.21.116.175
-    port: 443
-    uuid: e883ff76-3bb4-4008-c068-6b5b1d960ea7
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /qwer02
-    ws-headers:
-      Host: uyaa.vtcss.top
-    tls: true
-  - name: 美国 CloudFlare节点 - 3
-    type: vmess
-    server: zslbs.vtcss.top
+    server: cf-lt.sharecentre.online
     port: 80
-    uuid: c5c9844d-050e-44f1-cb6d-ec5166772631
+    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /qwer
+    ws-path: /shirker
+    ws-headers:
+      Host: uk1.scproxy.top
+  - name: 美国 加利福尼亚州洛杉矶PetaExpress
+    type: vmess
+    server: 107.148.5.160
+    port: 53002
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国 CloudFlare节点 - 4
-    type: vmess
-    server: 104.23.104.188
-    port: 443
-    uuid: 39304f36-8a9c-4692-9b31-d2997532f567
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /qwer
-    ws-headers:
-      Host: zslbs.vtcss.top
-    tls: true
-  - name: 美国 CloudFlare
-    type: vmess
-    server: 162.159.24.179
-    port: 80
-    uuid: 53ae65be-81ee-4766-8a09-da43c44c4d30
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /qwer02
-    ws-headers:
-      Host: uyaa.vtcss.top
-  - name: 美国 CloudFlare节点 - 5
-    type: vmess
-    server: delivery.cvs.com
-    port: 443
-    uuid: DC615FCF-98B5-4D06-AA18-A6A1F65FF6D3
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /speedtest
-    ws-headers:
-      Host: Kansas.kotick.site
-    tls: true
+  - name: 辽宁省鞍山市+联通
+    type: trojan
+    server: social.flareai.store
+    port: 13743?allowInsecure=1&peer=106-110-192-225.d.cjjd20.com&alpn=h2
+    password: f0aea98a-59b8-4994-9d79-234c876082ff
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 加拿大 V2CROSS.COM
+      - 美国+Xerox
+      - 浙江省 移动数据上网公共出口
       - 美国 CloudFlare节点
-      - 美国 V2CROSS.COM
-      - 美国 CloudFlare公司CDN节点(shopify)
+      - 上海市+联通
+      - 美国 Xerox
       - 加拿大+V2CROSS.COM
+      - 美国 V2CROSS.COM
+      - 台湾省台北市+scloud.sg
+      - 美国 CloudFlare公司CDN节点(shopify)
+      - 美国加利福尼亚州洛杉矶 PetaExpress
       - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
-      - 美国 CloudFlare
-      - 美国 CloudFlare节点 - 5
+      - 美国 加利福尼亚州洛杉矶PetaExpress
+      - 辽宁省鞍山市+联通
   - name: 自动选择
     type: url-test
     proxies:
-      - 加拿大 V2CROSS.COM
+      - 美国+Xerox
+      - 浙江省 移动数据上网公共出口
       - 美国 CloudFlare节点
-      - 美国 V2CROSS.COM
-      - 美国 CloudFlare公司CDN节点(shopify)
+      - 上海市+联通
+      - 美国 Xerox
       - 加拿大+V2CROSS.COM
+      - 美国 V2CROSS.COM
+      - 台湾省台北市+scloud.sg
+      - 美国 CloudFlare公司CDN节点(shopify)
+      - 美国加利福尼亚州洛杉矶 PetaExpress
       - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
-      - 美国 CloudFlare
-      - 美国 CloudFlare节点 - 5
+      - 美国 加利福尼亚州洛杉矶PetaExpress
+      - 辽宁省鞍山市+联通
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 加拿大 V2CROSS.COM
+      - 美国+Xerox
+      - 浙江省 移动数据上网公共出口
       - 美国 CloudFlare节点
-      - 美国 V2CROSS.COM
-      - 美国 CloudFlare公司CDN节点(shopify)
+      - 上海市+联通
+      - 美国 Xerox
       - 加拿大+V2CROSS.COM
+      - 美国 V2CROSS.COM
+      - 台湾省台北市+scloud.sg
+      - 美国 CloudFlare公司CDN节点(shopify)
+      - 美国加利福尼亚州洛杉矶 PetaExpress
       - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
-      - 美国 CloudFlare
-      - 美国 CloudFlare节点 - 5
+      - 美国 加利福尼亚州洛杉矶PetaExpress
+      - 辽宁省鞍山市+联通
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
