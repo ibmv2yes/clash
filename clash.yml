@@ -1,31 +1,9 @@
 proxies:
-  - name: 加拿大+V2CROSS.COM
-    type: trojan
-    server: 165.154.253.111
-    port: '443'
-    password: 4aeda200-44c9-4168-8f2a-a00a72176d35
-  - name: 上海市+电信
-    type: trojan
-    server: official.taipeicitygovernment.kiev.ua
-    port: '8443'
-    password: 5505f6ba-cd37-30ce-8f92-be4120c83d7f
-  - name: 美国加利福尼亚州洛杉矶 PetaExpress
-    type: vmess
-    server: 198.2.234.68
-    port: 40349
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
   - name: 美国 CloudFlare节点
     type: vmess
-    server: cdnjs.com
+    server: 1o2.ir
     port: 443
-    uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF
+    uuid: DC615FCF-98B5-4D06-AA18-A6A1F65FF6D3
     alterId: 0
     cipher: auto
     udp: true
@@ -34,10 +12,10 @@ proxies:
     ws-headers:
       Host: Lille.kotick.site
     tls: true
-  - name: 美国 加利福尼亚州圣何塞PEG TECH
+  - name: 美国 V2CROSS.COM
     type: vmess
-    server: 142.4.125.1
-    port: 54102
+    server: 137.175.41.194
+    port: 50004
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -46,16 +24,42 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 加拿大+V2CROSS.COM - 2
-    type: trojan
-    server: stw8-tg-data.amazonwebservicess.com
-    port: '443'
-    password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
-  - name: 俄罗斯 新西伯利亚ADMAN数据中心
+  - name: 美国 CloudFlare节点 - 2
     type: vmess
-    server: 185.133.40.192
-    port: 35059
-    uuid: 8d78c2a8-acaa-467d-9234-d2606624506d
+    server: bp.nidaye.eu.org
+    port: 443
+    uuid: c77d02e9-5738-46ac-9512-7b67746cad85
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /ndy58850
+    ws-headers:
+      Host: bp.nidaye.eu.org
+    tls: true
+  - name: 美国+V2CROSS.COM
+    type: trojan
+    server: 152.70.74.66
+    port: 443?security=tls&type=tcp&headerType=none
+    password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
+  - name: 美国 V2CROSS.COM - 2
+    type: vmess
+    server: zfc.windowsupdate1.com
+    port: 443
+    uuid: DC615FCF-98B5-4D06-AA18-A6A1F65FF6D3
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /speedtest
+    ws-headers:
+      Host: Lille.kotick.site
+    tls: true
+  - name: 美国加利福尼亚州洛杉矶 PetaExpress
+    type: vmess
+    server: 198.2.205.74
+    port: 30406
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
     udp: true
@@ -63,41 +67,147 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
+  - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: beenverified.com
+    port: 443
+    uuid: 7757E99E-75C9-46D5-854D-4065BF372100
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /speedtest
+    ws-headers:
+      Host: Dusseldorf.kotick.site
+    tls: true
+  - name: 加拿大+V2CROSS.COM
+    type: trojan
+    server: stw7-tg-data.amazonwebservicess.com
+    port: '443'
+    password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
+  - name: 美国 CloudFlare节点 - 4
+    type: vmess
+    server: cfyd.starsea.vip
+    port: 443
+    uuid: 7757E99E-75C9-46D5-854D-4065BF372100
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /speedtest
+    ws-headers:
+      Host: Amsterdam.kotick.site
+    tls: true
+  - name: 美国 CloudFlare节点 - 5
+    type: vmess
+    server: cf.yxjnode.com
+    port: 80
+    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /yxzbp
+    ws-headers:
+      Host: dp4.yxjnode.com
+  - name: 美国 CloudFlare节点 - 6
+    type: vmess
+    server: cf.yxjnode.com
+    port: 80
+    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /yxzbp
+    ws-headers:
+      Host: buyvm2.yxjnode.com
+  - name: 广东省广州市+UCloud
+    type: trojan
+    server: iplc-enter-tw-xe.fib-sys.xyz
+    port: '11451'
+    password: 11a4e5be-3c87-37d2-aac8-00b85ef0fcdc
+  - name: 美国 CloudFlare公司CDN节点(shopify)
+    type: vmess
+    server: 23.227.38.0
+    port: 443
+    uuid: 7757E99E-75C9-46D5-854D-4065BF372100
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /speedtest
+    ws-headers:
+      Host: Kansas.kotick.site
+    tls: true
+  - name: 中国 阿里云
+    type: vmess
+    server: cdncf.scyu.app
+    port: 80
+    uuid: f809b651-3924-4a80-abde-6c8536fbb229
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /api/v3/download.getFile
+    ws-headers:
+      Host: ssrsub.v01.ssrsub.com
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 加拿大+V2CROSS.COM
-      - 上海市+电信
-      - 美国加利福尼亚州洛杉矶 PetaExpress
       - 美国 CloudFlare节点
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 加拿大+V2CROSS.COM - 2
-      - 俄罗斯 新西伯利亚ADMAN数据中心
+      - 美国 V2CROSS.COM
+      - 美国 CloudFlare节点 - 2
+      - 美国+V2CROSS.COM
+      - 美国 V2CROSS.COM - 2
+      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 美国 CloudFlare节点 - 3
+      - 加拿大+V2CROSS.COM
+      - 美国 CloudFlare节点 - 4
+      - 美国 CloudFlare节点 - 5
+      - 美国 CloudFlare节点 - 6
+      - 广东省广州市+UCloud
+      - 美国 CloudFlare公司CDN节点(shopify)
+      - 中国 阿里云
   - name: 自动选择
     type: url-test
     proxies:
-      - 加拿大+V2CROSS.COM
-      - 上海市+电信
-      - 美国加利福尼亚州洛杉矶 PetaExpress
       - 美国 CloudFlare节点
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 加拿大+V2CROSS.COM - 2
-      - 俄罗斯 新西伯利亚ADMAN数据中心
+      - 美国 V2CROSS.COM
+      - 美国 CloudFlare节点 - 2
+      - 美国+V2CROSS.COM
+      - 美国 V2CROSS.COM - 2
+      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 美国 CloudFlare节点 - 3
+      - 加拿大+V2CROSS.COM
+      - 美国 CloudFlare节点 - 4
+      - 美国 CloudFlare节点 - 5
+      - 美国 CloudFlare节点 - 6
+      - 广东省广州市+UCloud
+      - 美国 CloudFlare公司CDN节点(shopify)
+      - 中国 阿里云
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 加拿大+V2CROSS.COM
-      - 上海市+电信
-      - 美国加利福尼亚州洛杉矶 PetaExpress
       - 美国 CloudFlare节点
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 加拿大+V2CROSS.COM - 2
-      - 俄罗斯 新西伯利亚ADMAN数据中心
+      - 美国 V2CROSS.COM
+      - 美国 CloudFlare节点 - 2
+      - 美国+V2CROSS.COM
+      - 美国 V2CROSS.COM - 2
+      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 美国 CloudFlare节点 - 3
+      - 加拿大+V2CROSS.COM
+      - 美国 CloudFlare节点 - 4
+      - 美国 CloudFlare节点 - 5
+      - 美国 CloudFlare节点 - 6
+      - 广东省广州市+UCloud
+      - 美国 CloudFlare公司CDN节点(shopify)
+      - 中国 阿里云
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
