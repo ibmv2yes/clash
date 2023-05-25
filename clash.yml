@@ -1,44 +1,9 @@
 proxies:
-  - name: 台湾省台北市+scloud.sg
-    type: trojan
-    server: 165.154.226.87
-    port: '443'
-    password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
-  - name: 加拿大+V2CROSS.COM
-    type: trojan
-    server: 165.154.246.207
-    port: '443'
-    password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
-  - name: 美国 CloudFlare公司CDN节点(shopify)
+  - name: 美国 V2CROSS.COM
     type: vmess
-    server: 23.227.38.99
-    port: 443
-    uuid: 86d37526-5758-4cec-862f-df404b313086
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /3G6WPDL7
-    ws-headers:
-      Host: 1.freek1.xyz
-    tls: true
-  - name: 俄罗斯 新西伯利亚ADMAN数据中心
-    type: vmess
-    server: 185.133.40.192
-    port: 35059
-    uuid: 8d78c2a8-acaa-467d-9234-d2606624506d
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国 加利福尼亚州洛杉矶Sharktech数据中心
-    type: vmess
-    server: 64.32.4.35
-    port: 43166
-    uuid: 8653004f-de67-44c2-9cce-e0830933fb03
+    server: 137.175.29.36
+    port: 53986
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
     udp: true
@@ -48,7 +13,7 @@ proxies:
       Host: ''
   - name: 美国 CloudFlare节点
     type: vmess
-    server: cfyd.starsea.vip
+    server: for-j.com
     port: 443
     uuid: 7757E99E-75C9-46D5-854D-4065BF372100
     alterId: 0
@@ -59,75 +24,32 @@ proxies:
     ws-headers:
       Host: Amsterdam.kotick.site
     tls: true
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: cf.yxjnode.com
-    port: 80
-    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /yxzbp
-    ws-headers:
-      Host: dp4.yxjnode.com
-  - name: 美国 加利福尼亚州洛杉矶PetaExpress
-    type: vmess
-    server: 107.148.194.232
-    port: 55504
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国 CloudFlare节点 - 3
-    type: vmess
-    server: 141.101.114.2
-    port: 80
-    uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: lg.v2ray20.xyz
-  - name: 美国 CloudFlare节点 - 4
-    type: vmess
-    server: 104.19.38.157
-    port: 443
-    uuid: DCE76061-EE65-49DB-997C-A6A880DADE3A
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /speedtest/Dusseldorf.kotick.site
-    ws-headers:
-      Host: autumn-queen-b668.bangolan024369.workers.dev
-    tls: true
-  - name: 美国 加利福尼亚州圣何塞PEG TECH
-    type: vmess
-    server: 142.4.125.1
-    port: 54102
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 日本+V2CROSS.COM
+  - name: 上海市+电信
     type: trojan
-    server: kr1.microsoft-orgwly.vip
-    port: '443'
-    password: edccc909-b7d2-42b2-8bb1-fd74854f66b1
-  - name: 立陶宛 V2CROSS.COM
+    server: official.taipeicitygovernment.kiev.ua
+    port: '8443'
+    password: 5505f6ba-cd37-30ce-8f92-be4120c83d7f
+  - name: 英国 V2CROSS.COM
     type: vmess
-    server: www.wayfair.com
+    server: vuk2.0bad.com
+    port: 443
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /chat
+    ws-headers:
+      Host: vuk2.0bad.com
+    tls: true
+  - name: 亚太地区+V2CROSS.COM
+    type: trojan
+    server: 163.123.192.154
+    port: 443?sni=download.xn--mes358a9urctx.com
+    password: 997a9caa-5950-476f-8614-462fb2e0ed18
+  - name: 澳大利亚 V2CROSS.COM
+    type: vmess
+    server: 203.29.53.179
     port: 443
     uuid: 7757E99E-75C9-46D5-854D-4065BF372100
     alterId: 0
@@ -138,59 +60,149 @@ proxies:
     ws-headers:
       Host: Kansas.kotick.site
     tls: true
+  - name: 加拿大+V2CROSS.COM
+    type: trojan
+    server: stw8-tg-data.amazonwebservicess.com
+    port: '443'
+    password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
+  - name: 加拿大+V2CROSS.COM - 2
+    type: trojan
+    server: bgptw3.cnamazon.sbs
+    port: '443'
+    password: 14fc8b10-6475-4649-b343-e12b7c3ee93f
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: 104.23.104.188
+    port: 443
+    uuid: 39304f36-8a9c-4692-9b31-d2997532f567
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /qwer
+    ws-headers:
+      Host: zslbs.vtcss.top
+    tls: true
+  - name: 澳大利亚 Glen Waverly College
+    type: vmess
+    server: 203.17.126.203
+    port: 443
+    uuid: DC615FCF-98B5-4D06-AA18-A6A1F65FF6D3
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /speedtest
+    ws-headers:
+      Host: Amsterdam.kotick.site
+    tls: true
+  - name: 美国 V2CROSS.COM - 2
+    type: vmess
+    server: 104.194.233.43
+    port: 51302
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 V2CROSS.COM - 3
+    type: vmess
+    server: 104.31.16.62
+    port: 443
+    uuid: 9aa6b5ad-c0fc-47f4-a837-f72179d7b662
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /Lsv4s7nS0ErewnEN
+    ws-headers:
+      Host: channel3.unlimiteddev.tk
+    tls: true
+  - name: 美国 V2CROSS.COM - 4
+    type: vmess
+    server: zfc.windowsupdate1.com
+    port: 443
+    uuid: DC615FCF-98B5-4D06-AA18-A6A1F65FF6D3
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /speedtest
+    ws-headers:
+      Host: Lille.kotick.site
+    tls: true
+  - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: ava.game.naver.com
+    port: 443
+    uuid: 04a64d18-2310-41e1-b6a8-78739e881e44
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /worryfree
+    ws-headers:
+      Host: v2ray3.udpgw.com
+    tls: true
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 台湾省台北市+scloud.sg
-      - 加拿大+V2CROSS.COM
-      - 美国 CloudFlare公司CDN节点(shopify)
-      - 俄罗斯 新西伯利亚ADMAN数据中心
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点
+      - 上海市+电信
+      - 英国 V2CROSS.COM
+      - 亚太地区+V2CROSS.COM
+      - 澳大利亚 V2CROSS.COM
+      - 加拿大+V2CROSS.COM
+      - 加拿大+V2CROSS.COM - 2
       - 美国 CloudFlare节点 - 2
-      - 美国 加利福尼亚州洛杉矶PetaExpress
+      - 澳大利亚 Glen Waverly College
+      - 美国 V2CROSS.COM - 2
+      - 美国 V2CROSS.COM - 3
+      - 美国 V2CROSS.COM - 4
       - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 日本+V2CROSS.COM
-      - 立陶宛 V2CROSS.COM
   - name: 自动选择
     type: url-test
     proxies:
-      - 台湾省台北市+scloud.sg
-      - 加拿大+V2CROSS.COM
-      - 美国 CloudFlare公司CDN节点(shopify)
-      - 俄罗斯 新西伯利亚ADMAN数据中心
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点
+      - 上海市+电信
+      - 英国 V2CROSS.COM
+      - 亚太地区+V2CROSS.COM
+      - 澳大利亚 V2CROSS.COM
+      - 加拿大+V2CROSS.COM
+      - 加拿大+V2CROSS.COM - 2
       - 美国 CloudFlare节点 - 2
-      - 美国 加利福尼亚州洛杉矶PetaExpress
+      - 澳大利亚 Glen Waverly College
+      - 美国 V2CROSS.COM - 2
+      - 美国 V2CROSS.COM - 3
+      - 美国 V2CROSS.COM - 4
       - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 日本+V2CROSS.COM
-      - 立陶宛 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 台湾省台北市+scloud.sg
-      - 加拿大+V2CROSS.COM
-      - 美国 CloudFlare公司CDN节点(shopify)
-      - 俄罗斯 新西伯利亚ADMAN数据中心
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点
+      - 上海市+电信
+      - 英国 V2CROSS.COM
+      - 亚太地区+V2CROSS.COM
+      - 澳大利亚 V2CROSS.COM
+      - 加拿大+V2CROSS.COM
+      - 加拿大+V2CROSS.COM - 2
       - 美国 CloudFlare节点 - 2
-      - 美国 加利福尼亚州洛杉矶PetaExpress
+      - 澳大利亚 Glen Waverly College
+      - 美国 V2CROSS.COM - 2
+      - 美国 V2CROSS.COM - 3
+      - 美国 V2CROSS.COM - 4
       - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 日本+V2CROSS.COM
-      - 立陶宛 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
