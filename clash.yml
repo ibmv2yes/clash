@@ -1,42 +1,5 @@
 proxies:
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: cf-lt.sharecentre.online
-    port: 80
-    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /shirker
-    ws-headers:
-      Host: lv1.sharecentrepro.org
   - name: 美国 V2CROSS.COM
-    type: vmess
-    server: zfc.windowsupdate1.com
-    port: 443
-    uuid: DC615FCF-98B5-4D06-AA18-A6A1F65FF6D3
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /speedtest
-    ws-headers:
-      Host: Lille.kotick.site
-    tls: true
-  - name: 日本东京都品川区 Linode
-    type: vmess
-    server: v7.583181.xyz
-    port: 443
-    uuid: c59ffd70-a414-4d7d-a061-a2621349fa69
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国 V2CROSS.COM - 2
     type: vmess
     server: 170.114.45.224
     port: 443
@@ -49,11 +12,53 @@ proxies:
     ws-headers:
       Host: Kansas.kotick.site
     tls: true
-  - name: 欧盟 V2CROSS.COM
+  - name: 美国 CloudFlare公司CDN节点(shopify)
     type: vmess
-    server: 45.14.174.57
+    server: 23.227.38.99
     port: 443
-    uuid: 7757E99E-75C9-46D5-854D-4065BF372100
+    uuid: 86d37526-5758-4cec-862f-df404b313086
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /3G6WPDL7
+    ws-headers:
+      Host: 1.freek1.xyz
+    tls: true
+  - name: 美国+Xerox
+    type: trojan
+    server: 13.215.194.103
+    port: '443'
+    password: 4aeda200-44c9-4168-8f2a-a00a72176d35
+  - name: 日本 东京M247网络
+    type: vmess
+    server: 109.166.36.193
+    port: 50002
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 俄罗斯 新西伯利亚ADMAN数据中心
+    type: vmess
+    server: 185.133.40.192
+    port: 35059
+    uuid: 8d78c2a8-acaa-467d-9234-d2606624506d
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: cdnjs.com
+    port: 443
+    uuid: B6076D16-1F56-4D56-80E7-1B45FEE195E9
     alterId: 0
     cipher: auto
     udp: true
@@ -62,50 +67,70 @@ proxies:
     ws-headers:
       Host: Kansas.kotick.site
     tls: true
-  - name: 日本 东京阿里云
+  - name: 美国 CloudFlare节点 - 2
     type: vmess
-    server: cdncf.scyu.app
-    port: 80
-    uuid: f809b651-3924-4a80-abde-6c8536fbb229
+    server: 172.67.31.105
+    port: 443
+    uuid: 39304f36-8a9c-4692-9b31-d2997532f567
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /api/v3/download.getFile
+    ws-path: /qwer
     ws-headers:
-      Host: ssrsub.v01.ssrsub.com
+      Host: zslbs.vtcss.top
+    tls: true
+  - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: ava.game.naver.com
+    port: 443
+    uuid: 04a64d18-2310-41e1-b6a8-78739e881e44
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /worryfree
+    ws-headers:
+      Host: v2ray3.udpgw.com
+    tls: true
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 CloudFlare节点
       - 美国 V2CROSS.COM
-      - 日本东京都品川区 Linode
-      - 美国 V2CROSS.COM - 2
-      - 欧盟 V2CROSS.COM
-      - 日本 东京阿里云
+      - 美国 CloudFlare公司CDN节点(shopify)
+      - 美国+Xerox
+      - 日本 东京M247网络
+      - 俄罗斯 新西伯利亚ADMAN数据中心
+      - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 - 2
+      - 美国 CloudFlare节点 - 3
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 CloudFlare节点
       - 美国 V2CROSS.COM
-      - 日本东京都品川区 Linode
-      - 美国 V2CROSS.COM - 2
-      - 欧盟 V2CROSS.COM
-      - 日本 东京阿里云
+      - 美国 CloudFlare公司CDN节点(shopify)
+      - 美国+Xerox
+      - 日本 东京M247网络
+      - 俄罗斯 新西伯利亚ADMAN数据中心
+      - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 - 2
+      - 美国 CloudFlare节点 - 3
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 CloudFlare节点
       - 美国 V2CROSS.COM
-      - 日本东京都品川区 Linode
-      - 美国 V2CROSS.COM - 2
-      - 欧盟 V2CROSS.COM
-      - 日本 东京阿里云
+      - 美国 CloudFlare公司CDN节点(shopify)
+      - 美国+Xerox
+      - 日本 东京M247网络
+      - 俄罗斯 新西伯利亚ADMAN数据中心
+      - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 - 2
+      - 美国 CloudFlare节点 - 3
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
