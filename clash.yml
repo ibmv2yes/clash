@@ -1,7 +1,38 @@
 proxies:
+  - name: 亚太地区+V2CROSS.COM
+    type: trojan
+    server: 163.123.192.154
+    port: 443?sni=download.xn--mes358a9urctx.com
+    password: 997a9caa-5950-476f-8614-462fb2e0ed18
+  - name: 丹麦 V2CROSS.COM
+    type: vmess
+    server: 195.85.59.181
+    port: 443
+    uuid: DC615FCF-98B5-4D06-AA18-A6A1F65FF6D3
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /speedtest
+    ws-headers:
+      Host: Amsterdam.kotick.site
+    tls: true
+  - name: 美国 Xerox
+    type: vmess
+    server: sg4.f163ab0f2c74.sanfen004.me
+    port: 443
+    uuid: adb800cf-f56b-4c93-964d-07e8cc9eaf05
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: ''
+    ws-headers:
+      Host: ''
+    tls: true
   - name: 美国 CloudFlare节点
     type: vmess
-    server: cfyd.starsea.vip
+    server: beenverified.com
     port: 443
     uuid: 7757E99E-75C9-46D5-854D-4065BF372100
     alterId: 0
@@ -10,25 +41,17 @@ proxies:
     network: ws
     ws-path: /speedtest
     ws-headers:
-      Host: Amsterdam.kotick.site
+      Host: Dusseldorf.kotick.site
     tls: true
-  - name: 美国 V2CROSS.COM
+  - name: 美国+Xerox
+    type: trojan
+    server: awssg18-data.amazon-azure.com
+    port: '443'
+    password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
+  - name: 美国 加利福尼亚州洛杉矶PetaExpress
     type: vmess
-    server: 170.114.45.23
-    port: 443
-    uuid: 7757E99E-75C9-46D5-854D-4065BF372100
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /speedtest
-    ws-headers:
-      Host: Amsterdam.kotick.site
-    tls: true
-  - name: 广东省 移动
-    type: vmess
-    server: 183.237.20.158
-    port: 40095
+    server: 107.148.5.160
+    port: 53002
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -37,22 +60,9 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国 CloudFlare节点 - 2
+  - name: 美国 V2CROSS.COM
     type: vmess
-    server: ava.game.naver.com
-    port: 443
-    uuid: 04a64d18-2310-41e1-b6a8-78739e881e44
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /worryfree
-    ws-headers:
-      Host: v2ray3.udpgw.com
-    tls: true
-  - name: 美国 CloudFlare节点 - 3
-    type: vmess
-    server: 1o2.ir
+    server: zfc.windowsupdate1.com
     port: 443
     uuid: DC615FCF-98B5-4D06-AA18-A6A1F65FF6D3
     alterId: 0
@@ -63,9 +73,27 @@ proxies:
     ws-headers:
       Host: Lille.kotick.site
     tls: true
-  - name: 美国 CloudFlare节点 - 4
+  - name: 台湾省台北市+scloud.sg
+    type: trojan
+    server: 165.154.227.191
+    port: '443'
+    password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
+  - name: 美国 CloudFlare节点 - 2
     type: vmess
-    server: uyaa.vtcss.top
+    server: cdnjs.com
+    port: 443
+    uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /speedtest
+    ws-headers:
+      Host: Lille.kotick.site
+    tls: true
+  - name: 美国 CloudFlare
+    type: vmess
+    server: 162.159.24.179
     port: 80
     uuid: 53ae65be-81ee-4766-8a09-da43c44c4d30
     alterId: 0
@@ -74,101 +102,51 @@ proxies:
     network: ws
     ws-path: /qwer02
     ws-headers:
-      Host: ''
-  - name: 欧盟 V2CROSS.COM
-    type: vmess
-    server: 45.14.174.57
-    port: 443
-    uuid: 7757E99E-75C9-46D5-854D-4065BF372100
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /speedtest
-    ws-headers:
-      Host: Kansas.kotick.site
-    tls: true
-  - name: 美国 CloudFlare节点 - 5
-    type: vmess
-    server: 104.21.53.35
-    port: 80
-    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /yxzbp
-    ws-headers:
-      Host: buyvm1.yxjnode.com
-  - name: 美国 加利福尼亚州洛杉矶PetaExpress
-    type: vmess
-    server: 107.148.203.54
-    port: 55337
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 加拿大+V2CROSS.COM
-    type: trojan
-    server: bgptw2.cnamazon.sbs
-    port: '443'
-    password: 4658738d-c3f1-4ebf-ad7a-ee603e3f9690
-  - name: 加拿大+V2CROSS.COM - 2
-    type: trojan
-    server: 165.154.246.194
-    port: '443'
-    password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
+      Host: uyaa.vtcss.top
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
+      - 亚太地区+V2CROSS.COM
+      - 丹麦 V2CROSS.COM
+      - 美国 Xerox
       - 美国 CloudFlare节点
-      - 美国 V2CROSS.COM
-      - 广东省 移动
-      - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
-      - 欧盟 V2CROSS.COM
-      - 美国 CloudFlare节点 - 5
+      - 美国+Xerox
       - 美国 加利福尼亚州洛杉矶PetaExpress
-      - 加拿大+V2CROSS.COM
-      - 加拿大+V2CROSS.COM - 2
+      - 美国 V2CROSS.COM
+      - 台湾省台北市+scloud.sg
+      - 美国 CloudFlare节点 - 2
+      - 美国 CloudFlare
   - name: 自动选择
     type: url-test
     proxies:
+      - 亚太地区+V2CROSS.COM
+      - 丹麦 V2CROSS.COM
+      - 美国 Xerox
       - 美国 CloudFlare节点
-      - 美国 V2CROSS.COM
-      - 广东省 移动
-      - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
-      - 欧盟 V2CROSS.COM
-      - 美国 CloudFlare节点 - 5
+      - 美国+Xerox
       - 美国 加利福尼亚州洛杉矶PetaExpress
-      - 加拿大+V2CROSS.COM
-      - 加拿大+V2CROSS.COM - 2
+      - 美国 V2CROSS.COM
+      - 台湾省台北市+scloud.sg
+      - 美国 CloudFlare节点 - 2
+      - 美国 CloudFlare
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
+      - 亚太地区+V2CROSS.COM
+      - 丹麦 V2CROSS.COM
+      - 美国 Xerox
       - 美国 CloudFlare节点
-      - 美国 V2CROSS.COM
-      - 广东省 移动
-      - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
-      - 欧盟 V2CROSS.COM
-      - 美国 CloudFlare节点 - 5
+      - 美国+Xerox
       - 美国 加利福尼亚州洛杉矶PetaExpress
-      - 加拿大+V2CROSS.COM
-      - 加拿大+V2CROSS.COM - 2
+      - 美国 V2CROSS.COM
+      - 台湾省台北市+scloud.sg
+      - 美国 CloudFlare节点 - 2
+      - 美国 CloudFlare
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
