@@ -1,81 +1,19 @@
 proxies:
   - name: 美国 CloudFlare节点
     type: vmess
-    server: ava.game.naver.com
-    port: 443
-    uuid: 04a64d18-2310-41e1-b6a8-78739e881e44
+    server: cf-lt.sharecentre.online
+    port: 80
+    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /worryfree
+    ws-path: /shirker
     ws-headers:
-      Host: v2ray3.udpgw.com
-    tls: true
+      Host: lv3.sharecentrepro.org
   - name: 美国 CloudFlare节点 - 2
     type: vmess
-    server: aaaa.wxx.gay
-    port: 443
-    uuid: 34fe2e6c-fb15-11ed-80f1-000017022008
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /look
-    ws-headers:
-      Host: ''
-    tls: true
-  - name: 美国 CloudFlare节点 - 3
-    type: vmess
-    server: cf.yxjnode.com
-    port: 80
-    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /yxzbp
-    ws-headers:
-      Host: dp4.yxjnode.com
-  - name: 加拿大+V2CROSS.COM
-    type: trojan
-    server: 165.154.246.207
-    port: '443'
-    password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
-  - name: 美国 CloudFlare节点 - 4
-    type: vmess
-    server: las01.nigger.cyou
-    port: 443
-    uuid: 2063b3e9-e948-468c-896b-e859091c889a
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /nigger
-    ws-headers:
-      Host: las01.nigger.cyou
-    tls: true
-  - name: 美国 CloudFlare节点 - 5
-    type: vmess
-    server: scaleway.696960.xyz
-    port: 443
-    uuid: e357cd63-f1a5-4c8e-c42e-26da11207fee
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /root/
-    ws-headers:
-      Host: ''
-    tls: true
-  - name: 台湾省台北市+scloud.sg
-    type: trojan
-    server: stw3-tg-data.amazonwebservicess.com
-    port: '443'
-    password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
-  - name: 美国 CloudFlare节点 - 6
-    type: vmess
-    server: cfyd.starsea.vip
+    server: 104.16.40.227
     port: 443
     uuid: 7757E99E-75C9-46D5-854D-4065BF372100
     alterId: 0
@@ -84,16 +22,59 @@ proxies:
     network: ws
     ws-path: /speedtest
     ws-headers:
-      Host: Amsterdam.kotick.site
+      Host: Kansas.kotick.site
     tls: true
-  - name: 加拿大+V2CROSS.COM - 2
-    type: trojan
-    server: bgptw3.cnamazon.sbs
-    port: '443'
-    password: 14fc8b10-6475-4649-b343-e12b7c3ee93f
-  - name: 澳大利亚 Eumemmerring Secondary College
+  - name: 英国伦敦 Linode数据中心
     type: vmess
-    server: 203.23.106.148
+    server: vuk1.0bad.com
+    port: 443
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /chat
+    ws-headers:
+      Host: vuk1.0bad.com
+    tls: true
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: 137.175.29.36
+    port: 53986
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 加拿大+V2CROSS.COM
+    type: trojan
+    server: 165.154.253.111
+    port: '443'
+    password: 4aeda200-44c9-4168-8f2a-a00a72176d35
+  - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: ydyx.heimaojiasu.cloud
+    port: 443
+    uuid: 7757E99E-75C9-46D5-854D-4065BF372100
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /speedtest
+    ws-headers:
+      Host: Kansas.kotick.site
+    tls: true
+  - name: 台湾省台北市+scloud.sg
+    type: trojan
+    server: stw4-tg-data.amazonwebservicess.com
+    port: 443?type=tcp&allowInsecure=1
+    password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
+  - name: 乌克兰 V2CROSS.COM
+    type: vmess
+    server: 195.137.167.29
     port: 443
     uuid: 7757E99E-75C9-46D5-854D-4065BF372100
     alterId: 0
@@ -104,18 +85,62 @@ proxies:
     ws-headers:
       Host: Lille.kotick.site
     tls: true
-  - name: 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+  - name: 美国 V2CROSS.COM - 2
     type: vmess
-    server: 107.167.7.22
-    port: 41654
-    uuid: bdee202c-8fae-441f-a588-7bc4d3887019
-    alterId: 64
+    server: 170.114.45.23
+    port: 443
+    uuid: 7757E99E-75C9-46D5-854D-4065BF372100
+    alterId: 0
     cipher: auto
     udp: true
-    network: tcp
-    ws-path: /
+    network: ws
+    ws-path: /speedtest
     ws-headers:
-      Host: ''
+      Host: Amsterdam.kotick.site
+    tls: true
+  - name: 巴西圣保罗 CloudFlare节点
+    type: vmess
+    server: 188.114.98.93
+    port: 2052
+    uuid: 0227edc4-8735-4370-ac42-4e8147920f0b
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /qwer
+    ws-headers:
+      Host: tou.vtcss.top
+  - name: 澳大利亚 V2CROSS.COM
+    type: vmess
+    server: 203.29.53.179
+    port: 443
+    uuid: 7757E99E-75C9-46D5-854D-4065BF372100
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /speedtest
+    ws-headers:
+      Host: Kansas.kotick.site
+    tls: true
+  - name: 美国 V2CROSS.COM - 3
+    type: vmess
+    server: 104.31.16.62
+    port: 443
+    uuid: 9aa6b5ad-c0fc-47f4-a837-f72179d7b662
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /Lsv4s7nS0ErewnEN
+    ws-headers:
+      Host: channel3.unlimiteddev.tk
+    tls: true
+  - name: 台湾省台北市+scloud.sg - 2
+    type: trojan
+    server: 165.154.226.87
+    port: '443'
+    password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
 proxy-groups:
   - name: Free-servers
     type: select
@@ -124,29 +149,33 @@ proxy-groups:
       - 故障转移
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
+      - 英国伦敦 Linode数据中心
+      - 美国 V2CROSS.COM
       - 加拿大+V2CROSS.COM
-      - 美国 CloudFlare节点 - 4
-      - 美国 CloudFlare节点 - 5
+      - 美国 CloudFlare节点 - 3
       - 台湾省台北市+scloud.sg
-      - 美国 CloudFlare节点 - 6
-      - 加拿大+V2CROSS.COM - 2
-      - 澳大利亚 Eumemmerring Secondary College
-      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+      - 乌克兰 V2CROSS.COM
+      - 美国 V2CROSS.COM - 2
+      - 巴西圣保罗 CloudFlare节点
+      - 澳大利亚 V2CROSS.COM
+      - 美国 V2CROSS.COM - 3
+      - 台湾省台北市+scloud.sg - 2
   - name: 自动选择
     type: url-test
     proxies:
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
+      - 英国伦敦 Linode数据中心
+      - 美国 V2CROSS.COM
       - 加拿大+V2CROSS.COM
-      - 美国 CloudFlare节点 - 4
-      - 美国 CloudFlare节点 - 5
+      - 美国 CloudFlare节点 - 3
       - 台湾省台北市+scloud.sg
-      - 美国 CloudFlare节点 - 6
-      - 加拿大+V2CROSS.COM - 2
-      - 澳大利亚 Eumemmerring Secondary College
-      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+      - 乌克兰 V2CROSS.COM
+      - 美国 V2CROSS.COM - 2
+      - 巴西圣保罗 CloudFlare节点
+      - 澳大利亚 V2CROSS.COM
+      - 美国 V2CROSS.COM - 3
+      - 台湾省台北市+scloud.sg - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
@@ -154,15 +183,17 @@ proxy-groups:
     proxies:
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
+      - 英国伦敦 Linode数据中心
+      - 美国 V2CROSS.COM
       - 加拿大+V2CROSS.COM
-      - 美国 CloudFlare节点 - 4
-      - 美国 CloudFlare节点 - 5
+      - 美国 CloudFlare节点 - 3
       - 台湾省台北市+scloud.sg
-      - 美国 CloudFlare节点 - 6
-      - 加拿大+V2CROSS.COM - 2
-      - 澳大利亚 Eumemmerring Secondary College
-      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+      - 乌克兰 V2CROSS.COM
+      - 美国 V2CROSS.COM - 2
+      - 巴西圣保罗 CloudFlare节点
+      - 澳大利亚 V2CROSS.COM
+      - 美国 V2CROSS.COM - 3
+      - 台湾省台北市+scloud.sg - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
