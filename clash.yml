@@ -1,45 +1,112 @@
 proxies:
-  - name: 美国 CloudFlare
+  - name: 加拿大+V2CROSS.COM
+    type: trojan
+    server: 165.154.253.144
+    port: '443'
+    password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
+  - name: 澳大利亚 Kooweerup Secondary College
     type: vmess
-    server: 162.159.24.179
-    port: 80
-    uuid: 53ae65be-81ee-4766-8a09-da43c44c4d30
+    server: 203.30.189.2
+    port: 8880
+    uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /qwer02
+    ws-path: /
     ws-headers:
-      Host: uyaa.vtcss.top
-  - name: 美国 CloudFlare节点
+      Host: lg.trump2023.net
+  - name: 美国 华盛顿Cogent通信公司
     type: vmess
-    server: tech.noaries.de
-    port: 80
-    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /shirker
-    ws-headers:
-      Host: nl.sharecentrepro.com
-  - name: 美国 加利福尼亚州洛杉矶Sharktech数据中心
-    type: vmess
-    server: 64.32.21.246
-    port: 44313
-    uuid: 57f93e92-ebb9-4f16-9bdc-8225d2010995
+    server: 38.60.208.68
+    port: 20037
+    uuid: a529cf39-d753-41e5-a72a-64cf8d48f469
     alterId: 64
     cipher: auto
     udp: true
-    network: tcp
-    ws-path: /
+    network: ws
+    ws-path: /tk2/getData
     ws-headers:
       Host: ''
-  - name: 加拿大+V2CROSS.COM
+    tls: true
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: 104.27.62.243
+    port: 443
+    uuid: 49555a95-dc36-44dd-b613-98dc14ac6295
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /wss48622
+    ws-headers:
+      Host: freeservice.blanku.me
+    tls: true
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: for-j.com
+    port: 443
+    uuid: 7757E99E-75C9-46D5-854D-4065BF372100
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /speedtest
+    ws-headers:
+      Host: Amsterdam.kotick.site
+    tls: true
+  - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: 104.21.53.35
+    port: 80
+    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /yxzbp
+    ws-headers:
+      Host: buyvm1.yxjnode.com
+  - name: 加拿大+V2CROSS.COM - 2
     type: trojan
-    server: bgptw3.cnamazon.sbs
+    server: bgptw5.cnamazon.sbs
     port: '443'
-    password: 14fc8b10-6475-4649-b343-e12b7c3ee93f
+    password: fe455c1d-33ab-439d-acdb-449bba167fb1
+  - name: 上海市+电信
+    type: trojan
+    server: official.taipeicitygovernment.kiev.ua
+    port: '8443'
+    password: 5505f6ba-cd37-30ce-8f92-be4120c83d7f
+  - name: 加拿大+V2CROSS.COM - 3
+    type: trojan
+    server: stw10-tg-data.amazonwebservicess.com
+    port: '443'
+    password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
+  - name: 美国 CloudFlare节点 - 4
+    type: vmess
+    server: cf.yxjnode.com
+    port: 80
+    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /yxzbp
+    ws-headers:
+      Host: dp1.yxjnode.com
+  - name: 澳大利亚 Melbourne Girls College
+    type: vmess
+    server: 203.22.223.51
+    port: 443
+    uuid: 7757E99E-75C9-46D5-854D-4065BF372100
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /speedtest
+    ws-headers:
+      Host: Kansas.kotick.site
+    tls: true
   - name: 巴西圣保罗 CloudFlare节点
     type: vmess
     server: 188.114.99.143
@@ -52,9 +119,9 @@ proxies:
     ws-path: /qwer
     ws-headers:
       Host: tou.vtcss.top
-  - name: 美国 CloudFlare节点 - 2
+  - name: 美国 CloudFlare节点 - 5
     type: vmess
-    server: 104.26.14.137
+    server: beenverified.com
     port: 443
     uuid: 7757E99E-75C9-46D5-854D-4065BF372100
     alterId: 0
@@ -63,20 +130,20 @@ proxies:
     network: ws
     ws-path: /speedtest
     ws-headers:
-      Host: Lille.kotick.site
+      Host: Dusseldorf.kotick.site
     tls: true
-  - name: 美国 CloudFlare节点 - 3
+  - name: 西班牙 V2CROSS.COM
     type: vmess
-    server: scaleway.696960.xyz
+    server: 185.18.250.217
     port: 443
-    uuid: e357cd63-f1a5-4c8e-c42e-26da11207fee
+    uuid: 7757E99E-75C9-46D5-854D-4065BF372100
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /root/
+    ws-path: /speedtest
     ws-headers:
-      Host: ''
+      Host: Dusseldorf.kotick.site
     tls: true
 proxy-groups:
   - name: Free-servers
@@ -84,35 +151,56 @@ proxy-groups:
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 CloudFlare
-      - 美国 CloudFlare节点
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
       - 加拿大+V2CROSS.COM
-      - 巴西圣保罗 CloudFlare节点
+      - 澳大利亚 Kooweerup Secondary College
+      - 美国 华盛顿Cogent通信公司
+      - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
       - 美国 CloudFlare节点 - 3
+      - 加拿大+V2CROSS.COM - 2
+      - 上海市+电信
+      - 加拿大+V2CROSS.COM - 3
+      - 美国 CloudFlare节点 - 4
+      - 澳大利亚 Melbourne Girls College
+      - 巴西圣保罗 CloudFlare节点
+      - 美国 CloudFlare节点 - 5
+      - 西班牙 V2CROSS.COM
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 CloudFlare
-      - 美国 CloudFlare节点
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
       - 加拿大+V2CROSS.COM
-      - 巴西圣保罗 CloudFlare节点
+      - 澳大利亚 Kooweerup Secondary College
+      - 美国 华盛顿Cogent通信公司
+      - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
       - 美国 CloudFlare节点 - 3
+      - 加拿大+V2CROSS.COM - 2
+      - 上海市+电信
+      - 加拿大+V2CROSS.COM - 3
+      - 美国 CloudFlare节点 - 4
+      - 澳大利亚 Melbourne Girls College
+      - 巴西圣保罗 CloudFlare节点
+      - 美国 CloudFlare节点 - 5
+      - 西班牙 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 CloudFlare
-      - 美国 CloudFlare节点
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
       - 加拿大+V2CROSS.COM
-      - 巴西圣保罗 CloudFlare节点
+      - 澳大利亚 Kooweerup Secondary College
+      - 美国 华盛顿Cogent通信公司
+      - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
       - 美国 CloudFlare节点 - 3
+      - 加拿大+V2CROSS.COM - 2
+      - 上海市+电信
+      - 加拿大+V2CROSS.COM - 3
+      - 美国 CloudFlare节点 - 4
+      - 澳大利亚 Melbourne Girls College
+      - 巴西圣保罗 CloudFlare节点
+      - 美国 CloudFlare节点 - 5
+      - 西班牙 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
