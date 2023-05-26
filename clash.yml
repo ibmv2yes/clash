@@ -1,53 +1,52 @@
 proxies:
-  - name: 亚太地区+V2CROSS.COM
-    type: trojan
-    server: 163.123.192.154
-    port: 443?sni=download.xn--mes358a9urctx.com
-    password: 997a9caa-5950-476f-8614-462fb2e0ed18
-  - name: 美国 V2CROSS.COM
+  - name: 日本 东京阿里云
     type: vmess
-    server: 170.114.45.23
-    port: 443
-    uuid: 7757E99E-75C9-46D5-854D-4065BF372100
+    server: microsoftdebug.com
+    port: 80
+    uuid: b0cff0d2-9ad5-41ea-a552-9d32533e7cd7
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /speedtest
+    ws-path: /windows7.ios
     ws-headers:
-      Host: Amsterdam.kotick.site
-    tls: true
-  - name: 美国 CloudFlare公司CDN节点(shopify)
-    type: vmess
-    server: 23.227.38.99
-    port: 443
-    uuid: 86d37526-5758-4cec-862f-df404b313086
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /3G6WPDL7
-    ws-headers:
-      Host: 1.freek1.xyz
-    tls: true
+      Host: v1.us1.microsoftdebug.com
   - name: 美国 CloudFlare节点
     type: vmess
-    server: cfyd.starsea.vip
+    server: 172.66.43.240
     port: 443
-    uuid: 7757E99E-75C9-46D5-854D-4065BF372100
+    uuid: 12612e87-8003-44a8-b4e8-ec4a325e9016
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /speedtest
+    ws-path: /ou
     ws-headers:
-      Host: Amsterdam.kotick.site
+      Host: z.zorro.tk
     tls: true
   - name: 美国 CloudFlare节点 - 2
     type: vmess
-    server: 1o2.ir
+    server: ava.game.naver.com
     port: 443
-    uuid: DC615FCF-98B5-4D06-AA18-A6A1F65FF6D3
+    uuid: 04a64d18-2310-41e1-b6a8-78739e881e44
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /worryfree
+    ws-headers:
+      Host: v2ray3.udpgw.com
+    tls: true
+  - name: 加拿大+V2CROSS.COM
+    type: trojan
+    server: stw4-tg-data.amazonwebservicess.com
+    port: 443?type=tcp&allowInsecure=1
+    password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
+  - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: 104.27.39.113
+    port: 443
+    uuid: 7757E99E-75C9-46D5-854D-4065BF372100
     alterId: 0
     cipher: auto
     udp: true
@@ -56,97 +55,99 @@ proxies:
     ws-headers:
       Host: Lille.kotick.site
     tls: true
-  - name: 美国 CloudFlare节点 - 3
-    type: vmess
-    server: v2ray3.webgfw.top
-    port: 2083
-    uuid: ea9de06d-2436-42e9-8187-9e6d5fc40407
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /X9piqfat/
-    ws-headers:
-      Host: ''
-    tls: true
-  - name: 上海市+电信
+  - name: 加拿大+V2CROSS.COM - 2
     type: trojan
-    server: official.taipeicitygovernment.kiev.ua
-    port: 8443?sni=66.42.40.132
-    password: 5505f6ba-cd37-30ce-8f92-be4120c83d7f
-  - name: 美国 CloudFlare节点 - 4
-    type: vmess
-    server: 141.101.113.152
-    port: 80
-    uuid: 53ae65be-81ee-4766-8a09-da43c44c4d30
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /qwer02
-    ws-headers:
-      Host: uyaa.vtcss.top
-  - name: 美国 CloudFlare节点 - 5
-    type: vmess
-    server: cf.noaries.de
-    port: 2052
-    uuid: 67c5ce45-7b48-473e-bf25-e4c830b0ed24
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /aries?ed=2048
-    ws-headers:
-      Host: azstu-it.iiio.wiki
-  - name: 加拿大+V2CROSS.COM
-    type: trojan
-    server: stw8-tg-data.amazonwebservicess.com
+    server: stw5-tg-data.amazonwebservicess.com
     port: '443'
     password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: 170.114.45.224
+    port: 443
+    uuid: DC615FCF-98B5-4D06-AA18-A6A1F65FF6D3
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /speedtest
+    ws-headers:
+      Host: Kansas.kotick.site
+    tls: true
+  - name: 美国 CloudFlare节点 - 4
+    type: vmess
+    server: 104.26.14.137
+    port: 443
+    uuid: 7757E99E-75C9-46D5-854D-4065BF372100
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /speedtest
+    ws-headers:
+      Host: Lille.kotick.site
+    tls: true
+  - name: 台湾省台北市+scloud.sg
+    type: trojan
+    server: 165.154.227.239
+    port: '443'
+    password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
+  - name: 美国 CloudFlare节点 - 5
+    type: vmess
+    server: 104.16.40.227
+    port: 443
+    uuid: 7757E99E-75C9-46D5-854D-4065BF372100
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /speedtest
+    ws-headers:
+      Host: Kansas.kotick.site
+    tls: true
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 亚太地区+V2CROSS.COM
-      - 美国 V2CROSS.COM
-      - 美国 CloudFlare公司CDN节点(shopify)
+      - 日本 东京阿里云
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
-      - 上海市+电信
-      - 美国 CloudFlare节点 - 4
-      - 美国 CloudFlare节点 - 5
       - 加拿大+V2CROSS.COM
+      - 美国 CloudFlare节点 - 3
+      - 加拿大+V2CROSS.COM - 2
+      - 美国 V2CROSS.COM
+      - 美国 CloudFlare节点 - 4
+      - 台湾省台北市+scloud.sg
+      - 美国 CloudFlare节点 - 5
   - name: 自动选择
     type: url-test
     proxies:
-      - 亚太地区+V2CROSS.COM
-      - 美国 V2CROSS.COM
-      - 美国 CloudFlare公司CDN节点(shopify)
+      - 日本 东京阿里云
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
-      - 上海市+电信
-      - 美国 CloudFlare节点 - 4
-      - 美国 CloudFlare节点 - 5
       - 加拿大+V2CROSS.COM
+      - 美国 CloudFlare节点 - 3
+      - 加拿大+V2CROSS.COM - 2
+      - 美国 V2CROSS.COM
+      - 美国 CloudFlare节点 - 4
+      - 台湾省台北市+scloud.sg
+      - 美国 CloudFlare节点 - 5
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 亚太地区+V2CROSS.COM
-      - 美国 V2CROSS.COM
-      - 美国 CloudFlare公司CDN节点(shopify)
+      - 日本 东京阿里云
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
-      - 上海市+电信
-      - 美国 CloudFlare节点 - 4
-      - 美国 CloudFlare节点 - 5
       - 加拿大+V2CROSS.COM
+      - 美国 CloudFlare节点 - 3
+      - 加拿大+V2CROSS.COM - 2
+      - 美国 V2CROSS.COM
+      - 美国 CloudFlare节点 - 4
+      - 台湾省台北市+scloud.sg
+      - 美国 CloudFlare节点 - 5
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
