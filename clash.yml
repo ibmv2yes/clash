@@ -1,7 +1,7 @@
 proxies:
-  - name: 美国 CloudFlare节点
+  - name: 美国 V2CROSS.COM
     type: vmess
-    server: beenverified.com
+    server: 170.114.45.23
     port: 443
     uuid: 7757E99E-75C9-46D5-854D-4065BF372100
     alterId: 0
@@ -10,11 +10,30 @@ proxies:
     network: ws
     ws-path: /speedtest
     ws-headers:
-      Host: Dusseldorf.kotick.site
+      Host: Amsterdam.kotick.site
+    tls: true
+  - name: 瑞典+V2CROSS.COM
+    type: ss
+    server: 167.88.63.99
+    port: '2375'
+    cipher: aes-256-gcm
+    password: faBAoD54k87UJG7
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: ydyx.heimaojiasu.cloud
+    port: 443
+    uuid: 7757E99E-75C9-46D5-854D-4065BF372100
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /speedtest
+    ws-headers:
+      Host: Kansas.kotick.site
     tls: true
   - name: 美国 CloudFlare节点 - 2
     type: vmess
-    server: 104.17.20.55
+    server: 104.26.14.137
     port: 443
     uuid: 7757E99E-75C9-46D5-854D-4065BF372100
     alterId: 0
@@ -25,24 +44,65 @@ proxies:
     ws-headers:
       Host: Lille.kotick.site
     tls: true
-  - name: 美国+V2CROSS.COM
-    type: trojan
-    server: 152.70.74.66
-    port: 443?security=tls&type=tcp&headerType=none
-    password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
-  - name: 加拿大+V2CROSS.COM
-    type: trojan
-    server: bgptw3.cnamazon.sbs
-    port: '443'
-    password: e015d739-1656-4e9a-b0cc-5d8f11b0db5b
-  - name: 台湾省台北市+scloud.sg
-    type: trojan
-    server: bgptw2.cnamazon.sbs
-    port: '443'
-    password: 4658738d-c3f1-4ebf-ad7a-ee603e3f9690
   - name: 美国 CloudFlare节点 - 3
     type: vmess
-    server: honeygain.com
+    server: for-j.com
+    port: 443
+    uuid: 7757E99E-75C9-46D5-854D-4065BF372100
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /speedtest
+    ws-headers:
+      Host: Amsterdam.kotick.site
+    tls: true
+  - name: 加拿大+V2CROSS.COM
+    type: trojan
+    server: stw8-tg-data.amazonwebservicess.com
+    port: '443'
+    password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
+  - name: 美国 CloudFlare公司CDN节点(shopify)
+    type: vmess
+    server: 23.227.38.0
+    port: 443
+    uuid: 7757E99E-75C9-46D5-854D-4065BF372100
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /speedtest
+    ws-headers:
+      Host: Kansas.kotick.site
+    tls: true
+  - name: 美国 华盛顿Cogent通信公司
+    type: vmess
+    server: 38.63.2.16
+    port: 57723
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /path/120306182525
+    ws-headers:
+      Host: ''
+  - name: 美国 V2CROSS.COM - 2
+    type: vmess
+    server: 170.114.45.23
+    port: 443
+    uuid: 7757E99E-75C9-46D5-854D-4065BF372100
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /speedtest
+    ws-headers:
+      Host: Amsterdam.kotick.site
+    tls: true
+  - name: 西班牙 V2CROSS.COM
+    type: vmess
+    server: 185.18.250.217
     port: 443
     uuid: 7757E99E-75C9-46D5-854D-4065BF372100
     alterId: 0
@@ -53,21 +113,9 @@ proxies:
     ws-headers:
       Host: Dusseldorf.kotick.site
     tls: true
-  - name: 澳大利亚 Kooweerup Secondary College
+  - name: 澳大利亚 Melbourne Girls College
     type: vmess
-    server: 203.30.189.2
-    port: 8880
-    uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: lg.trump2023.net
-  - name: 澳大利亚 Canterbury Girls' Secondary College
-    type: vmess
-    server: 203.55.107.77
+    server: 203.22.223.51
     port: 443
     uuid: 7757E99E-75C9-46D5-854D-4065BF372100
     alterId: 0
@@ -76,54 +124,55 @@ proxies:
     network: ws
     ws-path: /speedtest
     ws-headers:
-      Host: Lille.kotick.site
+      Host: Kansas.kotick.site
     tls: true
-  - name: 加拿大+V2CROSS.COM - 2
-    type: trojan
-    server: 165.154.246.194
-    port: '443'
-    password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
+      - 美国 V2CROSS.COM
+      - 瑞典+V2CROSS.COM
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
-      - 美国+V2CROSS.COM
-      - 加拿大+V2CROSS.COM
-      - 台湾省台北市+scloud.sg
       - 美国 CloudFlare节点 - 3
-      - 澳大利亚 Kooweerup Secondary College
-      - 澳大利亚 Canterbury Girls' Secondary College
-      - 加拿大+V2CROSS.COM - 2
+      - 加拿大+V2CROSS.COM
+      - 美国 CloudFlare公司CDN节点(shopify)
+      - 美国 华盛顿Cogent通信公司
+      - 美国 V2CROSS.COM - 2
+      - 西班牙 V2CROSS.COM
+      - 澳大利亚 Melbourne Girls College
   - name: 自动选择
     type: url-test
     proxies:
+      - 美国 V2CROSS.COM
+      - 瑞典+V2CROSS.COM
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
-      - 美国+V2CROSS.COM
-      - 加拿大+V2CROSS.COM
-      - 台湾省台北市+scloud.sg
       - 美国 CloudFlare节点 - 3
-      - 澳大利亚 Kooweerup Secondary College
-      - 澳大利亚 Canterbury Girls' Secondary College
-      - 加拿大+V2CROSS.COM - 2
+      - 加拿大+V2CROSS.COM
+      - 美国 CloudFlare公司CDN节点(shopify)
+      - 美国 华盛顿Cogent通信公司
+      - 美国 V2CROSS.COM - 2
+      - 西班牙 V2CROSS.COM
+      - 澳大利亚 Melbourne Girls College
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
+      - 美国 V2CROSS.COM
+      - 瑞典+V2CROSS.COM
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
-      - 美国+V2CROSS.COM
-      - 加拿大+V2CROSS.COM
-      - 台湾省台北市+scloud.sg
       - 美国 CloudFlare节点 - 3
-      - 澳大利亚 Kooweerup Secondary College
-      - 澳大利亚 Canterbury Girls' Secondary College
-      - 加拿大+V2CROSS.COM - 2
+      - 加拿大+V2CROSS.COM
+      - 美国 CloudFlare公司CDN节点(shopify)
+      - 美国 华盛顿Cogent通信公司
+      - 美国 V2CROSS.COM - 2
+      - 西班牙 V2CROSS.COM
+      - 澳大利亚 Melbourne Girls College
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
