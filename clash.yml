@@ -1,7 +1,7 @@
 proxies:
   - name: 美国 CloudFlare节点
     type: vmess
-    server: cf.yxjnode.com
+    server: 104.21.53.35
     port: 80
     uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
     alterId: 0
@@ -10,8 +10,20 @@ proxies:
     network: ws
     ws-path: /yxzbp
     ws-headers:
-      Host: dp1.yxjnode.com
+      Host: buyvm1.yxjnode.com
   - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: cf.noaries.de
+    port: 2052
+    uuid: 67c5ce45-7b48-473e-bf25-e4c830b0ed24
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /aries?ed=2048
+    ws-headers:
+      Host: azstu-it.iiio.wiki
+  - name: 美国 CloudFlare节点 - 3
     type: vmess
     server: cf.yxjnode.com
     port: 80
@@ -22,8 +34,21 @@ proxies:
     network: ws
     ws-path: /yxzbp
     ws-headers:
-      Host: dp4.yxjnode.com
-  - name: 美国 CloudFlare节点 - 3
+      Host: dp1.yxjnode.com
+  - name: 美国 CloudFlare节点 - 4
+    type: vmess
+    server: beenverified.com
+    port: 443
+    uuid: 7757E99E-75C9-46D5-854D-4065BF372100
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /speedtest
+    ws-headers:
+      Host: Dusseldorf.kotick.site
+    tls: true
+  - name: 美国 CloudFlare节点 - 5
     type: vmess
     server: ava.game.naver.com
     port: 443
@@ -36,43 +61,48 @@ proxies:
     ws-headers:
       Host: v2ray3.udpgw.com
     tls: true
-  - name: 美国 CloudFlare公司CDN节点(shopify)
+  - name: 美国 CloudFlare节点 - 6
     type: vmess
-    server: 23.227.38.0
+    server: cf-lt.sharecentre.online
+    port: 80
+    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /shirker
+    ws-headers:
+      Host: ca.ilovescp.com
+  - name: 加拿大+V2CROSS.COM
+    type: trojan
+    server: 165.154.253.144
+    port: '443'
+    password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
+  - name: 广东省佛山市 移动
+    type: vmess
+    server: 25.v2-ray.cyou
+    port: 23625
+    uuid: 0dd19d20-ec86-3680-b256-87237bafa89e
+    alterId: 2
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 CloudFlare节点 - 7
+    type: vmess
+    server: aaaa.wxx.gay
     port: 443
-    uuid: 7757E99E-75C9-46D5-854D-4065BF372100
+    uuid: ca356b94-fb79-11ed-959f-000017022008
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /speedtest
+    ws-path: /look
     ws-headers:
-      Host: Kansas.kotick.site
+      Host: ''
     tls: true
-  - name: 美国弗吉尼亚州阿什本 CloudFlare节点
-    type: vmess
-    server: 173.245.49.88
-    port: 80
-    uuid: c5c9844d-050e-44f1-cb6d-ec5166772631
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /qwer
-    ws-headers:
-      Host: zslbs.vtcss.top
-  - name: 美国 CloudFlare节点 - 4
-    type: vmess
-    server: 104.21.53.35
-    port: 80
-    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /yxzbp
-    ws-headers:
-      Host: buyvm1.yxjnode.com
   - name: 澳大利亚 Canterbury Girls' Secondary College
     type: vmess
     server: 203.55.107.77
@@ -86,29 +116,12 @@ proxies:
     ws-headers:
       Host: Lille.kotick.site
     tls: true
-  - name: 加拿大+V2CROSS.COM
-    type: trojan
-    server: 165.154.246.207
-    port: '443'
-    password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
-  - name: 美国 CloudFlare节点 - 5
+  - name: 美国 华盛顿Cogent通信公司
     type: vmess
-    server: tech.noaries.de
-    port: 80
-    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /shirker
-    ws-headers:
-      Host: nl.sharecentrepro.com
-  - name: 台湾省 中华电信(HiNet)数据中心
-    type: vmess
-    server: tw99-hinet.mynodes001.one
-    port: 5432
-    uuid: d5ef1df3-4069-3b25-9dc1-16b2be9b3e6b
-    alterId: 0
+    server: 38.63.2.16
+    port: 57723
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
     cipher: auto
     udp: true
     network: tcp
@@ -124,26 +137,28 @@ proxy-groups:
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
       - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare公司CDN节点(shopify)
-      - 美国弗吉尼亚州阿什本 CloudFlare节点
       - 美国 CloudFlare节点 - 4
-      - 澳大利亚 Canterbury Girls' Secondary College
-      - 加拿大+V2CROSS.COM
       - 美国 CloudFlare节点 - 5
-      - 台湾省 中华电信(HiNet)数据中心
+      - 美国 CloudFlare节点 - 6
+      - 加拿大+V2CROSS.COM
+      - 广东省佛山市 移动
+      - 美国 CloudFlare节点 - 7
+      - 澳大利亚 Canterbury Girls' Secondary College
+      - 美国 华盛顿Cogent通信公司
   - name: 自动选择
     type: url-test
     proxies:
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
       - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare公司CDN节点(shopify)
-      - 美国弗吉尼亚州阿什本 CloudFlare节点
       - 美国 CloudFlare节点 - 4
-      - 澳大利亚 Canterbury Girls' Secondary College
-      - 加拿大+V2CROSS.COM
       - 美国 CloudFlare节点 - 5
-      - 台湾省 中华电信(HiNet)数据中心
+      - 美国 CloudFlare节点 - 6
+      - 加拿大+V2CROSS.COM
+      - 广东省佛山市 移动
+      - 美国 CloudFlare节点 - 7
+      - 澳大利亚 Canterbury Girls' Secondary College
+      - 美国 华盛顿Cogent通信公司
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
@@ -152,13 +167,14 @@ proxy-groups:
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
       - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare公司CDN节点(shopify)
-      - 美国弗吉尼亚州阿什本 CloudFlare节点
       - 美国 CloudFlare节点 - 4
-      - 澳大利亚 Canterbury Girls' Secondary College
-      - 加拿大+V2CROSS.COM
       - 美国 CloudFlare节点 - 5
-      - 台湾省 中华电信(HiNet)数据中心
+      - 美国 CloudFlare节点 - 6
+      - 加拿大+V2CROSS.COM
+      - 广东省佛山市 移动
+      - 美国 CloudFlare节点 - 7
+      - 澳大利亚 Canterbury Girls' Secondary College
+      - 美国 华盛顿Cogent通信公司
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
