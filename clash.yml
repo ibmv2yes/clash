@@ -1,25 +1,44 @@
 proxies:
   - name: 美国 CloudFlare节点
     type: vmess
-    server: aaaa.wxx.gay
-    port: 443
-    uuid: ca356b94-fb79-11ed-959f-000017022008
+    server: cf.yxjnode.com
+    port: 80
+    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /look
+    ws-path: /yxzbp
     ws-headers:
-      Host: ''
-    tls: true
-  - name: 香港+Amazon数据中心
-    type: trojan
-    server: sg2.downloadvip.cfd
-    port: 443?sni=download.xn--mes358a9urctx.com
-    password: bf8fb57d-1cb9-4c21-89e6-4a19e036c5db
-  - name: 澳大利亚 Melbourne Girls College
+      Host: dp1.yxjnode.com
+  - name: 美国 CloudFlare节点 - 2
     type: vmess
-    server: 203.22.223.51
+    server: cf.yxjnode.com
+    port: 80
+    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /yxzbp
+    ws-headers:
+      Host: dp4.yxjnode.com
+  - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: ava.game.naver.com
+    port: 443
+    uuid: 04a64d18-2310-41e1-b6a8-78739e881e44
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /worryfree
+    ws-headers:
+      Host: v2ray3.udpgw.com
+    tls: true
+  - name: 美国 CloudFlare公司CDN节点(shopify)
+    type: vmess
+    server: 23.227.38.0
     port: 443
     uuid: 7757E99E-75C9-46D5-854D-4065BF372100
     alterId: 0
@@ -30,9 +49,33 @@ proxies:
     ws-headers:
       Host: Kansas.kotick.site
     tls: true
-  - name: 美国 CloudFlare节点 - 2
+  - name: 美国弗吉尼亚州阿什本 CloudFlare节点
     type: vmess
-    server: 104.17.20.55
+    server: 173.245.49.88
+    port: 80
+    uuid: c5c9844d-050e-44f1-cb6d-ec5166772631
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /qwer
+    ws-headers:
+      Host: zslbs.vtcss.top
+  - name: 美国 CloudFlare节点 - 4
+    type: vmess
+    server: 104.21.53.35
+    port: 80
+    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /yxzbp
+    ws-headers:
+      Host: buyvm1.yxjnode.com
+  - name: 澳大利亚 Canterbury Girls' Secondary College
+    type: vmess
+    server: 203.55.107.77
     port: 443
     uuid: 7757E99E-75C9-46D5-854D-4065BF372100
     alterId: 0
@@ -48,36 +91,30 @@ proxies:
     server: 165.154.246.207
     port: '443'
     password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
-  - name: 加拿大+V2CROSS.COM - 2
-    type: trojan
-    server: 165.154.246.49
-    port: '443'
-    password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
-  - name: 新加坡 Amazon亚太数据中心
+  - name: 美国 CloudFlare节点 - 5
     type: vmess
-    server: c73d5d70-16bf-4f72-a0ef-2ea50c26d50d.xn--9kq12xdq7a.com
+    server: tech.noaries.de
     port: 80
-    uuid: ca099159-d67c-4918-9741-82a28c802234
+    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
     alterId: 0
     cipher: auto
     udp: true
     network: ws
+    ws-path: /shirker
+    ws-headers:
+      Host: nl.sharecentrepro.com
+  - name: 台湾省 中华电信(HiNet)数据中心
+    type: vmess
+    server: tw99-hinet.mynodes001.one
+    port: 5432
+    uuid: d5ef1df3-4069-3b25-9dc1-16b2be9b3e6b
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
     ws-path: /
     ws-headers:
-      Host: c73d5d70-16bf-4f72-a0ef-2ea50c26d50d.xn--9kq12xdq7a.com
-  - name: 美国 CloudFlare节点 - 3
-    type: vmess
-    server: cdnjs.com
-    port: 443
-    uuid: F86EFDE3-B236-493C-A903-998DCEA823E2
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /speedtest
-    ws-headers:
-      Host: Lille.kotick.site
-    tls: true
+      Host: ''
 proxy-groups:
   - name: Free-servers
     type: select
@@ -85,37 +122,43 @@ proxy-groups:
       - 自动选择
       - 故障转移
       - 美国 CloudFlare节点
-      - 香港+Amazon数据中心
-      - 澳大利亚 Melbourne Girls College
       - 美国 CloudFlare节点 - 2
-      - 加拿大+V2CROSS.COM
-      - 加拿大+V2CROSS.COM - 2
-      - 新加坡 Amazon亚太数据中心
       - 美国 CloudFlare节点 - 3
+      - 美国 CloudFlare公司CDN节点(shopify)
+      - 美国弗吉尼亚州阿什本 CloudFlare节点
+      - 美国 CloudFlare节点 - 4
+      - 澳大利亚 Canterbury Girls' Secondary College
+      - 加拿大+V2CROSS.COM
+      - 美国 CloudFlare节点 - 5
+      - 台湾省 中华电信(HiNet)数据中心
   - name: 自动选择
     type: url-test
     proxies:
       - 美国 CloudFlare节点
-      - 香港+Amazon数据中心
-      - 澳大利亚 Melbourne Girls College
       - 美国 CloudFlare节点 - 2
-      - 加拿大+V2CROSS.COM
-      - 加拿大+V2CROSS.COM - 2
-      - 新加坡 Amazon亚太数据中心
       - 美国 CloudFlare节点 - 3
+      - 美国 CloudFlare公司CDN节点(shopify)
+      - 美国弗吉尼亚州阿什本 CloudFlare节点
+      - 美国 CloudFlare节点 - 4
+      - 澳大利亚 Canterbury Girls' Secondary College
+      - 加拿大+V2CROSS.COM
+      - 美国 CloudFlare节点 - 5
+      - 台湾省 中华电信(HiNet)数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
       - 美国 CloudFlare节点
-      - 香港+Amazon数据中心
-      - 澳大利亚 Melbourne Girls College
       - 美国 CloudFlare节点 - 2
-      - 加拿大+V2CROSS.COM
-      - 加拿大+V2CROSS.COM - 2
-      - 新加坡 Amazon亚太数据中心
       - 美国 CloudFlare节点 - 3
+      - 美国 CloudFlare公司CDN节点(shopify)
+      - 美国弗吉尼亚州阿什本 CloudFlare节点
+      - 美国 CloudFlare节点 - 4
+      - 澳大利亚 Canterbury Girls' Secondary College
+      - 加拿大+V2CROSS.COM
+      - 美国 CloudFlare节点 - 5
+      - 台湾省 中华电信(HiNet)数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
