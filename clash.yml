@@ -1,7 +1,7 @@
 proxies:
-  - name: 美国 CloudFlare节点
+  - name: 美国 CloudFlare
     type: vmess
-    server: uyaa.vtcss.top
+    server: 162.159.24.179
     port: 80
     uuid: 53ae65be-81ee-4766-8a09-da43c44c4d30
     alterId: 0
@@ -10,10 +10,10 @@ proxies:
     network: ws
     ws-path: /qwer02
     ws-headers:
-      Host: ''
-  - name: 美国 CloudFlare节点 - 2
+      Host: uyaa.vtcss.top
+  - name: 美国 CloudFlare节点
     type: vmess
-    server: cf-lt.sharecentre.online
+    server: tech.noaries.de
     port: 80
     uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
     alterId: 0
@@ -22,38 +22,7 @@ proxies:
     network: ws
     ws-path: /shirker
     ws-headers:
-      Host: lv2.sharecentrepro.org
-  - name: 加拿大+V2CROSS.COM
-    type: trojan
-    server: bgptw3.cnamazon.sbs
-    port: '443'
-    password: 14fc8b10-6475-4649-b343-e12b7c3ee93f
-  - name: 澳大利亚 Canterbury Girls' Secondary College
-    type: vmess
-    server: 203.55.107.77
-    port: 443
-    uuid: 7757E99E-75C9-46D5-854D-4065BF372100
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /speedtest
-    ws-headers:
-      Host: Lille.kotick.site
-    tls: true
-  - name: 美国 CloudFlare节点 - 3
-    type: vmess
-    server: beenverified.com
-    port: 443
-    uuid: 7757E99E-75C9-46D5-854D-4065BF372100
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /speedtest
-    ws-headers:
-      Host: Dusseldorf.kotick.site
-    tls: true
+      Host: nl.sharecentrepro.com
   - name: 美国 加利福尼亚州洛杉矶Sharktech数据中心
     type: vmess
     server: 64.32.21.246
@@ -66,33 +35,26 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国 CloudFlare节点 - 4
+  - name: 加拿大+V2CROSS.COM
+    type: trojan
+    server: bgptw3.cnamazon.sbs
+    port: '443'
+    password: 14fc8b10-6475-4649-b343-e12b7c3ee93f
+  - name: 巴西圣保罗 CloudFlare节点
     type: vmess
-    server: 172.67.70.11
-    port: 8880
-    uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958
+    server: 188.114.99.143
+    port: 2052
+    uuid: 0227edc4-8735-4370-ac42-4e8147920f0b
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /
+    ws-path: /qwer
     ws-headers:
-      Host: lg.trump2023.net
-  - name: 美国 CloudFlare节点 - 5
+      Host: tou.vtcss.top
+  - name: 美国 CloudFlare节点 - 2
     type: vmess
-    server: cf.yxjnode.com
-    port: 80
-    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /yxzbp
-    ws-headers:
-      Host: dp4.yxjnode.com
-  - name: 美国 V2CROSS.COM
-    type: vmess
-    server: 170.114.45.23
+    server: 104.26.14.137
     port: 443
     uuid: 7757E99E-75C9-46D5-854D-4065BF372100
     alterId: 0
@@ -101,7 +63,20 @@ proxies:
     network: ws
     ws-path: /speedtest
     ws-headers:
-      Host: Amsterdam.kotick.site
+      Host: Lille.kotick.site
+    tls: true
+  - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: scaleway.696960.xyz
+    port: 443
+    uuid: e357cd63-f1a5-4c8e-c42e-26da11207fee
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /root/
+    ws-headers:
+      Host: ''
     tls: true
 proxy-groups:
   - name: Free-servers
@@ -109,41 +84,35 @@ proxy-groups:
     proxies:
       - 自动选择
       - 故障转移
+      - 美国 CloudFlare
       - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 加拿大+V2CROSS.COM
-      - 澳大利亚 Canterbury Girls' Secondary College
-      - 美国 CloudFlare节点 - 3
       - 美国 加利福尼亚州洛杉矶Sharktech数据中心
-      - 美国 CloudFlare节点 - 4
-      - 美国 CloudFlare节点 - 5
-      - 美国 V2CROSS.COM
+      - 加拿大+V2CROSS.COM
+      - 巴西圣保罗 CloudFlare节点
+      - 美国 CloudFlare节点 - 2
+      - 美国 CloudFlare节点 - 3
   - name: 自动选择
     type: url-test
     proxies:
+      - 美国 CloudFlare
       - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 加拿大+V2CROSS.COM
-      - 澳大利亚 Canterbury Girls' Secondary College
-      - 美国 CloudFlare节点 - 3
       - 美国 加利福尼亚州洛杉矶Sharktech数据中心
-      - 美国 CloudFlare节点 - 4
-      - 美国 CloudFlare节点 - 5
-      - 美国 V2CROSS.COM
+      - 加拿大+V2CROSS.COM
+      - 巴西圣保罗 CloudFlare节点
+      - 美国 CloudFlare节点 - 2
+      - 美国 CloudFlare节点 - 3
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
+      - 美国 CloudFlare
       - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 加拿大+V2CROSS.COM
-      - 澳大利亚 Canterbury Girls' Secondary College
-      - 美国 CloudFlare节点 - 3
       - 美国 加利福尼亚州洛杉矶Sharktech数据中心
-      - 美国 CloudFlare节点 - 4
-      - 美国 CloudFlare节点 - 5
-      - 美国 V2CROSS.COM
+      - 加拿大+V2CROSS.COM
+      - 巴西圣保罗 CloudFlare节点
+      - 美国 CloudFlare节点 - 2
+      - 美国 CloudFlare节点 - 3
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
