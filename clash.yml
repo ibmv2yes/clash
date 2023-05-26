@@ -1,12 +1,20 @@
 proxies:
-  - name: 加拿大+V2CROSS.COM
-    type: trojan
-    server: stw5-tg-data.amazonwebservicess.com
-    port: '443'
-    password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
-  - name: 澳大利亚 V2CROSS.COM
+  - name: 澳大利亚 Eumemmerring Secondary College
     type: vmess
-    server: hwb.ircf.space
+    server: 203.23.106.148
+    port: 443
+    uuid: 7757E99E-75C9-46D5-854D-4065BF372100
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /speedtest
+    ws-headers:
+      Host: Lille.kotick.site
+    tls: true
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: 147.185.161.55
     port: 443
     uuid: 7757E99E-75C9-46D5-854D-4065BF372100
     alterId: 0
@@ -16,59 +24,8 @@ proxies:
     ws-path: /speedtest
     ws-headers:
       Host: Dusseldorf.kotick.site
-    tls: true
-  - name: 美国 CloudFlare公司CDN节点(shopify)
-    type: vmess
-    server: 23.227.38.0
-    port: 443
-    uuid: 7757E99E-75C9-46D5-854D-4065BF372100
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /speedtest
-    ws-headers:
-      Host: Kansas.kotick.site
     tls: true
   - name: 美国 CloudFlare节点
-    type: vmess
-    server: 141.101.114.2
-    port: 80
-    uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: lg.v2ray20.xyz
-  - name: 西班牙 V2CROSS.COM
-    type: vmess
-    server: 185.18.250.217
-    port: 443
-    uuid: 7757E99E-75C9-46D5-854D-4065BF372100
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /speedtest
-    ws-headers:
-      Host: Dusseldorf.kotick.site
-    tls: true
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: 104.27.62.243
-    port: 443
-    uuid: 49555a95-dc36-44dd-b613-98dc14ac6295
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /wss48622
-    ws-headers:
-      Host: freeservice.blanku.me
-    tls: true
-  - name: 美国 CloudFlare节点 - 3
     type: vmess
     server: cdnjs.com
     port: 443
@@ -81,80 +38,85 @@ proxies:
     ws-headers:
       Host: Kansas.kotick.site
     tls: true
-  - name: 加拿大+V2CROSS.COM - 2
+  - name: 加拿大+V2CROSS.COM
     type: trojan
-    server: scloudtw1-tg-data.amazonwebservicess.com
+    server: stw5-tg-data.amazonwebservicess.com
     port: '443'
     password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
-  - name: 美国 华盛顿Cogent通信公司
+  - name: 美国 V2CROSS.COM - 2
     type: vmess
-    server: 38.63.2.16
-    port: 57723
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
+    server: 170.114.45.23
+    port: 443
+    uuid: 7757E99E-75C9-46D5-854D-4065BF372100
+    alterId: 0
     cipher: auto
     udp: true
-    network: tcp
-    ws-path: /
+    network: ws
+    ws-path: /speedtest
     ws-headers:
-      Host: ''
-  - name: 亚太地区+V2CROSS.COM
+      Host: Amsterdam.kotick.site
+    tls: true
+  - name: 加拿大+V2CROSS.COM - 2
     type: trojan
-    server: 163.123.192.153
-    port: 443?sni=download.xn--mes358a9urctx.com
-    password: 194e456a-68d2-4f05-b554-c7282d32abae
+    server: bgptw3.cnamazon.sbs
+    port: '443'
+    password: e015d739-1656-4e9a-b0cc-5d8f11b0db5b
   - name: 台湾省台北市+scloud.sg
     type: trojan
     server: 165.154.226.194
     port: '443'
     password: 4aeda200-44c9-4168-8f2a-a00a72176d35
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: ydyx.heimaojiasu.cloud
+    port: 443
+    uuid: 7757E99E-75C9-46D5-854D-4065BF372100
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /speedtest
+    ws-headers:
+      Host: Kansas.kotick.site
+    tls: true
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 加拿大+V2CROSS.COM
-      - 澳大利亚 V2CROSS.COM
-      - 美国 CloudFlare公司CDN节点(shopify)
+      - 澳大利亚 Eumemmerring Secondary College
+      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 西班牙 V2CROSS.COM
-      - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
+      - 加拿大+V2CROSS.COM
+      - 美国 V2CROSS.COM - 2
       - 加拿大+V2CROSS.COM - 2
-      - 美国 华盛顿Cogent通信公司
-      - 亚太地区+V2CROSS.COM
       - 台湾省台北市+scloud.sg
+      - 美国 CloudFlare节点 - 2
   - name: 自动选择
     type: url-test
     proxies:
-      - 加拿大+V2CROSS.COM
-      - 澳大利亚 V2CROSS.COM
-      - 美国 CloudFlare公司CDN节点(shopify)
+      - 澳大利亚 Eumemmerring Secondary College
+      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 西班牙 V2CROSS.COM
-      - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
+      - 加拿大+V2CROSS.COM
+      - 美国 V2CROSS.COM - 2
       - 加拿大+V2CROSS.COM - 2
-      - 美国 华盛顿Cogent通信公司
-      - 亚太地区+V2CROSS.COM
       - 台湾省台北市+scloud.sg
+      - 美国 CloudFlare节点 - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 加拿大+V2CROSS.COM
-      - 澳大利亚 V2CROSS.COM
-      - 美国 CloudFlare公司CDN节点(shopify)
+      - 澳大利亚 Eumemmerring Secondary College
+      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 西班牙 V2CROSS.COM
-      - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
+      - 加拿大+V2CROSS.COM
+      - 美国 V2CROSS.COM - 2
       - 加拿大+V2CROSS.COM - 2
-      - 美国 华盛顿Cogent通信公司
-      - 亚太地区+V2CROSS.COM
       - 台湾省台北市+scloud.sg
+      - 美国 CloudFlare节点 - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
