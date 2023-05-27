@@ -1,9 +1,14 @@
 proxies:
-  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
+  - name: 加拿大+V2CROSS.COM
+    type: trojan
+    server: stw8-tg-data.amazonwebservicess.com
+    port: '443'
+    password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
+  - name: 美国 加利福尼亚州洛杉矶MULTACOM数据中心
     type: vmess
-    server: 192.74.224.27
-    port: 54027
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    server: 108.166.203.181
+    port: 44945
+    uuid: 268a491b-764c-44d1-81a4-30de16130867
     alterId: 64
     cipher: auto
     udp: true
@@ -11,87 +16,89 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 新加坡+Linode数据中心
-    type: ss
-    server: sgp01.669990.xyz
-    port: '25566'
-    cipher: aes-256-gcm
-    password: 93RAWKLO4l0mfdD8
-  - name: 广东省佛山市 移动
-    type: vmess
-    server: 25.v2-ray.cyou
-    port: 23625
-    uuid: 0dd19d20-ec86-3680-b256-87237bafa89e
-    alterId: 2
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: ''
   - name: 美国 CloudFlare节点
     type: vmess
-    server: v2ray.online
+    server: 104.18.1.110
     port: 443
-    uuid: 00BBF5B8-173E-6818-9927-5AD1AA073C7D
+    uuid: 1d8488a7-c784-4e66-ae92-1b22da9c9e68
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /speedtest
+    ws-path: /c3lZ7dp02p?ed=2048
     ws-headers:
-      Host: Kansas.v2ray.online
+      Host: d2.pgypgykmoljklj.xyz
     tls: true
-  - name: 巴西圣保罗 CloudFlare节点
+  - name: 英国 伦敦Linode数据中心
     type: vmess
-    server: 188.114.97.7
-    port: 2083
-    uuid: 1ace515b-a76b-4378-83ac-0ee3833b98be
+    server: vuk1.0bad.com
+    port: 443
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /X9piqfat/
+    ws-path: /chat
     ws-headers:
-      Host: v2ray3.webgfw.top
+      Host: ''
     tls: true
-  - name: 美国+加利福尼亚州洛杉矶Level3通信(DIA)
-    type: trojan
-    server: ap.stablize.top
-    port: '443'
-    password: 6191d59d-021c-4af1-8197-85d52c564ac4
+  - name: 美国 CloudFlare公司CDN节点(shopify)
+    type: vmess
+    server: 23.227.38.99
+    port: 443
+    uuid: 86d37526-5758-4cec-862f-df404b313086
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /3G6WPDL7
+    ws-headers:
+      Host: 1.freek1.xyz
+    tls: true
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: tech.noaries.de
+    port: 80
+    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /shirker
+    ws-headers:
+      Host: nl.sharecentrepro.com
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 新加坡+Linode数据中心
-      - 广东省佛山市 移动
+      - 加拿大+V2CROSS.COM
+      - 美国 加利福尼亚州洛杉矶MULTACOM数据中心
       - 美国 CloudFlare节点
-      - 巴西圣保罗 CloudFlare节点
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
+      - 英国 伦敦Linode数据中心
+      - 美国 CloudFlare公司CDN节点(shopify)
+      - 美国 CloudFlare节点 - 2
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 新加坡+Linode数据中心
-      - 广东省佛山市 移动
+      - 加拿大+V2CROSS.COM
+      - 美国 加利福尼亚州洛杉矶MULTACOM数据中心
       - 美国 CloudFlare节点
-      - 巴西圣保罗 CloudFlare节点
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
+      - 英国 伦敦Linode数据中心
+      - 美国 CloudFlare公司CDN节点(shopify)
+      - 美国 CloudFlare节点 - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 新加坡+Linode数据中心
-      - 广东省佛山市 移动
+      - 加拿大+V2CROSS.COM
+      - 美国 加利福尼亚州洛杉矶MULTACOM数据中心
       - 美国 CloudFlare节点
-      - 巴西圣保罗 CloudFlare节点
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
+      - 英国 伦敦Linode数据中心
+      - 美国 CloudFlare公司CDN节点(shopify)
+      - 美国 CloudFlare节点 - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
