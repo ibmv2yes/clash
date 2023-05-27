@@ -1,89 +1,172 @@
 proxies:
+  - name: 重庆市 移动
+    type: vmess
+    server: 36.134.16.190
+    port: 11023
+    uuid: 8c042a38-71c1-1dcb-00df-54880236e0dc
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: bp.nidaye.eu.org
+    port: 443
+    uuid: c77d02e9-5738-46ac-9512-7b67746cad85
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /ndy58850
+    ws-headers:
+      Host: bp.nidaye.eu.org
+    tls: true
+  - name: 亚太地区+V2CROSS.COM
+    type: trojan
+    server: 163.123.192.153
+    port: 443?sni=download.xn--mes358a9urctx.com
+    password: 194e456a-68d2-4f05-b554-c7282d32abae
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: cf.yxjnode.com
+    port: 80
+    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /yxzbp
+    ws-headers:
+      Host: dp4.yxjnode.com
+  - name: 日本 东京Linode数据中心
+    type: vmess
+    server: vjp1.0bad.com
+    port: 443
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /chat
+    ws-headers:
+      Host: vjp1.0bad.com
+    tls: true
   - name: 加拿大+V2CROSS.COM
     type: trojan
-    server: scloudtw2-tg-data.amazonwebservicess.com
+    server: 165.154.246.207
     port: '443'
-    password: 4aeda200-44c9-4168-8f2a-a00a72176d35
-  - name: 日本 东京Amazon数据中心
+    password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
+  - name: 巴西圣保罗 CloudFlare节点
     type: vmess
-    server: 36e5404c-1b0c-47e9-80a0-977c68d3f638.xn--9kq12xdq7a.com
-    port: 80
-    uuid: ca099159-d67c-4918-9741-82a28c802234
+    server: 188.114.99.143
+    port: 2052
+    uuid: 0227edc4-8735-4370-ac42-4e8147920f0b
     alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /qwer
+    ws-headers:
+      Host: tou.vtcss.top
+  - name: 巴西圣保罗 CloudFlare节点 - 2
+    type: vmess
+    server: 188.114.98.210
+    port: 8080
+    uuid: 9588cb0f-5102-4e66-d5fb-f96cba9acdda
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /qazxcv01
+    ws-headers:
+      Host: tou.vtcss.top
+  - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: 104.18.101.15
+    port: 8080
+    uuid: 9588cb0f-5102-4e66-d5fb-f96cba9acdda
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /qazxcv01
+    ws-headers:
+      Host: tou.vtcss.top
+  - name: 美国 Cloudinnovation数据中心
+    type: vmess
+    server: 154.85.1.128
+    port: 443
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /path/1684580752213
+    ws-headers:
+      Host: www.42077230.xyz
+    tls: true
+  - name: 广东省佛山市 移动
+    type: vmess
+    server: 25.v2-ray.cyou
+    port: 23625
+    uuid: 0dd19d20-ec86-3680-b256-87237bafa89e
+    alterId: 2
     cipher: auto
     udp: true
     network: ws
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: mci1.blanku.me
-    port: 443
-    uuid: 49555a95-dc36-44dd-b613-98dc14ac6295
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /wss48622
-    ws-headers:
-      Host: freeservice.blanku.me
-    tls: true
-  - name: 美国 V2CROSS.COM
-    type: vmess
-    server: oracle01.jiting.space
-    port: 38829
-    uuid: 590e49c2-dd24-41ff-91b8-cc792d0cfeab
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /path/1684316790433
-    ws-headers:
-      Host: oracle01.jiting.space
-    tls: true
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: 104.27.62.243
-    port: 443
-    uuid: 49555a95-dc36-44dd-b613-98dc14ac6295
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /wss48622
-    ws-headers:
-      Host: freeservice.blanku.me
-    tls: true
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 加拿大+V2CROSS.COM
-      - 日本 东京Amazon数据中心
+      - 重庆市 移动
       - 美国 CloudFlare节点
-      - 美国 V2CROSS.COM
+      - 亚太地区+V2CROSS.COM
       - 美国 CloudFlare节点 - 2
+      - 日本 东京Linode数据中心
+      - 加拿大+V2CROSS.COM
+      - 巴西圣保罗 CloudFlare节点
+      - 巴西圣保罗 CloudFlare节点 - 2
+      - 美国 CloudFlare节点 - 3
+      - 美国 Cloudinnovation数据中心
+      - 广东省佛山市 移动
   - name: 自动选择
     type: url-test
     proxies:
-      - 加拿大+V2CROSS.COM
-      - 日本 东京Amazon数据中心
+      - 重庆市 移动
       - 美国 CloudFlare节点
-      - 美国 V2CROSS.COM
+      - 亚太地区+V2CROSS.COM
       - 美国 CloudFlare节点 - 2
+      - 日本 东京Linode数据中心
+      - 加拿大+V2CROSS.COM
+      - 巴西圣保罗 CloudFlare节点
+      - 巴西圣保罗 CloudFlare节点 - 2
+      - 美国 CloudFlare节点 - 3
+      - 美国 Cloudinnovation数据中心
+      - 广东省佛山市 移动
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 加拿大+V2CROSS.COM
-      - 日本 东京Amazon数据中心
+      - 重庆市 移动
       - 美国 CloudFlare节点
-      - 美国 V2CROSS.COM
+      - 亚太地区+V2CROSS.COM
       - 美国 CloudFlare节点 - 2
+      - 日本 东京Linode数据中心
+      - 加拿大+V2CROSS.COM
+      - 巴西圣保罗 CloudFlare节点
+      - 巴西圣保罗 CloudFlare节点 - 2
+      - 美国 CloudFlare节点 - 3
+      - 美国 Cloudinnovation数据中心
+      - 广东省佛山市 移动
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
