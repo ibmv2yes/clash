@@ -1,127 +1,89 @@
 proxies:
-  - name: 美国+Microsoft数据中心
+  - name: 台湾省台北市+scloud.sg
     type: trojan
-    server: ap.stablize.top
+    server: bgptw2.cnamazon.sbs
     port: '443'
-    password: 6191d59d-021c-4af1-8197-85d52c564ac4
+    password: 4658738d-c3f1-4ebf-ad7a-ee603e3f9690
   - name: 美国 CloudFlare节点
     type: vmess
-    server: 141.101.114.2
-    port: 80
-    uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a
+    server: la.awsbest.com
+    port: 443
+    uuid: 8b6dd709-4d4e-4b92-f542-54a676efbfe4
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /
+    ws-path: /shares
     ws-headers:
-      Host: lg.v2ray20.xyz
+      Host: la.awsbest.com
+    tls: true
+  - name: 美国 加利福尼亚州费里蒙Linode数据中心
+    type: vmess
+    server: vus2.0bad.com
+    port: 443
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /chat
+    ws-headers:
+      Host: vus2.0bad.com
+    tls: true
   - name: 美国 CloudFlare节点 - 2
     type: vmess
-    server: v2ray.online
+    server: 198.41.199.70
+    port: 8080
+    uuid: 9588cb0f-5102-4e66-d5fb-f96cba9acdda
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /qazxcv01
+    ws-headers:
+      Host: tou.vtcss.top
+  - name: 英国 伦敦Linode数据中心
+    type: vmess
+    server: vuk1.0bad.com
     port: 443
-    uuid: 00BBF5B8-173E-6818-9927-5AD1AA073C7D
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /speedtest
+    ws-path: /chat
     ws-headers:
-      Host: Kansas.v2ray.online
+      Host: vuk1.0bad.com
     tls: true
-  - name: 美国 CloudFlare节点 - 3
-    type: vmess
-    server: cf.yxjnode.com
-    port: 80
-    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /yxzbp
-    ws-headers:
-      Host: dp1.yxjnode.com
-  - name: 加拿大+V2CROSS.COM
-    type: trojan
-    server: 165.154.246.207
-    port: '443'
-    password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
-  - name: 美国 CloudFlare节点 - 4
-    type: vmess
-    server: cf.noaries.de
-    port: 2052
-    uuid: 67c5ce45-7b48-473e-bf25-e4c830b0ed24
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /aries?ed=2048
-    ws-headers:
-      Host: azstu-it.iiio.wiki
-  - name: 加拿大 V2CROSS.COM
-    type: vmess
-    server: mci1.blanku.me
-    port: 443
-    uuid: 49555a95-dc36-44dd-b613-98dc14ac6295
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /wss48622
-    ws-headers:
-      Host: freeservice.blanku.me
-    tls: true
-  - name: 美国+DXC+Technology
-    type: trojan
-    server: azjp1.downloadvip.cfd
-    port: 443?sni=us1.xn--mes358acgm99l.com
-    password: 8d05cc82-7059-4b73-92ff-f8b6e407fd80
-  - name: 加拿大+V2CROSS.COM - 2
-    type: trojan
-    server: 165.154.253.144
-    port: '443'
-    password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国+Microsoft数据中心
+      - 台湾省台北市+scloud.sg
       - 美国 CloudFlare节点
+      - 美国 加利福尼亚州费里蒙Linode数据中心
       - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
-      - 加拿大+V2CROSS.COM
-      - 美国 CloudFlare节点 - 4
-      - 加拿大 V2CROSS.COM
-      - 美国+DXC+Technology
-      - 加拿大+V2CROSS.COM - 2
+      - 英国 伦敦Linode数据中心
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国+Microsoft数据中心
+      - 台湾省台北市+scloud.sg
       - 美国 CloudFlare节点
+      - 美国 加利福尼亚州费里蒙Linode数据中心
       - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
-      - 加拿大+V2CROSS.COM
-      - 美国 CloudFlare节点 - 4
-      - 加拿大 V2CROSS.COM
-      - 美国+DXC+Technology
-      - 加拿大+V2CROSS.COM - 2
+      - 英国 伦敦Linode数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国+Microsoft数据中心
+      - 台湾省台北市+scloud.sg
       - 美国 CloudFlare节点
+      - 美国 加利福尼亚州费里蒙Linode数据中心
       - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
-      - 加拿大+V2CROSS.COM
-      - 美国 CloudFlare节点 - 4
-      - 加拿大 V2CROSS.COM
-      - 美国+DXC+Technology
-      - 加拿大+V2CROSS.COM - 2
+      - 英国 伦敦Linode数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
