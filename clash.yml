@@ -1,48 +1,62 @@
 proxies:
-  - name: 挪威 V2CROSS.COM
-    type: vmess
-    server: ydhdlbain.114514782.xyz
-    port: 2052
-    uuid: 00204673-d0f1-349d-ae61-1fa9346849ef
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /uasfbbc
-    ws-headers:
-      Host: ydhdlbain.114514782.xyz
-  - name: 澳大利亚 Doncaster Secondary College
-    type: vmess
-    server: aisugvdiu.114514782.xyz
-    port: 2082
-    uuid: 21945b41-2e26-38fb-b034-c1c8585cbc82
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /buiaebd
-    ws-headers:
-      Host: aisugvdiu.114514782.xyz
-  - name: 澳大利亚 Lyndhurst Secondary College
-    type: vmess
-    server: asbiasncs.114514782.xyz
-    port: 2052
-    uuid: 19d76e75-a56b-3048-bbde-cdd2a8c66fa0
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /auvbwbs
-    ws-headers:
-      Host: asbiasncs.114514782.xyz
-  - name: 台湾省台北市+scloud.sg
+  - name: 加拿大+V2CROSS.COM
     type: trojan
-    server: stw5-tg-data.amazonwebservicess.com
-    port: 443?type=tcp&allowInsecure=1
+    server: 165.154.246.180
+    port: '443'
     password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
   - name: 美国 CloudFlare节点
     type: vmess
-    server: cf-dx-dns.sharecentre.online
+    server: 172.66.46.15
+    port: 443
+    uuid: 12612e87-8003-44a8-b4e8-ec4a325e9016
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /ou
+    ws-headers:
+      Host: z.zorro.tk
+    tls: true
+  - name: 澳大利亚 V2CROSS.COM
+    type: vmess
+    server: sgtippos.76898102.xyz
+    port: 2052
+    uuid: b2b591fc-0ea8-3c17-bb5e-c6b7c12d74a5
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /miao
+    ws-headers:
+      Host: sgtippos.76898102.xyz
+  - name: 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+    type: vmess
+    server: 23.224.110.184
+    port: 443
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /path/080712342310
+    ws-headers:
+      Host: ''
+    tls: true
+  - name: 丹麦 V2CROSS.COM
+    type: vmess
+    server: jpntgrwq.114514782.xyz
+    port: 2052
+    uuid: 1562b5d5-4595-313f-9ad1-cf604c6499cc
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /miaoshenzbck
+    ws-headers:
+      Host: jpntgrwq.114514782.xyz
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: cf-lt-dns.sharecentre.online
     port: 80
     uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
     alterId: 0
@@ -51,24 +65,29 @@ proxies:
     network: ws
     ws-path: /shirker
     ws-headers:
-      Host: in.sharecentrepro.com
-  - name: 美国 CloudFlare节点 - 2
+      Host: ny1.sharecentrepro.org
+  - name: 美国 CloudFlare节点 - 3
     type: vmess
-    server: cf.yxjnode.com
-    port: 80
-    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
+    server: cf.noaries.de
+    port: 2052
+    uuid: 67c5ce45-7b48-473e-bf25-e4c830b0ed24
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /yxzbp
+    ws-path: /aries?ed=2048
     ws-headers:
-      Host: dp4.yxjnode.com
-  - name: 重庆市 移动
+      Host: azstu-it.iiio.wiki
+  - name: 美国+DXC+Technology
+    type: trojan
+    server: azjp1.downloadvip.cfd
+    port: 443?sni=us1.xn--mes358acgm99l.com
+    password: 8d05cc82-7059-4b73-92ff-f8b6e407fd80
+  - name: 台湾省台中市 中华电信
     type: vmess
-    server: 36.134.16.171
-    port: 11023
-    uuid: 8c042a38-71c1-1dcb-00df-54880236e0dc
+    server: tw99-hinet.mynodes001.one
+    port: 5432
+    uuid: d5ef1df3-4069-3b25-9dc1-16b2be9b3e6b
     alterId: 0
     cipher: auto
     udp: true
@@ -76,57 +95,47 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 加拿大+V2CROSS.COM
-    type: trojan
-    server: stw4-tg-data.amazonwebservicess.com
-    port: '443'
-    password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
-  - name: 美国+DXC+Technology
-    type: trojan
-    server: azjp1.downloadvip.cfd
-    port: 443?sni=us1.xn--mes358acgm99l.com
-    password: 8d05cc82-7059-4b73-92ff-f8b6e407fd80
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 挪威 V2CROSS.COM
-      - 澳大利亚 Doncaster Secondary College
-      - 澳大利亚 Lyndhurst Secondary College
-      - 台湾省台北市+scloud.sg
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 重庆市 移动
       - 加拿大+V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 澳大利亚 V2CROSS.COM
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 丹麦 V2CROSS.COM
+      - 美国 CloudFlare节点 - 2
+      - 美国 CloudFlare节点 - 3
       - 美国+DXC+Technology
+      - 台湾省台中市 中华电信
   - name: 自动选择
     type: url-test
     proxies:
-      - 挪威 V2CROSS.COM
-      - 澳大利亚 Doncaster Secondary College
-      - 澳大利亚 Lyndhurst Secondary College
-      - 台湾省台北市+scloud.sg
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 重庆市 移动
       - 加拿大+V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 澳大利亚 V2CROSS.COM
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 丹麦 V2CROSS.COM
+      - 美国 CloudFlare节点 - 2
+      - 美国 CloudFlare节点 - 3
       - 美国+DXC+Technology
+      - 台湾省台中市 中华电信
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 挪威 V2CROSS.COM
-      - 澳大利亚 Doncaster Secondary College
-      - 澳大利亚 Lyndhurst Secondary College
-      - 台湾省台北市+scloud.sg
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 重庆市 移动
       - 加拿大+V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 澳大利亚 V2CROSS.COM
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 丹麦 V2CROSS.COM
+      - 美国 CloudFlare节点 - 2
+      - 美国 CloudFlare节点 - 3
       - 美国+DXC+Technology
+      - 台湾省台中市 中华电信
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
