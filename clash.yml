@@ -1,89 +1,111 @@
 proxies:
-  - name: 台湾省台北市+scloud.sg
-    type: trojan
-    server: bgptw2.cnamazon.sbs
-    port: '443'
-    password: 4658738d-c3f1-4ebf-ad7a-ee603e3f9690
+  - name: 日本 东京阿里云
+    type: vmess
+    server: cdncf.scyu.app
+    port: 8080
+    uuid: 4427eafb-3b3a-4265-9a32-fe0ea9cfd736
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /api/v3/download.getFile
+    ws-headers:
+      Host: ssrsub.v02.ssrsub.com
+  - name: 美国 华盛顿Cogent通信公司
+    type: vmess
+    server: 38.60.208.68
+    port: 20037
+    uuid: a529cf39-d753-41e5-a72a-64cf8d48f469
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /tk2/getData
+    ws-headers:
+      Host: ''
+    tls: true
   - name: 美国 CloudFlare节点
     type: vmess
-    server: la.awsbest.com
-    port: 443
-    uuid: 8b6dd709-4d4e-4b92-f542-54a676efbfe4
+    server: cf-lt-dns.sharecentre.online
+    port: 80
+    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /shares
+    ws-path: /shirker
     ws-headers:
-      Host: la.awsbest.com
-    tls: true
-  - name: 美国 加利福尼亚州费里蒙Linode数据中心
+      Host: ny1.sharecentrepro.org
+  - name: 德国+V2CROSS.COM
+    type: trojan
+    server: 217.79.184.22
+    port: 443?sni=18-140-66-207.nhost.00cdn.com
+    password: 41b4d802-84ce-44c6-86c2-58fb536ded1f
+  - name: 香港 腾讯云
     type: vmess
-    server: vus2.0bad.com
-    port: 443
-    uuid: 927094d3-d678-4763-8591-e240d0bcae87
-    alterId: 0
+    server: 43.154.122.126
+    port: 48122
+    uuid: 82adc998-88ab-4c87-8b86-5bc39e80f5b2
+    alterId: 64
     cipher: auto
     udp: true
     network: ws
-    ws-path: /chat
+    ws-path: /hk1/getData
     ws-headers:
-      Host: vus2.0bad.com
+      Host: ''
     tls: true
   - name: 美国 CloudFlare节点 - 2
     type: vmess
-    server: 198.41.199.70
-    port: 8080
-    uuid: 9588cb0f-5102-4e66-d5fb-f96cba9acdda
+    server: 198.41.219.86
+    port: 8880
+    uuid: cb8cbbc3-137a-4064-8d02-b0ee3ca2c18c
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /qazxcv01
+    ws-path: /qazxcv03
     ws-headers:
       Host: tou.vtcss.top
-  - name: 英国 伦敦Linode数据中心
-    type: vmess
-    server: vuk1.0bad.com
-    port: 443
-    uuid: 927094d3-d678-4763-8591-e240d0bcae87
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /chat
-    ws-headers:
-      Host: vuk1.0bad.com
-    tls: true
+  - name: 台湾省台北市+scloud.sg
+    type: trojan
+    server: stw5-tg-data.amazonwebservicess.com
+    port: 443?type=tcp&allowInsecure=1
+    password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 台湾省台北市+scloud.sg
+      - 日本 东京阿里云
+      - 美国 华盛顿Cogent通信公司
       - 美国 CloudFlare节点
-      - 美国 加利福尼亚州费里蒙Linode数据中心
+      - 德国+V2CROSS.COM
+      - 香港 腾讯云
       - 美国 CloudFlare节点 - 2
-      - 英国 伦敦Linode数据中心
+      - 台湾省台北市+scloud.sg
   - name: 自动选择
     type: url-test
     proxies:
-      - 台湾省台北市+scloud.sg
+      - 日本 东京阿里云
+      - 美国 华盛顿Cogent通信公司
       - 美国 CloudFlare节点
-      - 美国 加利福尼亚州费里蒙Linode数据中心
+      - 德国+V2CROSS.COM
+      - 香港 腾讯云
       - 美国 CloudFlare节点 - 2
-      - 英国 伦敦Linode数据中心
+      - 台湾省台北市+scloud.sg
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 台湾省台北市+scloud.sg
+      - 日本 东京阿里云
+      - 美国 华盛顿Cogent通信公司
       - 美国 CloudFlare节点
-      - 美国 加利福尼亚州费里蒙Linode数据中心
+      - 德国+V2CROSS.COM
+      - 香港 腾讯云
       - 美国 CloudFlare节点 - 2
-      - 英国 伦敦Linode数据中心
+      - 台湾省台北市+scloud.sg
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
