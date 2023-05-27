@@ -1,39 +1,49 @@
 proxies:
-  - name: 美国 V2CROSS.COM
+  - name: 欧盟 V2CROSS.COM
     type: vmess
-    server: 170.114.45.23
+    server: mci1.blanku.me
     port: 443
-    uuid: 7757E99E-75C9-46D5-854D-4065BF372100
+    uuid: 49555a95-dc36-44dd-b613-98dc14ac6295
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /speedtest
+    ws-path: /wss48622
     ws-headers:
-      Host: Amsterdam.kotick.site
+      Host: freeservice.blanku.me
     tls: true
-  - name: 瑞典+V2CROSS.COM
-    type: ss
-    server: 167.88.63.99
-    port: '2375'
-    cipher: aes-256-gcm
-    password: faBAoD54k87UJG7
+  - name: 加拿大+V2CROSS.COM
+    type: trojan
+    server: scloudtw2-tg-data.amazonwebservicess.com
+    port: '443'
+    password: 4aeda200-44c9-4168-8f2a-a00a72176d35
   - name: 美国 CloudFlare节点
     type: vmess
-    server: ydyx.heimaojiasu.cloud
-    port: 443
-    uuid: 7757E99E-75C9-46D5-854D-4065BF372100
+    server: 104.19.129.247
+    port: 80
+    uuid: c5c9844d-050e-44f1-cb6d-ec5166772631
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /speedtest
+    ws-path: /qwer
     ws-headers:
-      Host: Kansas.kotick.site
-    tls: true
+      Host: zslbs.vtcss.top
+  - name: 美国 CloudFlare
+    type: vmess
+    server: 162.159.24.179
+    port: 80
+    uuid: 53ae65be-81ee-4766-8a09-da43c44c4d30
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /qwer02
+    ws-headers:
+      Host: uyaa.vtcss.top
   - name: 美国 CloudFlare节点 - 2
     type: vmess
-    server: 104.26.14.137
+    server: 104.27.39.113
     port: 443
     uuid: 7757E99E-75C9-46D5-854D-4065BF372100
     alterId: 0
@@ -44,135 +54,106 @@ proxies:
     ws-headers:
       Host: Lille.kotick.site
     tls: true
-  - name: 美国 CloudFlare节点 - 3
-    type: vmess
-    server: for-j.com
-    port: 443
-    uuid: 7757E99E-75C9-46D5-854D-4065BF372100
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /speedtest
-    ws-headers:
-      Host: Amsterdam.kotick.site
-    tls: true
-  - name: 加拿大+V2CROSS.COM
-    type: trojan
-    server: stw8-tg-data.amazonwebservicess.com
-    port: '443'
-    password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
   - name: 美国 CloudFlare公司CDN节点(shopify)
     type: vmess
-    server: 23.227.38.0
+    server: 23.227.38.99
     port: 443
-    uuid: 7757E99E-75C9-46D5-854D-4065BF372100
+    uuid: 86d37526-5758-4cec-862f-df404b313086
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /speedtest
+    ws-path: /3G6WPDL7
     ws-headers:
-      Host: Kansas.kotick.site
+      Host: 1.freek1.xyz
     tls: true
+  - name: 欧盟 V2CROSS.COM - 2
+    type: vmess
+    server: mci1.blanku.me
+    port: 443
+    uuid: 49555a95-dc36-44dd-b613-98dc14ac6295
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /wss48622
+    ws-headers:
+      Host: freeservice.blanku.me
+    tls: true
+  - name: 加拿大+V2CROSS.COM - 2
+    type: trojan
+    server: stw10-tg-data.amazonwebservicess.com
+    port: '443'
+    password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
   - name: 美国 华盛顿Cogent通信公司
     type: vmess
-    server: 38.63.2.16
-    port: 57723
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    server: 38.60.208.68
+    port: 20037
+    uuid: a529cf39-d753-41e5-a72a-64cf8d48f469
     alterId: 64
     cipher: auto
     udp: true
-    network: tcp
-    ws-path: /path/120306182525
+    network: ws
+    ws-path: /tk2/getData
     ws-headers:
       Host: ''
-  - name: 美国 V2CROSS.COM - 2
+    tls: true
+  - name: 中国 阿里云
     type: vmess
-    server: 170.114.45.23
-    port: 443
-    uuid: 7757E99E-75C9-46D5-854D-4065BF372100
+    server: cdncf.scyu.app
+    port: 80
+    uuid: f809b651-3924-4a80-abde-6c8536fbb229
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /speedtest
+    ws-path: /api/v3/download.getFile
     ws-headers:
-      Host: Amsterdam.kotick.site
-    tls: true
-  - name: 西班牙 V2CROSS.COM
-    type: vmess
-    server: 185.18.250.217
-    port: 443
-    uuid: 7757E99E-75C9-46D5-854D-4065BF372100
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /speedtest
-    ws-headers:
-      Host: Dusseldorf.kotick.site
-    tls: true
-  - name: 澳大利亚 Melbourne Girls College
-    type: vmess
-    server: 203.22.223.51
-    port: 443
-    uuid: 7757E99E-75C9-46D5-854D-4065BF372100
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /speedtest
-    ws-headers:
-      Host: Kansas.kotick.site
-    tls: true
+      Host: ssrsub.v02.ssrsub.com
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 V2CROSS.COM
-      - 瑞典+V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
+      - 欧盟 V2CROSS.COM
       - 加拿大+V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 美国 CloudFlare
+      - 美国 CloudFlare节点 - 2
       - 美国 CloudFlare公司CDN节点(shopify)
+      - 欧盟 V2CROSS.COM - 2
+      - 加拿大+V2CROSS.COM - 2
       - 美国 华盛顿Cogent通信公司
-      - 美国 V2CROSS.COM - 2
-      - 西班牙 V2CROSS.COM
-      - 澳大利亚 Melbourne Girls College
+      - 中国 阿里云
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 V2CROSS.COM
-      - 瑞典+V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
+      - 欧盟 V2CROSS.COM
       - 加拿大+V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 美国 CloudFlare
+      - 美国 CloudFlare节点 - 2
       - 美国 CloudFlare公司CDN节点(shopify)
+      - 欧盟 V2CROSS.COM - 2
+      - 加拿大+V2CROSS.COM - 2
       - 美国 华盛顿Cogent通信公司
-      - 美国 V2CROSS.COM - 2
-      - 西班牙 V2CROSS.COM
-      - 澳大利亚 Melbourne Girls College
+      - 中国 阿里云
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 V2CROSS.COM
-      - 瑞典+V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
+      - 欧盟 V2CROSS.COM
       - 加拿大+V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 美国 CloudFlare
+      - 美国 CloudFlare节点 - 2
       - 美国 CloudFlare公司CDN节点(shopify)
+      - 欧盟 V2CROSS.COM - 2
+      - 加拿大+V2CROSS.COM - 2
       - 美国 华盛顿Cogent通信公司
-      - 美国 V2CROSS.COM - 2
-      - 西班牙 V2CROSS.COM
-      - 澳大利亚 Melbourne Girls College
+      - 中国 阿里云
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
