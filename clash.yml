@@ -1,40 +1,9 @@
 proxies:
-  - name: 广东省佛山市 移动
-    type: vmess
-    server: 25.v2-ray.cyou
-    port: 23625
-    uuid: 0dd19d20-ec86-3680-b256-87237bafa89e
-    alterId: 2
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: cf-lt.sharecentre.online
-    port: 80
-    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /shirker
-    ws-headers:
-      Host: lv2.sharecentrepro.org
-  - name: 广东省佛山市 移动 - 2
-    type: vmess
-    server: 25.v2-ray.cyou
-    port: 23625
-    uuid: 0dd19d20-ec86-3680-b256-87237bafa89e
-    alterId: 2
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: ''
+  - name: 加拿大+V2CROSS.COM
+    type: trojan
+    server: scloudtw2-tg-data.amazonwebservicess.com
+    port: '443'
+    password: 4aeda200-44c9-4168-8f2a-a00a72176d35
   - name: 日本 东京Amazon数据中心
     type: vmess
     server: 36e5404c-1b0c-47e9-80a0-977c68d3f638.xn--9kq12xdq7a.com
@@ -47,55 +16,74 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 巴西圣保罗 CloudFlare节点
+  - name: 美国 CloudFlare节点
     type: vmess
-    server: 188.114.99.143
-    port: 2052
-    uuid: 0227edc4-8735-4370-ac42-4e8147920f0b
+    server: mci1.blanku.me
+    port: 443
+    uuid: 49555a95-dc36-44dd-b613-98dc14ac6295
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /qwer
+    ws-path: /wss48622
     ws-headers:
-      Host: tou.vtcss.top
-  - name: 加拿大+V2CROSS.COM
-    type: trojan
-    server: 165.154.246.207
-    port: '443'
-    password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
+      Host: freeservice.blanku.me
+    tls: true
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: oracle01.jiting.space
+    port: 38829
+    uuid: 590e49c2-dd24-41ff-91b8-cc792d0cfeab
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /path/1684316790433
+    ws-headers:
+      Host: oracle01.jiting.space
+    tls: true
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: 104.27.62.243
+    port: 443
+    uuid: 49555a95-dc36-44dd-b613-98dc14ac6295
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /wss48622
+    ws-headers:
+      Host: freeservice.blanku.me
+    tls: true
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 广东省佛山市 移动
-      - 美国 CloudFlare节点
-      - 广东省佛山市 移动 - 2
-      - 日本 东京Amazon数据中心
-      - 巴西圣保罗 CloudFlare节点
       - 加拿大+V2CROSS.COM
+      - 日本 东京Amazon数据中心
+      - 美国 CloudFlare节点
+      - 美国 V2CROSS.COM
+      - 美国 CloudFlare节点 - 2
   - name: 自动选择
     type: url-test
     proxies:
-      - 广东省佛山市 移动
-      - 美国 CloudFlare节点
-      - 广东省佛山市 移动 - 2
-      - 日本 东京Amazon数据中心
-      - 巴西圣保罗 CloudFlare节点
       - 加拿大+V2CROSS.COM
+      - 日本 东京Amazon数据中心
+      - 美国 CloudFlare节点
+      - 美国 V2CROSS.COM
+      - 美国 CloudFlare节点 - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 广东省佛山市 移动
-      - 美国 CloudFlare节点
-      - 广东省佛山市 移动 - 2
-      - 日本 东京Amazon数据中心
-      - 巴西圣保罗 CloudFlare节点
       - 加拿大+V2CROSS.COM
+      - 日本 东京Amazon数据中心
+      - 美国 CloudFlare节点
+      - 美国 V2CROSS.COM
+      - 美国 CloudFlare节点 - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
