@@ -1,180 +1,127 @@
 proxies:
-  - name: 美国 CloudFlare节点
+  - name: 香港 腾讯云
     type: vmess
-    server: scaleway.696960.xyz
-    port: 443
-    uuid: e357cd63-f1a5-4c8e-c42e-26da11207fee
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /root/
-    ws-headers:
-      Host: ''
-    tls: true
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: v2ray.online
-    port: 443
-    uuid: 00BBF5B8-173E-6818-9927-5AD1AA073C7D
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /speedtest
-    ws-headers:
-      Host: Kansas.v2ray.online
-    tls: true
-  - name: 美国 V2CROSS.COM
-    type: vmess
-    server: jpadwinfs.114514782.xyz
-    port: 2052
-    uuid: adcd5302-3a33-33c9-a2d4-51ded253f4fc
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /jwafgfdt
-    ws-headers:
-      Host: jpadwinfs.114514782.xyz
-  - name: 澳大利亚 Melbourne Girls College
-    type: vmess
-    server: mci1.blanku.me
-    port: 443
-    uuid: 49555a95-dc36-44dd-b613-98dc14ac6295
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /wss48622
-    ws-headers:
-      Host: freeservice.blanku.me
-    tls: true
-  - name: 美国 CloudFlare节点 - 3
-    type: vmess
-    server: 141.101.114.2
-    port: 80
-    uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: lg.v2ray20.xyz
-  - name: 加拿大+V2CROSS.COM
-    type: trojan
-    server: 165.154.246.207
-    port: '443'
-    password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
-  - name: 西班牙 V2CROSS.COM
-    type: vmess
-    server: aisugvdiu.114514782.xyz
-    port: 2082
-    uuid: 21945b41-2e26-38fb-b034-c1c8585cbc82
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /buiaebd
-    ws-headers:
-      Host: aisugvdiu.114514782.xyz
-  - name: 加拿大+V2CROSS.COM - 2
-    type: trojan
-    server: bgptw3.cnamazon.sbs
-    port: '443'
-    password: 14fc8b10-6475-4649-b343-e12b7c3ee93f
-  - name: 广东省 移动
-    type: vmess
-    server: 183.237.20.158
-    port: 40095
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    server: 43.154.122.126
+    port: 48122
+    uuid: 82adc998-88ab-4c87-8b86-5bc39e80f5b2
     alterId: 64
     cipher: auto
     udp: true
-    network: tcp
-    ws-path: /
+    network: ws
+    ws-path: /hk1/getData
     ws-headers:
       Host: ''
-  - name: 美国 CloudFlare节点 - 4
+    tls: true
+  - name: 台湾省台北市+scloud.sg
+    type: trojan
+    server: bgptw2.cnamazon.sbs
+    port: 443?sni=tlsdata.cnamazon.sbs
+    password: 5f9a5d8c-a57b-4da6-baff-490fe4cf8d60
+  - name: 美国 V2CROSS.COM
     type: vmess
-    server: cf.noaries.de
-    port: 2052
-    uuid: 67c5ce45-7b48-473e-bf25-e4c830b0ed24
+    server: vde2.0bad.com
+    port: 443
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /aries?ed=2048
+    ws-path: /chat
     ws-headers:
-      Host: azstu-it.iiio.wiki
-  - name: 丹麦 V2CROSS.COM
+      Host: ''
+    tls: true
+  - name: 美国 CloudFlare节点
     type: vmess
-    server: jpntgrwq.114514782.xyz
-    port: 2052
-    uuid: 1562b5d5-4595-313f-9ad1-cf604c6499cc
+    server: 104.20.139.110
+    port: 8080
+    uuid: 9588cb0f-5102-4e66-d5fb-f96cba9acdda
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /miaoshenzbck
+    ws-path: /qazxcv01
     ws-headers:
-      Host: jpntgrwq.114514782.xyz
-  - name: 美国+Microsoft数据中心
+      Host: tou.vtcss.top
+  - name: 乌克兰 V2CROSS.COM
+    type: vmess
+    server: apkwvctghw.114514782.xyz
+    port: 2052
+    uuid: ca2175a5-f759-3e28-a4e3-136ab1900e40
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /miaosafh
+    ws-headers:
+      Host: apkwvctghw.114514782.xyz
+  - name: 英国 伦敦Linode数据中心
+    type: vmess
+    server: vuk1.0bad.com
+    port: 443
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /chat
+    ws-headers:
+      Host: vuk1.0bad.com
+    tls: true
+  - name: 美国+加利福尼亚州洛杉矶Level3通信(DIA)
     type: trojan
     server: ap.stablize.top
     port: '443'
     password: 6191d59d-021c-4af1-8197-85d52c564ac4
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: 198.41.199.70
+    port: 8080
+    uuid: 9588cb0f-5102-4e66-d5fb-f96cba9acdda
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /qazxcv01
+    ws-headers:
+      Host: tou.vtcss.top
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
+      - 香港 腾讯云
+      - 台湾省台北市+scloud.sg
       - 美国 V2CROSS.COM
-      - 澳大利亚 Melbourne Girls College
-      - 美国 CloudFlare节点 - 3
-      - 加拿大+V2CROSS.COM
-      - 西班牙 V2CROSS.COM
-      - 加拿大+V2CROSS.COM - 2
-      - 广东省 移动
-      - 美国 CloudFlare节点 - 4
-      - 丹麦 V2CROSS.COM
-      - 美国+Microsoft数据中心
+      - 美国 CloudFlare节点
+      - 乌克兰 V2CROSS.COM
+      - 英国 伦敦Linode数据中心
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
+      - 美国 CloudFlare节点 - 2
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
+      - 香港 腾讯云
+      - 台湾省台北市+scloud.sg
       - 美国 V2CROSS.COM
-      - 澳大利亚 Melbourne Girls College
-      - 美国 CloudFlare节点 - 3
-      - 加拿大+V2CROSS.COM
-      - 西班牙 V2CROSS.COM
-      - 加拿大+V2CROSS.COM - 2
-      - 广东省 移动
-      - 美国 CloudFlare节点 - 4
-      - 丹麦 V2CROSS.COM
-      - 美国+Microsoft数据中心
+      - 美国 CloudFlare节点
+      - 乌克兰 V2CROSS.COM
+      - 英国 伦敦Linode数据中心
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
+      - 美国 CloudFlare节点 - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
+      - 香港 腾讯云
+      - 台湾省台北市+scloud.sg
       - 美国 V2CROSS.COM
-      - 澳大利亚 Melbourne Girls College
-      - 美国 CloudFlare节点 - 3
-      - 加拿大+V2CROSS.COM
-      - 西班牙 V2CROSS.COM
-      - 加拿大+V2CROSS.COM - 2
-      - 广东省 移动
-      - 美国 CloudFlare节点 - 4
-      - 丹麦 V2CROSS.COM
-      - 美国+Microsoft数据中心
+      - 美国 CloudFlare节点
+      - 乌克兰 V2CROSS.COM
+      - 英国 伦敦Linode数据中心
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
+      - 美国 CloudFlare节点 - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
