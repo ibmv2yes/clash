@@ -1,78 +1,29 @@
 proxies:
-  - name: 立陶宛 V2CROSS.COM
+  - name: 美国 加利福尼亚州洛杉矶Sharktech数据中心
     type: vmess
-    server: jpntgrwq.114514782.xyz
-    port: 2052
-    uuid: 1562b5d5-4595-313f-9ad1-cf604c6499cc
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /miaoshenzbck
-    ws-headers:
-      Host: jpntgrwq.114514782.xyz
-  - name: 乌克兰+V2CROSS.COM
-    type: ss
-    server: 193.108.118.34
-    port: '2376'
-    cipher: aes-256-gcm
-    password: faBAoD54k87UJG7
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: scaleway.696960.xyz
-    port: 443
-    uuid: e357cd63-f1a5-4c8e-c42e-26da11207fee
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /root/
-    ws-headers:
-      Host: scaleway.696960.xyz
-    tls: true
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: bp.nidaye.eu.org
-    port: 443
-    uuid: c77d02e9-5738-46ac-9512-7b67746cad85
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /ndy58850
-    ws-headers:
-      Host: bp.nidaye.eu.org
-    tls: true
-  - name: 美国 CloudFlare节点 - 3
-    type: vmess
-    server: cf-lt.sharecentre.online
-    port: 80
-    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /shirker
-    ws-headers:
-      Host: lv1.sharecentrepro.org
-  - name: 加拿大+V2CROSS.COM
-    type: trojan
-    server: 165.154.246.180
-    port: '443'
-    password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
-  - name: 广东省佛山市 移动
-    type: vmess
-    server: 8.v2-ray.cyou
-    port: 23608
-    uuid: 0dd19d20-ec86-3680-b256-87237bafa89e
-    alterId: 2
+    server: 67.21.91.137
+    port: 30983
+    uuid: ec186cad-56ac-42b3-8309-184d0e748b04
+    alterId: 64
     cipher: auto
     udp: true
     network: tcp
-    ws-path: /
+    ws-path: ''
     ws-headers:
-      Host: 8.v2-ray.cyou
-  - name: 美国 CloudFlare节点 - 4
+      Host: ''
+  - name: 英国 V2CROSS.COM
+    type: vmess
+    server: ydhdlbain.114514782.xyz
+    port: 2052
+    uuid: daa19bc8-d01b-3c81-bd1f-22304f5a62b8
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /uasfbbc
+    ws-headers:
+      Host: ydhdlbain.114514782.xyz
+  - name: 美国 CloudFlare节点
     type: vmess
     server: cf-lt.sharecentre.online
     port: 8080
@@ -84,7 +35,25 @@ proxies:
     ws-path: /api/v3/download.getFile
     ws-headers:
       Host: ssrsub.v01.ssrsub.com
-  - name: 美国 CloudFlare节点 - 5
+  - name: 日本东京 Oracle Cloud
+    type: vmess
+    server: oracle02.jiting.space
+    port: 25494
+    uuid: 960040e9-ad9b-4e39-fb90-f9ba90c4b7a2
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /qatjpji
+    ws-headers:
+      Host: au1.elkcloud.gq
+    tls: true
+  - name: 美国+加利福尼亚州洛杉矶Level3通信(DIA)
+    type: trojan
+    server: usa.stablize.top
+    port: '443'
+    password: ad7a2d36-d27b-411e-8e2f-41fea06ef00f
+  - name: 美国 CloudFlare节点 - 2
     type: vmess
     server: cf-yd-dns.sharecentre.online
     port: 80
@@ -98,130 +67,197 @@ proxies:
       Host: do.sharecentrepro.com
   - name: 巴西圣保罗 CloudFlare节点
     type: vmess
-    server: 188.114.97.7
-    port: 443
-    uuid: 9aa6b5ad-c0fc-47f4-a837-f72179d7b662
+    server: 188.114.99.190
+    port: 2095
+    uuid: 67597b31-fba2-42ba-b3df-b7264d346235
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /Lsv4s7nS0ErewnEN
+    ws-path: /tg@hkaa0
     ws-headers:
-      Host: channel2.unlimiteddev.tk
-    tls: true
-  - name: 香港 腾讯云
+      Host: jp.wyhkaa0.ga
+  - name: 广东省佛山市 移动
     type: vmess
-    server: 43.154.122.126
-    port: 53410
-    uuid: 82adc998-88ab-4c87-8b86-5bc39e80f5b2
-    alterId: 64
+    server: 8.v2-ray.cyou
+    port: 23608
+    uuid: 0dd19d20-ec86-3680-b256-87237bafa89e
+    alterId: 2
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: 8.v2-ray.cyou
+  - name: 乌克兰 V2CROSS.COM
+    type: vmess
+    server: aduibdfg.114514782.xyz
+    port: 2052
+    uuid: 79d82fdd-1f60-3de6-8d9c-71fb08a51f57
+    alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /hk1/getData
+    ws-path: /flkfhzz
+    ws-headers:
+      Host: aduibdfg.114514782.xyz
+  - name: 重庆市 移动
+    type: vmess
+    server: 36.134.16.190
+    port: 11023
+    uuid: 8c042a38-71c1-1dcb-00df-54880236e0dc
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
     ws-headers:
       Host: ''
-    tls: true
-  - name: 美国 CloudFlare节点 - 6
+  - name: 美国 V2CROSS.COM
     type: vmess
-    server: cf-lt-dns.sharecentre.online
-    port: 80
-    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
+    server: vde2.0bad.com
+    port: 443
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /shirker
+    ws-path: /chat
     ws-headers:
-      Host: ny1.sharecentrepro.org
-  - name: 美国 CloudFlare节点 - 7
+      Host: vde2.0bad.com
+    tls: true
+  - name: 日本东京 Oracle Cloud - 2
     type: vmess
-    server: 141.101.114.2
-    port: 80
-    uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a
+    server: oracle02.jiting.space
+    port: 25494
+    uuid: 960040e9-ad9b-4e39-fb90-f9ba90c4b7a2
     alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /qatjpji
+    ws-headers:
+      Host: au1.elkcloud.gq
+    tls: true
+  - name: 加拿大+V2CROSS.COM
+    type: trojan
+    server: stw8-tg-data.amazonwebservicess.com
+    port: '443'
+    password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
+  - name: 广东省佛山市 移动 - 2
+    type: vmess
+    server: 25.v2-ray.cyou
+    port: 23625
+    uuid: 0dd19d20-ec86-3680-b256-87237bafa89e
+    alterId: 2
     cipher: auto
     udp: true
     network: ws
     ws-path: /
     ws-headers:
-      Host: lg.v2ray20.xyz
-  - name: 加拿大+V2CROSS.COM - 2
-    type: trojan
-    server: bgptw5.cnamazon.sbs
-    port: '443'
-    password: fe455c1d-33ab-439d-acdb-449bba167fb1
-  - name: 美国 CloudFlare节点 - 8
+      Host: ''
+  - name: 美国 V2CROSS.COM - 2
     type: vmess
-    server: cf-lt.sharecentre.online
-    port: 8080
-    uuid: 4427eafb-3b3a-4265-9a32-fe0ea9cfd736
+    server: usblog.114514782.xyz
+    port: 2052
+    uuid: 79d82fdd-1f60-3de6-8d9c-71fb08a51f57
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /api/v3/download.getFile
+    ws-path: /mtryjhiaogrs
     ws-headers:
-      Host: ssrsub.v01.ssrsub.com
+      Host: ''
+  - name: 重庆市 移动 - 2
+    type: vmess
+    server: 36.134.16.171
+    port: 11023
+    uuid: 8c042a38-71c1-1dcb-00df-54880236e0dc
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 CloudFlare公司CDN节点(shopify)
+    type: vmess
+    server: 23.227.38.99
+    port: 443
+    uuid: 86d37526-5758-4cec-862f-df404b313086
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /3G6WPDL7
+    ws-headers:
+      Host: 1.freek1.xyz
+    tls: true
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 立陶宛 V2CROSS.COM
-      - 乌克兰+V2CROSS.COM
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 英国 V2CROSS.COM
       - 美国 CloudFlare节点
+      - 日本东京 Oracle Cloud
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
       - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
-      - 加拿大+V2CROSS.COM
-      - 广东省佛山市 移动
-      - 美国 CloudFlare节点 - 4
-      - 美国 CloudFlare节点 - 5
       - 巴西圣保罗 CloudFlare节点
-      - 香港 腾讯云
-      - 美国 CloudFlare节点 - 6
-      - 美国 CloudFlare节点 - 7
-      - 加拿大+V2CROSS.COM - 2
-      - 美国 CloudFlare节点 - 8
+      - 广东省佛山市 移动
+      - 乌克兰 V2CROSS.COM
+      - 重庆市 移动
+      - 美国 V2CROSS.COM
+      - 日本东京 Oracle Cloud - 2
+      - 加拿大+V2CROSS.COM
+      - 广东省佛山市 移动 - 2
+      - 美国 V2CROSS.COM - 2
+      - 重庆市 移动 - 2
+      - 美国 CloudFlare公司CDN节点(shopify)
   - name: 自动选择
     type: url-test
     proxies:
-      - 立陶宛 V2CROSS.COM
-      - 乌克兰+V2CROSS.COM
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 英国 V2CROSS.COM
       - 美国 CloudFlare节点
+      - 日本东京 Oracle Cloud
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
       - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
-      - 加拿大+V2CROSS.COM
-      - 广东省佛山市 移动
-      - 美国 CloudFlare节点 - 4
-      - 美国 CloudFlare节点 - 5
       - 巴西圣保罗 CloudFlare节点
-      - 香港 腾讯云
-      - 美国 CloudFlare节点 - 6
-      - 美国 CloudFlare节点 - 7
-      - 加拿大+V2CROSS.COM - 2
-      - 美国 CloudFlare节点 - 8
+      - 广东省佛山市 移动
+      - 乌克兰 V2CROSS.COM
+      - 重庆市 移动
+      - 美国 V2CROSS.COM
+      - 日本东京 Oracle Cloud - 2
+      - 加拿大+V2CROSS.COM
+      - 广东省佛山市 移动 - 2
+      - 美国 V2CROSS.COM - 2
+      - 重庆市 移动 - 2
+      - 美国 CloudFlare公司CDN节点(shopify)
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 立陶宛 V2CROSS.COM
-      - 乌克兰+V2CROSS.COM
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 英国 V2CROSS.COM
       - 美国 CloudFlare节点
+      - 日本东京 Oracle Cloud
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
       - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
-      - 加拿大+V2CROSS.COM
-      - 广东省佛山市 移动
-      - 美国 CloudFlare节点 - 4
-      - 美国 CloudFlare节点 - 5
       - 巴西圣保罗 CloudFlare节点
-      - 香港 腾讯云
-      - 美国 CloudFlare节点 - 6
-      - 美国 CloudFlare节点 - 7
-      - 加拿大+V2CROSS.COM - 2
-      - 美国 CloudFlare节点 - 8
+      - 广东省佛山市 移动
+      - 乌克兰 V2CROSS.COM
+      - 重庆市 移动
+      - 美国 V2CROSS.COM
+      - 日本东京 Oracle Cloud - 2
+      - 加拿大+V2CROSS.COM
+      - 广东省佛山市 移动 - 2
+      - 美国 V2CROSS.COM - 2
+      - 重庆市 移动 - 2
+      - 美国 CloudFlare公司CDN节点(shopify)
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
