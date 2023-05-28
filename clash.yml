@@ -1,56 +1,50 @@
 proxies:
-  - name: 香港 电讯盈科有限公司
+  - name: 加拿大+V2CROSS.COM
+    type: trojan
+    server: tw1.microsoft-orgwly.vip
+    port: '443'
+    password: 9229374b-8ed5-4e78-aba9-eb572c8a5f27
+  - name: 广东省佛山市 移动
     type: vmess
-    server: 112.118.195.16
-    port: 80
-    uuid: b2947942-701b-4de2-91cd-f6810d5d03bc
-    alterId: 0
+    server: 25.v2-ray.cyou
+    port: 23625
+    uuid: 0dd19d20-ec86-3680-b256-87237bafa89e
+    alterId: 2
     cipher: auto
     udp: true
     network: ws
     ws-path: /
     ws-headers:
-      Host: sg2.freeiq.cf
-  - name: 日本+V2CROSS.COM
-    type: trojan
-    server: kr2.microsoft-orgwly.vip
-    port: '443'
-    password: c2f90faa-4097-49fe-a169-19c0badb1038
+      Host: ''
   - name: 美国 CloudFlare节点
     type: vmess
-    server: cf-lt.sharecentre.online
-    port: 80
-    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
+    server: 198.41.203.57
+    port: 2095
+    uuid: 67597b31-fba2-42ba-b3df-b7264d346235
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /shirker
+    ws-path: /tg@hkaa0
     ws-headers:
-      Host: lv3.sharecentrepro.org
-  - name: 加拿大+V2CROSS.COM
+      Host: jp.wyhkaa0.ga
+  - name: 台湾省台北市+scloud.sg
     type: trojan
-    server: 165.154.246.194
+    server: scloudtw2-tg-data.amazonwebservicess.com
     port: '443'
-    password: 4aeda200-44c9-4168-8f2a-a00a72176d35
-  - name: 加拿大+V2CROSS.COM - 2
-    type: trojan
-    server: tw1.microsoft-orgwly.vip
-    port: '443'
-    password: 9229374b-8ed5-4e78-aba9-eb572c8a5f27
-  - name: 香港 腾讯云
+    password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
+  - name: 美国 CloudFlare节点 - 2
     type: vmess
-    server: 43.154.122.126
-    port: 53410
-    uuid: 82adc998-88ab-4c87-8b86-5bc39e80f5b2
-    alterId: 64
+    server: v133.toddns.gq
+    port: 80
+    uuid: cd1836ed-78be-3dcb-9fb1-9d2a4bdfecb8
+    alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /hk1/getData
+    ws-path: /v133PDXkklxLEcOvD
     ws-headers:
-      Host: ''
-    tls: true
+      Host: v133.toddns.gq
   - name: 日本东京 Oracle Cloud
     type: vmess
     server: oracle02.jiting.space
@@ -64,49 +58,53 @@ proxies:
     ws-headers:
       Host: au1.elkcloud.gq
     tls: true
-  - name: 日本+V2CROSS.COM - 2
-    type: trojan
-    server: kr4.microsoft-orgwly.vip
-    port: '443'
-    password: e863739f-a240-4eb5-9abd-780a8ad8ac10
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: 137.175.69.234
+    port: 44920
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 香港 电讯盈科有限公司
-      - 日本+V2CROSS.COM
-      - 美国 CloudFlare节点
       - 加拿大+V2CROSS.COM
-      - 加拿大+V2CROSS.COM - 2
-      - 香港 腾讯云
+      - 广东省佛山市 移动
+      - 美国 CloudFlare节点
+      - 台湾省台北市+scloud.sg
+      - 美国 CloudFlare节点 - 2
       - 日本东京 Oracle Cloud
-      - 日本+V2CROSS.COM - 2
+      - 美国 V2CROSS.COM
   - name: 自动选择
     type: url-test
     proxies:
-      - 香港 电讯盈科有限公司
-      - 日本+V2CROSS.COM
-      - 美国 CloudFlare节点
       - 加拿大+V2CROSS.COM
-      - 加拿大+V2CROSS.COM - 2
-      - 香港 腾讯云
+      - 广东省佛山市 移动
+      - 美国 CloudFlare节点
+      - 台湾省台北市+scloud.sg
+      - 美国 CloudFlare节点 - 2
       - 日本东京 Oracle Cloud
-      - 日本+V2CROSS.COM - 2
+      - 美国 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 香港 电讯盈科有限公司
-      - 日本+V2CROSS.COM
-      - 美国 CloudFlare节点
       - 加拿大+V2CROSS.COM
-      - 加拿大+V2CROSS.COM - 2
-      - 香港 腾讯云
+      - 广东省佛山市 移动
+      - 美国 CloudFlare节点
+      - 台湾省台北市+scloud.sg
+      - 美国 CloudFlare节点 - 2
       - 日本东京 Oracle Cloud
-      - 日本+V2CROSS.COM - 2
+      - 美国 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
