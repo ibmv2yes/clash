@@ -1,104 +1,165 @@
 proxies:
-  - name: 巴西圣保罗 CloudFlare节点
-    type: vmess
-    server: 188.114.97.7
-    port: 443
-    uuid: 9aa6b5ad-c0fc-47f4-a837-f72179d7b662
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /Lsv4s7nS0ErewnEN
-    ws-headers:
-      Host: channel2.unlimiteddev.tk
-    tls: true
   - name: 美国 CloudFlare节点
     type: vmess
-    server: bp.nidaye.eu.org
+    server: cf-lt.sharecentre.online
+    port: 8080
+    uuid: 4427eafb-3b3a-4265-9a32-fe0ea9cfd736
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /api/v3/download.getFile
+    ws-headers:
+      Host: ssrsub.v01.ssrsub.com
+  - name: 美国 加利福尼亚州圣何塞PEG TECH
+    type: vmess
+    server: 142.4.118.150
     port: 443
-    uuid: c77d02e9-5738-46ac-9512-7b67746cad85
-    alterId: 0
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
     cipher: auto
     udp: true
     network: ws
-    ws-path: /ndy58850
+    ws-path: /path/120306182525
     ws-headers:
-      Host: bp.nidaye.eu.org
+      Host: ''
     tls: true
-  - name: 法国 ovh
+  - name: 美国 加利福尼亚州圣何塞PEG TECH - 2
     type: vmess
-    server: fr2-vmess.greenssh.xyz
-    port: 80
-    uuid: 9a555ca5-111c-4a88-a893-ed9b25b817a2
-    alterId: 0
+    server: 142.4.106.251
+    port: 443
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
     cipher: auto
     udp: true
     network: ws
-    ws-path: /vmess
+    ws-path: /path/1683881458407
     ws-headers:
-      Host: fr2-vmess.greenssh.xyz
-  - name: 台湾省台北市+scloud.sg
-    type: trojan
-    server: stw10-tg-data.amazonwebservicess.com
-    port: '443'
-    password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
-  - name: 加拿大+V2CROSS.COM
-    type: trojan
-    server: bgptw1.cnamazon.sbs
-    port: 443?sni=tlsdata.cnamazon.sbs
-    password: 5f9a5d8c-a57b-4da6-baff-490fe4cf8d60
-  - name: 广东省深圳市 移动
+      Host: www.44716766.xyz
+    tls: true
+  - name: 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
     type: vmess
-    server: iepl2.airtcp.vip
-    port: 51002
-    uuid: 1a7680df-81a1-3d89-a221-db81ac4b04df
-    alterId: 2
+    server: 23.224.9.146
+    port: 48729
+    uuid: bb25859e-f6da-4101-989f-b4dd67a22682
+    alterId: 64
     cipher: auto
     udp: true
     network: tcp
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国+V2CROSS.COM
+  - name: 日本+V2CROSS.COM
     type: trojan
-    server: 152.70.74.66
-    port: 443?security=tls&type=tcp&headerType=none
-    password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
+    server: kr3.microsoft-orgwly.vip
+    port: '443'
+    password: bb59547d-0ea9-4af0-97c7-169bcb15f961
+  - name: 加拿大+V2CROSS.COM
+    type: trojan
+    server: bgptw5.cnamazon.sbs
+    port: '443'
+    password: 3e7ad819-03dd-46e1-8292-116fd2cea1c2
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: cf-lt.sharecentre.online
+    port: 80
+    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /shirker
+    ws-headers:
+      Host: lv2.sharecentrepro.org
+  - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: v2ray.online
+    port: 443
+    uuid: 00BBF5B8-173E-6818-9927-5AD1AA073C7D
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /speedtest
+    ws-headers:
+      Host: Kansas.v2ray.online
+    tls: true
+  - name: 法国 OVH SAS
+    type: vmess
+    server: pl2-vmess.greenssh.xyz
+    port: 80
+    uuid: 7487c25a-e899-44d8-9d71-8b9ab4ff5d26
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /vmess
+    ws-headers:
+      Host: pl2-vmess.greenssh.xyz
+  - name: 巴西圣保罗 CloudFlare节点
+    type: vmess
+    server: 188.114.99.190
+    port: 2095
+    uuid: 67597b31-fba2-42ba-b3df-b7264d346235
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /tg@hkaa0
+    ws-headers:
+      Host: jp.wyhkaa0.ga
+  - name: 加拿大+V2CROSS.COM - 2
+    type: trojan
+    server: tw1.microsoft-orgwly.vip
+    port: '443'
+    password: 9229374b-8ed5-4e78-aba9-eb572c8a5f27
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 巴西圣保罗 CloudFlare节点
       - 美国 CloudFlare节点
-      - 法国 ovh
-      - 台湾省台北市+scloud.sg
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国 加利福尼亚州圣何塞PEG TECH - 2
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 日本+V2CROSS.COM
       - 加拿大+V2CROSS.COM
-      - 广东省深圳市 移动
-      - 美国+V2CROSS.COM
+      - 美国 CloudFlare节点 - 2
+      - 美国 CloudFlare节点 - 3
+      - 法国 OVH SAS
+      - 巴西圣保罗 CloudFlare节点
+      - 加拿大+V2CROSS.COM - 2
   - name: 自动选择
     type: url-test
     proxies:
-      - 巴西圣保罗 CloudFlare节点
       - 美国 CloudFlare节点
-      - 法国 ovh
-      - 台湾省台北市+scloud.sg
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国 加利福尼亚州圣何塞PEG TECH - 2
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 日本+V2CROSS.COM
       - 加拿大+V2CROSS.COM
-      - 广东省深圳市 移动
-      - 美国+V2CROSS.COM
+      - 美国 CloudFlare节点 - 2
+      - 美国 CloudFlare节点 - 3
+      - 法国 OVH SAS
+      - 巴西圣保罗 CloudFlare节点
+      - 加拿大+V2CROSS.COM - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 巴西圣保罗 CloudFlare节点
       - 美国 CloudFlare节点
-      - 法国 ovh
-      - 台湾省台北市+scloud.sg
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国 加利福尼亚州圣何塞PEG TECH - 2
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 日本+V2CROSS.COM
       - 加拿大+V2CROSS.COM
-      - 广东省深圳市 移动
-      - 美国+V2CROSS.COM
+      - 美国 CloudFlare节点 - 2
+      - 美国 CloudFlare节点 - 3
+      - 法国 OVH SAS
+      - 巴西圣保罗 CloudFlare节点
+      - 加拿大+V2CROSS.COM - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
