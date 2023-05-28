@@ -1,121 +1,51 @@
 proxies:
-  - name: 乌克兰 V2CROSS.COM
+  - name: 广东省佛山市 移动
     type: vmess
-    server: asbiasncs.114514782.xyz
-    port: 2052
-    uuid: 19d76e75-a56b-3048-bbde-cdd2a8c66fa0
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /auvbwbs
-    ws-headers:
-      Host: asbiasncs.114514782.xyz
-  - name: 加拿大+V2CROSS.COM
-    type: trojan
-    server: 165.154.246.180
-    port: '443'
-    password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
-  - name: 台湾省台北市+scloud.sg
-    type: trojan
-    server: bgptw2.cnamazon.sbs
-    port: '443'
-    password: 4658738d-c3f1-4ebf-ad7a-ee603e3f9690
-  - name: 广东省深圳市 移动
-    type: vmess
-    server: iepl2.airtcp.vip
-    port: 51002
-    uuid: 1a7680df-81a1-3d89-a221-db81ac4b04df
+    server: 8.v2-ray.cyou
+    port: 23608
+    uuid: 0dd19d20-ec86-3680-b256-87237bafa89e
     alterId: 2
     cipher: auto
     udp: true
     network: tcp
     ws-path: /
     ws-headers:
-      Host: ''
+      Host: 8.v2-ray.cyou
   - name: 美国 CloudFlare节点
     type: vmess
-    server: aaaa.wxx.gay
+    server: bp.nidaye.eu.org
     port: 443
-    uuid: 89a80648-fca7-11ed-92cb-000017022008
+    uuid: c77d02e9-5738-46ac-9512-7b67746cad85
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /look
+    ws-path: /ndy58850
     ws-headers:
-      Host: ''
+      Host: bp.nidaye.eu.org
     tls: true
   - name: 美国 CloudFlare节点 - 2
     type: vmess
-    server: namer-us-sea-01-edgecast.qdns.live
-    port: 2053
-    uuid: 94898122-6f57-3272-8ccf-87ab366b29ed
+    server: 172.67.70.11
+    port: 8880
+    uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958
     alterId: 0
     cipher: auto
     udp: true
     network: ws
     ws-path: /
     ws-headers:
-      Host: namer-us-sea-01-edgecast.qdns.live
-    tls: true
-  - name: 日本+V2CROSS.COM
-    type: trojan
-    server: kr1.microsoft-orgwly.vip
-    port: '443'
-    password: a132d6ab-fdd0-4d16-b01b-1bfc43fbe015
-  - name: 北美地区 V2CROSS.COM
-    type: vmess
-    server: armus.114514782.xyz
-    port: 2052
-    uuid: 76d0950e-b8ff-37e7-8ead-79af2a07e455
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /miao
-    ws-headers:
-      Host: armus.114514782.xyz
-  - name: 乌克兰+V2CROSS.COM
-    type: ss
-    server: 193.108.118.34
-    port: '2375'
-    cipher: aes-256-gcm
-    password: faBAoD54k87UJG7
-  - name: 美国+V2CROSS.COM
-    type: trojan
-    server: 74.217.179.36
-    port: 443?sni=18-140-66-207.nhost.00cdn.com
-    password: c563d3c4-ca64-45a4-a7e5-9434fbacde18
-  - name: 美国 CloudFlare节点 - 3
-    type: vmess
-    server: cf-lt.sharecentre.online
-    port: 80
-    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /shirker
-    ws-headers:
-      Host: lv2.sharecentrepro.org
+      Host: lg.trump2023.net
   - name: 香港+Amazon数据中心
     type: trojan
-    server: hk2.microsoft-orgwly.vip
+    server: hk1.microsoft-orgwly.vip
     port: '443'
     password: a132d6ab-fdd0-4d16-b01b-1bfc43fbe015
-  - name: 澳大利亚 Melbourne Girls College
-    type: vmess
-    server: usblog.114514782.xyz
-    port: 2052
-    uuid: 79d82fdd-1f60-3de6-8d9c-71fb08a51f57
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /mtryjhiaogrs
-    ws-headers:
-      Host: ''
+  - name: 新加坡+Amazon数据中心
+    type: trojan
+    server: sg12.microsoft-orgwly.vip
+    port: '16789'
+    password: a132d6ab-fdd0-4d16-b01b-1bfc43fbe015
   - name: 广东省 移动
     type: vmess
     server: 183.237.20.158
@@ -128,102 +58,124 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国 加利福尼亚州圣何塞PEG TECH
+  - name: 乌克兰 V2CROSS.COM
     type: vmess
-    server: 142.4.99.84
-    port: 443
-    uuid: b65da4af-a12a-4a59-9316-4549e12ba62c
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /path/1685094923408
-    ws-headers:
-      Host: www.73332463.xyz
-    tls: true
-  - name: 美国 CloudFlare节点 - 4
-    type: vmess
-    server: klax.keeeeeeir.me
-    port: 443
-    uuid: B3C53EA0-D40F-4937-AA0D-1AAF63484E7C
+    server: asbiasncs.114514782.xyz
+    port: 2052
+    uuid: 19d76e75-a56b-3048-bbde-cdd2a8c66fa0
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /login
+    ws-path: /auvbwbs
     ws-headers:
-      Host: klax.keeeeeeir.me
-    tls: true
-  - name: 加拿大+V2CROSS.COM - 2
+      Host: asbiasncs.114514782.xyz
+  - name: 乌克兰+V2CROSS.COM
+    type: ss
+    server: 193.108.118.34
+    port: '2375'
+    cipher: aes-256-gcm
+    password: faBAoD54k87UJG7
+  - name: 香港+Amazon数据中心 - 2
     type: trojan
-    server: stw10-tg-data.amazonwebservicess.com
+    server: hk7.microsoft-orgwly.vip
+    port: '80'
+    password: a132d6ab-fdd0-4d16-b01b-1bfc43fbe015
+  - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: cf.yxjnode.com
+    port: 80
+    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /yxzbp
+    ws-headers:
+      Host: buyvm2.yxjnode.com
+  - name: 重庆市 移动
+    type: vmess
+    server: 36.134.16.171
+    port: 11023
+    uuid: 8c042a38-71c1-1dcb-00df-54880236e0dc
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 日本东京 Oracle Cloud
+    type: vmess
+    server: oracle02.jiting.space
+    port: 25494
+    uuid: 960040e9-ad9b-4e39-fb90-f9ba90c4b7a2
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /qatjpji
+    ws-headers:
+      Host: au1.elkcloud.gq
+    tls: true
+  - name: 日本+V2CROSS.COM
+    type: trojan
+    server: kr5.microsoft-orgwly.vip
     port: '443'
-    password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
+    password: a132d6ab-fdd0-4d16-b01b-1bfc43fbe015
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 乌克兰 V2CROSS.COM
-      - 加拿大+V2CROSS.COM
-      - 台湾省台北市+scloud.sg
-      - 广东省深圳市 移动
+      - 广东省佛山市 移动
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
-      - 日本+V2CROSS.COM
-      - 北美地区 V2CROSS.COM
-      - 乌克兰+V2CROSS.COM
-      - 美国+V2CROSS.COM
-      - 美国 CloudFlare节点 - 3
       - 香港+Amazon数据中心
-      - 澳大利亚 Melbourne Girls College
+      - 新加坡+Amazon数据中心
       - 广东省 移动
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国 CloudFlare节点 - 4
-      - 加拿大+V2CROSS.COM - 2
+      - 乌克兰 V2CROSS.COM
+      - 乌克兰+V2CROSS.COM
+      - 香港+Amazon数据中心 - 2
+      - 美国 CloudFlare节点 - 3
+      - 重庆市 移动
+      - 日本东京 Oracle Cloud
+      - 日本+V2CROSS.COM
   - name: 自动选择
     type: url-test
     proxies:
-      - 乌克兰 V2CROSS.COM
-      - 加拿大+V2CROSS.COM
-      - 台湾省台北市+scloud.sg
-      - 广东省深圳市 移动
+      - 广东省佛山市 移动
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
-      - 日本+V2CROSS.COM
-      - 北美地区 V2CROSS.COM
-      - 乌克兰+V2CROSS.COM
-      - 美国+V2CROSS.COM
-      - 美国 CloudFlare节点 - 3
       - 香港+Amazon数据中心
-      - 澳大利亚 Melbourne Girls College
+      - 新加坡+Amazon数据中心
       - 广东省 移动
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国 CloudFlare节点 - 4
-      - 加拿大+V2CROSS.COM - 2
+      - 乌克兰 V2CROSS.COM
+      - 乌克兰+V2CROSS.COM
+      - 香港+Amazon数据中心 - 2
+      - 美国 CloudFlare节点 - 3
+      - 重庆市 移动
+      - 日本东京 Oracle Cloud
+      - 日本+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 乌克兰 V2CROSS.COM
-      - 加拿大+V2CROSS.COM
-      - 台湾省台北市+scloud.sg
-      - 广东省深圳市 移动
+      - 广东省佛山市 移动
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
-      - 日本+V2CROSS.COM
-      - 北美地区 V2CROSS.COM
-      - 乌克兰+V2CROSS.COM
-      - 美国+V2CROSS.COM
-      - 美国 CloudFlare节点 - 3
       - 香港+Amazon数据中心
-      - 澳大利亚 Melbourne Girls College
+      - 新加坡+Amazon数据中心
       - 广东省 移动
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国 CloudFlare节点 - 4
-      - 加拿大+V2CROSS.COM - 2
+      - 乌克兰 V2CROSS.COM
+      - 乌克兰+V2CROSS.COM
+      - 香港+Amazon数据中心 - 2
+      - 美国 CloudFlare节点 - 3
+      - 重庆市 移动
+      - 日本东京 Oracle Cloud
+      - 日本+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
