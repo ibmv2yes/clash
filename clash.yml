@@ -1,88 +1,36 @@
 proxies:
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: 190.93.246.54
-    port: 8080
-    uuid: d7cf7b64-bf1c-46bd-cf39-90a31393843b
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /qwer
-    ws-headers:
-      Host: uyaa.vtcss.top
-  - name: 日本+V2CROSS.COM
+  - name: 香港+Amazon数据中心
     type: trojan
-    server: hk5.microsoft-orgwly.vip
+    server: hk9.microsoft-orgwly.vip
     port: '443'
-    password: e863739f-a240-4eb5-9abd-780a8ad8ac10
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: cf-lt.sharecentre.online
-    port: 8080
-    uuid: 4427eafb-3b3a-4265-9a32-fe0ea9cfd736
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /api/v3/download.getFile
-    ws-headers:
-      Host: ssrsub.v01.ssrsub.com
-  - name: 台湾省台北市+scloud.sg
+    password: 3177337c-9316-4f3d-98f4-757e8a7d92bc
+  - name: 美国+Microsoft公司
     type: trojan
-    server: stw10-tg-data.amazonwebservicess.com
+    server: azjp1.downloadvip.cfd
+    port: 443?sni=us1.xn--mes358acgm99l.com
+    password: 8d05cc82-7059-4b73-92ff-f8b6e407fd80
+  - name: 加拿大+V2CROSS.COM
+    type: trojan
+    server: stw8-tg-data.amazonwebservicess.com
     port: '443'
     password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
-  - name: 重庆市 移动
+  - name: 广东省 移动
     type: vmess
-    server: 36.134.16.171
-    port: 11023
-    uuid: 8c042a38-71c1-1dcb-00df-54880236e0dc
-    alterId: 0
+    server: 183.237.20.158
+    port: 40095
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
     cipher: auto
     udp: true
     network: tcp
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国 CloudFlare公司CDN节点(shopify)
-    type: vmess
-    server: 23.227.38.99
-    port: 443
-    uuid: 86d37526-5758-4cec-862f-df404b313086
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /3G6WPDL7
-    ws-headers:
-      Host: 1.freek1.xyz
-    tls: true
-  - name: 巴西圣保罗 CloudFlare节点
-    type: vmess
-    server: 188.114.99.190
-    port: 2095
-    uuid: 67597b31-fba2-42ba-b3df-b7264d346235
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /tg@hkaa0
-    ws-headers:
-      Host: jp.wyhkaa0.ga
-  - name: 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
-    type: vmess
-    server: 23.224.110.183
-    port: 443
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /path/080712342310
-    ws-headers:
-      Host: ''
-    tls: true
+  - name: 美国+加利福尼亚州洛杉矶Level3通信(DIA)
+    type: trojan
+    server: usa.stablize.top
+    port: '443'
+    password: ad7a2d36-d27b-411e-8e2f-41fea06ef00f
   - name: 美国 加利福尼亚州圣何塞PEG TECH
     type: vmess
     server: 142.4.99.84
@@ -96,47 +44,115 @@ proxies:
     ws-headers:
       Host: www.73332463.xyz
     tls: true
+  - name: 日本 东京阿里云
+    type: vmess
+    server: cdncf.scyu.app
+    port: 8080
+    uuid: 4427eafb-3b3a-4265-9a32-fe0ea9cfd736
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /api/v3/download.getFile
+    ws-headers:
+      Host: ssrsub.v01.ssrsub.com
+  - name: 美国 加利福尼亚州圣何塞PEG TECH - 2
+    type: vmess
+    server: 142.4.99.84
+    port: 443
+    uuid: b65da4af-a12a-4a59-9316-4549e12ba62c
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /path/1685094923408
+    ws-headers:
+      Host: www.73332463.xyz
+    tls: true
+  - name: 加拿大+V2CROSS.COM - 2
+    type: trojan
+    server: 165.154.246.194
+    port: '443'
+    password: 4aeda200-44c9-4168-8f2a-a00a72176d35
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: cf-lt.sharecentre.online
+    port: 80
+    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /shirker
+    ws-headers:
+      Host: lv2.sharecentrepro.org
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: 141.101.114.2
+    port: 80
+    uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: lg.v2ray20.xyz
+  - name: 日本+V2CROSS.COM
+    type: trojan
+    server: kr2.microsoft-orgwly.vip
+    port: '443'
+    password: bb59547d-0ea9-4af0-97c7-169bcb15f961
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 CloudFlare节点
-      - 日本+V2CROSS.COM
-      - 美国 CloudFlare节点 - 2
-      - 台湾省台北市+scloud.sg
-      - 重庆市 移动
-      - 美国 CloudFlare公司CDN节点(shopify)
-      - 巴西圣保罗 CloudFlare节点
-      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 香港+Amazon数据中心
+      - 美国+Microsoft公司
+      - 加拿大+V2CROSS.COM
+      - 广东省 移动
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
       - 美国 加利福尼亚州圣何塞PEG TECH
+      - 日本 东京阿里云
+      - 美国 加利福尼亚州圣何塞PEG TECH - 2
+      - 加拿大+V2CROSS.COM - 2
+      - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 - 2
+      - 日本+V2CROSS.COM
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 CloudFlare节点
-      - 日本+V2CROSS.COM
-      - 美国 CloudFlare节点 - 2
-      - 台湾省台北市+scloud.sg
-      - 重庆市 移动
-      - 美国 CloudFlare公司CDN节点(shopify)
-      - 巴西圣保罗 CloudFlare节点
-      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 香港+Amazon数据中心
+      - 美国+Microsoft公司
+      - 加拿大+V2CROSS.COM
+      - 广东省 移动
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
       - 美国 加利福尼亚州圣何塞PEG TECH
+      - 日本 东京阿里云
+      - 美国 加利福尼亚州圣何塞PEG TECH - 2
+      - 加拿大+V2CROSS.COM - 2
+      - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 - 2
+      - 日本+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 CloudFlare节点
-      - 日本+V2CROSS.COM
-      - 美国 CloudFlare节点 - 2
-      - 台湾省台北市+scloud.sg
-      - 重庆市 移动
-      - 美国 CloudFlare公司CDN节点(shopify)
-      - 巴西圣保罗 CloudFlare节点
-      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 香港+Amazon数据中心
+      - 美国+Microsoft公司
+      - 加拿大+V2CROSS.COM
+      - 广东省 移动
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
       - 美国 加利福尼亚州圣何塞PEG TECH
+      - 日本 东京阿里云
+      - 美国 加利福尼亚州圣何塞PEG TECH - 2
+      - 加拿大+V2CROSS.COM - 2
+      - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 - 2
+      - 日本+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
