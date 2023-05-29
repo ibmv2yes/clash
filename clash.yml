@@ -1,16 +1,55 @@
 proxies:
   - name: 美国 加利福尼亚州圣何塞PEG TECH
     type: vmess
-    server: 142.4.103.199
-    port: 45252
+    server: 142.4.118.150
+    port: 443
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
     udp: true
-    network: tcp
+    network: ws
+    ws-path: /path/120306182525
+    ws-headers:
+      Host: www.16616906.xyz
+    tls: true
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: 162.159.35.77
+    port: 443
+    uuid: c91c7cb5-609c-4fae-818e-9194c3d46969
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /linkws
+    ws-headers:
+      Host: afrhms12.best-tizi.top
+    tls: true
+  - name: 美国 CloudFlare公司CDN节点(shopify)
+    type: vmess
+    server: cf6.biger.club
+    port: 2087
+    uuid: 5aa4dc20-eb72-4a22-990f-94ae5ce7a743
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
     ws-path: /
     ws-headers:
-      Host: ''
+      Host: us2.biger.club
+    tls: true
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: cf-lt.sharecentre.online
+    port: 8080
+    uuid: 4427eafb-3b3a-4265-9a32-fe0ea9cfd736
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /api/v3/download.getFile
+    ws-headers:
+      Host: ssrsub.v02.ssrsub.com
   - name: 广东省佛山市 移动
     type: vmess
     server: 8.v2-ray.cyou
@@ -23,49 +62,67 @@ proxies:
     ws-path: /
     ws-headers:
       Host: 8.v2-ray.cyou
-  - name: 广东省深圳市 移动
+  - name: 日本东京 Oracle Cloud
     type: vmess
-    server: iepl2.airtcp.vip
-    port: 51002
-    uuid: 1a7680df-81a1-3d89-a221-db81ac4b04df
-    alterId: 2
+    server: oracle02.jiting.space
+    port: 25494
+    uuid: 960040e9-ad9b-4e39-fb90-f9ba90c4b7a2
+    alterId: 0
     cipher: auto
     udp: true
     network: tcp
-    ws-path: /
+    ws-path: /qatjpji
     ws-headers:
-      Host: ''
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: cdnjs.com
-    port: 443
-    uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /speedtest
-    ws-headers:
-      Host: Amsterdam.kotick.site
+      Host: au1.elkcloud.gq
     tls: true
-  - name: 韩国 首尔Choopa数据中心
+  - name: 美国 CloudFlare公司CDN节点(shopify) - 2
     type: vmess
-    server: 141.164.43.153
-    port: 80
-    uuid: 8afbd60f-aa52-49e6-8f37-9aca0b90f2c8
+    server: 23.227.38.99
+    port: 443
+    uuid: 86d37526-5758-4cec-862f-df404b313086
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /zingfast.vn
+    ws-path: /3G6WPDL7
     ws-headers:
-      Host: dl.kgvn.garenanow.com
-  - name: 辽宁省鞍山市+电信
-    type: ss
-    server: free.themars.top
-    port: '32103'
-    cipher: chacha20-ietf-poly1305
-    password: b89b39c2-dc8d-4595-a4c5-54b4fbab3fc2
+      Host: 1.freek1.xyz
+    tls: true
+  - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: cf.yxjnode.com
+    port: 80
+    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /yxzbp
+    ws-headers:
+      Host: dp3.yxjnode.com
+  - name: 美国加利福尼亚州圣克拉拉 腾讯云
+    type: vmess
+    server: mg.txy.a.node1.jijio.stream
+    port: 38999
+    uuid: adc570f1-d591-4a5a-93f0-0013bba3f116
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /wesad
+    ws-headers:
+      Host: mg.txy.a.node1.jijio.stream
+    tls: true
+  - name: 美国 Cloudinnovation数据中心
+    type: vmess
+    server: 154.85.1.86
+    port: 49506
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-headers: {}
 proxy-groups:
   - name: Free-servers
     type: select
@@ -73,31 +130,43 @@ proxy-groups:
       - 自动选择
       - 故障转移
       - 美国 加利福尼亚州圣何塞PEG TECH
-      - 广东省佛山市 移动
-      - 广东省深圳市 移动
       - 美国 CloudFlare节点
-      - 韩国 首尔Choopa数据中心
-      - 辽宁省鞍山市+电信
+      - 美国 CloudFlare公司CDN节点(shopify)
+      - 美国 CloudFlare节点 - 2
+      - 广东省佛山市 移动
+      - 日本东京 Oracle Cloud
+      - 美国 CloudFlare公司CDN节点(shopify) - 2
+      - 美国 CloudFlare节点 - 3
+      - 美国加利福尼亚州圣克拉拉 腾讯云
+      - 美国 Cloudinnovation数据中心
   - name: 自动选择
     type: url-test
     proxies:
       - 美国 加利福尼亚州圣何塞PEG TECH
-      - 广东省佛山市 移动
-      - 广东省深圳市 移动
       - 美国 CloudFlare节点
-      - 韩国 首尔Choopa数据中心
-      - 辽宁省鞍山市+电信
+      - 美国 CloudFlare公司CDN节点(shopify)
+      - 美国 CloudFlare节点 - 2
+      - 广东省佛山市 移动
+      - 日本东京 Oracle Cloud
+      - 美国 CloudFlare公司CDN节点(shopify) - 2
+      - 美国 CloudFlare节点 - 3
+      - 美国加利福尼亚州圣克拉拉 腾讯云
+      - 美国 Cloudinnovation数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
       - 美国 加利福尼亚州圣何塞PEG TECH
-      - 广东省佛山市 移动
-      - 广东省深圳市 移动
       - 美国 CloudFlare节点
-      - 韩国 首尔Choopa数据中心
-      - 辽宁省鞍山市+电信
+      - 美国 CloudFlare公司CDN节点(shopify)
+      - 美国 CloudFlare节点 - 2
+      - 广东省佛山市 移动
+      - 日本东京 Oracle Cloud
+      - 美国 CloudFlare公司CDN节点(shopify) - 2
+      - 美国 CloudFlare节点 - 3
+      - 美国加利福尼亚州圣克拉拉 腾讯云
+      - 美国 Cloudinnovation数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
