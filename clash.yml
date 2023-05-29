@@ -1,114 +1,64 @@
 proxies:
-  - name: 美国 CloudFlare节点
+  - name: 美国加利福尼亚州洛杉矶 PetaExpress
     type: vmess
-    server: cdn.noice.id
-    port: 80
-    uuid: 8bb07c55-0ef5-4d69-b131-fd9bab420ae8
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /v2ray
-    ws-headers:
-      Host: 8fhq6a.aiossh.my.id
-  - name: 香港 BGP.NET CN2数据中心
-    type: vmess
-    server: 202.79.172.53
+    server: 198.2.208.189
     port: 443
-    uuid: 30216206-14b7-40e7-995d-61c1219ba584
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
     udp: true
     network: ws
-    ws-path: /path/220128071100
+    ws-path: /path/1683715826870
     ws-headers:
-      Host: ''
+      Host: www.62317155.xyz
     tls: true
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: 162.159.35.77
-    port: 443
-    uuid: c91c7cb5-609c-4fae-818e-9194c3d46969
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /linkws
-    ws-headers:
-      Host: afrhms12.best-tizi.top
-    tls: true
-  - name: 新加坡+Amazon数据中心
+  - name: 美国+惠普HP
     type: trojan
-    server: sg4.microsoft-orgwly.vip
-    port: 12040?type=tcp&security=tls&sni=tls.microsoft-orgwly.vip
+    server: jp3.microsoft-orgwly.vip
+    port: 35751?type=tcp&security=tls&sni=tls.microsoft-orgwly.vip
     password: 37353bae-4cbf-447a-bf5a-d6cb7d9b6d5c
-  - name: 美国+Amazon数据中心
-    type: trojan
-    server: gb2.microsoft-orgwly.vip
-    port: 30630?type=tcp&security=tls&sni=tls.microsoft-orgwly.vip
-    password: 37353bae-4cbf-447a-bf5a-d6cb7d9b6d5c
-  - name: 广东省深圳市 移动
+  - name: 广东省 移动
     type: vmess
-    server: iepl2.airtcp.vip
-    port: 51002
-    uuid: 1a7680df-81a1-3d89-a221-db81ac4b04df
-    alterId: 2
+    server: 183.237.20.158
+    port: 40095
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
     cipher: auto
     udp: true
     network: tcp
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国 CloudFlare节点 - 3
-    type: vmess
-    server: cf-lt.sharecentre.online
-    port: 80
-    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /shirker
-    ws-headers:
-      Host: gcore.ilovescp.com
-  - name: 丹麦 V2CROSS.COM
-    type: vmess
-    server: CSGO.COM
-    port: 2086
-    uuid: ef1f6e7e-3d54-43b0-b39e-3af459fea090
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: lu1.hug1013.me
-  - name: 美国 CloudFlare节点 - 4
-    type: vmess
-    server: cf.yxjnode.com
-    port: 80
-    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /yxzbp
-    ws-headers:
-      Host: dp3.yxjnode.com
-  - name: 日本+V2CROSS.COM
+  - name: 香港+Amazon数据中心
     type: trojan
-    server: kr2.microsoft-orgwly.vip
-    port: 443?type=tcp&security=tls&sni=tls.microsoft-orgwly.vip
+    server: hk8.microsoft-orgwly.vip
+    port: 80?type=tcp&security=tls&sni=tls.microsoft-orgwly.vip
     password: 37353bae-4cbf-447a-bf5a-d6cb7d9b6d5c
-  - name: 日本+V2CROSS.COM - 2
+  - name: 上海市+电信
     type: trojan
-    server: kr3.microsoft-orgwly.vip
-    port: 443?type=tcp&security=tls&sni=tls.microsoft-orgwly.vip
+    server: official.taipeicitygovernment.kiev.ua
+    port: '8443'
+    password: 5505f6ba-cd37-30ce-8f92-be4120c83d7f
+  - name: 美国+加利福尼亚州旧金山Amazon数据中心
+    type: trojan
+    server: us2.microsoft-orgwly.vip
+    port: 12083?type=tcp&security=tls&sni=tls.microsoft-orgwly.vip
     password: 37353bae-4cbf-447a-bf5a-d6cb7d9b6d5c
-  - name: 新加坡+Amazon数据中心 - 2
+  - name: 瑞典+V2CROSS.COM
+    type: ss
+    server: 167.88.63.99
+    port: '2375'
+    cipher: aes-256-gcm
+    password: faBAoD54k87UJG7
+  - name: 印度+孟买Amazon数据中心
     type: trojan
-    server: sg5.microsoft-orgwly.vip
-    port: 11040?type=tcp&security=tls&sni=tls.microsoft-orgwly.vip
+    server: in2.microsoft-orgwly.vip
+    port: 32029?type=tcp&security=tls&sni=tls.microsoft-orgwly.vip
+    password: 37353bae-4cbf-447a-bf5a-d6cb7d9b6d5c
+  - name: 美国+惠普HP - 2
+    type: trojan
+    server: jp8.microsoft-orgwly.vip
+    port: 34622?type=tcp&security=tls&sni=tls.microsoft-orgwly.vip
     password: 37353bae-4cbf-447a-bf5a-d6cb7d9b6d5c
 proxy-groups:
   - name: Free-servers
@@ -116,50 +66,41 @@ proxy-groups:
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 CloudFlare节点
-      - 香港 BGP.NET CN2数据中心
-      - 美国 CloudFlare节点 - 2
-      - 新加坡+Amazon数据中心
-      - 美国+Amazon数据中心
-      - 广东省深圳市 移动
-      - 美国 CloudFlare节点 - 3
-      - 丹麦 V2CROSS.COM
-      - 美国 CloudFlare节点 - 4
-      - 日本+V2CROSS.COM
-      - 日本+V2CROSS.COM - 2
-      - 新加坡+Amazon数据中心 - 2
+      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 美国+惠普HP
+      - 广东省 移动
+      - 香港+Amazon数据中心
+      - 上海市+电信
+      - 美国+加利福尼亚州旧金山Amazon数据中心
+      - 瑞典+V2CROSS.COM
+      - 印度+孟买Amazon数据中心
+      - 美国+惠普HP - 2
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 CloudFlare节点
-      - 香港 BGP.NET CN2数据中心
-      - 美国 CloudFlare节点 - 2
-      - 新加坡+Amazon数据中心
-      - 美国+Amazon数据中心
-      - 广东省深圳市 移动
-      - 美国 CloudFlare节点 - 3
-      - 丹麦 V2CROSS.COM
-      - 美国 CloudFlare节点 - 4
-      - 日本+V2CROSS.COM
-      - 日本+V2CROSS.COM - 2
-      - 新加坡+Amazon数据中心 - 2
+      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 美国+惠普HP
+      - 广东省 移动
+      - 香港+Amazon数据中心
+      - 上海市+电信
+      - 美国+加利福尼亚州旧金山Amazon数据中心
+      - 瑞典+V2CROSS.COM
+      - 印度+孟买Amazon数据中心
+      - 美国+惠普HP - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 CloudFlare节点
-      - 香港 BGP.NET CN2数据中心
-      - 美国 CloudFlare节点 - 2
-      - 新加坡+Amazon数据中心
-      - 美国+Amazon数据中心
-      - 广东省深圳市 移动
-      - 美国 CloudFlare节点 - 3
-      - 丹麦 V2CROSS.COM
-      - 美国 CloudFlare节点 - 4
-      - 日本+V2CROSS.COM
-      - 日本+V2CROSS.COM - 2
-      - 新加坡+Amazon数据中心 - 2
+      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 美国+惠普HP
+      - 广东省 移动
+      - 香港+Amazon数据中心
+      - 上海市+电信
+      - 美国+加利福尼亚州旧金山Amazon数据中心
+      - 瑞典+V2CROSS.COM
+      - 印度+孟买Amazon数据中心
+      - 美国+惠普HP - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
