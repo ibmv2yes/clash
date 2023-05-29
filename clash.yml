@@ -1,164 +1,208 @@
 proxies:
-  - name: 加拿大+V2CROSS.COM
-    type: trojan
-    server: bgptw5.cnamazon.sbs
-    port: 443?type=tcp&sni=tlsdata.cnamazon.sbs&allowInsecure=1
-    password: bc2a1eb1-a706-4ee5-95a6-732a6c324142
-  - name: 广东省佛山市 移动
+  - name: 美国 加利福尼亚州费利蒙Linode数据中心
     type: vmess
-    server: 8.v2-ray.cyou
-    port: 23608
-    uuid: 0dd19d20-ec86-3680-b256-87237bafa89e
-    alterId: 2
+    server: vus4.0bad.com
+    port: 443
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
+    alterId: 0
     cipher: auto
     udp: true
-    network: tcp
-    ws-path: /
+    network: ws
+    ws-path: /chat
     ws-headers:
-      Host: 8.v2-ray.cyou
+      Host: vus4.0bad.com
+    tls: true
   - name: 日本+V2CROSS.COM
     type: trojan
-    server: kr2.microsoft-orgwly.vip
-    port: '443'
-    password: bb59547d-0ea9-4af0-97c7-169bcb15f961
+    server: kr1.microsoft-orgwly.vip
+    port: 443?sni=tls.microsoft-orgwly.vip
+    password: 43679727-548c-41b4-b13d-a8aaace7bf13
+  - name: 乌克兰+V2CROSS.COM
+    type: ss
+    server: 193.108.118.79
+    port: '7307'
+    cipher: aes-256-gcm
+    password: FoOiGlkAA9yPEGP
+  - name: 德国 黑森州法兰克福Linode数据中心
+    type: vmess
+    server: vde2.0bad.com
+    port: 443
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /chat
+    ws-headers:
+      Host: vde2.0bad.com
+    tls: true
+  - name: 乌克兰+V2CROSS.COM - 2
+    type: ss
+    server: 193.108.118.79
+    port: '7306'
+    cipher: aes-256-gcm
+    password: FoOiGlkAA9yPEGP
   - name: 美国 CloudFlare节点
     type: vmess
-    server: scaleway.696960.xyz
-    port: 443
-    uuid: e357cd63-f1a5-4c8e-c42e-26da11207fee
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /root/
-    ws-headers:
-      Host: scaleway.696960.xyz
-    tls: true
-  - name: 法国 ovh
-    type: vmess
-    server: fr2-vmess.greenssh.xyz
+    server: cdn.noice.id
     port: 80
-    uuid: 9a555ca5-111c-4a88-a893-ed9b25b817a2
+    uuid: 8bb07c55-0ef5-4d69-b131-fd9bab420ae8
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /vmess
+    ws-path: /v2ray
     ws-headers:
-      Host: fr2-vmess.greenssh.xyz
+      Host: 8fhq6a.aiossh.my.id
+  - name: 美国 加利福尼亚州圣何塞PEG TECH
+    type: vmess
+    server: 142.4.118.150
+    port: 443
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /path/120306182525
+    ws-headers:
+      Host: ''
+    tls: true
+  - name: 加拿大+V2CROSS.COM
+    type: trojan
+    server: stw8-tg-data.amazonwebservicess.com
+    port: '443'
+    password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
+  - name: 美国 CloudFlare公司CDN节点(shopify)
+    type: vmess
+    server: 23.227.38.99
+    port: 443
+    uuid: 86d37526-5758-4cec-862f-df404b313086
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /3G6WPDL7
+    ws-headers:
+      Host: 1.freek1.xyz
+    tls: true
+  - name: 美国+V2CROSS.COM
+    type: trojan
+    server: 152.70.74.66
+    port: 443?security=tls&type=tcp&headerType=none
+    password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
   - name: 美国 CloudFlare节点 - 2
     type: vmess
-    server: cf-yd-dns.sharecentre.online
-    port: 80
-    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
+    server: cf-lt.sharecentre.online
+    port: 8080
+    uuid: 4427eafb-3b3a-4265-9a32-fe0ea9cfd736
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /shirker
+    ws-path: /api/v3/download.getFile
     ws-headers:
-      Host: do.sharecentrepro.com
-  - name: 日本东京 Oracle Cloud
+      Host: ssrsub.v01.ssrsub.com
+  - name: 美国 CloudFlare节点 - 3
     type: vmess
-    server: oracle02.jiting.space
-    port: 25494
-    uuid: 960040e9-ad9b-4e39-fb90-f9ba90c4b7a2
+    server: bp.nidaye.eu.org
+    port: 443
+    uuid: c77d02e9-5738-46ac-9512-7b67746cad85
     alterId: 0
     cipher: auto
     udp: true
-    network: tcp
-    ws-path: /qatjpji
+    network: ws
+    ws-path: /ndy58850
     ws-headers:
-      Host: au1.elkcloud.gq
+      Host: bp.nidaye.eu.org
     tls: true
-  - name: 广东省深圳市 移动
+  - name: 亚太地区+V2CROSS.COM
+    type: trojan
+    server: vn2.microsoft-orgwly.vip
+    port: 443?type=tcp&sni=tls.microsoft-orgwly.vip&allowInsecure=1
+    password: fcf74125-99de-4df3-af94-552a0b1ee021
+  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
     type: vmess
-    server: iepl2.airtcp.vip
-    port: 51002
-    uuid: 1a7680df-81a1-3d89-a221-db81ac4b04df
-    alterId: 2
+    server: 192.74.228.179
+    port: 42857
+    uuid: 051b844f-efe3-4847-92aa-66b5de0b6d4e
+    alterId: 64
     cipher: auto
     udp: true
     network: tcp
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国 CloudFlare节点 - 3
+  - name: 瑞典 Oracle Corporation
     type: vmess
-    server: v133.toddns.gq
+    server: opc.jp.quick-connect.buzz
     port: 80
-    uuid: cd1836ed-78be-3dcb-9fb1-9d2a4bdfecb8
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /v133PDXkklxLEcOvD
-    ws-headers:
-      Host: v133.toddns.gq
-  - name: 香港 电讯盈科有限公司
-    type: vmess
-    server: 112.118.195.16
-    port: 80
-    uuid: b2947942-701b-4de2-91cd-f6810d5d03bc
+    uuid: 580dd3ed-d79a-46a7-a623-a5be28f7a2da
     alterId: 0
     cipher: auto
     udp: true
     network: ws
     ws-path: /
     ws-headers:
-      Host: sg2.freeiq.cf
-  - name: 上海市+电信
-    type: trojan
-    server: official.taipeicitygovernment.kiev.ua
-    port: 8443?sni=66.42.40.132
-    password: 5505f6ba-cd37-30ce-8f92-be4120c83d7f
+      Host: dm.toutiao.com
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 加拿大+V2CROSS.COM
-      - 广东省佛山市 移动
+      - 美国 加利福尼亚州费利蒙Linode数据中心
       - 日本+V2CROSS.COM
+      - 乌克兰+V2CROSS.COM
+      - 德国 黑森州法兰克福Linode数据中心
+      - 乌克兰+V2CROSS.COM - 2
       - 美国 CloudFlare节点
-      - 法国 ovh
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 加拿大+V2CROSS.COM
+      - 美国 CloudFlare公司CDN节点(shopify)
+      - 美国+V2CROSS.COM
       - 美国 CloudFlare节点 - 2
-      - 日本东京 Oracle Cloud
-      - 广东省深圳市 移动
       - 美国 CloudFlare节点 - 3
-      - 香港 电讯盈科有限公司
-      - 上海市+电信
+      - 亚太地区+V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 瑞典 Oracle Corporation
   - name: 自动选择
     type: url-test
     proxies:
-      - 加拿大+V2CROSS.COM
-      - 广东省佛山市 移动
+      - 美国 加利福尼亚州费利蒙Linode数据中心
       - 日本+V2CROSS.COM
+      - 乌克兰+V2CROSS.COM
+      - 德国 黑森州法兰克福Linode数据中心
+      - 乌克兰+V2CROSS.COM - 2
       - 美国 CloudFlare节点
-      - 法国 ovh
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 加拿大+V2CROSS.COM
+      - 美国 CloudFlare公司CDN节点(shopify)
+      - 美国+V2CROSS.COM
       - 美国 CloudFlare节点 - 2
-      - 日本东京 Oracle Cloud
-      - 广东省深圳市 移动
       - 美国 CloudFlare节点 - 3
-      - 香港 电讯盈科有限公司
-      - 上海市+电信
+      - 亚太地区+V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 瑞典 Oracle Corporation
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 加拿大+V2CROSS.COM
-      - 广东省佛山市 移动
+      - 美国 加利福尼亚州费利蒙Linode数据中心
       - 日本+V2CROSS.COM
+      - 乌克兰+V2CROSS.COM
+      - 德国 黑森州法兰克福Linode数据中心
+      - 乌克兰+V2CROSS.COM - 2
       - 美国 CloudFlare节点
-      - 法国 ovh
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 加拿大+V2CROSS.COM
+      - 美国 CloudFlare公司CDN节点(shopify)
+      - 美国+V2CROSS.COM
       - 美国 CloudFlare节点 - 2
-      - 日本东京 Oracle Cloud
-      - 广东省深圳市 移动
       - 美国 CloudFlare节点 - 3
-      - 香港 电讯盈科有限公司
-      - 上海市+电信
+      - 亚太地区+V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 瑞典 Oracle Corporation
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
