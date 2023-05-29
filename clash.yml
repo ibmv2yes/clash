@@ -1,60 +1,16 @@
 proxies:
-  - name: 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+  - name: 美国 加利福尼亚州圣何塞PEG TECH
     type: vmess
-    server: 23.224.110.184
-    port: 443
+    server: 142.4.103.199
+    port: 45252
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
     udp: true
-    network: ws
-    ws-path: /path/080712342310
+    network: tcp
+    ws-path: /
     ws-headers:
       Host: ''
-    tls: true
-  - name: 美国 CloudFlare公司CDN节点(shopify)
-    type: vmess
-    server: cf6.biger.club
-    port: 2087
-    uuid: 5aa4dc20-eb72-4a22-990f-94ae5ce7a743
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: us2.biger.club
-    tls: true
-  - name: 美国 Amazon EC2服务器
-    type: vmess
-    server: kr4.jisuyun.co
-    port: 443
-    uuid: 778762c1-251c-4125-ba11-fceb0785db58
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: kr4.jisuyun.co
-  - name: 香港+Amazon数据中心
-    type: trojan
-    server: hk8.microsoft-orgwly.vip
-    port: 80?sni=hk8.microsoft-orgwly.vip
-    password: 7b44fc1f-fd16-4417-a14f-3a883ffa6368
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: channel2.unlimiteddev.tk
-    port: 443
-    uuid: 9aa6b5ad-c0fc-47f4-a837-f72179d7b662
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /Lsv4s7nS0ErewnEN
-    ws-headers:
-      Host: channel2.unlimiteddev.tk
-    tls: true
   - name: 广东省佛山市 移动
     type: vmess
     server: 8.v2-ray.cyou
@@ -67,187 +23,81 @@ proxies:
     ws-path: /
     ws-headers:
       Host: 8.v2-ray.cyou
-  - name: 美国 CloudFlare节点 - 2
+  - name: 广东省深圳市 移动
     type: vmess
-    server: v133.toddns.gq
-    port: 80
-    uuid: cd1836ed-78be-3dcb-9fb1-9d2a4bdfecb8
-    alterId: 0
+    server: iepl2.airtcp.vip
+    port: 51002
+    uuid: 1a7680df-81a1-3d89-a221-db81ac4b04df
+    alterId: 2
     cipher: auto
     udp: true
-    network: ws
-    ws-path: /v133PDXkklxLEcOvD
+    network: tcp
+    ws-path: /
     ws-headers:
-      Host: v133.toddns.gq
-  - name: 美国+V2CROSS.COM
-    type: trojan
-    server: 152.70.74.66
-    port: 443?security=tls&type=tcp&headerType=none
-    password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
-  - name: 美国 CloudFlare节点 - 3
+      Host: ''
+  - name: 美国 CloudFlare节点
     type: vmess
-    server: 162.159.35.77
+    server: cdnjs.com
     port: 443
-    uuid: c91c7cb5-609c-4fae-818e-9194c3d46969
+    uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /linkws
+    ws-path: /speedtest
     ws-headers:
-      Host: afrhms12.best-tizi.top
+      Host: Amsterdam.kotick.site
     tls: true
-  - name: 美国 Amazon数据中心
+  - name: 韩国 首尔Choopa数据中心
     type: vmess
-    server: fr1.jisuyun.co
-    port: 10059
-    uuid: 899e9266-84ae-45dd-9e61-97d276b69539
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /filestreamingservice/files/20f813e2-036a-42a8-92e2-a3a55a0b239b
-    ws-headers:
-      Host: ''
-  - name: 加拿大+V2CROSS.COM
-    type: trojan
-    server: stw8-tg-data.amazonwebservicess.com
-    port: '443'
-    password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
-  - name: 美国 V2CROSS.COM
-    type: vmess
-    server: 170.187.203.158
-    port: 443
-    uuid: 927094d3-d678-4763-8591-e240d0bcae87
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /chat
-    ws-headers:
-      Host: ''
-    tls: true
-  - name: 德国 阿里云
-    type: vmess
-    server: cdncf.scyu.app
-    port: 8080
-    uuid: 4427eafb-3b3a-4265-9a32-fe0ea9cfd736
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /api/v3/download.getFile
-    ws-headers:
-      Host: ssrsub.v01.ssrsub.com
-  - name: 韩国 首尔Amazon数据中心
-    type: vmess
-    server: kr1.jisuyun.co
+    server: 141.164.43.153
     port: 80
-    uuid: 899e9266-84ae-45dd-9e61-97d276b69539
+    uuid: 8afbd60f-aa52-49e6-8f37-9aca0b90f2c8
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /filestreamingservice/files/20f813e2-036a-42a8-92e2-a3a55a0b239b
+    ws-path: /zingfast.vn
     ws-headers:
-      Host: ''
-  - name: 乌克兰+V2CROSS.COM
+      Host: dl.kgvn.garenanow.com
+  - name: 辽宁省鞍山市+电信
     type: ss
-    server: 193.108.118.79
-    port: '8090'
-    cipher: aes-256-gcm
-    password: PCnnH6SQSnfoS27
-  - name: 美国 CloudFlare节点 - 4
-    type: vmess
-    server: aaaa.wxx.gay
-    port: 443
-    uuid: 48eb01c6-fdd5-11ed-97a4-000017022008
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /look
-    ws-headers:
-      Host: ''
-    tls: true
-  - name: 美国加利福尼亚州圣克拉拉 腾讯云
-    type: vmess
-    server: mg.txy.a.node1.jijio.stream
-    port: 38999
-    uuid: adc570f1-d591-4a5a-93f0-0013bba3f116
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /wesad
-    ws-headers:
-      Host: mg.txy.a.node1.jijio.stream
-    tls: true
+    server: free.themars.top
+    port: '32103'
+    cipher: chacha20-ietf-poly1305
+    password: b89b39c2-dc8d-4595-a4c5-54b4fbab3fc2
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
-      - 美国 CloudFlare公司CDN节点(shopify)
-      - 美国 Amazon EC2服务器
-      - 香港+Amazon数据中心
-      - 美国 CloudFlare节点
+      - 美国 加利福尼亚州圣何塞PEG TECH
       - 广东省佛山市 移动
-      - 美国 CloudFlare节点 - 2
-      - 美国+V2CROSS.COM
-      - 美国 CloudFlare节点 - 3
-      - 美国 Amazon数据中心
-      - 加拿大+V2CROSS.COM
-      - 美国 V2CROSS.COM
-      - 德国 阿里云
-      - 韩国 首尔Amazon数据中心
-      - 乌克兰+V2CROSS.COM
-      - 美国 CloudFlare节点 - 4
-      - 美国加利福尼亚州圣克拉拉 腾讯云
+      - 广东省深圳市 移动
+      - 美国 CloudFlare节点
+      - 韩国 首尔Choopa数据中心
+      - 辽宁省鞍山市+电信
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
-      - 美国 CloudFlare公司CDN节点(shopify)
-      - 美国 Amazon EC2服务器
-      - 香港+Amazon数据中心
-      - 美国 CloudFlare节点
+      - 美国 加利福尼亚州圣何塞PEG TECH
       - 广东省佛山市 移动
-      - 美国 CloudFlare节点 - 2
-      - 美国+V2CROSS.COM
-      - 美国 CloudFlare节点 - 3
-      - 美国 Amazon数据中心
-      - 加拿大+V2CROSS.COM
-      - 美国 V2CROSS.COM
-      - 德国 阿里云
-      - 韩国 首尔Amazon数据中心
-      - 乌克兰+V2CROSS.COM
-      - 美国 CloudFlare节点 - 4
-      - 美国加利福尼亚州圣克拉拉 腾讯云
+      - 广东省深圳市 移动
+      - 美国 CloudFlare节点
+      - 韩国 首尔Choopa数据中心
+      - 辽宁省鞍山市+电信
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
-      - 美国 CloudFlare公司CDN节点(shopify)
-      - 美国 Amazon EC2服务器
-      - 香港+Amazon数据中心
-      - 美国 CloudFlare节点
+      - 美国 加利福尼亚州圣何塞PEG TECH
       - 广东省佛山市 移动
-      - 美国 CloudFlare节点 - 2
-      - 美国+V2CROSS.COM
-      - 美国 CloudFlare节点 - 3
-      - 美国 Amazon数据中心
-      - 加拿大+V2CROSS.COM
-      - 美国 V2CROSS.COM
-      - 德国 阿里云
-      - 韩国 首尔Amazon数据中心
-      - 乌克兰+V2CROSS.COM
-      - 美国 CloudFlare节点 - 4
-      - 美国加利福尼亚州圣克拉拉 腾讯云
+      - 广东省深圳市 移动
+      - 美国 CloudFlare节点
+      - 韩国 首尔Choopa数据中心
+      - 辽宁省鞍山市+电信
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
