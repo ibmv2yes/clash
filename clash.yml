@@ -1,36 +1,4 @@
 proxies:
-  - name: 美国+Amazon数据中心
-    type: trojan
-    server: gb2.microsoft-orgwly.vip
-    port: 30630?type=tcp&security=tls&sni=tls.microsoft-orgwly.vip
-    password: 37353bae-4cbf-447a-bf5a-d6cb7d9b6d5c
-  - name: 丹麦 V2CROSS.COM
-    type: vmess
-    server: CSGO.COM
-    port: 2086
-    uuid: ef1f6e7e-3d54-43b0-b39e-3af459fea090
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: lu1.hug1013.me
-  - name: 美国+华盛顿州西雅图市AWS有限公司EC2云服务器7号云机房
-    type: trojan
-    server: us1.microsoft-orgwly.vip
-    port: 80?type=tcp&security=tls&sni=tls.microsoft-orgwly.vip
-    password: 37353bae-4cbf-447a-bf5a-d6cb7d9b6d5c
-  - name: 香港+Amazon数据中心
-    type: trojan
-    server: hk7.microsoft-orgwly.vip
-    port: 80?type=tcp&security=tls&sni=tls.microsoft-orgwly.vip
-    password: 37353bae-4cbf-447a-bf5a-d6cb7d9b6d5c
-  - name: 亚太地区+V2CROSS.COM
-    type: trojan
-    server: vn2.microsoft-orgwly.vip
-    port: 443?type=tcp&security=tls&sni=tls.microsoft-orgwly.vip
-    password: 37353bae-4cbf-447a-bf5a-d6cb7d9b6d5c
   - name: 美国 CloudFlare节点
     type: vmess
     server: cdn.noice.id
@@ -43,41 +11,6 @@ proxies:
     ws-path: /v2ray
     ws-headers:
       Host: 8fhq6a.aiossh.my.id
-  - name: 日本+东京Amazon数据中心
-    type: trojan
-    server: jp13.microsoft-orgwly.vip
-    port: 18329?type=tcp&security=tls&sni=tls.microsoft-orgwly.vip
-    password: 37353bae-4cbf-447a-bf5a-d6cb7d9b6d5c
-  - name: 辽宁省鞍山市+电信
-    type: ss
-    server: free.themars.top
-    port: '32102'
-    cipher: chacha20-ietf-poly1305
-    password: b89b39c2-dc8d-4595-a4c5-54b4fbab3fc2
-  - name: 美国+Amazon数据中心 - 2
-    type: trojan
-    server: fr1.microsoft-orgwly.vip
-    port: 24668?type=tcp&security=tls&sni=tls.microsoft-orgwly.vip
-    password: 37353bae-4cbf-447a-bf5a-d6cb7d9b6d5c
-  - name: 美国 V2CROSS.COM
-    type: vmess
-    server: 104.31.16.62
-    port: 443
-    uuid: 9aa6b5ad-c0fc-47f4-a837-f72179d7b662
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /Lsv4s7nS0ErewnEN
-    ws-headers:
-      Host: channel3.unlimiteddev.tk
-    tls: true
-  - name: 瑞典+V2CROSS.COM
-    type: ss
-    server: 167.88.63.99
-    port: '2375'
-    cipher: aes-256-gcm
-    password: faBAoD54k87UJG7
   - name: 香港 BGP.NET CN2数据中心
     type: vmess
     server: 202.79.172.53
@@ -91,49 +24,91 @@ proxies:
     ws-headers:
       Host: ''
     tls: true
-  - name: 重庆市 移动
+  - name: 美国 CloudFlare节点 - 2
     type: vmess
-    server: 36.134.16.171
-    port: 11023
-    uuid: 8c042a38-71c1-1dcb-00df-54880236e0dc
+    server: 162.159.35.77
+    port: 443
+    uuid: c91c7cb5-609c-4fae-818e-9194c3d46969
     alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /linkws
+    ws-headers:
+      Host: afrhms12.best-tizi.top
+    tls: true
+  - name: 新加坡+Amazon数据中心
+    type: trojan
+    server: sg4.microsoft-orgwly.vip
+    port: 12040?type=tcp&security=tls&sni=tls.microsoft-orgwly.vip
+    password: 37353bae-4cbf-447a-bf5a-d6cb7d9b6d5c
+  - name: 美国+Amazon数据中心
+    type: trojan
+    server: gb2.microsoft-orgwly.vip
+    port: 30630?type=tcp&security=tls&sni=tls.microsoft-orgwly.vip
+    password: 37353bae-4cbf-447a-bf5a-d6cb7d9b6d5c
+  - name: 广东省深圳市 移动
+    type: vmess
+    server: iepl2.airtcp.vip
+    port: 51002
+    uuid: 1a7680df-81a1-3d89-a221-db81ac4b04df
+    alterId: 2
     cipher: auto
     udp: true
     network: tcp
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 加拿大+V2CROSS.COM
-    type: trojan
-    server: stw4-tg-data.amazonwebservicess.com
-    port: '443'
-    password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
-  - name: 台湾省台北市+scloud.sg
-    type: trojan
-    server: tw4.microsoft-orgwly.vip
-    port: 443?type=tcp&security=tls&sni=tls.microsoft-orgwly.vip
-    password: 37353bae-4cbf-447a-bf5a-d6cb7d9b6d5c
-  - name: 美国 CloudFlare节点 - 2
+  - name: 美国 CloudFlare节点 - 3
     type: vmess
-    server: 141.101.114.2
+    server: cf-lt.sharecentre.online
     port: 80
-    uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a
+    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /shirker
+    ws-headers:
+      Host: gcore.ilovescp.com
+  - name: 丹麦 V2CROSS.COM
+    type: vmess
+    server: CSGO.COM
+    port: 2086
+    uuid: ef1f6e7e-3d54-43b0-b39e-3af459fea090
     alterId: 0
     cipher: auto
     udp: true
     network: ws
     ws-path: /
     ws-headers:
-      Host: lg.v2ray20.xyz
-  - name: 美国+麻省理工学院
+      Host: lu1.hug1013.me
+  - name: 美国 CloudFlare节点 - 4
+    type: vmess
+    server: cf.yxjnode.com
+    port: 80
+    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /yxzbp
+    ws-headers:
+      Host: dp3.yxjnode.com
+  - name: 日本+V2CROSS.COM
     type: trojan
-    server: sg7.microsoft-orgwly.vip
-    port: 11038?type=tcp&security=tls&sni=tls.microsoft-orgwly.vip
+    server: kr2.microsoft-orgwly.vip
+    port: 443?type=tcp&security=tls&sni=tls.microsoft-orgwly.vip
     password: 37353bae-4cbf-447a-bf5a-d6cb7d9b6d5c
-  - name: 美国+惠普HP
+  - name: 日本+V2CROSS.COM - 2
     type: trojan
-    server: jp7.microsoft-orgwly.vip
-    port: 34519?type=tcp&security=tls&sni=tls.microsoft-orgwly.vip
+    server: kr3.microsoft-orgwly.vip
+    port: 443?type=tcp&security=tls&sni=tls.microsoft-orgwly.vip
+    password: 37353bae-4cbf-447a-bf5a-d6cb7d9b6d5c
+  - name: 新加坡+Amazon数据中心 - 2
+    type: trojan
+    server: sg5.microsoft-orgwly.vip
+    port: 11040?type=tcp&security=tls&sni=tls.microsoft-orgwly.vip
     password: 37353bae-4cbf-447a-bf5a-d6cb7d9b6d5c
 proxy-groups:
   - name: Free-servers
@@ -141,68 +116,50 @@ proxy-groups:
     proxies:
       - 自动选择
       - 故障转移
-      - 美国+Amazon数据中心
-      - 丹麦 V2CROSS.COM
-      - 美国+华盛顿州西雅图市AWS有限公司EC2云服务器7号云机房
-      - 香港+Amazon数据中心
-      - 亚太地区+V2CROSS.COM
       - 美国 CloudFlare节点
-      - 日本+东京Amazon数据中心
-      - 辽宁省鞍山市+电信
-      - 美国+Amazon数据中心 - 2
-      - 美国 V2CROSS.COM
-      - 瑞典+V2CROSS.COM
       - 香港 BGP.NET CN2数据中心
-      - 重庆市 移动
-      - 加拿大+V2CROSS.COM
-      - 台湾省台北市+scloud.sg
       - 美国 CloudFlare节点 - 2
-      - 美国+麻省理工学院
-      - 美国+惠普HP
+      - 新加坡+Amazon数据中心
+      - 美国+Amazon数据中心
+      - 广东省深圳市 移动
+      - 美国 CloudFlare节点 - 3
+      - 丹麦 V2CROSS.COM
+      - 美国 CloudFlare节点 - 4
+      - 日本+V2CROSS.COM
+      - 日本+V2CROSS.COM - 2
+      - 新加坡+Amazon数据中心 - 2
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国+Amazon数据中心
-      - 丹麦 V2CROSS.COM
-      - 美国+华盛顿州西雅图市AWS有限公司EC2云服务器7号云机房
-      - 香港+Amazon数据中心
-      - 亚太地区+V2CROSS.COM
       - 美国 CloudFlare节点
-      - 日本+东京Amazon数据中心
-      - 辽宁省鞍山市+电信
-      - 美国+Amazon数据中心 - 2
-      - 美国 V2CROSS.COM
-      - 瑞典+V2CROSS.COM
       - 香港 BGP.NET CN2数据中心
-      - 重庆市 移动
-      - 加拿大+V2CROSS.COM
-      - 台湾省台北市+scloud.sg
       - 美国 CloudFlare节点 - 2
-      - 美国+麻省理工学院
-      - 美国+惠普HP
+      - 新加坡+Amazon数据中心
+      - 美国+Amazon数据中心
+      - 广东省深圳市 移动
+      - 美国 CloudFlare节点 - 3
+      - 丹麦 V2CROSS.COM
+      - 美国 CloudFlare节点 - 4
+      - 日本+V2CROSS.COM
+      - 日本+V2CROSS.COM - 2
+      - 新加坡+Amazon数据中心 - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国+Amazon数据中心
-      - 丹麦 V2CROSS.COM
-      - 美国+华盛顿州西雅图市AWS有限公司EC2云服务器7号云机房
-      - 香港+Amazon数据中心
-      - 亚太地区+V2CROSS.COM
       - 美国 CloudFlare节点
-      - 日本+东京Amazon数据中心
-      - 辽宁省鞍山市+电信
-      - 美国+Amazon数据中心 - 2
-      - 美国 V2CROSS.COM
-      - 瑞典+V2CROSS.COM
       - 香港 BGP.NET CN2数据中心
-      - 重庆市 移动
-      - 加拿大+V2CROSS.COM
-      - 台湾省台北市+scloud.sg
       - 美国 CloudFlare节点 - 2
-      - 美国+麻省理工学院
-      - 美国+惠普HP
+      - 新加坡+Amazon数据中心
+      - 美国+Amazon数据中心
+      - 广东省深圳市 移动
+      - 美国 CloudFlare节点 - 3
+      - 丹麦 V2CROSS.COM
+      - 美国 CloudFlare节点 - 4
+      - 日本+V2CROSS.COM
+      - 日本+V2CROSS.COM - 2
+      - 新加坡+Amazon数据中心 - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
