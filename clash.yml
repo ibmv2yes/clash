@@ -1,10 +1,103 @@
 proxies:
-  - name: 香港+Amazon数据中心
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: cdn.noice.id
+    port: 80
+    uuid: 8bb07c55-0ef5-4d69-b131-fd9bab420ae8
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /v2ray
+    ws-headers:
+      Host: 8fhq6a.aiossh.my.id
+  - name: 巴西圣保罗 CloudFlare节点
+    type: vmess
+    server: 188.114.98.51
+    port: 2095
+    uuid: 67597b31-fba2-42ba-b3df-b7264d346235
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /tg@hkaa0
+    ws-headers:
+      Host: jp.wyhkaa0.ga
+  - name: 美国 Cloudinnovation数据中心
+    type: vmess
+    server: 154.85.1.3
+    port: 443
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /path/1683629314915
+    ws-headers:
+      Host: www.42077230.xyz
+    tls: true
+  - name: 日本+V2CROSS.COM
     type: trojan
-    server: hk5.microsoft-orgwly.vip
+    server: kr5.microsoft-orgwly.vip
+    port: '443'
+    password: bb59547d-0ea9-4af0-97c7-169bcb15f961
+  - name: 亚太地区+V2CROSS.COM
+    type: trojan
+    server: vn2.microsoft-orgwly.vip
     port: 443?sni=tls.microsoft-orgwly.vip
-    password: 37353bae-4cbf-447a-bf5a-d6cb7d9b6d5c
+    password: fcf74125-99de-4df3-af94-552a0b1ee021
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: tech.noaries.de
+    port: 80
+    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /shirker
+    ws-headers:
+      Host: nl.sharecentrepro.com
+  - name: 美国加利福尼亚州圣克拉拉 腾讯云
+    type: vmess
+    server: mg.txy.a.node1.jijio.stream
+    port: 38999
+    uuid: adc570f1-d591-4a5a-93f0-0013bba3f116
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /wesad
+    ws-headers:
+      Host: mg.txy.a.node1.jijio.stream
+    tls: true
+  - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: cdnjs.com
+    port: 443
+    uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /speedtest
+    ws-headers:
+      Host: Lille.kotick.site
+    tls: true
   - name: 美国 V2CROSS.COM
+    type: vmess
+    server: 170.187.203.158
+    port: 443
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /chat
+    ws-headers:
+      Host: ''
+    tls: true
+  - name: 美国 V2CROSS.COM - 2
     type: vmess
     server: 104.31.16.62
     port: 443
@@ -17,122 +110,7 @@ proxies:
     ws-headers:
       Host: channel3.unlimiteddev.tk
     tls: true
-  - name: 美国 加利福尼亚州圣何塞PEG TECH
-    type: vmess
-    server: 142.4.103.199
-    port: 45252
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
   - name: 江苏省镇江市+移动
-    type: ss
-    server: js2.76po.com
-    port: '44315'
-    cipher: chacha20-ietf-poly1305
-    password: 1196c1f1-ac69-4d3f-bbbb-722517323170
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: v2ray.online
-    port: 443
-    uuid: 00BBF5B8-173E-6818-9927-5AD1AA073C7D
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /speedtest
-    ws-headers:
-      Host: Kansas.v2ray.online
-    tls: true
-  - name: 美国+Microsoft数据中心
-    type: trojan
-    server: fscus.fscloud123456789.com
-    port: 443?type=tcp&security=tls&allowInsecure=1
-    password: de32b9aa-c60d-4e76-8d7e-aae3cfb94a82
-  - name: 德国 V2CROSS.COM
-    type: vmess
-    server: 213.202.233.239
-    port: 443
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /path/041629110712
-    ws-headers:
-      Host: www.22709709.xyz
-    tls: true
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: v133.toddns.gq
-    port: 80
-    uuid: cd1836ed-78be-3dcb-9fb1-9d2a4bdfecb8
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /v133PDXkklxLEcOvD
-    ws-headers:
-      Host: v133.toddns.gq
-  - name: 美国 CloudFlare节点 - 3
-    type: vmess
-    server: cf-lt.sharecentre.online
-    port: 8080
-    uuid: 4427eafb-3b3a-4265-9a32-fe0ea9cfd736
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /api/v3/download.getFile
-    ws-headers:
-      Host: ssrsub.v01.ssrsub.com
-  - name: 加拿大+V2CROSS.COM
-    type: trojan
-    server: tw2.microsoft-orgwly.vip
-    port: 80?type=tcp&security=tls&sni=tls.microsoft-orgwly.vip&allowInsecure=1
-    password: fcf74125-99de-4df3-af94-552a0b1ee021
-  - name: 欧盟 V2CROSS.COM
-    type: vmess
-    server: 45.12.144.83
-    port: 47127
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国 CloudFlare节点 - 4
-    type: vmess
-    server: 172.66.43.240
-    port: 443
-    uuid: 12612e87-8003-44a8-b4e8-ec4a325e9016
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /ou
-    ws-headers:
-      Host: z.zorro.tk
-    tls: true
-  - name: 美国 CloudFlare节点 - 5
-    type: vmess
-    server: tech.noaries.de
-    port: 80
-    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /shirker
-    ws-headers:
-      Host: nl.sharecentrepro.com
-  - name: 江苏省镇江市+移动 - 2
     type: ss
     server: js2.76po.com
     port: '44315'
@@ -144,56 +122,47 @@ proxy-groups:
     proxies:
       - 自动选择
       - 故障转移
-      - 香港+Amazon数据中心
-      - 美国 V2CROSS.COM
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 江苏省镇江市+移动
       - 美国 CloudFlare节点
-      - 美国+Microsoft数据中心
-      - 德国 V2CROSS.COM
+      - 巴西圣保罗 CloudFlare节点
+      - 美国 Cloudinnovation数据中心
+      - 日本+V2CROSS.COM
+      - 亚太地区+V2CROSS.COM
       - 美国 CloudFlare节点 - 2
+      - 美国加利福尼亚州圣克拉拉 腾讯云
       - 美国 CloudFlare节点 - 3
-      - 加拿大+V2CROSS.COM
-      - 欧盟 V2CROSS.COM
-      - 美国 CloudFlare节点 - 4
-      - 美国 CloudFlare节点 - 5
-      - 江苏省镇江市+移动 - 2
+      - 美国 V2CROSS.COM
+      - 美国 V2CROSS.COM - 2
+      - 江苏省镇江市+移动
   - name: 自动选择
     type: url-test
     proxies:
-      - 香港+Amazon数据中心
-      - 美国 V2CROSS.COM
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 江苏省镇江市+移动
       - 美国 CloudFlare节点
-      - 美国+Microsoft数据中心
-      - 德国 V2CROSS.COM
+      - 巴西圣保罗 CloudFlare节点
+      - 美国 Cloudinnovation数据中心
+      - 日本+V2CROSS.COM
+      - 亚太地区+V2CROSS.COM
       - 美国 CloudFlare节点 - 2
+      - 美国加利福尼亚州圣克拉拉 腾讯云
       - 美国 CloudFlare节点 - 3
-      - 加拿大+V2CROSS.COM
-      - 欧盟 V2CROSS.COM
-      - 美国 CloudFlare节点 - 4
-      - 美国 CloudFlare节点 - 5
-      - 江苏省镇江市+移动 - 2
+      - 美国 V2CROSS.COM
+      - 美国 V2CROSS.COM - 2
+      - 江苏省镇江市+移动
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 香港+Amazon数据中心
-      - 美国 V2CROSS.COM
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 江苏省镇江市+移动
       - 美国 CloudFlare节点
-      - 美国+Microsoft数据中心
-      - 德国 V2CROSS.COM
+      - 巴西圣保罗 CloudFlare节点
+      - 美国 Cloudinnovation数据中心
+      - 日本+V2CROSS.COM
+      - 亚太地区+V2CROSS.COM
       - 美国 CloudFlare节点 - 2
+      - 美国加利福尼亚州圣克拉拉 腾讯云
       - 美国 CloudFlare节点 - 3
-      - 加拿大+V2CROSS.COM
-      - 欧盟 V2CROSS.COM
-      - 美国 CloudFlare节点 - 4
-      - 美国 CloudFlare节点 - 5
-      - 江苏省镇江市+移动 - 2
+      - 美国 V2CROSS.COM
+      - 美国 V2CROSS.COM - 2
+      - 江苏省镇江市+移动
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
