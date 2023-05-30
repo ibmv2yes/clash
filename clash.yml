@@ -1,4 +1,17 @@
 proxies:
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: dallas.starsea.vip
+    port: 443
+    uuid: 10735fe6-6c8f-498b-b22e-8e98a57e033d
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: dallas.starsea.vip
+    tls: true
   - name: 重庆市 移动
     type: vmess
     server: 36.134.16.190
@@ -11,6 +24,90 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: v2ray.online
+    port: 443
+    uuid: 00BBF5B8-173E-6818-9927-5AD1AA073C7D
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /speedtest
+    ws-headers:
+      Host: Kansas.v2ray.online
+    tls: true
+  - name: 亚太地区+V2CROSS.COM
+    type: trojan
+    server: 163.123.192.154
+    port: 443?sni=download.xn--mes358a9urctx.com
+    password: 1113a9fa-c6ee-4929-ae93-d29d024b1728
+  - name: 美国+V2CROSS.COM
+    type: trojan
+    server: 152.70.74.66
+    port: 443?security=tls&type=tcp&headerType=none
+    password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
+  - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: v2ray.online
+    port: 443
+    uuid: 00BBF5B8-173E-6818-9927-5AD1AA073C7D
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /speedtest
+    ws-headers:
+      Host: Kansas.v2ray.online
+    tls: true
+  - name: 中国 阿里云
+    type: vmess
+    server: cdncf.scyu.app
+    port: 8080
+    uuid: 4427eafb-3b3a-4265-9a32-fe0ea9cfd736
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /api/v3/download.getFile
+    ws-headers:
+      Host: ssrsub.v01.ssrsub.com
+  - name: 广东省佛山市 移动
+    type: vmess
+    server: 8.v2-ray.cyou
+    port: 23608
+    uuid: 0dd19d20-ec86-3680-b256-87237bafa89e
+    alterId: 2
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: 8.v2-ray.cyou
+  - name: 美国 Datability
+    type: vmess
+    server: 140.99.59.253
+    port: 55512
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 丹麦 V2CROSS.COM
+    type: vmess
+    server: CSGO.COM
+    port: 2086
+    uuid: ef1f6e7e-3d54-43b0-b39e-3af459fea090
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: lu1.hug1013.me
   - name: 重庆市 移动 - 2
     type: vmess
     server: 36.134.16.171
@@ -23,80 +120,85 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国 CloudFlare节点
+  - name: 上海市+电信
+    type: trojan
+    server: official.taipeicitygovernment.kiev.ua
+    port: '8443'
+    password: 5505f6ba-cd37-30ce-8f92-be4120c83d7f
+  - name: 加拿大+V2CROSS.COM
+    type: trojan
+    server: 165.154.253.144
+    port: '443'
+    password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
+  - name: 美国 CloudFlare节点 - 4
     type: vmess
-    server: 104.25.14.16
-    port: 8080
-    uuid: d7cf7b64-bf1c-46bd-cf39-90a31393843b
+    server: scaleway.696960.xyz
+    port: 443
+    uuid: e357cd63-f1a5-4c8e-c42e-26da11207fee
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /qwer
+    ws-path: /root/
     ws-headers:
-      Host: uyaa.vtcss.top
-  - name: 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
-    type: vmess
-    server: 23.224.110.184
-    port: 443
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /path/080712342310
-    ws-headers:
-      Host: ''
+      Host: scaleway.696960.xyz
     tls: true
-  - name: 美国 加利福尼亚州森尼韦尔市PEG TECH公司
-    type: vmess
-    server: 142.0.130.242
-    port: 47988
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 亚太地区+V2CROSS.COM
-    type: trojan
-    server: 163.123.192.153
-    port: 443?type=tcp&sni=download.xn--mes358a9urctx.com&allowInsecure=1
-    password: 1113a9fa-c6ee-4929-ae93-d29d024b1728
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 重庆市 移动
-      - 重庆市 移动 - 2
       - 美国 CloudFlare节点
-      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
-      - 美国 加利福尼亚州森尼韦尔市PEG TECH公司
+      - 重庆市 移动
+      - 美国 CloudFlare节点 - 2
       - 亚太地区+V2CROSS.COM
+      - 美国+V2CROSS.COM
+      - 美国 CloudFlare节点 - 3
+      - 中国 阿里云
+      - 广东省佛山市 移动
+      - 美国 Datability
+      - 丹麦 V2CROSS.COM
+      - 重庆市 移动 - 2
+      - 上海市+电信
+      - 加拿大+V2CROSS.COM
+      - 美国 CloudFlare节点 - 4
   - name: 自动选择
     type: url-test
     proxies:
-      - 重庆市 移动
-      - 重庆市 移动 - 2
       - 美国 CloudFlare节点
-      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
-      - 美国 加利福尼亚州森尼韦尔市PEG TECH公司
+      - 重庆市 移动
+      - 美国 CloudFlare节点 - 2
       - 亚太地区+V2CROSS.COM
+      - 美国+V2CROSS.COM
+      - 美国 CloudFlare节点 - 3
+      - 中国 阿里云
+      - 广东省佛山市 移动
+      - 美国 Datability
+      - 丹麦 V2CROSS.COM
+      - 重庆市 移动 - 2
+      - 上海市+电信
+      - 加拿大+V2CROSS.COM
+      - 美国 CloudFlare节点 - 4
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 重庆市 移动
-      - 重庆市 移动 - 2
       - 美国 CloudFlare节点
-      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
-      - 美国 加利福尼亚州森尼韦尔市PEG TECH公司
+      - 重庆市 移动
+      - 美国 CloudFlare节点 - 2
       - 亚太地区+V2CROSS.COM
+      - 美国+V2CROSS.COM
+      - 美国 CloudFlare节点 - 3
+      - 中国 阿里云
+      - 广东省佛山市 移动
+      - 美国 Datability
+      - 丹麦 V2CROSS.COM
+      - 重庆市 移动 - 2
+      - 上海市+电信
+      - 加拿大+V2CROSS.COM
+      - 美国 CloudFlare节点 - 4
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
