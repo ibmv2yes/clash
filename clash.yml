@@ -1,38 +1,125 @@
 proxies:
+  - name: 丹麦 V2CROSS.COM
+    type: vmess
+    server: CSGO.COM
+    port: 2086
+    uuid: ef1f6e7e-3d54-43b0-b39e-3af459fea090
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: lu1.hug1013.me
   - name: 美国 CloudFlare节点
     type: vmess
-    server: 190.93.245.228
-    port: 2052
-    uuid: 0227edc4-8735-4370-ac42-4e8147920f0b
+    server: cf-dx-dns.sharecentre.online
+    port: 80
+    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /qwer10
+    ws-path: /shirker
     ws-headers:
-      Host: tou.vtcss.top
-  - name: 新加坡+Linode数据中心
-    type: ss
-    server: 139.162.41.160
-    port: '2052'
-    cipher: chacha20-ietf-poly1305
-    password: 1196c1f1-ac69-4d3f-bbbb-722517323170
+      Host: in.sharecentrepro.com
+  - name: 香港 BGP.NET CN2数据中心
+    type: vmess
+    server: 202.79.172.53
+    port: 443
+    uuid: 30216206-14b7-40e7-995d-61c1219ba584
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /path/220128071100
+    ws-headers:
+      Host: ''
+    tls: true
   - name: 美国 CloudFlare节点 - 2
     type: vmess
-    server: 104.21.53.35
-    port: 80
-    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
+    server: cf.noaries.de
+    port: 2082
+    uuid: 67c5ce45-7b48-473e-bf25-e4c830b0ed24
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /yxzbp
+    ws-path: /aries?ed=2048
     ws-headers:
-      Host: dp3.yxjnode.com
+      Host: dedipath2.iiio.wiki
+  - name: 日本东京 Oracle Cloud
+    type: vmess
+    server: oracle02.jiting.space
+    port: 25494
+    uuid: 960040e9-ad9b-4e39-fb90-f9ba90c4b7a2
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /qatjpji
+    ws-headers:
+      Host: au1.elkcloud.gq
+    tls: true
+  - name: 美国加利福尼亚州圣克拉拉 腾讯云
+    type: vmess
+    server: mg.txy.a.node1.jijio.stream
+    port: 38999
+    uuid: adc570f1-d591-4a5a-93f0-0013bba3f116
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /wesad
+    ws-headers:
+      Host: ''
+    tls: true
+  - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: 190.93.245.40
+    port: 2095
+    uuid: 67597b31-fba2-42ba-b3df-b7264d346235
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /tg@hkaa0
+    ws-headers:
+      Host: jp.wyhkaa0.ga
+  - name: 英国 V2CROSS.COM
+    type: vmess
+    server: 83.142.225.20
+    port: 49920
+    uuid: 5267ca71-97e6-44c8-8fb5-9fe4afe0954e
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: ''
+    ws-headers:
+      Host: ''
+  - name: 美国加利福尼亚州洛杉矶 PetaExpress
+    type: vmess
+    server: 198.2.208.189
+    port: 443
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /path/1683715826870
+    ws-headers:
+      Host: www.62317155.xyz
+    tls: true
+  - name: 美国+V2CROSS.COM
+    type: trojan
+    server: 152.70.74.66
+    port: 443?security=tls&type=tcp&headerType=none
+    password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
   - name: 美国 加利福尼亚州圣何塞PEG TECH
     type: vmess
-    server: 142.4.97.75
-    port: 44942
+    server: 142.4.127.5
+    port: 53013
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -41,36 +128,6 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国 CloudFlare节点 - 3
-    type: vmess
-    server: v2ray.online
-    port: 443
-    uuid: 00BBF5B8-173E-6818-9927-5AD1AA073C7D
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /speedtest
-    ws-headers:
-      Host: Kansas.v2ray.online
-    tls: true
-  - name: 加拿大+V2CROSS.COM
-    type: trojan
-    server: tw2.microsoft-orgwly.vip
-    port: 80?type=tcp&security=tls&sni=tls.microsoft-orgwly.vip&allowInsecure=1
-    password: fcf74125-99de-4df3-af94-552a0b1ee021
-  - name: 美国 CloudFlare节点 - 4
-    type: vmess
-    server: 104.21.53.35
-    port: 80
-    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /yxzbp
-    ws-headers:
-      Host: dp3.yxjnode.com
   - name: 广东省深圳市 移动
     type: vmess
     server: iepl2.airtcp.vip
@@ -83,52 +140,56 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国+Microsoft数据中心
-    type: trojan
-    server: usa.stablize.top
-    port: '443'
-    password: ad7a2d36-d27b-411e-8e2f-41fea06ef00f
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
+      - 丹麦 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 新加坡+Linode数据中心
+      - 香港 BGP.NET CN2数据中心
       - 美国 CloudFlare节点 - 2
-      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 日本东京 Oracle Cloud
+      - 美国加利福尼亚州圣克拉拉 腾讯云
       - 美国 CloudFlare节点 - 3
-      - 加拿大+V2CROSS.COM
-      - 美国 CloudFlare节点 - 4
+      - 英国 V2CROSS.COM
+      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 美国+V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH
       - 广东省深圳市 移动
-      - 美国+Microsoft数据中心
   - name: 自动选择
     type: url-test
     proxies:
+      - 丹麦 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 新加坡+Linode数据中心
+      - 香港 BGP.NET CN2数据中心
       - 美国 CloudFlare节点 - 2
-      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 日本东京 Oracle Cloud
+      - 美国加利福尼亚州圣克拉拉 腾讯云
       - 美国 CloudFlare节点 - 3
-      - 加拿大+V2CROSS.COM
-      - 美国 CloudFlare节点 - 4
+      - 英国 V2CROSS.COM
+      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 美国+V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH
       - 广东省深圳市 移动
-      - 美国+Microsoft数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
+      - 丹麦 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 新加坡+Linode数据中心
+      - 香港 BGP.NET CN2数据中心
       - 美国 CloudFlare节点 - 2
-      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 日本东京 Oracle Cloud
+      - 美国加利福尼亚州圣克拉拉 腾讯云
       - 美国 CloudFlare节点 - 3
-      - 加拿大+V2CROSS.COM
-      - 美国 CloudFlare节点 - 4
+      - 英国 V2CROSS.COM
+      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 美国+V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH
       - 广东省深圳市 移动
-      - 美国+Microsoft数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
