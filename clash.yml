@@ -1,28 +1,4 @@
 proxies:
-  - name: 丹麦 V2CROSS.COM
-    type: vmess
-    server: CSGO.COM
-    port: 2086
-    uuid: ef1f6e7e-3d54-43b0-b39e-3af459fea090
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: lu1.hug1013.me
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: cf-dx-dns.sharecentre.online
-    port: 80
-    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /shirker
-    ws-headers:
-      Host: in.sharecentrepro.com
   - name: 香港 BGP.NET CN2数据中心
     type: vmess
     server: 202.79.172.53
@@ -36,7 +12,12 @@ proxies:
     ws-headers:
       Host: ''
     tls: true
-  - name: 美国 CloudFlare节点 - 2
+  - name: 美国+Microsoft数据中心
+    type: trojan
+    server: azjp2.downloadvip.cfd
+    port: 443?sni=us4.xn--mes358a9urctx.com
+    password: f5a18240-423f-47a0-b9a3-5e647bcdf38f
+  - name: 美国 CloudFlare节点
     type: vmess
     server: cf.noaries.de
     port: 2082
@@ -48,19 +29,77 @@ proxies:
     ws-path: /aries?ed=2048
     ws-headers:
       Host: dedipath2.iiio.wiki
-  - name: 日本东京 Oracle Cloud
+  - name: 美国 CloudFlare节点 - 2
     type: vmess
-    server: oracle02.jiting.space
-    port: 25494
-    uuid: 960040e9-ad9b-4e39-fb90-f9ba90c4b7a2
+    server: 172.67.147.74
+    port: 2052
+    uuid: 0227edc4-8735-4370-ac42-4e8147920f0b
     alterId: 0
     cipher: auto
     udp: true
-    network: tcp
-    ws-path: /qatjpji
+    network: ws
+    ws-path: /qwer10
     ws-headers:
-      Host: au1.elkcloud.gq
+      Host: tou.vtcss.top
+  - name: 美国加利福尼亚州圣何塞 Cloudflare节点
+    type: vmess
+    server: 103.21.244.43
+    port: 8080
+    uuid: c5c9844d-050e-44f1-cb6d-ec5166772631
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /qwer
+    ws-headers:
+      Host: zslbs.vtcss.top
+  - name: 亚太地区+V2CROSS.COM
+    type: trojan
+    server: 163.123.192.156
+    port: 443?type=tcp&sni=download.xn--mes358a9urctx.com&allowInsecure=1
+    password: 1113a9fa-c6ee-4929-ae93-d29d024b1728
+  - name: 亚太地区+V2CROSS.COM - 2
+    type: trojan
+    server: 163.123.192.153
+    port: 443?type=tcp&sni=download.xn--mes358a9urctx.com&allowInsecure=1
+    password: 1113a9fa-c6ee-4929-ae93-d29d024b1728
+  - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: 172.66.43.240
+    port: 443
+    uuid: 12612e87-8003-44a8-b4e8-ec4a325e9016
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /ou
+    ws-headers:
+      Host: z.zorro.tk
     tls: true
+  - name: 英国 V2CROSS.COM
+    type: vmess
+    server: 178.239.171.103
+    port: 80
+    uuid: 61280f80-cd25-4c7b-8e5a-b1560617047a
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /T5t5p1DPeSIooUZfEmkFAYfTxZ
+    ws-headers:
+      Host: ''
+  - name: 欧盟 V2CROSS.COM
+    type: vmess
+    server: lv.nscdn.eu.org
+    port: 80
+    uuid: c65dc0ad-dee8-4e43-869d-ef4f11bc66df
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: lv.nscdn.eu.org
   - name: 美国加利福尼亚州圣克拉拉 腾讯云
     type: vmess
     server: mg.txy.a.node1.jijio.stream
@@ -72,124 +111,87 @@ proxies:
     network: ws
     ws-path: /wesad
     ws-headers:
-      Host: ''
+      Host: mg.txy.a.node1.jijio.stream
     tls: true
-  - name: 美国 CloudFlare节点 - 3
+  - name: 美国 CloudFlare节点 - 4
     type: vmess
-    server: 190.93.245.40
-    port: 2095
-    uuid: 67597b31-fba2-42ba-b3df-b7264d346235
+    server: 172.67.156.138
+    port: 443
+    uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /tg@hkaa0
+    ws-path: /speedtest
     ws-headers:
-      Host: jp.wyhkaa0.ga
-  - name: 英国 V2CROSS.COM
+      Host: Kansas.kotick.site
+    tls: true
+  - name: 日本东京都东京 oracle.com
     type: vmess
-    server: 83.142.225.20
-    port: 49920
-    uuid: 5267ca71-97e6-44c8-8fb5-9fe4afe0954e
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: ''
-    ws-headers:
-      Host: ''
-  - name: 美国加利福尼亚州洛杉矶 PetaExpress
-    type: vmess
-    server: 198.2.208.189
+    server: oci.donpau.com
     port: 443
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
+    uuid: 3C02DC15-56AE-7889-8936-9A2EA8FF8666
+    alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /path/1683715826870
+    ws-path: /cone
     ws-headers:
-      Host: www.62317155.xyz
+      Host: oci.donpau.com
     tls: true
-  - name: 美国+V2CROSS.COM
-    type: trojan
-    server: 152.70.74.66
-    port: 443?security=tls&type=tcp&headerType=none
-    password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
-  - name: 美国 加利福尼亚州圣何塞PEG TECH
-    type: vmess
-    server: 142.4.127.5
-    port: 53013
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 广东省深圳市 移动
-    type: vmess
-    server: iepl2.airtcp.vip
-    port: 51002
-    uuid: 1a7680df-81a1-3d89-a221-db81ac4b04df
-    alterId: 2
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 丹麦 V2CROSS.COM
-      - 美国 CloudFlare节点
       - 香港 BGP.NET CN2数据中心
+      - 美国+Microsoft数据中心
+      - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
-      - 日本东京 Oracle Cloud
-      - 美国加利福尼亚州圣克拉拉 腾讯云
+      - 美国加利福尼亚州圣何塞 Cloudflare节点
+      - 亚太地区+V2CROSS.COM
+      - 亚太地区+V2CROSS.COM - 2
       - 美国 CloudFlare节点 - 3
       - 英国 V2CROSS.COM
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 美国+V2CROSS.COM
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 广东省深圳市 移动
+      - 欧盟 V2CROSS.COM
+      - 美国加利福尼亚州圣克拉拉 腾讯云
+      - 美国 CloudFlare节点 - 4
+      - 日本东京都东京 oracle.com
   - name: 自动选择
     type: url-test
     proxies:
-      - 丹麦 V2CROSS.COM
-      - 美国 CloudFlare节点
       - 香港 BGP.NET CN2数据中心
+      - 美国+Microsoft数据中心
+      - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
-      - 日本东京 Oracle Cloud
-      - 美国加利福尼亚州圣克拉拉 腾讯云
+      - 美国加利福尼亚州圣何塞 Cloudflare节点
+      - 亚太地区+V2CROSS.COM
+      - 亚太地区+V2CROSS.COM - 2
       - 美国 CloudFlare节点 - 3
       - 英国 V2CROSS.COM
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 美国+V2CROSS.COM
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 广东省深圳市 移动
+      - 欧盟 V2CROSS.COM
+      - 美国加利福尼亚州圣克拉拉 腾讯云
+      - 美国 CloudFlare节点 - 4
+      - 日本东京都东京 oracle.com
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 丹麦 V2CROSS.COM
-      - 美国 CloudFlare节点
       - 香港 BGP.NET CN2数据中心
+      - 美国+Microsoft数据中心
+      - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
-      - 日本东京 Oracle Cloud
-      - 美国加利福尼亚州圣克拉拉 腾讯云
+      - 美国加利福尼亚州圣何塞 Cloudflare节点
+      - 亚太地区+V2CROSS.COM
+      - 亚太地区+V2CROSS.COM - 2
       - 美国 CloudFlare节点 - 3
       - 英国 V2CROSS.COM
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 美国+V2CROSS.COM
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 广东省深圳市 移动
+      - 欧盟 V2CROSS.COM
+      - 美国加利福尼亚州圣克拉拉 腾讯云
+      - 美国 CloudFlare节点 - 4
+      - 日本东京都东京 oracle.com
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
