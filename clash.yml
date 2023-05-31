@@ -1,21 +1,21 @@
 proxies:
-  - name: 美国 阿里云
+  - name: 美国 CloudFlare节点
     type: vmess
-    server: cdncf.scyu.app
+    server: 104.18.147.36
     port: 8080
-    uuid: 4427eafb-3b3a-4265-9a32-fe0ea9cfd736
+    uuid: 9588cb0f-5102-4e66-d5fb-f96cba9acdda
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /api/v3/download.getFile
+    ws-path: /qazxcv03
     ws-headers:
-      Host: ssrsub.v02.ssrsub.com
-  - name: 美国 华盛顿Cogent通信公司
+      Host: tou.vtcss.top
+  - name: 香港 DMIT数据中心
     type: vmess
-    server: 38.47.111.202
-    port: 25399
-    uuid: 513a7309-f495-41bc-e451-d2fd59d8175b
+    server: 103.135.248.182
+    port: 46519
+    uuid: e601fbdf-5a5d-459a-cf54-d7ecb04b8c62
     alterId: 0
     cipher: auto
     udp: true
@@ -29,61 +29,19 @@ proxies:
     port: '11023'
     cipher: aes-256-gcm
     password: ll668668@
-  - name: 美国 theplanet
+  - name: 美国 CloudFlare节点 - 2
     type: vmess
-    server: 174.136.205.11
-    port: 41050
-    uuid: 5f904cd4-ee9f-477c-fcce-b2bd2b97efb3
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 香港+Microsoft数据中心
-    type: trojan
-    server: hk16.jisuyun.co
-    port: 443?type=tcp&security=tls&sni=tls.jisuyun.co&allowInsecure=1
-    password: abf656f7-4886-46c9-b040-f742688c4d72
-  - name: 英国+V2CROSS.COM
-    type: ss
-    server: 145.239.6.202
-    port: '4444'
-    cipher: aes-256-gcm
-    password: pKEW8JPByTVTLtM
-  - name: 英国+V2CROSS.COM - 2
-    type: ss
-    server: >-
-      ak1749.www.outline.network.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou
-    port: '4444'
-    cipher: aes-256-gcm
-    password: pKEW8JPByTVTLtM
-  - name: 乌克兰+V2CROSS.COM
-    type: ss
-    server: 193.108.118.79
-    port: '8091'
-    cipher: aes-256-gcm
-    password: PCnnH6SQSnfoS27
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: cdn-xjp5.cqjsl.xyz
-    port: 443
-    uuid: d155a539-c3ff-4430-b389-fe3ce4a81900
+    server: cdn.noice.id
+    port: 80
+    uuid: 8bb07c55-0ef5-4d69-b131-fd9bab420ae8
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /
-    ws-headers: {}
-    tls: true
-  - name: 辽宁省鞍山市+电信
-    type: ss
-    server: free.themars.top
-    port: '32102'
-    cipher: chacha20-ietf-poly1305
-    password: b89b39c2-dc8d-4595-a4c5-54b4fbab3fc2
-  - name: 美国 CloudFlare节点 - 2
+    ws-path: /v2ray
+    ws-headers:
+      Host: 8fhq6a.aiossh.my.id
+  - name: 美国 CloudFlare节点 - 3
     type: vmess
     server: beta.noaries.de
     port: 8880
@@ -95,69 +53,113 @@ proxies:
     ws-path: /aries?ed=2048
     ws-headers:
       Host: contabo-uk.iiio.wiki
-  - name: 美国 CloudFlare节点 - 3
+  - name: 美国 CloudFlare节点 - 4
     type: vmess
-    server: cftokyo1.tnetvpn.com
-    port: 8443
-    uuid: 89401822-66ce-4fa0-ae71-7f0d495e9c9c
+    server: 172.67.132.15
+    port: 443
+    uuid: 18e5f40f-bda6-4c15-9334-e87cda6047af
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /relay
+    ws-path: /ray
+    ws-headers:
+      Host: ming2.kiwireich.com
+    tls: true
+  - name: 美国 加利福尼亚州森尼韦尔市PEG TECH公司
+    type: vmess
+    server: 142.0.132.35
+    port: 443
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /path/1685361567761
+    ws-headers:
+      Host: www.45022499.xyz
+    tls: true
+  - name: 荷兰 V2CROSS.COM
+    type: vmess
+    server: 206.189.98.76
+    port: 8080
+    uuid: 85c3ff6a-bb5c-4615-97fe-ac75bbce7c66
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /telegram:UCIRANIR
     ws-headers:
       Host: ''
+  - name: 美国 CloudFlare节点 - 5
+    type: vmess
+    server: x.leonard.eu.org
+    port: 443
+    uuid: 1441af41-5cee-497e-a47c-c26af169f9ff
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: x.leonard.eu.org
     tls: true
+  - name: 美国 CloudFlare节点 - 6
+    type: vmess
+    server: 173.245.58.140
+    port: 8080
+    uuid: 9588cb0f-5102-4e66-d5fb-f96cba9acdda
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /qazxcv03
+    ws-headers:
+      Host: tou.vtcss.top
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 阿里云
-      - 美国 华盛顿Cogent通信公司
-      - 江苏省+移动
-      - 美国 theplanet
-      - 香港+Microsoft数据中心
-      - 英国+V2CROSS.COM
-      - 英国+V2CROSS.COM - 2
-      - 乌克兰+V2CROSS.COM
       - 美国 CloudFlare节点
-      - 辽宁省鞍山市+电信
+      - 香港 DMIT数据中心
+      - 江苏省+移动
       - 美国 CloudFlare节点 - 2
       - 美国 CloudFlare节点 - 3
+      - 美国 CloudFlare节点 - 4
+      - 美国 加利福尼亚州森尼韦尔市PEG TECH公司
+      - 荷兰 V2CROSS.COM
+      - 美国 CloudFlare节点 - 5
+      - 美国 CloudFlare节点 - 6
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 阿里云
-      - 美国 华盛顿Cogent通信公司
-      - 江苏省+移动
-      - 美国 theplanet
-      - 香港+Microsoft数据中心
-      - 英国+V2CROSS.COM
-      - 英国+V2CROSS.COM - 2
-      - 乌克兰+V2CROSS.COM
       - 美国 CloudFlare节点
-      - 辽宁省鞍山市+电信
+      - 香港 DMIT数据中心
+      - 江苏省+移动
       - 美国 CloudFlare节点 - 2
       - 美国 CloudFlare节点 - 3
+      - 美国 CloudFlare节点 - 4
+      - 美国 加利福尼亚州森尼韦尔市PEG TECH公司
+      - 荷兰 V2CROSS.COM
+      - 美国 CloudFlare节点 - 5
+      - 美国 CloudFlare节点 - 6
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 阿里云
-      - 美国 华盛顿Cogent通信公司
-      - 江苏省+移动
-      - 美国 theplanet
-      - 香港+Microsoft数据中心
-      - 英国+V2CROSS.COM
-      - 英国+V2CROSS.COM - 2
-      - 乌克兰+V2CROSS.COM
       - 美国 CloudFlare节点
-      - 辽宁省鞍山市+电信
+      - 香港 DMIT数据中心
+      - 江苏省+移动
       - 美国 CloudFlare节点 - 2
       - 美国 CloudFlare节点 - 3
+      - 美国 CloudFlare节点 - 4
+      - 美国 加利福尼亚州森尼韦尔市PEG TECH公司
+      - 荷兰 V2CROSS.COM
+      - 美国 CloudFlare节点 - 5
+      - 美国 CloudFlare节点 - 6
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
