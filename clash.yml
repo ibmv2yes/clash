@@ -1,59 +1,55 @@
 proxies:
   - name: 美国 CloudFlare节点
     type: vmess
-    server: 104.18.23.26
-    port: 8080
-    uuid: dcafb669-fefc-4994-e3a9-5f40ed6aa7cf
+    server: 104.18.133.163
+    port: 2052
+    uuid: 0227edc4-8735-4370-ac42-4e8147920f0b
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /sshtproject
+    ws-path: /qwer10
     ws-headers:
-      Host: v2free.sshtproect.shop
+      Host: tou.vtcss.top
   - name: 美国 CloudFlare节点 - 2
     type: vmess
-    server: v2ray.online
-    port: 443
-    uuid: 00BBF5B8-173E-6818-9927-5AD1AA073C7D
+    server: 104.25.21.35
+    port: 2052
+    uuid: 0227edc4-8735-4370-ac42-4e8147920f0b
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /speedtest
+    ws-path: /qwer10
     ws-headers:
-      Host: Kansas.v2ray.online
-    tls: true
-  - name: 以色列+V2CROSS.COM
-    type: trojan
-    server: au1.chuqiangtou.net
-    port: '4003'
-    password: TJCfE7Mx2YcA8kX8zg
-  - name: 美国 CloudFlare节点 - 3
+      Host: tou.vtcss.top
+  - name: 美国 华盛顿Cogent通信公司
     type: vmess
-    server: cdn-xjp5.cqjsl.xyz
-    port: 443
-    uuid: d155a539-c3ff-4430-b389-fe3ce4a81900
-    alterId: 0
+    server: 38.60.208.68
+    port: 20037
+    uuid: a529cf39-d753-41e5-a72a-64cf8d48f469
+    alterId: 64
     cipher: auto
     udp: true
     network: ws
-    ws-path: /
+    ws-path: /tk2/getData
     ws-headers: {}
     tls: true
-  - name: 美国+V2CROSS.COM
-    type: trojan
-    server: 152.70.74.66
-    port: 443?security=tls&type=tcp&headerType=none
-    password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
-  - name: 日本+V2CROSS.COM
-    type: trojan
-    server: kr3.microsoft-orgwly.vip
-    port: 443?type=tcp&allowInsecure=1
-    password: 169e7740-a73d-49ff-b838-eec2bab35f82
-  - name: 美国 CloudFlare节点 - 4
+  - name: 美国 CloudFlare节点 - 3
     type: vmess
-    server: 198.41.203.57
+    server: 198.41.217.11
+    port: 8880
+    uuid: cb8cbbc3-137a-4064-8d02-b0ee3ca2c18c
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /qazxcv05
+    ws-headers:
+      Host: tou.vtcss.top
+  - name: 巴西圣保罗 CloudFlare节点
+    type: vmess
+    server: 188.114.98.51
     port: 2095
     uuid: 67597b31-fba2-42ba-b3df-b7264d346235
     alterId: 0
@@ -63,34 +59,36 @@ proxies:
     ws-path: /tg@hkaa0
     ws-headers:
       Host: jp.wyhkaa0.ga
+  - name: 美国 CloudFlare节点 - 4
+    type: vmess
+    server: cloudflare.piaole.me
+    port: 443
+    uuid: e8dacfc5-79b1-4289-92f1-e390080d56aa
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /huawei
+    ws-headers:
+      Host: cloudflare.piaole.me
+    tls: true
   - name: 美国 CloudFlare节点 - 5
     type: vmess
-    server: 173.245.58.140
-    port: 8080
-    uuid: 9588cb0f-5102-4e66-d5fb-f96cba9acdda
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /qazxcv03
-    ws-headers:
-      Host: tou.vtcss.top
-  - name: 美国 CloudFlare节点 - 6
-    type: vmess
-    server: cdn-xjp3.cqjsl.xyz
+    server: cdnjs.com
     port: 443
-    uuid: d155a539-c3ff-4430-b389-fe3ce4a81900
+    uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /
-    ws-headers: {}
+    ws-path: /speedtest
+    ws-headers:
+      Host: Lille.kotick.site
     tls: true
-  - name: 台湾省 中华电信
+  - name: 台湾省 中华电信(HiNet)数据中心
     type: vmess
-    server: 61.220.198.99
-    port: 58002
+    server: 60.251.3.74
+    port: 47712
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -105,47 +103,41 @@ proxies:
     port: '32102'
     cipher: chacha20-ietf-poly1305
     password: b89b39c2-dc8d-4595-a4c5-54b4fbab3fc2
-  - name: 美国+Microsoft数据中心
-    type: trojan
-    server: azjp2.downloadvip.cfd
-    port: 443?sni=us4.xn--mes358a9urctx.com
-    password: f5a18240-423f-47a0-b9a3-5e647bcdf38f
-  - name: 香港+Microsoft数据中心
-    type: trojan
-    server: hk16.jisuyun.co
-    port: 443?type=tcp&security=tls&sni=tls.jisuyun.co&allowInsecure=1
-    password: abf656f7-4886-46c9-b040-f742688c4d72
-  - name: 美国+华盛顿州西雅图市AWS有限公司EC2云服务器8号云机房
-    type: trojan
-    server: us3.jisuyun.co
-    port: 10086?type=tcp&security=tls&sni=tls.jisuyun.co&allowInsecure=1
-    password: abf656f7-4886-46c9-b040-f742688c4d72
-  - name: 美国 CloudFlare公司CDN节点(shopify)
+  - name: 美国 CloudFlare节点 - 6
     type: vmess
-    server: 23.227.38.99
-    port: 443
-    uuid: 86d37526-5758-4cec-862f-df404b313086
+    server: beta.noaries.de
+    port: 8880
+    uuid: 67c5ce45-7b48-473e-bf25-e4c830b0ed24
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /3G6WPDL7
+    ws-path: /aries?ed=2048
     ws-headers:
-      Host: 1.freek1.xyz
-    tls: true
-  - name: 香港 BGP.NET CN2数据中心
+      Host: contabo-uk.iiio.wiki
+  - name: 美国 CloudFlare节点 - 7
     type: vmess
-    server: 202.79.171.155
+    server: la.awsbest.com
     port: 443
-    uuid: 7f37da61-c734-41b4-a8c2-eccfd6ca48f0
-    alterId: 64
+    uuid: 8b6dd709-4d4e-4b92-f542-54a676efbfe4
+    alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /path/080712342310
+    ws-path: /shares
     ws-headers:
-      Host: ''
+      Host: la.awsbest.com
     tls: true
+  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
+    type: vmess
+    server: 192.74.228.174
+    port: 42857
+    uuid: 051b844f-efe3-4847-92aa-66b5de0b6d4e
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-headers: {}
   - name: 新加坡 腾讯云
     type: vmess
     server: 43.156.131.164
@@ -159,6 +151,41 @@ proxies:
     ws-headers:
       Host: ''
     tls: true
+  - name: 香港 BGP.NET CN2数据中心
+    type: vmess
+    server: 202.79.172.53
+    port: 443
+    uuid: 30216206-14b7-40e7-995d-61c1219ba584
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /path/220128071100
+    ws-headers:
+      Host: ''
+    tls: true
+  - name: 新加坡+Amazon数据中心
+    type: trojan
+    server: sg5.jisuyun.co
+    port: 11128?type=tcp&security=tls&sni=tls.jisuyun.co&allowInsecure=1
+    password: abf656f7-4886-46c9-b040-f742688c4d72
+  - name: 台湾省台北市+scloud.sg
+    type: trojan
+    server: bgptw2.cnamazon.sbs
+    port: '443'
+    password: 4658738d-c3f1-4ebf-ad7a-ee603e3f9690
+  - name: 挪威 V2CROSS.COM
+    type: vmess
+    server: pl1-vmess.greenssh.xyz
+    port: 80
+    uuid: 2b3ec40f-1dfc-4893-b739-c94e2fe46015
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: pl1-vmess.greenssh.xyz
 proxy-groups:
   - name: Free-servers
     type: select
@@ -167,41 +194,41 @@ proxy-groups:
       - 故障转移
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
-      - 以色列+V2CROSS.COM
+      - 美国 华盛顿Cogent通信公司
       - 美国 CloudFlare节点 - 3
-      - 美国+V2CROSS.COM
-      - 日本+V2CROSS.COM
+      - 巴西圣保罗 CloudFlare节点
       - 美国 CloudFlare节点 - 4
       - 美国 CloudFlare节点 - 5
-      - 美国 CloudFlare节点 - 6
-      - 台湾省 中华电信
+      - 台湾省 中华电信(HiNet)数据中心
       - 辽宁省鞍山市+电信
-      - 美国+Microsoft数据中心
-      - 香港+Microsoft数据中心
-      - 美国+华盛顿州西雅图市AWS有限公司EC2云服务器8号云机房
-      - 美国 CloudFlare公司CDN节点(shopify)
-      - 香港 BGP.NET CN2数据中心
+      - 美国 CloudFlare节点 - 6
+      - 美国 CloudFlare节点 - 7
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
       - 新加坡 腾讯云
+      - 香港 BGP.NET CN2数据中心
+      - 新加坡+Amazon数据中心
+      - 台湾省台北市+scloud.sg
+      - 挪威 V2CROSS.COM
   - name: 自动选择
     type: url-test
     proxies:
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
-      - 以色列+V2CROSS.COM
+      - 美国 华盛顿Cogent通信公司
       - 美国 CloudFlare节点 - 3
-      - 美国+V2CROSS.COM
-      - 日本+V2CROSS.COM
+      - 巴西圣保罗 CloudFlare节点
       - 美国 CloudFlare节点 - 4
       - 美国 CloudFlare节点 - 5
-      - 美国 CloudFlare节点 - 6
-      - 台湾省 中华电信
+      - 台湾省 中华电信(HiNet)数据中心
       - 辽宁省鞍山市+电信
-      - 美国+Microsoft数据中心
-      - 香港+Microsoft数据中心
-      - 美国+华盛顿州西雅图市AWS有限公司EC2云服务器8号云机房
-      - 美国 CloudFlare公司CDN节点(shopify)
-      - 香港 BGP.NET CN2数据中心
+      - 美国 CloudFlare节点 - 6
+      - 美国 CloudFlare节点 - 7
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
       - 新加坡 腾讯云
+      - 香港 BGP.NET CN2数据中心
+      - 新加坡+Amazon数据中心
+      - 台湾省台北市+scloud.sg
+      - 挪威 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
@@ -209,21 +236,21 @@ proxy-groups:
     proxies:
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
-      - 以色列+V2CROSS.COM
+      - 美国 华盛顿Cogent通信公司
       - 美国 CloudFlare节点 - 3
-      - 美国+V2CROSS.COM
-      - 日本+V2CROSS.COM
+      - 巴西圣保罗 CloudFlare节点
       - 美国 CloudFlare节点 - 4
       - 美国 CloudFlare节点 - 5
-      - 美国 CloudFlare节点 - 6
-      - 台湾省 中华电信
+      - 台湾省 中华电信(HiNet)数据中心
       - 辽宁省鞍山市+电信
-      - 美国+Microsoft数据中心
-      - 香港+Microsoft数据中心
-      - 美国+华盛顿州西雅图市AWS有限公司EC2云服务器8号云机房
-      - 美国 CloudFlare公司CDN节点(shopify)
-      - 香港 BGP.NET CN2数据中心
+      - 美国 CloudFlare节点 - 6
+      - 美国 CloudFlare节点 - 7
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
       - 新加坡 腾讯云
+      - 香港 BGP.NET CN2数据中心
+      - 新加坡+Amazon数据中心
+      - 台湾省台北市+scloud.sg
+      - 挪威 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
