@@ -1,23 +1,82 @@
 proxies:
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: cf-dx-dns.sharecentre.online
+    port: 80
+    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /shirker
+    ws-headers:
+      Host: in.sharecentrepro.com
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: 104.21.53.35
+    port: 80
+    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /yxzbp
+    ws-headers:
+      Host: buyvm1.yxjnode.com
+  - name: 日本 东京阿里云
+    type: vmess
+    server: cdncf.scyu.app
+    port: 8080
+    uuid: 4427eafb-3b3a-4265-9a32-fe0ea9cfd736
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /api/v3/download.getFile
+    ws-headers:
+      Host: ssrsub.v01.ssrsub.com
+  - name: 浙江省嘉兴市+电信IDC机房
+    type: ss
+    server: gzdx.jcnode.top
+    port: '23001'
+    cipher: aes-256-gcm
+    password: 052bc769-0489-49c7-97f2-51b3bb8e5486
+  - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: cf.yxjnode.com
+    port: 80
+    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /yxzbp
+    ws-headers:
+      Host: dp3.yxjnode.com
+  - name: 北美地区+V2CROSS.COM
+    type: ss
+    server: 134.195.198.95
+    port: '7306'
+    cipher: aes-256-gcm
+    password: FoOiGlkAA9yPEGP
+  - name: 美国 CloudFlare节点 - 4
+    type: vmess
+    server: 104.25.14.16
+    port: 8080
+    uuid: d7cf7b64-bf1c-46bd-cf39-90a31393843b
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /qwer
+    ws-headers:
+      Host: uyaa.vtcss.top
   - name: 上海市+电信
     type: ss
     server: 62e2186f.f0acf363.83df.34fb5e38.cc
     port: '30001'
     cipher: aes-256-gcm
     password: 23f24a65-57de-464b-9ff5-e994fbd6fe47
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: v2ray.online
-    port: 443
-    uuid: 00BBF5B8-173E-6818-9927-5AD1AA073C7D
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /speedtest
-    ws-headers:
-      Host: Kansas.v2ray.online
-    tls: true
   - name: 广东省佛山市 移动
     type: vmess
     server: 8.v2-ray.cyou
@@ -30,75 +89,47 @@ proxies:
     ws-path: /
     ws-headers:
       Host: 8.v2-ray.cyou
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: 104.21.94.37
-    port: 443
-    uuid: 00BBF5B8-173E-6818-9927-5AD1AA073C7D
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /speedtest
-    ws-headers:
-      Host: Kansas.v2ray.online
-    tls: true
-  - name: 美国 CloudFlare节点 - 3
-    type: vmess
-    server: cdn-xjp5.cqjsl.xyz
-    port: 443
-    uuid: 85c27619-fd14-4893-a56e-05944326c6f9
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers: {}
-    tls: true
-  - name: 美国 CloudFlare节点 - 4
-    type: vmess
-    server: 162.159.152.153
-    port: 8880
-    uuid: 67c5ce45-7b48-473e-bf25-e4c830b0ed24
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /aries?ed=2048
-    ws-headers:
-      Host: csjp.iiio.wiki
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 上海市+电信
       - 美国 CloudFlare节点
-      - 广东省佛山市 移动
       - 美国 CloudFlare节点 - 2
+      - 日本 东京阿里云
+      - 浙江省嘉兴市+电信IDC机房
       - 美国 CloudFlare节点 - 3
+      - 北美地区+V2CROSS.COM
       - 美国 CloudFlare节点 - 4
+      - 上海市+电信
+      - 广东省佛山市 移动
   - name: 自动选择
     type: url-test
     proxies:
-      - 上海市+电信
       - 美国 CloudFlare节点
-      - 广东省佛山市 移动
       - 美国 CloudFlare节点 - 2
+      - 日本 东京阿里云
+      - 浙江省嘉兴市+电信IDC机房
       - 美国 CloudFlare节点 - 3
+      - 北美地区+V2CROSS.COM
       - 美国 CloudFlare节点 - 4
+      - 上海市+电信
+      - 广东省佛山市 移动
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 上海市+电信
       - 美国 CloudFlare节点
-      - 广东省佛山市 移动
       - 美国 CloudFlare节点 - 2
+      - 日本 东京阿里云
+      - 浙江省嘉兴市+电信IDC机房
       - 美国 CloudFlare节点 - 3
+      - 北美地区+V2CROSS.COM
       - 美国 CloudFlare节点 - 4
+      - 上海市+电信
+      - 广东省佛山市 移动
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
