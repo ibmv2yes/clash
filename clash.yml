@@ -1,79 +1,27 @@
 proxies:
-  - name: 上海市+电信
-    type: trojan
-    server: official.taipeicitygovernment.kiev.ua
-    port: '8443'
-    password: 5505f6ba-cd37-30ce-8f92-be4120c83d7f
-  - name: 日本东京 xTom/AS23959
-    type: vmess
-    server: 45.14.65.176
-    port: 43011
-    uuid: 5f4b9acd-f90c-42cf-81ef-a10f7cd35456
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: ''
-    ws-headers:
-      Host: ''
-  - name: 美国 华盛顿Cogent通信公司
-    type: vmess
-    server: 38.63.17.179
-    port: 50702
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国 加利福尼亚州圣何塞PEG TECH
-    type: vmess
-    server: 142.4.108.26
-    port: 55102
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: dallas.starsea.vip
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: 104.27.40.80
-    port: 2052
-    uuid: 0227edc4-8735-4370-ac42-4e8147920f0b
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /qwer10
-    ws-headers:
-      Host: tou.vtcss.top
   - name: 美国+V2CROSS.COM
-    type: trojan
-    server: 152.70.74.66
-    port: 443?security=tls&type=tcp&headerType=none
-    password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
-  - name: 以色列+V2CROSS.COM
-    type: trojan
-    server: us1.chuqiangtou.net
-    port: '4003'
-    password: TJCfE7Mx2YcA8kX8zg
-  - name: 伊朗 V2CROSS.COM
+    type: ss
+    server: 172.99.190.87
+    port: '9101'
+    cipher: aes-256-gcm
+    password: e4FCWrgpkji3QY
+  - name: 美国 Datability
     type: vmess
-    server: turkey.abraak.site
-    port: 2087
-    uuid: 21025839-c140-4c67-8f4c-9a413ca8de3f
-    alterId: 0
+    server: 140.99.94.42
+    port: 51338
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
     cipher: auto
     udp: true
     network: tcp
     ws-path: /
     ws-headers:
       Host: ''
+  - name: 广东省+移动
+    type: trojan
+    server: assets.flareai.site
+    port: 13343?allowInsecure=1&peer=106-110-192-225.d.cjjd20.com&alpn=h2
+    password: d0d24d5b-54ae-40a0-ab68-889dbd4b8a66
   - name: 加拿大 魁北克省博阿努瓦OVH数据中心
     type: vmess
     server: ca1-vmess.greenssh.xyz
@@ -86,38 +34,10 @@ proxies:
     ws-path: /vmess
     ws-headers:
       Host: ''
-  - name: 德国 阿里云
+  - name: 美国 加利福尼亚州圣何塞PEG TECH
     type: vmess
-    server: cdn.anycast.eu.org
-    port: 443
-    uuid: dddd0b29-1576-4003-9990-d7cea34264db
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /835757
-    ws-headers:
-      Host: dedi2.1808.cf
-    tls: true
-  - name: 美国+Microsoft数据中心
-    type: trojan
-    server: ap.stablize.top
-    port: '443'
-    password: 27509bd6-5096-4790-9eba-2c793cca7a8d
-  - name: 广东省+移动
-    type: trojan
-    server: assets.flareai.site
-    port: '13543'
-    password: d0d24d5b-54ae-40a0-ab68-889dbd4b8a66
-  - name: 以色列+V2CROSS.COM - 2
-    type: trojan
-    server: us2.chuqiangtou.net
-    port: '4003'
-    password: TJCfE7Mx2YcA8kX8zg
-  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
-    type: vmess
-    server: 192.74.234.82
-    port: 51302
+    server: 142.4.126.77
+    port: 31002
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -126,52 +46,111 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国 V2CROSS.COM
+  - name: 澳大利亚 悉尼OVH
     type: vmess
-    server: vm.au.goserver.pw
+    server: au2-vmess.greenssh.xyz
     port: 80
-    uuid: a2a16067-7ac5-46dd-96f2-a94560ac438c
+    uuid: bf86a617-e0c2-4f7f-8a3a-12364d2a4df9
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /v2ray-vmess/ntls
+    ws-path: /vmess
     ws-headers:
-      Host: au.goserver.pw
-  - name: 以色列+V2CROSS.COM - 3
-    type: trojan
-    server: uk1.chuqiangtou.net
-    port: '4003'
-    password: TJCfE7Mx2YcA8kX8zg
-  - name: 美国 加利福尼亚州森尼韦尔市PEG TECH公司
+      Host: au2-vmess.greenssh.xyz
+  - name: 中国 阿里云
     type: vmess
-    server: 142.0.133.37
-    port: 51412
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
+    server: cdncf.scyu.app
+    port: 8080
+    uuid: 4427eafb-3b3a-4265-9a32-fe0ea9cfd736
+    alterId: 0
     cipher: auto
     udp: true
-    network: tcp
-    ws-path: /
+    network: ws
+    ws-path: /api/v3/download.getFile
     ws-headers:
-      Host: ''
-  - name: 以色列+V2CROSS.COM - 4
+      Host: ssrsub.v01.ssrsub.com
+  - name: 印度 孟买阿里云
+    type: vmess
+    server: 147.139.4.174
+    port: 10000
+    uuid: 66f5b022-ff6e-11ed-9b19-00163e0165c0
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /vpnjantit
+    ws-headers:
+      Host: 147.139.4.174
+  - name: 辽宁省鞍山市+电信
+    type: ss
+    server: free.themars.top
+    port: '32102'
+    cipher: chacha20-ietf-poly1305
+    password: b89b39c2-dc8d-4595-a4c5-54b4fbab3fc2
+  - name: 美国 RF Engineering
+    type: vmess
+    server: 141.193.213.31
+    port: 443
+    uuid: 6147F065-9AC0-4081-A5A3-A2EB4EBB8958
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /speedtest
+    ws-headers:
+      Host: Lille.kotick.site
+    tls: true
+  - name: 北美地区+V2CROSS.COM
+    type: ss
+    server: >-
+      ak1745.www.outline.network.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou
+    port: '443'
+    cipher: aes-256-gcm
+    password: pKEW8JPByTVTLtM
+  - name: 巴西圣保罗 CloudFlare节点
+    type: vmess
+    server: 188.114.98.205
+    port: 443
+    uuid: 2c3a22f0-2087-4f86-b30d-664317f8c820
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /qwer
+    ws-headers:
+      Host: tou.vtcss.top
+    tls: true
+  - name: 以色列+V2CROSS.COM
     type: trojan
-    server: us3.chuqiangtou.net
+    server: us1.chuqiangtou.net
     port: '4003'
     password: TJCfE7Mx2YcA8kX8zg
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: 172.66.46.15
+    port: 443
+    uuid: 12612e87-8003-44a8-b4e8-ec4a325e9016
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /ou
+    ws-headers:
+      Host: z.zorro.tk
+    tls: true
   - name: 美国 CloudFlare节点 - 2
     type: vmess
-    server: cf-lt.sharecentre.online
-    port: 80
-    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
+    server: beta.noaries.de
+    port: 8880
+    uuid: 67c5ce45-7b48-473e-bf25-e4c830b0ed24
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /shirker
+    ws-path: /aries?ed=2048
     ws-headers:
-      Host: ca.ilovescp.com
+      Host: csjp.iiio.wiki
   - name: 加拿大 魁北克省博阿努瓦OVH数据中心 - 2
     type: vmess
     server: ca1-vmess.greenssh.xyz
@@ -184,28 +163,15 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 辽宁省鞍山市+电信
+  - name: 乌克兰+V2CROSS.COM
     type: ss
-    server: free.themars.top
-    port: '32102'
-    cipher: chacha20-ietf-poly1305
-    password: b89b39c2-dc8d-4595-a4c5-54b4fbab3fc2
-  - name: 美国 V2CROSS.COM - 2
-    type: vmess
-    server: downloadvip.cfd
-    port: 443
-    uuid: 92622695-8087-4f81-97ea-1bd9cfeddfcf
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /djjc/us4
-    ws-headers:
-      Host: us4.djjc.sbs
-    tls: true
+    server: 193.108.118.36
+    port: '7306'
+    cipher: aes-256-gcm
+    password: FoOiGlkAA9yPEGP
   - name: 美国 CloudFlare节点 - 3
     type: vmess
-    server: 190.93.245.228
+    server: 190.93.245.64
     port: 2052
     uuid: 0227edc4-8735-4370-ac42-4e8147920f0b
     alterId: 0
@@ -215,127 +181,82 @@ proxies:
     ws-path: /qwer10
     ws-headers:
       Host: tou.vtcss.top
-  - name: 美国+Microsoft数据中心 - 2
+  - name: 美国+Microsoft数据中心
     type: trojan
     server: jp.stablize.top
     port: '443'
     password: 90a0fed1-c27c-4eab-95d6-12f038ced5ab
-  - name: 香港 电讯盈科有限公司
-    type: vmess
-    server: 112.118.195.16
-    port: 80
-    uuid: b2947942-701b-4de2-91cd-f6810d5d03bc
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: sg2.freeiq.cf
-  - name: 广东省深圳市 移动
-    type: vmess
-    server: iepl2.airtcp.vip
-    port: 51002
-    uuid: 1a7680df-81a1-3d89-a221-db81ac4b04df
-    alterId: 2
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 上海市+电信
-      - 日本东京 xTom/AS23959
-      - 美国 华盛顿Cogent通信公司
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国 CloudFlare节点
       - 美国+V2CROSS.COM
-      - 以色列+V2CROSS.COM
-      - 伊朗 V2CROSS.COM
-      - 加拿大 魁北克省博阿努瓦OVH数据中心
-      - 德国 阿里云
-      - 美国+Microsoft数据中心
+      - 美国 Datability
       - 广东省+移动
-      - 以色列+V2CROSS.COM - 2
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 美国 V2CROSS.COM
-      - 以色列+V2CROSS.COM - 3
-      - 美国 加利福尼亚州森尼韦尔市PEG TECH公司
-      - 以色列+V2CROSS.COM - 4
+      - 加拿大 魁北克省博阿努瓦OVH数据中心
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 澳大利亚 悉尼OVH
+      - 中国 阿里云
+      - 印度 孟买阿里云
+      - 辽宁省鞍山市+电信
+      - 美国 RF Engineering
+      - 北美地区+V2CROSS.COM
+      - 巴西圣保罗 CloudFlare节点
+      - 以色列+V2CROSS.COM
+      - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
       - 加拿大 魁北克省博阿努瓦OVH数据中心 - 2
-      - 辽宁省鞍山市+电信
-      - 美国 V2CROSS.COM - 2
+      - 乌克兰+V2CROSS.COM
       - 美国 CloudFlare节点 - 3
-      - 美国+Microsoft数据中心 - 2
-      - 香港 电讯盈科有限公司
-      - 广东省深圳市 移动
+      - 美国+Microsoft数据中心
   - name: 自动选择
     type: url-test
     proxies:
-      - 上海市+电信
-      - 日本东京 xTom/AS23959
-      - 美国 华盛顿Cogent通信公司
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国 CloudFlare节点
       - 美国+V2CROSS.COM
-      - 以色列+V2CROSS.COM
-      - 伊朗 V2CROSS.COM
-      - 加拿大 魁北克省博阿努瓦OVH数据中心
-      - 德国 阿里云
-      - 美国+Microsoft数据中心
+      - 美国 Datability
       - 广东省+移动
-      - 以色列+V2CROSS.COM - 2
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 美国 V2CROSS.COM
-      - 以色列+V2CROSS.COM - 3
-      - 美国 加利福尼亚州森尼韦尔市PEG TECH公司
-      - 以色列+V2CROSS.COM - 4
+      - 加拿大 魁北克省博阿努瓦OVH数据中心
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 澳大利亚 悉尼OVH
+      - 中国 阿里云
+      - 印度 孟买阿里云
+      - 辽宁省鞍山市+电信
+      - 美国 RF Engineering
+      - 北美地区+V2CROSS.COM
+      - 巴西圣保罗 CloudFlare节点
+      - 以色列+V2CROSS.COM
+      - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
       - 加拿大 魁北克省博阿努瓦OVH数据中心 - 2
-      - 辽宁省鞍山市+电信
-      - 美国 V2CROSS.COM - 2
+      - 乌克兰+V2CROSS.COM
       - 美国 CloudFlare节点 - 3
-      - 美国+Microsoft数据中心 - 2
-      - 香港 电讯盈科有限公司
-      - 广东省深圳市 移动
+      - 美国+Microsoft数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 上海市+电信
-      - 日本东京 xTom/AS23959
-      - 美国 华盛顿Cogent通信公司
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国 CloudFlare节点
       - 美国+V2CROSS.COM
-      - 以色列+V2CROSS.COM
-      - 伊朗 V2CROSS.COM
-      - 加拿大 魁北克省博阿努瓦OVH数据中心
-      - 德国 阿里云
-      - 美国+Microsoft数据中心
+      - 美国 Datability
       - 广东省+移动
-      - 以色列+V2CROSS.COM - 2
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 美国 V2CROSS.COM
-      - 以色列+V2CROSS.COM - 3
-      - 美国 加利福尼亚州森尼韦尔市PEG TECH公司
-      - 以色列+V2CROSS.COM - 4
+      - 加拿大 魁北克省博阿努瓦OVH数据中心
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 澳大利亚 悉尼OVH
+      - 中国 阿里云
+      - 印度 孟买阿里云
+      - 辽宁省鞍山市+电信
+      - 美国 RF Engineering
+      - 北美地区+V2CROSS.COM
+      - 巴西圣保罗 CloudFlare节点
+      - 以色列+V2CROSS.COM
+      - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
       - 加拿大 魁北克省博阿努瓦OVH数据中心 - 2
-      - 辽宁省鞍山市+电信
-      - 美国 V2CROSS.COM - 2
+      - 乌克兰+V2CROSS.COM
       - 美国 CloudFlare节点 - 3
-      - 美国+Microsoft数据中心 - 2
-      - 香港 电讯盈科有限公司
-      - 广东省深圳市 移动
+      - 美国+Microsoft数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
