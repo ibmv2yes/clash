@@ -1,88 +1,147 @@
 proxies:
-  - name: 广东省 移动
+  - name: 美国 CloudFlare节点
     type: vmess
-    server: 183.237.20.158
-    port: 40095
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
+    server: cf-lt.sharecentre.online
+    port: 8080
+    uuid: 4427eafb-3b3a-4265-9a32-fe0ea9cfd736
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /api/v3/download.getFile
+    ws-headers:
+      Host: ssrsub.v01.ssrsub.com
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: 104.21.94.37
+    port: 443
+    uuid: 00BBF5B8-173E-6818-9927-5AD1AA073C7D
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /speedtest
+    ws-headers:
+      Host: Kansas.v2ray.online
+    tls: true
+  - name: 美国+V2CROSS.COM
+    type: ss
+    server: 172.99.190.87
+    port: '5000'
+    cipher: aes-256-gcm
+    password: Y6R9pAtvxxzmGC
+  - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: 104.25.96.171
+    port: 443
+    uuid: 3de4ec27-74b4-43e3-bf23-18e726ac80bc
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /P6kpn5UKG40MNLK2
+    ws-headers:
+      Host: GHTyoqrBZm.janbaroon.com
+    tls: true
+  - name: 美国 CloudFlare节点 - 4
+    type: vmess
+    server: cf-lt.sharecentre.online
+    port: 80
+    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /shirker
+    ws-headers:
+      Host: dp3.scproxy.top
+  - name: 以色列+V2CROSS.COM
+    type: trojan
+    server: au1.chuqiangtou.net
+    port: '4003'
+    password: TJCfE7Mx2YcA8kX8zg
+  - name: 浙江省嘉兴市海宁市+电信
+    type: ss
+    server: gzdx.jcnode.top
+    port: '23001'
+    cipher: aes-256-gcm
+    password: 052bc769-0489-49c7-97f2-51b3bb8e5486
+  - name: 乌克兰+V2CROSS.COM
+    type: ss
+    server: 193.108.118.36
+    port: '7002'
+    cipher: aes-256-gcm
+    password: RexnBgU7EV5ADxG
+  - name: 美国 加利福尼亚州洛杉矶IT7网络
+    type: vmess
+    server: c20s4.jjvip8.com
+    port: 10171
+    uuid: f7eef69d-49f3-41dc-84b9-e724fc795455
+    alterId: 0
     cipher: auto
     udp: true
     network: tcp
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国+加利福尼亚州洛杉矶Level3通信(DIA)
+  - name: 以色列+V2CROSS.COM - 2
     type: trojan
-    server: usa.stablize.top
-    port: '443'
-    password: a95c1047-189c-4b26-8a54-8580f455827c
-  - name: 新加坡+Amazon数据中心
-    type: trojan
-    server: sg3.421421.xyz
-    port: '20230'
-    password: d510718c-d092-40df-a566-1344e2028433
-  - name: 俄罗斯 新西伯利亚ADMAN数据中心
-    type: vmess
-    server: 185.133.40.192
-    port: 35059
-    uuid: 8d78c2a8-acaa-467d-9234-d2606624506d
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
+    server: uk1.chuqiangtou.net
+    port: '4003'
+    password: TJCfE7Mx2YcA8kX8zg
   - name: 辽宁省鞍山市+电信
     type: ss
     server: free.themars.top
     port: '32102'
     cipher: chacha20-ietf-poly1305
     password: b89b39c2-dc8d-4595-a4c5-54b4fbab3fc2
-  - name: 台湾省 中华电信(HiNet)数据中心
-    type: vmess
-    server: 60.251.3.74
-    port: 47712
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 广东省 移动
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
-      - 新加坡+Amazon数据中心
-      - 俄罗斯 新西伯利亚ADMAN数据中心
+      - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 - 2
+      - 美国+V2CROSS.COM
+      - 美国 CloudFlare节点 - 3
+      - 美国 CloudFlare节点 - 4
+      - 以色列+V2CROSS.COM
+      - 浙江省嘉兴市海宁市+电信
+      - 乌克兰+V2CROSS.COM
+      - 美国 加利福尼亚州洛杉矶IT7网络
+      - 以色列+V2CROSS.COM - 2
       - 辽宁省鞍山市+电信
-      - 台湾省 中华电信(HiNet)数据中心
   - name: 自动选择
     type: url-test
     proxies:
-      - 广东省 移动
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
-      - 新加坡+Amazon数据中心
-      - 俄罗斯 新西伯利亚ADMAN数据中心
+      - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 - 2
+      - 美国+V2CROSS.COM
+      - 美国 CloudFlare节点 - 3
+      - 美国 CloudFlare节点 - 4
+      - 以色列+V2CROSS.COM
+      - 浙江省嘉兴市海宁市+电信
+      - 乌克兰+V2CROSS.COM
+      - 美国 加利福尼亚州洛杉矶IT7网络
+      - 以色列+V2CROSS.COM - 2
       - 辽宁省鞍山市+电信
-      - 台湾省 中华电信(HiNet)数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 广东省 移动
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
-      - 新加坡+Amazon数据中心
-      - 俄罗斯 新西伯利亚ADMAN数据中心
+      - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 - 2
+      - 美国+V2CROSS.COM
+      - 美国 CloudFlare节点 - 3
+      - 美国 CloudFlare节点 - 4
+      - 以色列+V2CROSS.COM
+      - 浙江省嘉兴市海宁市+电信
+      - 乌克兰+V2CROSS.COM
+      - 美国 加利福尼亚州洛杉矶IT7网络
+      - 以色列+V2CROSS.COM - 2
       - 辽宁省鞍山市+电信
-      - 台湾省 中华电信(HiNet)数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
