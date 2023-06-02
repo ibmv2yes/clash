@@ -1,7 +1,45 @@
 proxies:
+  - name: 日本 V2CROSS.COM
+    type: vmess
+    server: 146.56.174.31
+    port: 8080
+    uuid: c2eb5ff8-508d-4100-e0ca-9739f4d1c52c
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /tg@herhero6
+    ws-headers:
+      Host: 146.56.174.31
+  - name: 新加坡 Amazon数据中心
+    type: vmess
+    server: sg2.f163ab0f2c74.sanfen004.me
+    port: 443
+    uuid: 6d31bd0b-81df-4bb0-b9ea-e00bab2e06d8
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-headers: {}
+    tls: true
+  - name: 以色列+V2CROSS.COM
+    type: trojan
+    server: au3.chuqiangtou.net
+    port: 4003?type=tcp&security=tls&allowInsecure=1
+    password: TJCfE7Mx2YcA8kX8zg
+  - name: 美国+加利福尼亚州洛杉矶Level3通信(DIA)
+    type: trojan
+    server: jp.stablize.top
+    port: '443'
+    password: 90a0fed1-c27c-4eab-95d6-12f038ced5ab
+  - name: 以色列+V2CROSS.COM - 2
+    type: trojan
+    server: uk1.chuqiangtou.net
+    port: '4003'
+    password: TJCfE7Mx2YcA8kX8zg
   - name: 美国 CloudFlare节点
     type: vmess
-    server: 104.24.57.207
+    server: 104.25.21.35
     port: 2052
     uuid: 0227edc4-8735-4370-ac42-4e8147920f0b
     alterId: 0
@@ -11,29 +49,101 @@ proxies:
     ws-path: /qwer10
     ws-headers:
       Host: tou.vtcss.top
-  - name: 美国 加利福尼亚州洛杉矶IT7网络
+  - name: 澳大利亚 St Leonard's College
     type: vmess
-    server: c20s4.jjvip8.com
-    port: 10171
-    uuid: f7eef69d-49f3-41dc-84b9-e724fc795455
+    server: hkdsubv.114514782.xyz
+    port: 2082
+    uuid: 0ee79445-85a0-38fe-be38-58035ad10530
     alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /sdubfc
+    ws-headers: {}
+  - name: 以色列+V2CROSS.COM - 3
+    type: trojan
+    server: us3.chuqiangtou.net
+    port: '4003'
+    password: TJCfE7Mx2YcA8kX8zg
+  - name: 美国 RF Engineering
+    type: vmess
+    server: 141.193.213.31
+    port: 443
+    uuid: 6147F065-9AC0-4081-A5A3-A2EB4EBB8958
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /speedtest
+    ws-headers:
+      Host: Lille.kotick.site
+    tls: true
+  - name: 以色列+V2CROSS.COM - 4
+    type: trojan
+    server: us3.chuqiangtou.net
+    port: '4003'
+    password: TJCfE7Mx2YcA8kX8zg
+  - name: 广东省 移动
+    type: vmess
+    server: 183.237.20.158
+    port: 40095
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
     cipher: auto
     udp: true
     network: tcp
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国+V2CROSS.COM
-    type: ss
-    server: 172.99.190.87
-    port: '3389'
-    cipher: aes-256-gcm
-    password: Y6R9pAtvxxzmGC
-  - name: 美国+V2CROSS.COM - 2
-    type: trojan
-    server: 152.70.74.66
-    port: 443?security=tls&type=tcp&headerType=none
-    password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
+  - name: 美国 加利福尼亚州洛杉矶PetaExpress
+    type: vmess
+    server: 107.148.5.160
+    port: 53002
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 新加坡 OVH
+    type: vmess
+    server: 139.99.90.122
+    port: 443
+    uuid: c0156451-4efb-45e2-84fc-8d315c4650db
+    alterId: 32
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
+    type: vmess
+    server: 192.74.234.82
+    port: 51302
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: 104.25.96.171
+    port: 443
+    uuid: 3de4ec27-74b4-43e3-bf23-18e726ac80bc
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /P6kpn5UKG40MNLK2
+    ws-headers:
+      Host: GHTyoqrBZm.janbaroon.com
+    tls: true
   - name: 美国 主根域名服务器全球第05OF13号E.ROOT-SERVERS节点(WorldAnycast任播网络美国国家航空航天局运作BIND软件)
     type: vmess
     server: cdn.ikuan.dev
@@ -46,149 +156,30 @@ proxies:
     ws-path: /FreeForGFW
     ws-headers:
       Host: freeforgfw.ikuan.dev
-  - name: 美国 Datability
+  - name: 广东省深圳市 移动
     type: vmess
-    server: 140.99.94.42
-    port: 51338
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
+    server: iepl2.airtcp.vip
+    port: 51002
+    uuid: 1a7680df-81a1-3d89-a221-db81ac4b04df
+    alterId: 2
     cipher: auto
     udp: true
     network: tcp
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国+加利福尼亚州洛杉矶Level3通信(DIA)
-    type: trojan
-    server: jp.stablize.top
-    port: '443'
-    password: 90a0fed1-c27c-4eab-95d6-12f038ced5ab
-  - name: 美国 CloudFlare节点 - 2
+  - name: 巴西圣保罗 CloudFlare节点
     type: vmess
-    server: cf.noaries.de
-    port: 2082
-    uuid: 67c5ce45-7b48-473e-bf25-e4c830b0ed24
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /aries?ed=2048
-    ws-headers:
-      Host: dedipath2.iiio.wiki
-  - name: 美国 CloudFlare节点 - 3
-    type: vmess
-    server: scaleway.696960.xyz
+    server: 188.114.98.205
     port: 443
-    uuid: e357cd63-f1a5-4c8e-c42e-26da11207fee
+    uuid: 2c3a22f0-2087-4f86-b30d-664317f8c820
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /root/
-    ws-headers:
-      Host: ''
-    tls: true
-  - name: 加拿大 V2CROSS.COM
-    type: vmess
-    server: 199.212.90.14
-    port: 443
-    uuid: 6147F065-9AC0-4081-A5A3-A2EB4EBB8958
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /speedtest
-    ws-headers:
-      Host: Lille.kotick.site
-    tls: true
-  - name: 美国 加利福尼亚州森尼韦尔市PEG TECH公司
-    type: vmess
-    server: 142.0.130.242
-    port: 47988
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 上海市+联通
-    type: trojan
-    server: h961359.waihuizhibiaowang.com
-    port: 13543?allowInsecure=1&peer=106-110-192-225.d.cjjd20.com&alpn=h2
-    password: d0d24d5b-54ae-40a0-ab68-889dbd4b8a66
-  - name: 美国 CloudFlare节点 - 4
-    type: vmess
-    server: tech.noaries.de
-    port: 80
-    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /shirker
-    ws-headers:
-      Host: nl.sharecentrepro.com
-  - name: 广东省+移动
-    type: trojan
-    server: assets.flareai.site
-    port: 13543?allowInsecure=1&peer=106-110-192-225.d.cjjd20.com&alpn=h2
-    password: d0d24d5b-54ae-40a0-ab68-889dbd4b8a66
-  - name: 美国 CloudFlare节点 - 5
-    type: vmess
-    server: 198.41.196.233
-    port: 2052
-    uuid: 0227edc4-8735-4370-ac42-4e8147920f0b
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /qwer10
+    ws-path: /qwer
     ws-headers:
       Host: tou.vtcss.top
-  - name: 美国 CloudFlare节点 - 6
-    type: vmess
-    server: new8.huvicloud.com
-    port: 443
-    uuid: a11ca760-9ef9-4a63-95c9-4c5c32d56251
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: ''
-    ws-headers:
-      Host: ''
-    tls: true
-  - name: 广东省+移动 - 2
-    type: trojan
-    server: assets.flareai.site
-    port: '13243'
-    password: d0d24d5b-54ae-40a0-ab68-889dbd4b8a66
-  - name: 台湾省 中华电信
-    type: vmess
-    server: 61.220.198.99
-    port: 58002
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国 CloudFlare节点 - 7
-    type: vmess
-    server: 172.66.46.15
-    port: 443
-    uuid: 12612e87-8003-44a8-b4e8-ec4a325e9016
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /ou
-    ws-headers:
-      Host: z.zorro.tk
     tls: true
 proxy-groups:
   - name: Free-servers
@@ -196,71 +187,68 @@ proxy-groups:
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 CloudFlare节点
-      - 美国 加利福尼亚州洛杉矶IT7网络
-      - 美国+V2CROSS.COM
-      - 美国+V2CROSS.COM - 2
-      - 美国 主根域名服务器全球第05OF13号E.ROOT-SERVERS节点(WorldAnycast任播网络美国国家航空航天局运作BIND软件)
-      - 美国 Datability
+      - 日本 V2CROSS.COM
+      - 新加坡 Amazon数据中心
+      - 以色列+V2CROSS.COM
       - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
+      - 以色列+V2CROSS.COM - 2
+      - 美国 CloudFlare节点
+      - 澳大利亚 St Leonard's College
+      - 以色列+V2CROSS.COM - 3
+      - 美国 RF Engineering
+      - 以色列+V2CROSS.COM - 4
+      - 广东省 移动
+      - 美国 加利福尼亚州洛杉矶PetaExpress
+      - 新加坡 OVH
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
       - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
-      - 加拿大 V2CROSS.COM
-      - 美国 加利福尼亚州森尼韦尔市PEG TECH公司
-      - 上海市+联通
-      - 美国 CloudFlare节点 - 4
-      - 广东省+移动
-      - 美国 CloudFlare节点 - 5
-      - 美国 CloudFlare节点 - 6
-      - 广东省+移动 - 2
-      - 台湾省 中华电信
-      - 美国 CloudFlare节点 - 7
+      - 美国 主根域名服务器全球第05OF13号E.ROOT-SERVERS节点(WorldAnycast任播网络美国国家航空航天局运作BIND软件)
+      - 广东省深圳市 移动
+      - 巴西圣保罗 CloudFlare节点
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 CloudFlare节点
-      - 美国 加利福尼亚州洛杉矶IT7网络
-      - 美国+V2CROSS.COM
-      - 美国+V2CROSS.COM - 2
-      - 美国 主根域名服务器全球第05OF13号E.ROOT-SERVERS节点(WorldAnycast任播网络美国国家航空航天局运作BIND软件)
-      - 美国 Datability
+      - 日本 V2CROSS.COM
+      - 新加坡 Amazon数据中心
+      - 以色列+V2CROSS.COM
       - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
+      - 以色列+V2CROSS.COM - 2
+      - 美国 CloudFlare节点
+      - 澳大利亚 St Leonard's College
+      - 以色列+V2CROSS.COM - 3
+      - 美国 RF Engineering
+      - 以色列+V2CROSS.COM - 4
+      - 广东省 移动
+      - 美国 加利福尼亚州洛杉矶PetaExpress
+      - 新加坡 OVH
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
       - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
-      - 加拿大 V2CROSS.COM
-      - 美国 加利福尼亚州森尼韦尔市PEG TECH公司
-      - 上海市+联通
-      - 美国 CloudFlare节点 - 4
-      - 广东省+移动
-      - 美国 CloudFlare节点 - 5
-      - 美国 CloudFlare节点 - 6
-      - 广东省+移动 - 2
-      - 台湾省 中华电信
-      - 美国 CloudFlare节点 - 7
+      - 美国 主根域名服务器全球第05OF13号E.ROOT-SERVERS节点(WorldAnycast任播网络美国国家航空航天局运作BIND软件)
+      - 广东省深圳市 移动
+      - 巴西圣保罗 CloudFlare节点
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 CloudFlare节点
-      - 美国 加利福尼亚州洛杉矶IT7网络
-      - 美国+V2CROSS.COM
-      - 美国+V2CROSS.COM - 2
-      - 美国 主根域名服务器全球第05OF13号E.ROOT-SERVERS节点(WorldAnycast任播网络美国国家航空航天局运作BIND软件)
-      - 美国 Datability
+      - 日本 V2CROSS.COM
+      - 新加坡 Amazon数据中心
+      - 以色列+V2CROSS.COM
       - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
+      - 以色列+V2CROSS.COM - 2
+      - 美国 CloudFlare节点
+      - 澳大利亚 St Leonard's College
+      - 以色列+V2CROSS.COM - 3
+      - 美国 RF Engineering
+      - 以色列+V2CROSS.COM - 4
+      - 广东省 移动
+      - 美国 加利福尼亚州洛杉矶PetaExpress
+      - 新加坡 OVH
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
       - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
-      - 加拿大 V2CROSS.COM
-      - 美国 加利福尼亚州森尼韦尔市PEG TECH公司
-      - 上海市+联通
-      - 美国 CloudFlare节点 - 4
-      - 广东省+移动
-      - 美国 CloudFlare节点 - 5
-      - 美国 CloudFlare节点 - 6
-      - 广东省+移动 - 2
-      - 台湾省 中华电信
-      - 美国 CloudFlare节点 - 7
+      - 美国 主根域名服务器全球第05OF13号E.ROOT-SERVERS节点(WorldAnycast任播网络美国国家航空航天局运作BIND软件)
+      - 广东省深圳市 移动
+      - 巴西圣保罗 CloudFlare节点
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
