@@ -1,38 +1,33 @@
 proxies:
-  - name: 中国 阿里云
+  - name: 美国 V2CROSS.COM
     type: vmess
-    server: cdncf.scyu.app
-    port: 8080
-    uuid: 4427eafb-3b3a-4265-9a32-fe0ea9cfd736
+    server: downloadvip.cfd
+    port: 443
+    uuid: 92622695-8087-4f81-97ea-1bd9cfeddfcf
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /api/v3/download.getFile
+    ws-path: /djjc/us4
     ws-headers:
-      Host: ssrsub.v01.ssrsub.com
+      Host: us4.djjc.sbs
+    tls: true
   - name: 美国 CloudFlare节点
     type: vmess
-    server: 108.162.194.48
-    port: 2083
-    uuid: 39304f36-8a9c-4692-9b31-d2997532f567
+    server: cf-dx-dns.sharecentre.online
+    port: 80
+    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /qwer
+    ws-path: /shirker
     ws-headers:
-      Host: zslbs.vtcss.top
-    tls: true
-  - name: 湖南省+联通
-    type: trojan
-    server: scloud54.jafiyun.world
-    port: '22054'
-    password: 1c681734-ffc2-34dd-8ac8-bfabe4871216
-  - name: 美国 华盛顿Cogent通信公司
+      Host: in.sharecentrepro.com
+  - name: 美国 Datability
     type: vmess
-    server: 38.63.17.179
-    port: 50702
+    server: 140.99.94.42
+    port: 51338
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -41,41 +36,20 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
+  - name: 巴西圣保罗 CloudFlare节点
+    type: vmess
+    server: 188.114.98.205
+    port: 443
+    uuid: 2c3a22f0-2087-4f86-b30d-664317f8c820
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /qwer
+    ws-headers:
+      Host: tou.vtcss.top
+    tls: true
   - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: cf.yxjnode.com
-    port: 80
-    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /yxzbp
-    ws-headers:
-      Host: dp4.yxjnode.com
-  - name: 美国 CloudFlare节点 - 3
-    type: vmess
-    server: cf.yxjnode.com
-    port: 80
-    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /yxzbp
-    ws-headers:
-      Host: buyvm2.yxjnode.com
-  - name: 以色列+V2CROSS.COM
-    type: trojan
-    server: au3.chuqiangtou.net
-    port: '4003'
-    password: TJCfE7Mx2YcA8kX8zg
-  - name: 以色列+V2CROSS.COM - 2
-    type: trojan
-    server: us2.chuqiangtou.net
-    port: '4003'
-    password: TJCfE7Mx2YcA8kX8zg
-  - name: 美国 CloudFlare节点 - 4
     type: vmess
     server: cf-yd-dns.sharecentre.online
     port: 80
@@ -87,19 +61,61 @@ proxies:
     ws-path: /shirker
     ws-headers:
       Host: dp3.scproxy.top
-  - name: 德国 阿里云
+  - name: 甘肃省兰州市+移动
+    type: ss
+    server: 36.139.166.231
+    port: '11023'
+    cipher: aes-256-gcm
+    password: ll668668@
+  - name: 美国 CloudFlare节点 - 3
     type: vmess
-    server: cdncf.scyu.app
-    port: 8080
-    uuid: 4427eafb-3b3a-4265-9a32-fe0ea9cfd736
+    server: new8.huvicloud.com
+    port: 443
+    uuid: a11ca760-9ef9-4a63-95c9-4c5c32d56251
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /api/v3/download.getFile
+    ws-path: /
     ws-headers:
-      Host: ssrsub.v01.ssrsub.com
-  - name: 美国 CloudFlare节点 - 5
+      Host: ''
+    tls: true
+  - name: 欧盟 V2CROSS.COM
+    type: vmess
+    server: 45.67.215.70
+    port: 443
+    uuid: 3de4ec27-74b4-43e3-bf23-18e726ac80bc
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /P6kpn5UKG40MNLK2
+    ws-headers:
+      Host: USzuRMQnBz.janbaroon.com
+    tls: true
+  - name: 美国 加利福尼亚州洛杉矶Sharktech数据中心
+    type: vmess
+    server: 67.21.77.72
+    port: 47140
+    uuid: fabb30e8-3a2c-4149-9651-2758f7712481
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 广东省深圳市 移动
+    type: vmess
+    server: iepl2.airtcp.vip
+    port: 51002
+    uuid: 1a7680df-81a1-3d89-a221-db81ac4b04df
+    alterId: 2
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-headers: {}
+  - name: 美国 CloudFlare节点 - 4
     type: vmess
     server: 198.41.208.112
     port: 2052
@@ -111,33 +127,9 @@ proxies:
     ws-path: /qwer10
     ws-headers:
       Host: tou.vtcss.top
-  - name: 欧盟 V2CROSS.COM
+  - name: 美国 CloudFlare节点 - 5
     type: vmess
-    server: 45.67.215.70
-    port: 80
-    uuid: 1feceec7-fc56-41fc-8c8b-9dc3fb30ac2c
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /oSiR4t7dQow0J9ea3kKkF
-    ws-headers:
-      Host: hello-world-solitary-sky-c0bf.ourwayapp.workers.dev
-  - name: 美国 CloudFlare节点 - 6
-    type: vmess
-    server: cf-lt.sharecentre.online
-    port: 8080
-    uuid: 4427eafb-3b3a-4265-9a32-fe0ea9cfd736
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /api/v3/download.getFile
-    ws-headers:
-      Host: ssrsub.v01.ssrsub.com
-  - name: 美国 CloudFlare节点 - 7
-    type: vmess
-    server: 104.25.121.121
+    server: 104.24.57.207
     port: 2052
     uuid: 0227edc4-8735-4370-ac42-4e8147920f0b
     alterId: 0
@@ -147,108 +139,77 @@ proxies:
     ws-path: /qwer10
     ws-headers:
       Host: tou.vtcss.top
-  - name: 台湾省 中华电信
+  - name: 香港 BGP.NET CN2数据中心
     type: vmess
-    server: 61.220.198.99
-    port: 58002
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    server: 202.79.174.157
+    port: 55264
+    uuid: 121c9c89-7d11-4f49-9112-dc1e85363f6f
     alterId: 64
     cipher: auto
     udp: true
     network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国 CloudFlare节点 - 8
-    type: vmess
-    server: 104.18.23.26
-    port: 8080
-    uuid: dcafb669-fefc-4994-e3a9-5f40ed6aa7cf
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /sshtproject
-    ws-headers:
-      Host: v2free.sshtproect.shop
-  - name: 美国 CloudFlare节点 - 9
-    type: vmess
-    server: 104.25.96.171
-    port: 443
-    uuid: 3de4ec27-74b4-43e3-bf23-18e726ac80bc
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /P6kpn5UKG40MNLK2
-    ws-headers:
-      Host: GHTyoqrBZm.janbaroon.com
-    tls: true
+    ws-headers: {}
+  - name: 亚太地区+V2CROSS.COM
+    type: trojan
+    server: 163.123.192.154
+    port: 443?type=tcp&sni=download.xn--mes358a9urctx.com&allowInsecure=1
+    password: 363f868f-0374-46ab-a58e-ea108d06abe3
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 中国 阿里云
+      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 湖南省+联通
-      - 美国 华盛顿Cogent通信公司
+      - 美国 Datability
+      - 巴西圣保罗 CloudFlare节点
       - 美国 CloudFlare节点 - 2
+      - 甘肃省兰州市+移动
       - 美国 CloudFlare节点 - 3
-      - 以色列+V2CROSS.COM
-      - 以色列+V2CROSS.COM - 2
-      - 美国 CloudFlare节点 - 4
-      - 德国 阿里云
-      - 美国 CloudFlare节点 - 5
       - 欧盟 V2CROSS.COM
-      - 美国 CloudFlare节点 - 6
-      - 美国 CloudFlare节点 - 7
-      - 台湾省 中华电信
-      - 美国 CloudFlare节点 - 8
-      - 美国 CloudFlare节点 - 9
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 广东省深圳市 移动
+      - 美国 CloudFlare节点 - 4
+      - 美国 CloudFlare节点 - 5
+      - 香港 BGP.NET CN2数据中心
+      - 亚太地区+V2CROSS.COM
   - name: 自动选择
     type: url-test
     proxies:
-      - 中国 阿里云
+      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 湖南省+联通
-      - 美国 华盛顿Cogent通信公司
+      - 美国 Datability
+      - 巴西圣保罗 CloudFlare节点
       - 美国 CloudFlare节点 - 2
+      - 甘肃省兰州市+移动
       - 美国 CloudFlare节点 - 3
-      - 以色列+V2CROSS.COM
-      - 以色列+V2CROSS.COM - 2
-      - 美国 CloudFlare节点 - 4
-      - 德国 阿里云
-      - 美国 CloudFlare节点 - 5
       - 欧盟 V2CROSS.COM
-      - 美国 CloudFlare节点 - 6
-      - 美国 CloudFlare节点 - 7
-      - 台湾省 中华电信
-      - 美国 CloudFlare节点 - 8
-      - 美国 CloudFlare节点 - 9
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 广东省深圳市 移动
+      - 美国 CloudFlare节点 - 4
+      - 美国 CloudFlare节点 - 5
+      - 香港 BGP.NET CN2数据中心
+      - 亚太地区+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 中国 阿里云
+      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 湖南省+联通
-      - 美国 华盛顿Cogent通信公司
+      - 美国 Datability
+      - 巴西圣保罗 CloudFlare节点
       - 美国 CloudFlare节点 - 2
+      - 甘肃省兰州市+移动
       - 美国 CloudFlare节点 - 3
-      - 以色列+V2CROSS.COM
-      - 以色列+V2CROSS.COM - 2
-      - 美国 CloudFlare节点 - 4
-      - 德国 阿里云
-      - 美国 CloudFlare节点 - 5
       - 欧盟 V2CROSS.COM
-      - 美国 CloudFlare节点 - 6
-      - 美国 CloudFlare节点 - 7
-      - 台湾省 中华电信
-      - 美国 CloudFlare节点 - 8
-      - 美国 CloudFlare节点 - 9
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 广东省深圳市 移动
+      - 美国 CloudFlare节点 - 4
+      - 美国 CloudFlare节点 - 5
+      - 香港 BGP.NET CN2数据中心
+      - 亚太地区+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
