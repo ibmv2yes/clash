@@ -1,65 +1,29 @@
 proxies:
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: downloadvip.cfd
+    port: 443
+    uuid: 92622695-8087-4f81-97ea-1bd9cfeddfcf
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /djjc/us4
+    ws-headers:
+      Host: us4.djjc.sbs
+    tls: true
+  - name: 美国+V2CROSS.COM
+    type: ss
+    server: 172.99.190.87
+    port: '8080'
+    cipher: aes-256-gcm
+    password: KixLvKzwjekG00rm
+  - name: 日本+东京Microsoft数据中心
+    type: trojan
+    server: sg.stablize.top
+    port: '443'
+    password: 7864a4da-bfaf-4eea-bc1d-b7c829483df1
   - name: 美国 CloudFlare节点
-    type: vmess
-    server: 104.21.53.35
-    port: 80
-    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /yxzbp
-    ws-headers:
-      Host: buyvm1.yxjnode.com
-  - name: 美国 加利福尼亚州洛杉矶市SharkTech数据中心
-    type: vmess
-    server: 107.167.29.228
-    port: 46321
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 中国 阿里云
-    type: vmess
-    server: cdncf.scyu.app
-    port: 8080
-    uuid: 4427eafb-3b3a-4265-9a32-fe0ea9cfd736
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /api/v3/download.getFile
-    ws-headers:
-      Host: ssrsub.v01.ssrsub.com
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: 104.25.121.121
-    port: 2052
-    uuid: 0227edc4-8735-4370-ac42-4e8147920f0b
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /qwer10
-    ws-headers:
-      Host: tou.vtcss.top
-  - name: 中国 阿里云 - 2
-    type: vmess
-    server: sin.chigua.tk
-    port: 2086
-    uuid: fb67c65d-6e01-495f-f427-a26df0e6ebd3
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /?ed=2048
-    ws-headers:
-      Host: hk-justhost.iiio.wiki
-  - name: 美国 CloudFlare节点 - 3
     type: vmess
     server: cf-lt.sharecentre.online
     port: 8080
@@ -71,23 +35,11 @@ proxies:
     ws-path: /api/v3/download.getFile
     ws-headers:
       Host: ssrsub.v01.ssrsub.com
-  - name: 广东省佛山市 移动
+  - name: 广东省 移动
     type: vmess
-    server: 8.v2-ray.cyou
-    port: 23608
-    uuid: 0dd19d20-ec86-3680-b256-87237bafa89e
-    alterId: 2
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: 8.v2-ray.cyou
-  - name: 俄罗斯 新西伯利亚ADMAN数据中心
-    type: vmess
-    server: 185.133.40.192
-    port: 35059
-    uuid: 8d78c2a8-acaa-467d-9234-d2606624506d
+    server: 183.237.20.158
+    port: 40095
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
     udp: true
@@ -95,86 +47,35 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国+V2CROSS.COM
-    type: ss
-    server: 172.99.190.87
-    port: '8118'
-    cipher: aes-256-gcm
-    password: cdBIDV42DCwnfIN
-  - name: 美国 主根域名服务器全球第05OF13号E.ROOT-SERVERS节点(WorldAnycast任播网络美国国家航空航天局运作BIND软件)
-    type: vmess
-    server: cdn.ikuan.dev
-    port: 2052
-    uuid: 3185c2f3-4246-49c4-ba8a-5ea8fb2ef6b8
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /FreeForGFW
-    ws-headers:
-      Host: freeforgfw.ikuan.dev
-  - name: 辽宁省鞍山市+电信
-    type: ss
-    server: free.themars.top
-    port: '32102'
-    cipher: chacha20-ietf-poly1305
-    password: b89b39c2-dc8d-4595-a4c5-54b4fbab3fc2
-  - name: 俄罗斯+V2CROSS.COM
-    type: ss
-    server: 185.87.48.173
-    port: '17'
-    cipher: chacha20-ietf-poly1305
-    password: IX8Y44tZmVzfUoFprNhTFZFEyNCUjnYOwX7RqgMvmRIA
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 CloudFlare节点
-      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
-      - 中国 阿里云
-      - 美国 CloudFlare节点 - 2
-      - 中国 阿里云 - 2
-      - 美国 CloudFlare节点 - 3
-      - 广东省佛山市 移动
-      - 俄罗斯 新西伯利亚ADMAN数据中心
+      - 美国 V2CROSS.COM
       - 美国+V2CROSS.COM
-      - 美国 主根域名服务器全球第05OF13号E.ROOT-SERVERS节点(WorldAnycast任播网络美国国家航空航天局运作BIND软件)
-      - 辽宁省鞍山市+电信
-      - 俄罗斯+V2CROSS.COM
+      - 日本+东京Microsoft数据中心
+      - 美国 CloudFlare节点
+      - 广东省 移动
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 CloudFlare节点
-      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
-      - 中国 阿里云
-      - 美国 CloudFlare节点 - 2
-      - 中国 阿里云 - 2
-      - 美国 CloudFlare节点 - 3
-      - 广东省佛山市 移动
-      - 俄罗斯 新西伯利亚ADMAN数据中心
+      - 美国 V2CROSS.COM
       - 美国+V2CROSS.COM
-      - 美国 主根域名服务器全球第05OF13号E.ROOT-SERVERS节点(WorldAnycast任播网络美国国家航空航天局运作BIND软件)
-      - 辽宁省鞍山市+电信
-      - 俄罗斯+V2CROSS.COM
+      - 日本+东京Microsoft数据中心
+      - 美国 CloudFlare节点
+      - 广东省 移动
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 CloudFlare节点
-      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
-      - 中国 阿里云
-      - 美国 CloudFlare节点 - 2
-      - 中国 阿里云 - 2
-      - 美国 CloudFlare节点 - 3
-      - 广东省佛山市 移动
-      - 俄罗斯 新西伯利亚ADMAN数据中心
+      - 美国 V2CROSS.COM
       - 美国+V2CROSS.COM
-      - 美国 主根域名服务器全球第05OF13号E.ROOT-SERVERS节点(WorldAnycast任播网络美国国家航空航天局运作BIND软件)
-      - 辽宁省鞍山市+电信
-      - 俄罗斯+V2CROSS.COM
+      - 日本+东京Microsoft数据中心
+      - 美国 CloudFlare节点
+      - 广东省 移动
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
