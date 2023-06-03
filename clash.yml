@@ -1,29 +1,51 @@
 proxies:
-  - name: 俄罗斯 V2CROSS.COM
+  - name: 美国 CloudFlare节点
     type: vmess
-    server: 6bd8e697-rrslc0-14vzw.uk.tcpbbr.net
-    port: 80
-    uuid: f8c51b52-2bbb-11eb-a8bf-f23c91cfbbc9
-    alterId: 1
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: 6bd8e697-rrslc0-14vzw.uk.tcpbbr.net
-  - name: 伊朗 V2CROSS.COM
-    type: vmess
-    server: turkey.abraak.site
-    port: 2087
-    uuid: 21025839-c140-4c67-8f4c-9a413ca8de3f
+    server: la.awsbest.com
+    port: 443
+    uuid: 8b6dd709-4d4e-4b92-f542-54a676efbfe4
     alterId: 0
     cipher: auto
     udp: true
-    network: tcp
-    ws-path: /
+    network: ws
+    ws-path: /shares
     ws-headers:
-      Host: ''
+      Host: la.awsbest.com
+    tls: true
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: v2ray.online
+    port: 443
+    uuid: 00BBF5B8-173E-6818-9927-5AD1AA073C7D
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /speedtest
+    ws-headers:
+      Host: Kansas.v2ray.online
+    tls: true
+  - name: 湖南省+联通
+    type: trojan
+    server: scloud54.jafiyun.world
+    port: 22054?type=tcp&sni=scloud54.jafiyun.world&allowInsecure=1
+    password: 1c681734-ffc2-34dd-8ac8-bfabe4871216
   - name: 以色列+V2CROSS.COM
+    type: trojan
+    server: us3.chuqiangtou.net
+    port: '4003'
+    password: TJCfE7Mx2YcA8kX8zg
+  - name: 广东省深圳市 移动
+    type: vmess
+    server: iepl2.airtcp.vip
+    port: 51002
+    uuid: 1a7680df-81a1-3d89-a221-db81ac4b04df
+    alterId: 2
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-headers: {}
+  - name: 以色列+V2CROSS.COM - 2
     type: trojan
     server: jp2.chuqiangtou.net
     port: '4003'
@@ -31,88 +53,100 @@ proxies:
   - name: 乌克兰+V2CROSS.COM
     type: ss
     server: 193.108.118.79
-    port: '8090'
+    port: '7307'
     cipher: aes-256-gcm
-    password: PCnnH6SQSnfoS27
-  - name: 广东省+移动
-    type: trojan
-    server: assets.flareai.site
-    port: 13343?allowInsecure=1&peer=106-110-192-225.d.cjjd20.com&alpn=h2
-    password: d0d24d5b-54ae-40a0-ab68-889dbd4b8a66
-  - name: 美国 CloudFlare节点
+    password: FoOiGlkAA9yPEGP
+  - name: 美国 CloudFlare节点 - 3
     type: vmess
-    server: 104.25.121.121
-    port: 2052
-    uuid: 0227edc4-8735-4370-ac42-4e8147920f0b
+    server: 104.25.96.171
+    port: 443
+    uuid: 3de4ec27-74b4-43e3-bf23-18e726ac80bc
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /qwer10
+    ws-path: /P6kpn5UKG40MNLK2
     ws-headers:
-      Host: tou.vtcss.top
-  - name: 伊朗 V2CROSS.COM - 2
+      Host: GHTyoqrBZm.janbaroon.com
+    tls: true
+  - name: 上海市+电信
+    type: ss
+    server: 62e2186f.d0f692af.83df.34fb5e38.cc
+    port: '30004'
+    cipher: aes-256-gcm
+    password: 44e4e808-db1e-494d-9d7e-c67b38b13556
+  - name: 以色列+V2CROSS.COM - 3
+    type: trojan
+    server: us2.chuqiangtou.net
+    port: '4003'
+    password: TJCfE7Mx2YcA8kX8zg
+  - name: 上海市+联通
+    type: trojan
+    server: h961359.waihuizhibiaowang.com
+    port: 13543?allowInsecure=1&peer=106-110-192-225.d.cjjd20.com&alpn=h2
+    password: d0d24d5b-54ae-40a0-ab68-889dbd4b8a66
+  - name: 美国 V2CROSS.COM
     type: vmess
-    server: turkey.abraak.site
-    port: 2087
-    uuid: 21025839-c140-4c67-8f4c-9a413ca8de3f
+    server: usg.fljsm.com
+    port: 443
+    uuid: e5543efd-5400-3760-9bb6-02767728e888
     alterId: 0
     cipher: auto
     udp: true
-    network: tcp
-    ws-path: /
+    network: ws
+    ws-path: /video
     ws-headers:
-      Host: ''
-  - name: 美国 Datability
-    type: vmess
-    server: 140.99.94.42
-    port: 51338
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
+      Host: usg.fljsm.com
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 俄罗斯 V2CROSS.COM
-      - 伊朗 V2CROSS.COM
-      - 以色列+V2CROSS.COM
-      - 乌克兰+V2CROSS.COM
-      - 广东省+移动
       - 美国 CloudFlare节点
-      - 伊朗 V2CROSS.COM - 2
-      - 美国 Datability
+      - 美国 CloudFlare节点 - 2
+      - 湖南省+联通
+      - 以色列+V2CROSS.COM
+      - 广东省深圳市 移动
+      - 以色列+V2CROSS.COM - 2
+      - 乌克兰+V2CROSS.COM
+      - 美国 CloudFlare节点 - 3
+      - 上海市+电信
+      - 以色列+V2CROSS.COM - 3
+      - 上海市+联通
+      - 美国 V2CROSS.COM
   - name: 自动选择
     type: url-test
     proxies:
-      - 俄罗斯 V2CROSS.COM
-      - 伊朗 V2CROSS.COM
-      - 以色列+V2CROSS.COM
-      - 乌克兰+V2CROSS.COM
-      - 广东省+移动
       - 美国 CloudFlare节点
-      - 伊朗 V2CROSS.COM - 2
-      - 美国 Datability
+      - 美国 CloudFlare节点 - 2
+      - 湖南省+联通
+      - 以色列+V2CROSS.COM
+      - 广东省深圳市 移动
+      - 以色列+V2CROSS.COM - 2
+      - 乌克兰+V2CROSS.COM
+      - 美国 CloudFlare节点 - 3
+      - 上海市+电信
+      - 以色列+V2CROSS.COM - 3
+      - 上海市+联通
+      - 美国 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 俄罗斯 V2CROSS.COM
-      - 伊朗 V2CROSS.COM
-      - 以色列+V2CROSS.COM
-      - 乌克兰+V2CROSS.COM
-      - 广东省+移动
       - 美国 CloudFlare节点
-      - 伊朗 V2CROSS.COM - 2
-      - 美国 Datability
+      - 美国 CloudFlare节点 - 2
+      - 湖南省+联通
+      - 以色列+V2CROSS.COM
+      - 广东省深圳市 移动
+      - 以色列+V2CROSS.COM - 2
+      - 乌克兰+V2CROSS.COM
+      - 美国 CloudFlare节点 - 3
+      - 上海市+电信
+      - 以色列+V2CROSS.COM - 3
+      - 上海市+联通
+      - 美国 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
