@@ -1,27 +1,75 @@
 proxies:
-  - name: 以色列+V2CROSS.COM
-    type: trojan
-    server: us1.chuqiangtou.net
-    port: '4003'
-    password: TJCfE7Mx2YcA8kX8zg
-  - name: 美国+Microsoft数据中心
-    type: trojan
-    server: usa.stablize.top
-    port: '443'
-    password: a95c1047-189c-4b26-8a54-8580f455827c
-  - name: 法国 OVH SAS
+  - name: 中国 阿里云
     type: vmess
-    server: 188.165.170.83
-    port: 80
-    uuid: 860a862a-2798-4037-8513-b060e310e7fc
+    server: cdn.anycast.eu.org
+    port: 443
+    uuid: dddd0b29-1576-4003-9990-d7cea34264db
     alterId: 0
     cipher: auto
     udp: true
     network: ws
+    ws-path: /835757
+    ws-headers:
+      Host: dedi2.1808.cf
+    tls: true
+  - name: 甘肃省兰州市+移动
+    type: ss
+    server: 36.139.166.252
+    port: '11023'
+    cipher: aes-256-gcm
+    password: ll668668@
+  - name: 美国 主根域名服务器全球第05OF13号E.ROOT-SERVERS节点(WorldAnycast任播网络美国国家航空航天局运作BIND软件)
+    type: vmess
+    server: cdn.ikuan.dev
+    port: 2052
+    uuid: 3185c2f3-4246-49c4-ba8a-5ea8fb2ef6b8
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /FreeForGFW
+    ws-headers:
+      Host: freeforgfw.ikuan.dev
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: cf-lt.sharecentre.online
+    port: 80
+    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /shirker
+    ws-headers:
+      Host: lv3.sharecentrepro.org
+  - name: 日本+大阪府大阪Microsoft数据中心
+    type: trojan
+    server: usa.stablize.top
+    port: '443'
+    password: a95c1047-189c-4b26-8a54-8580f455827c
+  - name: 以色列+V2CROSS.COM
+    type: trojan
+    server: hk1.chuqiangtou.net
+    port: '4003'
+    password: TJCfE7Mx2YcA8kX8zg
+  - name: 广东省+移动
+    type: trojan
+    server: assets.flareai.site
+    port: '13543'
+    password: d0d24d5b-54ae-40a0-ab68-889dbd4b8a66
+  - name: 美国 华盛顿Cogent通信公司
+    type: vmess
+    server: 38.63.17.179
+    port: 50702
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 立陶宛 V2CROSS.COM
+  - name: 澳大利亚 Lyndhurst Secondary College
     type: vmess
     server: ask.ircf.space
     port: 443
@@ -34,139 +82,78 @@ proxies:
     ws-headers:
       Host: wfi.sahnama.com
     tls: true
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: 198.41.199.70
-    port: 2052
-    uuid: a94aed90-ae0f-4094-fdd5-1c5a0e2eeabf
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /qwer
-    ws-headers:
-      Host: x1.vtcss.top
-  - name: 辽宁省鞍山市+电信
-    type: ss
-    server: free.themars.top
-    port: '32102'
-    cipher: chacha20-ietf-poly1305
-    password: b89b39c2-dc8d-4595-a4c5-54b4fbab3fc2
+  - name: 美国+Microsoft数据中心
+    type: trojan
+    server: usajs.stablize.top
+    port: '443'
+    password: b88edfd4-23eb-4544-9bbc-a68914952905
   - name: 美国 CloudFlare节点 - 2
     type: vmess
-    server: beta.noaries.de
-    port: 2086
-    uuid: 67c5ce45-7b48-473e-bf25-e4c830b0ed24
+    server: 190.93.245.228
+    port: 2052
+    uuid: 0227edc4-8735-4370-ac42-4e8147920f0b
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /aries?ed=2048
+    ws-path: /qwer10
     ws-headers:
-      Host: ovh.iiio.wiki
+      Host: tou.vtcss.top
   - name: 以色列+V2CROSS.COM - 2
     type: trojan
-    server: us3.chuqiangtou.net
+    server: us2.chuqiangtou.net
     port: '4003'
     password: TJCfE7Mx2YcA8kX8zg
-  - name: 美国 CloudFlare节点 - 3
-    type: vmess
-    server: cf.yxjnode.com
-    port: 80
-    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /yxzbp
-    ws-headers:
-      Host: buyvm2.yxjnode.com
-  - name: 美国 CloudFlare节点 - 4
-    type: vmess
-    server: 104.21.53.35
-    port: 80
-    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /yxzbp
-    ws-headers:
-      Host: buyvm1.yxjnode.com
-  - name: 广东省佛山市 移动
-    type: vmess
-    server: 8.v2-ray.cyou
-    port: 23608
-    uuid: 0dd19d20-ec86-3680-b256-87237bafa89e
-    alterId: 2
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: 8.v2-ray.cyou
-  - name: 美国 Datability
-    type: vmess
-    server: 140.99.94.42
-    port: 51338
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 以色列+V2CROSS.COM
-      - 美国+Microsoft数据中心
-      - 法国 OVH SAS
-      - 立陶宛 V2CROSS.COM
+      - 中国 阿里云
+      - 甘肃省兰州市+移动
+      - 美国 主根域名服务器全球第05OF13号E.ROOT-SERVERS节点(WorldAnycast任播网络美国国家航空航天局运作BIND软件)
       - 美国 CloudFlare节点
-      - 辽宁省鞍山市+电信
+      - 日本+大阪府大阪Microsoft数据中心
+      - 以色列+V2CROSS.COM
+      - 广东省+移动
+      - 美国 华盛顿Cogent通信公司
+      - 澳大利亚 Lyndhurst Secondary College
+      - 美国+Microsoft数据中心
       - 美国 CloudFlare节点 - 2
       - 以色列+V2CROSS.COM - 2
-      - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
-      - 广东省佛山市 移动
-      - 美国 Datability
   - name: 自动选择
     type: url-test
     proxies:
-      - 以色列+V2CROSS.COM
-      - 美国+Microsoft数据中心
-      - 法国 OVH SAS
-      - 立陶宛 V2CROSS.COM
+      - 中国 阿里云
+      - 甘肃省兰州市+移动
+      - 美国 主根域名服务器全球第05OF13号E.ROOT-SERVERS节点(WorldAnycast任播网络美国国家航空航天局运作BIND软件)
       - 美国 CloudFlare节点
-      - 辽宁省鞍山市+电信
+      - 日本+大阪府大阪Microsoft数据中心
+      - 以色列+V2CROSS.COM
+      - 广东省+移动
+      - 美国 华盛顿Cogent通信公司
+      - 澳大利亚 Lyndhurst Secondary College
+      - 美国+Microsoft数据中心
       - 美国 CloudFlare节点 - 2
       - 以色列+V2CROSS.COM - 2
-      - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
-      - 广东省佛山市 移动
-      - 美国 Datability
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 以色列+V2CROSS.COM
-      - 美国+Microsoft数据中心
-      - 法国 OVH SAS
-      - 立陶宛 V2CROSS.COM
+      - 中国 阿里云
+      - 甘肃省兰州市+移动
+      - 美国 主根域名服务器全球第05OF13号E.ROOT-SERVERS节点(WorldAnycast任播网络美国国家航空航天局运作BIND软件)
       - 美国 CloudFlare节点
-      - 辽宁省鞍山市+电信
+      - 日本+大阪府大阪Microsoft数据中心
+      - 以色列+V2CROSS.COM
+      - 广东省+移动
+      - 美国 华盛顿Cogent通信公司
+      - 澳大利亚 Lyndhurst Secondary College
+      - 美国+Microsoft数据中心
       - 美国 CloudFlare节点 - 2
       - 以色列+V2CROSS.COM - 2
-      - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
-      - 广东省佛山市 移动
-      - 美国 Datability
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
