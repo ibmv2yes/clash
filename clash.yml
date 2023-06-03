@@ -1,85 +1,48 @@
 proxies:
-  - name: 美国 V2CROSS.COM
+  - name: 澳大利亚 Sandringham Secondary College
     type: vmess
-    server: downloadvip.cfd
+    server: bx.weizai2023.uk.eu.org
     port: 443
-    uuid: 92622695-8087-4f81-97ea-1bd9cfeddfcf
+    uuid: e7d1e562-2af9-40ac-9fad-d1d4806ff1e9
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /djjc/us4
+    ws-path: /mioooo?ed=2048
     ws-headers:
-      Host: us4.djjc.sbs
+      Host: 2bh.unioreo.rip
     tls: true
-  - name: 美国 CloudFlare节点
+  - name: 湖南省 移动
     type: vmess
-    server: cf-dx-dns.sharecentre.online
-    port: 80
-    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /shirker
-    ws-headers:
-      Host: in.sharecentrepro.com
-  - name: 美国 Datability
-    type: vmess
-    server: 140.99.94.42
-    port: 51338
+    server: 120.226.50.76
+    port: 45070
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
     udp: true
     network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 巴西圣保罗 CloudFlare节点
-    type: vmess
-    server: 188.114.98.205
-    port: 443
-    uuid: 2c3a22f0-2087-4f86-b30d-664317f8c820
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /qwer
-    ws-headers:
-      Host: tou.vtcss.top
-    tls: true
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: cf-yd-dns.sharecentre.online
-    port: 80
-    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /shirker
-    ws-headers:
-      Host: dp3.scproxy.top
-  - name: 甘肃省兰州市+移动
+    ws-headers: {}
+  - name: 以色列+V2CROSS.COM
+    type: trojan
+    server: hk1.chuqiangtou.net
+    port: '4003'
+    password: TJCfE7Mx2YcA8kX8zg
+  - name: 美国+V2CROSS.COM
     type: ss
-    server: 36.139.166.231
-    port: '11023'
+    server: 172.99.190.87
+    port: '5500'
     cipher: aes-256-gcm
-    password: ll668668@
-  - name: 美国 CloudFlare节点 - 3
-    type: vmess
-    server: new8.huvicloud.com
-    port: 443
-    uuid: a11ca760-9ef9-4a63-95c9-4c5c32d56251
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: ''
-    tls: true
+    password: KixLvKzwjekG00rm
+  - name: 以色列+V2CROSS.COM - 2
+    type: trojan
+    server: us2.chuqiangtou.net
+    port: '4003'
+    password: TJCfE7Mx2YcA8kX8zg
+  - name: 以色列+V2CROSS.COM - 3
+    type: trojan
+    server: us1.chuqiangtou.net
+    port: '4003'
+    password: TJCfE7Mx2YcA8kX8zg
   - name: 欧盟 V2CROSS.COM
     type: vmess
     server: 45.67.215.70
@@ -93,123 +56,167 @@ proxies:
     ws-headers:
       Host: USzuRMQnBz.janbaroon.com
     tls: true
-  - name: 美国 加利福尼亚州洛杉矶Sharktech数据中心
+  - name: 重庆市 移动
     type: vmess
-    server: 67.21.77.72
-    port: 47140
-    uuid: fabb30e8-3a2c-4149-9651-2758f7712481
-    alterId: 64
+    server: 36.134.16.190
+    port: 11023
+    uuid: 8c042a38-71c1-1dcb-00df-54880236e0dc
+    alterId: 0
     cipher: auto
     udp: true
     network: tcp
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 广东省深圳市 移动
+  - name: 中国 阿里云
     type: vmess
-    server: iepl2.airtcp.vip
-    port: 51002
-    uuid: 1a7680df-81a1-3d89-a221-db81ac4b04df
-    alterId: 2
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-headers: {}
-  - name: 美国 CloudFlare节点 - 4
-    type: vmess
-    server: 198.41.208.112
-    port: 2052
-    uuid: 0227edc4-8735-4370-ac42-4e8147920f0b
+    server: sin.chigua.tk
+    port: 2086
+    uuid: fb67c65d-6e01-495f-f427-a26df0e6ebd3
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /qwer10
+    ws-path: /?ed=2048
     ws-headers:
-      Host: tou.vtcss.top
-  - name: 美国 CloudFlare节点 - 5
-    type: vmess
-    server: 104.24.57.207
-    port: 2052
-    uuid: 0227edc4-8735-4370-ac42-4e8147920f0b
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /qwer10
-    ws-headers:
-      Host: tou.vtcss.top
-  - name: 香港 BGP.NET CN2数据中心
-    type: vmess
-    server: 202.79.174.157
-    port: 55264
-    uuid: 121c9c89-7d11-4f49-9112-dc1e85363f6f
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-headers: {}
-  - name: 亚太地区+V2CROSS.COM
+      Host: hk-justhost.iiio.wiki
+  - name: 美国+V2CROSS.COM - 2
+    type: ss
+    server: 172.99.190.87
+    port: '8881'
+    cipher: aes-256-gcm
+    password: kDWvXYZoTBcGkC4
+  - name: 美国+Microsoft数据中心
     type: trojan
-    server: 163.123.192.154
-    port: 443?type=tcp&sni=download.xn--mes358a9urctx.com&allowInsecure=1
-    password: 363f868f-0374-46ab-a58e-ea108d06abe3
+    server: sg.stablize.top
+    port: '443'
+    password: 7864a4da-bfaf-4eea-bc1d-b7c829483df1
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: cf.yxjnode.com
+    port: 80
+    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /yxzbp
+    ws-headers:
+      Host: dp4.yxjnode.com
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: v3.gitvpn.eu.org
+    port: 443
+    uuid: b63e998f-7fc8-48f4-a7d8-35dad9cf5778
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: v3.gitvpn.eu.org
+    tls: true
+  - name: 辽宁省鞍山市+联通
+    type: trojan
+    server: social.flareai.store
+    port: 13743?allowInsecure=1&peer=106-110-192-225.d.cjjd20.com&alpn=h2
+    password: d0d24d5b-54ae-40a0-ab68-889dbd4b8a66
+  - name: 上海市+联通
+    type: trojan
+    server: h961359.waihuizhibiaowang.com
+    port: '13543'
+    password: d0d24d5b-54ae-40a0-ab68-889dbd4b8a66
+  - name: 美国+Microsoft数据中心 - 2
+    type: trojan
+    server: azjp1.downloadvip.cfd
+    port: 443?sni=us1.xn--mes358acgm99l.com
+    password: 8d05cc82-7059-4b73-92ff-f8b6e407fd80
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: ask.ircf.space
+    port: 443
+    uuid: 3bcbd5cd-e791-4770-8bc7-7b1d941c9513
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /S4PSg9xqUClN2kJ4SOPKqC6
+    ws-headers:
+      Host: wfi.sahnama.com
+    tls: true
+  - name: 以色列+V2CROSS.COM - 4
+    type: trojan
+    server: au1.chuqiangtou.net
+    port: '4003'
+    password: TJCfE7Mx2YcA8kX8zg
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 美国 Datability
-      - 巴西圣保罗 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 甘肃省兰州市+移动
-      - 美国 CloudFlare节点 - 3
+      - 澳大利亚 Sandringham Secondary College
+      - 湖南省 移动
+      - 以色列+V2CROSS.COM
+      - 美国+V2CROSS.COM
+      - 以色列+V2CROSS.COM - 2
+      - 以色列+V2CROSS.COM - 3
       - 欧盟 V2CROSS.COM
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
-      - 广东省深圳市 移动
-      - 美国 CloudFlare节点 - 4
-      - 美国 CloudFlare节点 - 5
-      - 香港 BGP.NET CN2数据中心
-      - 亚太地区+V2CROSS.COM
+      - 重庆市 移动
+      - 中国 阿里云
+      - 美国+V2CROSS.COM - 2
+      - 美国+Microsoft数据中心
+      - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 - 2
+      - 辽宁省鞍山市+联通
+      - 上海市+联通
+      - 美国+Microsoft数据中心 - 2
+      - 美国 V2CROSS.COM
+      - 以色列+V2CROSS.COM - 4
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 美国 Datability
-      - 巴西圣保罗 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 甘肃省兰州市+移动
-      - 美国 CloudFlare节点 - 3
+      - 澳大利亚 Sandringham Secondary College
+      - 湖南省 移动
+      - 以色列+V2CROSS.COM
+      - 美国+V2CROSS.COM
+      - 以色列+V2CROSS.COM - 2
+      - 以色列+V2CROSS.COM - 3
       - 欧盟 V2CROSS.COM
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
-      - 广东省深圳市 移动
-      - 美国 CloudFlare节点 - 4
-      - 美国 CloudFlare节点 - 5
-      - 香港 BGP.NET CN2数据中心
-      - 亚太地区+V2CROSS.COM
+      - 重庆市 移动
+      - 中国 阿里云
+      - 美国+V2CROSS.COM - 2
+      - 美国+Microsoft数据中心
+      - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 - 2
+      - 辽宁省鞍山市+联通
+      - 上海市+联通
+      - 美国+Microsoft数据中心 - 2
+      - 美国 V2CROSS.COM
+      - 以色列+V2CROSS.COM - 4
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 美国 Datability
-      - 巴西圣保罗 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 甘肃省兰州市+移动
-      - 美国 CloudFlare节点 - 3
+      - 澳大利亚 Sandringham Secondary College
+      - 湖南省 移动
+      - 以色列+V2CROSS.COM
+      - 美国+V2CROSS.COM
+      - 以色列+V2CROSS.COM - 2
+      - 以色列+V2CROSS.COM - 3
       - 欧盟 V2CROSS.COM
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
-      - 广东省深圳市 移动
-      - 美国 CloudFlare节点 - 4
-      - 美国 CloudFlare节点 - 5
-      - 香港 BGP.NET CN2数据中心
-      - 亚太地区+V2CROSS.COM
+      - 重庆市 移动
+      - 中国 阿里云
+      - 美国+V2CROSS.COM - 2
+      - 美国+Microsoft数据中心
+      - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 - 2
+      - 辽宁省鞍山市+联通
+      - 上海市+联通
+      - 美国+Microsoft数据中心 - 2
+      - 美国 V2CROSS.COM
+      - 以色列+V2CROSS.COM - 4
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
