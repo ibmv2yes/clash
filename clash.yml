@@ -1,49 +1,15 @@
 proxies:
-  - name: 湖南省 移动
-    type: vmess
-    server: 120.226.50.68
-    port: 59902
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-headers: {}
-  - name: 中国 阿里云
-    type: vmess
-    server: cdncf.scyu.app
-    port: 80
-    uuid: c07a7268-6b25-4952-be6d-e9fb3beacedc
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /api/v3/download.getFile
-    ws-headers:
-      Host: ssrsub.v02.ssrsub.com
   - name: 美国+加利福尼亚州洛杉矶Level3通信(DIA)
     type: trojan
-    server: ap.stablize.top
+    server: in.stablize.top
     port: '443'
-    password: 27509bd6-5096-4790-9eba-2c793cca7a8d
-  - name: 欧盟 V2CROSS.COM
-    type: vmess
-    server: freenodecdn.ikuan.dev
-    port: 2052
-    uuid: 3185c2f3-4246-49c4-ba8a-5ea8fb2ef6b8
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /FreeForGFW
-    ws-headers:
-      Host: freeforgfw.ikuan.dev
-  - name: 日本+Microsoft公司
+    password: b88edfd4-23eb-4544-9bbc-a68914952905
+  - name: 广东省+移动
     type: trojan
-    server: ap.stablize.top
-    port: '443'
-    password: 27509bd6-5096-4790-9eba-2c793cca7a8d
-  - name: 美国 主根域名服务器全球第06OF13号F.ROOT-SERVERS节点(WorldAnycast任播网络互联网系统协会运作BIND9软件)
+    server: assets.flareai.site
+    port: 13543?type=tcp&security=tls&allowInsecure=1
+    password: d0d24d5b-54ae-40a0-ab68-889dbd4b8a66
+  - name: 美国 主根域名服务器全球第05OF13号E.ROOT-SERVERS节点(WorldAnycast任播网络美国国家航空航天局运作BIND软件)
     type: vmess
     server: cdn.ikuan.dev
     port: 2052
@@ -55,61 +21,131 @@ proxies:
     ws-path: /FreeForGFW
     ws-headers:
       Host: freeforgfw.ikuan.dev
-  - name: 广东省佛山市 移动
+  - name: 以色列+V2CROSS.COM
+    type: trojan
+    server: us2.chuqiangtou.net
+    port: '4003'
+    password: TJCfE7Mx2YcA8kX8zg
+  - name: 上海市+联通
+    type: trojan
+    server: h961359.waihuizhibiaowang.com
+    port: '13543'
+    password: d0d24d5b-54ae-40a0-ab68-889dbd4b8a66
+  - name: 美国+加利福尼亚州洛杉矶Level3通信(DIA) - 2
+    type: trojan
+    server: jp.stablize.top
+    port: '443'
+    password: b3270ddb-b053-41f7-958f-d513836a813f
+  - name: 美国+加利福尼亚州洛杉矶Level3通信(DIA) - 3
+    type: trojan
+    server: sg.stablize.top
+    port: '443'
+    password: 159ab107-bfed-49b0-981d-5facd7e5e1c2
+  - name: 北京市+电信
+    type: ss
+    server: free.themars.top
+    port: '32102'
+    cipher: chacha20-ietf-poly1305
+    password: b89b39c2-dc8d-4595-a4c5-54b4fbab3fc2
+  - name: 美国 CloudFlare节点
     type: vmess
-    server: 8.v2-ray.cyou
-    port: 23608
-    uuid: 0dd19d20-ec86-3680-b256-87237bafa89e
-    alterId: 2
+    server: 104.21.53.35
+    port: 80
+    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /yxzbp
+    ws-headers:
+      Host: dp3.yxjnode.com
+  - name: 新加坡+V2CROSS.COM
+    type: ss
+    server: 217.197.161.136
+    port: '808'
+    cipher: chacha20-ietf-poly1305
+    password: G!yBwPWH3Vao
+  - name: 以色列+V2CROSS.COM - 2
+    type: trojan
+    server: uk1.chuqiangtou.net
+    port: '4003'
+    password: TJCfE7Mx2YcA8kX8zg
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: 104.25.96.171
+    port: 443
+    uuid: 3de4ec27-74b4-43e3-bf23-18e726ac80bc
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /P6kpn5UKG40MNLK2
+    ws-headers:
+      Host: GHTyoqrBZm.janbaroon.com
+    tls: true
+  - name: 湖南省 移动
+    type: vmess
+    server: 120.226.50.68
+    port: 34214
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
     cipher: auto
     udp: true
     network: tcp
-    ws-path: /
-    ws-headers:
-      Host: 8.v2-ray.cyou
-  - name: 以色列+V2CROSS.COM
-    type: trojan
-    server: au1.chuqiangtou.net
-    port: '4003'
-    password: TJCfE7Mx2YcA8kX8zg
+    ws-headers: {}
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 湖南省 移动
-      - 中国 阿里云
       - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
-      - 欧盟 V2CROSS.COM
-      - 日本+Microsoft公司
-      - 美国 主根域名服务器全球第06OF13号F.ROOT-SERVERS节点(WorldAnycast任播网络互联网系统协会运作BIND9软件)
-      - 广东省佛山市 移动
+      - 广东省+移动
+      - 美国 主根域名服务器全球第05OF13号E.ROOT-SERVERS节点(WorldAnycast任播网络美国国家航空航天局运作BIND软件)
       - 以色列+V2CROSS.COM
+      - 上海市+联通
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA) - 2
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA) - 3
+      - 北京市+电信
+      - 美国 CloudFlare节点
+      - 新加坡+V2CROSS.COM
+      - 以色列+V2CROSS.COM - 2
+      - 美国 CloudFlare节点 - 2
+      - 湖南省 移动
   - name: 自动选择
     type: url-test
     proxies:
-      - 湖南省 移动
-      - 中国 阿里云
       - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
-      - 欧盟 V2CROSS.COM
-      - 日本+Microsoft公司
-      - 美国 主根域名服务器全球第06OF13号F.ROOT-SERVERS节点(WorldAnycast任播网络互联网系统协会运作BIND9软件)
-      - 广东省佛山市 移动
+      - 广东省+移动
+      - 美国 主根域名服务器全球第05OF13号E.ROOT-SERVERS节点(WorldAnycast任播网络美国国家航空航天局运作BIND软件)
       - 以色列+V2CROSS.COM
+      - 上海市+联通
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA) - 2
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA) - 3
+      - 北京市+电信
+      - 美国 CloudFlare节点
+      - 新加坡+V2CROSS.COM
+      - 以色列+V2CROSS.COM - 2
+      - 美国 CloudFlare节点 - 2
+      - 湖南省 移动
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 湖南省 移动
-      - 中国 阿里云
       - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
-      - 欧盟 V2CROSS.COM
-      - 日本+Microsoft公司
-      - 美国 主根域名服务器全球第06OF13号F.ROOT-SERVERS节点(WorldAnycast任播网络互联网系统协会运作BIND9软件)
-      - 广东省佛山市 移动
+      - 广东省+移动
+      - 美国 主根域名服务器全球第05OF13号E.ROOT-SERVERS节点(WorldAnycast任播网络美国国家航空航天局运作BIND软件)
       - 以色列+V2CROSS.COM
+      - 上海市+联通
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA) - 2
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA) - 3
+      - 北京市+电信
+      - 美国 CloudFlare节点
+      - 新加坡+V2CROSS.COM
+      - 以色列+V2CROSS.COM - 2
+      - 美国 CloudFlare节点 - 2
+      - 湖南省 移动
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
