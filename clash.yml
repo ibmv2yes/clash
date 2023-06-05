@@ -1,50 +1,22 @@
 proxies:
-  - name: 湖南省 移动
-    type: vmess
-    server: 120.226.50.68
-    port: 59902
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-headers: {}
   - name: 以色列+V2CROSS.COM
     type: trojan
-    server: jp3.chuqiangtou.net
+    server: uk1.chuqiangtou.net
     port: '4003'
     password: TJCfE7Mx2YcA8kX8zg
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: v2ray.online
-    port: 443
-    uuid: 00BBF5B8-173E-6818-9927-5AD1AA073C7D
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /speedtest
-    ws-headers:
-      Host: Kansas.v2ray.online
-    tls: true
-  - name: 以色列+V2CROSS.COM - 2
+  - name: 上海市+电信
     type: trojan
-    server: au1.chuqiangtou.net
-    port: '4003'
-    password: TJCfE7Mx2YcA8kX8zg
-  - name: 美国 V2CROSS.COM
-    type: vmess
-    server: ns1.v2-vip.fun
-    port: 80
-    uuid: 882f3f11-02bc-4ecf-96b6-2da1bebcd7e4
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /wmIMRWSrsFRTES3pFURTK72T
-    ws-headers:
-      Host: de9.irteh.fun
-  - name: 澳大利亚 Cranbourne Secondary College
+    server: official.taipeicitygovernment.kiev.ua
+    port: 8443?sni=66.42.40.132
+    password: 5505f6ba-cd37-30ce-8f92-be4120c83d7f
+  - name: 法国+ONLINE+S.A.S.数据中心
+    type: ss
+    server: >-
+      ak1660.www.outline.network.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou
+    port: '8000'
+    cipher: aes-256-gcm
+    password: KixLvKzwjekG00rm
+  - name: 澳大利亚 Eumemmerring Secondary College
     type: vmess
     server: freenodecdn.ikuan.dev
     port: 2052
@@ -56,70 +28,88 @@ proxies:
     ws-path: /FreeForGFW
     ws-headers:
       Host: freeforgfw.ikuan.dev
-  - name: 北京市+电信
-    type: ss
-    server: free.themars.top
-    port: '32102'
-    cipher: chacha20-ietf-poly1305
-    password: b89b39c2-dc8d-4595-a4c5-54b4fbab3fc2
-  - name: 美国 CloudFlare节点 - 2
+  - name: 美国 CloudFlare节点
     type: vmess
-    server: 141.101.123.249
-    port: 80
-    uuid: 1eeeff8d-0028-46ec-ec2a-d39401047fbb
+    server: 172.67.156.138
+    port: 443
+    uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /qwer
+    ws-path: /speedtest
     ws-headers:
-      Host: tou.vtcss.top
-  - name: 美国+DXC+Technology
-    type: trojan
-    server: sg.stablize.top
-    port: '443'
-    password: 159ab107-bfed-49b0-981d-5facd7e5e1c2
+      Host: Kansas.kotick.site
+    tls: true
+  - name: 美国+V2CROSS.COM
+    type: ss
+    server: 172.99.190.87
+    port: '8118'
+    cipher: aes-256-gcm
+    password: cdBIDV42DCwnfIN
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: 137.175.61.130
+    port: 46679
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: cdnjs.com
+    port: 443
+    uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /speedtest
+    ws-headers:
+      Host: Lille.kotick.site
+    tls: true
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 湖南省 移动
       - 以色列+V2CROSS.COM
+      - 上海市+电信
+      - 法国+ONLINE+S.A.S.数据中心
+      - 澳大利亚 Eumemmerring Secondary College
       - 美国 CloudFlare节点
-      - 以色列+V2CROSS.COM - 2
+      - 美国+V2CROSS.COM
       - 美国 V2CROSS.COM
-      - 澳大利亚 Cranbourne Secondary College
-      - 北京市+电信
       - 美国 CloudFlare节点 - 2
-      - 美国+DXC+Technology
   - name: 自动选择
     type: url-test
     proxies:
-      - 湖南省 移动
       - 以色列+V2CROSS.COM
+      - 上海市+电信
+      - 法国+ONLINE+S.A.S.数据中心
+      - 澳大利亚 Eumemmerring Secondary College
       - 美国 CloudFlare节点
-      - 以色列+V2CROSS.COM - 2
+      - 美国+V2CROSS.COM
       - 美国 V2CROSS.COM
-      - 澳大利亚 Cranbourne Secondary College
-      - 北京市+电信
       - 美国 CloudFlare节点 - 2
-      - 美国+DXC+Technology
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 湖南省 移动
       - 以色列+V2CROSS.COM
+      - 上海市+电信
+      - 法国+ONLINE+S.A.S.数据中心
+      - 澳大利亚 Eumemmerring Secondary College
       - 美国 CloudFlare节点
-      - 以色列+V2CROSS.COM - 2
+      - 美国+V2CROSS.COM
       - 美国 V2CROSS.COM
-      - 澳大利亚 Cranbourne Secondary College
-      - 北京市+电信
       - 美国 CloudFlare节点 - 2
-      - 美国+DXC+Technology
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
