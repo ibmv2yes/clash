@@ -1,4 +1,21 @@
 proxies:
+  - name: 以色列+V2CROSS.COM
+    type: trojan
+    server: jp2.chuqiangtou.net
+    port: '4003'
+    password: TJCfE7Mx2YcA8kX8zg
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: ns1.v2-vip.fun
+    port: 80
+    uuid: 882f3f11-02bc-4ecf-96b6-2da1bebcd7e4
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /wmIMRWSrsFRTES3pFURTK72T
+    ws-headers:
+      Host: de9.irteh.fun
   - name: 美国 CloudFlare节点
     type: vmess
     server: cf.yxjnode.com
@@ -11,35 +28,6 @@ proxies:
     ws-path: /yxzbp
     ws-headers:
       Host: dp4.yxjnode.com
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: tech.noaries.de
-    port: 80
-    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /shirker
-    ws-headers:
-      Host: nl.sharecentrepro.com
-  - name: 美国+DXC+Technology
-    type: trojan
-    server: usajs.stablize.top
-    port: '443'
-    password: b88edfd4-23eb-4544-9bbc-a68914952905
-  - name: 美国 V2CROSS.COM
-    type: vmess
-    server: bb.hk1997.pro
-    port: 2087
-    uuid: fdf6caf1-88e0-4eca-b7b6-a60b70aa1e93
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /jash-weh-peft-pseb-lous-jass
-    ws-headers:
-      Host: bb.hk1997.pro
   - name: 俄罗斯 新西伯利亚ADMAN数据中心
     type: vmess
     server: 185.133.40.192
@@ -52,11 +40,24 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国+Microsoft数据中心
+  - name: 广东省+移动
     type: trojan
-    server: in.stablize.top
-    port: '443'
-    password: b88edfd4-23eb-4544-9bbc-a68914952905
+    server: assets.flareai.site
+    port: '13543'
+    password: d0d24d5b-54ae-40a0-ab68-889dbd4b8a66
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: cloudflare.piaole.me
+    port: 443
+    uuid: e8dacfc5-79b1-4289-92f1-e390080d56aa
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /huawei
+    ws-headers:
+      Host: cloudflare.piaole.me
+    tls: true
   - name: 美国 CloudFlare节点 - 3
     type: vmess
     server: www.noice.id
@@ -76,34 +77,34 @@ proxy-groups:
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 美国+DXC+Technology
+      - 以色列+V2CROSS.COM
       - 美国 V2CROSS.COM
+      - 美国 CloudFlare节点
       - 俄罗斯 新西伯利亚ADMAN数据中心
-      - 美国+Microsoft数据中心
+      - 广东省+移动
+      - 美国 CloudFlare节点 - 2
       - 美国 CloudFlare节点 - 3
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 美国+DXC+Technology
+      - 以色列+V2CROSS.COM
       - 美国 V2CROSS.COM
+      - 美国 CloudFlare节点
       - 俄罗斯 新西伯利亚ADMAN数据中心
-      - 美国+Microsoft数据中心
+      - 广东省+移动
+      - 美国 CloudFlare节点 - 2
       - 美国 CloudFlare节点 - 3
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 美国+DXC+Technology
+      - 以色列+V2CROSS.COM
       - 美国 V2CROSS.COM
+      - 美国 CloudFlare节点
       - 俄罗斯 新西伯利亚ADMAN数据中心
-      - 美国+Microsoft数据中心
+      - 广东省+移动
+      - 美国 CloudFlare节点 - 2
       - 美国 CloudFlare节点 - 3
     url: http://www.gstatic.com/generate_204
     interval: 86400
