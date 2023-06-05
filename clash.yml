@@ -1,14 +1,50 @@
 proxies:
-  - name: 以色列+V2CROSS.COM
-    type: trojan
-    server: us1.chuqiangtou.net
-    port: '4003'
-    password: TJCfE7Mx2YcA8kX8zg
-  - name: 美国加利福尼亚州洛杉矶 PetaExpress
+  - name: 美国 CloudFlare节点
     type: vmess
-    server: 198.2.196.27
-    port: 41288
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    server: cf.yxjnode.com
+    port: 80
+    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /yxzbp
+    ws-headers:
+      Host: dp4.yxjnode.com
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: tech.noaries.de
+    port: 80
+    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /shirker
+    ws-headers:
+      Host: nl.sharecentrepro.com
+  - name: 美国+DXC+Technology
+    type: trojan
+    server: usajs.stablize.top
+    port: '443'
+    password: b88edfd4-23eb-4544-9bbc-a68914952905
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: bb.hk1997.pro
+    port: 2087
+    uuid: fdf6caf1-88e0-4eca-b7b6-a60b70aa1e93
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /jash-weh-peft-pseb-lous-jass
+    ws-headers:
+      Host: bb.hk1997.pro
+  - name: 俄罗斯 新西伯利亚ADMAN数据中心
+    type: vmess
+    server: 185.133.40.192
+    port: 35059
+    uuid: 8d78c2a8-acaa-467d-9234-d2606624506d
     alterId: 64
     cipher: auto
     udp: true
@@ -16,41 +52,23 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 以色列+V2CROSS.COM - 2
+  - name: 美国+Microsoft数据中心
     type: trojan
-    server: au1.chuqiangtou.net
-    port: '4003'
-    password: TJCfE7Mx2YcA8kX8zg
-  - name: 广东省佛山市 移动
+    server: in.stablize.top
+    port: '443'
+    password: b88edfd4-23eb-4544-9bbc-a68914952905
+  - name: 美国 CloudFlare节点 - 3
     type: vmess
-    server: 8.v2-ray.cyou
-    port: 23608
-    uuid: 0dd19d20-ec86-3680-b256-87237bafa89e
-    alterId: 2
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: 8.v2-ray.cyou
-  - name: 加拿大+V2CROSS.COM
-    type: ss
-    server: 38.64.138.145
-    port: '7306'
-    cipher: aes-256-gcm
-    password: FoOiGlkAA9yPEGP
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: cdnjs.com
+    server: www.noice.id
     port: 443
-    uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF
+    uuid: 37776019-07ea-4a1d-94e7-88e5e133ad5a
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /speedtest
+    ws-path: /worryfree
     ws-headers:
-      Host: Lille.kotick.site
+      Host: v2ray1.udpgw.com
     tls: true
 proxy-groups:
   - name: Free-servers
@@ -58,32 +76,35 @@ proxy-groups:
     proxies:
       - 自动选择
       - 故障转移
-      - 以色列+V2CROSS.COM
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 以色列+V2CROSS.COM - 2
-      - 广东省佛山市 移动
-      - 加拿大+V2CROSS.COM
       - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 - 2
+      - 美国+DXC+Technology
+      - 美国 V2CROSS.COM
+      - 俄罗斯 新西伯利亚ADMAN数据中心
+      - 美国+Microsoft数据中心
+      - 美国 CloudFlare节点 - 3
   - name: 自动选择
     type: url-test
     proxies:
-      - 以色列+V2CROSS.COM
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 以色列+V2CROSS.COM - 2
-      - 广东省佛山市 移动
-      - 加拿大+V2CROSS.COM
       - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 - 2
+      - 美国+DXC+Technology
+      - 美国 V2CROSS.COM
+      - 俄罗斯 新西伯利亚ADMAN数据中心
+      - 美国+Microsoft数据中心
+      - 美国 CloudFlare节点 - 3
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 以色列+V2CROSS.COM
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 以色列+V2CROSS.COM - 2
-      - 广东省佛山市 移动
-      - 加拿大+V2CROSS.COM
       - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 - 2
+      - 美国+DXC+Technology
+      - 美国 V2CROSS.COM
+      - 俄罗斯 新西伯利亚ADMAN数据中心
+      - 美国+Microsoft数据中心
+      - 美国 CloudFlare节点 - 3
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
