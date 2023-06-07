@@ -1,33 +1,72 @@
 proxies:
-  - name: 美国 CloudFlare节点
+  - name: 美国 Xerox
     type: vmess
-    server: cf-lt.sharecentre.online
+    server: 13.215.190.191
     port: 80
-    uuid: c07a7268-6b25-4952-be6d-e9fb3beacedc
+    uuid: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /api/v3/download.getFile
+    ws-path: /aws-china-media/Y699Gjx2rNw.mp4
     ws-headers:
-      Host: ssrsub.v01.ssrsub.com
-  - name: 美国 CloudFlare节点 - 2
+      Host: ''
+  - name: 瑞典+V2CROSS.COM
+    type: ss
+    server: 167.88.63.99
+    port: '2375'
+    cipher: aes-256-gcm
+    password: faBAoD54k87UJG7
+  - name: 瑞典+V2CROSS.COM - 2
+    type: ss
+    server: 167.88.63.99
+    port: '2376'
+    cipher: aes-256-gcm
+    password: faBAoD54k87UJG7
+  - name: 美国+纽约市DigitalOcean云公司
+    type: trojan
+    server: us.blazeppn.info
+    port: '443'
+    password: xxoo
+  - name: 以色列+V2CROSS.COM
+    type: trojan
+    server: us2.chuqiangtou.net
+    port: '4003'
+    password: TJCfE7Mx2YcA8kX8zg
+  - name: 美国 CloudFlare节点
     type: vmess
-    server: 104.21.94.37
+    server: 172.67.156.138
     port: 443
-    uuid: 00BBF5B8-173E-6818-9927-5AD1AA073C7D
+    uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF
     alterId: 0
     cipher: auto
     udp: true
     network: ws
     ws-path: /speedtest
     ws-headers:
-      Host: Kansas.v2ray.online
+      Host: Kansas.kotick.site
     tls: true
-  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
+  - name: 以色列+V2CROSS.COM - 2
+    type: trojan
+    server: us1.chuqiangtou.net
+    port: '4003'
+    password: TJCfE7Mx2YcA8kX8zg
+  - name: 美国 CloudFlare节点 - 2
     type: vmess
-    server: 192.74.234.82
-    port: 51302
+    server: 104.21.53.35
+    port: 80
+    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /yxzbp
+    ws-headers:
+      Host: buyvm1.yxjnode.com
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: 38.26.191.98
+    port: 49920
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -36,124 +75,62 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 以色列+V2CROSS.COM
-    type: trojan
-    server: jp3.chuqiangtou.net
-    port: '4003'
-    password: TJCfE7Mx2YcA8kX8zg
-  - name: 以色列+V2CROSS.COM - 2
-    type: trojan
-    server: au1.chuqiangtou.net
-    port: 4003?type=tcp&security=tls&allowInsecure=1
-    password: TJCfE7Mx2YcA8kX8zg
-  - name: 美国 V2CROSS.COM
+  - name: 美国 V2CROSS.COM - 2
     type: vmess
-    server: bb.hk1997.pro
-    port: 1001
-    uuid: fdf6caf1-88e0-4eca-b7b6-a60b70aa1e93
-    alterId: 0
+    server: 137.175.69.228
+    port: 44920
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
     cipher: auto
     udp: true
-    network: ws
-    ws-path: /jash-weh-peft-pseb-lous-jass
+    network: tcp
+    ws-path: /
     ws-headers:
-      Host: bb.hk1997.pro
-  - name: 美国 CloudFlare节点 - 3
-    type: vmess
-    server: 172.66.46.15
-    port: 443
-    uuid: 12612e87-8003-44a8-b4e8-ec4a325e9016
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /ou
-    ws-headers:
-      Host: z.zorro.tk
-    tls: true
-  - name: 美国 CloudFlare节点 - 4
-    type: vmess
-    server: www.noice.id
-    port: 443
-    uuid: 37776019-07ea-4a1d-94e7-88e5e133ad5a
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /worryfree
-    ws-headers:
-      Host: v2ray1.udpgw.com
-    tls: true
-  - name: 美国+Microsoft公司
-    type: trojan
-    server: fscsg.fscloud123456789.com
-    port: '443'
-    password: eacbdf08-c28f-4299-8da1-af23bba28e02
-  - name: 以色列+V2CROSS.COM - 3
-    type: trojan
-    server: jp2.chuqiangtou.net
-    port: 4003?type=tcp&security=tls&allowInsecure=1
-    password: TJCfE7Mx2YcA8kX8zg
-  - name: 澳大利亚 Doncaster Secondary College
-    type: vmess
-    server: speed.76898102.xyz
-    port: 443
-    uuid: dddd0b29-1576-4003-9990-d7cea34264db
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /835757
-    ws-headers:
-      Host: dedi2.1808.cf
-    tls: true
+      Host: ''
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 美国 Xerox
+      - 瑞典+V2CROSS.COM
+      - 瑞典+V2CROSS.COM - 2
+      - 美国+纽约市DigitalOcean云公司
       - 以色列+V2CROSS.COM
+      - 美国 CloudFlare节点
       - 以色列+V2CROSS.COM - 2
+      - 美国 CloudFlare节点 - 2
       - 美国 V2CROSS.COM
-      - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
-      - 美国+Microsoft公司
-      - 以色列+V2CROSS.COM - 3
-      - 澳大利亚 Doncaster Secondary College
+      - 美国 V2CROSS.COM - 2
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 美国 Xerox
+      - 瑞典+V2CROSS.COM
+      - 瑞典+V2CROSS.COM - 2
+      - 美国+纽约市DigitalOcean云公司
       - 以色列+V2CROSS.COM
+      - 美国 CloudFlare节点
       - 以色列+V2CROSS.COM - 2
+      - 美国 CloudFlare节点 - 2
       - 美国 V2CROSS.COM
-      - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
-      - 美国+Microsoft公司
-      - 以色列+V2CROSS.COM - 3
-      - 澳大利亚 Doncaster Secondary College
+      - 美国 V2CROSS.COM - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 美国 Xerox
+      - 瑞典+V2CROSS.COM
+      - 瑞典+V2CROSS.COM - 2
+      - 美国+纽约市DigitalOcean云公司
       - 以色列+V2CROSS.COM
+      - 美国 CloudFlare节点
       - 以色列+V2CROSS.COM - 2
+      - 美国 CloudFlare节点 - 2
       - 美国 V2CROSS.COM
-      - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
-      - 美国+Microsoft公司
-      - 以色列+V2CROSS.COM - 3
-      - 澳大利亚 Doncaster Secondary College
+      - 美国 V2CROSS.COM - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
