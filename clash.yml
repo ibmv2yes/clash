@@ -1,76 +1,104 @@
 proxies:
-  - name: 以色列+V2CROSS.COM
-    type: trojan
-    server: jp3.chuqiangtou.net
-    port: '4003'
-    password: TJCfE7Mx2YcA8kX8zg
-  - name: 以色列+V2CROSS.COM - 2
-    type: trojan
-    server: us2.chuqiangtou.net
-    port: '4003'
-    password: TJCfE7Mx2YcA8kX8zg
-  - name: 美国 V2CROSS.COM
+  - name: 美国 加利福尼亚州圣何塞PEG TECH
     type: vmess
-    server: bb.hk1997.pro
-    port: 1001
-    uuid: fdf6caf1-88e0-4eca-b7b6-a60b70aa1e93
+    server: 142.4.104.195
+    port: 56002
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 韩国 KT电信
+    type: vmess
+    server: 183.107.218.123
+    port: 30009
+    uuid: dddd0b29-1576-4003-9990-d7cea34264db
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /jash-weh-peft-pseb-lous-jass
+    ws-path: /835757
     ws-headers:
-      Host: bb.hk1997.pro
+      Host: dedi2.1808.cf
+    tls: true
   - name: 美国 CloudFlare节点
     type: vmess
-    server: 104.21.53.35
+    server: cdn.noice.id
     port: 80
-    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
+    uuid: 641a1a24-7d4c-447d-9005-cc43bfc4da8d
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /yxzbp
+    ws-path: /tunnelvmess
     ws-headers:
-      Host: dp3.yxjnode.com
-  - name: 北京市+电信
-    type: ss
-    server: free.themars.top
-    port: '32102'
-    cipher: chacha20-ietf-poly1305
-    password: b89b39c2-dc8d-4595-a4c5-54b4fbab3fc2
-  - name: 以色列+V2CROSS.COM - 3
+      Host: sgaws1.tunnel.systems
+  - name: 以色列+V2CROSS.COM
+    type: trojan
+    server: nl2.chuqiangtou.net
+    port: '4003'
+    password: TJCfE7Mx2YcA8kX8zg
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: tech.noaries.de
+    port: 80
+    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /shirker
+    ws-headers:
+      Host: nl.sharecentrepro.com
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: hkgkgb.76898102.xyz
+    port: 2082
+    uuid: 285bfc27-2341-3c7a-be0e-360cedd5e209
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /funsdfrh
+    ws-headers:
+      Host: hkg.76898102.xyz
+  - name: 以色列+V2CROSS.COM - 2
     type: trojan
     server: jp2.chuqiangtou.net
-    port: 4003?type=tcp&security=tls&allowInsecure=1
+    port: '4003'
     password: TJCfE7Mx2YcA8kX8zg
-  - name: 以色列+V2CROSS.COM - 4
-    type: trojan
-    server: jp3.chuqiangtou.net
-    port: 4003?type=tcp&allowInsecure=1
-    password: TJCfE7Mx2YcA8kX8zg
+  - name: 美国 Amazon EC2服务器
+    type: vmess
+    server: 0kxedm1x8q8lksmj07.xingbayun.buzz
+    port: 443
+    uuid: 89d679fb-e2fb-42ff-b830-38e5ae86065c
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /zh-cn
+    ws-headers:
+      Host: www.microsoft.com
+  - name: 印度 V2CROSS.COM
+    type: vmess
+    server: camtlebb.76898102.xyz
+    port: 2095
+    uuid: ba81f48b-7319-3866-b464-c276f43b9fef
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /funsdfrh
+    ws-headers:
+      Host: camtleb.76898102.xyz
   - name: 美国+Microsoft数据中心
     type: trojan
     server: fscsg.fscloud123456789.com
     port: '443'
     password: eacbdf08-c28f-4299-8da1-af23bba28e02
-  - name: 以色列+V2CROSS.COM - 5
-    type: trojan
-    server: uk1.chuqiangtou.net
-    port: '4003'
-    password: TJCfE7Mx2YcA8kX8zg
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: cf-lt.sharecentre.online
-    port: 80
-    uuid: c07a7268-6b25-4952-be6d-e9fb3beacedc
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /api/v3/download.getFile
-    ws-headers:
-      Host: ssrsub.v01.ssrsub.com
   - name: 中国 阿里云
     type: vmess
     server: 1.1808.cf
@@ -84,84 +112,68 @@ proxies:
     ws-headers:
       Host: dedi2.1808.cf
     tls: true
-  - name: 丹麦 V2CROSS.COM
+  - name: 美国 华盛顿Cogent通信公司
     type: vmess
-    server: amstdtre.76898102.xyz
-    port: 2095
-    uuid: ba81f48b-7319-3866-b464-c276f43b9fef
-    alterId: 0
+    server: 38.63.0.93
+    port: 47002
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
     cipher: auto
     udp: true
-    network: ws
-    ws-path: /adwrfeyiyuisfesf
+    network: tcp
+    ws-path: /
     ws-headers:
-      Host: amstdtre.76898102.xyz
-  - name: 美国 CloudFlare节点 - 3
-    type: vmess
-    server: www.noice.id
-    port: 443
-    uuid: 37776019-07ea-4a1d-94e7-88e5e133ad5a
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /worryfree
-    ws-headers:
-      Host: v2ray1.udpgw.com
-    tls: true
+      Host: ''
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 以色列+V2CROSS.COM
-      - 以色列+V2CROSS.COM - 2
-      - 美国 V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 韩国 KT电信
       - 美国 CloudFlare节点
-      - 北京市+电信
-      - 以色列+V2CROSS.COM - 3
-      - 以色列+V2CROSS.COM - 4
-      - 美国+Microsoft数据中心
-      - 以色列+V2CROSS.COM - 5
+      - 以色列+V2CROSS.COM
       - 美国 CloudFlare节点 - 2
+      - 美国 V2CROSS.COM
+      - 以色列+V2CROSS.COM - 2
+      - 美国 Amazon EC2服务器
+      - 印度 V2CROSS.COM
+      - 美国+Microsoft数据中心
       - 中国 阿里云
-      - 丹麦 V2CROSS.COM
-      - 美国 CloudFlare节点 - 3
+      - 美国 华盛顿Cogent通信公司
   - name: 自动选择
     type: url-test
     proxies:
-      - 以色列+V2CROSS.COM
-      - 以色列+V2CROSS.COM - 2
-      - 美国 V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 韩国 KT电信
       - 美国 CloudFlare节点
-      - 北京市+电信
-      - 以色列+V2CROSS.COM - 3
-      - 以色列+V2CROSS.COM - 4
-      - 美国+Microsoft数据中心
-      - 以色列+V2CROSS.COM - 5
+      - 以色列+V2CROSS.COM
       - 美国 CloudFlare节点 - 2
+      - 美国 V2CROSS.COM
+      - 以色列+V2CROSS.COM - 2
+      - 美国 Amazon EC2服务器
+      - 印度 V2CROSS.COM
+      - 美国+Microsoft数据中心
       - 中国 阿里云
-      - 丹麦 V2CROSS.COM
-      - 美国 CloudFlare节点 - 3
+      - 美国 华盛顿Cogent通信公司
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 以色列+V2CROSS.COM
-      - 以色列+V2CROSS.COM - 2
-      - 美国 V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 韩国 KT电信
       - 美国 CloudFlare节点
-      - 北京市+电信
-      - 以色列+V2CROSS.COM - 3
-      - 以色列+V2CROSS.COM - 4
-      - 美国+Microsoft数据中心
-      - 以色列+V2CROSS.COM - 5
+      - 以色列+V2CROSS.COM
       - 美国 CloudFlare节点 - 2
+      - 美国 V2CROSS.COM
+      - 以色列+V2CROSS.COM - 2
+      - 美国 Amazon EC2服务器
+      - 印度 V2CROSS.COM
+      - 美国+Microsoft数据中心
       - 中国 阿里云
-      - 丹麦 V2CROSS.COM
-      - 美国 CloudFlare节点 - 3
+      - 美国 华盛顿Cogent通信公司
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
