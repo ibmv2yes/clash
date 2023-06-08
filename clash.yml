@@ -1,50 +1,56 @@
 proxies:
-  - name: 美国 CloudFlare节点
+  - name: 美国弗吉尼亚州阿什本 CloudFlare节点
     type: vmess
-    server: cf.yxjnode.com
-    port: 80
-    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
+    server: datacenter.cu.01.biqibao.site
+    port: 2052
+    uuid: c36d4223-1804-494a-a453-d4f77f10c830
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /yxzbp
+    ws-path: /public
     ws-headers:
-      Host: dp4.yxjnode.com
-  - name: 广东省深圳市 移动
+      Host: detacenter.01.biqibao.site
+  - name: 美国 CloudFlare节点
     type: vmess
-    server: ieplhk.lanyunshi.top
-    port: 51004
-    uuid: 1a7680df-81a1-3d89-a221-db81ac4b04df
-    alterId: 2
+    server: visa.cn
+    port: 80
+    uuid: 8a694cfb-d143-4378-cb85-faacdc69e5e1
+    alterId: 0
     cipher: auto
     udp: true
-    network: tcp
+    network: ws
     ws-path: /
     ws-headers:
-      Host: ieplhk.lanyunshi.top
-  - name: 美国+Microsoft数据中心
+      Host: ass.669990.xyz
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: visa.cn
+    port: 80
+    uuid: 8a694cfb-d143-4378-cb85-faacdc69e5e1
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: ass.669990.xyz
+  - name: 日本 东京阿里云
+    type: vmess
+    server: cdncf.scyu.app
+    port: 80
+    uuid: c07a7268-6b25-4952-be6d-e9fb3beacedc
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /api/v3/download.getFile
+    ws-headers:
+      Host: ssrsub.v01.ssrsub.com
+  - name: 日本+东京Amazon数据中心
     type: trojan
     server: fscsg.fscloud123456789.com
     port: '443'
-    password: 8844efd9-1858-4d83-be27-d5fdd2aba132
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: www.noice.id
-    port: 443
-    uuid: 37776019-07ea-4a1d-94e7-88e5e133ad5a
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /worryfree
-    ws-headers:
-      Host: v2ray1.udpgw.com
-    tls: true
-  - name: 美国+Microsoft数据中心 - 2
-    type: trojan
-    server: fscsg.fscloud123456789.com
-    port: 443?type=tcp&security=tls&allowInsecure=1
     password: 8844efd9-1858-4d83-be27-d5fdd2aba132
 proxy-groups:
   - name: Free-servers
@@ -52,29 +58,29 @@ proxy-groups:
     proxies:
       - 自动选择
       - 故障转移
+      - 美国弗吉尼亚州阿什本 CloudFlare节点
       - 美国 CloudFlare节点
-      - 广东省深圳市 移动
-      - 美国+Microsoft数据中心
       - 美国 CloudFlare节点 - 2
-      - 美国+Microsoft数据中心 - 2
+      - 日本 东京阿里云
+      - 日本+东京Amazon数据中心
   - name: 自动选择
     type: url-test
     proxies:
+      - 美国弗吉尼亚州阿什本 CloudFlare节点
       - 美国 CloudFlare节点
-      - 广东省深圳市 移动
-      - 美国+Microsoft数据中心
       - 美国 CloudFlare节点 - 2
-      - 美国+Microsoft数据中心 - 2
+      - 日本 东京阿里云
+      - 日本+东京Amazon数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
+      - 美国弗吉尼亚州阿什本 CloudFlare节点
       - 美国 CloudFlare节点
-      - 广东省深圳市 移动
-      - 美国+Microsoft数据中心
       - 美国 CloudFlare节点 - 2
-      - 美国+Microsoft数据中心 - 2
+      - 日本 东京阿里云
+      - 日本+东京Amazon数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
