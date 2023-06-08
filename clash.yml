@@ -1,35 +1,16 @@
 proxies:
-  - name: 北京市+电信
-    type: ss
-    server: free.themars.top
-    port: '32102'
-    cipher: chacha20-ietf-poly1305
-    password: b89b39c2-dc8d-4595-a4c5-54b4fbab3fc2
   - name: 美国 CloudFlare节点
     type: vmess
-    server: 104.21.94.37
-    port: 443
-    uuid: 00BBF5B8-173E-6818-9927-5AD1AA073C7D
+    server: cf-yd-dns.sharecentre.online
+    port: 80
+    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /speedtest
+    ws-path: /shirker
     ws-headers:
-      Host: Kansas.v2ray.online
-    tls: true
-  - name: 广东省深圳市 移动
-    type: vmess
-    server: iepl2.airtcp.vip
-    port: 51002
-    uuid: 1a7680df-81a1-3d89-a221-db81ac4b04df
-    alterId: 2
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: iepl2.airtcp.vip
+      Host: dp3.scproxy.top
   - name: 美国 CloudFlare节点 - 2
     type: vmess
     server: 104.21.53.35
@@ -41,53 +22,81 @@ proxies:
     network: ws
     ws-path: /yxzbp
     ws-headers:
-      Host: dp3.yxjnode.com
-  - name: 广东省佛山市 移动
+      Host: buyvm1.yxjnode.com
+  - name: 法国+格拉沃利讷OVH数据中心
+    type: ss
+    server: 54.36.174.181
+    port: '6679'
+    cipher: aes-256-gcm
+    password: TEzjfAYq2IjtuoS
+  - name: 以色列+V2CROSS.COM
+    type: trojan
+    server: au1.chuqiangtou.net
+    port: 4003?type=tcp&security=tls&allowInsecure=1
+    password: TJCfE7Mx2YcA8kX8zg
+  - name: 美国弗吉尼亚州阿什本 CloudFlare节点
     type: vmess
-    server: 8.v2-ray.cyou
-    port: 23608
-    uuid: 0dd19d20-ec86-3680-b256-87237bafa89e
-    alterId: 2
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: 8.v2-ray.cyou
-  - name: 美国 CloudFlare节点 - 3
-    type: vmess
-    server: cf.yxjnode.com
-    port: 80
-    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
+    server: 173.245.49.206
+    port: 8080
+    uuid: c5c9844d-050e-44f1-cb6d-ec5166772631
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /yxzbp
+    ws-path: /qwer00
     ws-headers:
-      Host: dp4.yxjnode.com
-  - name: 美国+Microsoft数据中心
+      Host: x2.ylks01.eu.org
+  - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: cf-dx-dns.sharecentre.online
+    port: 80
+    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /shirker
+    ws-headers:
+      Host: in.sharecentrepro.com
+  - name: 美国+DXC+Technology
     type: trojan
     server: ap.stablize.top
     port: '443'
     password: 28565434-2bd0-4418-a8b6-de1c7e4fbdee
-  - name: 上海市+电信
+  - name: 以色列+V2CROSS.COM - 2
     type: trojan
-    server: official.taipeicitygovernment.kiev.ua
-    port: '8443'
-    password: 5505f6ba-cd37-30ce-8f92-be4120c83d7f
+    server: nl3.chuqiangtou.net
+    port: '4003'
+    password: TJCfE7Mx2YcA8kX8zg
+  - name: 以色列+V2CROSS.COM - 3
+    type: trojan
+    server: jp2.chuqiangtou.net
+    port: '4003'
+    password: TJCfE7Mx2YcA8kX8zg
   - name: 美国 CloudFlare节点 - 4
     type: vmess
-    server: 162.159.152.95
-    port: 443
-    uuid: dddd0b29-1576-4003-9990-d7cea34264db
+    server: cf-lt.sharecentre.online
+    port: 80
+    uuid: c07a7268-6b25-4952-be6d-e9fb3beacedc
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /835757
+    ws-path: /api/v3/download.getFile
     ws-headers:
-      Host: dedi2.1808.cf
+      Host: ssrsub.v01.ssrsub.com
+  - name: 摩尔多瓦 V2CROSS.COM
+    type: vmess
+    server: 185.170.166.189
+    port: 443
+    uuid: A59E320C-BAC6-45E3-8A27-1518610708D0
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /speedtest
+    ws-headers:
+      Host: Dusseldorf.v2ray.online
     tls: true
 proxy-groups:
   - name: Free-servers
@@ -95,41 +104,47 @@ proxy-groups:
     proxies:
       - 自动选择
       - 故障转移
-      - 北京市+电信
       - 美国 CloudFlare节点
-      - 广东省深圳市 移动
       - 美国 CloudFlare节点 - 2
-      - 广东省佛山市 移动
+      - 法国+格拉沃利讷OVH数据中心
+      - 以色列+V2CROSS.COM
+      - 美国弗吉尼亚州阿什本 CloudFlare节点
       - 美国 CloudFlare节点 - 3
-      - 美国+Microsoft数据中心
-      - 上海市+电信
+      - 美国+DXC+Technology
+      - 以色列+V2CROSS.COM - 2
+      - 以色列+V2CROSS.COM - 3
       - 美国 CloudFlare节点 - 4
+      - 摩尔多瓦 V2CROSS.COM
   - name: 自动选择
     type: url-test
     proxies:
-      - 北京市+电信
       - 美国 CloudFlare节点
-      - 广东省深圳市 移动
       - 美国 CloudFlare节点 - 2
-      - 广东省佛山市 移动
+      - 法国+格拉沃利讷OVH数据中心
+      - 以色列+V2CROSS.COM
+      - 美国弗吉尼亚州阿什本 CloudFlare节点
       - 美国 CloudFlare节点 - 3
-      - 美国+Microsoft数据中心
-      - 上海市+电信
+      - 美国+DXC+Technology
+      - 以色列+V2CROSS.COM - 2
+      - 以色列+V2CROSS.COM - 3
       - 美国 CloudFlare节点 - 4
+      - 摩尔多瓦 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 北京市+电信
       - 美国 CloudFlare节点
-      - 广东省深圳市 移动
       - 美国 CloudFlare节点 - 2
-      - 广东省佛山市 移动
+      - 法国+格拉沃利讷OVH数据中心
+      - 以色列+V2CROSS.COM
+      - 美国弗吉尼亚州阿什本 CloudFlare节点
       - 美国 CloudFlare节点 - 3
-      - 美国+Microsoft数据中心
-      - 上海市+电信
+      - 美国+DXC+Technology
+      - 以色列+V2CROSS.COM - 2
+      - 以色列+V2CROSS.COM - 3
       - 美国 CloudFlare节点 - 4
+      - 摩尔多瓦 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
