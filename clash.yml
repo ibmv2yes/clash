@@ -1,14 +1,4 @@
 proxies:
-  - name: 法国 OVH数据中心
-    type: vmess
-    server: 54.38.154.182
-    port: 54902
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-headers: {}
   - name: 广东省深圳市 移动
     type: vmess
     server: ieplhk.lanyunshi.top
@@ -23,70 +13,67 @@ proxies:
       Host: ieplhk.lanyunshi.top
   - name: 美国 CloudFlare节点
     type: vmess
-    server: yd1.01dj.sbs
-    port: 443
-    uuid: 08d3c0b5-6515-4187-860f-2e41dac6a94b
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /sometimesnaive
-    ws-headers:
-      Host: yd1.01dj.sbs
-    tls: true
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: visa.cn
+    server: cf-lt.sharecentre.online
     port: 80
-    uuid: 8a694cfb-d143-4378-cb85-faacdc69e5e1
+    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
     alterId: 0
     cipher: auto
     udp: true
     network: ws
+    ws-path: /shirker
+    ws-headers:
+      Host: gcore.ilovescp.com
+  - name: 美国+Microsoft数据中心
+    type: trojan
+    server: fscus.fscloud123456789.com
+    port: 443?type=tcp&security=tls&allowInsecure=1
+    password: 9995cc0e-2e9d-4c80-8c81-4fdbb6322a3a
+  - name: 美国+Microsoft数据中心 - 2
+    type: trojan
+    server: usa.stablize.top
+    port: '443'
+    password: e81c0cf0-d4f4-402e-81ee-4eb19a832ffa
+  - name: 美国 华盛顿Cogent通信公司
+    type: vmess
+    server: 38.63.0.93
+    port: 47002
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
     ws-path: /
     ws-headers:
-      Host: ass.669990.xyz
-  - name: 美国 V2CROSS.COM
-    type: vmess
-    server: ns1.v2-vip.fun
-    port: 80
-    uuid: 8abe9496-5e24-4e49-b566-dcf86116017d
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /i99LgvSaslbsPLLQQ7j6Z
-    ws-headers:
-      Host: de5.irteh.fun
+      Host: ''
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 法国 OVH数据中心
       - 广东省深圳市 移动
       - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 美国 V2CROSS.COM
+      - 美国+Microsoft数据中心
+      - 美国+Microsoft数据中心 - 2
+      - 美国 华盛顿Cogent通信公司
   - name: 自动选择
     type: url-test
     proxies:
-      - 法国 OVH数据中心
       - 广东省深圳市 移动
       - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 美国 V2CROSS.COM
+      - 美国+Microsoft数据中心
+      - 美国+Microsoft数据中心 - 2
+      - 美国 华盛顿Cogent通信公司
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 法国 OVH数据中心
       - 广东省深圳市 移动
       - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 美国 V2CROSS.COM
+      - 美国+Microsoft数据中心
+      - 美国+Microsoft数据中心 - 2
+      - 美国 华盛顿Cogent通信公司
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
