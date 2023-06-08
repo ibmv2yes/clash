@@ -1,25 +1,4 @@
 proxies:
-  - name: 美国+DXC+Technology
-    type: trojan
-    server: fscjp.fscloud123456789.com
-    port: 443?type=tcp&security=tls&allowInsecure=1
-    password: 033392cd-2d42-4e00-98b1-25776e5bc226
-  - name: 美国 V2CROSS.COM
-    type: vmess
-    server: 138.2.124.186
-    port: 58714
-    uuid: 52127168-653d-4084-fb1f-7e08cb36a0b4
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /?ed=2048
-    ws-headers: {}
-  - name: 以色列+V2CROSS.COM
-    type: trojan
-    server: us2.chuqiangtou.net
-    port: '4003'
-    password: TJCfE7Mx2YcA8kX8zg
   - name: 美国 CloudFlare节点
     type: vmess
     server: cf-lt.sharecentre.online
@@ -32,71 +11,85 @@ proxies:
     ws-path: /api/v3/download.getFile
     ws-headers:
       Host: ssrsub.v01.ssrsub.com
-  - name: 以色列+V2CROSS.COM - 2
-    type: trojan
-    server: us3.chuqiangtou.net
-    port: '4003'
-    password: TJCfE7Mx2YcA8kX8zg
   - name: 美国 CloudFlare节点 - 2
     type: vmess
-    server: visa.cn
-    port: 80
-    uuid: 8a694cfb-d143-4378-cb85-faacdc69e5e1
+    server: scaleway.696960.xyz
+    port: 443
+    uuid: e357cd63-f1a5-4c8e-c42e-26da11207fee
     alterId: 0
     cipher: auto
     udp: true
     network: ws
+    ws-path: /root/
+    ws-headers:
+      Host: ''
+    tls: true
+  - name: 广东省佛山市 移动
+    type: vmess
+    server: 8.v2-ray.cyou
+    port: 23608
+    uuid: 0dd19d20-ec86-3680-b256-87237bafa89e
+    alterId: 2
+    cipher: auto
+    udp: true
+    network: tcp
     ws-path: /
     ws-headers:
-      Host: ass.669990.xyz
-  - name: 美国+加利福尼亚州洛杉矶Level3通信(DIA)
+      Host: 8.v2-ray.cyou
+  - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: 104.21.53.35
+    port: 80
+    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /yxzbp
+    ws-headers:
+      Host: buyvm1.yxjnode.com
+  - name: 美国+Microsoft数据中心
     type: trojan
     server: ap.stablize.top
     port: '443'
     password: 28565434-2bd0-4418-a8b6-de1c7e4fbdee
-  - name: 美国+DXC+Technology - 2
+  - name: 日本+东京Amazon数据中心
     type: trojan
-    server: sg.stablize.top
-    port: '443'
-    password: a2dc16a1-b60e-4e40-860e-4f8a560795ca
+    server: fscjp.fscloud123456789.com
+    port: 443?type=tcp&security=tls&allowInsecure=1
+    password: 033392cd-2d42-4e00-98b1-25776e5bc226
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国+DXC+Technology
-      - 美国 V2CROSS.COM
-      - 以色列+V2CROSS.COM
       - 美国 CloudFlare节点
-      - 以色列+V2CROSS.COM - 2
       - 美国 CloudFlare节点 - 2
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
-      - 美国+DXC+Technology - 2
+      - 广东省佛山市 移动
+      - 美国 CloudFlare节点 - 3
+      - 美国+Microsoft数据中心
+      - 日本+东京Amazon数据中心
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国+DXC+Technology
-      - 美国 V2CROSS.COM
-      - 以色列+V2CROSS.COM
       - 美国 CloudFlare节点
-      - 以色列+V2CROSS.COM - 2
       - 美国 CloudFlare节点 - 2
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
-      - 美国+DXC+Technology - 2
+      - 广东省佛山市 移动
+      - 美国 CloudFlare节点 - 3
+      - 美国+Microsoft数据中心
+      - 日本+东京Amazon数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国+DXC+Technology
-      - 美国 V2CROSS.COM
-      - 以色列+V2CROSS.COM
       - 美国 CloudFlare节点
-      - 以色列+V2CROSS.COM - 2
       - 美国 CloudFlare节点 - 2
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
-      - 美国+DXC+Technology - 2
+      - 广东省佛山市 移动
+      - 美国 CloudFlare节点 - 3
+      - 美国+Microsoft数据中心
+      - 日本+东京Amazon数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
