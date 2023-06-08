@@ -1,28 +1,39 @@
 proxies:
-  - name: 美国弗吉尼亚州阿什本 CloudFlare节点
+  - name: 法国 OVH数据中心
     type: vmess
-    server: datacenter.cu.01.biqibao.site
-    port: 2052
-    uuid: c36d4223-1804-494a-a453-d4f77f10c830
-    alterId: 0
+    server: 54.38.154.182
+    port: 54902
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
     cipher: auto
     udp: true
-    network: ws
-    ws-path: /public
-    ws-headers:
-      Host: detacenter.01.biqibao.site
-  - name: 美国 CloudFlare节点
+    network: tcp
+    ws-headers: {}
+  - name: 广东省深圳市 移动
     type: vmess
-    server: visa.cn
-    port: 80
-    uuid: 8a694cfb-d143-4378-cb85-faacdc69e5e1
-    alterId: 0
+    server: ieplhk.lanyunshi.top
+    port: 51004
+    uuid: 1a7680df-81a1-3d89-a221-db81ac4b04df
+    alterId: 2
     cipher: auto
     udp: true
-    network: ws
+    network: tcp
     ws-path: /
     ws-headers:
-      Host: ass.669990.xyz
+      Host: ieplhk.lanyunshi.top
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: yd1.01dj.sbs
+    port: 443
+    uuid: 08d3c0b5-6515-4187-860f-2e41dac6a94b
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /sometimesnaive
+    ws-headers:
+      Host: yd1.01dj.sbs
+    tls: true
   - name: 美国 CloudFlare节点 - 2
     type: vmess
     server: visa.cn
@@ -35,52 +46,47 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ass.669990.xyz
-  - name: 日本 东京阿里云
+  - name: 美国 V2CROSS.COM
     type: vmess
-    server: cdncf.scyu.app
+    server: ns1.v2-vip.fun
     port: 80
-    uuid: c07a7268-6b25-4952-be6d-e9fb3beacedc
+    uuid: 8abe9496-5e24-4e49-b566-dcf86116017d
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /api/v3/download.getFile
+    ws-path: /i99LgvSaslbsPLLQQ7j6Z
     ws-headers:
-      Host: ssrsub.v01.ssrsub.com
-  - name: 日本+东京Amazon数据中心
-    type: trojan
-    server: fscsg.fscloud123456789.com
-    port: '443'
-    password: 8844efd9-1858-4d83-be27-d5fdd2aba132
+      Host: de5.irteh.fun
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国弗吉尼亚州阿什本 CloudFlare节点
+      - 法国 OVH数据中心
+      - 广东省深圳市 移动
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
-      - 日本 东京阿里云
-      - 日本+东京Amazon数据中心
+      - 美国 V2CROSS.COM
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国弗吉尼亚州阿什本 CloudFlare节点
+      - 法国 OVH数据中心
+      - 广东省深圳市 移动
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
-      - 日本 东京阿里云
-      - 日本+东京Amazon数据中心
+      - 美国 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国弗吉尼亚州阿什本 CloudFlare节点
+      - 法国 OVH数据中心
+      - 广东省深圳市 移动
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
-      - 日本 东京阿里云
-      - 日本+东京Amazon数据中心
+      - 美国 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
