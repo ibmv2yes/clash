@@ -1,47 +1,75 @@
 proxies:
-  - name: 美国+DXC+Technology
-    type: trojan
-    server: usa.stablize.top
-    port: '443'
-    password: e81c0cf0-d4f4-402e-81ee-4eb19a832ffa
   - name: 美国 CloudFlare节点
     type: vmess
-    server: cf-lt.sharecentre.online
-    port: 80
-    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
+    server: 198.41.219.154
+    port: 2095
+    uuid: cc17ed88-5317-447a-f83b-222e2e4205ba
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /shirker
+    ws-path: /ylks
     ws-headers:
-      Host: gcore.ilovescp.com
-  - name: 美国 CloudFlare公司CDN节点(shopify)
+      Host: bac.vtcss.top
+  - name: 台湾省台中市 中华电信
     type: vmess
-    server: 23.227.38.99
-    port: 443
-    uuid: 86d37526-5758-4cec-862f-df404b313086
+    server: tw99-hinet.mynodes001.one
+    port: 445
+    uuid: 5f04de84-6b7e-3564-82c2-d2a998002629
     alterId: 0
     cipher: auto
     udp: true
-    network: ws
-    ws-path: /3G6WPDL7
+    network: tcp
+    ws-path: ''
     ws-headers:
-      Host: 1.freek1.xyz
-    tls: true
+      Host: ''
   - name: 美国 CloudFlare节点 - 2
     type: vmess
-    server: datacenter.cm.01.biqibao.site
-    port: 2052
-    uuid: c36d4223-1804-494a-a453-d4f77f10c830
+    server: 104.21.53.35
+    port: 80
+    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /public
+    ws-path: /yxzbp
     ws-headers:
-      Host: detacenter.01.biqibao.site
+      Host: buyvm1.yxjnode.com
+  - name: 法国 OVH数据中心
+    type: vmess
+    server: 54.38.154.182
+    port: 54902
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-headers: {}
   - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: visa.cn
+    port: 80
+    uuid: 8a694cfb-d143-4378-cb85-faacdc69e5e1
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: ass.669990.xyz
+  - name: 德国 法兰克福Oracle云计算数据中心
+    type: vmess
+    server: 130.61.111.167
+    port: 21872
+    uuid: 9a7a75d4-ab7e-4ba0-bbfa-a4acddc18084
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 CloudFlare节点 - 4
     type: vmess
     server: 162.159.152.95
     port: 443
@@ -54,35 +82,56 @@ proxies:
     ws-headers:
       Host: dedi2.1808.cf
     tls: true
+  - name: 美国 CloudFlare节点 - 5
+    type: vmess
+    server: cf.yxjnode.com
+    port: 80
+    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /yxzbp
+    ws-headers:
+      Host: dp3.yxjnode.com
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国+DXC+Technology
       - 美国 CloudFlare节点
-      - 美国 CloudFlare公司CDN节点(shopify)
+      - 台湾省台中市 中华电信
       - 美国 CloudFlare节点 - 2
+      - 法国 OVH数据中心
       - 美国 CloudFlare节点 - 3
+      - 德国 法兰克福Oracle云计算数据中心
+      - 美国 CloudFlare节点 - 4
+      - 美国 CloudFlare节点 - 5
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国+DXC+Technology
       - 美国 CloudFlare节点
-      - 美国 CloudFlare公司CDN节点(shopify)
+      - 台湾省台中市 中华电信
       - 美国 CloudFlare节点 - 2
+      - 法国 OVH数据中心
       - 美国 CloudFlare节点 - 3
+      - 德国 法兰克福Oracle云计算数据中心
+      - 美国 CloudFlare节点 - 4
+      - 美国 CloudFlare节点 - 5
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国+DXC+Technology
       - 美国 CloudFlare节点
-      - 美国 CloudFlare公司CDN节点(shopify)
+      - 台湾省台中市 中华电信
       - 美国 CloudFlare节点 - 2
+      - 法国 OVH数据中心
       - 美国 CloudFlare节点 - 3
+      - 德国 法兰克福Oracle云计算数据中心
+      - 美国 CloudFlare节点 - 4
+      - 美国 CloudFlare节点 - 5
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
