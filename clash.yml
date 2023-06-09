@@ -1,30 +1,41 @@
 proxies:
   - name: 美国 CloudFlare节点
     type: vmess
-    server: www.noice.id
-    port: 443
-    uuid: 37776019-07ea-4a1d-94e7-88e5e133ad5a
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /worryfree
-    ws-headers:
-      Host: v2ray1.udpgw.com
-    tls: true
-  - name: 美国 V2CROSS.COM
-    type: vmess
-    server: 104.31.16.45
+    server: cf-lt.sharecentre.online
     port: 80
-    uuid: 2fcc2939-7dcf-4741-aa03-825bc40e23fd
+    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /CZfczvtieCZXdOlgWhgDLX
+    ws-path: /shirker
     ws-headers:
-      Host: de3.irteh.fun
+      Host: gcore.ilovescp.com
+  - name: 广东省 移动
+    type: vmess
+    server: 120.241.117.55
+    port: 37113
+    uuid: 788e6577-ee99-3b27-b8e3-811411ae32a9
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: ''
+    ws-headers:
+      Host: ''
   - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: 104.21.53.35
+    port: 80
+    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /yxzbp
+    ws-headers:
+      Host: buyvm1.yxjnode.com
+  - name: 美国 CloudFlare节点 - 3
     type: vmess
     server: cf-yd-dns.sharecentre.online
     port: 80
@@ -36,30 +47,18 @@ proxies:
     ws-path: /shirker
     ws-headers:
       Host: dp3.scproxy.top
-  - name: 美国 CloudFlare节点 - 3
+  - name: 美国 CloudFlare节点 - 4
     type: vmess
-    server: 198.41.219.154
-    port: 2095
-    uuid: cc17ed88-5317-447a-f83b-222e2e4205ba
+    server: datacenter.cm.01.biqibao.site
+    port: 2052
+    uuid: c36d4223-1804-494a-a453-d4f77f10c830
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /ylks
+    ws-path: /public
     ws-headers:
-      Host: bac.vtcss.top
-  - name: 广东省佛山市 移动
-    type: vmess
-    server: 8.v2-ray.cyou
-    port: 23608
-    uuid: 0dd19d20-ec86-3680-b256-87237bafa89e
-    alterId: 2
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: 8.v2-ray.cyou
+      Host: detacenter.01.biqibao.site
 proxy-groups:
   - name: Free-servers
     type: select
@@ -67,28 +66,28 @@ proxy-groups:
       - 自动选择
       - 故障转移
       - 美国 CloudFlare节点
-      - 美国 V2CROSS.COM
+      - 广东省 移动
       - 美国 CloudFlare节点 - 2
       - 美国 CloudFlare节点 - 3
-      - 广东省佛山市 移动
+      - 美国 CloudFlare节点 - 4
   - name: 自动选择
     type: url-test
     proxies:
       - 美国 CloudFlare节点
-      - 美国 V2CROSS.COM
+      - 广东省 移动
       - 美国 CloudFlare节点 - 2
       - 美国 CloudFlare节点 - 3
-      - 广东省佛山市 移动
+      - 美国 CloudFlare节点 - 4
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
       - 美国 CloudFlare节点
-      - 美国 V2CROSS.COM
+      - 广东省 移动
       - 美国 CloudFlare节点 - 2
       - 美国 CloudFlare节点 - 3
-      - 广东省佛山市 移动
+      - 美国 CloudFlare节点 - 4
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
