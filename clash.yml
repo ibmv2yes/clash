@@ -1,45 +1,28 @@
 proxies:
   - name: 美国 CloudFlare节点
     type: vmess
-    server: cf-lt.sharecentre.online
-    port: 80
-    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
+    server: 198.41.219.154
+    port: 2095
+    uuid: cc17ed88-5317-447a-f83b-222e2e4205ba
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /shirker
+    ws-path: /ylks
     ws-headers:
-      Host: gcore.ilovescp.com
-  - name: 美国+V2CROSS.COM
-    type: trojan
-    server: 152.70.74.66
-    port: 443?security=tls&type=tcp&headerType=none
-    password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
-  - name: 美国 CloudFlare节点 - 2
+      Host: bac.vtcss.top
+  - name: 德国 法兰克福Oracle云计算数据中心
     type: vmess
-    server: tech.noaries.de
-    port: 80
-    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
+    server: 130.61.111.167
+    port: 21872
+    uuid: 9a7a75d4-ab7e-4ba0-bbfa-a4acddc18084
     alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /shirker
-    ws-headers:
-      Host: nl.sharecentrepro.com
-  - name: 广东省佛山市 移动
-    type: vmess
-    server: 8.v2-ray.cyou
-    port: 23608
-    uuid: 0dd19d20-ec86-3680-b256-87237bafa89e
-    alterId: 2
     cipher: auto
     udp: true
     network: tcp
     ws-path: /
     ws-headers:
-      Host: 8.v2-ray.cyou
+      Host: ''
   - name: 台湾省台中市 中华电信
     type: vmess
     server: tw99-hinet.mynodes001.one
@@ -52,6 +35,57 @@ proxies:
     ws-path: ''
     ws-headers:
       Host: ''
+  - name: 法国 OVH数据中心
+    type: vmess
+    server: 54.38.154.182
+    port: 54902
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-headers: {}
+  - name: 广东省 移动
+    type: vmess
+    server: 120.241.117.55
+    port: 37113
+    uuid: 788e6577-ee99-3b27-b8e3-811411ae32a9
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: ''
+    ws-headers:
+      Host: ''
+  - name: 美国加利福尼亚州洛杉矶 PetaExpress
+    type: vmess
+    server: 198.2.204.253
+    port: 46902
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: ''
+    ws-headers:
+      Host: ''
+  - name: 亚太地区+V2CROSS.COM
+    type: trojan
+    server: 103.169.7.11
+    port: '80'
+    password: c0d9da22-2569-4bed-a395-607d9e7ae687
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: 104.21.53.35
+    port: 80
+    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /yxzbp
+    ws-headers:
+      Host: buyvm1.yxjnode.com
 proxy-groups:
   - name: Free-servers
     type: select
@@ -59,28 +93,37 @@ proxy-groups:
       - 自动选择
       - 故障转移
       - 美国 CloudFlare节点
-      - 美国+V2CROSS.COM
-      - 美国 CloudFlare节点 - 2
-      - 广东省佛山市 移动
+      - 德国 法兰克福Oracle云计算数据中心
       - 台湾省台中市 中华电信
+      - 法国 OVH数据中心
+      - 广东省 移动
+      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 亚太地区+V2CROSS.COM
+      - 美国 CloudFlare节点 - 2
   - name: 自动选择
     type: url-test
     proxies:
       - 美国 CloudFlare节点
-      - 美国+V2CROSS.COM
-      - 美国 CloudFlare节点 - 2
-      - 广东省佛山市 移动
+      - 德国 法兰克福Oracle云计算数据中心
       - 台湾省台中市 中华电信
+      - 法国 OVH数据中心
+      - 广东省 移动
+      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 亚太地区+V2CROSS.COM
+      - 美国 CloudFlare节点 - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
       - 美国 CloudFlare节点
-      - 美国+V2CROSS.COM
-      - 美国 CloudFlare节点 - 2
-      - 广东省佛山市 移动
+      - 德国 法兰克福Oracle云计算数据中心
       - 台湾省台中市 中华电信
+      - 法国 OVH数据中心
+      - 广东省 移动
+      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 亚太地区+V2CROSS.COM
+      - 美国 CloudFlare节点 - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
