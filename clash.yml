@@ -1,21 +1,4 @@
 proxies:
-  - name: 美国+DXC+Technology
-    type: trojan
-    server: fscus.fscloud123456789.com
-    port: '443'
-    password: 9995cc0e-2e9d-4c80-8c81-4fdbb6322a3a
-  - name: 美国 V2CROSS.COM
-    type: vmess
-    server: ns1.v2-vip.fun
-    port: 80
-    uuid: 8abe9496-5e24-4e49-b566-dcf86116017d
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /i99LgvSaslbsPLLQQ7j6Z
-    ws-headers:
-      Host: de5.irteh.fun
   - name: 美国 CloudFlare节点
     type: vmess
     server: www.noice.id
@@ -29,18 +12,18 @@ proxies:
     ws-headers:
       Host: v2ray1.udpgw.com
     tls: true
-  - name: 美国 V2CROSS.COM - 2
+  - name: 日本 东京阿里云
     type: vmess
-    server: ns1.v2-vip.fun
+    server: cdncf.scyu.app
     port: 80
-    uuid: 8abe9496-5e24-4e49-b566-dcf86116017d
+    uuid: c07a7268-6b25-4952-be6d-e9fb3beacedc
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /i99LgvSaslbsPLLQQ7j6Z
+    ws-path: /api/v3/download.getFile
     ws-headers:
-      Host: de5.irteh.fun
+      Host: ssrsub.v01.ssrsub.com
   - name: 广东省佛山市 移动
     type: vmess
     server: 25.v2-ray.cyou
@@ -55,78 +38,59 @@ proxies:
       Host: 25.v2-ray.cyou
   - name: 美国 CloudFlare节点 - 2
     type: vmess
-    server: tech.noaries.de
-    port: 80
-    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
+    server: 172.66.46.15
+    port: 443
+    uuid: 12612e87-8003-44a8-b4e8-ec4a325e9016
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /shirker
+    ws-path: /ou
     ws-headers:
-      Host: nl.sharecentrepro.com
+      Host: z.zorro.tk
+    tls: true
   - name: 美国 CloudFlare节点 - 3
     type: vmess
-    server: cf-lt.sharecentre.online
-    port: 80
-    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
+    server: 162.159.152.95
+    port: 443
+    uuid: dddd0b29-1576-4003-9990-d7cea34264db
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /shirker
+    ws-path: /835757
     ws-headers:
-      Host: do.sharecentrepro.com
-  - name: 美国 CloudFlare节点 - 4
-    type: vmess
-    server: 104.22.9.160
-    port: 8880
-    uuid: 5158c044-d6d4-4b07-ba79-b20f13445d0d
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /ylks
-    ws-headers:
-      Host: bac.vtcss.top
+      Host: dedi2.1808.cf
+    tls: true
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国+DXC+Technology
-      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 美国 V2CROSS.COM - 2
+      - 日本 东京阿里云
       - 广东省佛山市 移动
       - 美国 CloudFlare节点 - 2
       - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国+DXC+Technology
-      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 美国 V2CROSS.COM - 2
+      - 日本 东京阿里云
       - 广东省佛山市 移动
       - 美国 CloudFlare节点 - 2
       - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国+DXC+Technology
-      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 美国 V2CROSS.COM - 2
+      - 日本 东京阿里云
       - 广东省佛山市 移动
       - 美国 CloudFlare节点 - 2
       - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
