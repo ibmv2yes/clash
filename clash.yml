@@ -1,94 +1,95 @@
 proxies:
-  - name: 美国 CloudFlare节点
+  - name: 广东省 移动
     type: vmess
-    server: 172.67.156.138
-    port: 443
-    uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF
+    server: 120.241.117.55
+    port: 37113
+    uuid: 788e6577-ee99-3b27-b8e3-811411ae32a9
     alterId: 0
     cipher: auto
     udp: true
-    network: ws
-    ws-path: /speedtest
-    ws-headers:
-      Host: Kansas.kotick.site
-    tls: true
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: 198.41.219.154
-    port: 2095
-    uuid: cc17ed88-5317-447a-f83b-222e2e4205ba
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /ylks
-    ws-headers:
-      Host: bac.vtcss.top
-  - name: 美国 V2CROSS.COM
-    type: vmess
-    server: 172.98.14.60
-    port: 45246
-    uuid: 847b3ffc-e743-4e14-81e8-0d2e641f2165
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /?ed=2048
+    network: tcp
+    ws-path: ''
     ws-headers:
       Host: ''
-  - name: 美国 CloudFlare节点 - 3
+  - name: 美国 CloudFlare节点
     type: vmess
-    server: visa.cn
-    port: 80
-    uuid: 8a694cfb-d143-4378-cb85-faacdc69e5e1
+    server: 162.159.152.95
+    port: 443
+    uuid: dddd0b29-1576-4003-9990-d7cea34264db
     alterId: 0
     cipher: auto
     udp: true
     network: ws
+    ws-path: /835757
+    ws-headers:
+      Host: dedi2.1808.cf
+    tls: true
+  - name: 广东省佛山市 移动
+    type: vmess
+    server: 8.v2-ray.cyou
+    port: 23608
+    uuid: 0dd19d20-ec86-3680-b256-87237bafa89e
+    alterId: 2
+    cipher: auto
+    udp: true
+    network: tcp
     ws-path: /
     ws-headers:
-      Host: ass.669990.xyz
-  - name: 美国 CloudFlare节点 - 4
+      Host: 8.v2-ray.cyou
+  - name: 美国 CloudFlare节点 - 2
     type: vmess
-    server: datacenter.cm.01.biqibao.site
-    port: 2052
-    uuid: c36d4223-1804-494a-a453-d4f77f10c830
+    server: cf-lt.sharecentre.online
+    port: 80
+    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /public
+    ws-path: /shirker
     ws-headers:
-      Host: detacenter.01.biqibao.site
+      Host: gcore.ilovescp.com
+  - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: www.noice.id
+    port: 443
+    uuid: 37776019-07ea-4a1d-94e7-88e5e133ad5a
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /worryfree
+    ws-headers:
+      Host: v2ray1.udpgw.com
+    tls: true
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
+      - 广东省 移动
       - 美国 CloudFlare节点
+      - 广东省佛山市 移动
       - 美国 CloudFlare节点 - 2
-      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
   - name: 自动选择
     type: url-test
     proxies:
+      - 广东省 移动
       - 美国 CloudFlare节点
+      - 广东省佛山市 移动
       - 美国 CloudFlare节点 - 2
-      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
+      - 广东省 移动
       - 美国 CloudFlare节点
+      - 广东省佛山市 移动
       - 美国 CloudFlare节点 - 2
-      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
