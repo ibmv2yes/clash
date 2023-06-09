@@ -1,80 +1,88 @@
 proxies:
-  - name: 美国+V2CROSS.COM
-    type: ss
-    server: 172.99.190.87
-    port: '7306'
-    cipher: aes-256-gcm
-    password: FoOiGlkAA9yPEGP
   - name: 美国 CloudFlare节点
     type: vmess
-    server: 198.41.219.154
-    port: 2095
-    uuid: cc17ed88-5317-447a-f83b-222e2e4205ba
+    server: cf-lt.sharecentre.online
+    port: 80
+    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /ylks
+    ws-path: /shirker
     ws-headers:
-      Host: bac.vtcss.top
+      Host: in.sharecentrepro.com
+  - name: 北京市+电信
+    type: ss
+    server: free.themars.top
+    port: '32102'
+    cipher: chacha20-ietf-poly1305
+    password: b89b39c2-dc8d-4595-a4c5-54b4fbab3fc2
   - name: 美国 CloudFlare节点 - 2
     type: vmess
-    server: 104.21.53.35
-    port: 80
-    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
+    server: 162.159.152.95
+    port: 443
+    uuid: dddd0b29-1576-4003-9990-d7cea34264db
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /yxzbp
+    ws-path: /835757
     ws-headers:
-      Host: buyvm1.yxjnode.com
-  - name: 美国+DXC+Technology
-    type: trojan
-    server: usa.stablize.top
-    port: '443'
-    password: e81c0cf0-d4f4-402e-81ee-4eb19a832ffa
-  - name: 荷兰 北荷兰省阿姆斯特丹Sharktech数据中心
+      Host: dedi2.1808.cf
+    tls: true
+  - name: 美国 V2CROSS.COM
     type: vmess
-    server: 45.58.186.81
-    port: 51140
-    uuid: 4a138e19-0595-4d51-83c6-fd276cf7d307
-    alterId: 64
+    server: ns1.v2-vip.fun
+    port: 80
+    uuid: 8abe9496-5e24-4e49-b566-dcf86116017d
+    alterId: 0
     cipher: auto
     udp: true
-    network: tcp
-    ws-path: ''
+    network: ws
+    ws-path: /i99LgvSaslbsPLLQQ7j6Z
     ws-headers:
-      Host: ''
+      Host: de5.irteh.fun
+  - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: cf-dx-dns.sharecentre.online
+    port: 80
+    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /shirker
+    ws-headers:
+      Host: in.sharecentrepro.com
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国+V2CROSS.COM
       - 美国 CloudFlare节点
+      - 北京市+电信
       - 美国 CloudFlare节点 - 2
-      - 美国+DXC+Technology
-      - 荷兰 北荷兰省阿姆斯特丹Sharktech数据中心
+      - 美国 V2CROSS.COM
+      - 美国 CloudFlare节点 - 3
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国+V2CROSS.COM
       - 美国 CloudFlare节点
+      - 北京市+电信
       - 美国 CloudFlare节点 - 2
-      - 美国+DXC+Technology
-      - 荷兰 北荷兰省阿姆斯特丹Sharktech数据中心
+      - 美国 V2CROSS.COM
+      - 美国 CloudFlare节点 - 3
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国+V2CROSS.COM
       - 美国 CloudFlare节点
+      - 北京市+电信
       - 美国 CloudFlare节点 - 2
-      - 美国+DXC+Technology
-      - 荷兰 北荷兰省阿姆斯特丹Sharktech数据中心
+      - 美国 V2CROSS.COM
+      - 美国 CloudFlare节点 - 3
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
