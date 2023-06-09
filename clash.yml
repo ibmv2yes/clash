@@ -1,42 +1,21 @@
 proxies:
   - name: 美国 CloudFlare节点
     type: vmess
-    server: v2ray.online
-    port: 443
-    uuid: 00BBF5B8-173E-6818-9927-5AD1AA073C7D
+    server: 172.67.92.196
+    port: 8880
+    uuid: 5158c044-d6d4-4b07-ba79-b20f13445d0d
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /speedtest
+    ws-path: /ylks
     ws-headers:
-      Host: Kansas.v2ray.online
-    tls: true
-  - name: 美国 V2CROSS.COM
-    type: vmess
-    server: ns1.v2-vip.fun
-    port: 80
-    uuid: 8abe9496-5e24-4e49-b566-dcf86116017d
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /i99LgvSaslbsPLLQQ7j6Z
-    ws-headers:
-      Host: de5.irteh.fun
-  - name: 美国 CloudFlare公司CDN节点(shopify)
-    type: vmess
-    server: 23.227.38.99
-    port: 443
-    uuid: 86d37526-5758-4cec-862f-df404b313086
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /3G6WPDL7
-    ws-headers:
-      Host: 1.freek1.xyz
-    tls: true
+      Host: bac.vtcss.top
+  - name: 美国+V2CROSS.COM
+    type: trojan
+    server: 152.70.74.66
+    port: 443?security=tls&type=tcp&headerType=none
+    password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
   - name: 美国 CloudFlare节点 - 2
     type: vmess
     server: www.noice.id
@@ -50,18 +29,30 @@ proxies:
     ws-headers:
       Host: v2ray1.udpgw.com
     tls: true
-  - name: 广东省深圳市 移动
+  - name: 美国 CloudFlare节点 - 3
     type: vmess
-    server: iepl2.airtcp.vip
-    port: 51002
-    uuid: 1a7680df-81a1-3d89-a221-db81ac4b04df
-    alterId: 2
+    server: visa.cn
+    port: 80
+    uuid: 8a694cfb-d143-4378-cb85-faacdc69e5e1
+    alterId: 0
     cipher: auto
     udp: true
-    network: tcp
+    network: ws
     ws-path: /
     ws-headers:
-      Host: iepl2.airtcp.vip
+      Host: ass.669990.xyz
+  - name: 美国 CloudFlare节点 - 4
+    type: vmess
+    server: 104.22.9.160
+    port: 8880
+    uuid: 5158c044-d6d4-4b07-ba79-b20f13445d0d
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /ylks
+    ws-headers:
+      Host: bac.vtcss.top
 proxy-groups:
   - name: Free-servers
     type: select
@@ -69,28 +60,28 @@ proxy-groups:
       - 自动选择
       - 故障转移
       - 美国 CloudFlare节点
-      - 美国 V2CROSS.COM
-      - 美国 CloudFlare公司CDN节点(shopify)
+      - 美国+V2CROSS.COM
       - 美国 CloudFlare节点 - 2
-      - 广东省深圳市 移动
+      - 美国 CloudFlare节点 - 3
+      - 美国 CloudFlare节点 - 4
   - name: 自动选择
     type: url-test
     proxies:
       - 美国 CloudFlare节点
-      - 美国 V2CROSS.COM
-      - 美国 CloudFlare公司CDN节点(shopify)
+      - 美国+V2CROSS.COM
       - 美国 CloudFlare节点 - 2
-      - 广东省深圳市 移动
+      - 美国 CloudFlare节点 - 3
+      - 美国 CloudFlare节点 - 4
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
       - 美国 CloudFlare节点
-      - 美国 V2CROSS.COM
-      - 美国 CloudFlare公司CDN节点(shopify)
+      - 美国+V2CROSS.COM
       - 美国 CloudFlare节点 - 2
-      - 广东省深圳市 移动
+      - 美国 CloudFlare节点 - 3
+      - 美国 CloudFlare节点 - 4
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
