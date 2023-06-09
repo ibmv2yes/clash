@@ -1,55 +1,107 @@
 proxies:
   - name: 美国 CloudFlare节点
     type: vmess
-    server: www.noice.id
-    port: 443
-    uuid: 37776019-07ea-4a1d-94e7-88e5e133ad5a
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /worryfree
-    ws-headers:
-      Host: v2ray1.udpgw.com
-    tls: true
-  - name: 日本 东京阿里云
-    type: vmess
-    server: cdncf.scyu.app
+    server: visa.cn
     port: 80
-    uuid: c07a7268-6b25-4952-be6d-e9fb3beacedc
+    uuid: 8a694cfb-d143-4378-cb85-faacdc69e5e1
     alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /api/v3/download.getFile
-    ws-headers:
-      Host: ssrsub.v01.ssrsub.com
-  - name: 广东省佛山市 移动
-    type: vmess
-    server: 25.v2-ray.cyou
-    port: 23625
-    uuid: 0dd19d20-ec86-3680-b256-87237bafa89e
-    alterId: 2
     cipher: auto
     udp: true
     network: ws
     ws-path: /
     ws-headers:
-      Host: 25.v2-ray.cyou
-  - name: 美国 CloudFlare节点 - 2
+      Host: ass.669990.xyz
+  - name: 丹麦 V2CROSS.COM
     type: vmess
-    server: 172.66.46.15
-    port: 443
-    uuid: 12612e87-8003-44a8-b4e8-ec4a325e9016
+    server: apkwvctghw.114514782.xyz
+    port: 2052
+    uuid: d1969fc7-b361-3c1d-b92d-4ae5c3909e62
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /ou
+    ws-path: /miaosafh
     ws-headers:
-      Host: z.zorro.tk
-    tls: true
+      Host: apkwvctghw.114514782.xyz
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: tech.noaries.de
+    port: 80
+    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /shirker
+    ws-headers:
+      Host: nl.sharecentrepro.com
+  - name: 广东省佛山市 移动
+    type: vmess
+    server: 8.v2-ray.cyou
+    port: 23608
+    uuid: 0dd19d20-ec86-3680-b256-87237bafa89e
+    alterId: 2
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: 8.v2-ray.cyou
+  - name: 美国+V2CROSS.COM
+    type: ss
+    server: 172.99.190.87
+    port: '8881'
+    cipher: aes-256-gcm
+    password: kDWvXYZoTBcGkC4
+  - name: 荷兰 北荷兰省阿姆斯特丹Sharktech数据中心
+    type: vmess
+    server: 45.58.186.81
+    port: 51140
+    uuid: 4a138e19-0595-4d51-83c6-fd276cf7d307
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: ''
+    ws-headers:
+      Host: ''
+  - name: 广东省深圳市 移动
+    type: vmess
+    server: iepl2.airtcp.vip
+    port: 51002
+    uuid: 1a7680df-81a1-3d89-a221-db81ac4b04df
+    alterId: 2
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: iepl2.airtcp.vip
   - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: datacenter.cm.01.biqibao.site
+    port: 2052
+    uuid: c36d4223-1804-494a-a453-d4f77f10c830
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /public
+    ws-headers:
+      Host: detacenter.01.biqibao.site
+  - name: 美国 CloudFlare节点 - 4
+    type: vmess
+    server: 104.22.9.160
+    port: 8880
+    uuid: 5158c044-d6d4-4b07-ba79-b20f13445d0d
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /ylks
+    ws-headers:
+      Host: bac.vtcss.top
+  - name: 美国 CloudFlare节点 - 5
     type: vmess
     server: 162.159.152.95
     port: 443
@@ -69,28 +121,43 @@ proxy-groups:
       - 自动选择
       - 故障转移
       - 美国 CloudFlare节点
-      - 日本 东京阿里云
-      - 广东省佛山市 移动
+      - 丹麦 V2CROSS.COM
       - 美国 CloudFlare节点 - 2
+      - 广东省佛山市 移动
+      - 美国+V2CROSS.COM
+      - 荷兰 北荷兰省阿姆斯特丹Sharktech数据中心
+      - 广东省深圳市 移动
       - 美国 CloudFlare节点 - 3
+      - 美国 CloudFlare节点 - 4
+      - 美国 CloudFlare节点 - 5
   - name: 自动选择
     type: url-test
     proxies:
       - 美国 CloudFlare节点
-      - 日本 东京阿里云
-      - 广东省佛山市 移动
+      - 丹麦 V2CROSS.COM
       - 美国 CloudFlare节点 - 2
+      - 广东省佛山市 移动
+      - 美国+V2CROSS.COM
+      - 荷兰 北荷兰省阿姆斯特丹Sharktech数据中心
+      - 广东省深圳市 移动
       - 美国 CloudFlare节点 - 3
+      - 美国 CloudFlare节点 - 4
+      - 美国 CloudFlare节点 - 5
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
       - 美国 CloudFlare节点
-      - 日本 东京阿里云
-      - 广东省佛山市 移动
+      - 丹麦 V2CROSS.COM
       - 美国 CloudFlare节点 - 2
+      - 广东省佛山市 移动
+      - 美国+V2CROSS.COM
+      - 荷兰 北荷兰省阿姆斯特丹Sharktech数据中心
+      - 广东省深圳市 移动
       - 美国 CloudFlare节点 - 3
+      - 美国 CloudFlare节点 - 4
+      - 美国 CloudFlare节点 - 5
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
