@@ -1,72 +1,32 @@
 proxies:
   - name: 美国 CloudFlare节点
     type: vmess
-    server: 198.41.219.154
-    port: 2095
-    uuid: cc17ed88-5317-447a-f83b-222e2e4205ba
+    server: datacenter.cm.01.biqibao.site
+    port: 2052
+    uuid: c36d4223-1804-494a-a453-d4f77f10c830
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /ylks
+    ws-path: /public
     ws-headers:
-      Host: bac.vtcss.top
-  - name: 德国 法兰克福Oracle云计算数据中心
+      Host: detacenter.01.biqibao.site
+  - name: 北京市+电信
+    type: ss
+    server: free.themars.top
+    port: '32102'
+    cipher: chacha20-ietf-poly1305
+    password: b89b39c2-dc8d-4595-a4c5-54b4fbab3fc2
+  - name: 瑞典 V2CROSS.COM
     type: vmess
-    server: 130.61.111.167
-    port: 21872
-    uuid: 9a7a75d4-ab7e-4ba0-bbfa-a4acddc18084
+    server: 185.186.78.233
+    port: 50125
+    uuid: 9783cdbf-ad19-4aa0-b4b2-24efe504e9fd
     alterId: 0
     cipher: auto
     udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 台湾省台中市 中华电信
-    type: vmess
-    server: tw99-hinet.mynodes001.one
-    port: 445
-    uuid: 5f04de84-6b7e-3564-82c2-d2a998002629
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: ''
-    ws-headers:
-      Host: ''
-  - name: 法国 OVH数据中心
-    type: vmess
-    server: 54.38.154.182
-    port: 54902
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-headers: {}
-  - name: 广东省 移动
-    type: vmess
-    server: 120.241.117.55
-    port: 37113
-    uuid: 788e6577-ee99-3b27-b8e3-811411ae32a9
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: ''
-    ws-headers:
-      Host: ''
-  - name: 美国加利福尼亚州洛杉矶 PetaExpress
-    type: vmess
-    server: 198.2.204.253
-    port: 46902
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: ''
+    network: ws
+    ws-path: /?ed=2048
     ws-headers:
       Host: ''
   - name: 亚太地区+V2CROSS.COM
@@ -86,6 +46,19 @@ proxies:
     ws-path: /yxzbp
     ws-headers:
       Host: buyvm1.yxjnode.com
+  - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: cdn.anycast.eu.org
+    port: 443
+    uuid: dddd0b29-1576-4003-9990-d7cea34264db
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /835757
+    ws-headers:
+      Host: dedi2.1808.cf
+    tls: true
 proxy-groups:
   - name: Free-servers
     type: select
@@ -93,37 +66,31 @@ proxy-groups:
       - 自动选择
       - 故障转移
       - 美国 CloudFlare节点
-      - 德国 法兰克福Oracle云计算数据中心
-      - 台湾省台中市 中华电信
-      - 法国 OVH数据中心
-      - 广东省 移动
-      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 北京市+电信
+      - 瑞典 V2CROSS.COM
       - 亚太地区+V2CROSS.COM
       - 美国 CloudFlare节点 - 2
+      - 美国 CloudFlare节点 - 3
   - name: 自动选择
     type: url-test
     proxies:
       - 美国 CloudFlare节点
-      - 德国 法兰克福Oracle云计算数据中心
-      - 台湾省台中市 中华电信
-      - 法国 OVH数据中心
-      - 广东省 移动
-      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 北京市+电信
+      - 瑞典 V2CROSS.COM
       - 亚太地区+V2CROSS.COM
       - 美国 CloudFlare节点 - 2
+      - 美国 CloudFlare节点 - 3
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
       - 美国 CloudFlare节点
-      - 德国 法兰克福Oracle云计算数据中心
-      - 台湾省台中市 中华电信
-      - 法国 OVH数据中心
-      - 广东省 移动
-      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 北京市+电信
+      - 瑞典 V2CROSS.COM
       - 亚太地区+V2CROSS.COM
       - 美国 CloudFlare节点 - 2
+      - 美国 CloudFlare节点 - 3
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
