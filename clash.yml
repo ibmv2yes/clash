@@ -1,17 +1,47 @@
 proxies:
-  - name: 广东省 移动
+  - name: 美国+DXC+Technology
+    type: trojan
+    server: usa.stablize.top
+    port: '443'
+    password: e81c0cf0-d4f4-402e-81ee-4eb19a832ffa
+  - name: 美国 CloudFlare节点
     type: vmess
-    server: 120.241.117.55
-    port: 37113
-    uuid: 788e6577-ee99-3b27-b8e3-811411ae32a9
+    server: cf-lt.sharecentre.online
+    port: 80
+    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
     alterId: 0
     cipher: auto
     udp: true
-    network: tcp
-    ws-path: ''
+    network: ws
+    ws-path: /shirker
     ws-headers:
-      Host: ''
-  - name: 美国 CloudFlare节点
+      Host: gcore.ilovescp.com
+  - name: 美国 CloudFlare公司CDN节点(shopify)
+    type: vmess
+    server: 23.227.38.99
+    port: 443
+    uuid: 86d37526-5758-4cec-862f-df404b313086
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /3G6WPDL7
+    ws-headers:
+      Host: 1.freek1.xyz
+    tls: true
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: datacenter.cm.01.biqibao.site
+    port: 2052
+    uuid: c36d4223-1804-494a-a453-d4f77f10c830
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /public
+    ws-headers:
+      Host: detacenter.01.biqibao.site
+  - name: 美国 CloudFlare节点 - 3
     type: vmess
     server: 162.159.152.95
     port: 443
@@ -24,60 +54,23 @@ proxies:
     ws-headers:
       Host: dedi2.1808.cf
     tls: true
-  - name: 广东省佛山市 移动
-    type: vmess
-    server: 8.v2-ray.cyou
-    port: 23608
-    uuid: 0dd19d20-ec86-3680-b256-87237bafa89e
-    alterId: 2
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: 8.v2-ray.cyou
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: cf-lt.sharecentre.online
-    port: 80
-    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /shirker
-    ws-headers:
-      Host: gcore.ilovescp.com
-  - name: 美国 CloudFlare节点 - 3
-    type: vmess
-    server: www.noice.id
-    port: 443
-    uuid: 37776019-07ea-4a1d-94e7-88e5e133ad5a
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /worryfree
-    ws-headers:
-      Host: v2ray1.udpgw.com
-    tls: true
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 广东省 移动
+      - 美国+DXC+Technology
       - 美国 CloudFlare节点
-      - 广东省佛山市 移动
+      - 美国 CloudFlare公司CDN节点(shopify)
       - 美国 CloudFlare节点 - 2
       - 美国 CloudFlare节点 - 3
   - name: 自动选择
     type: url-test
     proxies:
-      - 广东省 移动
+      - 美国+DXC+Technology
       - 美国 CloudFlare节点
-      - 广东省佛山市 移动
+      - 美国 CloudFlare公司CDN节点(shopify)
       - 美国 CloudFlare节点 - 2
       - 美国 CloudFlare节点 - 3
     url: http://www.gstatic.com/generate_204
@@ -85,9 +78,9 @@ proxy-groups:
   - name: 故障转移
     type: fallback
     proxies:
-      - 广东省 移动
+      - 美国+DXC+Technology
       - 美国 CloudFlare节点
-      - 广东省佛山市 移动
+      - 美国 CloudFlare公司CDN节点(shopify)
       - 美国 CloudFlare节点 - 2
       - 美国 CloudFlare节点 - 3
     url: http://www.gstatic.com/generate_204
