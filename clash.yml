@@ -1,7 +1,43 @@
 proxies:
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: ns1.v2-vip.fun
+    port: 80
+    uuid: 8abe9496-5e24-4e49-b566-dcf86116017d
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /i99LgvSaslbsPLLQQ7j6Z
+    ws-headers:
+      Host: de5.irteh.fun
+  - name: 广东省佛山市 移动
+    type: vmess
+    server: 8.v2-ray.cyou
+    port: 23608
+    uuid: 0dd19d20-ec86-3680-b256-87237bafa89e
+    alterId: 2
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: 8.v2-ray.cyou
   - name: 美国 CloudFlare节点
     type: vmess
-    server: 172.67.92.196
+    server: 104.21.53.35
+    port: 80
+    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /yxzbp
+    ws-headers:
+      Host: buyvm1.yxjnode.com
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: 104.22.9.160
     port: 8880
     uuid: 5158c044-d6d4-4b07-ba79-b20f13445d0d
     alterId: 0
@@ -11,12 +47,7 @@ proxies:
     ws-path: /ylks
     ws-headers:
       Host: bac.vtcss.top
-  - name: 美国+V2CROSS.COM
-    type: trojan
-    server: 152.70.74.66
-    port: 443?security=tls&type=tcp&headerType=none
-    password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
-  - name: 美国 CloudFlare节点 - 2
+  - name: 美国 CloudFlare节点 - 3
     type: vmess
     server: www.noice.id
     port: 443
@@ -29,59 +60,35 @@ proxies:
     ws-headers:
       Host: v2ray1.udpgw.com
     tls: true
-  - name: 美国 CloudFlare节点 - 3
-    type: vmess
-    server: visa.cn
-    port: 80
-    uuid: 8a694cfb-d143-4378-cb85-faacdc69e5e1
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: ass.669990.xyz
-  - name: 美国 CloudFlare节点 - 4
-    type: vmess
-    server: 104.22.9.160
-    port: 8880
-    uuid: 5158c044-d6d4-4b07-ba79-b20f13445d0d
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /ylks
-    ws-headers:
-      Host: bac.vtcss.top
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
+      - 美国 V2CROSS.COM
+      - 广东省佛山市 移动
       - 美国 CloudFlare节点
-      - 美国+V2CROSS.COM
       - 美国 CloudFlare节点 - 2
       - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
   - name: 自动选择
     type: url-test
     proxies:
+      - 美国 V2CROSS.COM
+      - 广东省佛山市 移动
       - 美国 CloudFlare节点
-      - 美国+V2CROSS.COM
       - 美国 CloudFlare节点 - 2
       - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
+      - 美国 V2CROSS.COM
+      - 广东省佛山市 移动
       - 美国 CloudFlare节点
-      - 美国+V2CROSS.COM
       - 美国 CloudFlare节点 - 2
       - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
