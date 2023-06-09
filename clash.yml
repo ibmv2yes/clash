@@ -1,52 +1,53 @@
 proxies:
   - name: 美国 CloudFlare节点
     type: vmess
-    server: cf-lt.sharecentre.online
-    port: 80
-    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
+    server: 172.67.156.138
+    port: 443
+    uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /shirker
+    ws-path: /speedtest
     ws-headers:
-      Host: gcore.ilovescp.com
-  - name: 广东省 移动
-    type: vmess
-    server: 120.241.117.55
-    port: 37113
-    uuid: 788e6577-ee99-3b27-b8e3-811411ae32a9
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: ''
-    ws-headers:
-      Host: ''
+      Host: Kansas.kotick.site
+    tls: true
   - name: 美国 CloudFlare节点 - 2
     type: vmess
-    server: 104.21.53.35
-    port: 80
-    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
+    server: 198.41.219.154
+    port: 2095
+    uuid: cc17ed88-5317-447a-f83b-222e2e4205ba
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /yxzbp
+    ws-path: /ylks
     ws-headers:
-      Host: buyvm1.yxjnode.com
+      Host: bac.vtcss.top
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: 172.98.14.60
+    port: 45246
+    uuid: 847b3ffc-e743-4e14-81e8-0d2e641f2165
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /?ed=2048
+    ws-headers:
+      Host: ''
   - name: 美国 CloudFlare节点 - 3
     type: vmess
-    server: cf-yd-dns.sharecentre.online
+    server: visa.cn
     port: 80
-    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
+    uuid: 8a694cfb-d143-4378-cb85-faacdc69e5e1
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /shirker
+    ws-path: /
     ws-headers:
-      Host: dp3.scproxy.top
+      Host: ass.669990.xyz
   - name: 美国 CloudFlare节点 - 4
     type: vmess
     server: datacenter.cm.01.biqibao.site
@@ -66,16 +67,16 @@ proxy-groups:
       - 自动选择
       - 故障转移
       - 美国 CloudFlare节点
-      - 广东省 移动
       - 美国 CloudFlare节点 - 2
+      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点 - 3
       - 美国 CloudFlare节点 - 4
   - name: 自动选择
     type: url-test
     proxies:
       - 美国 CloudFlare节点
-      - 广东省 移动
       - 美国 CloudFlare节点 - 2
+      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点 - 3
       - 美国 CloudFlare节点 - 4
     url: http://www.gstatic.com/generate_204
@@ -84,8 +85,8 @@ proxy-groups:
     type: fallback
     proxies:
       - 美国 CloudFlare节点
-      - 广东省 移动
       - 美国 CloudFlare节点 - 2
+      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点 - 3
       - 美国 CloudFlare节点 - 4
     url: http://www.gstatic.com/generate_204
