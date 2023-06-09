@@ -1,58 +1,39 @@
 proxies:
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: visa.cn
-    port: 80
-    uuid: 8a694cfb-d143-4378-cb85-faacdc69e5e1
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: ass.669990.xyz
-  - name: 丹麦 V2CROSS.COM
-    type: vmess
-    server: apkwvctghw.114514782.xyz
-    port: 2052
-    uuid: d1969fc7-b361-3c1d-b92d-4ae5c3909e62
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /miaosafh
-    ws-headers:
-      Host: apkwvctghw.114514782.xyz
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: tech.noaries.de
-    port: 80
-    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /shirker
-    ws-headers:
-      Host: nl.sharecentrepro.com
-  - name: 广东省佛山市 移动
-    type: vmess
-    server: 8.v2-ray.cyou
-    port: 23608
-    uuid: 0dd19d20-ec86-3680-b256-87237bafa89e
-    alterId: 2
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: 8.v2-ray.cyou
   - name: 美国+V2CROSS.COM
     type: ss
     server: 172.99.190.87
-    port: '8881'
+    port: '7306'
     cipher: aes-256-gcm
-    password: kDWvXYZoTBcGkC4
+    password: FoOiGlkAA9yPEGP
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: 198.41.219.154
+    port: 2095
+    uuid: cc17ed88-5317-447a-f83b-222e2e4205ba
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /ylks
+    ws-headers:
+      Host: bac.vtcss.top
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: 104.21.53.35
+    port: 80
+    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /yxzbp
+    ws-headers:
+      Host: buyvm1.yxjnode.com
+  - name: 美国+DXC+Technology
+    type: trojan
+    server: usa.stablize.top
+    port: '443'
+    password: e81c0cf0-d4f4-402e-81ee-4eb19a832ffa
   - name: 荷兰 北荷兰省阿姆斯特丹Sharktech数据中心
     type: vmess
     server: 45.58.186.81
@@ -65,99 +46,35 @@ proxies:
     ws-path: ''
     ws-headers:
       Host: ''
-  - name: 广东省深圳市 移动
-    type: vmess
-    server: iepl2.airtcp.vip
-    port: 51002
-    uuid: 1a7680df-81a1-3d89-a221-db81ac4b04df
-    alterId: 2
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: iepl2.airtcp.vip
-  - name: 美国 CloudFlare节点 - 3
-    type: vmess
-    server: datacenter.cm.01.biqibao.site
-    port: 2052
-    uuid: c36d4223-1804-494a-a453-d4f77f10c830
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /public
-    ws-headers:
-      Host: detacenter.01.biqibao.site
-  - name: 美国 CloudFlare节点 - 4
-    type: vmess
-    server: 104.22.9.160
-    port: 8880
-    uuid: 5158c044-d6d4-4b07-ba79-b20f13445d0d
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /ylks
-    ws-headers:
-      Host: bac.vtcss.top
-  - name: 美国 CloudFlare节点 - 5
-    type: vmess
-    server: 162.159.152.95
-    port: 443
-    uuid: dddd0b29-1576-4003-9990-d7cea34264db
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /835757
-    ws-headers:
-      Host: dedi2.1808.cf
-    tls: true
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 CloudFlare节点
-      - 丹麦 V2CROSS.COM
-      - 美国 CloudFlare节点 - 2
-      - 广东省佛山市 移动
       - 美国+V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 - 2
+      - 美国+DXC+Technology
       - 荷兰 北荷兰省阿姆斯特丹Sharktech数据中心
-      - 广东省深圳市 移动
-      - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
-      - 美国 CloudFlare节点 - 5
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 CloudFlare节点
-      - 丹麦 V2CROSS.COM
-      - 美国 CloudFlare节点 - 2
-      - 广东省佛山市 移动
       - 美国+V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 - 2
+      - 美国+DXC+Technology
       - 荷兰 北荷兰省阿姆斯特丹Sharktech数据中心
-      - 广东省深圳市 移动
-      - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
-      - 美国 CloudFlare节点 - 5
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 CloudFlare节点
-      - 丹麦 V2CROSS.COM
-      - 美国 CloudFlare节点 - 2
-      - 广东省佛山市 移动
       - 美国+V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 - 2
+      - 美国+DXC+Technology
       - 荷兰 北荷兰省阿姆斯特丹Sharktech数据中心
-      - 广东省深圳市 移动
-      - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
-      - 美国 CloudFlare节点 - 5
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
