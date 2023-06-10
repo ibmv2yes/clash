@@ -1,16 +1,42 @@
 proxies:
-  - name: 日本 V2CROSS.COM
+  - name: 美国 CloudFlare节点
     type: vmess
-    server: 146.56.174.31
-    port: 8080
-    uuid: c2eb5ff8-508d-4100-e0ca-9739f4d1c52c
+    server: 104.18.1.110
+    port: 443
+    uuid: 1d8488a7-c784-4e66-ae92-1b22da9c9e68
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /tg@herhero6
+    ws-path: /c3lZ7dp02p?ed=2048
     ws-headers:
-      Host: ''
+      Host: d2.pgypgykmoljklj.xyz
+    tls: true
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: visa.cn
+    port: 80
+    uuid: 8a694cfb-d143-4378-cb85-faacdc69e5e1
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: ass.669990.xyz
+  - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: 172.67.156.138
+    port: 443
+    uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /speedtest
+    ws-headers:
+      Host: Kansas.kotick.site
+    tls: true
   - name: 美国 加利福尼亚州森尼韦尔市PEG TECH公司
     type: vmess
     server: 142.0.139.57
@@ -23,10 +49,10 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国 V2CROSS.COM
+  - name: 美国 加利福尼亚州洛杉矶PetaExpress
     type: vmess
-    server: 199.188.110.118
-    port: 52402
+    server: 107.148.194.237
+    port: 55504
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -35,10 +61,10 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国加利福尼亚州洛杉矶 PetaExpress
+  - name: 美国 加利福尼亚州洛杉矶市SharkTech数据中心
     type: vmess
-    server: 198.2.205.118
-    port: 53042
+    server: 107.167.26.53
+    port: 54092
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -47,11 +73,30 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国+Microsoft数据中心
-    type: trojan
-    server: ap.stablize.top
-    port: '443'
-    password: 27509bd6-5096-4790-9eba-2c793cca7a8d
+  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
+    type: vmess
+    server: 192.74.234.82
+    port: 51302
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 CloudFlare节点 - 4
+    type: vmess
+    server: datacenter.cu.01.biqibao.site
+    port: 2052
+    uuid: c36d4223-1804-494a-a453-d4f77f10c830
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /public
+    ws-headers:
+      Host: detacenter.01.biqibao.site
   - name: 欧盟 V2CROSS.COM
     type: vmess
     server: 45.12.112.91
@@ -64,10 +109,34 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国 V2CROSS.COM - 2
+  - name: 美国 CloudFlare节点 - 5
     type: vmess
-    server: 74.217.179.188
-    port: 40042
+    server: cdncf.scyu.app
+    port: 80
+    uuid: c07a7268-6b25-4952-be6d-e9fb3beacedc
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /api/v3/download.getFile
+    ws-headers:
+      Host: ssrsub.v01.ssrsub.com
+  - name: 日本 V2CROSS.COM
+    type: vmess
+    server: 146.56.174.31
+    port: 8080
+    uuid: c2eb5ff8-508d-4100-e0ca-9739f4d1c52c
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /tg@herhero6
+    ws-headers:
+      Host: ''
+  - name: 美国加利福尼亚州洛杉矶 PetaExpress
+    type: vmess
+    server: 198.2.196.10
+    port: 42689
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -76,57 +145,86 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国 CloudFlare节点
+  - name: 美国 CloudFlare节点 - 6
     type: vmess
-    server: www.noice.id
-    port: 443
-    uuid: 37776019-07ea-4a1d-94e7-88e5e133ad5a
+    server: cf.yxjnode.com
+    port: 80
+    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /worryfree
+    ws-path: /yxzbp
     ws-headers:
-      Host: v2ray1.udpgw.com
-    tls: true
+      Host: dp1.yxjnode.com
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: 199.188.110.118
+    port: 52402
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 日本 V2CROSS.COM
-      - 美国 加利福尼亚州森尼韦尔市PEG TECH公司
-      - 美国 V2CROSS.COM
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 美国+Microsoft数据中心
-      - 欧盟 V2CROSS.COM
-      - 美国 V2CROSS.COM - 2
       - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 - 2
+      - 美国 CloudFlare节点 - 3
+      - 美国 加利福尼亚州森尼韦尔市PEG TECH公司
+      - 美国 加利福尼亚州洛杉矶PetaExpress
+      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 美国 CloudFlare节点 - 4
+      - 欧盟 V2CROSS.COM
+      - 美国 CloudFlare节点 - 5
+      - 日本 V2CROSS.COM
+      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 美国 CloudFlare节点 - 6
+      - 美国 V2CROSS.COM
   - name: 自动选择
     type: url-test
     proxies:
-      - 日本 V2CROSS.COM
-      - 美国 加利福尼亚州森尼韦尔市PEG TECH公司
-      - 美国 V2CROSS.COM
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 美国+Microsoft数据中心
-      - 欧盟 V2CROSS.COM
-      - 美国 V2CROSS.COM - 2
       - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 - 2
+      - 美国 CloudFlare节点 - 3
+      - 美国 加利福尼亚州森尼韦尔市PEG TECH公司
+      - 美国 加利福尼亚州洛杉矶PetaExpress
+      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 美国 CloudFlare节点 - 4
+      - 欧盟 V2CROSS.COM
+      - 美国 CloudFlare节点 - 5
+      - 日本 V2CROSS.COM
+      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 美国 CloudFlare节点 - 6
+      - 美国 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 日本 V2CROSS.COM
-      - 美国 加利福尼亚州森尼韦尔市PEG TECH公司
-      - 美国 V2CROSS.COM
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 美国+Microsoft数据中心
-      - 欧盟 V2CROSS.COM
-      - 美国 V2CROSS.COM - 2
       - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 - 2
+      - 美国 CloudFlare节点 - 3
+      - 美国 加利福尼亚州森尼韦尔市PEG TECH公司
+      - 美国 加利福尼亚州洛杉矶PetaExpress
+      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 美国 CloudFlare节点 - 4
+      - 欧盟 V2CROSS.COM
+      - 美国 CloudFlare节点 - 5
+      - 日本 V2CROSS.COM
+      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 美国 CloudFlare节点 - 6
+      - 美国 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
