@@ -1,44 +1,45 @@
 proxies:
-  - name: 美国 Microsoft数据中心
+  - name: 美国 华盛顿Cogent通信公司
     type: vmess
-    server: 20.239.171.227
-    port: 33754
-    uuid: 728ee058-46c9-4367-c698-2d2640dfb0fe
-    alterId: 0
+    server: 38.63.0.73
+    port: 47002
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
     cipher: auto
     udp: true
     network: tcp
     ws-path: /
     ws-headers:
-      Host: 20.239.171.227
+      Host: aged-wildflower-24f6.bangolan105285.workers.dev
   - name: 美国 CloudFlare节点
     type: vmess
-    server: tech.noaries.de
-    port: 80
-    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
+    server: 104.24.176.7
+    port: 443
+    uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /shirker
+    ws-path: /speedtest
     ws-headers:
-      Host: nl.sharecentrepro.com
-  - name: 美国 V2CROSS.COM
+      Host: Lille.kotick.site
+    tls: true
+  - name: 美国加利福尼亚州洛杉矶 PetaExpress
     type: vmess
-    server: 104.31.16.45
-    port: 80
-    uuid: 2fcc2939-7dcf-4741-aa03-825bc40e23fd
-    alterId: 0
+    server: 198.2.217.85
+    port: 51002
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
     cipher: auto
     udp: true
-    network: ws
-    ws-path: /CZfczvtieCZXdOlgWhgDLX
+    network: tcp
+    ws-path: /
     ws-headers:
-      Host: de3.irteh.fun
-  - name: 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+      Host: sweet-boat-18e0.kenzas6788.workers.dev
+  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
     type: vmess
-    server: 107.167.26.53
-    port: 54092
+    server: 192.74.234.82
+    port: 51302
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -47,11 +48,23 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
+  - name: 美国 V2CROSS.COM
     type: vmess
-    server: 192.74.228.179
-    port: 42857
-    uuid: 051b844f-efe3-4847-92aa-66b5de0b6d4e
+    server: ns1.v2-vip.fun
+    port: 80
+    uuid: 8abe9496-5e24-4e49-b566-dcf86116017d
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /i99LgvSaslbsPLLQQ7j6Z
+    ws-headers:
+      Host: de5.irteh.fun
+  - name: 欧盟 V2CROSS.COM
+    type: vmess
+    server: 45.12.112.91
+    port: 50332
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
     udp: true
@@ -59,19 +72,24 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国 CloudFlare节点 - 2
+  - name: 美国 V2CROSS.COM - 2
     type: vmess
-    server: cf-yd-dns.sharecentre.online
-    port: 80
-    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
-    alterId: 0
+    server: 199.188.110.118
+    port: 52402
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
     cipher: auto
     udp: true
-    network: ws
-    ws-path: /shirker
+    network: tcp
+    ws-path: /
     ws-headers:
-      Host: dp3.scproxy.top
-  - name: 美国 V2CROSS.COM - 2
+      Host: ''
+  - name: 美国+亚利桑那州凤凰城Oracle云计算数据中心
+    type: trojan
+    server: need.uno
+    port: '443'
+    password: 6aWFNbrFDs
+  - name: 美国 V2CROSS.COM - 3
     type: vmess
     server: 104.31.16.28
     port: 80
@@ -83,133 +101,55 @@ proxies:
     ws-path: /IOebhLMhl1CTbFHbL95myfRX2
     ws-headers:
       Host: ca4.tehme2.fun
-  - name: 美国 CloudFlare节点 - 3
-    type: vmess
-    server: cf-lt.sharecentre.online
-    port: 443
-    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /shirker
-    ws-headers:
-      Host: ca.ilovescp.com
-    tls: true
-  - name: 美国 加利福尼亚州圣何塞PEG TECH
-    type: vmess
-    server: 142.4.115.246
-    port: 42002
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国 加利福尼亚州圣何塞PEG TECH - 2
-    type: vmess
-    server: 142.4.126.69
-    port: 31002
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国 CloudFlare节点 - 4
-    type: vmess
-    server: 162.159.152.95
-    port: 443
-    uuid: dddd0b29-1576-4003-9990-d7cea34264db
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /835757
-    ws-headers:
-      Host: dedi2.1808.cf
-    tls: true
-  - name: 美国 CloudFlare节点 - 5
-    type: vmess
-    server: datacenter.cm.01.biqibao.site
-    port: 2052
-    uuid: c36d4223-1804-494a-a453-d4f77f10c830
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /public
-    ws-headers:
-      Host: detacenter.01.biqibao.site
-  - name: 美国加利福尼亚州洛杉矶 PetaExpress
-    type: vmess
-    server: 198.2.196.10
-    port: 42689
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
+  - name: 日本+大阪Microsoft数据中心
+    type: trojan
+    server: ap.stablize.top
+    port: '443'
+    password: 27509bd6-5096-4790-9eba-2c793cca7a8d
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 Microsoft数据中心
+      - 美国 华盛顿Cogent通信公司
       - 美国 CloudFlare节点
-      - 美国 V2CROSS.COM
-      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 美国 CloudFlare节点 - 2
-      - 美国 V2CROSS.COM - 2
-      - 美国 CloudFlare节点 - 3
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国 加利福尼亚州圣何塞PEG TECH - 2
-      - 美国 CloudFlare节点 - 4
-      - 美国 CloudFlare节点 - 5
       - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 美国 V2CROSS.COM
+      - 欧盟 V2CROSS.COM
+      - 美国 V2CROSS.COM - 2
+      - 美国+亚利桑那州凤凰城Oracle云计算数据中心
+      - 美国 V2CROSS.COM - 3
+      - 日本+大阪Microsoft数据中心
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 Microsoft数据中心
+      - 美国 华盛顿Cogent通信公司
       - 美国 CloudFlare节点
-      - 美国 V2CROSS.COM
-      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 美国 CloudFlare节点 - 2
-      - 美国 V2CROSS.COM - 2
-      - 美国 CloudFlare节点 - 3
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国 加利福尼亚州圣何塞PEG TECH - 2
-      - 美国 CloudFlare节点 - 4
-      - 美国 CloudFlare节点 - 5
       - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 美国 V2CROSS.COM
+      - 欧盟 V2CROSS.COM
+      - 美国 V2CROSS.COM - 2
+      - 美国+亚利桑那州凤凰城Oracle云计算数据中心
+      - 美国 V2CROSS.COM - 3
+      - 日本+大阪Microsoft数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 Microsoft数据中心
+      - 美国 华盛顿Cogent通信公司
       - 美国 CloudFlare节点
-      - 美国 V2CROSS.COM
-      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 美国 CloudFlare节点 - 2
-      - 美国 V2CROSS.COM - 2
-      - 美国 CloudFlare节点 - 3
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国 加利福尼亚州圣何塞PEG TECH - 2
-      - 美国 CloudFlare节点 - 4
-      - 美国 CloudFlare节点 - 5
       - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 美国 V2CROSS.COM
+      - 欧盟 V2CROSS.COM
+      - 美国 V2CROSS.COM - 2
+      - 美国+亚利桑那州凤凰城Oracle云计算数据中心
+      - 美国 V2CROSS.COM - 3
+      - 日本+大阪Microsoft数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
