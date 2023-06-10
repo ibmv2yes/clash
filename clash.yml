@@ -1,36 +1,24 @@
 proxies:
   - name: 美国 V2CROSS.COM
     type: vmess
-    server: ns1.v2-vip.fun
+    server: 104.31.16.45
     port: 80
-    uuid: 8abe9496-5e24-4e49-b566-dcf86116017d
+    uuid: 2fcc2939-7dcf-4741-aa03-825bc40e23fd
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /i99LgvSaslbsPLLQQ7j6Z
+    ws-path: /CZfczvtieCZXdOlgWhgDLX
     ws-headers:
-      Host: de5.irteh.fun
+      Host: de3.irteh.fun
+  - name: 美国+亚利桑那州凤凰城Oracle云计算数据中心
+    type: trojan
+    server: need.uno
+    port: '443'
+    password: 6aWFNbrFDs
   - name: 美国 CloudFlare节点
     type: vmess
-    server: 104.25.197.67
-    port: 2095
-    uuid: 43f71098-601d-459b-91f2-7e85a9ac6042
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /blue
-    ws-headers:
-      Host: x2.ylks01.eu.org
-  - name: 以色列+V2CROSS.COM
-    type: trojan
-    server: 149.50.83.42
-    port: '4003'
-    password: TJCfE7Mx2YcA8kX8zg
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: cf-lt.sharecentre.online
+    server: tech.noaries.de
     port: 80
     uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
     alterId: 0
@@ -39,29 +27,42 @@ proxies:
     network: ws
     ws-path: /shirker
     ws-headers:
-      Host: in.sharecentrepro.com
+      Host: nl.sharecentrepro.com
+  - name: 美国+加利福尼亚州洛杉矶Level3通信(DIA)
+    type: trojan
+    server: sg.stablize.top
+    port: '443'
+    password: de014dda-d57a-483c-b516-05889782caab
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: v2ray.online
+    port: 443
+    uuid: 00BBF5B8-173E-6818-9927-5AD1AA073C7D
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /speedtest
+    ws-headers:
+      Host: Kansas.v2ray.online
+    tls: true
   - name: 美国 CloudFlare节点 - 3
     type: vmess
-    server: cdncf.scyu.app
-    port: 80
-    uuid: c07a7268-6b25-4952-be6d-e9fb3beacedc
+    server: cf-lt.sharecentre.online
+    port: 443
+    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /api/v3/download.getFile
+    ws-path: /shirker
     ws-headers:
-      Host: ssrsub.v02.ssrsub.com
-  - name: 爱尔兰+V2CROSS.COM
-    type: ss
-    server: 13.69.252.86
-    port: '6091'
-    cipher: chacha20-ietf-poly1305
-    password: 1uB3vmXVoz1hnB3wiZ83mD
-  - name: 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      Host: ca.ilovescp.com
+    tls: true
+  - name: 欧盟 V2CROSS.COM
     type: vmess
-    server: 23.224.11.150
-    port: 50002
+    server: 45.92.160.20
+    port: 47839
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -70,10 +71,10 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国 加利福尼亚州圣何塞PEG TECH
+  - name: 美国加利福尼亚州洛杉矶 PetaExpress
     type: vmess
-    server: 142.4.110.23
-    port: 52908
+    server: 198.2.196.10
+    port: 42689
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -82,18 +83,6 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国 CloudFlare节点 - 4
-    type: vmess
-    server: visa.cn
-    port: 80
-    uuid: 8a694cfb-d143-4378-cb85-faacdc69e5e1
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: ass.669990.xyz
 proxy-groups:
   - name: Free-servers
     type: select
@@ -101,40 +90,37 @@ proxy-groups:
       - 自动选择
       - 故障转移
       - 美国 V2CROSS.COM
+      - 美国+亚利桑那州凤凰城Oracle云计算数据中心
       - 美国 CloudFlare节点
-      - 以色列+V2CROSS.COM
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
       - 美国 CloudFlare节点 - 2
       - 美国 CloudFlare节点 - 3
-      - 爱尔兰+V2CROSS.COM
-      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国 CloudFlare节点 - 4
+      - 欧盟 V2CROSS.COM
+      - 美国加利福尼亚州洛杉矶 PetaExpress
   - name: 自动选择
     type: url-test
     proxies:
       - 美国 V2CROSS.COM
+      - 美国+亚利桑那州凤凰城Oracle云计算数据中心
       - 美国 CloudFlare节点
-      - 以色列+V2CROSS.COM
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
       - 美国 CloudFlare节点 - 2
       - 美国 CloudFlare节点 - 3
-      - 爱尔兰+V2CROSS.COM
-      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国 CloudFlare节点 - 4
+      - 欧盟 V2CROSS.COM
+      - 美国加利福尼亚州洛杉矶 PetaExpress
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
       - 美国 V2CROSS.COM
+      - 美国+亚利桑那州凤凰城Oracle云计算数据中心
       - 美国 CloudFlare节点
-      - 以色列+V2CROSS.COM
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
       - 美国 CloudFlare节点 - 2
       - 美国 CloudFlare节点 - 3
-      - 爱尔兰+V2CROSS.COM
-      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国 CloudFlare节点 - 4
+      - 欧盟 V2CROSS.COM
+      - 美国加利福尼亚州洛杉矶 PetaExpress
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
