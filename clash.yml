@@ -1,45 +1,20 @@
 proxies:
-  - name: 美国 CloudFlare节点
+  - name: 日本 V2CROSS.COM
     type: vmess
-    server: 172.66.46.15
-    port: 443
-    uuid: 12612e87-8003-44a8-b4e8-ec4a325e9016
+    server: 146.56.174.31
+    port: 8080
+    uuid: c2eb5ff8-508d-4100-e0ca-9739f4d1c52c
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /ou
+    ws-path: /tg@herhero6
     ws-headers:
-      Host: z.zorro.tk
-    tls: true
-  - name: 美国 CloudFlare节点 - 2
+      Host: ''
+  - name: 美国 加利福尼亚州森尼韦尔市PEG TECH公司
     type: vmess
-    server: 104.21.53.35
-    port: 80
-    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /yxzbp
-    ws-headers:
-      Host: buyvm1.yxjnode.com
-  - name: 广东省佛山市 移动
-    type: vmess
-    server: 25.v2-ray.cyou
-    port: 23625
-    uuid: 0dd19d20-ec86-3680-b256-87237bafa89e
-    alterId: 2
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: 25.v2-ray.cyou
-  - name: 美国 V2CROSS.COM
-    type: vmess
-    server: 198.200.32.20
-    port: 49988
+    server: 142.0.139.57
+    port: 56079
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -48,7 +23,60 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国 CloudFlare节点 - 3
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: 199.188.110.118
+    port: 52402
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国加利福尼亚州洛杉矶 PetaExpress
+    type: vmess
+    server: 198.2.205.118
+    port: 53042
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国+Microsoft数据中心
+    type: trojan
+    server: ap.stablize.top
+    port: '443'
+    password: 27509bd6-5096-4790-9eba-2c793cca7a8d
+  - name: 欧盟 V2CROSS.COM
+    type: vmess
+    server: 45.12.112.91
+    port: 50332
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 V2CROSS.COM - 2
+    type: vmess
+    server: 74.217.179.188
+    port: 40042
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 CloudFlare节点
     type: vmess
     server: www.noice.id
     port: 443
@@ -67,29 +95,38 @@ proxy-groups:
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 广东省佛山市 移动
+      - 日本 V2CROSS.COM
+      - 美国 加利福尼亚州森尼韦尔市PEG TECH公司
       - 美国 V2CROSS.COM
-      - 美国 CloudFlare节点 - 3
+      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 美国+Microsoft数据中心
+      - 欧盟 V2CROSS.COM
+      - 美国 V2CROSS.COM - 2
+      - 美国 CloudFlare节点
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 广东省佛山市 移动
+      - 日本 V2CROSS.COM
+      - 美国 加利福尼亚州森尼韦尔市PEG TECH公司
       - 美国 V2CROSS.COM
-      - 美国 CloudFlare节点 - 3
+      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 美国+Microsoft数据中心
+      - 欧盟 V2CROSS.COM
+      - 美国 V2CROSS.COM - 2
+      - 美国 CloudFlare节点
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 广东省佛山市 移动
+      - 日本 V2CROSS.COM
+      - 美国 加利福尼亚州森尼韦尔市PEG TECH公司
       - 美国 V2CROSS.COM
-      - 美国 CloudFlare节点 - 3
+      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 美国+Microsoft数据中心
+      - 欧盟 V2CROSS.COM
+      - 美国 V2CROSS.COM - 2
+      - 美国 CloudFlare节点
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
