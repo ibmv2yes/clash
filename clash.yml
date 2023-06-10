@@ -1,16 +1,10 @@
 proxies:
-  - name: 法国 OVH SAS
-    type: vmess
-    server: pl2-vmess.greenssh.xyz
-    port: 80
-    uuid: a60d4d2f-6a61-4c16-9d63-94a97e65d1f3
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /vmess
-    ws-headers:
-      Host: pl2-vmess.greenssh.xyz
+  - name: 爱尔兰+V2CROSS.COM
+    type: ss
+    server: 13.69.252.86
+    port: '6091'
+    cipher: chacha20-ietf-poly1305
+    password: 1uB3vmXVoz1hnB3wiZ83mD
   - name: 美国 CloudFlare节点
     type: vmess
     server: www.noice.id
@@ -24,29 +18,23 @@ proxies:
     ws-headers:
       Host: v2ray1.udpgw.com
     tls: true
-  - name: 欧盟 V2CROSS.COM
-    type: vmess
-    server: 185.249.227.220
-    port: 42653
-    uuid: a2d2f285-3650-47fa-9d83-9a259d52abd9
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /?ed=2048
-    ws-headers: {}
+  - name: 香港+Microsoft数据中心
+    type: trojan
+    server: usa.stablize.top
+    port: '443'
+    password: e81c0cf0-d4f4-402e-81ee-4eb19a832ffa
   - name: 美国 CloudFlare节点 - 2
     type: vmess
-    server: cf-lt.sharecentre.online
-    port: 80
-    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
+    server: 141.101.123.176
+    port: 2052
+    uuid: 71b93046-9b6b-48d5-c5fb-9997daf0c7f4
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /shirker
+    ws-path: /ylks
     ws-headers:
-      Host: gcore.ilovescp.com
+      Host: x1.ylks01.eu.org
   - name: 美国 V2CROSS.COM
     type: vmess
     server: ns1.v2-vip.fun
@@ -59,35 +47,43 @@ proxies:
     ws-path: /i99LgvSaslbsPLLQQ7j6Z
     ws-headers:
       Host: de5.irteh.fun
+  - name: 亚太地区+V2CROSS.COM
+    type: trojan
+    server: 103.169.7.11
+    port: '80'
+    password: c0d9da22-2569-4bed-a395-607d9e7ae687
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 法国 OVH SAS
+      - 爱尔兰+V2CROSS.COM
       - 美国 CloudFlare节点
-      - 欧盟 V2CROSS.COM
+      - 香港+Microsoft数据中心
       - 美国 CloudFlare节点 - 2
       - 美国 V2CROSS.COM
+      - 亚太地区+V2CROSS.COM
   - name: 自动选择
     type: url-test
     proxies:
-      - 法国 OVH SAS
+      - 爱尔兰+V2CROSS.COM
       - 美国 CloudFlare节点
-      - 欧盟 V2CROSS.COM
+      - 香港+Microsoft数据中心
       - 美国 CloudFlare节点 - 2
       - 美国 V2CROSS.COM
+      - 亚太地区+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 法国 OVH SAS
+      - 爱尔兰+V2CROSS.COM
       - 美国 CloudFlare节点
-      - 欧盟 V2CROSS.COM
+      - 香港+Microsoft数据中心
       - 美国 CloudFlare节点 - 2
       - 美国 V2CROSS.COM
+      - 亚太地区+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
