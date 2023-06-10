@@ -1,6 +1,19 @@
 proxies:
   - name: 美国 CloudFlare节点
     type: vmess
+    server: 172.66.46.15
+    port: 443
+    uuid: 12612e87-8003-44a8-b4e8-ec4a325e9016
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /ou
+    ws-headers:
+      Host: z.zorro.tk
+    tls: true
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
     server: 104.21.53.35
     port: 80
     uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
@@ -11,22 +24,22 @@ proxies:
     ws-path: /yxzbp
     ws-headers:
       Host: buyvm1.yxjnode.com
+  - name: 广东省佛山市 移动
+    type: vmess
+    server: 25.v2-ray.cyou
+    port: 23625
+    uuid: 0dd19d20-ec86-3680-b256-87237bafa89e
+    alterId: 2
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: 25.v2-ray.cyou
   - name: 美国 V2CROSS.COM
     type: vmess
-    server: ns1.v2-vip.fun
-    port: 80
-    uuid: 8abe9496-5e24-4e49-b566-dcf86116017d
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /i99LgvSaslbsPLLQQ7j6Z
-    ws-headers:
-      Host: de5.irteh.fun
-  - name: 美国 加利福尼亚州洛杉矶PetaExpress
-    type: vmess
-    server: 107.148.194.237
-    port: 55504
+    server: 198.200.32.20
+    port: 49988
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -35,80 +48,19 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 欧盟 V2CROSS.COM
-    type: vmess
-    server: 45.92.160.20
-    port: 47839
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: 104.18.23.26
-    port: 8080
-    uuid: dcafb669-fefc-4994-e3a9-5f40ed6aa7cf
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /sshtproject
-    ws-headers:
-      Host: v2free.sshtproect.shop
   - name: 美国 CloudFlare节点 - 3
     type: vmess
-    server: yd1.01dj.sbs
+    server: www.noice.id
     port: 443
-    uuid: 08d3c0b5-6515-4187-860f-2e41dac6a94b
+    uuid: 37776019-07ea-4a1d-94e7-88e5e133ad5a
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /sometimesnaive
+    ws-path: /worryfree
     ws-headers:
-      Host: yd1.01dj.sbs
+      Host: v2ray1.udpgw.com
     tls: true
-  - name: 德国 黑森州法兰克福Linode数据中心
-    type: vmess
-    server: vde2.0bad.com
-    port: 443
-    uuid: 927094d3-d678-4763-8591-e240d0bcae87
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /chat
-    ws-headers:
-      Host: ''
-    tls: true
-  - name: 美国加利福尼亚州洛杉矶 PetaExpress
-    type: vmess
-    server: 198.2.205.118
-    port: 53042
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国 CloudFlare节点 - 4
-    type: vmess
-    server: cf-lt.sharecentre.online
-    port: 80
-    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /shirker
-    ws-headers:
-      Host: in.sharecentrepro.com
 proxy-groups:
   - name: Free-servers
     type: select
@@ -116,40 +68,28 @@ proxy-groups:
       - 自动选择
       - 故障转移
       - 美国 CloudFlare节点
-      - 美国 V2CROSS.COM
-      - 美国 加利福尼亚州洛杉矶PetaExpress
-      - 欧盟 V2CROSS.COM
       - 美国 CloudFlare节点 - 2
+      - 广东省佛山市 移动
+      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点 - 3
-      - 德国 黑森州法兰克福Linode数据中心
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 美国 CloudFlare节点 - 4
   - name: 自动选择
     type: url-test
     proxies:
       - 美国 CloudFlare节点
-      - 美国 V2CROSS.COM
-      - 美国 加利福尼亚州洛杉矶PetaExpress
-      - 欧盟 V2CROSS.COM
       - 美国 CloudFlare节点 - 2
+      - 广东省佛山市 移动
+      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点 - 3
-      - 德国 黑森州法兰克福Linode数据中心
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 美国 CloudFlare节点 - 4
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
       - 美国 CloudFlare节点
-      - 美国 V2CROSS.COM
-      - 美国 加利福尼亚州洛杉矶PetaExpress
-      - 欧盟 V2CROSS.COM
       - 美国 CloudFlare节点 - 2
+      - 广东省佛山市 移动
+      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点 - 3
-      - 德国 黑森州法兰克福Linode数据中心
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 美国 CloudFlare节点 - 4
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
