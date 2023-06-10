@@ -1,54 +1,136 @@
 proxies:
-  - name: 广东省佛山市 移动
+  - name: 台湾省 中华电信(HiNet)数据中心
     type: vmess
-    server: 8.v2-ray.cyou
-    port: 23608
-    uuid: 0dd19d20-ec86-3680-b256-87237bafa89e
+    server: tw99-hinet.mynodes001.one
+    port: 445
+    uuid: 5f04de84-6b7e-3564-82c2-d2a998002629
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: ''
+    ws-headers:
+      Host: ''
+  - name: 美国+亚利桑那州凤凰城Oracle云计算数据中心
+    type: trojan
+    server: need.uno
+    port: '443'
+    password: 6aWFNbrFDs
+  - name: 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+    type: vmess
+    server: 23.224.11.150
+    port: 50002
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 澳大利亚 悉尼
+    type: vmess
+    server: speed.76898102.xyz
+    port: 443
+    uuid: dddd0b29-1576-4003-9990-d7cea34264db
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /835757
+    ws-headers:
+      Host: dedi2.1808.cf
+    tls: true
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: 157.90.174.20
+    port: 80
+    uuid: a6457d28-e328-4202-99fe-0606d7ad69a9
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /6rXqecLmchrWkX7cy1ilLjMBLUC
+    ws-headers:
+      Host: ''
+  - name: 俄罗斯 鞑靼斯坦喀山justhost
+    type: vmess
+    server: mo3.chaoxingsu.com
+    port: 38912
+    uuid: f0d53f56-4224-42f2-b6c0-f3e5587c7017
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /xing
+    ws-headers:
+      Host: ''
+  - name: 美国+加利福尼亚州洛杉矶Level3通信(DIA)
+    type: trojan
+    server: sg.stablize.top
+    port: '443'
+    password: de014dda-d57a-483c-b516-05889782caab
+  - name: 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心 - 2
+    type: vmess
+    server: 23.224.9.158
+    port: 443
+    uuid: bb25859e-f6da-4101-989f-b4dd67a22682
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /path/1686296174517
+    ws-headers:
+      Host: www.71198747.xyz
+    tls: true
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: 104.21.53.35
+    port: 80
+    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /yxzbp
+    ws-headers:
+      Host: buyvm1.yxjnode.com
+  - name: 美国+加利福尼亚州洛杉矶Level3通信(DIA) - 2
+    type: trojan
+    server: sg.stablize.top
+    port: '443'
+    password: de014dda-d57a-483c-b516-05889782caab
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: cf-dx-dns.sharecentre.online
+    port: 80
+    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /shirker
+    ws-headers:
+      Host: dp1.scproxy.top
+  - name: 广东省深圳市 移动
+    type: vmess
+    server: iepl2.airtcp.vip
+    port: 51002
+    uuid: 1a7680df-81a1-3d89-a221-db81ac4b04df
     alterId: 2
     cipher: auto
     udp: true
     network: tcp
     ws-path: /
     ws-headers:
-      Host: 8.v2-ray.cyou
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: datacenter.cm.01.biqibao.site
-    port: 2052
-    uuid: c36d4223-1804-494a-a453-d4f77f10c830
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /public
-    ws-headers:
-      Host: detacenter.01.biqibao.site
-  - name: 美国 CloudFlare公司CDN节点(shopify)
-    type: vmess
-    server: 23.227.38.99
-    port: 443
-    uuid: 86d37526-5758-4cec-862f-df404b313086
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /3G6WPDL7
-    ws-headers:
-      Host: 1.freek1.xyz
-    tls: true
-  - name: 美国 V2CROSS.COM
-    type: vmess
-    server: ns1.v2-vip.fun
-    port: 80
-    uuid: 8abe9496-5e24-4e49-b566-dcf86116017d
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /i99LgvSaslbsPLLQQ7j6Z
-    ws-headers:
-      Host: de5.irteh.fun
-  - name: 美国 CloudFlare节点 - 2
+      Host: iepl2.airtcp.vip
+  - name: 爱尔兰+V2CROSS.COM
+    type: ss
+    server: 13.69.252.86
+    port: '6091'
+    cipher: chacha20-ietf-poly1305
+    password: 1uB3vmXVoz1hnB3wiZ83mD
+  - name: 美国 CloudFlare节点 - 3
     type: vmess
     server: cf-lt.sharecentre.online
     port: 80
@@ -59,67 +141,78 @@ proxies:
     network: ws
     ws-path: /shirker
     ws-headers:
-      Host: nl.sharecentrepro.com
-  - name: 美国 CloudFlare节点 - 3
+      Host: gcore.ilovescp.com
+  - name: 南非 V2CROSS.COM
     type: vmess
-    server: 141.101.123.176
-    port: 2052
-    uuid: 71b93046-9b6b-48d5-c5fb-9997daf0c7f4
-    alterId: 0
+    server: 156.225.67.41
+    port: 33866
+    uuid: de491802-233e-47f2-8c6c-d19bcf5bd56b
+    alterId: 64
     cipher: auto
     udp: true
-    network: ws
-    ws-path: /ylks
+    network: tcp
+    ws-path: /
     ws-headers:
-      Host: x1.ylks01.eu.org
-  - name: 美国 CloudFlare节点 - 4
-    type: vmess
-    server: v2ray.online
-    port: 443
-    uuid: 00BBF5B8-173E-6818-9927-5AD1AA073C7D
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /speedtest
-    ws-headers:
-      Host: Kansas.v2ray.online
-    tls: true
+      Host: ''
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 广东省佛山市 移动
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare公司CDN节点(shopify)
+      - 台湾省 中华电信(HiNet)数据中心
+      - 美国+亚利桑那州凤凰城Oracle云计算数据中心
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 澳大利亚 悉尼
       - 美国 V2CROSS.COM
+      - 俄罗斯 鞑靼斯坦喀山justhost
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心 - 2
+      - 美国 CloudFlare节点
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA) - 2
       - 美国 CloudFlare节点 - 2
+      - 广东省深圳市 移动
+      - 爱尔兰+V2CROSS.COM
       - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
+      - 南非 V2CROSS.COM
   - name: 自动选择
     type: url-test
     proxies:
-      - 广东省佛山市 移动
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare公司CDN节点(shopify)
+      - 台湾省 中华电信(HiNet)数据中心
+      - 美国+亚利桑那州凤凰城Oracle云计算数据中心
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 澳大利亚 悉尼
       - 美国 V2CROSS.COM
+      - 俄罗斯 鞑靼斯坦喀山justhost
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心 - 2
+      - 美国 CloudFlare节点
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA) - 2
       - 美国 CloudFlare节点 - 2
+      - 广东省深圳市 移动
+      - 爱尔兰+V2CROSS.COM
       - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
+      - 南非 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 广东省佛山市 移动
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare公司CDN节点(shopify)
+      - 台湾省 中华电信(HiNet)数据中心
+      - 美国+亚利桑那州凤凰城Oracle云计算数据中心
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 澳大利亚 悉尼
       - 美国 V2CROSS.COM
+      - 俄罗斯 鞑靼斯坦喀山justhost
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心 - 2
+      - 美国 CloudFlare节点
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA) - 2
       - 美国 CloudFlare节点 - 2
+      - 广东省深圳市 移动
+      - 爱尔兰+V2CROSS.COM
       - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
+      - 南非 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
