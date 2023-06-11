@@ -1,13 +1,20 @@
 proxies:
-  - name: 日本+V2CROSS.COM
-    type: trojan
-    server: trs22.bolab.net
-    port: '443'
-    password: 7a73f1dc97a70905870c0c0484b12145
-  - name: 美国 滴滴盾CN2高防节点(dididun.com)
+  - name: 伊朗 V2CROSS.COM
     type: vmess
-    server: 137.175.3.237
-    port: 53042
+    server: turkey.abraak.site
+    port: 2087
+    uuid: 21025839-c140-4c67-8f4c-9a413ca8de3f
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 加利福尼亚州洛杉矶PetaExpress
+    type: vmess
+    server: 107.148.194.237
+    port: 55504
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -18,74 +25,57 @@ proxies:
       Host: ''
   - name: 美国 CloudFlare节点
     type: vmess
-    server: visa.cn
-    port: 80
-    uuid: 8a694cfb-d143-4378-cb85-faacdc69e5e1
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: ass.669990.xyz
-  - name: 美国+DXC+Technology
-    type: trojan
-    server: jp.stablize.top
-    port: '443'
-    password: 40297165-0545-4f8f-abc4-3ee25e6cfb87
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: cdncf.scyu.app
-    port: 80
-    uuid: c07a7268-6b25-4952-be6d-e9fb3beacedc
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /api/v3/download.getFile
-    ws-headers:
-      Host: ssrsub.v01.ssrsub.com
-  - name: 美国 加利福尼亚州圣何塞PEG TECH
-    type: vmess
-    server: 142.4.112.26
-    port: 51091
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国 CloudFlare节点 - 3
-    type: vmess
-    server: yd1.01dj.sbs
+    server: www.noice.id
     port: 443
-    uuid: 08d3c0b5-6515-4187-860f-2e41dac6a94b
+    uuid: 37776019-07ea-4a1d-94e7-88e5e133ad5a
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /sometimesnaive
+    ws-path: /worryfree
     ws-headers:
-      Host: yd1.01dj.sbs
+      Host: v2ray1.udpgw.com
     tls: true
   - name: 美国 V2CROSS.COM
     type: vmess
-    server: 104.31.16.45
+    server: ns1.v2-vip.fun
     port: 80
-    uuid: 2fcc2939-7dcf-4741-aa03-825bc40e23fd
+    uuid: 8abe9496-5e24-4e49-b566-dcf86116017d
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /CZfczvtieCZXdOlgWhgDLX
+    ws-path: /i99LgvSaslbsPLLQQ7j6Z
     ws-headers:
-      Host: de3.irteh.fun
+      Host: de5.irteh.fun
+  - name: 美国 Datability
+    type: vmess
+    server: 140.99.57.37
+    port: 54002
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: ''
+    ws-headers:
+      Host: ''
   - name: 美国 华盛顿Cogent通信公司
     type: vmess
-    server: 38.63.0.73
-    port: 47002
+    server: 38.54.96.233
+    port: 58962
+    uuid: 06fdaaba-37d4-4a0b-b2ac-e8c9d944e7d8
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /?ed=2048
+    ws-headers:
+      Host: ''
+  - name: 美国 V2CROSS.COM - 2
+    type: vmess
+    server: 137.175.21.140
+    port: 42014
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -94,47 +84,56 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
+  - name: 广东省佛山市 移动
+    type: vmess
+    server: 8.v2-ray.cyou
+    port: 23608
+    uuid: 0dd19d20-ec86-3680-b256-87237bafa89e
+    alterId: 2
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: 8.v2-ray.cyou
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 日本+V2CROSS.COM
-      - 美国 滴滴盾CN2高防节点(dididun.com)
+      - 伊朗 V2CROSS.COM
+      - 美国 加利福尼亚州洛杉矶PetaExpress
       - 美国 CloudFlare节点
-      - 美国+DXC+Technology
-      - 美国 CloudFlare节点 - 2
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国 CloudFlare节点 - 3
       - 美国 V2CROSS.COM
+      - 美国 Datability
       - 美国 华盛顿Cogent通信公司
+      - 美国 V2CROSS.COM - 2
+      - 广东省佛山市 移动
   - name: 自动选择
     type: url-test
     proxies:
-      - 日本+V2CROSS.COM
-      - 美国 滴滴盾CN2高防节点(dididun.com)
+      - 伊朗 V2CROSS.COM
+      - 美国 加利福尼亚州洛杉矶PetaExpress
       - 美国 CloudFlare节点
-      - 美国+DXC+Technology
-      - 美国 CloudFlare节点 - 2
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国 CloudFlare节点 - 3
       - 美国 V2CROSS.COM
+      - 美国 Datability
       - 美国 华盛顿Cogent通信公司
+      - 美国 V2CROSS.COM - 2
+      - 广东省佛山市 移动
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 日本+V2CROSS.COM
-      - 美国 滴滴盾CN2高防节点(dididun.com)
+      - 伊朗 V2CROSS.COM
+      - 美国 加利福尼亚州洛杉矶PetaExpress
       - 美国 CloudFlare节点
-      - 美国+DXC+Technology
-      - 美国 CloudFlare节点 - 2
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国 CloudFlare节点 - 3
       - 美国 V2CROSS.COM
+      - 美国 Datability
       - 美国 华盛顿Cogent通信公司
+      - 美国 V2CROSS.COM - 2
+      - 广东省佛山市 移动
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
