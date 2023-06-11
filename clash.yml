@@ -1,57 +1,57 @@
 proxies:
-  - name: 香港 V2CROSS.COM
-    type: vmess
-    server: 156.245.8.240
-    port: 48823
-    uuid: 29a5d48e-24f1-48fd-a5e1-9a46cb31032f
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: ''
-    ws-headers:
-      Host: ''
-  - name: 香港 V2CROSS.COM - 2
-    type: vmess
-    server: 156.245.8.224
-    port: 46955
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国 V2CROSS.COM
-    type: vmess
-    server: 199.180.103.156
-    port: 59322
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
   - name: 美国 CloudFlare节点
     type: vmess
-    server: cf-lt.sharecentre.online
-    port: 80
-    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
+    server: 104.16.53.217
+    port: 2052
+    uuid: c36d4223-1804-494a-a453-d4f77f10c830
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /shirker
+    ws-path: /public
     ws-headers:
-      Host: dp4.scproxy.top
-  - name: 美国+Microsoft数据中心
+      Host: detacenter.01.biqibao.site
+  - name: 台湾省 中华电信
+    type: vmess
+    server: 61.220.198.99
+    port: 58002
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: 104.16.32.87
+    port: 2052
+    uuid: c36d4223-1804-494a-a453-d4f77f10c830
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /public
+    ws-headers:
+      Host: detacenter.01.biqibao.site
+  - name: 台湾省台北市+中華電信
     type: trojan
-    server: ovotw.ovogreat.com
-    port: '443'
-    password: 0e40fe8c-23d2-4dee-a9a4-25006da2d0bf
+    server: hinet1.downloadvip.cfd
+    port: 443?sni=download.xn--mes358acgm99l.com
+    password: fddd2348-b67b-49aa-aaca-085d32f3f6fb
+  - name: 美国 加利福尼亚州圣何塞PEG TECH
+    type: vmess
+    server: 142.4.112.26
+    port: 51091
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
   - name: 广东省佛山市 移动
     type: vmess
     server: 8.v2-ray.cyou
@@ -64,35 +64,32 @@ proxies:
     ws-path: /
     ws-headers:
       Host: 8.v2-ray.cyou
-  - name: 美国 V2CROSS.COM - 2
+  - name: 美国 CloudFlare节点 - 3
     type: vmess
-    server: 137.175.9.167
-    port: 51413
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: www.noice.id
-    port: 443
-    uuid: 37776019-07ea-4a1d-94e7-88e5e133ad5a
+    server: cf.yxjnode.com
+    port: 80
+    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /worryfree
+    ws-path: /yxzbp
     ws-headers:
-      Host: v2ray1.udpgw.com
-    tls: true
-  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      Host: dp1.yxjnode.com
+  - name: 日本+东京Amazon数据中心
+    type: trojan
+    server: jp1.downloadvip.cfd
+    port: 443?sni=download.xn--mes358acgm99l.com
+    password: fddd2348-b67b-49aa-aaca-085d32f3f6fb
+  - name: 美国+Microsoft数据中心
+    type: trojan
+    server: azjp2.downloadvip.cfd
+    port: 443?sni=jp1.xn--mes358a9urctx.com
+    password: d59235c4-44ea-4e2e-bd90-5eed10db3b15
+  - name: 美国 Datability
     type: vmess
-    server: 192.74.234.82
-    port: 51302
+    server: 140.99.94.42
+    port: 51338
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -101,22 +98,10 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 广东省佛山市 移动 - 2
+  - name: 美国 加利福尼亚州圣何塞PEG TECH - 2
     type: vmess
-    server: 8.v2-ray.cyou
-    port: 23608
-    uuid: 0dd19d20-ec86-3680-b256-87237bafa89e
-    alterId: 2
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: 8.v2-ray.cyou
-  - name: 美国 V2CROSS.COM - 3
-    type: vmess
-    server: 74.217.179.188
-    port: 40042
+    server: 142.4.110.23
+    port: 52908
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -125,53 +110,76 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
+  - name: 美国 CloudFlare节点 - 4
+    type: vmess
+    server: 173.245.58.89
+    port: 2095
+    uuid: 43f71098-601d-459b-91f2-7e85a9ac6042
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /blue
+    ws-headers:
+      Host: x2.ylks01.eu.org
+  - name: 亚太地区+V2CROSS.COM
+    type: trojan
+    server: 103.169.7.11
+    port: '80'
+    password: c0d9da22-2569-4bed-a395-607d9e7ae687
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 香港 V2CROSS.COM
-      - 香港 V2CROSS.COM - 2
-      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 美国+Microsoft数据中心
-      - 广东省佛山市 移动
-      - 美国 V2CROSS.COM - 2
+      - 台湾省 中华电信
       - 美国 CloudFlare节点 - 2
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 广东省佛山市 移动 - 2
-      - 美国 V2CROSS.COM - 3
+      - 台湾省台北市+中華電信
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 广东省佛山市 移动
+      - 美国 CloudFlare节点 - 3
+      - 日本+东京Amazon数据中心
+      - 美国+Microsoft数据中心
+      - 美国 Datability
+      - 美国 加利福尼亚州圣何塞PEG TECH - 2
+      - 美国 CloudFlare节点 - 4
+      - 亚太地区+V2CROSS.COM
   - name: 自动选择
     type: url-test
     proxies:
-      - 香港 V2CROSS.COM
-      - 香港 V2CROSS.COM - 2
-      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 美国+Microsoft数据中心
-      - 广东省佛山市 移动
-      - 美国 V2CROSS.COM - 2
+      - 台湾省 中华电信
       - 美国 CloudFlare节点 - 2
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 广东省佛山市 移动 - 2
-      - 美国 V2CROSS.COM - 3
+      - 台湾省台北市+中華電信
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 广东省佛山市 移动
+      - 美国 CloudFlare节点 - 3
+      - 日本+东京Amazon数据中心
+      - 美国+Microsoft数据中心
+      - 美国 Datability
+      - 美国 加利福尼亚州圣何塞PEG TECH - 2
+      - 美国 CloudFlare节点 - 4
+      - 亚太地区+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 香港 V2CROSS.COM
-      - 香港 V2CROSS.COM - 2
-      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 美国+Microsoft数据中心
-      - 广东省佛山市 移动
-      - 美国 V2CROSS.COM - 2
+      - 台湾省 中华电信
       - 美国 CloudFlare节点 - 2
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 广东省佛山市 移动 - 2
-      - 美国 V2CROSS.COM - 3
+      - 台湾省台北市+中華電信
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 广东省佛山市 移动
+      - 美国 CloudFlare节点 - 3
+      - 日本+东京Amazon数据中心
+      - 美国+Microsoft数据中心
+      - 美国 Datability
+      - 美国 加利福尼亚州圣何塞PEG TECH - 2
+      - 美国 CloudFlare节点 - 4
+      - 亚太地区+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
