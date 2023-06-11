@@ -1,56 +1,20 @@
 proxies:
   - name: 美国 V2CROSS.COM
     type: vmess
-    server: 74.217.179.188
-    port: 40042
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 台湾省 中华电信
-    type: vmess
-    server: 61.220.198.100
-    port: 58002
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 英国 社会保险安全部
-    type: vmess
-    server: 51.195.35.151
-    port: 49982
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: cf-dx-dns.sharecentre.online
+    server: 104.31.16.45
     port: 80
-    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
+    uuid: 2fcc2939-7dcf-4741-aa03-825bc40e23fd
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /shirker
+    ws-path: /CZfczvtieCZXdOlgWhgDLX
     ws-headers:
-      Host: dp1.scproxy.top
-  - name: 香港 V2CROSS.COM
+      Host: de3.irteh.fun
+  - name: 美国 加利福尼亚州圣何塞PEG TECH
     type: vmess
-    server: 156.245.8.224
-    port: 46955
+    server: 142.4.115.246
+    port: 42002
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -59,18 +23,23 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国 CloudFlare节点 - 2
+  - name: 美国加利福尼亚州洛杉矶 PetaExpress
     type: vmess
-    server: 198.41.193.39
-    port: 8880
-    uuid: 53ae65be-81ee-4766-8a09-da43c44c4d30
-    alterId: 0
+    server: 198.2.217.85
+    port: 51002
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
     cipher: auto
     udp: true
-    network: ws
-    ws-path: /youlingkaishi
+    network: tcp
+    ws-path: /
     ws-headers:
-      Host: uyaa.vtcss.top
+      Host: ''
+  - name: 日本+V2CROSS.COM
+    type: trojan
+    server: trs22.bolab.net
+    port: '443'
+    password: 7a73f1dc97a70905870c0c0484b12145
   - name: 美国 华盛顿Cogent通信公司
     type: vmess
     server: 38.63.0.73
@@ -83,11 +52,40 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: 104.19.145.223
+    port: 8880
+    uuid: 53ae65be-81ee-4766-8a09-da43c44c4d30
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /youlingkaishi
+    ws-headers:
+      Host: uyaa.vtcss.top
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: cf-lt.sharecentre.online
+    port: 80
+    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /shirker
+    ws-headers:
+      Host: lv3.sharecentrepro.org
+  - name: 台湾省彰化县+中华电信
+    type: trojan
+    server: tw6.microsoft-orgwly.vip
+    port: 10068?type=tcp&security=tls&sni=tls.microsoft-orgwly.vip&allowInsecure=1
+    password: 8ffc69d4-bd99-4ef6-a960-a881c427db3d
   - name: 美国 Cloudinnovation数据中心
     type: vmess
-    server: 154.85.1.245
-    port: 40407
-    uuid: 1d474f0b-e78d-4af9-bc4a-a467467bc7a7
+    server: 154.85.1.83
+    port: 49143
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
     udp: true
@@ -95,23 +93,55 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国 V2CROSS.COM - 2
+  - name: 美国 CloudFlare节点 - 3
     type: vmess
-    server: ns1.v2-vip.fun
-    port: 80
-    uuid: 8abe9496-5e24-4e49-b566-dcf86116017d
+    server: 104.18.1.110
+    port: 443
+    uuid: 1d8488a7-c784-4e66-ae92-1b22da9c9e68
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /i99LgvSaslbsPLLQQ7j6Z
+    ws-path: /c3lZ7dp02p?ed=2048
     ws-headers:
-      Host: de5.irteh.fun
-  - name: 台湾省彰化县+中华电信
-    type: trojan
-    server: tw6.microsoft-orgwly.vip
-    port: 10068?type=tcp&security=tls&sni=tls.microsoft-orgwly.vip&allowInsecure=1
-    password: 8ffc69d4-bd99-4ef6-a960-a881c427db3d
+      Host: d2.pgypgykmoljklj.xyz
+    tls: true
+  - name: 美国 CloudFlare节点 - 4
+    type: vmess
+    server: 104.19.8.35
+    port: 2082
+    uuid: 19c6ec1b-2230-41d4-ff1c-c8449dc1ed5f
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /yulingkaishi01
+    ws-headers:
+      Host: tou.vtcss.top
+  - name: 美国 CloudFlare节点 - 5
+    type: vmess
+    server: 173.245.59.31
+    port: 80
+    uuid: a67679a6-a186-4d62-f84e-f3f00dc7745e
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /youlingkaishi01
+    ws-headers:
+      Host: tou.vtcss.top
+  - name: 美国 V2CROSS.COM - 2
+    type: vmess
+    server: 137.175.21.140
+    port: 42014
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
 proxy-groups:
   - name: Free-servers
     type: select
@@ -119,43 +149,52 @@ proxy-groups:
       - 自动选择
       - 故障转移
       - 美国 V2CROSS.COM
-      - 台湾省 中华电信
-      - 英国 社会保险安全部
-      - 美国 CloudFlare节点
-      - 香港 V2CROSS.COM
-      - 美国 CloudFlare节点 - 2
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 日本+V2CROSS.COM
       - 美国 华盛顿Cogent通信公司
-      - 美国 Cloudinnovation数据中心
-      - 美国 V2CROSS.COM - 2
+      - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 - 2
       - 台湾省彰化县+中华电信
+      - 美国 Cloudinnovation数据中心
+      - 美国 CloudFlare节点 - 3
+      - 美国 CloudFlare节点 - 4
+      - 美国 CloudFlare节点 - 5
+      - 美国 V2CROSS.COM - 2
   - name: 自动选择
     type: url-test
     proxies:
       - 美国 V2CROSS.COM
-      - 台湾省 中华电信
-      - 英国 社会保险安全部
-      - 美国 CloudFlare节点
-      - 香港 V2CROSS.COM
-      - 美国 CloudFlare节点 - 2
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 日本+V2CROSS.COM
       - 美国 华盛顿Cogent通信公司
-      - 美国 Cloudinnovation数据中心
-      - 美国 V2CROSS.COM - 2
+      - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 - 2
       - 台湾省彰化县+中华电信
+      - 美国 Cloudinnovation数据中心
+      - 美国 CloudFlare节点 - 3
+      - 美国 CloudFlare节点 - 4
+      - 美国 CloudFlare节点 - 5
+      - 美国 V2CROSS.COM - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
       - 美国 V2CROSS.COM
-      - 台湾省 中华电信
-      - 英国 社会保险安全部
-      - 美国 CloudFlare节点
-      - 香港 V2CROSS.COM
-      - 美国 CloudFlare节点 - 2
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 日本+V2CROSS.COM
       - 美国 华盛顿Cogent通信公司
-      - 美国 Cloudinnovation数据中心
-      - 美国 V2CROSS.COM - 2
+      - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 - 2
       - 台湾省彰化县+中华电信
+      - 美国 Cloudinnovation数据中心
+      - 美国 CloudFlare节点 - 3
+      - 美国 CloudFlare节点 - 4
+      - 美国 CloudFlare节点 - 5
+      - 美国 V2CROSS.COM - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
