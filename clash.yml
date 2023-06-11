@@ -1,25 +1,13 @@
 proxies:
-  - name: 日本+V2CROSS.COM
+  - name: 美国+Microsoft数据中心
     type: trojan
-    server: trs22.bolab.net
+    server: sg.stablize.top
     port: '443'
-    password: 7a73f1dc97a70905870c0c0484b12145
-  - name: 伊朗 V2CROSS.COM
+    password: de014dda-d57a-483c-b516-05889782caab
+  - name: 台湾省 中华电信
     type: vmess
-    server: turkey.abraak.site
-    port: 2087
-    uuid: 21025839-c140-4c67-8f4c-9a413ca8de3f
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国 V2CROSS.COM
-    type: vmess
-    server: 198.200.32.20
-    port: 49988
+    server: 61.220.198.100
+    port: 58002
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -28,112 +16,65 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国 Cloudinnovation数据中心
-    type: vmess
-    server: 154.85.1.245
-    port: 40407
-    uuid: 1d474f0b-e78d-4af9-bc4a-a467467bc7a7
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
+  - name: 亚太地区+V2CROSS.COM
+    type: trojan
+    server: 103.169.7.11
+    port: '80'
+    password: c0d9da22-2569-4bed-a395-607d9e7ae687
   - name: 美国 CloudFlare节点
     type: vmess
-    server: cf-yd-dns.sharecentre.online
-    port: 80
-    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
+    server: www.noice.id
+    port: 443
+    uuid: 37776019-07ea-4a1d-94e7-88e5e133ad5a
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /shirker
+    ws-path: /worryfree
     ws-headers:
-      Host: dp3.scproxy.top
-  - name: 广东省佛山市 移动
+      Host: v2ray1.udpgw.com
+    tls: true
+  - name: 美国 内华达州拉斯维加斯BuyVM
     type: vmess
-    server: 25.v2-ray.cyou
-    port: 23625
-    uuid: 0dd19d20-ec86-3680-b256-87237bafa89e
-    alterId: 2
+    server: 205.185.125.200
+    port: 11451
+    uuid: 165bdbb6-3fd0-4d1a-e6fb-0e5cd2a0154f
+    alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /
-    ws-headers:
-      Host: 25.v2-ray.cyou
-  - name: 美国 V2CROSS.COM - 2
-    type: vmess
-    server: 137.175.9.167
-    port: 51413
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
+    ws-path: /?ed=2048
     ws-headers:
       Host: ''
-  - name: 台湾省台北市+中華電信
-    type: trojan
-    server: hinet2.downloadvip.cfd
-    port: 443?type=tcp&sni=download.xn--mes358a9urctx.com&allowInsecure=1
-    password: d59235c4-44ea-4e2e-bd90-5eed10db3b15
-  - name: 广东省佛山市 移动 - 2
-    type: vmess
-    server: 8.v2-ray.cyou
-    port: 23608
-    uuid: 0dd19d20-ec86-3680-b256-87237bafa89e
-    alterId: 2
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: 8.v2-ray.cyou
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 日本+V2CROSS.COM
-      - 伊朗 V2CROSS.COM
-      - 美国 V2CROSS.COM
-      - 美国 Cloudinnovation数据中心
+      - 美国+Microsoft数据中心
+      - 台湾省 中华电信
+      - 亚太地区+V2CROSS.COM
       - 美国 CloudFlare节点
-      - 广东省佛山市 移动
-      - 美国 V2CROSS.COM - 2
-      - 台湾省台北市+中華電信
-      - 广东省佛山市 移动 - 2
+      - 美国 内华达州拉斯维加斯BuyVM
   - name: 自动选择
     type: url-test
     proxies:
-      - 日本+V2CROSS.COM
-      - 伊朗 V2CROSS.COM
-      - 美国 V2CROSS.COM
-      - 美国 Cloudinnovation数据中心
+      - 美国+Microsoft数据中心
+      - 台湾省 中华电信
+      - 亚太地区+V2CROSS.COM
       - 美国 CloudFlare节点
-      - 广东省佛山市 移动
-      - 美国 V2CROSS.COM - 2
-      - 台湾省台北市+中華電信
-      - 广东省佛山市 移动 - 2
+      - 美国 内华达州拉斯维加斯BuyVM
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 日本+V2CROSS.COM
-      - 伊朗 V2CROSS.COM
-      - 美国 V2CROSS.COM
-      - 美国 Cloudinnovation数据中心
+      - 美国+Microsoft数据中心
+      - 台湾省 中华电信
+      - 亚太地区+V2CROSS.COM
       - 美国 CloudFlare节点
-      - 广东省佛山市 移动
-      - 美国 V2CROSS.COM - 2
-      - 台湾省台北市+中華電信
-      - 广东省佛山市 移动 - 2
+      - 美国 内华达州拉斯维加斯BuyVM
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
