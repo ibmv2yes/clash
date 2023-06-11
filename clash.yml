@@ -1,8 +1,25 @@
 proxies:
-  - name: 美国 加利福尼亚州圣何塞PEG TECH
+  - name: 日本+V2CROSS.COM
+    type: trojan
+    server: trs22.bolab.net
+    port: '443'
+    password: 7a73f1dc97a70905870c0c0484b12145
+  - name: 伊朗 V2CROSS.COM
     type: vmess
-    server: 142.4.115.246
-    port: 42002
+    server: turkey.abraak.site
+    port: 2087
+    uuid: 21025839-c140-4c67-8f4c-9a413ca8de3f
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: 198.200.32.20
+    port: 49988
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -11,11 +28,11 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国 Datability
+  - name: 美国 Cloudinnovation数据中心
     type: vmess
-    server: 140.99.57.38
-    port: 54002
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    server: 154.85.1.245
+    port: 40407
+    uuid: 1d474f0b-e78d-4af9-bc4a-a467467bc7a7
     alterId: 64
     cipher: auto
     udp: true
@@ -25,32 +42,32 @@ proxies:
       Host: ''
   - name: 美国 CloudFlare节点
     type: vmess
-    server: 162.159.58.253
-    port: 2052
-    uuid: c36d4223-1804-494a-a453-d4f77f10c830
+    server: cf-yd-dns.sharecentre.online
+    port: 80
+    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /public
+    ws-path: /shirker
     ws-headers:
-      Host: detacenter.01.biqibao.site
-  - name: 南非 V2CROSS.COM
+      Host: dp3.scproxy.top
+  - name: 广东省佛山市 移动
     type: vmess
-    server: 156.225.67.131
-    port: 55444
-    uuid: 515bcb4d-0ba1-4cae-87cf-a047007eec54
-    alterId: 64
+    server: 25.v2-ray.cyou
+    port: 23625
+    uuid: 0dd19d20-ec86-3680-b256-87237bafa89e
+    alterId: 2
     cipher: auto
     udp: true
-    network: tcp
+    network: ws
     ws-path: /
     ws-headers:
-      Host: ''
-  - name: 美国 加利福尼亚州圣何塞PEG TECH - 2
+      Host: 25.v2-ray.cyou
+  - name: 美国 V2CROSS.COM - 2
     type: vmess
-    server: 142.4.126.69
-    port: 31002
+    server: 137.175.9.167
+    port: 51413
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -59,81 +76,64 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国 CloudFlare节点 - 2
+  - name: 台湾省台北市+中華電信
+    type: trojan
+    server: hinet2.downloadvip.cfd
+    port: 443?type=tcp&sni=download.xn--mes358a9urctx.com&allowInsecure=1
+    password: d59235c4-44ea-4e2e-bd90-5eed10db3b15
+  - name: 广东省佛山市 移动 - 2
     type: vmess
-    server: 104.19.13.22
-    port: 2083
-    uuid: e883ff76-3bb4-4008-c068-6b5b1d960ea7
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /youlingkaishi
-    ws-headers:
-      Host: uyaa.vtcss.top
-    tls: true
-  - name: 南非 V2CROSS.COM - 2
-    type: vmess
-    server: 156.225.67.131
-    port: 55444
-    uuid: 515bcb4d-0ba1-4cae-87cf-a047007eec54
-    alterId: 64
+    server: 8.v2-ray.cyou
+    port: 23608
+    uuid: 0dd19d20-ec86-3680-b256-87237bafa89e
+    alterId: 2
     cipher: auto
     udp: true
     network: tcp
-    ws-path: ''
+    ws-path: /
     ws-headers:
-      Host: ''
-  - name: 美国 CloudFlare节点 - 3
-    type: vmess
-    server: 172.64.229.8
-    port: 8080
-    uuid: d16c31a2-93a3-4f1a-954c-e383b14a4d26
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /api/v3/download.getFile
-    ws-headers:
-      Host: ssrsub.v01.ssrsub.com
+      Host: 8.v2-ray.cyou
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国 Datability
+      - 日本+V2CROSS.COM
+      - 伊朗 V2CROSS.COM
+      - 美国 V2CROSS.COM
+      - 美国 Cloudinnovation数据中心
       - 美国 CloudFlare节点
-      - 南非 V2CROSS.COM
-      - 美国 加利福尼亚州圣何塞PEG TECH - 2
-      - 美国 CloudFlare节点 - 2
-      - 南非 V2CROSS.COM - 2
-      - 美国 CloudFlare节点 - 3
+      - 广东省佛山市 移动
+      - 美国 V2CROSS.COM - 2
+      - 台湾省台北市+中華電信
+      - 广东省佛山市 移动 - 2
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国 Datability
+      - 日本+V2CROSS.COM
+      - 伊朗 V2CROSS.COM
+      - 美国 V2CROSS.COM
+      - 美国 Cloudinnovation数据中心
       - 美国 CloudFlare节点
-      - 南非 V2CROSS.COM
-      - 美国 加利福尼亚州圣何塞PEG TECH - 2
-      - 美国 CloudFlare节点 - 2
-      - 南非 V2CROSS.COM - 2
-      - 美国 CloudFlare节点 - 3
+      - 广东省佛山市 移动
+      - 美国 V2CROSS.COM - 2
+      - 台湾省台北市+中華電信
+      - 广东省佛山市 移动 - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国 Datability
+      - 日本+V2CROSS.COM
+      - 伊朗 V2CROSS.COM
+      - 美国 V2CROSS.COM
+      - 美国 Cloudinnovation数据中心
       - 美国 CloudFlare节点
-      - 南非 V2CROSS.COM
-      - 美国 加利福尼亚州圣何塞PEG TECH - 2
-      - 美国 CloudFlare节点 - 2
-      - 南非 V2CROSS.COM - 2
-      - 美国 CloudFlare节点 - 3
+      - 广东省佛山市 移动
+      - 美国 V2CROSS.COM - 2
+      - 台湾省台北市+中華電信
+      - 广东省佛山市 移动 - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
