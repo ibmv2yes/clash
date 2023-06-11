@@ -1,8 +1,56 @@
 proxies:
   - name: 美国 V2CROSS.COM
     type: vmess
-    server: 74.217.179.188
-    port: 40042
+    server: 104.31.16.28
+    port: 80
+    uuid: 58fe1542-5290-40ad-815a-77707a81afe5
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /IOebhLMhl1CTbFHbL95myfRX2
+    ws-headers:
+      Host: ca4.tehme2.fun
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: cf-dx-dns.sharecentre.online
+    port: 80
+    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /shirker
+    ws-headers:
+      Host: dp1.scproxy.top
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: cf-lt.sharecentre.online
+    port: 8080
+    uuid: d16c31a2-93a3-4f1a-954c-e383b14a4d26
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /api/v3/download.getFile
+    ws-headers:
+      Host: ssrsub.v01.ssrsub.com
+  - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: cf-yd-dns.sharecentre.online
+    port: 80
+    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /shirker
+    ws-headers:
+      Host: dp3.scproxy.top
+  - name: 香港 V2CROSS.COM
+    type: vmess
+    server: 156.245.8.224
+    port: 46955
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -11,9 +59,21 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国 CloudFlare节点
+  - name: 美国 CloudFlare节点 - 4
     type: vmess
-    server: 104.19.13.22
+    server: 104.20.69.8
+    port: 8880
+    uuid: 53ae65be-81ee-4766-8a09-da43c44c4d30
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /youlingkaishi
+    ws-headers:
+      Host: uyaa.vtcss.top
+  - name: 美国 CloudFlare节点 - 5
+    type: vmess
+    server: 104.19.110.22
     port: 2083
     uuid: e883ff76-3bb4-4008-c068-6b5b1d960ea7
     alterId: 0
@@ -24,67 +84,6 @@ proxies:
     ws-headers:
       Host: uyaa.vtcss.top
     tls: true
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: 104.18.1.110
-    port: 443
-    uuid: 1d8488a7-c784-4e66-ae92-1b22da9c9e68
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /c3lZ7dp02p?ed=2048
-    ws-headers:
-      Host: d2.pgypgykmoljklj.xyz
-    tls: true
-  - name: 美国 CloudFlare节点 - 3
-    type: vmess
-    server: 190.93.245.10
-    port: 80
-    uuid: a67679a6-a186-4d62-f84e-f3f00dc7745e
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /youlingkaishi01
-    ws-headers:
-      Host: tou.vtcss.top
-  - name: 美国 CloudFlare节点 - 4
-    type: vmess
-    server: visa.cn
-    port: 80
-    uuid: 8a694cfb-d143-4378-cb85-faacdc69e5e1
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: ass.669990.xyz
-  - name: 美国 加利福尼亚州洛杉矶市SharkTech数据中心
-    type: vmess
-    server: 107.167.26.53
-    port: 54092
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国 Datability
-    type: vmess
-    server: 140.99.94.42
-    port: 51338
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
 proxy-groups:
   - name: Free-servers
     type: select
@@ -95,9 +94,9 @@ proxy-groups:
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
       - 美国 CloudFlare节点 - 3
+      - 香港 V2CROSS.COM
       - 美国 CloudFlare节点 - 4
-      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
-      - 美国 Datability
+      - 美国 CloudFlare节点 - 5
   - name: 自动选择
     type: url-test
     proxies:
@@ -105,9 +104,9 @@ proxy-groups:
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
       - 美国 CloudFlare节点 - 3
+      - 香港 V2CROSS.COM
       - 美国 CloudFlare节点 - 4
-      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
-      - 美国 Datability
+      - 美国 CloudFlare节点 - 5
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
@@ -117,9 +116,9 @@ proxy-groups:
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
       - 美国 CloudFlare节点 - 3
+      - 香港 V2CROSS.COM
       - 美国 CloudFlare节点 - 4
-      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
-      - 美国 Datability
+      - 美国 CloudFlare节点 - 5
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
