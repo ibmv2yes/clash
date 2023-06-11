@@ -1,7 +1,31 @@
 proxies:
+  - name: 美国 加利福尼亚州圣何塞PEG TECH
+    type: vmess
+    server: 142.4.115.246
+    port: 42002
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 Datability
+    type: vmess
+    server: 140.99.57.38
+    port: 54002
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
   - name: 美国 CloudFlare节点
     type: vmess
-    server: 104.16.32.87
+    server: 162.159.58.253
     port: 2052
     uuid: c36d4223-1804-494a-a453-d4f77f10c830
     alterId: 0
@@ -11,10 +35,22 @@ proxies:
     ws-path: /public
     ws-headers:
       Host: detacenter.01.biqibao.site
-  - name: 南非豪登省约翰内斯堡 Cloudinnovation数据中心
+  - name: 南非 V2CROSS.COM
     type: vmess
-    server: 156.249.18.68
-    port: 30322
+    server: 156.225.67.131
+    port: 55444
+    uuid: 515bcb4d-0ba1-4cae-87cf-a047007eec54
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 加利福尼亚州圣何塞PEG TECH - 2
+    type: vmess
+    server: 142.4.126.69
+    port: 31002
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -24,6 +60,31 @@ proxies:
     ws-headers:
       Host: ''
   - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: 104.19.13.22
+    port: 2083
+    uuid: e883ff76-3bb4-4008-c068-6b5b1d960ea7
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /youlingkaishi
+    ws-headers:
+      Host: uyaa.vtcss.top
+    tls: true
+  - name: 南非 V2CROSS.COM - 2
+    type: vmess
+    server: 156.225.67.131
+    port: 55444
+    uuid: 515bcb4d-0ba1-4cae-87cf-a047007eec54
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: ''
+    ws-headers:
+      Host: ''
+  - name: 美国 CloudFlare节点 - 3
     type: vmess
     server: 172.64.229.8
     port: 8080
@@ -35,127 +96,44 @@ proxies:
     ws-path: /api/v3/download.getFile
     ws-headers:
       Host: ssrsub.v01.ssrsub.com
-  - name: 香港 BGP.NET CN2数据中心
-    type: vmess
-    server: 202.79.174.157
-    port: 55264
-    uuid: 121c9c89-7d11-4f49-9112-dc1e85363f6f
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国 V2CROSS.COM
-    type: vmess
-    server: 137.175.9.167
-    port: 51413
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国 V2CROSS.COM - 2
-    type: vmess
-    server: 104.31.16.28
-    port: 80
-    uuid: 58fe1542-5290-40ad-815a-77707a81afe5
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /IOebhLMhl1CTbFHbL95myfRX2
-    ws-headers:
-      Host: ca4.tehme2.fun
-  - name: 美国 CloudFlare节点 - 3
-    type: vmess
-    server: 104.24.198.75
-    port: 2052
-    uuid: 3f100fa9-a160-4a1c-c40d-e22070ac9785
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /qwer00
-    ws-headers:
-      Host: x2.ylks01.eu.org
-  - name: 美国加利福尼亚州洛杉矶 PetaExpress
-    type: vmess
-    server: 198.2.205.118
-    port: 53042
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 亚太地区+V2CROSS.COM
-    type: trojan
-    server: 103.169.7.11
-    port: '80'
-    password: c0d9da22-2569-4bed-a395-607d9e7ae687
-  - name: 美国 华盛顿Cogent通信公司
-    type: vmess
-    server: 38.63.0.73
-    port: 47002
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国 Datability
       - 美国 CloudFlare节点
-      - 南非豪登省约翰内斯堡 Cloudinnovation数据中心
+      - 南非 V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH - 2
       - 美国 CloudFlare节点 - 2
-      - 香港 BGP.NET CN2数据中心
-      - 美国 V2CROSS.COM
-      - 美国 V2CROSS.COM - 2
+      - 南非 V2CROSS.COM - 2
       - 美国 CloudFlare节点 - 3
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 亚太地区+V2CROSS.COM
-      - 美国 华盛顿Cogent通信公司
   - name: 自动选择
     type: url-test
     proxies:
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国 Datability
       - 美国 CloudFlare节点
-      - 南非豪登省约翰内斯堡 Cloudinnovation数据中心
+      - 南非 V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH - 2
       - 美国 CloudFlare节点 - 2
-      - 香港 BGP.NET CN2数据中心
-      - 美国 V2CROSS.COM
-      - 美国 V2CROSS.COM - 2
+      - 南非 V2CROSS.COM - 2
       - 美国 CloudFlare节点 - 3
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 亚太地区+V2CROSS.COM
-      - 美国 华盛顿Cogent通信公司
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国 Datability
       - 美国 CloudFlare节点
-      - 南非豪登省约翰内斯堡 Cloudinnovation数据中心
+      - 南非 V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH - 2
       - 美国 CloudFlare节点 - 2
-      - 香港 BGP.NET CN2数据中心
-      - 美国 V2CROSS.COM
-      - 美国 V2CROSS.COM - 2
+      - 南非 V2CROSS.COM - 2
       - 美国 CloudFlare节点 - 3
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 亚太地区+V2CROSS.COM
-      - 美国 华盛顿Cogent通信公司
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
