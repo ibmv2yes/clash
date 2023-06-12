@@ -1,76 +1,52 @@
 proxies:
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: 45.153.203.83
+    port: 41632
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+    type: vmess
+    server: 107.167.7.12
+    port: 41654
+    uuid: bdee202c-8fae-441f-a588-7bc4d3887019
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
   - name: 美国 CloudFlare节点
     type: vmess
-    server: 104.25.31.128
-    port: 2086
-    uuid: 4d2ca583-7e2a-4ef4-ba15-ffc7d9147a32
+    server: 104.24.49.199
+    port: 2095
+    uuid: 1d1362f7-073c-4e5c-b470-02b8222c226c
     alterId: 0
     cipher: auto
     udp: true
     network: ws
     ws-path: /ylks
     ws-headers:
-      Host: tou.vtcss.top
-  - name: 美国 V2CROSS.COM
-    type: vmess
-    server: ns1.v2-vip.fun
-    port: 80
-    uuid: 8abe9496-5e24-4e49-b566-dcf86116017d
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /i99LgvSaslbsPLLQQ7j6Z
-    ws-headers:
-      Host: de5.irteh.fun
-  - name: 美国 加利福尼亚州圣何塞PEG TECH
-    type: vmess
-    server: 142.4.112.26
-    port: 51091
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国 加利福尼亚州圣何塞PEG TECH - 2
-    type: vmess
-    server: 142.4.110.23
-    port: 52908
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国 加利福尼亚州圣何塞PEG TECH - 3
-    type: vmess
-    server: 142.4.115.246
-    port: 42002
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
+      Host: x1.ylks01.eu.org
   - name: 美国 CloudFlare节点 - 2
     type: vmess
-    server: cf.yxjnode.com
+    server: 104.20.171.133
     port: 80
-    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
+    uuid: a67679a6-a186-4d62-f84e-f3f00dc7745e
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /yxzbp
+    ws-path: /youlingkaishi01
     ws-headers:
-      Host: dp1.yxjnode.com
+      Host: tou.vtcss.top
   - name: 美国 CloudFlare节点 - 3
     type: vmess
     server: 104.22.65.254
@@ -83,11 +59,48 @@ proxies:
     ws-path: /yulingkaishi01
     ws-headers:
       Host: tou.vtcss.top
-  - name: 香港 BGP.NET CN2数据中心
+  - name: 美国 CloudFlare节点 - 4
     type: vmess
-    server: 202.79.174.157
-    port: 55264
-    uuid: 121c9c89-7d11-4f49-9112-dc1e85363f6f
+    server: 104.19.13.22
+    port: 2083
+    uuid: e883ff76-3bb4-4008-c068-6b5b1d960ea7
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /youlingkaishi
+    ws-headers:
+      Host: uyaa.vtcss.top
+    tls: true
+  - name: 美国 CloudFlare节点 - 5
+    type: vmess
+    server: cf-lt.sharecentre.online
+    port: 80
+    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /shirker
+    ws-headers:
+      Host: lv3.sharecentrepro.org
+  - name: 南非 V2CROSS.COM
+    type: vmess
+    server: 156.225.67.150
+    port: 41539
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 加利福尼亚州圣何塞PEG TECH
+    type: vmess
+    server: 142.4.115.246
+    port: 42002
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
     udp: true
@@ -97,24 +110,31 @@ proxies:
       Host: ''
   - name: 美国 V2CROSS.COM - 2
     type: vmess
-    server: 104.31.16.28
-    port: 80
-    uuid: 58fe1542-5290-40ad-815a-77707a81afe5
-    alterId: 0
+    server: 137.175.21.140
+    port: 42014
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
     cipher: auto
     udp: true
-    network: ws
-    ws-path: /IOebhLMhl1CTbFHbL95myfRX2
+    network: tcp
+    ws-path: /
     ws-headers:
-      Host: ca4.tehme2.fun
-  - name: 亚太地区+V2CROSS.COM
-    type: trojan
-    server: 103.169.7.11
-    port: '80'
-    password: c0d9da22-2569-4bed-a395-607d9e7ae687
-  - name: 美国 CloudFlare节点 - 4
+      Host: ''
+  - name: 美国 Datability
     type: vmess
-    server: 190.93.245.239
+    server: 140.99.57.38
+    port: 54002
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 CloudFlare节点 - 6
+    type: vmess
+    server: 104.20.226.17
     port: 2086
     uuid: 4d2ca583-7e2a-4ef4-ba15-ffc7d9147a32
     alterId: 0
@@ -124,53 +144,71 @@ proxies:
     ws-path: /ylks
     ws-headers:
       Host: tou.vtcss.top
+  - name: 美国 CloudFlare节点 - 7
+    type: vmess
+    server: 104.26.13.165
+    port: 8080
+    uuid: 516a22c5-54c1-4203-ec0a-bb3b2517a82d
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /ylks
+    ws-headers:
+      Host: x1.ylks01.eu.org
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 CloudFlare节点
       - 美国 V2CROSS.COM
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国 加利福尼亚州圣何塞PEG TECH - 2
-      - 美国 加利福尼亚州圣何塞PEG TECH - 3
+      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+      - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
       - 美国 CloudFlare节点 - 3
-      - 香港 BGP.NET CN2数据中心
-      - 美国 V2CROSS.COM - 2
-      - 亚太地区+V2CROSS.COM
       - 美国 CloudFlare节点 - 4
+      - 美国 CloudFlare节点 - 5
+      - 南非 V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国 V2CROSS.COM - 2
+      - 美国 Datability
+      - 美国 CloudFlare节点 - 6
+      - 美国 CloudFlare节点 - 7
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 CloudFlare节点
       - 美国 V2CROSS.COM
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国 加利福尼亚州圣何塞PEG TECH - 2
-      - 美国 加利福尼亚州圣何塞PEG TECH - 3
+      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+      - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
       - 美国 CloudFlare节点 - 3
-      - 香港 BGP.NET CN2数据中心
-      - 美国 V2CROSS.COM - 2
-      - 亚太地区+V2CROSS.COM
       - 美国 CloudFlare节点 - 4
+      - 美国 CloudFlare节点 - 5
+      - 南非 V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国 V2CROSS.COM - 2
+      - 美国 Datability
+      - 美国 CloudFlare节点 - 6
+      - 美国 CloudFlare节点 - 7
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 CloudFlare节点
       - 美国 V2CROSS.COM
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国 加利福尼亚州圣何塞PEG TECH - 2
-      - 美国 加利福尼亚州圣何塞PEG TECH - 3
+      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+      - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
       - 美国 CloudFlare节点 - 3
-      - 香港 BGP.NET CN2数据中心
-      - 美国 V2CROSS.COM - 2
-      - 亚太地区+V2CROSS.COM
       - 美国 CloudFlare节点 - 4
+      - 美国 CloudFlare节点 - 5
+      - 南非 V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国 V2CROSS.COM - 2
+      - 美国 Datability
+      - 美国 CloudFlare节点 - 6
+      - 美国 CloudFlare节点 - 7
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
