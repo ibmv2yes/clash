@@ -1,63 +1,45 @@
 proxies:
-  - name: 亚太地区+V2CROSS.COM
-    type: trojan
-    server: 103.169.7.11
-    port: '80'
-    password: c0d9da22-2569-4bed-a395-607d9e7ae687
-  - name: 南非 V2CROSS.COM
-    type: vmess
-    server: 156.225.67.150
-    port: 41539
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 香港 BGP.NET CN2数据中心
-    type: vmess
-    server: 202.79.174.157
-    port: 55264
-    uuid: 121c9c89-7d11-4f49-9112-dc1e85363f6f
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 浙江省+移动数据上网公共出口
+  - name: 江西省南昌市+移动
     type: trojan
     server: AZHJ.xifasd.top
-    port: 20714?type=tcp&sni=ssl.ssl12.xyz&allowInsecure=1
+    port: 20769?type=tcp&sni=ssl.ssl12.xyz&allowInsecure=1
     password: 78af6d6d-6de7-3a1f-a969-c39077fb47bf
-  - name: 美国 加利福尼亚州圣何塞PEG TECH
+  - name: 美国 CloudFlare节点
     type: vmess
-    server: 142.4.112.26
-    port: 51091
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
+    server: 190.93.245.10
+    port: 80
+    uuid: a67679a6-a186-4d62-f84e-f3f00dc7745e
+    alterId: 0
     cipher: auto
     udp: true
-    network: tcp
-    ws-path: /
+    network: ws
+    ws-path: /youlingkaishi01
     ws-headers:
-      Host: ''
+      Host: tou.vtcss.top
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: 104.26.13.165
+    port: 8080
+    uuid: 516a22c5-54c1-4203-ec0a-bb3b2517a82d
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /ylks
+    ws-headers:
+      Host: x1.ylks01.eu.org
+  - name: 美国 Xerox
+    type: vmess
+    server: 13.215.205.45
+    port: 443
+    uuid: 9bc3178b-959d-45ea-a487-b66c6098a4a5
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers: {}
   - name: 美国 V2CROSS.COM
-    type: vmess
-    server: 137.175.21.140
-    port: 42014
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国 V2CROSS.COM - 2
     type: vmess
     server: 104.31.16.28
     port: 80
@@ -69,9 +51,9 @@ proxies:
     ws-path: /IOebhLMhl1CTbFHbL95myfRX2
     ws-headers:
       Host: ca4.tehme2.fun
-  - name: 美国 CloudFlare节点
+  - name: 美国 CloudFlare节点 - 3
     type: vmess
-    server: 104.19.110.22
+    server: 104.19.13.22
     port: 2083
     uuid: e883ff76-3bb4-4008-c068-6b5b1d960ea7
     alterId: 0
@@ -82,59 +64,99 @@ proxies:
     ws-headers:
       Host: uyaa.vtcss.top
     tls: true
-  - name: 美国 CloudFlare节点 - 2
+  - name: 美国 CloudFlare节点 - 4
     type: vmess
-    server: 104.24.49.199
-    port: 2095
-    uuid: 1d1362f7-073c-4e5c-b470-02b8222c226c
+    server: cf-lt.sharecentre.online
+    port: 80
+    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /ylks
+    ws-path: /shirker
     ws-headers:
-      Host: x1.ylks01.eu.org
+      Host: lv3.sharecentrepro.org
+  - name: 广东省佛山市 移动
+    type: vmess
+    server: 8.v2-ray.cyou
+    port: 23608
+    uuid: 0dd19d20-ec86-3680-b256-87237bafa89e
+    alterId: 2
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: 8.v2-ray.cyou
+  - name: 美国 CloudFlare节点 - 5
+    type: vmess
+    server: cf-yd-dns.sharecentre.online
+    port: 80
+    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /shirker
+    ws-headers:
+      Host: dp3.scproxy.top
+  - name: 美国 CloudFlare节点 - 6
+    type: vmess
+    server: v2ray.online
+    port: 443
+    uuid: 00BBF5B8-173E-6818-9927-5AD1AA073C7D
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /speedtest
+    ws-headers:
+      Host: Kansas.v2ray.online
+    tls: true
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 亚太地区+V2CROSS.COM
-      - 南非 V2CROSS.COM
-      - 香港 BGP.NET CN2数据中心
-      - 浙江省+移动数据上网公共出口
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国 V2CROSS.COM
-      - 美国 V2CROSS.COM - 2
+      - 江西省南昌市+移动
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
+      - 美国 Xerox
+      - 美国 V2CROSS.COM
+      - 美国 CloudFlare节点 - 3
+      - 美国 CloudFlare节点 - 4
+      - 广东省佛山市 移动
+      - 美国 CloudFlare节点 - 5
+      - 美国 CloudFlare节点 - 6
   - name: 自动选择
     type: url-test
     proxies:
-      - 亚太地区+V2CROSS.COM
-      - 南非 V2CROSS.COM
-      - 香港 BGP.NET CN2数据中心
-      - 浙江省+移动数据上网公共出口
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国 V2CROSS.COM
-      - 美国 V2CROSS.COM - 2
+      - 江西省南昌市+移动
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
+      - 美国 Xerox
+      - 美国 V2CROSS.COM
+      - 美国 CloudFlare节点 - 3
+      - 美国 CloudFlare节点 - 4
+      - 广东省佛山市 移动
+      - 美国 CloudFlare节点 - 5
+      - 美国 CloudFlare节点 - 6
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 亚太地区+V2CROSS.COM
-      - 南非 V2CROSS.COM
-      - 香港 BGP.NET CN2数据中心
-      - 浙江省+移动数据上网公共出口
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国 V2CROSS.COM
-      - 美国 V2CROSS.COM - 2
+      - 江西省南昌市+移动
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
+      - 美国 Xerox
+      - 美国 V2CROSS.COM
+      - 美国 CloudFlare节点 - 3
+      - 美国 CloudFlare节点 - 4
+      - 广东省佛山市 移动
+      - 美国 CloudFlare节点 - 5
+      - 美国 CloudFlare节点 - 6
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
