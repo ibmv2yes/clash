@@ -1,4 +1,34 @@
 proxies:
+  - name: 美国 加利福尼亚州圣何塞PEG TECH
+    type: vmess
+    server: 142.4.126.43
+    port: 44392
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: v2ray.online
+    port: 443
+    uuid: 00BBF5B8-173E-6818-9927-5AD1AA073C7D
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /speedtest
+    ws-headers:
+      Host: Kansas.v2ray.online
+    tls: true
+  - name: 美国+V2CROSS.COM
+    type: trojan
+    server: 152.70.74.66
+    port: 443?security=tls&type=tcp&headerType=none
+    password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
   - name: 美国 V2CROSS.COM
     type: vmess
     server: sdttkza.76898102.xyz
@@ -11,43 +41,7 @@ proxies:
     ws-path: /funsdfrh
     ws-headers:
       Host: sdttkz.76898102.xyz
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: 104.18.87.208
-    port: 2082
-    uuid: 19c6ec1b-2230-41d4-ff1c-c8449dc1ed5f
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /yulingkaishi01
-    ws-headers:
-      Host: tou.vtcss.top
-  - name: 美国 加利福尼亚州旧金山Amazon数据中心
-    type: vmess
-    server: 0kxedm1x8q8lksmj14.xingbayun.buzz
-    port: 443
-    uuid: 9bd3cf22-f244-4ee3-9555-ab232fefaa22
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /zh-cn
-    ws-headers:
-      Host: www.microsoft.com
   - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: 104.26.13.165
-    port: 8080
-    uuid: 516a22c5-54c1-4203-ec0a-bb3b2517a82d
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /ylks
-    ws-headers:
-      Host: x1.ylks01.eu.org
-  - name: 美国 CloudFlare节点 - 3
     type: vmess
     server: cf-lt.sharecentre.online
     port: 8080
@@ -59,22 +53,10 @@ proxies:
     ws-path: /api/v3/download.getFile
     ws-headers:
       Host: ssrsub.v01.ssrsub.com
-  - name: 广东省佛山市 移动
+  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
     type: vmess
-    server: 8.v2-ray.cyou
-    port: 23608
-    uuid: 0dd19d20-ec86-3680-b256-87237bafa89e
-    alterId: 2
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: 8.v2-ray.cyou
-  - name: 美国 V2CROSS.COM - 2
-    type: vmess
-    server: 137.175.52.18
-    port: 33002
+    server: 192.74.234.82
+    port: 51302
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -83,56 +65,68 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国 CloudFlare节点 - 4
+  - name: 美国加利福尼亚州洛杉矶 PetaExpress
     type: vmess
-    server: cf-dx-dns.sharecentre.online
+    server: 198.2.203.54
+    port: 44672
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 V2CROSS.COM - 2
+    type: vmess
+    server: ns1.v2-vip.fun
     port: 80
-    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
+    uuid: 8abe9496-5e24-4e49-b566-dcf86116017d
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /shirker
+    ws-path: /i99LgvSaslbsPLLQQ7j6Z
     ws-headers:
-      Host: dp1.scproxy.top
+      Host: de5.irteh.fun
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH
       - 美国 CloudFlare节点
-      - 美国 加利福尼亚州旧金山Amazon数据中心
+      - 美国+V2CROSS.COM
+      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
-      - 广东省佛山市 移动
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 美国加利福尼亚州洛杉矶 PetaExpress
       - 美国 V2CROSS.COM - 2
-      - 美国 CloudFlare节点 - 4
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH
       - 美国 CloudFlare节点
-      - 美国 加利福尼亚州旧金山Amazon数据中心
+      - 美国+V2CROSS.COM
+      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
-      - 广东省佛山市 移动
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 美国加利福尼亚州洛杉矶 PetaExpress
       - 美国 V2CROSS.COM - 2
-      - 美国 CloudFlare节点 - 4
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞PEG TECH
       - 美国 CloudFlare节点
-      - 美国 加利福尼亚州旧金山Amazon数据中心
+      - 美国+V2CROSS.COM
+      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
-      - 广东省佛山市 移动
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 美国加利福尼亚州洛杉矶 PetaExpress
       - 美国 V2CROSS.COM - 2
-      - 美国 CloudFlare节点 - 4
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
