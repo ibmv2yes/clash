@@ -1,98 +1,5 @@
 proxies:
-  - name: 美国 Datability
-    type: vmess
-    server: 140.99.94.42
-    port: 51338
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
   - name: 美国 CloudFlare节点
-    type: vmess
-    server: 104.18.83.10
-    port: 443
-    uuid: dddd0b29-1576-4003-9990-d7cea34264db
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /835757
-    ws-headers:
-      Host: dedi2.1808.cf
-    tls: true
-  - name: 美国+Xerox
-    type: trojan
-    server: sg2.downloadvip.cfd
-    port: 443?sni=jssg1.xn--mes358acgm99l.com
-    password: 70eaf50f-8505-4bb0-bbfc-1354fa111320
-  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
-    type: vmess
-    server: 192.74.228.187
-    port: 42857
-    uuid: 051b844f-efe3-4847-92aa-66b5de0b6d4e
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 广东省 移动
-    type: vmess
-    server: cctv.iepl01.yuntiair365.top
-    port: 53003
-    uuid: 6c210104-de21-321c-a4b7-418af3844a6c
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-headers: {}
-  - name: 美国 加利福尼亚州圣何塞PEG TECH
-    type: vmess
-    server: 142.4.118.157
-    port: 50002
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-headers: {}
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: v2ray.online
-    port: 443
-    uuid: 00BBF5B8-173E-6818-9927-5AD1AA073C7D
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /speedtest
-    ws-headers:
-      Host: Kansas.v2ray.online
-    tls: true
-  - name: 美国 CloudFlare节点 - 3
-    type: vmess
-    server: 162.159.195.144
-    port: 443
-    uuid: 553f509e-56c1-4eaf-be67-b9b20c780bff
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /ws1341380505
-    ws-headers:
-      Host: usdp65.wsvpn.xyz
-    tls: true
-  - name: 新加坡+亚马逊(Amazon)公司数据中心
-    type: trojan
-    server: sg1.421421.xyz
-    port: 20230?sni=421421.xyz
-    password: b425d8b7-caca-402d-9902-0335fa5e67ed
-  - name: 美国 CloudFlare节点 - 4
     type: vmess
     server: cdnjs.com
     port: 443
@@ -105,50 +12,144 @@ proxies:
     ws-headers:
       Host: Kansas.kotick.site
     tls: true
+  - name: 亚太地区+V2CROSS.COM
+    type: trojan
+    server: 103.169.7.11
+    port: '80'
+    password: c0d9da22-2569-4bed-a395-607d9e7ae687
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: 162.159.195.144
+    port: 443
+    uuid: 553f509e-56c1-4eaf-be67-b9b20c780bff
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /ws1341380505
+    ws-headers:
+      Host: usdp65.wsvpn.xyz
+    tls: true
+  - name: 广东省佛山市 移动
+    type: vmess
+    server: 8.v2-ray.cyou
+    port: 23608
+    uuid: 0dd19d20-ec86-3680-b256-87237bafa89e
+    alterId: 2
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: 8.v2-ray.cyou
+  - name: 美国 Datability
+    type: vmess
+    server: 140.99.57.2
+    port: 50002
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: ns1.v2-vip.fun
+    port: 80
+    uuid: 8abe9496-5e24-4e49-b566-dcf86116017d
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /i99LgvSaslbsPLLQQ7j6Z
+    ws-headers:
+      Host: de5.irteh.fun
+  - name: 河南省洛阳市 移动
+    type: vmess
+    server: gzcm02.yemao.cloud
+    port: 29998
+    uuid: 862f3849-619c-4d16-8148-0d8869388266
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-headers: {}
+  - name: 美国+V2CROSS.COM
+    type: trojan
+    server: 152.70.74.66
+    port: 443?security=tls&type=tcp&headerType=none
+    password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
+  - name: 俄罗斯 V2CROSS.COM
+    type: vmess
+    server: ovhsdza.76898102.xyz
+    port: 2052
+    uuid: 285bfc27-2341-3c7a-be0e-360cedd5e209
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /funsdfrh
+    ws-headers:
+      Host: ovhsdz.76898102.xyz
+  - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: chat.samrg.buzz
+    port: 443
+    uuid: 9e6ceeff-2546-3690-ac00-6fcdf31dec94
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /cutino
+    ws-headers:
+      Host: chat.samrg.buzz
+    tls: true
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 Datability
       - 美国 CloudFlare节点
-      - 美国+Xerox
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 广东省 移动
-      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 亚太地区+V2CROSS.COM
       - 美国 CloudFlare节点 - 2
+      - 广东省佛山市 移动
+      - 美国 Datability
+      - 美国 V2CROSS.COM
+      - 河南省洛阳市 移动
+      - 美国+V2CROSS.COM
+      - 俄罗斯 V2CROSS.COM
       - 美国 CloudFlare节点 - 3
-      - 新加坡+亚马逊(Amazon)公司数据中心
-      - 美国 CloudFlare节点 - 4
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 Datability
       - 美国 CloudFlare节点
-      - 美国+Xerox
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 广东省 移动
-      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 亚太地区+V2CROSS.COM
       - 美国 CloudFlare节点 - 2
+      - 广东省佛山市 移动
+      - 美国 Datability
+      - 美国 V2CROSS.COM
+      - 河南省洛阳市 移动
+      - 美国+V2CROSS.COM
+      - 俄罗斯 V2CROSS.COM
       - 美国 CloudFlare节点 - 3
-      - 新加坡+亚马逊(Amazon)公司数据中心
-      - 美国 CloudFlare节点 - 4
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 Datability
       - 美国 CloudFlare节点
-      - 美国+Xerox
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 广东省 移动
-      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 亚太地区+V2CROSS.COM
       - 美国 CloudFlare节点 - 2
+      - 广东省佛山市 移动
+      - 美国 Datability
+      - 美国 V2CROSS.COM
+      - 河南省洛阳市 移动
+      - 美国+V2CROSS.COM
+      - 俄罗斯 V2CROSS.COM
       - 美国 CloudFlare节点 - 3
-      - 新加坡+亚马逊(Amazon)公司数据中心
-      - 美国 CloudFlare节点 - 4
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
