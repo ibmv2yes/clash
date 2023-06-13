@@ -1,67 +1,25 @@
 proxies:
   - name: 美国 CloudFlare节点
     type: vmess
-    server: cf-lt.sharecentre.online
-    port: 8080
-    uuid: d16c31a2-93a3-4f1a-954c-e383b14a4d26
+    server: cf.yxjnode.com
+    port: 80
+    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /api/v3/download.getFile
+    ws-path: /yxzbp
     ws-headers:
-      Host: ssrsub.v03.ssrsub.com
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: 104.18.81.150
-    port: 443
-    uuid: 553f509e-56c1-4eaf-be67-b9b20c780bff
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /ws1341380505
-    ws-headers:
-      Host: usgc58.wvpn.top
-    tls: true
-  - name: 以色列+V2CROSS.COM
+      Host: dp1.yxjnode.com
+  - name: 美国+加利福尼亚州洛杉矶Level3通信(DIA)
     type: trojan
-    server: 149.50.77.95
-    port: '4003'
-    password: TJCfE7Mx2YcA8kX8zg
-  - name: 美国 CloudFlare节点 - 3
+    server: jp.stablize.top
+    port: '443'
+    password: 40297165-0545-4f8f-abc4-3ee25e6cfb87
+  - name: 美国 V2CROSS.COM
     type: vmess
-    server: 141.101.113.64
-    port: 2052
-    uuid: 243240f9-9f5b-4f98-dd5c-e19784d19631
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /youlingkaishi
-    ws-headers:
-      Host: uyaa.vtcss.top
-  - name: 浙江省+移动数据上网公共出口
-    type: trojan
-    server: AZHJ.xifasd.top
-    port: 20714?type=tcp&sni=ssl.ssl12.xyz&allowInsecure=1
-    password: 78af6d6d-6de7-3a1f-a969-c39077fb47bf
-  - name: 美国 CloudFlare节点 - 4
-    type: vmess
-    server: 104.20.55.60
-    port: 2052
-    uuid: 3f100fa9-a160-4a1c-c40d-e22070ac9785
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /qwer00
-    ws-headers:
-      Host: x2.ylks01.eu.org
-  - name: 美国 Datability
-    type: vmess
-    server: 140.99.57.38
-    port: 54002
+    server: 108.186.4.2
+    port: 49982
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -70,7 +28,7 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国 V2CROSS.COM
+  - name: 美国 V2CROSS.COM - 2
     type: vmess
     server: ns1.v2-vip.fun
     port: 80
@@ -82,10 +40,34 @@ proxies:
     ws-path: /i99LgvSaslbsPLLQQ7j6Z
     ws-headers:
       Host: de5.irteh.fun
-  - name: 美国 加利福尼亚州圣何塞PEG TECH
+  - name: 美国 V2CROSS.COM - 3
     type: vmess
-    server: 142.4.126.43
-    port: 44392
+    server: ns1.v2-vip.fun
+    port: 80
+    uuid: 8abe9496-5e24-4e49-b566-dcf86116017d
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /i99LgvSaslbsPLLQQ7j6Z
+    ws-headers:
+      Host: de5.irteh.fun
+  - name: 英国 V2CROSS.COM
+    type: vmess
+    server: ovhsdza.76898102.xyz
+    port: 2052
+    uuid: 285bfc27-2341-3c7a-be0e-360cedd5e209
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /funsdfrh
+    ws-headers:
+      Host: ovhsdz.76898102.xyz
+  - name: 美国 加利福尼亚州森尼韦尔市PEG TECH公司
+    type: vmess
+    server: 142.0.135.181
+    port: 59009
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -94,6 +76,24 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
+  - name: 新加坡+Amazon数据中心
+    type: trojan
+    server: sg2.downloadvip.cfd
+    port: 443?sni=jssg1.xn--mes358acgm99l.com
+    password: 70eaf50f-8505-4bb0-bbfc-1354fa111320
+  - name: 澳大利亚 Melbourne Girls College
+    type: vmess
+    server: mcis.anahid.beauty
+    port: 8443
+    uuid: 69b23f58-c634-41f8-c2e6-bc8121fd58b1
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: s1.majnoon.shop
+    tls: true
 proxy-groups:
   - name: Free-servers
     type: select
@@ -101,40 +101,40 @@ proxy-groups:
       - 自动选择
       - 故障转移
       - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 以色列+V2CROSS.COM
-      - 美国 CloudFlare节点 - 3
-      - 浙江省+移动数据上网公共出口
-      - 美国 CloudFlare节点 - 4
-      - 美国 Datability
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
       - 美国 V2CROSS.COM
-      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国 V2CROSS.COM - 2
+      - 美国 V2CROSS.COM - 3
+      - 英国 V2CROSS.COM
+      - 美国 加利福尼亚州森尼韦尔市PEG TECH公司
+      - 新加坡+Amazon数据中心
+      - 澳大利亚 Melbourne Girls College
   - name: 自动选择
     type: url-test
     proxies:
       - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 以色列+V2CROSS.COM
-      - 美国 CloudFlare节点 - 3
-      - 浙江省+移动数据上网公共出口
-      - 美国 CloudFlare节点 - 4
-      - 美国 Datability
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
       - 美国 V2CROSS.COM
-      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国 V2CROSS.COM - 2
+      - 美国 V2CROSS.COM - 3
+      - 英国 V2CROSS.COM
+      - 美国 加利福尼亚州森尼韦尔市PEG TECH公司
+      - 新加坡+Amazon数据中心
+      - 澳大利亚 Melbourne Girls College
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
       - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 以色列+V2CROSS.COM
-      - 美国 CloudFlare节点 - 3
-      - 浙江省+移动数据上网公共出口
-      - 美国 CloudFlare节点 - 4
-      - 美国 Datability
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
       - 美国 V2CROSS.COM
-      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国 V2CROSS.COM - 2
+      - 美国 V2CROSS.COM - 3
+      - 英国 V2CROSS.COM
+      - 美国 加利福尼亚州森尼韦尔市PEG TECH公司
+      - 新加坡+Amazon数据中心
+      - 澳大利亚 Melbourne Girls College
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
