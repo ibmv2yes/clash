@@ -1,70 +1,9 @@
 proxies:
-  - name: 美国 加利福尼亚州圣何塞PEG TECH
-    type: vmess
-    server: 142.4.118.157
-    port: 50002
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-headers: {}
-  - name: 美国 Datability
-    type: vmess
-    server: 140.99.57.38
-    port: 54002
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国 加利福尼亚州洛杉矶市SharkTech数据中心
-    type: vmess
-    server: 107.167.16.90
-    port: 45689
-    uuid: 7640a1e7-9701-428e-a4b2-19b3e7dd6f9f
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国+Microsoft数据中心
-    type: trojan
-    server: jp.stablize.top
-    port: '443'
-    password: 40297165-0545-4f8f-abc4-3ee25e6cfb87
   - name: 以色列+V2CROSS.COM
     type: trojan
     server: 149.50.71.117
     port: '4003'
     password: TJCfE7Mx2YcA8kX8zg
-  - name: 美国 V2CROSS.COM
-    type: vmess
-    server: 137.175.52.18
-    port: 33002
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-headers: {}
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: 104.18.87.208
-    port: 2082
-    uuid: 19c6ec1b-2230-41d4-ff1c-c8449dc1ed5f
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /yulingkaishi01
-    ws-headers:
-      Host: tou.vtcss.top
   - name: 巴西圣保罗 CloudFlare节点
     type: vmess
     server: 188.114.97.116
@@ -77,83 +16,70 @@ proxies:
     ws-path: /ylks
     ws-headers:
       Host: tou.vtcss.top
+  - name: 广东省 移动
+    type: vmess
+    server: cctv.iepl01.yuntiair365.top
+    port: 53003
+    uuid: 6c210104-de21-321c-a4b7-418af3844a6c
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-headers: {}
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: 172.67.33.12
+    port: 2086
+    uuid: 4d2ca583-7e2a-4ef4-ba15-ffc7d9147a32
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /ylks
+    ws-headers:
+      Host: tou.vtcss.top
+  - name: 以色列+V2CROSS.COM - 2
+    type: trojan
+    server: us1.chuqiangtou.net
+    port: '4003'
+    password: TJCfE7Mx2YcA8kX8zg
   - name: 韩国+KT电信
     type: trojan
     server: kaizen-tw-4.mielink-dns2.com
     port: 443?type=tcp&sni=paydiu.com&allowInsecure=1
     password: 0d4926a0-9881-3609-b6ee-4716da84e59emielink
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: 162.159.243.235
-    port: 443
-    uuid: dddd0b29-1576-4003-9990-d7cea34264db
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /835757
-    ws-headers:
-      Host: dedi2.1808.cf
-    tls: true
-  - name: 美国 CloudFlare节点 - 3
-    type: vmess
-    server: cf.yxjnode.com
-    port: 80
-    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /yxzbp
-    ws-headers:
-      Host: dp1.yxjnode.com
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国 Datability
-      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
-      - 美国+Microsoft数据中心
       - 以色列+V2CROSS.COM
-      - 美国 V2CROSS.COM
-      - 美国 CloudFlare节点
       - 巴西圣保罗 CloudFlare节点
+      - 广东省 移动
+      - 美国 CloudFlare节点
+      - 以色列+V2CROSS.COM - 2
       - 韩国+KT电信
-      - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国 Datability
-      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
-      - 美国+Microsoft数据中心
       - 以色列+V2CROSS.COM
-      - 美国 V2CROSS.COM
-      - 美国 CloudFlare节点
       - 巴西圣保罗 CloudFlare节点
+      - 广东省 移动
+      - 美国 CloudFlare节点
+      - 以色列+V2CROSS.COM - 2
       - 韩国+KT电信
-      - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国 Datability
-      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
-      - 美国+Microsoft数据中心
       - 以色列+V2CROSS.COM
-      - 美国 V2CROSS.COM
-      - 美国 CloudFlare节点
       - 巴西圣保罗 CloudFlare节点
+      - 广东省 移动
+      - 美国 CloudFlare节点
+      - 以色列+V2CROSS.COM - 2
       - 韩国+KT电信
-      - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
