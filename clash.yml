@@ -1,4 +1,28 @@
 proxies:
+  - name: 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+    type: vmess
+    server: 107.167.16.90
+    port: 45689
+    uuid: 7640a1e7-9701-428e-a4b2-19b3e7dd6f9f
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 欧盟 V2CROSS.COM
+    type: vmess
+    server: ovhsdza.76898102.xyz
+    port: 2052
+    uuid: 285bfc27-2341-3c7a-be0e-360cedd5e209
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /funsdfrh
+    ws-headers:
+      Host: ovhsdz.76898102.xyz
   - name: 美国 V2CROSS.COM
     type: vmess
     server: 104.31.16.45
@@ -11,55 +35,55 @@ proxies:
     ws-path: /CZfczvtieCZXdOlgWhgDLX
     ws-headers:
       Host: de3.irteh.fun
-  - name: 巴西圣保罗 CloudFlare节点
+  - name: 美国 Datability
     type: vmess
-    server: 188.114.97.116
-    port: 2086
-    uuid: 4d2ca583-7e2a-4ef4-ba15-ffc7d9147a32
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /ylks
-    ws-headers:
-      Host: tou.vtcss.top
-  - name: 浙江省+移动数据上网公共出口
-    type: trojan
-    server: AZHJ.xifasd.top
-    port: 20769?type=tcp&sni=ssl.ssl12.xyz&allowInsecure=1
-    password: 78af6d6d-6de7-3a1f-a969-c39077fb47bf
-  - name: 广东省佛山市 移动
-    type: vmess
-    server: 8.v2-ray.cyou
-    port: 23608
-    uuid: 0dd19d20-ec86-3680-b256-87237bafa89e
-    alterId: 2
+    server: 140.99.57.2
+    port: 50002
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
     cipher: auto
     udp: true
     network: tcp
     ws-path: /
     ws-headers:
-      Host: 8.v2-ray.cyou
-  - name: 以色列+V2CROSS.COM
-    type: trojan
-    server: 149.50.77.95
-    port: '4003'
-    password: TJCfE7Mx2YcA8kX8zg
+      Host: ''
+  - name: 美国 加利福尼亚州洛杉矶市SharkTech数据中心 - 2
+    type: vmess
+    server: 107.167.16.34
+    port: 45592
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国加利福尼亚州洛杉矶 PetaExpress
+    type: vmess
+    server: 198.2.203.54
+    port: 44672
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-headers: {}
   - name: 美国 V2CROSS.COM - 2
     type: vmess
-    server: 104.31.16.45
+    server: ns1.v2-vip.fun
     port: 80
-    uuid: 2fcc2939-7dcf-4741-aa03-825bc40e23fd
+    uuid: 8abe9496-5e24-4e49-b566-dcf86116017d
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /CZfczvtieCZXdOlgWhgDLX
+    ws-path: /i99LgvSaslbsPLLQQ7j6Z
     ws-headers:
-      Host: de3.irteh.fun
+      Host: de5.irteh.fun
   - name: 美国 CloudFlare节点
     type: vmess
-    server: 104.25.40.87
+    server: 104.18.87.208
     port: 2082
     uuid: 19c6ec1b-2230-41d4-ff1c-c8449dc1ed5f
     alterId: 0
@@ -69,24 +93,36 @@ proxies:
     ws-path: /yulingkaishi01
     ws-headers:
       Host: tou.vtcss.top
-  - name: 美国 CloudFlare节点 - 2
+  - name: 日本+东京都Amazon数据中心
+    type: trojan
+    server: jp2.downloadvip.cfd
+    port: 443?sni=download.xn--mes358a9urctx.com
+    password: d6f93830-6e0f-4507-8e76-626d9b66fd06
+  - name: 美国 Datability - 2
     type: vmess
-    server: cf-dx-dns.sharecentre.online
-    port: 80
-    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
-    alterId: 0
+    server: 140.99.66.78
+    port: 58455
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
     cipher: auto
     udp: true
-    network: ws
-    ws-path: /shirker
+    network: tcp
+    ws-path: /
     ws-headers:
-      Host: dp1.scproxy.top
-  - name: 以色列+V2CROSS.COM - 2
-    type: trojan
-    server: 149.50.77.97
-    port: '4003'
-    password: TJCfE7Mx2YcA8kX8zg
-  - name: 美国 CloudFlare节点 - 3
+      Host: ''
+  - name: 美国 Datability - 3
+    type: vmess
+    server: 140.99.94.42
+    port: 51338
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 CloudFlare节点 - 2
     type: vmess
     server: cf-yd-dns.sharecentre.online
     port: 80
@@ -98,58 +134,56 @@ proxies:
     ws-path: /shirker
     ws-headers:
       Host: dp3.scproxy.top
-  - name: 亚太地区+V2CROSS.COM
-    type: trojan
-    server: 103.169.7.11
-    port: '80'
-    password: c0d9da22-2569-4bed-a395-607d9e7ae687
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
+      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+      - 欧盟 V2CROSS.COM
       - 美国 V2CROSS.COM
-      - 巴西圣保罗 CloudFlare节点
-      - 浙江省+移动数据上网公共出口
-      - 广东省佛山市 移动
-      - 以色列+V2CROSS.COM
+      - 美国 Datability
+      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心 - 2
+      - 美国加利福尼亚州洛杉矶 PetaExpress
       - 美国 V2CROSS.COM - 2
       - 美国 CloudFlare节点
+      - 日本+东京都Amazon数据中心
+      - 美国 Datability - 2
+      - 美国 Datability - 3
       - 美国 CloudFlare节点 - 2
-      - 以色列+V2CROSS.COM - 2
-      - 美国 CloudFlare节点 - 3
-      - 亚太地区+V2CROSS.COM
   - name: 自动选择
     type: url-test
     proxies:
+      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+      - 欧盟 V2CROSS.COM
       - 美国 V2CROSS.COM
-      - 巴西圣保罗 CloudFlare节点
-      - 浙江省+移动数据上网公共出口
-      - 广东省佛山市 移动
-      - 以色列+V2CROSS.COM
+      - 美国 Datability
+      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心 - 2
+      - 美国加利福尼亚州洛杉矶 PetaExpress
       - 美国 V2CROSS.COM - 2
       - 美国 CloudFlare节点
+      - 日本+东京都Amazon数据中心
+      - 美国 Datability - 2
+      - 美国 Datability - 3
       - 美国 CloudFlare节点 - 2
-      - 以色列+V2CROSS.COM - 2
-      - 美国 CloudFlare节点 - 3
-      - 亚太地区+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
+      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+      - 欧盟 V2CROSS.COM
       - 美国 V2CROSS.COM
-      - 巴西圣保罗 CloudFlare节点
-      - 浙江省+移动数据上网公共出口
-      - 广东省佛山市 移动
-      - 以色列+V2CROSS.COM
+      - 美国 Datability
+      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心 - 2
+      - 美国加利福尼亚州洛杉矶 PetaExpress
       - 美国 V2CROSS.COM - 2
       - 美国 CloudFlare节点
+      - 日本+东京都Amazon数据中心
+      - 美国 Datability - 2
+      - 美国 Datability - 3
       - 美国 CloudFlare节点 - 2
-      - 以色列+V2CROSS.COM - 2
-      - 美国 CloudFlare节点 - 3
-      - 亚太地区+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
