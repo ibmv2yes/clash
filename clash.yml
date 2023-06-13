@@ -1,24 +1,19 @@
 proxies:
-  - name: 美国+麻省理工学院
-    type: trojan
-    server: sg1.microsoft-orgwly.vip
-    port: 10062?type=tcp&security=tls&sni=tls.microsoft-orgwly.vip&allowInsecure=1
-    password: 5cbc7d7c-2c38-4112-9f45-5ad0c6ea6381
-  - name: 广东省佛山市 移动
+  - name: 美国 Datability
     type: vmess
-    server: 8.v2-ray.cyou
-    port: 23608
-    uuid: 0dd19d20-ec86-3680-b256-87237bafa89e
-    alterId: 2
+    server: 140.99.94.42
+    port: 51338
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
     cipher: auto
     udp: true
     network: tcp
     ws-path: /
     ws-headers:
-      Host: 8.v2-ray.cyou
+      Host: ''
   - name: 美国 CloudFlare节点
     type: vmess
-    server: speed.76898102.xyz
+    server: 104.18.83.10
     port: 443
     uuid: dddd0b29-1576-4003-9990-d7cea34264db
     alterId: 0
@@ -29,11 +24,16 @@ proxies:
     ws-headers:
       Host: dedi2.1808.cf
     tls: true
-  - name: 美国 Datability
+  - name: 美国+Xerox
+    type: trojan
+    server: sg2.downloadvip.cfd
+    port: 443?sni=jssg1.xn--mes358acgm99l.com
+    password: 70eaf50f-8505-4bb0-bbfc-1354fa111320
+  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
     type: vmess
-    server: 140.99.66.78
-    port: 58455
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    server: 192.74.228.187
+    port: 42857
+    uuid: 051b844f-efe3-4847-92aa-66b5de0b6d4e
     alterId: 64
     cipher: auto
     udp: true
@@ -41,84 +41,27 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 日本+东京都Amazon数据中心
-    type: trojan
-    server: jp6.microsoft-orgwly.vip
-    port: 10087?type=tcp&security=tls&sni=tls.microsoft-orgwly.vip&allowInsecure=1
-    password: 5cbc7d7c-2c38-4112-9f45-5ad0c6ea6381
-  - name: 美国 V2CROSS.COM
+  - name: 广东省 移动
     type: vmess
-    server: ns1.v2-vip.fun
-    port: 80
-    uuid: 8abe9496-5e24-4e49-b566-dcf86116017d
+    server: cctv.iepl01.yuntiair365.top
+    port: 53003
+    uuid: 6c210104-de21-321c-a4b7-418af3844a6c
     alterId: 0
     cipher: auto
     udp: true
-    network: ws
-    ws-path: /i99LgvSaslbsPLLQQ7j6Z
-    ws-headers:
-      Host: de5.irteh.fun
-  - name: 美国 CloudFlare公司CDN节点(shopify)
+    network: tcp
+    ws-headers: {}
+  - name: 美国 加利福尼亚州圣何塞PEG TECH
     type: vmess
-    server: 23.227.38.99
-    port: 443
-    uuid: 86d37526-5758-4cec-862f-df404b313086
-    alterId: 0
+    server: 142.4.118.157
+    port: 50002
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
     cipher: auto
     udp: true
-    network: ws
-    ws-path: /3G6WPDL7
-    ws-headers:
-      Host: 1.freek1.xyz
-    tls: true
+    network: tcp
+    ws-headers: {}
   - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: 162.159.195.144
-    port: 443
-    uuid: 553f509e-56c1-4eaf-be67-b9b20c780bff
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /ws1341380505
-    ws-headers:
-      Host: usdp65.wsvpn.xyz
-    tls: true
-  - name: 美国+Microsoft数据中心
-    type: trojan
-    server: usa.stablize.top
-    port: '443'
-    password: e81c0cf0-d4f4-402e-81ee-4eb19a832ffa
-  - name: 美国+惠普HP
-    type: trojan
-    server: hk3.microsoft-orgwly.vip
-    port: 10054?type=tcp&security=tls&sni=tls.microsoft-orgwly.vip&allowInsecure=1
-    password: 5cbc7d7c-2c38-4112-9f45-5ad0c6ea6381
-  - name: 美国 CloudFlare节点 - 3
-    type: vmess
-    server: 172.66.44.138
-    port: 80
-    uuid: 1a6e91f6-4aec-4fba-d652-f65e9dfa4a63
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /ylks
-    ws-headers:
-      Host: x1.ylks01.eu.org
-  - name: 英国 社会保险安全部
-    type: vmess
-    server: fr1.09vpn.com
-    port: 80
-    uuid: bed8b92b-2408-4ffc-a86a-d3d0d59632cf
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /vmess/
-    ws-headers:
-      Host: fr1.09vpn.com
-  - name: 美国 CloudFlare节点 - 4
     type: vmess
     server: v2ray.online
     port: 443
@@ -131,67 +74,81 @@ proxies:
     ws-headers:
       Host: Kansas.v2ray.online
     tls: true
-  - name: 日本+东京Amazon数据中心
+  - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: 162.159.195.144
+    port: 443
+    uuid: 553f509e-56c1-4eaf-be67-b9b20c780bff
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /ws1341380505
+    ws-headers:
+      Host: usdp65.wsvpn.xyz
+    tls: true
+  - name: 新加坡+亚马逊(Amazon)公司数据中心
     type: trojan
-    server: jp2.microsoft-orgwly.vip
-    port: 10060?type=tcp&security=tls&sni=tls.microsoft-orgwly.vip&allowInsecure=1
-    password: 5cbc7d7c-2c38-4112-9f45-5ad0c6ea6381
+    server: sg1.421421.xyz
+    port: 20230?sni=421421.xyz
+    password: b425d8b7-caca-402d-9902-0335fa5e67ed
+  - name: 美国 CloudFlare节点 - 4
+    type: vmess
+    server: cdnjs.com
+    port: 443
+    uuid: 2CCC8DAB-53C6-741F-6309-446107D82FC1
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /speedtest
+    ws-headers:
+      Host: Kansas.kotick.site
+    tls: true
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国+麻省理工学院
-      - 广东省佛山市 移动
-      - 美国 CloudFlare节点
       - 美国 Datability
-      - 日本+东京都Amazon数据中心
-      - 美国 V2CROSS.COM
-      - 美国 CloudFlare公司CDN节点(shopify)
+      - 美国 CloudFlare节点
+      - 美国+Xerox
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 广东省 移动
+      - 美国 加利福尼亚州圣何塞PEG TECH
       - 美国 CloudFlare节点 - 2
-      - 美国+Microsoft数据中心
-      - 美国+惠普HP
       - 美国 CloudFlare节点 - 3
-      - 英国 社会保险安全部
+      - 新加坡+亚马逊(Amazon)公司数据中心
       - 美国 CloudFlare节点 - 4
-      - 日本+东京Amazon数据中心
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国+麻省理工学院
-      - 广东省佛山市 移动
-      - 美国 CloudFlare节点
       - 美国 Datability
-      - 日本+东京都Amazon数据中心
-      - 美国 V2CROSS.COM
-      - 美国 CloudFlare公司CDN节点(shopify)
+      - 美国 CloudFlare节点
+      - 美国+Xerox
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 广东省 移动
+      - 美国 加利福尼亚州圣何塞PEG TECH
       - 美国 CloudFlare节点 - 2
-      - 美国+Microsoft数据中心
-      - 美国+惠普HP
       - 美国 CloudFlare节点 - 3
-      - 英国 社会保险安全部
+      - 新加坡+亚马逊(Amazon)公司数据中心
       - 美国 CloudFlare节点 - 4
-      - 日本+东京Amazon数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国+麻省理工学院
-      - 广东省佛山市 移动
-      - 美国 CloudFlare节点
       - 美国 Datability
-      - 日本+东京都Amazon数据中心
-      - 美国 V2CROSS.COM
-      - 美国 CloudFlare公司CDN节点(shopify)
+      - 美国 CloudFlare节点
+      - 美国+Xerox
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 广东省 移动
+      - 美国 加利福尼亚州圣何塞PEG TECH
       - 美国 CloudFlare节点 - 2
-      - 美国+Microsoft数据中心
-      - 美国+惠普HP
       - 美国 CloudFlare节点 - 3
-      - 英国 社会保险安全部
+      - 新加坡+亚马逊(Amazon)公司数据中心
       - 美国 CloudFlare节点 - 4
-      - 日本+东京Amazon数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
