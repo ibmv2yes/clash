@@ -1,26 +1,17 @@
 proxies:
-  - name: 美国 Xerox
+  - name: 美国 CloudFlare节点
     type: vmess
-    server: sg4.f163ab0f2c74.sanfen004.me
-    port: 443
-    uuid: 698115e4-1494-4f4a-85a9-76cd011d3ac6
+    server: cf-yd-dns.sharecentre.online
+    port: 80
+    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
     alterId: 0
     cipher: auto
     udp: true
-    network: tcp
-    ws-headers: {}
-    tls: true
-  - name: 亚太地区+V2CROSS.COM
-    type: trojan
-    server: 163.123.192.57
-    port: '443'
-    password: 41bec492-cd79-4b57-9a15-7d2bb00fcfca
-  - name: 以色列+V2CROSS.COM
-    type: trojan
-    server: uk1.chuqiangtou.net
-    port: '4003'
-    password: TJCfE7Mx2YcA8kX8zg
-  - name: 美国 CloudFlare节点
+    network: ws
+    ws-path: /shirker
+    ws-headers:
+      Host: dp3.scproxy.top
+  - name: 美国 CloudFlare节点 - 2
     type: vmess
     server: cf-lt.sharecentre.online
     port: 80
@@ -32,55 +23,135 @@ proxies:
     ws-path: /shirker
     ws-headers:
       Host: dp4.scproxy.top
-  - name: 日本 V2CROSS.COM
+  - name: 亚太地区+V2CROSS.COM
+    type: trojan
+    server: 163.123.192.60
+    port: '443'
+    password: 41bec492-cd79-4b57-9a15-7d2bb00fcfca
+  - name: 美国 CloudFlare节点 - 3
     type: vmess
-    server: seoul.csi7lahsc.com
-    port: 9001
-    uuid: e2b7549f-667f-41e8-d501-ae59fc82db60
+    server: speed.76898102.xyz
+    port: 443
+    uuid: dddd0b29-1576-4003-9990-d7cea34264db
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /video
+    ws-path: /835757
+    ws-headers:
+      Host: dedi2.1808.cf
+    tls: true
+  - name: 以色列+V2CROSS.COM
+    type: trojan
+    server: 149.50.75.81
+    port: '4003'
+    password: TJCfE7Mx2YcA8kX8zg
+  - name: 美国 CloudFlare节点 - 4
+    type: vmess
+    server: cf-yd-dns.sharecentre.online
+    port: 80
+    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /shirker
+    ws-headers:
+      Host: dp3.scproxy.top
+  - name: 美国 Datability
+    type: vmess
+    server: 140.99.57.2
+    port: 50002
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
     ws-headers:
       Host: ''
   - name: 以色列+V2CROSS.COM - 2
     type: trojan
-    server: us3.chuqiangtou.net
-    port: 4003?sni=us3.chuqiangtou.net
+    server: 149.50.69.109
+    port: '4003'
     password: TJCfE7Mx2YcA8kX8zg
+  - name: 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+    type: vmess
+    server: 107.167.16.101
+    port: 47074
+    uuid: b74f4afa-1a57-4aff-b7e5-8ad5ea33566f
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国+V2CROSS.COM
+    type: trojan
+    server: 148.59.74.52
+    port: 443?sni=18-140-66-207.nhost.00cdn.com
+    password: 41bec492-cd79-4b57-9a15-7d2bb00fcfca
+  - name: 美国 CloudFlare节点 - 5
+    type: vmess
+    server: cfcdn.sanfencdn.net
+    port: 443
+    uuid: 698115e4-1494-4f4a-85a9-76cd011d3ac6
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /zh-cn
+    ws-headers:
+      Host: us6.sanfencdn.net
+    tls: true
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 Xerox
-      - 亚太地区+V2CROSS.COM
-      - 以色列+V2CROSS.COM
       - 美国 CloudFlare节点
-      - 日本 V2CROSS.COM
+      - 美国 CloudFlare节点 - 2
+      - 亚太地区+V2CROSS.COM
+      - 美国 CloudFlare节点 - 3
+      - 以色列+V2CROSS.COM
+      - 美国 CloudFlare节点 - 4
+      - 美国 Datability
       - 以色列+V2CROSS.COM - 2
+      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+      - 美国+V2CROSS.COM
+      - 美国 CloudFlare节点 - 5
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 Xerox
-      - 亚太地区+V2CROSS.COM
-      - 以色列+V2CROSS.COM
       - 美国 CloudFlare节点
-      - 日本 V2CROSS.COM
+      - 美国 CloudFlare节点 - 2
+      - 亚太地区+V2CROSS.COM
+      - 美国 CloudFlare节点 - 3
+      - 以色列+V2CROSS.COM
+      - 美国 CloudFlare节点 - 4
+      - 美国 Datability
       - 以色列+V2CROSS.COM - 2
+      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+      - 美国+V2CROSS.COM
+      - 美国 CloudFlare节点 - 5
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 Xerox
-      - 亚太地区+V2CROSS.COM
-      - 以色列+V2CROSS.COM
       - 美国 CloudFlare节点
-      - 日本 V2CROSS.COM
+      - 美国 CloudFlare节点 - 2
+      - 亚太地区+V2CROSS.COM
+      - 美国 CloudFlare节点 - 3
+      - 以色列+V2CROSS.COM
+      - 美国 CloudFlare节点 - 4
+      - 美国 Datability
       - 以色列+V2CROSS.COM - 2
+      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+      - 美国+V2CROSS.COM
+      - 美国 CloudFlare节点 - 5
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
