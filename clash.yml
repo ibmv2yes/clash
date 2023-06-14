@@ -1,34 +1,4 @@
 proxies:
-  - name: 日本+东京都品川区Linode数据中心
-    type: ss
-    server: free.themars.top
-    port: '32103'
-    cipher: chacha20-ietf-poly1305
-    password: b89b39c2-dc8d-4595-a4c5-54b4fbab3fc2
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: cf-lt.sharecentre.online
-    port: 80
-    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /shirker
-    ws-headers:
-      Host: lv3.sharecentrepro.org
-  - name: 广东省佛山市 移动
-    type: vmess
-    server: 8.v2-ray.cyou
-    port: 23608
-    uuid: 0dd19d20-ec86-3680-b256-87237bafa89e
-    alterId: 2
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: 8.v2-ray.cyou
   - name: 美国 V2CROSS.COM
     type: vmess
     server: melb.csi7lahsc.com
@@ -41,47 +11,76 @@ proxies:
     ws-path: /video
     ws-headers:
       Host: ''
-  - name: 美国 CloudFlare节点 - 2
+  - name: 美国 加利福尼亚州洛杉矶市SharkTech数据中心
     type: vmess
-    server: cf-lt.sharecentre.online
-    port: 8080
-    uuid: d16c31a2-93a3-4f1a-954c-e383b14a4d26
+    server: 107.167.16.101
+    port: 47074
+    uuid: b74f4afa-1a57-4aff-b7e5-8ad5ea33566f
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 以色列+V2CROSS.COM
+    type: trojan
+    server: 149.50.77.102
+    port: '4003'
+    password: TJCfE7Mx2YcA8kX8zg
+  - name: 美国 V2CROSS.COM - 2
+    type: vmess
+    server: 137.175.1.12
+    port: 53403
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: cf.yxjnode.com
+    port: 80
+    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /api/v3/download.getFile
+    ws-path: /yxzbp
     ws-headers:
-      Host: ssrsub.v01.ssrsub.com
+      Host: dp1.yxjnode.com
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 日本+东京都品川区Linode数据中心
-      - 美国 CloudFlare节点
-      - 广东省佛山市 移动
       - 美国 V2CROSS.COM
-      - 美国 CloudFlare节点 - 2
+      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+      - 以色列+V2CROSS.COM
+      - 美国 V2CROSS.COM - 2
+      - 美国 CloudFlare节点
   - name: 自动选择
     type: url-test
     proxies:
-      - 日本+东京都品川区Linode数据中心
-      - 美国 CloudFlare节点
-      - 广东省佛山市 移动
       - 美国 V2CROSS.COM
-      - 美国 CloudFlare节点 - 2
+      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+      - 以色列+V2CROSS.COM
+      - 美国 V2CROSS.COM - 2
+      - 美国 CloudFlare节点
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 日本+东京都品川区Linode数据中心
-      - 美国 CloudFlare节点
-      - 广东省佛山市 移动
       - 美国 V2CROSS.COM
-      - 美国 CloudFlare节点 - 2
+      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+      - 以色列+V2CROSS.COM
+      - 美国 V2CROSS.COM - 2
+      - 美国 CloudFlare节点
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
