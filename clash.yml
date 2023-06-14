@@ -1,7 +1,7 @@
 proxies:
   - name: 美国 CloudFlare节点
     type: vmess
-    server: cf-dx-dns.sharecentre.online
+    server: cf-lt.sharecentre.online
     port: 80
     uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
     alterId: 0
@@ -10,42 +10,12 @@ proxies:
     network: ws
     ws-path: /shirker
     ws-headers:
-      Host: dp1.scproxy.top
-  - name: 英国 伦敦Linode数据中心
+      Host: lv3.sharecentrepro.org
+  - name: 美国 加利福尼亚州洛杉矶Sharktech数据中心
     type: vmess
-    server: vuk1.0bad.com
-    port: 443
-    uuid: 927094d3-d678-4763-8591-e240d0bcae87
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /chat
-    ws-headers:
-      Host: ''
-    tls: true
-  - name: 美国+Microsoft数据中心
-    type: trojan
-    server: jp.stablize.top
-    port: '443'
-    password: 40297165-0545-4f8f-abc4-3ee25e6cfb87
-  - name: 美国 V2CROSS.COM
-    type: vmess
-    server: 104.31.16.28
-    port: 80
-    uuid: 58fe1542-5290-40ad-815a-77707a81afe5
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /IOebhLMhl1CTbFHbL95myfRX2
-    ws-headers:
-      Host: ca4.tehme2.fun
-  - name: 美国 加利福尼亚州洛杉矶市SharkTech数据中心
-    type: vmess
-    server: 107.167.16.101
-    port: 47074
-    uuid: b74f4afa-1a57-4aff-b7e5-8ad5ea33566f
+    server: 64.32.4.6
+    port: 50005
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
     udp: true
@@ -53,19 +23,29 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 德国 黑森州法兰克福Choopa数据中心
+  - name: 美国 CloudFlare公司CDN节点(shopify)
     type: vmess
-    server: ipV2Ray-mtn3.ddns.net
-    port: 2087
-    uuid: abfda70a-cb03-4a41-957c-3ff6972c79a5
+    server: 23.227.38.99
+    port: 443
+    uuid: 86d37526-5758-4cec-862f-df404b313086
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /
+    ws-path: /3G6WPDL7
     ws-headers:
-      Host: info.mashshop.top
+      Host: 1.freek1.xyz
     tls: true
+  - name: 美国+Microsoft数据中心
+    type: trojan
+    server: usa.stablize.top
+    port: '443'
+    password: e81c0cf0-d4f4-402e-81ee-4eb19a832ffa
+  - name: 以色列+V2CROSS.COM
+    type: trojan
+    server: us2.chuqiangtou.net
+    port: '4003'
+    password: TJCfE7Mx2YcA8kX8zg
 proxy-groups:
   - name: Free-servers
     type: select
@@ -73,31 +53,28 @@ proxy-groups:
       - 自动选择
       - 故障转移
       - 美国 CloudFlare节点
-      - 英国 伦敦Linode数据中心
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 美国 CloudFlare公司CDN节点(shopify)
       - 美国+Microsoft数据中心
-      - 美国 V2CROSS.COM
-      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
-      - 德国 黑森州法兰克福Choopa数据中心
+      - 以色列+V2CROSS.COM
   - name: 自动选择
     type: url-test
     proxies:
       - 美国 CloudFlare节点
-      - 英国 伦敦Linode数据中心
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 美国 CloudFlare公司CDN节点(shopify)
       - 美国+Microsoft数据中心
-      - 美国 V2CROSS.COM
-      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
-      - 德国 黑森州法兰克福Choopa数据中心
+      - 以色列+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
       - 美国 CloudFlare节点
-      - 英国 伦敦Linode数据中心
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 美国 CloudFlare公司CDN节点(shopify)
       - 美国+Microsoft数据中心
-      - 美国 V2CROSS.COM
-      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
-      - 德国 黑森州法兰克福Choopa数据中心
+      - 以色列+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
