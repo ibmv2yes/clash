@@ -1,4 +1,17 @@
 proxies:
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: v2ray.online
+    port: 443
+    uuid: 00BBF5B8-173E-6818-9927-5AD1AA073C7D
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /speedtest
+    ws-headers:
+      Host: Kansas.v2ray.online
+    tls: true
   - name: 美国 Datability
     type: vmess
     server: 140.99.57.2
@@ -11,69 +24,110 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: cf-dx-dns.sharecentre.online
-    port: 80
-    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /shirker
-    ws-headers:
-      Host: dp1.scproxy.top
-  - name: 亚太地区+V2CROSS.COM
+  - name: 台湾省+中华电信(HiNet)数据中心
     type: trojan
-    server: 163.123.192.60
-    port: '443'
-    password: 41bec492-cd79-4b57-9a15-7d2bb00fcfca
-  - name: 以色列+V2CROSS.COM
-    type: trojan
-    server: 149.50.75.76
-    port: '4003'
-    password: TJCfE7Mx2YcA8kX8zg
+    server: kaizen-tw-6.paolu.co
+    port: 443?sni=paydiu.com
+    password: 0d4926a0-9881-3609-b6ee-4716da84e59emielink
   - name: 美国 CloudFlare节点 - 2
     type: vmess
-    server: cf-yd-dns.sharecentre.online
-    port: 80
-    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
+    server: 172.67.147.152
+    port: 443
+    uuid: 9e6ceeff-2546-3690-ac00-6fcdf31dec94
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /shirker
+    ws-path: /cutino
     ws-headers:
-      Host: dp3.scproxy.top
+      Host: chat.samrg.buzz
+    tls: true
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: 108.186.4.2
+    port: 49982
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国+Microsoft数据中心
+    type: trojan
+    server: jp.stablize.top
+    port: '443'
+    password: 40297165-0545-4f8f-abc4-3ee25e6cfb87
+  - name: 美国+V2CROSS.COM
+    type: ss
+    server: 172.99.188.99
+    port: '5001'
+    cipher: aes-256-gcm
+    password: Y6R9pAtvxxzmGC
+  - name: 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+    type: vmess
+    server: 107.167.16.90
+    port: 45689
+    uuid: 7640a1e7-9701-428e-a4b2-19b3e7dd6f9f
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-headers: {}
+  - name: 香港 BGP.NET CN2数据中心
+    type: vmess
+    server: 202.79.174.157
+    port: 55264
+    uuid: 121c9c89-7d11-4f49-9112-dc1e85363f6f
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 Datability
       - 美国 CloudFlare节点
-      - 亚太地区+V2CROSS.COM
-      - 以色列+V2CROSS.COM
+      - 美国 Datability
+      - 台湾省+中华电信(HiNet)数据中心
       - 美国 CloudFlare节点 - 2
+      - 美国 V2CROSS.COM
+      - 美国+Microsoft数据中心
+      - 美国+V2CROSS.COM
+      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+      - 香港 BGP.NET CN2数据中心
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 Datability
       - 美国 CloudFlare节点
-      - 亚太地区+V2CROSS.COM
-      - 以色列+V2CROSS.COM
+      - 美国 Datability
+      - 台湾省+中华电信(HiNet)数据中心
       - 美国 CloudFlare节点 - 2
+      - 美国 V2CROSS.COM
+      - 美国+Microsoft数据中心
+      - 美国+V2CROSS.COM
+      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+      - 香港 BGP.NET CN2数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 Datability
       - 美国 CloudFlare节点
-      - 亚太地区+V2CROSS.COM
-      - 以色列+V2CROSS.COM
+      - 美国 Datability
+      - 台湾省+中华电信(HiNet)数据中心
       - 美国 CloudFlare节点 - 2
+      - 美国 V2CROSS.COM
+      - 美国+Microsoft数据中心
+      - 美国+V2CROSS.COM
+      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+      - 香港 BGP.NET CN2数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
