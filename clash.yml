@@ -1,85 +1,51 @@
 proxies:
   - name: 美国 CloudFlare节点
     type: vmess
-    server: v2ray.online
-    port: 443
-    uuid: 00BBF5B8-173E-6818-9927-5AD1AA073C7D
+    server: cf-dx-dns.sharecentre.online
+    port: 80
+    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /speedtest
+    ws-path: /shirker
     ws-headers:
-      Host: Kansas.v2ray.online
-    tls: true
-  - name: 美国 Datability
+      Host: dp1.scproxy.top
+  - name: 英国 伦敦Linode数据中心
     type: vmess
-    server: 140.99.57.2
-    port: 50002
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 台湾省+中华电信(HiNet)数据中心
-    type: trojan
-    server: kaizen-tw-6.paolu.co
-    port: 443?sni=paydiu.com
-    password: 0d4926a0-9881-3609-b6ee-4716da84e59emielink
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: 172.67.147.152
+    server: vuk1.0bad.com
     port: 443
-    uuid: 9e6ceeff-2546-3690-ac00-6fcdf31dec94
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /cutino
-    ws-headers:
-      Host: chat.samrg.buzz
-    tls: true
-  - name: 美国 V2CROSS.COM
-    type: vmess
-    server: 108.186.4.2
-    port: 49982
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
+    ws-path: /chat
     ws-headers:
       Host: ''
+    tls: true
   - name: 美国+Microsoft数据中心
     type: trojan
     server: jp.stablize.top
     port: '443'
     password: 40297165-0545-4f8f-abc4-3ee25e6cfb87
-  - name: 美国+V2CROSS.COM
-    type: ss
-    server: 172.99.188.99
-    port: '5001'
-    cipher: aes-256-gcm
-    password: Y6R9pAtvxxzmGC
-  - name: 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+  - name: 美国 V2CROSS.COM
     type: vmess
-    server: 107.167.16.90
-    port: 45689
-    uuid: 7640a1e7-9701-428e-a4b2-19b3e7dd6f9f
-    alterId: 64
+    server: 104.31.16.28
+    port: 80
+    uuid: 58fe1542-5290-40ad-815a-77707a81afe5
+    alterId: 0
     cipher: auto
     udp: true
-    network: tcp
-    ws-headers: {}
-  - name: 香港 BGP.NET CN2数据中心
+    network: ws
+    ws-path: /IOebhLMhl1CTbFHbL95myfRX2
+    ws-headers:
+      Host: ca4.tehme2.fun
+  - name: 美国 加利福尼亚州洛杉矶市SharkTech数据中心
     type: vmess
-    server: 202.79.174.157
-    port: 55264
-    uuid: 121c9c89-7d11-4f49-9112-dc1e85363f6f
+    server: 107.167.16.101
+    port: 47074
+    uuid: b74f4afa-1a57-4aff-b7e5-8ad5ea33566f
     alterId: 64
     cipher: auto
     udp: true
@@ -87,6 +53,19 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
+  - name: 德国 黑森州法兰克福Choopa数据中心
+    type: vmess
+    server: ipV2Ray-mtn3.ddns.net
+    port: 2087
+    uuid: abfda70a-cb03-4a41-957c-3ff6972c79a5
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: info.mashshop.top
+    tls: true
 proxy-groups:
   - name: Free-servers
     type: select
@@ -94,40 +73,31 @@ proxy-groups:
       - 自动选择
       - 故障转移
       - 美国 CloudFlare节点
-      - 美国 Datability
-      - 台湾省+中华电信(HiNet)数据中心
-      - 美国 CloudFlare节点 - 2
-      - 美国 V2CROSS.COM
+      - 英国 伦敦Linode数据中心
       - 美国+Microsoft数据中心
-      - 美国+V2CROSS.COM
+      - 美国 V2CROSS.COM
       - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
-      - 香港 BGP.NET CN2数据中心
+      - 德国 黑森州法兰克福Choopa数据中心
   - name: 自动选择
     type: url-test
     proxies:
       - 美国 CloudFlare节点
-      - 美国 Datability
-      - 台湾省+中华电信(HiNet)数据中心
-      - 美国 CloudFlare节点 - 2
-      - 美国 V2CROSS.COM
+      - 英国 伦敦Linode数据中心
       - 美国+Microsoft数据中心
-      - 美国+V2CROSS.COM
+      - 美国 V2CROSS.COM
       - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
-      - 香港 BGP.NET CN2数据中心
+      - 德国 黑森州法兰克福Choopa数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
       - 美国 CloudFlare节点
-      - 美国 Datability
-      - 台湾省+中华电信(HiNet)数据中心
-      - 美国 CloudFlare节点 - 2
-      - 美国 V2CROSS.COM
+      - 英国 伦敦Linode数据中心
       - 美国+Microsoft数据中心
-      - 美国+V2CROSS.COM
+      - 美国 V2CROSS.COM
       - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
-      - 香港 BGP.NET CN2数据中心
+      - 德国 黑森州法兰克福Choopa数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
