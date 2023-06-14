@@ -1,42 +1,71 @@
 proxies:
-  - name: 日本 东京PEG TECH
-    type: vmess
-    server: 104.233.139.241
-    port: 443
-    uuid: bd7e6d2d-c7d9-4f1d-8af1-a7c194008d8f
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /path/080712342310
-    ws-headers:
-      Host: ''
-    tls: true
-  - name: 广东省佛山市 移动
-    type: vmess
-    server: 8.v2-ray.cyou
-    port: 23608
-    uuid: 0dd19d20-ec86-3680-b256-87237bafa89e
-    alterId: 2
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: 8.v2-ray.cyou
   - name: 美国 CloudFlare节点
     type: vmess
-    server: cf.yxjnode.com
+    server: cf-lt.sharecentre.online
     port: 80
-    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
+    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /yxzbp
+    ws-path: /shirker
     ws-headers:
-      Host: dp1.yxjnode.com
+      Host: lv3.sharecentrepro.org
+  - name: 香港 腾讯云
+    type: vmess
+    server: 43.154.76.92
+    port: 21857
+    uuid: 784272d2-bd2d-438a-bbd4-1271bb1f1b0d
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /hk15/getData
+    ws-headers:
+      Host: hk15.verichains.co
+    tls: true
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: 104.31.16.28
+    port: 80
+    uuid: 58fe1542-5290-40ad-815a-77707a81afe5
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /IOebhLMhl1CTbFHbL95myfRX2
+    ws-headers:
+      Host: ca4.tehme2.fun
+  - name: 美国 V2CROSS.COM - 2
+    type: vmess
+    server: 104.31.16.45
+    port: 80
+    uuid: 2fcc2939-7dcf-4741-aa03-825bc40e23fd
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /CZfczvtieCZXdOlgWhgDLX
+    ws-headers:
+      Host: de3.irteh.fun
+  - name: 以色列+V2CROSS.COM
+    type: trojan
+    server: 149.50.77.95
+    port: '4003'
+    password: TJCfE7Mx2YcA8kX8zg
   - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: cf-lt.sharecentre.online
+    port: 8080
+    uuid: d16c31a2-93a3-4f1a-954c-e383b14a4d26
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /api/v3/download.getFile
+    ws-headers:
+      Host: ssrsub.v03.ssrsub.com
+  - name: 美国 CloudFlare节点 - 3
     type: vmess
     server: 172.67.147.152
     port: 443
@@ -49,114 +78,56 @@ proxies:
     ws-headers:
       Host: chat.samrg.buzz
     tls: true
-  - name: 美国 Datability
+  - name: 美国 CloudFlare节点 - 4
     type: vmess
-    server: 140.99.57.38
-    port: 54002
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国 加利福尼亚州洛杉矶Sharktech数据中心
-    type: vmess
-    server: 67.21.95.73
-    port: 53314
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国+Microsoft数据中心
-    type: trojan
-    server: usa.stablize.top
-    port: '443'
-    password: e81c0cf0-d4f4-402e-81ee-4eb19a832ffa
-  - name: 美国 CloudFlare节点 - 3
-    type: vmess
-    server: 104.17.53.191
-    port: 443
-    uuid: dddd0b29-1576-4003-9990-d7cea34264db
+    server: cf-yd-dns.sharecentre.online
+    port: 80
+    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /835757
+    ws-path: /shirker
     ws-headers:
-      Host: dedi2.1808.cf
-    tls: true
-  - name: 广东省 移动
-    type: vmess
-    server: cctv.iepl01.yuntiair365.top
-    port: 53003
-    uuid: 6c210104-de21-321c-a4b7-418af3844a6c
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-headers: {}
-  - name: 南非 V2CROSS.COM
-    type: vmess
-    server: 156.225.67.41
-    port: 53866
-    uuid: de491802-233e-47f2-8c6c-d19bcf5bd56b
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: ''
-    ws-headers:
-      Host: ''
+      Host: dp3.scproxy.top
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 日本 东京PEG TECH
-      - 广东省佛山市 移动
       - 美国 CloudFlare节点
+      - 香港 腾讯云
+      - 美国 V2CROSS.COM
+      - 美国 V2CROSS.COM - 2
+      - 以色列+V2CROSS.COM
       - 美国 CloudFlare节点 - 2
-      - 美国 Datability
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
-      - 美国+Microsoft数据中心
       - 美国 CloudFlare节点 - 3
-      - 广东省 移动
-      - 南非 V2CROSS.COM
+      - 美国 CloudFlare节点 - 4
   - name: 自动选择
     type: url-test
     proxies:
-      - 日本 东京PEG TECH
-      - 广东省佛山市 移动
       - 美国 CloudFlare节点
+      - 香港 腾讯云
+      - 美国 V2CROSS.COM
+      - 美国 V2CROSS.COM - 2
+      - 以色列+V2CROSS.COM
       - 美国 CloudFlare节点 - 2
-      - 美国 Datability
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
-      - 美国+Microsoft数据中心
       - 美国 CloudFlare节点 - 3
-      - 广东省 移动
-      - 南非 V2CROSS.COM
+      - 美国 CloudFlare节点 - 4
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 日本 东京PEG TECH
-      - 广东省佛山市 移动
       - 美国 CloudFlare节点
+      - 香港 腾讯云
+      - 美国 V2CROSS.COM
+      - 美国 V2CROSS.COM - 2
+      - 以色列+V2CROSS.COM
       - 美国 CloudFlare节点 - 2
-      - 美国 Datability
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
-      - 美国+Microsoft数据中心
       - 美国 CloudFlare节点 - 3
-      - 广东省 移动
-      - 南非 V2CROSS.COM
+      - 美国 CloudFlare节点 - 4
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
