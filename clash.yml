@@ -11,43 +11,6 @@ proxies:
     ws-path: /yxzbp
     ws-headers:
       Host: dp1.yxjnode.com
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: cf.yxjnode.com
-    port: 80
-    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /yxzbp
-    ws-headers:
-      Host: dp1.yxjnode.com
-  - name: 美国 CloudFlare节点 - 3
-    type: vmess
-    server: speed.76898102.xyz
-    port: 443
-    uuid: dddd0b29-1576-4003-9990-d7cea34264db
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /835757
-    ws-headers:
-      Host: dedi2.1808.cf
-    tls: true
-  - name: 美国 CloudFlare节点 - 4
-    type: vmess
-    server: 104.18.23.26
-    port: 8080
-    uuid: dcafb669-fefc-4994-e3a9-5f40ed6aa7cf
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /sshtproject
-    ws-headers:
-      Host: v2free.sshtproect.shop
   - name: 香港 BGP.NET CN2数据中心
     type: vmess
     server: 202.79.174.157
@@ -60,23 +23,40 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国+Microsoft数据中心
-    type: trojan
-    server: usa.stablize.top
-    port: '443'
-    password: e81c0cf0-d4f4-402e-81ee-4eb19a832ffa
-  - name: 美国 加利福尼亚州森尼韦尔市PEG TECH公司
+  - name: 广东省佛山市 移动
     type: vmess
-    server: 142.0.132.93
-    port: 55502
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
+    server: 8.v2-ray.cyou
+    port: 23608
+    uuid: 0dd19d20-ec86-3680-b256-87237bafa89e
+    alterId: 2
     cipher: auto
     udp: true
     network: tcp
     ws-path: /
     ws-headers:
+      Host: 8.v2-ray.cyou
+  - name: 加拿大 V2CROSS.COM
+    type: vmess
+    server: 198.252.107.21
+    port: 80
+    uuid: 19537db7-b002-4a60-8f91-59461bf56c3b
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /zingfast.vn
+    ws-headers:
       Host: ''
+  - name: 美国+Microsoft数据中心
+    type: trojan
+    server: ap.stablize.top
+    port: '443'
+    password: 27509bd6-5096-4790-9eba-2c793cca7a8d
+  - name: 以色列+V2CROSS.COM
+    type: trojan
+    server: 149.50.77.95
+    port: '4003'
+    password: TJCfE7Mx2YcA8kX8zg
 proxy-groups:
   - name: Free-servers
     type: select
@@ -84,34 +64,31 @@ proxy-groups:
       - 自动选择
       - 故障转移
       - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
       - 香港 BGP.NET CN2数据中心
+      - 广东省佛山市 移动
+      - 加拿大 V2CROSS.COM
       - 美国+Microsoft数据中心
-      - 美国 加利福尼亚州森尼韦尔市PEG TECH公司
+      - 以色列+V2CROSS.COM
   - name: 自动选择
     type: url-test
     proxies:
       - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
       - 香港 BGP.NET CN2数据中心
+      - 广东省佛山市 移动
+      - 加拿大 V2CROSS.COM
       - 美国+Microsoft数据中心
-      - 美国 加利福尼亚州森尼韦尔市PEG TECH公司
+      - 以色列+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
       - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
       - 香港 BGP.NET CN2数据中心
+      - 广东省佛山市 移动
+      - 加拿大 V2CROSS.COM
       - 美国+Microsoft数据中心
-      - 美国 加利福尼亚州森尼韦尔市PEG TECH公司
+      - 以色列+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
