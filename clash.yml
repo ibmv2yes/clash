@@ -1,59 +1,62 @@
 proxies:
-  - name: 美国 CloudFlare节点
+  - name: 美国+加利福尼亚州洛杉矶Level3通信(DIA)
+    type: trojan
+    server: usa.stablize.top
+    port: '443'
+    password: e81c0cf0-d4f4-402e-81ee-4eb19a832ffa
+  - name: 德国+V2CROSS.COM
+    type: trojan
+    server: 217.79.181.82
+    port: 443?sni=download.xn--mes358acgm99l.com
+    password: 7f4e8527-79da-49c3-8ca8-64eef120882f
+  - name: 以色列+V2CROSS.COM
+    type: trojan
+    server: 149.50.77.97
+    port: '4003'
+    password: TJCfE7Mx2YcA8kX8zg
+  - name: 英国 V2CROSS.COM
     type: vmess
-    server: cf-lt.sharecentre.online
-    port: 80
-    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /shirker
-    ws-headers:
-      Host: lv3.sharecentrepro.org
-  - name: 香港 腾讯云
-    type: vmess
-    server: 43.154.76.92
-    port: 21857
-    uuid: 784272d2-bd2d-438a-bbd4-1271bb1f1b0d
+    server: 171.22.134.2
+    port: 53433
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
     udp: true
-    network: ws
-    ws-path: /hk15/getData
+    network: tcp
+    ws-path: /
     ws-headers:
-      Host: hk15.verichains.co
-    tls: true
+      Host: ''
+  - name: 美国 加利福尼亚州洛杉矶Sharktech数据中心
+    type: vmess
+    server: 67.21.95.73
+    port: 53314
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国+V2CROSS.COM
+    type: ss
+    server: 172.99.188.99
+    port: '5003'
+    cipher: aes-256-gcm
+    password: g5MeD6Ft3CWlJId
   - name: 美国 V2CROSS.COM
     type: vmess
-    server: 104.31.16.28
-    port: 80
-    uuid: 58fe1542-5290-40ad-815a-77707a81afe5
-    alterId: 0
+    server: 137.175.61.130
+    port: 46679
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
     cipher: auto
     udp: true
-    network: ws
-    ws-path: /IOebhLMhl1CTbFHbL95myfRX2
+    network: tcp
+    ws-path: /
     ws-headers:
-      Host: ca4.tehme2.fun
-  - name: 美国 V2CROSS.COM - 2
-    type: vmess
-    server: 104.31.16.45
-    port: 80
-    uuid: 2fcc2939-7dcf-4741-aa03-825bc40e23fd
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /CZfczvtieCZXdOlgWhgDLX
-    ws-headers:
-      Host: de3.irteh.fun
-  - name: 以色列+V2CROSS.COM
-    type: trojan
-    server: 149.50.77.95
-    port: '4003'
-    password: TJCfE7Mx2YcA8kX8zg
-  - name: 美国 CloudFlare节点 - 2
+      Host: ''
+  - name: 美国 CloudFlare节点
     type: vmess
     server: cf-lt.sharecentre.online
     port: 8080
@@ -64,70 +67,75 @@ proxies:
     network: ws
     ws-path: /api/v3/download.getFile
     ws-headers:
-      Host: ssrsub.v03.ssrsub.com
-  - name: 美国 CloudFlare节点 - 3
+      Host: ssrsub.v02.ssrsub.com
+  - name: 美国 V2CROSS.COM - 2
     type: vmess
-    server: 172.67.147.152
-    port: 443
-    uuid: 9e6ceeff-2546-3690-ac00-6fcdf31dec94
-    alterId: 0
+    server: 108.186.4.2
+    port: 49982
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
     cipher: auto
     udp: true
-    network: ws
-    ws-path: /cutino
+    network: tcp
+    ws-path: /
     ws-headers:
-      Host: chat.samrg.buzz
-    tls: true
-  - name: 美国 CloudFlare节点 - 4
+      Host: ''
+  - name: 美国 V2CROSS.COM - 3
     type: vmess
-    server: cf-yd-dns.sharecentre.online
-    port: 80
-    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
-    alterId: 0
+    server: 137.175.1.6
+    port: 53403
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
     cipher: auto
     udp: true
-    network: ws
-    ws-path: /shirker
+    network: tcp
+    ws-path: /
     ws-headers:
-      Host: dp3.scproxy.top
+      Host: ''
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 CloudFlare节点
-      - 香港 腾讯云
-      - 美国 V2CROSS.COM
-      - 美国 V2CROSS.COM - 2
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
+      - 德国+V2CROSS.COM
       - 以色列+V2CROSS.COM
-      - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
+      - 英国 V2CROSS.COM
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 美国+V2CROSS.COM
+      - 美国 V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 美国 V2CROSS.COM - 2
+      - 美国 V2CROSS.COM - 3
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 CloudFlare节点
-      - 香港 腾讯云
-      - 美国 V2CROSS.COM
-      - 美国 V2CROSS.COM - 2
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
+      - 德国+V2CROSS.COM
       - 以色列+V2CROSS.COM
-      - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
+      - 英国 V2CROSS.COM
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 美国+V2CROSS.COM
+      - 美国 V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 美国 V2CROSS.COM - 2
+      - 美国 V2CROSS.COM - 3
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 CloudFlare节点
-      - 香港 腾讯云
-      - 美国 V2CROSS.COM
-      - 美国 V2CROSS.COM - 2
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
+      - 德国+V2CROSS.COM
       - 以色列+V2CROSS.COM
-      - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
+      - 英国 V2CROSS.COM
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 美国+V2CROSS.COM
+      - 美国 V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 美国 V2CROSS.COM - 2
+      - 美国 V2CROSS.COM - 3
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
