@@ -1,72 +1,49 @@
 proxies:
-  - name: 美国 V2CROSS.COM
-    type: vmess
-    server: 104.31.16.45
-    port: 80
-    uuid: 2fcc2939-7dcf-4741-aa03-825bc40e23fd
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /CZfczvtieCZXdOlgWhgDLX
-    ws-headers:
-      Host: de3.irteh.fun
-  - name: 南非豪登省约翰内斯堡 Cloudinnovation数据中心
-    type: vmess
-    server: 156.249.18.68
-    port: 36322
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
   - name: 以色列+V2CROSS.COM
     type: trojan
-    server: 149.50.75.89
+    server: nl3.chuqiangtou.net
     port: '4003'
     password: TJCfE7Mx2YcA8kX8zg
-  - name: 美国+V2CROSS.COM
-    type: trojan
-    server: 152.70.74.66
-    port: 443?security=tls&type=tcp&headerType=none
-    password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
+  - name: 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+    type: vmess
+    server: 107.167.16.101
+    port: 47074
+    uuid: b74f4afa-1a57-4aff-b7e5-8ad5ea33566f
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
   - name: 美国 CloudFlare节点
     type: vmess
-    server: speed.76898102.xyz
-    port: 443
-    uuid: dddd0b29-1576-4003-9990-d7cea34264db
+    server: cf-lt.sharecentre.online
+    port: 8080
+    uuid: d16c31a2-93a3-4f1a-954c-e383b14a4d26
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /835757
+    ws-path: /api/v3/download.getFile
     ws-headers:
-      Host: dedi2.1808.cf
-    tls: true
-  - name: 美国 CloudFlare节点 - 2
+      Host: ssrsub.v03.ssrsub.com
+  - name: 丹麦 Oracle Corporation
     type: vmess
-    server: 190.93.244.19
-    port: 80
-    uuid: a67679a6-a186-4d62-f84e-f3f00dc7745e
+    server: frankfurt.csi7lahsc.com
+    port: 9001
+    uuid: e2b7549f-667f-41e8-d501-ae59fc82db60
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /youlingkaishi0
+    ws-path: /video
     ws-headers:
-      Host: tou.vtcss.top
-  - name: 以色列+V2CROSS.COM - 2
-    type: trojan
-    server: us2.chuqiangtou.net
-    port: '4003'
-    password: TJCfE7Mx2YcA8kX8zg
-  - name: 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      Host: frankfurt.csi7lahsc.com
+  - name: 美国 Datability
     type: vmess
-    server: 23.225.33.171
-    port: 56662
+    server: 140.99.57.2
+    port: 50002
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -75,23 +52,6 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国+加利福尼亚州洛杉矶Level3通信(DIA)
-    type: trojan
-    server: de.stablize.top
-    port: '443'
-    password: 6f96d269-31bb-4914-b2c9-629e117265ed
-  - name: 美国 V2CROSS.COM - 2
-    type: vmess
-    server: ns1.v2-vip.fun
-    port: 80
-    uuid: 8abe9496-5e24-4e49-b566-dcf86116017d
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /i99LgvSaslbsPLLQQ7j6Z
-    ws-headers:
-      Host: de5.irteh.fun
   - name: 美国弗吉尼亚州阿什本 CloudFlare节点
     type: vmess
     server: 173.245.49.77
@@ -105,53 +65,120 @@ proxies:
     ws-headers:
       Host: eEnUb1xKB.janbaroon.com
     tls: true
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: 104.31.16.28
+    port: 80
+    uuid: 58fe1542-5290-40ad-815a-77707a81afe5
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /IOebhLMhl1CTbFHbL95myfRX2
+    ws-headers:
+      Host: ca4.tehme2.fun
+  - name: 美国 加利福尼亚州旧金山Amazon数据中心
+    type: vmess
+    server: 0kxedm1x8q8lksmj15.xingbayun.buzz
+    port: 443
+    uuid: 08e358c3-869a-4900-8e04-a04e130908ad
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /zh-cn
+    ws-headers:
+      Host: www.microsoft.com
+  - name: 日本 V2CROSS.COM
+    type: vmess
+    server: seoul.csi7lahsc.com
+    port: 9001
+    uuid: e2b7549f-667f-41e8-d501-ae59fc82db60
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /video
+    ws-headers: {}
+  - name: 美国 加利福尼亚州旧金山Amazon数据中心 - 2
+    type: vmess
+    server: 0kxedm1x8q8lksmj14.xingbayun.buzz
+    port: 443
+    uuid: 08e358c3-869a-4900-8e04-a04e130908ad
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /zh-cn
+    ws-headers:
+      Host: www.microsoft.com
+  - name: 以色列+V2CROSS.COM - 2
+    type: trojan
+    server: 149.50.75.90
+    port: '4003'
+    password: TJCfE7Mx2YcA8kX8zg
+  - name: 英国 社会保险安全部
+    type: vmess
+    server: 51.195.209.132
+    port: 2002
+    uuid: a853d91e-c28b-42c8-ee08-a45771005cc2
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /?ed=2048
+    ws-headers:
+      Host: ''
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 V2CROSS.COM
-      - 南非豪登省约翰内斯堡 Cloudinnovation数据中心
       - 以色列+V2CROSS.COM
-      - 美国+V2CROSS.COM
+      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
       - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 以色列+V2CROSS.COM - 2
-      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
-      - 美国 V2CROSS.COM - 2
+      - 丹麦 Oracle Corporation
+      - 美国 Datability
       - 美国弗吉尼亚州阿什本 CloudFlare节点
+      - 美国 V2CROSS.COM
+      - 美国 加利福尼亚州旧金山Amazon数据中心
+      - 日本 V2CROSS.COM
+      - 美国 加利福尼亚州旧金山Amazon数据中心 - 2
+      - 以色列+V2CROSS.COM - 2
+      - 英国 社会保险安全部
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 V2CROSS.COM
-      - 南非豪登省约翰内斯堡 Cloudinnovation数据中心
       - 以色列+V2CROSS.COM
-      - 美国+V2CROSS.COM
+      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
       - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 以色列+V2CROSS.COM - 2
-      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
-      - 美国 V2CROSS.COM - 2
+      - 丹麦 Oracle Corporation
+      - 美国 Datability
       - 美国弗吉尼亚州阿什本 CloudFlare节点
+      - 美国 V2CROSS.COM
+      - 美国 加利福尼亚州旧金山Amazon数据中心
+      - 日本 V2CROSS.COM
+      - 美国 加利福尼亚州旧金山Amazon数据中心 - 2
+      - 以色列+V2CROSS.COM - 2
+      - 英国 社会保险安全部
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 V2CROSS.COM
-      - 南非豪登省约翰内斯堡 Cloudinnovation数据中心
       - 以色列+V2CROSS.COM
-      - 美国+V2CROSS.COM
+      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
       - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 以色列+V2CROSS.COM - 2
-      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
-      - 美国 V2CROSS.COM - 2
+      - 丹麦 Oracle Corporation
+      - 美国 Datability
       - 美国弗吉尼亚州阿什本 CloudFlare节点
+      - 美国 V2CROSS.COM
+      - 美国 加利福尼亚州旧金山Amazon数据中心
+      - 日本 V2CROSS.COM
+      - 美国 加利福尼亚州旧金山Amazon数据中心 - 2
+      - 以色列+V2CROSS.COM - 2
+      - 英国 社会保险安全部
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
