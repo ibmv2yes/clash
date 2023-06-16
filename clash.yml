@@ -1,58 +1,19 @@
 proxies:
-  - name: 以色列+V2CROSS.COM
+  - name: 美国+V2CROSS.COM
     type: trojan
-    server: 149.50.77.108
-    port: '4003'
-    password: TJCfE7Mx2YcA8kX8zg
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: 104.16.150.9
-    port: 443
-    uuid: 3de4ec27-74b4-43e3-bf23-18e726ac80bc
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /P6kpn5UKG40MNLK2
-    ws-headers:
-      Host: XWOp2D.janbaroon.com
-    tls: true
-  - name: 乌克兰 V2CROSS.COM
-    type: vmess
-    server: 195.137.167.163
-    port: 443
-    uuid: A84AD30F-9333-48DA-AA1B-C8CB971B78DF
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /speedtest
-    ws-headers:
-      Host: Kansas.kotick.site
-    tls: true
-  - name: 乌克兰 V2CROSS.COM - 2
-    type: vmess
-    server: 212.110.134.7
-    port: 443
-    uuid: 3de4ec27-74b4-43e3-bf23-18e726ac80bc
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /P6kpn5UKG40MNLK2
-    ws-headers:
-      Host: zHGKLbqn6UM.janbaroon.com
-    tls: true
-  - name: 以色列+V2CROSS.COM - 2
+    server: 152.70.74.66
+    port: 443?security=tls&type=tcp&headerType=none
+    password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
+  - name: 美国+DXC+Technology
     type: trojan
-    server: 149.50.77.97
-    port: '4003'
-    password: TJCfE7Mx2YcA8kX8zg
-  - name: 南非 V2CROSS.COM
+    server: ap.stablize.top
+    port: 443?sni=ap.stablize.top
+    password: 1e8db890-68da-4dff-8a16-ded8fabcb3c3
+  - name: 美国加利福尼亚州洛杉矶 PetaExpress
     type: vmess
-    server: 156.225.67.116
-    port: 49872
-    uuid: 84d1de11-ce12-4a15-8312-1338356d4ac4
+    server: 198.2.204.241
+    port: 46902
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
     udp: true
@@ -60,25 +21,48 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国 CloudFlare节点 - 2
+  - name: 法国+格拉沃利讷OVH数据中心
+    type: ss
+    server: 54.36.174.181
+    port: '8000'
+    cipher: aes-256-gcm
+    password: KixLvKzwjekG00rm
+  - name: 美国 CloudFlare节点
     type: vmess
-    server: 162.159.243.235
-    port: 443
-    uuid: dddd0b29-1576-4003-9990-d7cea34264db
+    server: cf.yxjnode.com
+    port: 80
+    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /835757
+    ws-path: /yxzbp
     ws-headers:
-      Host: dedi2.1808.cf
-    tls: true
-  - name: 美国+DXC+Technology
+      Host: dp1.yxjnode.com
+  - name: 荷兰 北荷兰省阿姆斯特丹Sharktech数据中心
+    type: vmess
+    server: 45.58.186.85
+    port: 51140
+    uuid: 4a138e19-0595-4d51-83c6-fd276cf7d307
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国+俄亥俄州特拉华、费尔菲尔德与富兰克林县哥伦布市SupremeBytes有限公司
+    type: ss
+    server: 167.160.90.254
+    port: '41122'
+    cipher: aes-256-gcm
+    password: dongtaiwang.com
+  - name: 亚太地区+V2CROSS.COM
     type: trojan
-    server: sg.stablize.top
+    server: 163.123.192.59
     port: '443'
-    password: 1c00f871-d73a-4620-bfad-26273cf68245
-  - name: 美国 CloudFlare节点 - 3
+    password: 41bec492-cd79-4b57-9a15-7d2bb00fcfca
+  - name: 美国 CloudFlare节点 - 2
     type: vmess
     server: 190.93.245.241
     port: 2082
@@ -90,43 +74,34 @@ proxies:
     ws-path: /yulingkaishi01
     ws-headers:
       Host: tou.vtcss.top
-  - name: 美国+V2CROSS.COM
-    type: trojan
-    server: 152.70.74.66
-    port: 443?security=tls&type=tcp&headerType=none
-    password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
-  - name: 以色列+V2CROSS.COM - 3
-    type: trojan
-    server: uk1.barbecuepie.com
-    port: '4003'
-    password: TJCfE7Mx2YcA8kX8zg
-  - name: 美国 V2CROSS.COM
+  - name: 美国 CloudFlare公司CDN节点(shopify)
     type: vmess
-    server: 137.175.18.65
-    port: 42002
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    server: 23.227.38.99
+    port: 443
+    uuid: 86d37526-5758-4cec-862f-df404b313086
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /3G6WPDL7
+    ws-headers:
+      Host: 1.freek1.xyz
+    tls: true
+  - name: 美国+加利福尼亚州洛杉矶Level3通信(DIA)
+    type: trojan
+    server: ovotw.ovogreat.com
+    port: '443'
+    password: 0e40fe8c-23d2-4dee-a9a4-25006da2d0bf
+  - name: 香港 V2CROSS.COM
+    type: vmess
+    server: 156.245.8.129
+    port: 47024
+    uuid: 3ca912da-6ac2-418f-b9cf-45b6f694579b
     alterId: 64
     cipher: auto
     udp: true
     network: tcp
     ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 日本+北海道石狩SAKURA数据中心
-    type: trojan
-    server: trs17.bolab.net
-    port: '22'
-    password: 7a73f1dc97a70905870c0c0484b12145
-  - name: 美国 CloudFlare节点 - 4
-    type: vmess
-    server: tou.vtcss.top
-    port: 2086
-    uuid: 4d2ca583-7e2a-4ef4-ba15-ffc7d9147a32
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /ylks0
     ws-headers:
       Host: ''
 proxy-groups:
@@ -135,56 +110,50 @@ proxy-groups:
     proxies:
       - 自动选择
       - 故障转移
-      - 以色列+V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 乌克兰 V2CROSS.COM
-      - 乌克兰 V2CROSS.COM - 2
-      - 以色列+V2CROSS.COM - 2
-      - 南非 V2CROSS.COM
-      - 美国 CloudFlare节点 - 2
-      - 美国+DXC+Technology
-      - 美国 CloudFlare节点 - 3
       - 美国+V2CROSS.COM
-      - 以色列+V2CROSS.COM - 3
-      - 美国 V2CROSS.COM
-      - 日本+北海道石狩SAKURA数据中心
-      - 美国 CloudFlare节点 - 4
+      - 美国+DXC+Technology
+      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 法国+格拉沃利讷OVH数据中心
+      - 美国 CloudFlare节点
+      - 荷兰 北荷兰省阿姆斯特丹Sharktech数据中心
+      - 美国+俄亥俄州特拉华、费尔菲尔德与富兰克林县哥伦布市SupremeBytes有限公司
+      - 亚太地区+V2CROSS.COM
+      - 美国 CloudFlare节点 - 2
+      - 美国 CloudFlare公司CDN节点(shopify)
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
+      - 香港 V2CROSS.COM
   - name: 自动选择
     type: url-test
     proxies:
-      - 以色列+V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 乌克兰 V2CROSS.COM
-      - 乌克兰 V2CROSS.COM - 2
-      - 以色列+V2CROSS.COM - 2
-      - 南非 V2CROSS.COM
-      - 美国 CloudFlare节点 - 2
-      - 美国+DXC+Technology
-      - 美国 CloudFlare节点 - 3
       - 美国+V2CROSS.COM
-      - 以色列+V2CROSS.COM - 3
-      - 美国 V2CROSS.COM
-      - 日本+北海道石狩SAKURA数据中心
-      - 美国 CloudFlare节点 - 4
+      - 美国+DXC+Technology
+      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 法国+格拉沃利讷OVH数据中心
+      - 美国 CloudFlare节点
+      - 荷兰 北荷兰省阿姆斯特丹Sharktech数据中心
+      - 美国+俄亥俄州特拉华、费尔菲尔德与富兰克林县哥伦布市SupremeBytes有限公司
+      - 亚太地区+V2CROSS.COM
+      - 美国 CloudFlare节点 - 2
+      - 美国 CloudFlare公司CDN节点(shopify)
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
+      - 香港 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 以色列+V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 乌克兰 V2CROSS.COM
-      - 乌克兰 V2CROSS.COM - 2
-      - 以色列+V2CROSS.COM - 2
-      - 南非 V2CROSS.COM
-      - 美国 CloudFlare节点 - 2
-      - 美国+DXC+Technology
-      - 美国 CloudFlare节点 - 3
       - 美国+V2CROSS.COM
-      - 以色列+V2CROSS.COM - 3
-      - 美国 V2CROSS.COM
-      - 日本+北海道石狩SAKURA数据中心
-      - 美国 CloudFlare节点 - 4
+      - 美国+DXC+Technology
+      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 法国+格拉沃利讷OVH数据中心
+      - 美国 CloudFlare节点
+      - 荷兰 北荷兰省阿姆斯特丹Sharktech数据中心
+      - 美国+俄亥俄州特拉华、费尔菲尔德与富兰克林县哥伦布市SupremeBytes有限公司
+      - 亚太地区+V2CROSS.COM
+      - 美国 CloudFlare节点 - 2
+      - 美国 CloudFlare公司CDN节点(shopify)
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
+      - 香港 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
