@@ -1,68 +1,33 @@
 proxies:
-  - name: 美国+V2CROSS.COM
-    type: ss
-    server: 172.99.190.87
-    port: '5500'
-    cipher: aes-256-gcm
-    password: KixLvKzwjekG00rm
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: 45.153.203.85
+    port: 41632
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 加利福尼亚州洛杉矶Sharktech数据中心
+    type: vmess
+    server: 67.21.77.72
+    port: 47140
+    uuid: fabb30e8-3a2c-4149-9651-2758f7712481
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
   - name: 美国 华盛顿Cogent通信公司
     type: vmess
     server: 38.63.0.74
     port: 47002
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 南非 V2CROSS.COM
-    type: vmess
-    server: 156.225.67.20
-    port: 45044
-    uuid: a7fa8f14-4fb6-4280-9005-d6bbe99c5da9
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国 V2CROSS.COM
-    type: vmess
-    server: 74.217.179.187
-    port: 40042
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 以色列+V2CROSS.COM
-    type: trojan
-    server: us2.chuqiangtou.net
-    port: '4003'
-    password: TJCfE7Mx2YcA8kX8zg
-  - name: 广东省佛山市 移动
-    type: vmess
-    server: 8.v2-ray.cyou
-    port: 23608
-    uuid: 0dd19d20-ec86-3680-b256-87237bafa89e
-    alterId: 2
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: 8.v2-ray.cyou
-  - name: 美国加利福尼亚州洛杉矶 CeRaNetworks
-    type: vmess
-    server: 23.225.117.50
-    port: 49231
-    uuid: bb25859e-f6da-4101-989f-b4dd67a22682
     alterId: 64
     cipher: auto
     udp: true
@@ -82,9 +47,55 @@ proxies:
     ws-path: /IOebhLMhl1CTbFHbL95myfRX2
     ws-headers:
       Host: ca4.tehme2.fun
-  - name: 以色列+V2CROSS.COM - 2
+  - name: 美国+纽约市DigitalOcean云公司
     type: trojan
-    server: nl3.barbecuepie.com
+    server: us.blazeppn.info
+    port: '443'
+    password: xxoo
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: dl.v001sssv.pw
+    port: 80
+    uuid: a4bb7f93-cee6-43d7-b2dd-fa9c70b88233
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: dl.v001sssv.pw
+  - name: 美国+V2CROSS.COM
+    type: trojan
+    server: 152.70.74.66
+    port: 443?security=tls&type=tcp&headerType=none
+    password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
+  - name: 南非 V2CROSS.COM
+    type: vmess
+    server: 156.225.67.116
+    port: 49872
+    uuid: 84d1de11-ce12-4a15-8312-1338356d4ac4
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 加利福尼亚州洛杉矶Sharktech数据中心 - 2
+    type: vmess
+    server: 64.32.20.34
+    port: 54042
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /vmess
+    ws-headers:
+      Host: ''
+  - name: 以色列+V2CROSS.COM
+    type: trojan
+    server: 149.50.75.89
     port: '4003'
     password: TJCfE7Mx2YcA8kX8zg
   - name: 法国 ovh
@@ -99,50 +110,107 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: cf-lt.sharecentre.online
+    port: 8080
+    uuid: d16c31a2-93a3-4f1a-954c-e383b14a4d26
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /api/v3/download.getFile
+    ws-headers:
+      Host: ssrsub.v03.ssrsub.com
+  - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: 104.24.169.82
+    port: 2083
+    uuid: e883ff76-3bb4-4008-c068-6b5b1d960ea7
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /youlingkaishi
+    ws-headers:
+      Host: uyaa.vtcss.top
+    tls: true
+  - name: 南非 V2CROSS.COM - 2
+    type: vmess
+    server: 156.225.67.150
+    port: 41139
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 以色列+V2CROSS.COM - 2
+    type: trojan
+    server: 149.50.66.124
+    port: '4003'
+    password: TJCfE7Mx2YcA8kX8zg
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国+V2CROSS.COM
-      - 美国 华盛顿Cogent通信公司
-      - 南非 V2CROSS.COM
       - 美国 V2CROSS.COM
-      - 以色列+V2CROSS.COM
-      - 广东省佛山市 移动
-      - 美国加利福尼亚州洛杉矶 CeRaNetworks
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 美国 华盛顿Cogent通信公司
       - 美国 V2CROSS.COM - 2
-      - 以色列+V2CROSS.COM - 2
+      - 美国+纽约市DigitalOcean云公司
+      - 美国 CloudFlare节点
+      - 美国+V2CROSS.COM
+      - 南非 V2CROSS.COM
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心 - 2
+      - 以色列+V2CROSS.COM
       - 法国 ovh
+      - 美国 CloudFlare节点 - 2
+      - 美国 CloudFlare节点 - 3
+      - 南非 V2CROSS.COM - 2
+      - 以色列+V2CROSS.COM - 2
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国+V2CROSS.COM
-      - 美国 华盛顿Cogent通信公司
-      - 南非 V2CROSS.COM
       - 美国 V2CROSS.COM
-      - 以色列+V2CROSS.COM
-      - 广东省佛山市 移动
-      - 美国加利福尼亚州洛杉矶 CeRaNetworks
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 美国 华盛顿Cogent通信公司
       - 美国 V2CROSS.COM - 2
-      - 以色列+V2CROSS.COM - 2
+      - 美国+纽约市DigitalOcean云公司
+      - 美国 CloudFlare节点
+      - 美国+V2CROSS.COM
+      - 南非 V2CROSS.COM
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心 - 2
+      - 以色列+V2CROSS.COM
       - 法国 ovh
+      - 美国 CloudFlare节点 - 2
+      - 美国 CloudFlare节点 - 3
+      - 南非 V2CROSS.COM - 2
+      - 以色列+V2CROSS.COM - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国+V2CROSS.COM
-      - 美国 华盛顿Cogent通信公司
-      - 南非 V2CROSS.COM
       - 美国 V2CROSS.COM
-      - 以色列+V2CROSS.COM
-      - 广东省佛山市 移动
-      - 美国加利福尼亚州洛杉矶 CeRaNetworks
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 美国 华盛顿Cogent通信公司
       - 美国 V2CROSS.COM - 2
-      - 以色列+V2CROSS.COM - 2
+      - 美国+纽约市DigitalOcean云公司
+      - 美国 CloudFlare节点
+      - 美国+V2CROSS.COM
+      - 南非 V2CROSS.COM
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心 - 2
+      - 以色列+V2CROSS.COM
       - 法国 ovh
+      - 美国 CloudFlare节点 - 2
+      - 美国 CloudFlare节点 - 3
+      - 南非 V2CROSS.COM - 2
+      - 以色列+V2CROSS.COM - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
