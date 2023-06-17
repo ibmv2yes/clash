@@ -1,46 +1,79 @@
 proxies:
   - name: 以色列+V2CROSS.COM
     type: trojan
-    server: 149.50.83.49
+    server: 149.50.70.83
+    port: '4003'
+    password: TJCfE7Mx2YcA8kX8zg
+  - name: 美国+Microsoft数据中心
+    type: trojan
+    server: ovohk.ovogreat.com
+    port: 443?sni=ovohk.ovogreat.com
+    password: 8876657a-6a91-4ee4-8539-cf52f5dfa6f5
+  - name: 美国+DXC+Technology
+    type: trojan
+    server: kr.stablize.top
+    port: '443'
+    password: c8ad75e9-b071-446e-b2e3-ea93b8dd0324
+  - name: 法国+格拉沃利讷OVH数据中心
+    type: ss
+    server: 54.36.174.181
+    port: '9102'
+    cipher: aes-256-gcm
+    password: e4FCWrgpkji3QY
+  - name: 日本+东京Amazon数据中心
+    type: trojan
+    server: hk1.gsjc.cfd
+    port: 443?sni=20-212-60-88.nhost.00cdn.com
+    password: 8f4c052b-6d02-4b08-8674-1535d76c4a54
+  - name: 荷兰 北荷兰省阿姆斯特丹Sharktech数据中心
+    type: vmess
+    server: 45.58.186.85
+    port: 51140
+    uuid: 4a138e19-0595-4d51-83c6-fd276cf7d307
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 以色列+V2CROSS.COM - 2
+    type: trojan
+    server: nl3.barbecuepie.com
     port: '4003'
     password: TJCfE7Mx2YcA8kX8zg
   - name: 美国 CloudFlare节点
     type: vmess
-    server: 104.20.202.81
-    port: 2052
-    uuid: 243240f9-9f5b-4f98-dd5c-e19784d19631
+    server: dl.v001sssv.pw
+    port: 80
+    uuid: a4bb7f93-cee6-43d7-b2dd-fa9c70b88233
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /youlingkaishi
+    ws-path: /
     ws-headers:
-      Host: uyaa.vtcss.top
+      Host: dl.v001sssv.pw
+  - name: 美国+V2CROSS.COM
+    type: trojan
+    server: 148.59.74.248
+    port: 443?sni=20-212-60-88.nhost.00cdn.com
+    password: 8f4c052b-6d02-4b08-8674-1535d76c4a54
   - name: 美国 CloudFlare节点 - 2
     type: vmess
-    server: cf-lt.sharecentre.online
-    port: 8080
-    uuid: d16c31a2-93a3-4f1a-954c-e383b14a4d26
+    server: cf.yxjnode.com
+    port: 80
+    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /api/v3/download.getFile
+    ws-path: /yxzbp
     ws-headers:
-      Host: ssrsub.v03.ssrsub.com
-  - name: 德国+V2CROSS.COM
-    type: trojan
-    server: 217.79.184.18
-    port: '443'
-    password: 49b94b41-d483-40f7-a5e7-3801c62401b7
-  - name: 以色列+V2CROSS.COM - 2
-    type: trojan
-    server: 149.50.70.76
-    port: '4003'
-    password: TJCfE7Mx2YcA8kX8zg
+      Host: dp1.yxjnode.com
   - name: 美国 CloudFlare节点 - 3
     type: vmess
-    server: 104.17.53.191
+    server: 104.18.83.10
     port: 443
     uuid: dddd0b29-1576-4003-9990-d7cea34264db
     alterId: 0
@@ -51,6 +84,32 @@ proxies:
     ws-headers:
       Host: dedi2.1808.cf
     tls: true
+  - name: 美国+V2CROSS.COM - 2
+    type: ss
+    server: 172.99.190.87
+    port: '5500'
+    cipher: aes-256-gcm
+    password: KixLvKzwjekG00rm
+  - name: 以色列+V2CROSS.COM - 3
+    type: trojan
+    server: 149.50.70.107
+    port: '4003'
+    password: TJCfE7Mx2YcA8kX8zg
+  - name: 以色列+V2CROSS.COM - 4
+    type: trojan
+    server: us3.chuqiangtou.net
+    port: '4003'
+    password: TJCfE7Mx2YcA8kX8zg
+  - name: 以色列+V2CROSS.COM - 5
+    type: trojan
+    server: 149.50.68.107
+    port: '4003'
+    password: TJCfE7Mx2YcA8kX8zg
+  - name: 美国+DXC+Technology - 2
+    type: trojan
+    server: de.stablize.top
+    port: '443'
+    password: 6f96d269-31bb-4914-b2c9-629e117265ed
 proxy-groups:
   - name: Free-servers
     type: select
@@ -58,31 +117,61 @@ proxy-groups:
       - 自动选择
       - 故障转移
       - 以色列+V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 德国+V2CROSS.COM
+      - 美国+Microsoft数据中心
+      - 美国+DXC+Technology
+      - 法国+格拉沃利讷OVH数据中心
+      - 日本+东京Amazon数据中心
+      - 荷兰 北荷兰省阿姆斯特丹Sharktech数据中心
       - 以色列+V2CROSS.COM - 2
+      - 美国 CloudFlare节点
+      - 美国+V2CROSS.COM
+      - 美国 CloudFlare节点 - 2
       - 美国 CloudFlare节点 - 3
+      - 美国+V2CROSS.COM - 2
+      - 以色列+V2CROSS.COM - 3
+      - 以色列+V2CROSS.COM - 4
+      - 以色列+V2CROSS.COM - 5
+      - 美国+DXC+Technology - 2
   - name: 自动选择
     type: url-test
     proxies:
       - 以色列+V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 德国+V2CROSS.COM
+      - 美国+Microsoft数据中心
+      - 美国+DXC+Technology
+      - 法国+格拉沃利讷OVH数据中心
+      - 日本+东京Amazon数据中心
+      - 荷兰 北荷兰省阿姆斯特丹Sharktech数据中心
       - 以色列+V2CROSS.COM - 2
+      - 美国 CloudFlare节点
+      - 美国+V2CROSS.COM
+      - 美国 CloudFlare节点 - 2
       - 美国 CloudFlare节点 - 3
+      - 美国+V2CROSS.COM - 2
+      - 以色列+V2CROSS.COM - 3
+      - 以色列+V2CROSS.COM - 4
+      - 以色列+V2CROSS.COM - 5
+      - 美国+DXC+Technology - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
       - 以色列+V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 德国+V2CROSS.COM
+      - 美国+Microsoft数据中心
+      - 美国+DXC+Technology
+      - 法国+格拉沃利讷OVH数据中心
+      - 日本+东京Amazon数据中心
+      - 荷兰 北荷兰省阿姆斯特丹Sharktech数据中心
       - 以色列+V2CROSS.COM - 2
+      - 美国 CloudFlare节点
+      - 美国+V2CROSS.COM
+      - 美国 CloudFlare节点 - 2
       - 美国 CloudFlare节点 - 3
+      - 美国+V2CROSS.COM - 2
+      - 以色列+V2CROSS.COM - 3
+      - 以色列+V2CROSS.COM - 4
+      - 以色列+V2CROSS.COM - 5
+      - 美国+DXC+Technology - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
