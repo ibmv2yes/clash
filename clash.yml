@@ -1,66 +1,87 @@
 proxies:
-  - name: 新加坡+V2CROSS.COM
-    type: ss
-    server: 217.197.161.136
-    port: '811'
-    cipher: chacha20-ietf-poly1305
-    password: G!yBwPWH3Vao
-  - name: 美国 V2CROSS.COM
+  - name: 以色列+V2CROSS.COM
+    type: trojan
+    server: 149.50.77.109
+    port: '4003'
+    password: TJCfE7Mx2YcA8kX8zg
+  - name: 美国弗吉尼亚州阿什本 CloudFlare节点
     type: vmess
-    server: ns1.v2-vip.fun
+    server: cf-yd-dns.sharecentre.online
     port: 80
-    uuid: 8abe9496-5e24-4e49-b566-dcf86116017d
+    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /i99LgvSaslbsPLLQQ7j6Z
+    ws-path: /shirker
     ws-headers:
-      Host: de5.irteh.fun
-  - name: 以色列+V2CROSS.COM
-    type: trojan
-    server: 149.50.89.108
-    port: '4003'
-    password: TJCfE7Mx2YcA8kX8zg
-  - name: 美国+纽约市DigitalOcean云公司
-    type: trojan
-    server: us.blazeppn.info
-    port: '443'
-    password: xxoo
-  - name: 以色列+V2CROSS.COM - 2
-    type: trojan
-    server: 149.50.75.89
-    port: '4003'
-    password: TJCfE7Mx2YcA8kX8zg
+      Host: dp3.scproxy.top
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: 162.159.243.235
+    port: 443
+    uuid: dddd0b29-1576-4003-9990-d7cea34264db
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /835757
+    ws-headers:
+      Host: dedi2.1808.cf
+    tls: true
+  - name: 美国 加利福尼亚州洛杉矶PetaExpress
+    type: vmess
+    server: 107.148.195.2
+    port: 42014
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 新加坡 Amazon数据中心
+    type: vmess
+    server: s4.zwtg888.com
+    port: 39684
+    uuid: 731938de-22c8-3d7e-849b-c4610bce7994
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /v2ray
+    ws-headers:
+      Host: s4.zwtg888.com
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 新加坡+V2CROSS.COM
-      - 美国 V2CROSS.COM
       - 以色列+V2CROSS.COM
-      - 美国+纽约市DigitalOcean云公司
-      - 以色列+V2CROSS.COM - 2
+      - 美国弗吉尼亚州阿什本 CloudFlare节点
+      - 美国 CloudFlare节点
+      - 美国 加利福尼亚州洛杉矶PetaExpress
+      - 新加坡 Amazon数据中心
   - name: 自动选择
     type: url-test
     proxies:
-      - 新加坡+V2CROSS.COM
-      - 美国 V2CROSS.COM
       - 以色列+V2CROSS.COM
-      - 美国+纽约市DigitalOcean云公司
-      - 以色列+V2CROSS.COM - 2
+      - 美国弗吉尼亚州阿什本 CloudFlare节点
+      - 美国 CloudFlare节点
+      - 美国 加利福尼亚州洛杉矶PetaExpress
+      - 新加坡 Amazon数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 新加坡+V2CROSS.COM
-      - 美国 V2CROSS.COM
       - 以色列+V2CROSS.COM
-      - 美国+纽约市DigitalOcean云公司
-      - 以色列+V2CROSS.COM - 2
+      - 美国弗吉尼亚州阿什本 CloudFlare节点
+      - 美国 CloudFlare节点
+      - 美国 加利福尼亚州洛杉矶PetaExpress
+      - 新加坡 Amazon数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
