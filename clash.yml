@@ -4,44 +4,40 @@ proxies:
     server: 141.193.68.93
     port: 443?peer=18-140-66-207.nhost.00cdn.com
     password: b25cbc3a-d7e8-4fe4-b7a0-d3d18985bcf4
-  - name: 以色列+V2CROSS.COM
-    type: trojan
-    server: 149.50.69.131
-    port: '4003'
-    password: TJCfE7Mx2YcA8kX8zg
-  - name: 美国+V2CROSS.COM
-    type: trojan
-    server: 152.70.74.66
-    port: 443?security=tls&type=tcp&headerType=none
-    password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
-  - name: 美国 加利福尼亚州洛杉矶PetaExpress
+  - name: 美国 V2CROSS.COM
     type: vmess
-    server: 107.148.195.2
-    port: 42014
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 欧盟 V2CROSS.COM
-    type: vmess
-    server: hkgkgb.76898102.xyz
-    port: 2082
-    uuid: 78fd41e5-346a-3bf4-b942-be0fad711979
+    server: ns1.v2-vip.fun
+    port: 80
+    uuid: 4f859149-2b2f-4b90-9a2c-8c0fe15c8c4c
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /funsdfrh
+    ws-path: /ozX9aUPiJVtoLavjTW
     ws-headers:
-      Host: hkg.76898102.xyz
-  - name: 美国 加利福尼亚州圣何塞PEG TECH
+      Host: de14.irteh.fun
+  - name: 美国 CloudFlare公司CDN节点(shopify)
     type: vmess
-    server: 142.4.110.25
-    port: 52908
+    server: 23.227.38.99
+    port: 443
+    uuid: 86d37526-5758-4cec-862f-df404b313086
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /3G6WPDL7
+    ws-headers:
+      Host: 1.freek1.xyz
+    tls: true
+  - name: 以色列+V2CROSS.COM
+    type: trojan
+    server: us1.chuqiangtou.net
+    port: '4003'
+    password: TJCfE7Mx2YcA8kX8zg
+  - name: 英国 社会保险安全部
+    type: vmess
+    server: 51.195.35.147
+    port: 49982
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -52,14 +48,14 @@ proxies:
       Host: ''
   - name: 以色列+V2CROSS.COM - 2
     type: trojan
-    server: nl3.barbecuepie.com
+    server: 149.50.77.134
     port: '4003'
     password: TJCfE7Mx2YcA8kX8zg
   - name: 以色列+V2CROSS.COM - 3
     type: trojan
-    server: de2.nigirocloud.com
+    server: 149.50.77.109
     port: '4003'
-    password: PlF471nxneY0YevI
+    password: TJCfE7Mx2YcA8kX8zg
 proxy-groups:
   - name: Free-servers
     type: select
@@ -67,22 +63,20 @@ proxy-groups:
       - 自动选择
       - 故障转移
       - 美国+RF+Engineering
+      - 美国 V2CROSS.COM
+      - 美国 CloudFlare公司CDN节点(shopify)
       - 以色列+V2CROSS.COM
-      - 美国+V2CROSS.COM
-      - 美国 加利福尼亚州洛杉矶PetaExpress
-      - 欧盟 V2CROSS.COM
-      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 英国 社会保险安全部
       - 以色列+V2CROSS.COM - 2
       - 以色列+V2CROSS.COM - 3
   - name: 自动选择
     type: url-test
     proxies:
       - 美国+RF+Engineering
+      - 美国 V2CROSS.COM
+      - 美国 CloudFlare公司CDN节点(shopify)
       - 以色列+V2CROSS.COM
-      - 美国+V2CROSS.COM
-      - 美国 加利福尼亚州洛杉矶PetaExpress
-      - 欧盟 V2CROSS.COM
-      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 英国 社会保险安全部
       - 以色列+V2CROSS.COM - 2
       - 以色列+V2CROSS.COM - 3
     url: http://www.gstatic.com/generate_204
@@ -91,11 +85,10 @@ proxy-groups:
     type: fallback
     proxies:
       - 美国+RF+Engineering
+      - 美国 V2CROSS.COM
+      - 美国 CloudFlare公司CDN节点(shopify)
       - 以色列+V2CROSS.COM
-      - 美国+V2CROSS.COM
-      - 美国 加利福尼亚州洛杉矶PetaExpress
-      - 欧盟 V2CROSS.COM
-      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 英国 社会保险安全部
       - 以色列+V2CROSS.COM - 2
       - 以色列+V2CROSS.COM - 3
     url: http://www.gstatic.com/generate_204
