@@ -1,76 +1,17 @@
 proxies:
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: cloudflare.piaole.me
-    port: 443
-    uuid: e8dacfc5-79b1-4289-92f1-e390080d56aa
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /huawei
-    ws-headers:
-      Host: ''
-    tls: true
-  - name: 加拿大+魁北克省博阿努瓦OVH数据中心
-    type: trojan
-    server: cat-1.opensvr.net
-    port: 443?type=tcp&allowInsecure=1
-    password: opentunnel.net-newdday
-  - name: 美国 V2CROSS.COM
-    type: vmess
-    server: 104.31.16.27
-    port: 80
-    uuid: 58fe1542-5290-40ad-815a-77707a81afe5
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /IOebhLMhl1CTbFHbL95myfRX2
-    ws-headers:
-      Host: ca5.tehme2.fun
-  - name: 美国 V2CROSS.COM - 2
-    type: vmess
-    server: 104.31.16.28
-    port: 80
-    uuid: 58fe1542-5290-40ad-815a-77707a81afe5
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /IOebhLMhl1CTbFHbL95myfRX2
-    ws-headers:
-      Host: ca4.tehme2.fun
   - name: 以色列+V2CROSS.COM
     type: trojan
-    server: 149.50.75.81
+    server: de2.nigirocloud.com
     port: '4003'
-    password: TJCfE7Mx2YcA8kX8zg
-  - name: 日本+V2CROSS.COM
-    type: trojan
-    server: trs22.bolab.net
-    port: '443'
-    password: 7a73f1dc97a70905870c0c0484b12145
-  - name: 台湾省台北市+中華電信
-    type: trojan
-    server: hinet2.downloadvip.cfd
-    port: >-
-      443?type=tcp&security=tls&sni=download.xn--mes358a9urctx.com&allowInsecure=1
-    password: db2d1b78-6038-4c0c-871b-0a08dc9a08d7
+    password: PlF471nxneY0YevI
   - name: 以色列+V2CROSS.COM - 2
     type: trojan
-    server: nl3.nigirocloud.com
-    port: 4003?sni=persianblog.ir
-    password: PlF471nxneY0YevI
-  - name: 上海市+电信
-    type: ss
-    server: free.themars.top
-    port: '32103'
-    cipher: chacha20-ietf-poly1305
-    password: b89b39c2-dc8d-4595-a4c5-54b4fbab3fc2
-  - name: 美国 CloudFlare节点 - 2
+    server: 149.50.66.124
+    port: '4003'
+    password: TJCfE7Mx2YcA8kX8zg
+  - name: 乌克兰 V2CROSS.COM
     type: vmess
-    server: 104.16.150.9
+    server: 212.110.134.7
     port: 443
     uuid: 3de4ec27-74b4-43e3-bf23-18e726ac80bc
     alterId: 0
@@ -79,34 +20,36 @@ proxies:
     network: ws
     ws-path: /P6kpn5UKG40MNLK2
     ws-headers:
-      Host: XWOp2D.janbaroon.com
+      Host: zHGKLbqn6UM.janbaroon.com
     tls: true
-  - name: 美国+俄勒冈州波特兰Amazon数据中心
-    type: trojan
-    server: us2.yihaobao.xyz
-    port: 10026?sni=tls.yihaobao.xyz
-    password: 935f56b8-e476-43bb-a96c-20958071ece8
-  - name: 上海市+电信 - 2
-    type: ss
-    server: free.themars.top
-    port: '32101'
-    cipher: chacha20-ietf-poly1305
-    password: b89b39c2-dc8d-4595-a4c5-54b4fbab3fc2
   - name: 以色列+V2CROSS.COM - 3
     type: trojan
-    server: 149.50.71.124
-    port: 4003?type=tcp&allowInsecure=1
-    password: TJCfE7Mx2YcA8kX8zg
-  - name: 以色列+V2CROSS.COM - 4
-    type: trojan
-    server: 149.50.77.134
+    server: 149.50.77.129
     port: '4003'
     password: TJCfE7Mx2YcA8kX8zg
-  - name: 美国 CloudFlare节点 - 3
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: 104.18.83.10
+    port: 443
+    uuid: dddd0b29-1576-4003-9990-d7cea34264db
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /835757
+    ws-headers:
+      Host: dedi2.1808.cf
+    tls: true
+  - name: 以色列+V2CROSS.COM - 4
+    type: trojan
+    server: 149.50.75.81
+    port: '4003'
+    password: TJCfE7Mx2YcA8kX8zg
+  - name: 美国 CloudFlare节点 - 2
     type: vmess
     server: www.noice.id
     port: 443
-    uuid: af34de1b-3893-41e1-a6dd-68909f9f126b
+    uuid: 2198f853-c33a-463a-bc27-6199520f810d
     alterId: 0
     cipher: auto
     udp: true
@@ -115,81 +58,103 @@ proxies:
     ws-headers:
       Host: v2ray2.udpgw.com
     tls: true
+  - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: cf-yd-dns.sharecentre.online
+    port: 80
+    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /shirker
+    ws-headers:
+      Host: dp3.scproxy.top
+  - name: 美国 CloudFlare节点 - 4
+    type: vmess
+    server: www.digitalocean.com
+    port: 80
+    uuid: 25b280df-e990-4495-80e3-48ec3c83da77
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /api/v3/download.getFile
+    ws-headers:
+      Host: ssrsub.v01.ssrsub.com
+  - name: 美国+DXC+Technology
+    type: trojan
+    server: ap.stablize.top
+    port: '443'
+    password: 4d23cf0e-5ceb-43e7-90d3-63982bfa6940
   - name: 以色列+V2CROSS.COM - 5
     type: trojan
-    server: 149.50.75.100
-    port: '4003'
+    server: 149.50.71.155
+    port: 4003?type=tcp&allowInsecure=1
     password: TJCfE7Mx2YcA8kX8zg
-  - name: 日本+北海道石狩SAKURA数据中心
-    type: trojan
-    server: trs19.bolab.net
-    port: '443'
-    password: 7a73f1dc97a70905870c0c0484b12145
+  - name: 美国 CloudFlare节点 - 5
+    type: vmess
+    server: smt.ircf.space
+    port: 443
+    uuid: 3bcbd5cd-e791-4770-8bc7-7b1d941c9513
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /S4PSg9xqUClN2kJ4SOPKqC6
+    ws-headers:
+      Host: wfi.sahnama.com
+    tls: true
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 CloudFlare节点
-      - 加拿大+魁北克省博阿努瓦OVH数据中心
-      - 美国 V2CROSS.COM
-      - 美国 V2CROSS.COM - 2
       - 以色列+V2CROSS.COM
-      - 日本+V2CROSS.COM
-      - 台湾省台北市+中華電信
       - 以色列+V2CROSS.COM - 2
-      - 上海市+电信
-      - 美国 CloudFlare节点 - 2
-      - 美国+俄勒冈州波特兰Amazon数据中心
-      - 上海市+电信 - 2
+      - 乌克兰 V2CROSS.COM
       - 以色列+V2CROSS.COM - 3
+      - 美国 CloudFlare节点
       - 以色列+V2CROSS.COM - 4
+      - 美国 CloudFlare节点 - 2
       - 美国 CloudFlare节点 - 3
+      - 美国 CloudFlare节点 - 4
+      - 美国+DXC+Technology
       - 以色列+V2CROSS.COM - 5
-      - 日本+北海道石狩SAKURA数据中心
+      - 美国 CloudFlare节点 - 5
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 CloudFlare节点
-      - 加拿大+魁北克省博阿努瓦OVH数据中心
-      - 美国 V2CROSS.COM
-      - 美国 V2CROSS.COM - 2
       - 以色列+V2CROSS.COM
-      - 日本+V2CROSS.COM
-      - 台湾省台北市+中華電信
       - 以色列+V2CROSS.COM - 2
-      - 上海市+电信
-      - 美国 CloudFlare节点 - 2
-      - 美国+俄勒冈州波特兰Amazon数据中心
-      - 上海市+电信 - 2
+      - 乌克兰 V2CROSS.COM
       - 以色列+V2CROSS.COM - 3
+      - 美国 CloudFlare节点
       - 以色列+V2CROSS.COM - 4
+      - 美国 CloudFlare节点 - 2
       - 美国 CloudFlare节点 - 3
+      - 美国 CloudFlare节点 - 4
+      - 美国+DXC+Technology
       - 以色列+V2CROSS.COM - 5
-      - 日本+北海道石狩SAKURA数据中心
+      - 美国 CloudFlare节点 - 5
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 CloudFlare节点
-      - 加拿大+魁北克省博阿努瓦OVH数据中心
-      - 美国 V2CROSS.COM
-      - 美国 V2CROSS.COM - 2
       - 以色列+V2CROSS.COM
-      - 日本+V2CROSS.COM
-      - 台湾省台北市+中華電信
       - 以色列+V2CROSS.COM - 2
-      - 上海市+电信
-      - 美国 CloudFlare节点 - 2
-      - 美国+俄勒冈州波特兰Amazon数据中心
-      - 上海市+电信 - 2
+      - 乌克兰 V2CROSS.COM
       - 以色列+V2CROSS.COM - 3
+      - 美国 CloudFlare节点
       - 以色列+V2CROSS.COM - 4
+      - 美国 CloudFlare节点 - 2
       - 美国 CloudFlare节点 - 3
+      - 美国 CloudFlare节点 - 4
+      - 美国+DXC+Technology
       - 以色列+V2CROSS.COM - 5
-      - 日本+北海道石狩SAKURA数据中心
+      - 美国 CloudFlare节点 - 5
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
