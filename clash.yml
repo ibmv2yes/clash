@@ -1,145 +1,24 @@
 proxies:
-  - name: 美国+V2CROSS.COM
+  - name: 日本东京+Oracle+Cloud
     type: trojan
-    server: 74.217.179.36
-    port: 443?sni=18-140-66-207.nhost.00cdn.com
-    password: 746b6774-e899-4205-a097-3da55c26f5b3
+    server: tk-004.xiaoxiaobujidao.xyz
+    port: 8443?type=tcp&security=tls&sni=tk-004.xiaoxiaobujidao.xyz
+    password: de2c1b4f-851e-3730-af83-9981917b7883
   - name: 美国 CloudFlare节点
     type: vmess
-    server: 173.245.59.119
-    port: 2086
-    uuid: 4d2ca583-7e2a-4ef4-ba15-ffc7d9147a32
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /ylks0
-    ws-headers:
-      Host: tou.vtcss.top
-  - name: 美国加利福尼亚州洛杉矶 MULTACOM数据中心
-    type: vmess
-    server: 23.234.198.83
-    port: 34888
-    uuid: a9abf3e7-87f4-473d-8d03-2f26ca4b3583
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: ''
-    ws-headers:
-      Host: ''
-  - name: 以色列+V2CROSS.COM
-    type: trojan
-    server: 149.50.89.108
-    port: '4003'
-    password: TJCfE7Mx2YcA8kX8zg
-  - name: 美国 V2CROSS.COM
-    type: vmess
-    server: 104.31.16.27
+    server: www.digitalocean.com
     port: 80
-    uuid: 58fe1542-5290-40ad-815a-77707a81afe5
+    uuid: 25b280df-e990-4495-80e3-48ec3c83da77
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /IOebhLMhl1CTbFHbL95myfRX2
+    ws-path: /api/v3/download.getFile
     ws-headers:
-      Host: ca5.tehme2.fun
-  - name: 日本+V2CROSS.COM
-    type: trojan
-    server: trs22.bolab.net
-    port: '443'
-    password: 7a73f1dc97a70905870c0c0484b12145
-  - name: 台湾省台北市+中華電信
-    type: trojan
-    server: hinet2.downloadvip.cfd
-    port: 443?type=tcp&security=tls&sni=hinet2.downloadvip.cfd&allowInsecure=1
-    password: 9c2d38bd-3ffd-48ce-909c-9d273e7f8898
-  - name: 西班牙 V2CROSS.COM
-    type: vmess
-    server: sbn.ircf.space
-    port: 443
-    uuid: 3bcbd5cd-e791-4770-8bc7-7b1d941c9513
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /S4PSg9xqUClN2kJ4SOPKqC6
-    ws-headers:
-      Host: wfi.sahnama.com
-    tls: true
+      Host: ssrsub.v01.ssrsub.com
   - name: 美国 CloudFlare节点 - 2
     type: vmess
-    server: trky.digires.shop
-    port: 443
-    uuid: bc329892-2028-49ba-b594-aa14c0ee8f92
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /20861
-    ws-headers:
-      Host: trky.digires.shop
-    tls: true
-  - name: 美国 V2CROSS.COM - 2
-    type: vmess
-    server: 45.153.203.86
-    port: 41632
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 日本+北海道石狩SAKURA数据中心
-    type: trojan
-    server: trs19.bolab.net
-    port: '443'
-    password: 7a73f1dc97a70905870c0c0484b12145
-  - name: 美国 CloudFlare节点 - 3
-    type: vmess
-    server: cf-lt.sharecentre.online
-    port: 80
-    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /shirker
-    ws-headers:
-      Host: dp4.scproxy.top
-  - name: 以色列+V2CROSS.COM - 2
-    type: trojan
-    server: de3.nigirocloud.com
-    port: 4003?type=tcp&allowInsecure=1
-    password: PlF471nxneY0YevI
-  - name: 美国+加利福尼亚州洛杉矶Level3通信(DIA)
-    type: trojan
-    server: ap.stablize.top
-    port: '443'
-    password: 4d23cf0e-5ceb-43e7-90d3-63982bfa6940
-  - name: 美国 加利福尼亚州洛杉矶PetaExpress
-    type: vmess
-    server: 107.148.195.2
-    port: 42014
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 以色列+V2CROSS.COM - 3
-    type: trojan
-    server: 149.50.71.155
-    port: 4003?type=tcp&allowInsecure=1
-    password: TJCfE7Mx2YcA8kX8zg
-  - name: 巴西圣保罗 CloudFlare节点
-    type: vmess
-    server: 188.114.96.37
+    server: 104.18.178.57
     port: 2052
     uuid: 19c6ec1b-2230-41d4-ff1c-c8449dc1ed5f
     alterId: 0
@@ -149,71 +28,132 @@ proxies:
     ws-path: /yulingkaishi01
     ws-headers:
       Host: tou.vtcss.top
+  - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: 198.41.221.113
+    port: 2096
+    uuid: f387a0af-4b70-4a40-e2c3-2f22472df0cb
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /blue01
+    ws-headers:
+      Host: x1.ylks01.eu.org
+    tls: true
+  - name: 美国+纽约市DigitalOcean云公司
+    type: trojan
+    server: us.blazeppn.info
+    port: '443'
+    password: xxoo
+  - name: 日本+东京Amazon数据中心
+    type: trojan
+    server: pqawsjp2.gsjc.cfd
+    port: 443?sni=18-140-66-207.nhost.00cdn.com
+    password: 746b6774-e899-4205-a097-3da55c26f5b3
+  - name: 以色列+V2CROSS.COM
+    type: trojan
+    server: 149.50.75.105
+    port: '4003'
+    password: TJCfE7Mx2YcA8kX8zg
+  - name: 以色列+V2CROSS.COM - 2
+    type: trojan
+    server: 149.50.77.109
+    port: '4003'
+    password: TJCfE7Mx2YcA8kX8zg
+  - name: 乌克兰 V2CROSS.COM
+    type: vmess
+    server: 212.110.134.7
+    port: 443
+    uuid: 3de4ec27-74b4-43e3-bf23-18e726ac80bc
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /P6kpn5UKG40MNLK2
+    ws-headers:
+      Host: zHGKLbqn6UM.janbaroon.com
+    tls: true
+  - name: 以色列+V2CROSS.COM - 3
+    type: trojan
+    server: de3.nigirocloud.com
+    port: 4003?type=tcp&allowInsecure=1
+    password: PlF471nxneY0YevI
+  - name: 美国 CloudFlare节点 - 4
+    type: vmess
+    server: cdnjs.com
+    port: 443
+    uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /speedtest
+    ws-headers:
+      Host: Kansas.kotick.site
+    tls: true
+  - name: 美国 CloudFlare节点 - 5
+    type: vmess
+    server: www.digitalocean.com
+    port: 80
+    uuid: 25b280df-e990-4495-80e3-48ec3c83da77
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /api/v3/download.getFile
+    ws-headers:
+      Host: ssrsub.v01.ssrsub.com
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国+V2CROSS.COM
+      - 日本东京+Oracle+Cloud
       - 美国 CloudFlare节点
-      - 美国加利福尼亚州洛杉矶 MULTACOM数据中心
-      - 以色列+V2CROSS.COM
-      - 美国 V2CROSS.COM
-      - 日本+V2CROSS.COM
-      - 台湾省台北市+中華電信
-      - 西班牙 V2CROSS.COM
       - 美国 CloudFlare节点 - 2
-      - 美国 V2CROSS.COM - 2
-      - 日本+北海道石狩SAKURA数据中心
       - 美国 CloudFlare节点 - 3
+      - 美国+纽约市DigitalOcean云公司
+      - 日本+东京Amazon数据中心
+      - 以色列+V2CROSS.COM
       - 以色列+V2CROSS.COM - 2
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
-      - 美国 加利福尼亚州洛杉矶PetaExpress
+      - 乌克兰 V2CROSS.COM
       - 以色列+V2CROSS.COM - 3
-      - 巴西圣保罗 CloudFlare节点
+      - 美国 CloudFlare节点 - 4
+      - 美国 CloudFlare节点 - 5
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国+V2CROSS.COM
+      - 日本东京+Oracle+Cloud
       - 美国 CloudFlare节点
-      - 美国加利福尼亚州洛杉矶 MULTACOM数据中心
-      - 以色列+V2CROSS.COM
-      - 美国 V2CROSS.COM
-      - 日本+V2CROSS.COM
-      - 台湾省台北市+中華電信
-      - 西班牙 V2CROSS.COM
       - 美国 CloudFlare节点 - 2
-      - 美国 V2CROSS.COM - 2
-      - 日本+北海道石狩SAKURA数据中心
       - 美国 CloudFlare节点 - 3
+      - 美国+纽约市DigitalOcean云公司
+      - 日本+东京Amazon数据中心
+      - 以色列+V2CROSS.COM
       - 以色列+V2CROSS.COM - 2
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
-      - 美国 加利福尼亚州洛杉矶PetaExpress
+      - 乌克兰 V2CROSS.COM
       - 以色列+V2CROSS.COM - 3
-      - 巴西圣保罗 CloudFlare节点
+      - 美国 CloudFlare节点 - 4
+      - 美国 CloudFlare节点 - 5
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国+V2CROSS.COM
+      - 日本东京+Oracle+Cloud
       - 美国 CloudFlare节点
-      - 美国加利福尼亚州洛杉矶 MULTACOM数据中心
-      - 以色列+V2CROSS.COM
-      - 美国 V2CROSS.COM
-      - 日本+V2CROSS.COM
-      - 台湾省台北市+中華電信
-      - 西班牙 V2CROSS.COM
       - 美国 CloudFlare节点 - 2
-      - 美国 V2CROSS.COM - 2
-      - 日本+北海道石狩SAKURA数据中心
       - 美国 CloudFlare节点 - 3
+      - 美国+纽约市DigitalOcean云公司
+      - 日本+东京Amazon数据中心
+      - 以色列+V2CROSS.COM
       - 以色列+V2CROSS.COM - 2
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
-      - 美国 加利福尼亚州洛杉矶PetaExpress
+      - 乌克兰 V2CROSS.COM
       - 以色列+V2CROSS.COM - 3
-      - 巴西圣保罗 CloudFlare节点
+      - 美国 CloudFlare节点 - 4
+      - 美国 CloudFlare节点 - 5
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
