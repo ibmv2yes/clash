@@ -1,32 +1,12 @@
 proxies:
+  - name: 以色列+V2CROSS.COM
+    type: trojan
+    server: de2.nigirocloud.com
+    port: '4003'
+    password: PlF471nxneY0YevI
   - name: 美国 CloudFlare节点
     type: vmess
-    server: 172.67.156.138
-    port: 443
-    uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /speedtest
-    ws-headers:
-      Host: Kansas.kotick.site
-    tls: true
-  - name: 希腊 V2CROSS.COM
-    type: vmess
-    server: ovhsdza.76898102.xyz
-    port: 2052
-    uuid: 78fd41e5-346a-3bf4-b942-be0fad711979
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /funsdfrh
-    ws-headers:
-      Host: ovhsdz.76898102.xyz
-  - name: 乌克兰 V2CROSS.COM
-    type: vmess
-    server: 212.110.134.7
+    server: 104.16.150.9
     port: 443
     uuid: 3de4ec27-74b4-43e3-bf23-18e726ac80bc
     alterId: 0
@@ -35,34 +15,60 @@ proxies:
     network: ws
     ws-path: /P6kpn5UKG40MNLK2
     ws-headers:
-      Host: zHGKLbqn6UM.janbaroon.com
+      Host: XWOp2D.janbaroon.com
     tls: true
-  - name: 巴西圣保罗 CloudFlare节点
+  - name: 美国 V2CROSS.COM
     type: vmess
-    server: 188.114.96.169
-    port: 8080
-    uuid: a67679a6-a186-4d62-f84e-f3f00dc7745e
+    server: menmaza.76898102.xyz
+    port: 2052
+    uuid: 12d06bb6-d797-3cf3-b368-a903b8702f2c
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /youlingkaishi01
+    ws-path: /eduifbiefg
     ws-headers:
-      Host: tou.vtcss.top
-  - name: 美国 CloudFlare节点 - 2
+      Host: menmaz.76898102.xyz
+  - name: 荷兰 北荷兰省阿姆斯特丹Sharktech数据中心
     type: vmess
-    server: aaaa.wxx.gay
-    port: 443
-    uuid: c3e4f9b4-0e55-11ee-b574-000017022008
-    alterId: 0
+    server: 45.58.186.85
+    port: 51140
+    uuid: 4a138e19-0595-4d51-83c6-fd276cf7d307
+    alterId: 64
     cipher: auto
     udp: true
-    network: ws
-    ws-path: /look
+    network: tcp
+    ws-path: /
     ws-headers:
       Host: ''
-    tls: true
-  - name: 美国 CloudFlare节点 - 3
+  - name: 以色列+V2CROSS.COM - 2
+    type: trojan
+    server: de1.nigirocloud.com
+    port: 4003?type=tcp&allowInsecure=1
+    password: PlF471nxneY0YevI
+  - name: 亚太地区+V2CROSS.COM
+    type: trojan
+    server: 163.123.192.60
+    port: 443?peer=18-140-66-207.nhost.00cdn.com
+    password: b25cbc3a-d7e8-4fe4-b7a0-d3d18985bcf4
+  - name: 以色列+V2CROSS.COM - 3
+    type: trojan
+    server: 149.50.70.72
+    port: '4003'
+    password: TJCfE7Mx2YcA8kX8zg
+  - name: 美国 V2CROSS.COM - 2
+    type: vmess
+    server: ns1.v2-vip.fun
+    port: 80
+    uuid: 4f859149-2b2f-4b90-9a2c-8c0fe15c8c4c
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /ozX9aUPiJVtoLavjTW
+    ws-headers:
+      Host: de14.irteh.fun
+  - name: 美国 CloudFlare节点 - 2
     type: vmess
     server: cdnjs.com
     port: 443
@@ -75,74 +81,11 @@ proxies:
     ws-headers:
       Host: Kansas.kotick.site
     tls: true
-  - name: 美国 CloudFlare节点 - 4
-    type: vmess
-    server: sbn.ircf.space
-    port: 443
-    uuid: 3bcbd5cd-e791-4770-8bc7-7b1d941c9513
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /S4PSg9xqUClN2kJ4SOPKqC6
-    ws-headers:
-      Host: wfi.sahnama.com
-    tls: true
-  - name: 上海市+电信
-    type: ss
-    server: free.themars.top
-    port: '32102'
-    cipher: chacha20-ietf-poly1305
-    password: b89b39c2-dc8d-4595-a4c5-54b4fbab3fc2
-  - name: 美国 CloudFlare节点 - 5
-    type: vmess
-    server: www.noice.id
-    port: 443
-    uuid: 2198f853-c33a-463a-bc27-6199520f810d
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /worryfree
-    ws-headers:
-      Host: v2ray2.udpgw.com
-    tls: true
-  - name: 美国 CloudFlare节点 - 6
-    type: vmess
-    server: cloudflare.piaole.me
-    port: 443
-    uuid: e8dacfc5-79b1-4289-92f1-e390080d56aa
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /huawei
-    ws-headers:
-      Host: ''
-    tls: true
-  - name: 以色列+V2CROSS.COM
+  - name: 以色列+V2CROSS.COM - 4
     type: trojan
-    server: 149.50.75.105
+    server: 149.50.69.109
     port: '4003'
     password: TJCfE7Mx2YcA8kX8zg
-  - name: 乌克兰 V2CROSS.COM - 2
-    type: vmess
-    server: 212.110.134.7
-    port: 443
-    uuid: 3de4ec27-74b4-43e3-bf23-18e726ac80bc
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /P6kpn5UKG40MNLK2
-    ws-headers:
-      Host: zHGKLbqn6UM.janbaroon.com
-    tls: true
-  - name: 以色列+V2CROSS.COM - 2
-    type: trojan
-    server: de3.nigirocloud.com
-    port: '4003'
-    password: PlF471nxneY0YevI
   - name: 美国 CloudFlare公司CDN节点(shopify)
     type: vmess
     server: 23.227.38.99
@@ -156,86 +99,139 @@ proxies:
     ws-headers:
       Host: 1.freek1.xyz
     tls: true
-  - name: 以色列+V2CROSS.COM - 3
+  - name: 澳大利亚 Kingswood College
+    type: vmess
+    server: ovhsdza.76898102.xyz
+    port: 2052
+    uuid: 285bfc27-2341-3c7a-be0e-360cedd5e209
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /funsdfrh
+    ws-headers:
+      Host: ovhsdz.76898102.xyz
+  - name: 以色列+V2CROSS.COM - 5
     type: trojan
-    server: us3.chuqiangtou.net
+    server: de2.nigirocloud.com
+    port: '4003'
+    password: PlF471nxneY0YevI
+  - name: 美国 V2CROSS.COM - 3
+    type: vmess
+    server: 45.153.203.86
+    port: 41632
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 日本+V2CROSS.COM
+    type: trojan
+    server: trs22.bolab.net
+    port: '443'
+    password: 7a73f1dc97a70905870c0c0484b12145
+  - name: 日本+北海道石狩SAKURA数据中心
+    type: trojan
+    server: trs19.bolab.net
+    port: '443'
+    password: 7a73f1dc97a70905870c0c0484b12145
+  - name: 以色列+V2CROSS.COM - 6
+    type: trojan
+    server: 149.50.75.105
     port: '4003'
     password: TJCfE7Mx2YcA8kX8zg
-  - name: 美国+加利福尼亚州旧金山Amazon数据中心
+  - name: 德国+V2CROSS.COM
     type: trojan
-    server: fuck6.lianpi.xyz
-    port: '48057'
-    password: 7e319f7a-4c47-4606-8008-ce6c92634dd8
-  - name: 以色列+V2CROSS.COM - 4
+    server: 84.252.121.218
+    port: 443?sni=18-140-66-207.nhost.00cdn.com
+    password: 746b6774-e899-4205-a097-3da55c26f5b3
+  - name: 美国+RF+Engineering
     type: trojan
-    server: 149.50.75.89
-    port: '4003'
-    password: TJCfE7Mx2YcA8kX8zg
+    server: 141.193.68.19
+    port: 443?peer=18-140-66-207.nhost.00cdn.com&tfo=1
+    password: 41bec492-cd79-4b57-9a15-7d2bb00fcfca
+  - name: 广东省+移动
+    type: trojan
+    server: official.taipeicitygovernment.kiev.ua
+    port: 8443?sni=66.42.40.132
+    password: 5505f6ba-cd37-30ce-8f92-be4120c83d7f
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 CloudFlare节点
-      - 希腊 V2CROSS.COM
-      - 乌克兰 V2CROSS.COM
-      - 巴西圣保罗 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
-      - 上海市+电信
-      - 美国 CloudFlare节点 - 5
-      - 美国 CloudFlare节点 - 6
       - 以色列+V2CROSS.COM
-      - 乌克兰 V2CROSS.COM - 2
+      - 美国 CloudFlare节点
+      - 美国 V2CROSS.COM
+      - 荷兰 北荷兰省阿姆斯特丹Sharktech数据中心
       - 以色列+V2CROSS.COM - 2
-      - 美国 CloudFlare公司CDN节点(shopify)
+      - 亚太地区+V2CROSS.COM
       - 以色列+V2CROSS.COM - 3
-      - 美国+加利福尼亚州旧金山Amazon数据中心
+      - 美国 V2CROSS.COM - 2
+      - 美国 CloudFlare节点 - 2
       - 以色列+V2CROSS.COM - 4
+      - 美国 CloudFlare公司CDN节点(shopify)
+      - 澳大利亚 Kingswood College
+      - 以色列+V2CROSS.COM - 5
+      - 美国 V2CROSS.COM - 3
+      - 日本+V2CROSS.COM
+      - 日本+北海道石狩SAKURA数据中心
+      - 以色列+V2CROSS.COM - 6
+      - 德国+V2CROSS.COM
+      - 美国+RF+Engineering
+      - 广东省+移动
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 CloudFlare节点
-      - 希腊 V2CROSS.COM
-      - 乌克兰 V2CROSS.COM
-      - 巴西圣保罗 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
-      - 上海市+电信
-      - 美国 CloudFlare节点 - 5
-      - 美国 CloudFlare节点 - 6
       - 以色列+V2CROSS.COM
-      - 乌克兰 V2CROSS.COM - 2
+      - 美国 CloudFlare节点
+      - 美国 V2CROSS.COM
+      - 荷兰 北荷兰省阿姆斯特丹Sharktech数据中心
       - 以色列+V2CROSS.COM - 2
-      - 美国 CloudFlare公司CDN节点(shopify)
+      - 亚太地区+V2CROSS.COM
       - 以色列+V2CROSS.COM - 3
-      - 美国+加利福尼亚州旧金山Amazon数据中心
+      - 美国 V2CROSS.COM - 2
+      - 美国 CloudFlare节点 - 2
       - 以色列+V2CROSS.COM - 4
+      - 美国 CloudFlare公司CDN节点(shopify)
+      - 澳大利亚 Kingswood College
+      - 以色列+V2CROSS.COM - 5
+      - 美国 V2CROSS.COM - 3
+      - 日本+V2CROSS.COM
+      - 日本+北海道石狩SAKURA数据中心
+      - 以色列+V2CROSS.COM - 6
+      - 德国+V2CROSS.COM
+      - 美国+RF+Engineering
+      - 广东省+移动
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 CloudFlare节点
-      - 希腊 V2CROSS.COM
-      - 乌克兰 V2CROSS.COM
-      - 巴西圣保罗 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
-      - 上海市+电信
-      - 美国 CloudFlare节点 - 5
-      - 美国 CloudFlare节点 - 6
       - 以色列+V2CROSS.COM
-      - 乌克兰 V2CROSS.COM - 2
+      - 美国 CloudFlare节点
+      - 美国 V2CROSS.COM
+      - 荷兰 北荷兰省阿姆斯特丹Sharktech数据中心
       - 以色列+V2CROSS.COM - 2
-      - 美国 CloudFlare公司CDN节点(shopify)
+      - 亚太地区+V2CROSS.COM
       - 以色列+V2CROSS.COM - 3
-      - 美国+加利福尼亚州旧金山Amazon数据中心
+      - 美国 V2CROSS.COM - 2
+      - 美国 CloudFlare节点 - 2
       - 以色列+V2CROSS.COM - 4
+      - 美国 CloudFlare公司CDN节点(shopify)
+      - 澳大利亚 Kingswood College
+      - 以色列+V2CROSS.COM - 5
+      - 美国 V2CROSS.COM - 3
+      - 日本+V2CROSS.COM
+      - 日本+北海道石狩SAKURA数据中心
+      - 以色列+V2CROSS.COM - 6
+      - 德国+V2CROSS.COM
+      - 美国+RF+Engineering
+      - 广东省+移动
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
