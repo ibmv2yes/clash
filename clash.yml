@@ -1,8 +1,8 @@
 proxies:
-  - name: 南非 V2CROSS.COM
+  - name: 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
     type: vmess
-    server: 156.225.67.148
-    port: 41139
+    server: 23.225.9.196
+    port: 50002
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -13,8 +13,8 @@ proxies:
       Host: ''
   - name: 美国 V2CROSS.COM
     type: vmess
-    server: 45.153.203.87
-    port: 41632
+    server: 137.175.9.203
+    port: 57902
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -25,62 +25,43 @@ proxies:
       Host: ''
   - name: 以色列+V2CROSS.COM
     type: trojan
-    server: 149.50.75.79
+    server: 149.50.75.90
     port: '4003'
     password: TJCfE7Mx2YcA8kX8zg
-  - name: 以色列+V2CROSS.COM - 2
-    type: trojan
-    server: 149.50.83.42
-    port: '4003'
-    password: TJCfE7Mx2YcA8kX8zg
-  - name: 以色列+V2CROSS.COM - 3
-    type: trojan
-    server: 149.50.83.49
-    port: '4003'
-    password: TJCfE7Mx2YcA8kX8zg
-  - name: 美国+V2CROSS.COM
-    type: ss
-    server: 172.99.188.99
-    port: '8882'
-    cipher: aes-256-gcm
-    password: kDWvXYZoTBcGkC4
-  - name: 新加坡+Amazon数据中心
-    type: trojan
-    server: hk2.gsjc.cfd
-    port: 443?sni=20-212-60-88.nhost.00cdn.com
-    password: f5075d6e-c65b-4133-b4fa-301ce5ba1fa9
-  - name: 以色列+V2CROSS.COM - 4
-    type: trojan
-    server: uk1.nigirocloud.com
-    port: '4003'
-    password: PlF471nxneY0YevI
   - name: 美国 CloudFlare节点
     type: vmess
-    server: 104.16.32.142
+    server: 104.21.234.189
     port: 443
-    uuid: 3de4ec27-74b4-43e3-bf23-18e726ac80bc
+    uuid: dddd0b29-1576-4003-9990-d7cea34264db
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /P6kpn5UKG40MNLK2
+    ws-path: /835757
     ws-headers:
-      Host: QkGxa2MSvmu.janbaroon.com
+      Host: dedi2.1808.cf
     tls: true
-  - name: 以色列+V2CROSS.COM - 5
-    type: trojan
-    server: us1.chuqiangtou.net
-    port: '4003'
-    password: TJCfE7Mx2YcA8kX8zg
-  - name: 以色列+V2CROSS.COM - 6
-    type: trojan
-    server: jp3.chuqiangtou.net
-    port: '4003'
-    password: TJCfE7Mx2YcA8kX8zg
-  - name: 美国 滴滴盾CN2高防节点(dididun.com)
+  - name: 南非 V2CROSS.COM
     type: vmess
-    server: 137.175.3.226
-    port: 53042
+    server: 156.225.67.158
+    port: 49922
+    uuid: 9c026efe-6af0-465f-b8c0-3f58c8c2d4c5
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 以色列+V2CROSS.COM - 2
+    type: trojan
+    server: 149.50.69.109
+    port: '4003'
+    password: TJCfE7Mx2YcA8kX8zg
+  - name: 香港 V2CROSS.COM
+    type: vmess
+    server: 156.245.8.225
+    port: 49823
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -89,143 +70,151 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 以色列+V2CROSS.COM - 7
+  - name: 日本+V2CROSS.COM
     type: trojan
-    server: 149.50.77.108
+    server: trs21.bolab.net
+    port: 443?type=tcp&sni=trs21.bolab.net&allowInsecure=1
+    password: 7a73f1dc97a70905870c0c0484b12145
+  - name: 以色列+V2CROSS.COM - 3
+    type: trojan
+    server: 149.50.71.155
     port: '4003'
     password: TJCfE7Mx2YcA8kX8zg
-  - name: 美国 CloudFlare公司CDN节点(shopify)
+  - name: 以色列+V2CROSS.COM - 4
+    type: trojan
+    server: 149.50.77.109
+    port: '4003'
+    password: TJCfE7Mx2YcA8kX8zg
+  - name: 南非 V2CROSS.COM - 2
     type: vmess
-    server: 23.227.38.99
-    port: 443
-    uuid: 86d37526-5758-4cec-862f-df404b313086
+    server: 156.225.67.76
+    port: 49823
+    uuid: 3e016c4d-986e-42df-838c-6046f3d89ecf
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: ''
+    ws-headers:
+      Host: ''
+  - name: 美国 V2CROSS.COM - 2
+    type: vmess
+    server: ns1.v2-vip.fun
+    port: 80
+    uuid: 4f859149-2b2f-4b90-9a2c-8c0fe15c8c4c
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /3G6WPDL7
+    ws-path: /ozX9aUPiJVtoLavjTW
     ws-headers:
-      Host: 1.freek1.xyz
-    tls: true
-  - name: 以色列+V2CROSS.COM - 8
-    type: trojan
-    server: us2.chuqiangtou.net
-    port: 4003?type=tcp&allowInsecure=1
-    password: TJCfE7Mx2YcA8kX8zg
-  - name: 以色列+V2CROSS.COM - 9
-    type: trojan
-    server: de3.nigirocloud.com
-    port: '4003'
-    password: PlF471nxneY0YevI
-  - name: 以色列+V2CROSS.COM - 10
-    type: trojan
-    server: nl3.nigirocloud.com
-    port: '4003'
-    password: PlF471nxneY0YevI
+      Host: de14.irteh.fun
   - name: 美国 CloudFlare节点 - 2
     type: vmess
-    server: cdnjs.com
+    server: doinbtimes.cf
     port: 443
-    uuid: DCE76061-EE65-49DB-997C-A6A880DADE3A
+    uuid: 16702ec2-3808-46e6-a7b5-582c062be13d
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /speedtest
+    ws-path: /aslpop
     ws-headers:
-      Host: Amsterdam.kotick.site
+      Host: jpnat1.doinb.tk
     tls: true
-  - name: 美国 CloudFlare节点 - 3
+  - name: 法国+格拉沃利讷OVH数据中心
+    type: ss
+    server: 54.36.174.181
+    port: '5600'
+    cipher: aes-256-gcm
+    password: Y6R9pAtvxxzmGC
+  - name: 以色列+V2CROSS.COM - 5
+    type: trojan
+    server: 149.50.71.124
+    port: 4003?allowInsecure=1
+    password: TJCfE7Mx2YcA8kX8zg
+  - name: 南非 V2CROSS.COM - 3
     type: vmess
-    server: cf-dx-dns.sharecentre.online
-    port: 80
-    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
-    alterId: 0
+    server: 156.225.67.73
+    port: 47723
+    uuid: 21155efd-8e29-43d2-95bc-fe3190ecb1c6
+    alterId: 64
     cipher: auto
     udp: true
-    network: ws
-    ws-path: /shirker
+    network: tcp
+    ws-path: /
     ws-headers:
-      Host: dp4.scproxy.top
-  - name: 美国+Microsoft数据中心
+      Host: ''
+  - name: 新加坡+Amazon数据中心
     type: trojan
-    server: fscsg.fscloud123456789.com
-    port: '443'
-    password: 17f9a10a-3ff9-4cbe-ac15-108b585b1a39
+    server: hk2.gsjc.cfd
+    port: 443?sni=20-212-60-88.nhost.00cdn.com
+    password: f5075d6e-c65b-4133-b4fa-301ce5ba1fa9
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 南非 V2CROSS.COM
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
       - 美国 V2CROSS.COM
       - 以色列+V2CROSS.COM
-      - 以色列+V2CROSS.COM - 2
-      - 以色列+V2CROSS.COM - 3
-      - 美国+V2CROSS.COM
-      - 新加坡+Amazon数据中心
-      - 以色列+V2CROSS.COM - 4
       - 美国 CloudFlare节点
-      - 以色列+V2CROSS.COM - 5
-      - 以色列+V2CROSS.COM - 6
-      - 美国 滴滴盾CN2高防节点(dididun.com)
-      - 以色列+V2CROSS.COM - 7
-      - 美国 CloudFlare公司CDN节点(shopify)
-      - 以色列+V2CROSS.COM - 8
-      - 以色列+V2CROSS.COM - 9
-      - 以色列+V2CROSS.COM - 10
+      - 南非 V2CROSS.COM
+      - 以色列+V2CROSS.COM - 2
+      - 香港 V2CROSS.COM
+      - 日本+V2CROSS.COM
+      - 以色列+V2CROSS.COM - 3
+      - 以色列+V2CROSS.COM - 4
+      - 南非 V2CROSS.COM - 2
+      - 美国 V2CROSS.COM - 2
       - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
-      - 美国+Microsoft数据中心
+      - 法国+格拉沃利讷OVH数据中心
+      - 以色列+V2CROSS.COM - 5
+      - 南非 V2CROSS.COM - 3
+      - 新加坡+Amazon数据中心
   - name: 自动选择
     type: url-test
     proxies:
-      - 南非 V2CROSS.COM
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
       - 美国 V2CROSS.COM
       - 以色列+V2CROSS.COM
-      - 以色列+V2CROSS.COM - 2
-      - 以色列+V2CROSS.COM - 3
-      - 美国+V2CROSS.COM
-      - 新加坡+Amazon数据中心
-      - 以色列+V2CROSS.COM - 4
       - 美国 CloudFlare节点
-      - 以色列+V2CROSS.COM - 5
-      - 以色列+V2CROSS.COM - 6
-      - 美国 滴滴盾CN2高防节点(dididun.com)
-      - 以色列+V2CROSS.COM - 7
-      - 美国 CloudFlare公司CDN节点(shopify)
-      - 以色列+V2CROSS.COM - 8
-      - 以色列+V2CROSS.COM - 9
-      - 以色列+V2CROSS.COM - 10
+      - 南非 V2CROSS.COM
+      - 以色列+V2CROSS.COM - 2
+      - 香港 V2CROSS.COM
+      - 日本+V2CROSS.COM
+      - 以色列+V2CROSS.COM - 3
+      - 以色列+V2CROSS.COM - 4
+      - 南非 V2CROSS.COM - 2
+      - 美国 V2CROSS.COM - 2
       - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
-      - 美国+Microsoft数据中心
+      - 法国+格拉沃利讷OVH数据中心
+      - 以色列+V2CROSS.COM - 5
+      - 南非 V2CROSS.COM - 3
+      - 新加坡+Amazon数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 南非 V2CROSS.COM
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
       - 美国 V2CROSS.COM
       - 以色列+V2CROSS.COM
-      - 以色列+V2CROSS.COM - 2
-      - 以色列+V2CROSS.COM - 3
-      - 美国+V2CROSS.COM
-      - 新加坡+Amazon数据中心
-      - 以色列+V2CROSS.COM - 4
       - 美国 CloudFlare节点
-      - 以色列+V2CROSS.COM - 5
-      - 以色列+V2CROSS.COM - 6
-      - 美国 滴滴盾CN2高防节点(dididun.com)
-      - 以色列+V2CROSS.COM - 7
-      - 美国 CloudFlare公司CDN节点(shopify)
-      - 以色列+V2CROSS.COM - 8
-      - 以色列+V2CROSS.COM - 9
-      - 以色列+V2CROSS.COM - 10
+      - 南非 V2CROSS.COM
+      - 以色列+V2CROSS.COM - 2
+      - 香港 V2CROSS.COM
+      - 日本+V2CROSS.COM
+      - 以色列+V2CROSS.COM - 3
+      - 以色列+V2CROSS.COM - 4
+      - 南非 V2CROSS.COM - 2
+      - 美国 V2CROSS.COM - 2
       - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
-      - 美国+Microsoft数据中心
+      - 法国+格拉沃利讷OVH数据中心
+      - 以色列+V2CROSS.COM - 5
+      - 南非 V2CROSS.COM - 3
+      - 新加坡+Amazon数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
