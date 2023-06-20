@@ -1,7 +1,42 @@
 proxies:
-  - name: 乌克兰 V2CROSS.COM
+  - name: 广东省+移动
+    type: trojan
+    server: official.taipeicitygovernment.kiev.ua
+    port: '8443'
+    password: 5505f6ba-cd37-30ce-8f92-be4120c83d7f
+  - name: 美国 CloudFlare节点
     type: vmess
-    server: 212.110.134.7
+    server: 198.41.221.113
+    port: 2096
+    uuid: f387a0af-4b70-4a40-e2c3-2f22472df0cb
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /blue01
+    ws-headers:
+      Host: x1.ylks01.eu.org
+    tls: true
+  - name: 以色列+V2CROSS.COM
+    type: trojan
+    server: nl3.barbecuepie.com
+    port: '4003'
+    password: TJCfE7Mx2YcA8kX8zg
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: 104.31.16.27
+    port: 80
+    uuid: 58fe1542-5290-40ad-815a-77707a81afe5
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /IOebhLMhl1CTbFHbL95myfRX2
+    ws-headers:
+      Host: ca5.tehme2.fun
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: 104.16.32.142
     port: 443
     uuid: 3de4ec27-74b4-43e3-bf23-18e726ac80bc
     alterId: 0
@@ -10,89 +45,69 @@ proxies:
     network: ws
     ws-path: /P6kpn5UKG40MNLK2
     ws-headers:
-      Host: zHGKLbqn6UM.janbaroon.com
+      Host: QkGxa2MSvmu.janbaroon.com
     tls: true
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: dl.v001sssv.pw
-    port: 80
-    uuid: a4bb7f93-cee6-43d7-b2dd-fa9c70b88233
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: dl.v001sssv.pw
-  - name: 上海市+电信
-    type: ss
-    server: free.themars.top
-    port: '32102'
-    cipher: chacha20-ietf-poly1305
-    password: b89b39c2-dc8d-4595-a4c5-54b4fbab3fc2
-  - name: 以色列+V2CROSS.COM
-    type: trojan
-    server: 149.50.77.102
-    port: '4003'
-    password: TJCfE7Mx2YcA8kX8zg
-  - name: 美国+RF+Engineering
-    type: trojan
-    server: 141.193.68.93
-    port: 443?type=tcp&sni=18-140-66-207.nhost.00cdn.com&allowInsecure=1
-    password: b25cbc3a-d7e8-4fe4-b7a0-d3d18985bcf4
-  - name: 日本+东京Amazon数据中心
-    type: trojan
-    server: jp7.lianpi.xyz
-    port: '53638'
-    password: 7e319f7a-4c47-4606-8008-ce6c92634dd8
-  - name: 美国+Nokia
-    type: trojan
-    server: ssrsub.o08.trojan.tel
-    port: 80?sni=ssrsub.o08.trojan.tel
-    password: c8e877d3-2909-416d-aa5a-6d1722a374bd
   - name: 以色列+V2CROSS.COM - 2
     type: trojan
-    server: 149.50.69.131
+    server: 149.50.75.105
     port: '4003'
     password: TJCfE7Mx2YcA8kX8zg
+  - name: 以色列+V2CROSS.COM - 3
+    type: trojan
+    server: 149.50.77.125
+    port: '4003'
+    password: TJCfE7Mx2YcA8kX8zg
+  - name: 以色列+V2CROSS.COM - 4
+    type: trojan
+    server: us2.chuqiangtou.net
+    port: '4003'
+    password: TJCfE7Mx2YcA8kX8zg
+  - name: 美国+加利福尼亚州旧金山Amazon数据中心
+    type: trojan
+    server: fuck6.lianpi.xyz
+    port: '48057'
+    password: 7e319f7a-4c47-4606-8008-ce6c92634dd8
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 乌克兰 V2CROSS.COM
+      - 广东省+移动
       - 美国 CloudFlare节点
-      - 上海市+电信
       - 以色列+V2CROSS.COM
-      - 美国+RF+Engineering
-      - 日本+东京Amazon数据中心
-      - 美国+Nokia
+      - 美国 V2CROSS.COM
+      - 美国 CloudFlare节点 - 2
       - 以色列+V2CROSS.COM - 2
+      - 以色列+V2CROSS.COM - 3
+      - 以色列+V2CROSS.COM - 4
+      - 美国+加利福尼亚州旧金山Amazon数据中心
   - name: 自动选择
     type: url-test
     proxies:
-      - 乌克兰 V2CROSS.COM
+      - 广东省+移动
       - 美国 CloudFlare节点
-      - 上海市+电信
       - 以色列+V2CROSS.COM
-      - 美国+RF+Engineering
-      - 日本+东京Amazon数据中心
-      - 美国+Nokia
+      - 美国 V2CROSS.COM
+      - 美国 CloudFlare节点 - 2
       - 以色列+V2CROSS.COM - 2
+      - 以色列+V2CROSS.COM - 3
+      - 以色列+V2CROSS.COM - 4
+      - 美国+加利福尼亚州旧金山Amazon数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 乌克兰 V2CROSS.COM
+      - 广东省+移动
       - 美国 CloudFlare节点
-      - 上海市+电信
       - 以色列+V2CROSS.COM
-      - 美国+RF+Engineering
-      - 日本+东京Amazon数据中心
-      - 美国+Nokia
+      - 美国 V2CROSS.COM
+      - 美国 CloudFlare节点 - 2
       - 以色列+V2CROSS.COM - 2
+      - 以色列+V2CROSS.COM - 3
+      - 以色列+V2CROSS.COM - 4
+      - 美国+加利福尼亚州旧金山Amazon数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
