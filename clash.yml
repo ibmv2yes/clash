@@ -1,13 +1,94 @@
 proxies:
+  - name: 日本+东京都Amazon数据中心
+    type: trojan
+    server: jp7.lianpi.xyz
+    port: '53638'
+    password: 7e319f7a-4c47-4606-8008-ce6c92634dd8
   - name: 以色列+V2CROSS.COM
     type: trojan
-    server: 149.50.76.85
-    port: 4003?type=tcp&security=tls&sni=de2.nigirocloud.com&allowInsecure=1
-    password: PlF471nxneY0YevI
+    server: 149.50.92.75
+    port: 4003?type=tcp&security=tls&allowInsecure=1
+    password: TJCfE7Mx2YcA8kX8zg
   - name: 美国 CloudFlare节点
     type: vmess
-    server: ovhsdza.76898102.xyz
-    port: 2052
+    server: v2ray.online
+    port: 443
+    uuid: 00BBF5B8-173E-6818-9927-5AD1AA073C7D
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /speedtest
+    ws-headers:
+      Host: Kansas.v2ray.online
+    tls: true
+  - name: 以色列+V2CROSS.COM - 2
+    type: trojan
+    server: 149.50.77.99
+    port: 4003?type=tcp&security=tls&sni=telewebion.com&allowInsecure=1
+    password: TJCfE7Mx2YcA8kX8zg
+  - name: 以色列+V2CROSS.COM - 3
+    type: trojan
+    server: 149.50.69.127
+    port: '4003'
+    password: TJCfE7Mx2YcA8kX8zg
+  - name: 美国 华盛顿Cogent通信公司
+    type: vmess
+    server: 38.63.0.76
+    port: 47002
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国+Microsoft数据中心
+    type: trojan
+    server: sg.stablize.top
+    port: '443'
+    password: 5b51e0af-08af-4208-b834-6d6ac5721837
+  - name: 美国加利福尼亚州洛杉矶 滴滴盾高防节点
+    type: vmess
+    server: 172.247.104.62
+    port: 54403
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 亚利桑那州凤凰城Oracle云计算数据中心
+    type: vmess
+    server: 129.146.43.103
+    port: 8080
+    uuid: 88c6d12b-614f-485f-83fc-fb0cc57c4801
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 加利福尼亚州洛杉矶Sharktech数据中心
+    type: vmess
+    server: 64.32.4.6
+    port: 50005
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: hkgkgb.76898102.xyz
+    port: 2082
     uuid: 78fd41e5-346a-3bf4-b942-be0fad711979
     alterId: 0
     cipher: auto
@@ -15,34 +96,28 @@ proxies:
     network: ws
     ws-path: /funsdfrh
     ws-headers:
-      Host: ovhsdz.76898102.xyz
-  - name: 以色列+V2CROSS.COM - 2
-    type: trojan
-    server: 149.50.71.164
-    port: 4003?type=tcp&security=tls&allowInsecure=1
-    password: TJCfE7Mx2YcA8kX8zg
-  - name: 以色列+V2CROSS.COM - 3
-    type: trojan
-    server: uk1.barbecuepie.com
-    port: '4003'
-    password: TJCfE7Mx2YcA8kX8zg
+      Host: hkg.76898102.xyz
   - name: 以色列+V2CROSS.COM - 4
     type: trojan
-    server: 149.50.75.208
-    port: '4003'
+    server: 149.50.75.79
+    port: 4003?type=tcp&security=tls&allowInsecure=1
     password: TJCfE7Mx2YcA8kX8zg
-  - name: 法国+格拉沃利讷OVH数据中心
-    type: ss
-    server: 54.36.174.181
-    port: '8000'
-    cipher: aes-256-gcm
-    password: KixLvKzwjekG00rm
   - name: 以色列+V2CROSS.COM - 5
     type: trojan
     server: uk1.nigirocloud.com
     port: '4003'
     password: PlF471nxneY0YevI
-  - name: 美国 CloudFlare节点 - 2
+  - name: 以色列+V2CROSS.COM - 6
+    type: trojan
+    server: 149.50.75.112
+    port: '4003'
+    password: TJCfE7Mx2YcA8kX8zg
+  - name: 以色列+V2CROSS.COM - 7
+    type: trojan
+    server: 149.50.66.127
+    port: 4003?type=tcp&security=tls&allowInsecure=1
+    password: TJCfE7Mx2YcA8kX8zg
+  - name: 美国 CloudFlare节点 - 3
     type: vmess
     server: 162.159.243.235
     port: 443
@@ -55,59 +130,129 @@ proxies:
     ws-headers:
       Host: ttk.731808.tk
     tls: true
-  - name: 美国 CloudFlare节点 - 3
+  - name: 以色列+V2CROSS.COM - 8
+    type: trojan
+    server: 149.50.75.110
+    port: '4003'
+    password: TJCfE7Mx2YcA8kX8zg
+  - name: 美国 V2CROSS.COM
     type: vmess
-    server: cf-lt.sharecentre.online
-    port: 80
-    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
+    server: 155.248.161.113
+    port: 8080
+    uuid: 88c6d12b-614f-485f-83fc-fb0cc57c4801
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /shirker
+    ws-path: /
     ws-headers:
-      Host: lv1.sharecentrepro.org
+      Host: ''
+  - name: 美国 CloudFlare节点 - 4
+    type: vmess
+    server: beta.durov.ir
+    port: 8880
+    uuid: c7654980-72fe-492d-8b6f-a4cb55c94c2e
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /aries?ed=2048
+    ws-headers:
+      Host: vnpt.iiio.wiki
+  - name: 美国 得克萨斯州
+    type: vmess
+    server: 34.81.12.50
+    port: 8080
+    uuid: 88c6d12b-614f-485f-83fc-fb0cc57c4801
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 以色列+V2CROSS.COM - 9
+    type: trojan
+    server: nl3.barbecuepie.com
+    port: '4003'
+    password: TJCfE7Mx2YcA8kX8zg
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
+      - 日本+东京都Amazon数据中心
       - 以色列+V2CROSS.COM
       - 美国 CloudFlare节点
       - 以色列+V2CROSS.COM - 2
       - 以色列+V2CROSS.COM - 3
-      - 以色列+V2CROSS.COM - 4
-      - 法国+格拉沃利讷OVH数据中心
-      - 以色列+V2CROSS.COM - 5
+      - 美国 华盛顿Cogent通信公司
+      - 美国+Microsoft数据中心
+      - 美国加利福尼亚州洛杉矶 滴滴盾高防节点
+      - 美国 亚利桑那州凤凰城Oracle云计算数据中心
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
       - 美国 CloudFlare节点 - 2
+      - 以色列+V2CROSS.COM - 4
+      - 以色列+V2CROSS.COM - 5
+      - 以色列+V2CROSS.COM - 6
+      - 以色列+V2CROSS.COM - 7
       - 美国 CloudFlare节点 - 3
+      - 以色列+V2CROSS.COM - 8
+      - 美国 V2CROSS.COM
+      - 美国 CloudFlare节点 - 4
+      - 美国 得克萨斯州
+      - 以色列+V2CROSS.COM - 9
   - name: 自动选择
     type: url-test
     proxies:
+      - 日本+东京都Amazon数据中心
       - 以色列+V2CROSS.COM
       - 美国 CloudFlare节点
       - 以色列+V2CROSS.COM - 2
       - 以色列+V2CROSS.COM - 3
-      - 以色列+V2CROSS.COM - 4
-      - 法国+格拉沃利讷OVH数据中心
-      - 以色列+V2CROSS.COM - 5
+      - 美国 华盛顿Cogent通信公司
+      - 美国+Microsoft数据中心
+      - 美国加利福尼亚州洛杉矶 滴滴盾高防节点
+      - 美国 亚利桑那州凤凰城Oracle云计算数据中心
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
       - 美国 CloudFlare节点 - 2
+      - 以色列+V2CROSS.COM - 4
+      - 以色列+V2CROSS.COM - 5
+      - 以色列+V2CROSS.COM - 6
+      - 以色列+V2CROSS.COM - 7
       - 美国 CloudFlare节点 - 3
+      - 以色列+V2CROSS.COM - 8
+      - 美国 V2CROSS.COM
+      - 美国 CloudFlare节点 - 4
+      - 美国 得克萨斯州
+      - 以色列+V2CROSS.COM - 9
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
+      - 日本+东京都Amazon数据中心
       - 以色列+V2CROSS.COM
       - 美国 CloudFlare节点
       - 以色列+V2CROSS.COM - 2
       - 以色列+V2CROSS.COM - 3
-      - 以色列+V2CROSS.COM - 4
-      - 法国+格拉沃利讷OVH数据中心
-      - 以色列+V2CROSS.COM - 5
+      - 美国 华盛顿Cogent通信公司
+      - 美国+Microsoft数据中心
+      - 美国加利福尼亚州洛杉矶 滴滴盾高防节点
+      - 美国 亚利桑那州凤凰城Oracle云计算数据中心
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
       - 美国 CloudFlare节点 - 2
+      - 以色列+V2CROSS.COM - 4
+      - 以色列+V2CROSS.COM - 5
+      - 以色列+V2CROSS.COM - 6
+      - 以色列+V2CROSS.COM - 7
       - 美国 CloudFlare节点 - 3
+      - 以色列+V2CROSS.COM - 8
+      - 美国 V2CROSS.COM
+      - 美国 CloudFlare节点 - 4
+      - 美国 得克萨斯州
+      - 以色列+V2CROSS.COM - 9
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
