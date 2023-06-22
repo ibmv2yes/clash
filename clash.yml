@@ -1,72 +1,107 @@
 proxies:
-  - name: 美国+Amazon+EC2服务器
+  - name: 日本+V2CROSS.COM
     type: trojan
-    server: usmax01.170203.xyz
+    server: ko1.lianpi.xyz
+    port: '51256'
+    password: ab204b2d-dac8-4cf4-8239-d46d49d9cad5
+  - name: 英国+伦敦Amazon数据中心
+    type: trojan
+    server: uk01.170203.xyz
+    port: '43526'
+    password: 535b9369-31d4-4685-9bb5-7c223d383524
+  - name: 日本+V2CROSS.COM - 2
+    type: trojan
+    server: kr01.170203.xyz
+    port: 443?type=tcp&security=tls&sni=kr01.170203.xyz&allowInsecure=1
+    password: 535b9369-31d4-4685-9bb5-7c223d383524
+  - name: 美国+Xerox
+    type: trojan
+    server: sg02.170203.xyz
+    port: '45636'
+    password: 535b9369-31d4-4685-9bb5-7c223d383524
+  - name: 新加坡+亚马逊(Amazon)公司数据中心
+    type: trojan
+    server: sg13.170203.xyz
     port: '443'
+    password: 535b9369-31d4-4685-9bb5-7c223d383524
+  - name: 以色列+V2CROSS.COM
+    type: trojan
+    server: 149.50.75.90
+    port: '4003'
+    password: TJCfE7Mx2YcA8kX8zg
+  - name: 日本+东京都Amazon数据中心
+    type: trojan
+    server: jp003.170203.xyz
+    port: '34522'
+    password: 535b9369-31d4-4685-9bb5-7c223d383524
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: tech.noaries.de
+    port: 80
+    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /shirker
+    ws-headers:
+      Host: nl.sharecentrepro.com
+  - name: 以色列+V2CROSS.COM - 2
+    type: trojan
+    server: 149.50.76.85
+    port: '4003'
+    password: PlF471nxneY0YevI
+  - name: 以色列+V2CROSS.COM - 3
+    type: trojan
+    server: uk1.nigirocloud.com
+    port: '4003'
+    password: PlF471nxneY0YevI
+  - name: 以色列+V2CROSS.COM - 4
+    type: trojan
+    server: us1.chuqiangtou.net
+    port: '4003'
+    password: TJCfE7Mx2YcA8kX8zg
+  - name: 以色列+V2CROSS.COM - 5
+    type: trojan
+    server: 149.50.89.108
+    port: '4003'
+    password: TJCfE7Mx2YcA8kX8zg
+  - name: 以色列+V2CROSS.COM - 6
+    type: trojan
+    server: 149.50.77.135
+    port: '4003'
+    password: TJCfE7Mx2YcA8kX8zg
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: ns1.v2-vip.fun
+    port: 80
+    uuid: 8abe9496-5e24-4e49-b566-dcf86116017d
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /i99LgvSaslbsPLLQQ7j6Z
+    ws-headers:
+      Host: de5.irteh.fun
+  - name: 英国+伦敦Amazon数据中心 - 2
+    type: trojan
+    server: uk01.170203.xyz
+    port: '43526'
     password: 535b9369-31d4-4685-9bb5-7c223d383524
   - name: 美国+麻省理工学院
     type: trojan
     server: sg12.170203.xyz
     port: '46536'
     password: 535b9369-31d4-4685-9bb5-7c223d383524
-  - name: 新加坡+Amazon数据中心
-    type: trojan
-    server: sg03.170203.xyz
-    port: 443?type=tcp&security=tls&sni=sg03.170203.xyz&allowInsecure=1
-    password: 535b9369-31d4-4685-9bb5-7c223d383524
-  - name: 美国+Xerox
-    type: trojan
-    server: sg003.170203.xyz
-    port: 43643?type=tcp&sni=sg003.170203.xyz&allowInsecure=1
-    password: 535b9369-31d4-4685-9bb5-7c223d383524
-  - name: 美国 CloudFlare节点
+  - name: 美国 CloudFlare节点 - 2
     type: vmess
-    server: cf.yxjnode.com
+    server: dl6.v001sssv.pw
     port: 80
-    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
+    uuid: 8eece2e1-cfc1-4f84-803e-1a66650982ea
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /yxzbp
-    ws-headers:
-      Host: dp1.yxjnode.com
-  - name: 日本+东京Amazon数据中心
-    type: trojan
-    server: jpmax03.170203.xyz
-    port: 443?type=tcp&allowInsecure=1
-    password: 535b9369-31d4-4685-9bb5-7c223d383524
-  - name: 以色列+V2CROSS.COM
-    type: trojan
-    server: uk1.barbecuepie.com
-    port: '4003'
-    password: TJCfE7Mx2YcA8kX8zg
-  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
-    type: vmess
-    server: 192.74.234.82
-    port: 51302
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 以色列+V2CROSS.COM - 2
-    type: trojan
-    server: 149.50.75.81
-    port: '4003'
-    password: TJCfE7Mx2YcA8kX8zg
-  - name: 台湾省高雄市 中华电信
-    type: vmess
-    server: hinettw1.applebench.tech
-    port: 56568
-    uuid: 1f3d67b4-6929-4598-90ca-84a841bf02e4
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
     ws-path: /
     ws-headers:
       Host: ''
@@ -76,44 +111,65 @@ proxy-groups:
     proxies:
       - 自动选择
       - 故障转移
-      - 美国+Amazon+EC2服务器
-      - 美国+麻省理工学院
-      - 新加坡+Amazon数据中心
+      - 日本+V2CROSS.COM
+      - 英国+伦敦Amazon数据中心
+      - 日本+V2CROSS.COM - 2
       - 美国+Xerox
-      - 美国 CloudFlare节点
-      - 日本+东京Amazon数据中心
+      - 新加坡+亚马逊(Amazon)公司数据中心
       - 以色列+V2CROSS.COM
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 日本+东京都Amazon数据中心
+      - 美国 CloudFlare节点
       - 以色列+V2CROSS.COM - 2
-      - 台湾省高雄市 中华电信
+      - 以色列+V2CROSS.COM - 3
+      - 以色列+V2CROSS.COM - 4
+      - 以色列+V2CROSS.COM - 5
+      - 以色列+V2CROSS.COM - 6
+      - 美国 V2CROSS.COM
+      - 英国+伦敦Amazon数据中心 - 2
+      - 美国+麻省理工学院
+      - 美国 CloudFlare节点 - 2
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国+Amazon+EC2服务器
-      - 美国+麻省理工学院
-      - 新加坡+Amazon数据中心
+      - 日本+V2CROSS.COM
+      - 英国+伦敦Amazon数据中心
+      - 日本+V2CROSS.COM - 2
       - 美国+Xerox
-      - 美国 CloudFlare节点
-      - 日本+东京Amazon数据中心
+      - 新加坡+亚马逊(Amazon)公司数据中心
       - 以色列+V2CROSS.COM
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 日本+东京都Amazon数据中心
+      - 美国 CloudFlare节点
       - 以色列+V2CROSS.COM - 2
-      - 台湾省高雄市 中华电信
+      - 以色列+V2CROSS.COM - 3
+      - 以色列+V2CROSS.COM - 4
+      - 以色列+V2CROSS.COM - 5
+      - 以色列+V2CROSS.COM - 6
+      - 美国 V2CROSS.COM
+      - 英国+伦敦Amazon数据中心 - 2
+      - 美国+麻省理工学院
+      - 美国 CloudFlare节点 - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国+Amazon+EC2服务器
-      - 美国+麻省理工学院
-      - 新加坡+Amazon数据中心
+      - 日本+V2CROSS.COM
+      - 英国+伦敦Amazon数据中心
+      - 日本+V2CROSS.COM - 2
       - 美国+Xerox
-      - 美国 CloudFlare节点
-      - 日本+东京Amazon数据中心
+      - 新加坡+亚马逊(Amazon)公司数据中心
       - 以色列+V2CROSS.COM
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 日本+东京都Amazon数据中心
+      - 美国 CloudFlare节点
       - 以色列+V2CROSS.COM - 2
-      - 台湾省高雄市 中华电信
+      - 以色列+V2CROSS.COM - 3
+      - 以色列+V2CROSS.COM - 4
+      - 以色列+V2CROSS.COM - 5
+      - 以色列+V2CROSS.COM - 6
+      - 美国 V2CROSS.COM
+      - 英国+伦敦Amazon数据中心 - 2
+      - 美国+麻省理工学院
+      - 美国 CloudFlare节点 - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
