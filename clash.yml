@@ -1,41 +1,27 @@
 proxies:
-  - name: 以色列+V2CROSS.COM
-    type: trojan
-    server: 149.50.83.49
-    port: '4003'
-    password: TJCfE7Mx2YcA8kX8zg
-  - name: 以色列+V2CROSS.COM - 2
-    type: trojan
-    server: 149.50.70.87
-    port: '4003'
-    password: TJCfE7Mx2YcA8kX8zg
-  - name: 以色列+V2CROSS.COM - 3
-    type: trojan
-    server: 149.50.76.85
-    port: 4003?type=tcp&security=tls&sni=de2.nigirocloud.com&allowInsecure=1
-    password: PlF471nxneY0YevI
   - name: 美国 CloudFlare节点
     type: vmess
-    server: v2ray.online
+    server: cdnjs.com
     port: 443
-    uuid: 00BBF5B8-173E-6818-9927-5AD1AA073C7D
+    uuid: 2CCC8DAB-53C6-741F-6309-446107D82FC1
     alterId: 0
     cipher: auto
     udp: true
     network: ws
     ws-path: /speedtest
     ws-headers:
-      Host: Kansas.v2ray.online
+      Host: Kansas.kotick.site
     tls: true
-  - name: 美国+V2CROSS.COM
-    type: trojan
-    server: air-toyko13.900513.xyz
-    port: '7708'
-    password: 4cfb5b98-5a9d-4c6d-8911-25deca297fa1
-  - name: 美国 Datability
+  - name: 法国+ONLINE+S.A.S.数据中心
+    type: ss
+    server: 195.154.200.150
+    port: '2376'
+    cipher: aes-256-gcm
+    password: faBAoD54k87UJG7
+  - name: 美国 加利福尼亚州洛杉矶Sharktech数据中心
     type: vmess
-    server: 140.99.57.42
-    port: 54402
+    server: 64.32.4.6
+    port: 50005
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -43,62 +29,40 @@ proxies:
     network: tcp
     ws-path: /
     ws-headers:
-      Host: 🇺🇸US美国(youtube阿伟科技2)
+      Host: ''
   - name: 美国 CloudFlare节点 - 2
     type: vmess
-    server: cf-dx-dns.sharecentre.online
+    server: cf.yxjnode.com
     port: 80
-    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
+    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /shirker
+    ws-path: /yxzbp
     ws-headers:
-      Host: dp1.scproxy.top
-  - name: 美国 V2CROSS.COM
+      Host: dp1.yxjnode.com
+  - name: 美国 CloudFlare节点 - 3
     type: vmess
-    server: 104.31.16.45
+    server: zfc.windowsupdate1.com
     port: 80
-    uuid: 2fcc2939-7dcf-4741-aa03-825bc40e23fd
+    uuid: 01925169-e2ff-483c-89f2-6e778dcdd450
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /CZfczvtieCZXdOlgWhgDLX
-    ws-headers:
-      Host: de3.irteh.fun
-  - name: 以色列+V2CROSS.COM - 4
-    type: trojan
-    server: nl3.nigirocloud.com
-    port: '4003'
-    password: PlF471nxneY0YevI
-  - name: 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
-    type: vmess
-    server: 172.247.67.45
-    port: 50035
-    uuid: 2278efe4-ad0c-47ce-9480-068608368d76
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
     ws-path: /
     ws-headers:
-      Host: ''
-  - name: 以色列+V2CROSS.COM - 5
+      Host: us-1.acyun.cf
+  - name: 以色列+V2CROSS.COM
     type: trojan
-    server: 149.50.75.89
-    port: '4003'
-    password: TJCfE7Mx2YcA8kX8zg
-  - name: 以色列+V2CROSS.COM - 6
-    type: trojan
-    server: de2.nigirocloud.com
+    server: uk1.nigirocloud.com
     port: '4003'
     password: PlF471nxneY0YevI
-  - name: 美国加利福尼亚州洛杉矶 PetaExpress
+  - name: 美国 加利福尼亚州洛杉矶PetaExpress
     type: vmess
-    server: 198.2.234.108
-    port: 51322
+    server: 107.148.194.240
+    port: 55504
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -107,26 +71,24 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国 CloudFlare节点 - 3
-    type: vmess
-    server: 108.162.194.182
-    port: 2086
-    uuid: 9572d691-e27a-4f54-ef4d-57600a785b55
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /qwer
-    ws-headers:
-      Host: txx.vtcss.top
-  - name: 以色列+V2CROSS.COM - 7
+  - name: 以色列+V2CROSS.COM - 2
     type: trojan
-    server: uk1.barbecuepie.com
+    server: nl3.barbecuepie.com
     port: '4003'
     password: TJCfE7Mx2YcA8kX8zg
-  - name: 以色列+V2CROSS.COM - 8
+  - name: 以色列+V2CROSS.COM - 3
     type: trojan
-    server: 149.50.89.110
+    server: us2.chuqiangtou.net
+    port: '4003'
+    password: TJCfE7Mx2YcA8kX8zg
+  - name: 以色列+V2CROSS.COM - 4
+    type: trojan
+    server: 149.50.75.100
+    port: '4003'
+    password: TJCfE7Mx2YcA8kX8zg
+  - name: 以色列+V2CROSS.COM - 5
+    type: trojan
+    server: 149.50.70.83
     port: '4003'
     password: TJCfE7Mx2YcA8kX8zg
 proxy-groups:
@@ -135,62 +97,47 @@ proxy-groups:
     proxies:
       - 自动选择
       - 故障转移
+      - 美国 CloudFlare节点
+      - 法国+ONLINE+S.A.S.数据中心
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 美国 CloudFlare节点 - 2
+      - 美国 CloudFlare节点 - 3
       - 以色列+V2CROSS.COM
+      - 美国 加利福尼亚州洛杉矶PetaExpress
       - 以色列+V2CROSS.COM - 2
       - 以色列+V2CROSS.COM - 3
-      - 美国 CloudFlare节点
-      - 美国+V2CROSS.COM
-      - 美国 Datability
-      - 美国 CloudFlare节点 - 2
-      - 美国 V2CROSS.COM
       - 以色列+V2CROSS.COM - 4
-      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
       - 以色列+V2CROSS.COM - 5
-      - 以色列+V2CROSS.COM - 6
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 美国 CloudFlare节点 - 3
-      - 以色列+V2CROSS.COM - 7
-      - 以色列+V2CROSS.COM - 8
   - name: 自动选择
     type: url-test
     proxies:
+      - 美国 CloudFlare节点
+      - 法国+ONLINE+S.A.S.数据中心
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 美国 CloudFlare节点 - 2
+      - 美国 CloudFlare节点 - 3
       - 以色列+V2CROSS.COM
+      - 美国 加利福尼亚州洛杉矶PetaExpress
       - 以色列+V2CROSS.COM - 2
       - 以色列+V2CROSS.COM - 3
-      - 美国 CloudFlare节点
-      - 美国+V2CROSS.COM
-      - 美国 Datability
-      - 美国 CloudFlare节点 - 2
-      - 美国 V2CROSS.COM
       - 以色列+V2CROSS.COM - 4
-      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
       - 以色列+V2CROSS.COM - 5
-      - 以色列+V2CROSS.COM - 6
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 美国 CloudFlare节点 - 3
-      - 以色列+V2CROSS.COM - 7
-      - 以色列+V2CROSS.COM - 8
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
+      - 美国 CloudFlare节点
+      - 法国+ONLINE+S.A.S.数据中心
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 美国 CloudFlare节点 - 2
+      - 美国 CloudFlare节点 - 3
       - 以色列+V2CROSS.COM
+      - 美国 加利福尼亚州洛杉矶PetaExpress
       - 以色列+V2CROSS.COM - 2
       - 以色列+V2CROSS.COM - 3
-      - 美国 CloudFlare节点
-      - 美国+V2CROSS.COM
-      - 美国 Datability
-      - 美国 CloudFlare节点 - 2
-      - 美国 V2CROSS.COM
       - 以色列+V2CROSS.COM - 4
-      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
       - 以色列+V2CROSS.COM - 5
-      - 以色列+V2CROSS.COM - 6
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 美国 CloudFlare节点 - 3
-      - 以色列+V2CROSS.COM - 7
-      - 以色列+V2CROSS.COM - 8
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
