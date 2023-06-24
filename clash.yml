@@ -1,115 +1,179 @@
 proxies:
+  - name: 上海市青浦区+电信
+    type: trojan
+    server: a008.zhuan99.men
+    port: '10008'
+    password: c08f1ece-1731-45c3-9c05-0fc47a6dc0a6
   - name: 以色列+V2CROSS.COM
     type: trojan
-    server: us3.chuqiangtou.net
+    server: 149.50.75.89
     port: '4003'
     password: TJCfE7Mx2YcA8kX8zg
-  - name: 美国+V2CROSS.COM
-    type: trojan
-    server: 152.70.74.66
-    port: 443?security=tls&type=tcp&headerType=none
-    password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
+  - name: 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+    type: vmess
+    server: 107.167.30.132
+    port: 43900
+    uuid: 58e560b4-bba6-4843-be5f-83321022fa0d
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
   - name: 以色列+V2CROSS.COM - 2
     type: trojan
-    server: nl3.nigirocloud.com
+    server: jp3.chuqiangtou.net
     port: '4003'
-    password: PlF471nxneY0YevI
+    password: TJCfE7Mx2YcA8kX8zg
+  - name: 以色列+V2CROSS.COM - 3
+    type: trojan
+    server: 149.50.89.86
+    port: '4003'
+    password: TJCfE7Mx2YcA8kX8zg
   - name: 美国+Microsoft数据中心
     type: trojan
     server: jp.stablize.top
     port: '443'
-    password: 4d23cf0e-5ceb-43e7-90d3-63982bfa6940
-  - name: 斯洛伐克+V2CROSS.COM
-    type: ss
-    server: 185.48.248.126
-    port: '444'
-    cipher: chacha20-ietf-poly1305
-    password: Onsheypy
-  - name: 以色列+V2CROSS.COM - 3
+    password: 40297165-0545-4f8f-abc4-3ee25e6cfb87
+  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
+    type: vmess
+    server: 192.74.243.60
+    port: 43246
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 台湾省+中华电信(HiNet)数据中心
     type: trojan
-    server: 149.50.75.104
-    port: '4003'
-    password: TJCfE7Mx2YcA8kX8zg
-  - name: 以色列+V2CROSS.COM - 4
+    server: hinet2.downloadvip.cfd
+    port: '443'
+    password: d8b00b98-96fb-43d5-af14-4166a329a655
+  - name: 上海市青浦区+电信 - 2
     type: trojan
-    server: us2.chuqiangtou.net
-    port: 4003?type=tcp&allowInsecure=1
-    password: TJCfE7Mx2YcA8kX8zg
-  - name: 美国+V2CROSS.COM - 2
-    type: ss
-    server: 172.99.190.87
-    port: '5500'
-    cipher: aes-256-gcm
-    password: KixLvKzwjekG00rm
-  - name: 以色列+V2CROSS.COM - 5
+    server: a013.zhuan99.men
+    port: '10013'
+    password: c08f1ece-1731-45c3-9c05-0fc47a6dc0a6
+  - name: 广东省+移动
     type: trojan
-    server: 149.50.77.99
-    port: 4003?type=tcp&security=tls&sni=telewebion.com&allowInsecure=1
-    password: TJCfE7Mx2YcA8kX8zg
-  - name: 以色列+V2CROSS.COM - 6
-    type: trojan
-    server: de2.nigirocloud.com
-    port: '4003'
-    password: PlF471nxneY0YevI
+    server: zf.heigouyunzf.xyz
+    port: 38801?sni=ads.rade.ir
+    password: e958b47d-3510-445a-99cb-dc98d227e29e
   - name: 美国 CloudFlare节点
     type: vmess
-    server: 198.41.201.28
-    port: 8080
-    uuid: d5382631-aae1-486d-842a-de48274dd0d7
+    server: bluehost.com
+    port: 443
+    uuid: be74ca03-6a7c-4c88-edc2-c6434ead0cfa
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /qwer
+    ws-path: /16575
     ws-headers:
-      Host: uxx.vtcss.top
+      Host: cdnca1.digisport.shop
+    tls: true
+  - name: 安徽省 移动数据上网公共出口
+    type: vmess
+    server: 112.29.94.76
+    port: 47589
+    uuid: 83a424d8-4bcb-4cee-b016-2c8f1db4a921
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-headers: {}
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: sdttkza.76898102.xyz
+    port: 2082
+    uuid: 4896559c-c94e-342a-b208-6107ec292652
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /funsdfrh
+    ws-headers:
+      Host: sdttkz.76898102.xyz
+  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心 - 2
+    type: vmess
+    server: 192.74.231.186
+    port: 49255
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: 🇺🇸US美国(youtube阿伟科技2)
+  - name: 以色列+V2CROSS.COM - 4
+    type: trojan
+    server: 149.50.67.151
+    port: '4003'
+    password: TJCfE7Mx2YcA8kX8zg
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
+      - 上海市青浦区+电信
       - 以色列+V2CROSS.COM
-      - 美国+V2CROSS.COM
+      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
       - 以色列+V2CROSS.COM - 2
-      - 美国+Microsoft数据中心
-      - 斯洛伐克+V2CROSS.COM
       - 以色列+V2CROSS.COM - 3
-      - 以色列+V2CROSS.COM - 4
-      - 美国+V2CROSS.COM - 2
-      - 以色列+V2CROSS.COM - 5
-      - 以色列+V2CROSS.COM - 6
+      - 美国+Microsoft数据中心
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 台湾省+中华电信(HiNet)数据中心
+      - 上海市青浦区+电信 - 2
+      - 广东省+移动
       - 美国 CloudFlare节点
+      - 安徽省 移动数据上网公共出口
+      - 美国 CloudFlare节点 - 2
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心 - 2
+      - 以色列+V2CROSS.COM - 4
   - name: 自动选择
     type: url-test
     proxies:
+      - 上海市青浦区+电信
       - 以色列+V2CROSS.COM
-      - 美国+V2CROSS.COM
+      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
       - 以色列+V2CROSS.COM - 2
-      - 美国+Microsoft数据中心
-      - 斯洛伐克+V2CROSS.COM
       - 以色列+V2CROSS.COM - 3
-      - 以色列+V2CROSS.COM - 4
-      - 美国+V2CROSS.COM - 2
-      - 以色列+V2CROSS.COM - 5
-      - 以色列+V2CROSS.COM - 6
+      - 美国+Microsoft数据中心
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 台湾省+中华电信(HiNet)数据中心
+      - 上海市青浦区+电信 - 2
+      - 广东省+移动
       - 美国 CloudFlare节点
+      - 安徽省 移动数据上网公共出口
+      - 美国 CloudFlare节点 - 2
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心 - 2
+      - 以色列+V2CROSS.COM - 4
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
+      - 上海市青浦区+电信
       - 以色列+V2CROSS.COM
-      - 美国+V2CROSS.COM
+      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
       - 以色列+V2CROSS.COM - 2
-      - 美国+Microsoft数据中心
-      - 斯洛伐克+V2CROSS.COM
       - 以色列+V2CROSS.COM - 3
-      - 以色列+V2CROSS.COM - 4
-      - 美国+V2CROSS.COM - 2
-      - 以色列+V2CROSS.COM - 5
-      - 以色列+V2CROSS.COM - 6
+      - 美国+Microsoft数据中心
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 台湾省+中华电信(HiNet)数据中心
+      - 上海市青浦区+电信 - 2
+      - 广东省+移动
       - 美国 CloudFlare节点
+      - 安徽省 移动数据上网公共出口
+      - 美国 CloudFlare节点 - 2
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心 - 2
+      - 以色列+V2CROSS.COM - 4
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
