@@ -1,21 +1,21 @@
 proxies:
-  - name: 丹麦 V2CROSS.COM
+  - name: 美国 V2CROSS.COM
     type: vmess
-    server: frsadubidd.76898102.xyz
-    port: 2095
-    uuid: 4896559c-c94e-342a-b208-6107ec292652
-    alterId: 0
+    server: 108.186.192.231
+    port: 45502
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
     cipher: auto
     udp: true
-    network: ws
-    ws-path: /funsdfrh
+    network: tcp
+    ws-path: /
     ws-headers:
-      Host: frsadubid.76898102.xyz
-  - name: 巴西圣保罗 CloudFlare节点
+      Host: 🇺🇸US美国(youtube阿伟科技2)
+  - name: 美国弗吉尼亚州阿什本 CloudFlare节点
     type: vmess
-    server: 188.114.98.138
-    port: 8080
-    uuid: 3b1b5871-6b4f-461d-8882-eba415d0ddf9
+    server: 173.245.49.230
+    port: 2086
+    uuid: 9572d691-e27a-4f54-ef4d-57600a785b55
     alterId: 0
     cipher: auto
     udp: true
@@ -23,74 +23,9 @@ proxies:
     ws-path: /qwer
     ws-headers:
       Host: txx.vtcss.top
-  - name: 美国 CloudFlare节点
+  - name: 美国 V2CROSS.COM - 2
     type: vmess
-    server: cz.hug1013.me
-    port: 8880
-    uuid: 8075ec18-25ca-4677-930a-867898c4cf9f
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /kyoma?ed=2048
-    ws-headers:
-      Host: cz.hug1013.me
-  - name: 美国+华盛顿Cogent通信公司
-    type: ss
-    server: 38.143.66.99
-    port: '8118'
-    cipher: aes-256-gcm
-    password: cdBIDV42DCwnfIN
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: 104.16.183.101
-    port: 443
-    uuid: 3de4ec27-74b4-43e3-bf23-18e726ac80bc
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /P6kpn5UKG40MNLK2
-    ws-headers:
-      Host: pWghljmnknq.janbaroon.com
-    tls: true
-  - name: 美国+Microsoft数据中心
-    type: trojan
-    server: sg.stablize.top
-    port: '443'
-    password: 5b51e0af-08af-4208-b834-6d6ac5721837
-  - name: 英国 社会保险安全部
-    type: vmess
-    server: 51.195.125.16
-    port: 54902
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国加利福尼亚州洛杉矶 PetaExpress
-    type: vmess
-    server: 198.2.218.206
-    port: 51203
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 爱尔兰+都柏林Amazon数据中心
-    type: trojan
-    server: 34.240.92.82
-    port: 22222?sni=trj.rollingnext.co.uk
-    password: telegram-id-privatevpns
-  - name: 美国 V2CROSS.COM
-    type: vmess
-    server: 104.31.16.27
+    server: 104.31.16.28
     port: 80
     uuid: 58fe1542-5290-40ad-815a-77707a81afe5
     alterId: 0
@@ -99,8 +34,68 @@ proxies:
     network: ws
     ws-path: /IOebhLMhl1CTbFHbL95myfRX2
     ws-headers:
-      Host: ca5.tehme2.fun
-  - name: 美国 V2CROSS.COM - 2
+      Host: ca4.tehme2.fun
+  - name: 美国 V2CROSS.COM - 3
+    type: vmess
+    server: 108.186.192.229
+    port: 45502
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: cf-dx-dns.sharecentre.online
+    port: 80
+    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /shirker
+    ws-headers:
+      Host: dp4.scproxy.top
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: cf.yxjnode.com
+    port: 80
+    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /yxzbp
+    ws-headers:
+      Host: dp1.yxjnode.com
+  - name: 美国 加利福尼亚州圣何塞PEG TECH
+    type: vmess
+    server: 142.4.109.68
+    port: 46672
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /835757
+    ws-headers:
+      Host: 🇺🇸US美国(youtube阿伟科技2)
+  - name: 美国 加利福尼亚州洛杉矶PetaExpress
+    type: vmess
+    server: 107.148.194.238
+    port: 55504
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 V2CROSS.COM - 4
     type: vmess
     server: 38.26.191.100
     port: 49931
@@ -112,84 +107,153 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
+  - name: 美国加利福尼亚州洛杉矶 CeraNetworks数据中心
+    type: vmess
+    server: 23.225.211.20
+    port: 42941
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 Datability
+    type: vmess
+    server: 140.99.140.170
+    port: 44932
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国+惠普HP
+    type: trojan
+    server: 15.152.45.154
+    port: '38584'
+    password: vrEapjAokI
+  - name: 美国+俄亥俄州都柏林Amazon数据中心
+    type: trojan
+    server: 18.191.139.90
+    port: '20903'
+    password: DulxM7ae07
   - name: 美国 CloudFlare节点 - 3
     type: vmess
-    server: www.digitalocean.com
+    server: cf-dx-dns.sharecentre.online
     port: 80
-    uuid: 25b280df-e990-4495-80e3-48ec3c83da77
+    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /api/v3/download.getFile
+    ws-path: /shirker
     ws-headers:
-      Host: ssrsub.v02.ssrsub.com
+      Host: dp4.scproxy.top
+  - name: 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+    type: vmess
+    server: 23.225.33.171
+    port: 56662
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
   - name: 美国 CloudFlare节点 - 4
     type: vmess
-    server: 104.16.150.9
-    port: 443
-    uuid: 3de4ec27-74b4-43e3-bf23-18e726ac80bc
+    server: cz.hug1013.me
+    port: 8880
+    uuid: 8075ec18-25ca-4677-930a-867898c4cf9f
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /P6kpn5UKG40MNLK2
+    ws-path: /kyoma?ed=2048
     ws-headers:
-      Host: XWOp2D.janbaroon.com
-    tls: true
+      Host: cz.hug1013.me
+  - name: 美国 加利福尼亚州洛杉矶PetaExpress - 2
+    type: vmess
+    server: 107.148.192.155
+    port: 49924
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 丹麦 V2CROSS.COM
-      - 巴西圣保罗 CloudFlare节点
-      - 美国 CloudFlare节点
-      - 美国+华盛顿Cogent通信公司
-      - 美国 CloudFlare节点 - 2
-      - 美国+Microsoft数据中心
-      - 英国 社会保险安全部
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 爱尔兰+都柏林Amazon数据中心
       - 美国 V2CROSS.COM
+      - 美国弗吉尼亚州阿什本 CloudFlare节点
       - 美国 V2CROSS.COM - 2
+      - 美国 V2CROSS.COM - 3
+      - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 - 2
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国 加利福尼亚州洛杉矶PetaExpress
+      - 美国 V2CROSS.COM - 4
+      - 美国加利福尼亚州洛杉矶 CeraNetworks数据中心
+      - 美国 Datability
+      - 美国+惠普HP
+      - 美国+俄亥俄州都柏林Amazon数据中心
       - 美国 CloudFlare节点 - 3
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
       - 美国 CloudFlare节点 - 4
+      - 美国 加利福尼亚州洛杉矶PetaExpress - 2
   - name: 自动选择
     type: url-test
     proxies:
-      - 丹麦 V2CROSS.COM
-      - 巴西圣保罗 CloudFlare节点
-      - 美国 CloudFlare节点
-      - 美国+华盛顿Cogent通信公司
-      - 美国 CloudFlare节点 - 2
-      - 美国+Microsoft数据中心
-      - 英国 社会保险安全部
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 爱尔兰+都柏林Amazon数据中心
       - 美国 V2CROSS.COM
+      - 美国弗吉尼亚州阿什本 CloudFlare节点
       - 美国 V2CROSS.COM - 2
+      - 美国 V2CROSS.COM - 3
+      - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 - 2
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国 加利福尼亚州洛杉矶PetaExpress
+      - 美国 V2CROSS.COM - 4
+      - 美国加利福尼亚州洛杉矶 CeraNetworks数据中心
+      - 美国 Datability
+      - 美国+惠普HP
+      - 美国+俄亥俄州都柏林Amazon数据中心
       - 美国 CloudFlare节点 - 3
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
       - 美国 CloudFlare节点 - 4
+      - 美国 加利福尼亚州洛杉矶PetaExpress - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 丹麦 V2CROSS.COM
-      - 巴西圣保罗 CloudFlare节点
-      - 美国 CloudFlare节点
-      - 美国+华盛顿Cogent通信公司
-      - 美国 CloudFlare节点 - 2
-      - 美国+Microsoft数据中心
-      - 英国 社会保险安全部
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 爱尔兰+都柏林Amazon数据中心
       - 美国 V2CROSS.COM
+      - 美国弗吉尼亚州阿什本 CloudFlare节点
       - 美国 V2CROSS.COM - 2
+      - 美国 V2CROSS.COM - 3
+      - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 - 2
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国 加利福尼亚州洛杉矶PetaExpress
+      - 美国 V2CROSS.COM - 4
+      - 美国加利福尼亚州洛杉矶 CeraNetworks数据中心
+      - 美国 Datability
+      - 美国+惠普HP
+      - 美国+俄亥俄州都柏林Amazon数据中心
       - 美国 CloudFlare节点 - 3
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
       - 美国 CloudFlare节点 - 4
+      - 美国 加利福尼亚州洛杉矶PetaExpress - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
