@@ -1,20 +1,14 @@
 proxies:
-  - name: 美国 V2CROSS.COM
+  - name: 美国+华盛顿Cogent通信公司
+    type: ss
+    server: 38.143.66.99
+    port: '5001'
+    cipher: aes-256-gcm
+    password: Y6R9pAtvxxzmGC
+  - name: 美国 Datability
     type: vmess
-    server: 104.31.16.45
-    port: 80
-    uuid: 2fcc2939-7dcf-4741-aa03-825bc40e23fd
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /CZfczvtieCZXdOlgWhgDLX
-    ws-headers:
-      Host: de3.irteh.fun
-  - name: 美国加利福尼亚州洛杉矶 PetaExpress
-    type: vmess
-    server: 198.2.196.10
-    port: 43389
+    server: 140.99.57.19
+    port: 41212
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -23,20 +17,129 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
+  - name: 广东省广州市+移动
+    type: trojan
+    server: us-08-cz2dg2.ferryhwp8ebm.com
+    port: 7308?type=tcp&security=tls&sni=us-08-650.duuk.info&allowInsecure=1
+    password: 97d557df-6f6a-5bad-9483-600aba02da3a
+  - name: 美国 加利福尼亚州圣何塞PEG TECH
+    type: vmess
+    server: 142.4.109.68
+    port: 46672
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /835757
+    ws-headers:
+      Host: 🇺🇸US美国(youtube阿伟科技2)
   - name: 美国 CloudFlare节点
     type: vmess
-    server: 104.18.127.153
-    port: 2096
-    uuid: f387a0af-4b70-4a40-e2c3-2f22472df0cb
+    server: 104.21.201.51
+    port: 2086
+    uuid: e544862e-c9af-476a-e757-d71aa6f0fb8b
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /blue01
+    ws-path: /qwer
     ws-headers:
-      Host: x1.ylks01.eu.org
-    tls: true
+      Host: xx.ylks01.eu.org
+  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
+    type: vmess
+    server: 192.74.243.60
+    port: 43246
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 加利福尼亚州圣何塞PEG TECH - 2
+    type: vmess
+    server: 142.4.110.125
+    port: 54002
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
   - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: cf-dx-dns.sharecentre.online
+    port: 80
+    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /shirker
+    ws-headers:
+      Host: dp4.scproxy.top
+  - name: 美国 Cloudinnovation数据中心
+    type: vmess
+    server: 154.85.1.3
+    port: 48524
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: 🇳🇱NL荷兰(youtube阿伟科技2)
+  - name: 美国+DXC+Technology
+    type: trojan
+    server: fsctw.fscloud123456789.com
+    port: '443'
+    password: 3228a77c-c1c3-451f-9112-e6e766684558
+  - name: 美国+V2CROSS.COM
+    type: trojan
+    server: 152.70.74.66
+    port: 443?security=tls&type=tcp&headerType=none
+    password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
+  - name: 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+    type: vmess
+    server: 23.224.110.183
+    port: 443
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /path/080712342310
+    ws-headers:
+      Host: ''
+    tls: true
+  - name: 安徽省 移动数据上网公共出口
+    type: vmess
+    server: 112.29.94.76
+    port: 47589
+    uuid: 83a424d8-4bcb-4cee-b016-2c8f1db4a921
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-headers: {}
+  - name: 美国 加利福尼亚州圣何塞PEG TECH - 3
+    type: vmess
+    server: 142.4.100.43
+    port: 45009
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 CloudFlare节点 - 3
     type: vmess
     server: v2ray.online
     port: 443
@@ -49,224 +152,80 @@ proxies:
     ws-headers:
       Host: Kansas.v2ray.online
     tls: true
-  - name: 美国 加利福尼亚州圣何塞PEG TECH
+  - name: 美国 V2CROSS.COM
     type: vmess
-    server: 142.4.110.24
-    port: 52908
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国 CloudFlare节点 - 3
-    type: vmess
-    server: tech.noaries.de
+    server: 104.31.16.28
     port: 80
-    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
+    uuid: 58fe1542-5290-40ad-815a-77707a81afe5
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /shirker
+    ws-path: /IOebhLMhl1CTbFHbL95myfRX2
     ws-headers:
-      Host: nl.sharecentrepro.com
-  - name: 美国 加利福尼亚州圣何塞PEG TECH - 2
-    type: vmess
-    server: 142.4.110.100
-    port: 54002
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国 Datability
-    type: vmess
-    server: 140.99.127.222
-    port: 54774
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国 CloudFlare节点 - 4
-    type: vmess
-    server: cf-lt.sharecentre.online
-    port: 443
-    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /shirker
-    ws-headers:
-      Host: dp4.scproxy.top
-    tls: true
-  - name: 新加坡 Digital Ocean数据中心
-    type: vmess
-    server: 104.248.148.72
-    port: 8080
-    uuid: 5d260357-312a-4a10-82b7-ca4d9da4d780
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: tms.dingtalk.com
-  - name: 美国 Cloudinnovation数据中心
-    type: vmess
-    server: 154.85.1.83
-    port: 47721
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国+DXC+Technology
-    type: trojan
-    server: fsctw.fscloud123456789.com
-    port: '443'
-    password: 3228a77c-c1c3-451f-9112-e6e766684558
-  - name: 美国 CloudFlare公司CDN节点(shopify)
-    type: vmess
-    server: 23.227.38.99
-    port: 443
-    uuid: 86d37526-5758-4cec-862f-df404b313086
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /3G6WPDL7
-    ws-headers:
-      Host: 1.freek1.xyz
-    tls: true
-  - name: 日本+北海道石狩SAKURA数据中心
-    type: trojan
-    server: trs19.bolab.net
-    port: '443'
-    password: 7a73f1dc97a70905870c0c0484b12145
-  - name: 美国+华盛顿Cogent通信公司
-    type: ss
-    server: 38.143.66.99
-    port: '8118'
-    cipher: aes-256-gcm
-    password: cdBIDV42DCwnfIN
-  - name: 美国加利福尼亚州洛杉矶 PetaExpress - 2
-    type: vmess
-    server: 198.2.204.241
-    port: 46902
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /blue01
-    ws-headers:
-      Host: 🇺🇸US美国(youtube阿伟科技2)
-  - name: 美国 V2CROSS.COM - 2
-    type: vmess
-    server: 137.175.18.65
-    port: 42002
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国 CloudFlare节点 - 5
-    type: vmess
-    server: cf.yxjnode.com
-    port: 80
-    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /yxzbp
-    ws-headers:
-      Host: dp1.yxjnode.com
+      Host: ca4.tehme2.fun
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 V2CROSS.COM
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国 CloudFlare节点 - 3
-      - 美国 加利福尼亚州圣何塞PEG TECH - 2
+      - 美国+华盛顿Cogent通信公司
       - 美国 Datability
-      - 美国 CloudFlare节点 - 4
-      - 新加坡 Digital Ocean数据中心
+      - 广东省广州市+移动
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国 CloudFlare节点
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 美国 加利福尼亚州圣何塞PEG TECH - 2
+      - 美国 CloudFlare节点 - 2
       - 美国 Cloudinnovation数据中心
       - 美国+DXC+Technology
-      - 美国 CloudFlare公司CDN节点(shopify)
-      - 日本+北海道石狩SAKURA数据中心
-      - 美国+华盛顿Cogent通信公司
-      - 美国加利福尼亚州洛杉矶 PetaExpress - 2
-      - 美国 V2CROSS.COM - 2
-      - 美国 CloudFlare节点 - 5
+      - 美国+V2CROSS.COM
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 安徽省 移动数据上网公共出口
+      - 美国 加利福尼亚州圣何塞PEG TECH - 3
+      - 美国 CloudFlare节点 - 3
+      - 美国 V2CROSS.COM
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 V2CROSS.COM
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国 CloudFlare节点 - 3
-      - 美国 加利福尼亚州圣何塞PEG TECH - 2
+      - 美国+华盛顿Cogent通信公司
       - 美国 Datability
-      - 美国 CloudFlare节点 - 4
-      - 新加坡 Digital Ocean数据中心
+      - 广东省广州市+移动
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国 CloudFlare节点
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 美国 加利福尼亚州圣何塞PEG TECH - 2
+      - 美国 CloudFlare节点 - 2
       - 美国 Cloudinnovation数据中心
       - 美国+DXC+Technology
-      - 美国 CloudFlare公司CDN节点(shopify)
-      - 日本+北海道石狩SAKURA数据中心
-      - 美国+华盛顿Cogent通信公司
-      - 美国加利福尼亚州洛杉矶 PetaExpress - 2
-      - 美国 V2CROSS.COM - 2
-      - 美国 CloudFlare节点 - 5
+      - 美国+V2CROSS.COM
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 安徽省 移动数据上网公共出口
+      - 美国 加利福尼亚州圣何塞PEG TECH - 3
+      - 美国 CloudFlare节点 - 3
+      - 美国 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 V2CROSS.COM
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国 CloudFlare节点 - 3
-      - 美国 加利福尼亚州圣何塞PEG TECH - 2
+      - 美国+华盛顿Cogent通信公司
       - 美国 Datability
-      - 美国 CloudFlare节点 - 4
-      - 新加坡 Digital Ocean数据中心
+      - 广东省广州市+移动
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国 CloudFlare节点
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 美国 加利福尼亚州圣何塞PEG TECH - 2
+      - 美国 CloudFlare节点 - 2
       - 美国 Cloudinnovation数据中心
       - 美国+DXC+Technology
-      - 美国 CloudFlare公司CDN节点(shopify)
-      - 日本+北海道石狩SAKURA数据中心
-      - 美国+华盛顿Cogent通信公司
-      - 美国加利福尼亚州洛杉矶 PetaExpress - 2
-      - 美国 V2CROSS.COM - 2
-      - 美国 CloudFlare节点 - 5
+      - 美国+V2CROSS.COM
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 安徽省 移动数据上网公共出口
+      - 美国 加利福尼亚州圣何塞PEG TECH - 3
+      - 美国 CloudFlare节点 - 3
+      - 美国 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
