@@ -1,4 +1,16 @@
 proxies:
+  - name: 荷兰 北荷兰省阿姆斯特丹Sharktech数据中心
+    type: vmess
+    server: 45.58.154.135
+    port: 51409
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /qwer
+    ws-headers:
+      Host: ''
   - name: 美国 V2CROSS.COM
     type: vmess
     server: 137.175.1.12
@@ -11,23 +23,39 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
+  - name: 美国 加利福尼亚州圣何塞PEG TECH
+    type: vmess
+    server: 142.4.112.27
+    port: 51091
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 日本+北海道石狩SAKURA数据中心
+    type: trojan
+    server: trs19.bolab.net
+    port: 443?type=tcp&sni=trs19.bolab.net&allowInsecure=1
+    password: 7a73f1dc97a70905870c0c0484b12145
   - name: 美国 CloudFlare节点
     type: vmess
-    server: 104.16.183.101
-    port: 443
-    uuid: 3de4ec27-74b4-43e3-bf23-18e726ac80bc
+    server: cf-lt.sharecentre.online
+    port: 80
+    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /P6kpn5UKG40MNLK2
+    ws-path: /shirker
     ws-headers:
-      Host: pWghljmnknq.janbaroon.com
-    tls: true
-  - name: 法国 OVH数据中心
+      Host: lv3.sharecentrepro.org
+  - name: 美国 V2CROSS.COM - 2
     type: vmess
-    server: 54.38.154.182
-    port: 54902
+    server: 108.186.116.182
+    port: 55005
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -38,20 +66,20 @@ proxies:
       Host: ''
   - name: 美国 CloudFlare节点 - 2
     type: vmess
-    server: tech.noaries.de
-    port: 80
-    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
+    server: cz.hug1013.me
+    port: 8880
+    uuid: 8075ec18-25ca-4677-930a-867898c4cf9f
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /shirker
+    ws-path: /kyoma?ed=2048
     ws-headers:
-      Host: nl.sharecentrepro.com
-  - name: 美国 Datability
+      Host: cz.hug1013.me
+  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
     type: vmess
-    server: 140.99.57.19
-    port: 41212
+    server: 192.74.237.60
+    port: 30303
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -60,67 +88,7 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 南非 V2CROSS.COM
-    type: vmess
-    server: 156.225.67.101
-    port: 47721
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 南非 V2CROSS.COM - 2
-    type: vmess
-    server: 156.225.67.15
-    port: 49123
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 广东省+联通
-    type: trojan
-    server: shanghai-router1-892412-jp1.ferryhwp8ebm.com
-    port: '6301'
-    password: ed959e41-38f5-5fa2-b838-67216be25a7f
-  - name: 美国 CloudFlare节点 - 3
-    type: vmess
-    server: bluehost.com
-    port: 443
-    uuid: be74ca03-6a7c-4c88-edc2-c6434ead0cfa
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /16575
-    ws-headers:
-      Host: cdnca1.digisport.shop
-    tls: true
-  - name: 新加坡 Amazon数据中心
-    type: vmess
-    server: sg2.f163ab0f2c75.sanfen004.me
-    port: 443
-    uuid: 3e309172-9f20-4e18-b42e-5c635ed4fa7c
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-    tls: true
-  - name: 日本+东京都Amazon数据中心
-    type: trojan
-    server: pqawsjp3.gsjc.cfd
-    port: '443'
-    password: 746b6774-e899-4205-a097-3da55c26f5b3
-  - name: 美国 加利福尼亚州圣何塞PEG TECH
+  - name: 美国 加利福尼亚州圣何塞PEG TECH - 2
     type: vmess
     server: 142.4.110.125
     port: 54002
@@ -132,32 +100,27 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国 CloudFlare节点 - 4
+  - name: 美国 Cloudinnovation数据中心
     type: vmess
-    server: cf.yxjnode.com
-    port: 80
-    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
-    alterId: 0
+    server: 154.85.1.3
+    port: 48524
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
     cipher: auto
     udp: true
-    network: ws
-    ws-path: /yxzbp
+    network: tcp
+    ws-path: /
     ws-headers:
-      Host: dp1.yxjnode.com
-  - name: 美国+加利福尼亚州洛杉矶Level3通信(DIA)
+      Host: 🇳🇱NL荷兰(youtube阿伟科技2)
+  - name: 广东省+移动
     type: trojan
-    server: sg.stablize.top
-    port: '443'
-    password: 5b51e0af-08af-4208-b834-6d6ac5721837
-  - name: 台湾省台北市+中華電信
-    type: trojan
-    server: hnm.xiaohouzi.club
-    port: '23330'
-    password: c32c56fb-64d9-33c4-b42a-af81b7a33fe7
-  - name: 美国 加利福尼亚州圣何塞PEG TECH - 2
+    server: official.taipeicitygovernment.kiev.ua
+    port: '8443'
+    password: 5505f6ba-cd37-30ce-8f92-be4120c83d7f
+  - name: 美国 Datability
     type: vmess
-    server: 142.4.110.24
-    port: 52908
+    server: 140.99.57.19
+    port: 41212
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -172,62 +135,50 @@ proxy-groups:
     proxies:
       - 自动选择
       - 故障转移
+      - 荷兰 北荷兰省阿姆斯特丹Sharktech数据中心
       - 美国 V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 法国 OVH数据中心
-      - 美国 CloudFlare节点 - 2
-      - 美国 Datability
-      - 南非 V2CROSS.COM
-      - 南非 V2CROSS.COM - 2
-      - 广东省+联通
-      - 美国 CloudFlare节点 - 3
-      - 新加坡 Amazon数据中心
-      - 日本+东京都Amazon数据中心
       - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国 CloudFlare节点 - 4
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
-      - 台湾省台北市+中華電信
+      - 日本+北海道石狩SAKURA数据中心
+      - 美国 CloudFlare节点
+      - 美国 V2CROSS.COM - 2
+      - 美国 CloudFlare节点 - 2
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
       - 美国 加利福尼亚州圣何塞PEG TECH - 2
+      - 美国 Cloudinnovation数据中心
+      - 广东省+移动
+      - 美国 Datability
   - name: 自动选择
     type: url-test
     proxies:
+      - 荷兰 北荷兰省阿姆斯特丹Sharktech数据中心
       - 美国 V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 法国 OVH数据中心
-      - 美国 CloudFlare节点 - 2
-      - 美国 Datability
-      - 南非 V2CROSS.COM
-      - 南非 V2CROSS.COM - 2
-      - 广东省+联通
-      - 美国 CloudFlare节点 - 3
-      - 新加坡 Amazon数据中心
-      - 日本+东京都Amazon数据中心
       - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国 CloudFlare节点 - 4
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
-      - 台湾省台北市+中華電信
+      - 日本+北海道石狩SAKURA数据中心
+      - 美国 CloudFlare节点
+      - 美国 V2CROSS.COM - 2
+      - 美国 CloudFlare节点 - 2
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
       - 美国 加利福尼亚州圣何塞PEG TECH - 2
+      - 美国 Cloudinnovation数据中心
+      - 广东省+移动
+      - 美国 Datability
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
+      - 荷兰 北荷兰省阿姆斯特丹Sharktech数据中心
       - 美国 V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 法国 OVH数据中心
-      - 美国 CloudFlare节点 - 2
-      - 美国 Datability
-      - 南非 V2CROSS.COM
-      - 南非 V2CROSS.COM - 2
-      - 广东省+联通
-      - 美国 CloudFlare节点 - 3
-      - 新加坡 Amazon数据中心
-      - 日本+东京都Amazon数据中心
       - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国 CloudFlare节点 - 4
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
-      - 台湾省台北市+中華電信
+      - 日本+北海道石狩SAKURA数据中心
+      - 美国 CloudFlare节点
+      - 美国 V2CROSS.COM - 2
+      - 美国 CloudFlare节点 - 2
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
       - 美国 加利福尼亚州圣何塞PEG TECH - 2
+      - 美国 Cloudinnovation数据中心
+      - 广东省+移动
+      - 美国 Datability
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
