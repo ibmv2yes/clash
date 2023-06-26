@@ -1,132 +1,150 @@
 proxies:
-  - name: 美国 加利福尼亚州圣何塞PEG TECH
-    type: vmess
-    server: 142.4.126.44
-    port: 44392
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国 Cloudinnovation数据中心
-    type: vmess
-    server: 154.85.1.3
-    port: 48524
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: 🇳🇱NL荷兰(youtube阿伟科技2)
-  - name: 安徽省+移动(全省通用)
+  - name: 美国+俄亥俄州特拉华、费尔菲尔德与富兰克林县哥伦布市SupremeBytes有限公司
     type: ss
-    server: cm1-nc.go001.buzz
-    port: '19584'
-    cipher: chacha20-ietf-poly1305
-    password: 5dffba42-4be9-447e-a6d5-61567a360e70
-  - name: 美国 V2CROSS.COM
+    server: 167.160.90.254
+    port: '60011'
+    cipher: aes-256-gcm
+    password: dongtaiwang.com
+  - name: 美国 CloudFlare节点
     type: vmess
-    server: 104.31.16.45
+    server: zfc.windowsupdate1.com
     port: 80
-    uuid: 2fcc2939-7dcf-4741-aa03-825bc40e23fd
+    uuid: 01925169-e2ff-483c-89f2-6e778dcdd450
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /CZfczvtieCZXdOlgWhgDLX
-    ws-headers:
-      Host: de3.irteh.fun
-  - name: 南非 V2CROSS.COM
-    type: vmess
-    server: 156.225.67.15
-    port: 49123
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
     ws-path: /
     ws-headers:
-      Host: ''
-  - name: 美国 加利福尼亚州洛杉矶PetaExpress
+      Host: us-1.acyun.cf
+  - name: 美国 CloudFlare节点 - 2
     type: vmess
-    server: 107.148.192.155
-    port: 49924
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
+    server: 104.22.47.0
+    port: 443
+    uuid: 9F858CE1-7E02-4863-AA24-D90F8D3437D7
+    alterId: 0
     cipher: auto
     udp: true
-    network: tcp
-    ws-path: /
+    network: ws
+    ws-path: /speedtest/Amsterdam.kotick.site
     ws-headers:
-      Host: ''
-  - name: 美国 V2CROSS.COM - 2
+      Host: morning-queen-7df4.walidfree19.workers.dev
+    tls: true
+  - name: 美国 V2CROSS.COM
     type: vmess
     server: ns1.v2-vip.fun
     port: 80
-    uuid: 8abe9496-5e24-4e49-b566-dcf86116017d
+    uuid: 4f859149-2b2f-4b90-9a2c-8c0fe15c8c4c
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /i99LgvSaslbsPLLQQ7j6Z
+    ws-path: /ozX9aUPiJVtoLavjTW
     ws-headers:
-      Host: de5.irteh.fun
-  - name: 美国 CloudFlare
+      Host: de14.irteh.fun
+  - name: 台湾省台中市 中华电信
     type: vmess
-    server: 162.159.25.51
-    port: 8080
-    uuid: d5382631-aae1-486d-842a-de48274dd0d7
+    server: tw99-hinet.mynodes001.one
+    port: 445
+    uuid: 5f04de84-6b7e-3564-82c2-d2a998002629
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: 🇹🇼TW台湾(youtube阿伟科技2)
+  - name: 美国+V2CROSS.COM
+    type: trojan
+    server: 216.52.59.50
+    port: '20458'
+    password: m8krTirthj
+  - name: 美国 V2CROSS.COM - 2
+    type: vmess
+    server: 137.175.18.65
+    port: 42002
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 法国+格拉沃利讷OVH数据中心
+    type: ss
+    server: 54.36.174.181
+    port: '5600'
+    cipher: aes-256-gcm
+    password: Y6R9pAtvxxzmGC
+  - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: dl.v001sssv.pw
+    port: 80
+    uuid: a4bb7f93-cee6-43d7-b2dd-fa9c70b88233
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /qwer
+    ws-path: /
     ws-headers:
-      Host: uxx.vtcss.top
+      Host: dl.v001sssv.pw
+  - name: 英国 伦敦Oracle云计算数据中心
+    type: vmess
+    server: 132.145.17.111
+    port: 80
+    uuid: e9ee407f-2500-3e9d-bc00-26722f99ed06
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /v2ray
+    ws-headers:
+      Host: v9-dy.ixigua.com
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国 Cloudinnovation数据中心
-      - 安徽省+移动(全省通用)
+      - 美国+俄亥俄州特拉华、费尔菲尔德与富兰克林县哥伦布市SupremeBytes有限公司
+      - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 - 2
       - 美国 V2CROSS.COM
-      - 南非 V2CROSS.COM
-      - 美国 加利福尼亚州洛杉矶PetaExpress
+      - 台湾省台中市 中华电信
+      - 美国+V2CROSS.COM
       - 美国 V2CROSS.COM - 2
-      - 美国 CloudFlare
+      - 法国+格拉沃利讷OVH数据中心
+      - 美国 CloudFlare节点 - 3
+      - 英国 伦敦Oracle云计算数据中心
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国 Cloudinnovation数据中心
-      - 安徽省+移动(全省通用)
+      - 美国+俄亥俄州特拉华、费尔菲尔德与富兰克林县哥伦布市SupremeBytes有限公司
+      - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 - 2
       - 美国 V2CROSS.COM
-      - 南非 V2CROSS.COM
-      - 美国 加利福尼亚州洛杉矶PetaExpress
+      - 台湾省台中市 中华电信
+      - 美国+V2CROSS.COM
       - 美国 V2CROSS.COM - 2
-      - 美国 CloudFlare
+      - 法国+格拉沃利讷OVH数据中心
+      - 美国 CloudFlare节点 - 3
+      - 英国 伦敦Oracle云计算数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国 Cloudinnovation数据中心
-      - 安徽省+移动(全省通用)
+      - 美国+俄亥俄州特拉华、费尔菲尔德与富兰克林县哥伦布市SupremeBytes有限公司
+      - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 - 2
       - 美国 V2CROSS.COM
-      - 南非 V2CROSS.COM
-      - 美国 加利福尼亚州洛杉矶PetaExpress
+      - 台湾省台中市 中华电信
+      - 美国+V2CROSS.COM
       - 美国 V2CROSS.COM - 2
-      - 美国 CloudFlare
+      - 法国+格拉沃利讷OVH数据中心
+      - 美国 CloudFlare节点 - 3
+      - 英国 伦敦Oracle云计算数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
