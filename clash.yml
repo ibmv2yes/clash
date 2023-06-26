@@ -1,29 +1,28 @@
 proxies:
-  - name: 美国 CloudFlare节点
+  - name: 美国 加利福尼亚州圣何塞PEG TECH
     type: vmess
-    server: ovhsdza.76898102.xyz
-    port: 2052
-    uuid: 78fd41e5-346a-3bf4-b942-be0fad711979
+    server: 142.4.112.10
+    port: 51091
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: 104.31.16.27
+    port: 80
+    uuid: 58fe1542-5290-40ad-815a-77707a81afe5
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /funsdfrh
+    ws-path: /IOebhLMhl1CTbFHbL95myfRX2
     ws-headers:
-      Host: ovhsdz.76898102.xyz
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: 104.16.32.142
-    port: 443
-    uuid: 3de4ec27-74b4-43e3-bf23-18e726ac80bc
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /P6kpn5UKG40MNLK2
-    ws-headers:
-      Host: QkGxa2MSvmu.janbaroon.com
-    tls: true
+      Host: ca5.tehme2.fun
   - name: 美国加利福尼亚州洛杉矶 CeraNetworks数据中心
     type: vmess
     server: 23.225.211.20
@@ -36,39 +35,22 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国+加利福尼亚州洛杉矶Level3通信(DIA)
-    type: trojan
-    server: jp.stablize.top
-    port: '443'
-    password: 4d23cf0e-5ceb-43e7-90d3-63982bfa6940
-  - name: 美国+V2CROSS.COM
-    type: ss
-    server: 172.99.190.87
-    port: '5500'
-    cipher: aes-256-gcm
-    password: KixLvKzwjekG00rm
-  - name: 日本+东京Amazon数据中心
-    type: trojan
-    server: pqawsjp4.gsjc.cfd
-    port: '443'
-    password: 746b6774-e899-4205-a097-3da55c26f5b3
-  - name: 英国 V2CROSS.COM
+  - name: 美国 V2CROSS.COM - 2
     type: vmess
-    server: 109.74.201.20
-    port: 443
-    uuid: 927094d3-d678-4763-8591-e240d0bcae87
+    server: ns1.v2-vip.fun
+    port: 80
+    uuid: 8abe9496-5e24-4e49-b566-dcf86116017d
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /chat
+    ws-path: /i99LgvSaslbsPLLQQ7j6Z
     ws-headers:
-      Host: ''
-    tls: true
-  - name: 美国 Datability
+      Host: de5.irteh.fun
+  - name: 南非 V2CROSS.COM
     type: vmess
-    server: 140.99.140.170
-    port: 44932
+    server: 156.225.67.89
+    port: 48821
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -82,47 +64,138 @@ proxies:
     server: 52.53.190.55
     port: '10574'
     password: FHbcin2ORB
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: v2ray.online
+    port: 443
+    uuid: 00BBF5B8-173E-6818-9927-5AD1AA073C7D
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /speedtest
+    ws-headers:
+      Host: Kansas.v2ray.online
+    tls: true
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: 172.67.159.83
+    port: 2086
+    uuid: 9572d691-e27a-4f54-ef4d-57600a785b55
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /qwer
+    ws-headers:
+      Host: txx.vtcss.top
+  - name: 美国 Nokia
+    type: vmess
+    server: 192.9.131.244
+    port: 80
+    uuid: 38919fc2-ea92-3162-9cc7-ae1476603e21
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /v2ray
+    ws-headers:
+      Host: v9-dy.ixigua.com
+  - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: cf-yd-dns.sharecentre.online
+    port: 80
+    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /shirker
+    ws-headers:
+      Host: dp3.scproxy.top
+  - name: 亚太地区+V2CROSS.COM
+    type: trojan
+    server: 103.173.255.21
+    port: 443?type=tcp&allowInsecure=1
+    password: 99507239-7601-4c76-afda-18be311b0bec
+  - name: 美国 CloudFlare节点 - 4
+    type: vmess
+    server: smt.ircf.space
+    port: 443
+    uuid: 3bcbd5cd-e791-4770-8bc7-7b1d941c9513
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /S4PSg9xqUClN2kJ4SOPKqC6
+    ws-headers:
+      Host: wfi.sahnama.com
+    tls: true
+  - name: 美国 CloudFlare节点 - 5
+    type: vmess
+    server: 104.24.235.220
+    port: 2086
+    uuid: 9572d691-e27a-4f54-ef4d-57600a785b55
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /qwer
+    ws-headers:
+      Host: txx.vtcss.top
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国 V2CROSS.COM
+      - 美国加利福尼亚州洛杉矶 CeraNetworks数据中心
+      - 美国 V2CROSS.COM - 2
+      - 南非 V2CROSS.COM
+      - 美国+加利福尼亚州旧金山Amazon数据中心
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
-      - 美国加利福尼亚州洛杉矶 CeraNetworks数据中心
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
-      - 美国+V2CROSS.COM
-      - 日本+东京Amazon数据中心
-      - 英国 V2CROSS.COM
-      - 美国 Datability
-      - 美国+加利福尼亚州旧金山Amazon数据中心
+      - 美国 Nokia
+      - 美国 CloudFlare节点 - 3
+      - 亚太地区+V2CROSS.COM
+      - 美国 CloudFlare节点 - 4
+      - 美国 CloudFlare节点 - 5
   - name: 自动选择
     type: url-test
     proxies:
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国 V2CROSS.COM
+      - 美国加利福尼亚州洛杉矶 CeraNetworks数据中心
+      - 美国 V2CROSS.COM - 2
+      - 南非 V2CROSS.COM
+      - 美国+加利福尼亚州旧金山Amazon数据中心
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
-      - 美国加利福尼亚州洛杉矶 CeraNetworks数据中心
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
-      - 美国+V2CROSS.COM
-      - 日本+东京Amazon数据中心
-      - 英国 V2CROSS.COM
-      - 美国 Datability
-      - 美国+加利福尼亚州旧金山Amazon数据中心
+      - 美国 Nokia
+      - 美国 CloudFlare节点 - 3
+      - 亚太地区+V2CROSS.COM
+      - 美国 CloudFlare节点 - 4
+      - 美国 CloudFlare节点 - 5
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国 V2CROSS.COM
+      - 美国加利福尼亚州洛杉矶 CeraNetworks数据中心
+      - 美国 V2CROSS.COM - 2
+      - 南非 V2CROSS.COM
+      - 美国+加利福尼亚州旧金山Amazon数据中心
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
-      - 美国加利福尼亚州洛杉矶 CeraNetworks数据中心
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
-      - 美国+V2CROSS.COM
-      - 日本+东京Amazon数据中心
-      - 英国 V2CROSS.COM
-      - 美国 Datability
-      - 美国+加利福尼亚州旧金山Amazon数据中心
+      - 美国 Nokia
+      - 美国 CloudFlare节点 - 3
+      - 亚太地区+V2CROSS.COM
+      - 美国 CloudFlare节点 - 4
+      - 美国 CloudFlare节点 - 5
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
