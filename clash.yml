@@ -1,48 +1,9 @@
 proxies:
-  - name: 美国 CloudFlare
+  - name: 美国 加利福尼亚州圣何塞MULTACOM机房
     type: vmess
-    server: 162.159.25.51
-    port: 8080
-    uuid: d5382631-aae1-486d-842a-de48274dd0d7
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /qwer
-    ws-headers:
-      Host: uxx.vtcss.top
-  - name: 上海市+电信
-    type: trojan
-    server: 116.192.171.97
-    port: '8443'
-    password: 5505f6ba-cd37-30ce-8f92-be4120c83d7f
-  - name: 法国 OVH数据中心
-    type: vmess
-    server: 54.38.154.182
-    port: 54902
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国+Microsoft数据中心
-    type: trojan
-    server: sg.stablize.top
-    port: '443'
-    password: 5b51e0af-08af-4208-b834-6d6ac5721837
-  - name: 日本+东京都亚马逊(Amazon)公司数据中心
-    type: trojan
-    server: pqawsjp4.gsjc.cfd
-    port: '443'
-    password: 746b6774-e899-4205-a097-3da55c26f5b3
-  - name: 欧盟 V2CROSS.COM
-    type: vmess
-    server: 45.12.112.91
-    port: 50332
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    server: 45.199.138.2
+    port: 47793
+    uuid: f9fa3a9c-f7d5-414f-88e6-6970585d9949
     alterId: 64
     cipher: auto
     udp: true
@@ -51,65 +12,6 @@ proxies:
     ws-headers:
       Host: ''
   - name: 美国 V2CROSS.COM
-    type: vmess
-    server: 137.175.18.65
-    port: 42002
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 安徽省+移动(全省通用)
-    type: ss
-    server: cm1-nc.go001.buzz
-    port: '19584'
-    cipher: chacha20-ietf-poly1305
-    password: 5dffba42-4be9-447e-a6d5-61567a360e70
-  - name: 广东省+移动
-    type: trojan
-    server: official.taipeicitygovernment.kiev.ua
-    port: '8443'
-    password: 5505f6ba-cd37-30ce-8f92-be4120c83d7f
-  - name: 美国 V2CROSS.COM - 2
-    type: vmess
-    server: 104.31.16.45
-    port: 80
-    uuid: 2fcc2939-7dcf-4741-aa03-825bc40e23fd
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /CZfczvtieCZXdOlgWhgDLX
-    ws-headers:
-      Host: de3.irteh.fun
-  - name: 美国 V2CROSS.COM - 3
-    type: vmess
-    server: 137.175.1.12
-    port: 53403
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国 Cloudinnovation数据中心
-    type: vmess
-    server: 154.85.1.3
-    port: 48524
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: 🇳🇱NL荷兰(youtube阿伟科技2)
-  - name: 美国 V2CROSS.COM - 4
     type: vmess
     server: 137.175.9.204
     port: 57902
@@ -121,59 +23,184 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
+  - name: 法国+OVH机房SAS硬盘BGP主机
+    type: trojan
+    server: fr2.microsoft-orgwly.vip
+    port: 444?sni=tls.microsoft-orgwly.vip
+    password: 3e1ff3a0-c427-486f-95cf-9207721f570b
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: cf.yxjnode.com
+    port: 80
+    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /yxzbp
+    ws-headers:
+      Host: dp1.yxjnode.com
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: cf-yd-dns.sharecentre.online
+    port: 80
+    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /shirker
+    ws-headers:
+      Host: dp3.scproxy.top
+  - name: 美国 加利福尼亚州圣何塞PEG TECH
+    type: vmess
+    server: 142.4.126.44
+    port: 44392
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
+    type: vmess
+    server: 192.74.243.61
+    port: 43246
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+    type: vmess
+    server: 23.224.15.180
+    port: 50002
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: gzzz.8bqyato.ml
+  - name: 上海市 电信
+    type: vmess
+    server: 33.kccic2pa.xyz
+    port: 50033
+    uuid: f9c1f44b-4569-4345-b31c-622e6658ed68
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-headers: {}
+  - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: 104.20.141.26
+    port: 8880
+    uuid: dbb471fd-c7ef-4599-871c-b4ed72cca498
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /qwer01
+    ws-headers:
+      Host: txx.vtcss.top
+  - name: 美国+Microsoft数据中心
+    type: trojan
+    server: sg.stablize.top
+    port: '443'
+    password: 5b51e0af-08af-4208-b834-6d6ac5721837
+  - name: 美国 CloudFlare节点 - 4
+    type: vmess
+    server: zfc.windowsupdate1.com
+    port: 80
+    uuid: 01925169-e2ff-483c-89f2-6e778dcdd450
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: us-1.acyun.cf
+  - name: 美国 CloudFlare节点 - 5
+    type: vmess
+    server: smt.ircf.space
+    port: 443
+    uuid: 3bcbd5cd-e791-4770-8bc7-7b1d941c9513
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /S4PSg9xqUClN2kJ4SOPKqC6
+    ws-headers:
+      Host: wfi.sahnama.com
+    tls: true
+  - name: 美国+Amazon+EC2服务器
+    type: trojan
+    server: 3.38.178.191
+    port: '11525'
+    password: 75WJZnNuyW
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 CloudFlare
-      - 上海市+电信
-      - 法国 OVH数据中心
-      - 美国+Microsoft数据中心
-      - 日本+东京都亚马逊(Amazon)公司数据中心
-      - 欧盟 V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞MULTACOM机房
       - 美国 V2CROSS.COM
-      - 安徽省+移动(全省通用)
-      - 广东省+移动
-      - 美国 V2CROSS.COM - 2
-      - 美国 V2CROSS.COM - 3
-      - 美国 Cloudinnovation数据中心
-      - 美国 V2CROSS.COM - 4
+      - 法国+OVH机房SAS硬盘BGP主机
+      - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 - 2
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 上海市 电信
+      - 美国 CloudFlare节点 - 3
+      - 美国+Microsoft数据中心
+      - 美国 CloudFlare节点 - 4
+      - 美国 CloudFlare节点 - 5
+      - 美国+Amazon+EC2服务器
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 CloudFlare
-      - 上海市+电信
-      - 法国 OVH数据中心
-      - 美国+Microsoft数据中心
-      - 日本+东京都亚马逊(Amazon)公司数据中心
-      - 欧盟 V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞MULTACOM机房
       - 美国 V2CROSS.COM
-      - 安徽省+移动(全省通用)
-      - 广东省+移动
-      - 美国 V2CROSS.COM - 2
-      - 美国 V2CROSS.COM - 3
-      - 美国 Cloudinnovation数据中心
-      - 美国 V2CROSS.COM - 4
+      - 法国+OVH机房SAS硬盘BGP主机
+      - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 - 2
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 上海市 电信
+      - 美国 CloudFlare节点 - 3
+      - 美国+Microsoft数据中心
+      - 美国 CloudFlare节点 - 4
+      - 美国 CloudFlare节点 - 5
+      - 美国+Amazon+EC2服务器
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 CloudFlare
-      - 上海市+电信
-      - 法国 OVH数据中心
-      - 美国+Microsoft数据中心
-      - 日本+东京都亚马逊(Amazon)公司数据中心
-      - 欧盟 V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞MULTACOM机房
       - 美国 V2CROSS.COM
-      - 安徽省+移动(全省通用)
-      - 广东省+移动
-      - 美国 V2CROSS.COM - 2
-      - 美国 V2CROSS.COM - 3
-      - 美国 Cloudinnovation数据中心
-      - 美国 V2CROSS.COM - 4
+      - 法国+OVH机房SAS硬盘BGP主机
+      - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 - 2
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 上海市 电信
+      - 美国 CloudFlare节点 - 3
+      - 美国+Microsoft数据中心
+      - 美国 CloudFlare节点 - 4
+      - 美国 CloudFlare节点 - 5
+      - 美国+Amazon+EC2服务器
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
