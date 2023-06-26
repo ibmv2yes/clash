@@ -1,8 +1,8 @@
 proxies:
   - name: 美国 加利福尼亚州圣何塞PEG TECH
     type: vmess
-    server: 142.4.112.10
-    port: 51091
+    server: 142.4.110.125
+    port: 54002
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -11,72 +11,18 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国 V2CROSS.COM
-    type: vmess
-    server: 104.31.16.27
-    port: 80
-    uuid: 58fe1542-5290-40ad-815a-77707a81afe5
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /IOebhLMhl1CTbFHbL95myfRX2
-    ws-headers:
-      Host: ca5.tehme2.fun
-  - name: 美国加利福尼亚州洛杉矶 CeraNetworks数据中心
-    type: vmess
-    server: 23.225.211.20
-    port: 42941
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国 V2CROSS.COM - 2
-    type: vmess
-    server: ns1.v2-vip.fun
-    port: 80
-    uuid: 8abe9496-5e24-4e49-b566-dcf86116017d
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /i99LgvSaslbsPLLQQ7j6Z
-    ws-headers:
-      Host: de5.irteh.fun
-  - name: 南非 V2CROSS.COM
-    type: vmess
-    server: 156.225.67.89
-    port: 48821
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国+加利福尼亚州旧金山Amazon数据中心
-    type: trojan
-    server: 52.53.190.55
-    port: '10574'
-    password: FHbcin2ORB
   - name: 美国 CloudFlare节点
     type: vmess
-    server: v2ray.online
-    port: 443
-    uuid: 00BBF5B8-173E-6818-9927-5AD1AA073C7D
+    server: 108.162.194.182
+    port: 2086
+    uuid: 9572d691-e27a-4f54-ef4d-57600a785b55
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /speedtest
+    ws-path: /qwer
     ws-headers:
-      Host: Kansas.v2ray.online
-    tls: true
+      Host: txx.vtcss.top
   - name: 美国 CloudFlare节点 - 2
     type: vmess
     server: 172.67.159.83
@@ -89,35 +35,33 @@ proxies:
     ws-path: /qwer
     ws-headers:
       Host: txx.vtcss.top
-  - name: 美国 Nokia
-    type: vmess
-    server: 192.9.131.244
-    port: 80
-    uuid: 38919fc2-ea92-3162-9cc7-ae1476603e21
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /v2ray
-    ws-headers:
-      Host: v9-dy.ixigua.com
   - name: 美国 CloudFlare节点 - 3
     type: vmess
-    server: cf-yd-dns.sharecentre.online
+    server: cf.yxjnode.com
     port: 80
-    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
+    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /shirker
+    ws-path: /yxzbp
     ws-headers:
-      Host: dp3.scproxy.top
-  - name: 亚太地区+V2CROSS.COM
+      Host: dp1.yxjnode.com
+  - name: 美国+Microsoft数据中心
     type: trojan
-    server: 103.173.255.21
-    port: 443?type=tcp&allowInsecure=1
-    password: 99507239-7601-4c76-afda-18be311b0bec
+    server: kr.stablize.top
+    port: '443'
+    password: c8ad75e9-b071-446e-b2e3-ea93b8dd0324
+  - name: 上海市+电信
+    type: trojan
+    server: 116.192.171.97
+    port: '8443'
+    password: 5505f6ba-cd37-30ce-8f92-be4120c83d7f
+  - name: 美国+Xerox
+    type: trojan
+    server: sg1.421421.xyz
+    port: 20230?sni=421421.xyz
+    password: b425d8b7-caca-402d-9902-0335fa5e67ed
   - name: 美国 CloudFlare节点 - 4
     type: vmess
     server: smt.ircf.space
@@ -131,18 +75,100 @@ proxies:
     ws-headers:
       Host: wfi.sahnama.com
     tls: true
+  - name: 广东省东莞市 电信
+    type: vmess
+    server: a7d4813550c2.sanfen004.me
+    port: 29033
+    uuid: 3e309172-9f20-4e18-b42e-5c635ed4fa7c
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-headers: {}
+  - name: 美国+V2CROSS.COM
+    type: trojan
+    server: 152.70.74.66
+    port: 443?security=tls&type=tcp&headerType=none
+    password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
+  - name: 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+    type: vmess
+    server: 107.167.4.122
+    port: 46766
+    uuid: 9838c1b4-c3fd-49b5-8a59-2ff05385f17c
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 台湾省苗栗县 中华电信
+    type: vmess
+    server: tw99-hinet.mynodes001.one
+    port: 445
+    uuid: 5f04de84-6b7e-3564-82c2-d2a998002629
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: 🇹🇼TW台湾(youtube阿伟科技2)
   - name: 美国 CloudFlare节点 - 5
     type: vmess
-    server: 104.24.235.220
-    port: 2086
-    uuid: 9572d691-e27a-4f54-ef4d-57600a785b55
+    server: cfcdn.sanfencdn.net
+    port: 443
+    uuid: 3e309172-9f20-4e18-b42e-5c635ed4fa7c
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /qwer
+    ws-path: /zh-cn
     ws-headers:
-      Host: txx.vtcss.top
+      Host: us2.sanfencdn1.com
+    tls: true
+  - name: 美国+俄亥俄州都柏林Amazon数据中心
+    type: trojan
+    server: 18.191.139.90
+    port: '20903'
+    password: DulxM7ae07
+  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
+    type: vmess
+    server: 192.74.243.60
+    port: 43246
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 Datability
+    type: vmess
+    server: 140.99.127.222
+    port: 54774
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 CloudFlare节点 - 6
+    type: vmess
+    server: 104.16.48.44
+    port: 443
+    uuid: 3de4ec27-74b4-43e3-bf23-18e726ac80bc
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /P6kpn5UKG40MNLK2
+    ws-headers:
+      Host: SX8xtGOKv1MaJh.janbaroon.com
+    tls: true
 proxy-groups:
   - name: Free-servers
     type: select
@@ -150,52 +176,64 @@ proxy-groups:
       - 自动选择
       - 故障转移
       - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国 V2CROSS.COM
-      - 美国加利福尼亚州洛杉矶 CeraNetworks数据中心
-      - 美国 V2CROSS.COM - 2
-      - 南非 V2CROSS.COM
-      - 美国+加利福尼亚州旧金山Amazon数据中心
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
-      - 美国 Nokia
       - 美国 CloudFlare节点 - 3
-      - 亚太地区+V2CROSS.COM
+      - 美国+Microsoft数据中心
+      - 上海市+电信
+      - 美国+Xerox
       - 美国 CloudFlare节点 - 4
+      - 广东省东莞市 电信
+      - 美国+V2CROSS.COM
+      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+      - 台湾省苗栗县 中华电信
       - 美国 CloudFlare节点 - 5
+      - 美国+俄亥俄州都柏林Amazon数据中心
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 美国 Datability
+      - 美国 CloudFlare节点 - 6
   - name: 自动选择
     type: url-test
     proxies:
       - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国 V2CROSS.COM
-      - 美国加利福尼亚州洛杉矶 CeraNetworks数据中心
-      - 美国 V2CROSS.COM - 2
-      - 南非 V2CROSS.COM
-      - 美国+加利福尼亚州旧金山Amazon数据中心
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
-      - 美国 Nokia
       - 美国 CloudFlare节点 - 3
-      - 亚太地区+V2CROSS.COM
+      - 美国+Microsoft数据中心
+      - 上海市+电信
+      - 美国+Xerox
       - 美国 CloudFlare节点 - 4
+      - 广东省东莞市 电信
+      - 美国+V2CROSS.COM
+      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+      - 台湾省苗栗县 中华电信
       - 美国 CloudFlare节点 - 5
+      - 美国+俄亥俄州都柏林Amazon数据中心
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 美国 Datability
+      - 美国 CloudFlare节点 - 6
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
       - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国 V2CROSS.COM
-      - 美国加利福尼亚州洛杉矶 CeraNetworks数据中心
-      - 美国 V2CROSS.COM - 2
-      - 南非 V2CROSS.COM
-      - 美国+加利福尼亚州旧金山Amazon数据中心
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 - 2
-      - 美国 Nokia
       - 美国 CloudFlare节点 - 3
-      - 亚太地区+V2CROSS.COM
+      - 美国+Microsoft数据中心
+      - 上海市+电信
+      - 美国+Xerox
       - 美国 CloudFlare节点 - 4
+      - 广东省东莞市 电信
+      - 美国+V2CROSS.COM
+      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+      - 台湾省苗栗县 中华电信
       - 美国 CloudFlare节点 - 5
+      - 美国+俄亥俄州都柏林Amazon数据中心
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 美国 Datability
+      - 美国 CloudFlare节点 - 6
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
