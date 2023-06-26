@@ -1,32 +1,33 @@
 proxies:
-  - name: 法国 OVH SAS
-    type: vmess
-    server: 188.165.170.83
-    port: 80
-    uuid: 860a862a-2798-4037-8513-b060e310e7fc
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: ''
   - name: 美国 CloudFlare节点
     type: vmess
-    server: cf-yd-dns.sharecentre.online
-    port: 80
-    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
+    server: ovhsdza.76898102.xyz
+    port: 2052
+    uuid: 78fd41e5-346a-3bf4-b942-be0fad711979
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /shirker
+    ws-path: /funsdfrh
     ws-headers:
-      Host: dp3.scproxy.top
-  - name: 美国 加利福尼亚州圣何塞PEG TECH
+      Host: ovhsdz.76898102.xyz
+  - name: 美国 CloudFlare节点 - 2
     type: vmess
-    server: 142.4.110.24
-    port: 52908
+    server: 104.16.32.142
+    port: 443
+    uuid: 3de4ec27-74b4-43e3-bf23-18e726ac80bc
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /P6kpn5UKG40MNLK2
+    ws-headers:
+      Host: QkGxa2MSvmu.janbaroon.com
+    tls: true
+  - name: 美国加利福尼亚州洛杉矶 CeraNetworks数据中心
+    type: vmess
+    server: 23.225.211.20
+    port: 42941
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -35,97 +36,93 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国 V2CROSS.COM
-    type: vmess
-    server: 137.175.1.12
-    port: 53403
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国+V2CROSS.COM
+  - name: 美国+加利福尼亚州洛杉矶Level3通信(DIA)
     type: trojan
-    server: 216.52.59.50
-    port: '20458'
-    password: m8krTirthj
-  - name: 乌克兰 V2CROSS.COM
+    server: jp.stablize.top
+    port: '443'
+    password: 4d23cf0e-5ceb-43e7-90d3-63982bfa6940
+  - name: 美国+V2CROSS.COM
+    type: ss
+    server: 172.99.190.87
+    port: '5500'
+    cipher: aes-256-gcm
+    password: KixLvKzwjekG00rm
+  - name: 日本+东京Amazon数据中心
+    type: trojan
+    server: pqawsjp4.gsjc.cfd
+    port: '443'
+    password: 746b6774-e899-4205-a097-3da55c26f5b3
+  - name: 英国 V2CROSS.COM
     type: vmess
-    server: fldsubgigtujuy.76898102.xyz
-    port: 2095
-    uuid: 1262dace-d355-3868-915f-b7418c2e7390
+    server: 109.74.201.20
+    port: 443
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /miaoGK
+    ws-path: /chat
     ws-headers:
-      Host: fldsubgigtujuy.76898102.xyz
-  - name: 丹麦 V2CROSS.COM
+      Host: ''
+    tls: true
+  - name: 美国 Datability
     type: vmess
-    server: nlawggbvfgerhtg.76898102.xyz
-    port: 2082
-    uuid: 4896559c-c94e-342a-b208-6107ec292652
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /fwadfbbg
-    ws-headers:
-      Host: nlawggbvfgerhtg.76898102.xyz
-  - name: 荷兰 北荷兰省阿姆斯特丹Sharktech数据中心
-    type: vmess
-    server: 45.58.154.135
-    port: 51409
+    server: 140.99.140.170
+    port: 44932
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
     udp: true
     network: tcp
-    ws-path: /qwer
+    ws-path: /
     ws-headers:
       Host: ''
+  - name: 美国+加利福尼亚州旧金山Amazon数据中心
+    type: trojan
+    server: 52.53.190.55
+    port: '10574'
+    password: FHbcin2ORB
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 法国 OVH SAS
       - 美国 CloudFlare节点
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国 V2CROSS.COM
+      - 美国 CloudFlare节点 - 2
+      - 美国加利福尼亚州洛杉矶 CeraNetworks数据中心
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
       - 美国+V2CROSS.COM
-      - 乌克兰 V2CROSS.COM
-      - 丹麦 V2CROSS.COM
-      - 荷兰 北荷兰省阿姆斯特丹Sharktech数据中心
+      - 日本+东京Amazon数据中心
+      - 英国 V2CROSS.COM
+      - 美国 Datability
+      - 美国+加利福尼亚州旧金山Amazon数据中心
   - name: 自动选择
     type: url-test
     proxies:
-      - 法国 OVH SAS
       - 美国 CloudFlare节点
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国 V2CROSS.COM
+      - 美国 CloudFlare节点 - 2
+      - 美国加利福尼亚州洛杉矶 CeraNetworks数据中心
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
       - 美国+V2CROSS.COM
-      - 乌克兰 V2CROSS.COM
-      - 丹麦 V2CROSS.COM
-      - 荷兰 北荷兰省阿姆斯特丹Sharktech数据中心
+      - 日本+东京Amazon数据中心
+      - 英国 V2CROSS.COM
+      - 美国 Datability
+      - 美国+加利福尼亚州旧金山Amazon数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 法国 OVH SAS
       - 美国 CloudFlare节点
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国 V2CROSS.COM
+      - 美国 CloudFlare节点 - 2
+      - 美国加利福尼亚州洛杉矶 CeraNetworks数据中心
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
       - 美国+V2CROSS.COM
-      - 乌克兰 V2CROSS.COM
-      - 丹麦 V2CROSS.COM
-      - 荷兰 北荷兰省阿姆斯特丹Sharktech数据中心
+      - 日本+东京Amazon数据中心
+      - 英国 V2CROSS.COM
+      - 美国 Datability
+      - 美国+加利福尼亚州旧金山Amazon数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
