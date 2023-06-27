@@ -1,133 +1,68 @@
 proxies:
   - name: 美国 CloudFlare节点
     type: vmess
-    server: 104.16.48.44
+    server: ger.digitalres.shop
     port: 443
-    uuid: 3de4ec27-74b4-43e3-bf23-18e726ac80bc
+    uuid: f502f04c-9530-4a61-835b-4af1f3cd1ce4
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /P6kpn5UKG40MNLK2
+    ws-path: /19458
     ws-headers:
-      Host: SX8xtGOKv1MaJh.janbaroon.com
+      Host: ger.digitalres.shop
     tls: true
-  - name: 美国 Datability
-    type: vmess
-    server: 140.99.128.114
-    port: 58455
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国 V2CROSS.COM
-    type: vmess
-    server: 137.175.9.204
-    port: 57902
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 越南+V2CROSS.COM
-    type: trojan
-    server: 103.81.85.238
-    port: 443?type=tcp&security=tls&allowInsecure=1
-    password: b49e3ef1-8a43-4c95-8365-20f4a012e693
-  - name: 荷兰+V2CROSS.COM
-    type: trojan
-    server: hk5.jisuyun.co
-    port: 10094?sni=tls.jisuyun.co
-    password: 899e9266-84ae-45dd-9e61-97d276b69539
-  - name: 美国 加利福尼亚州森尼韦尔市PEG TECH公司
-    type: vmess
-    server: 142.0.132.44
-    port: 51015
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-headers: {}
-  - name: 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
-    type: vmess
-    server: 23.225.9.198
-    port: 50002
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国 加利福尼亚州圣何塞PEG TECH
-    type: vmess
-    server: 142.4.110.125
-    port: 54002
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-headers: {}
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: akrab2.v-pn.my.id
-    port: 443
-    uuid: b07a349b-5e3c-4b17-aabe-d1dc63376ecf
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /v2ray
-    ws-headers:
-      Host: idc8.vpn-akcelluler.my.id
-    tls: true
-  - name: 日本东京都品川区+Linode
-    type: trojan
-    server: jp2.520748.xyz
-    port: 10002?sni=jp2.520748.xyz
-    password: d7616325-e7cf-4901-b2b2-f1ea3669d022
-  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
-    type: vmess
-    server: 192.74.234.185
-    port: 51322
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
   - name: 广东省+移动
     type: trojan
     server: official.taipeicitygovernment.kiev.ua
     port: '8443'
     password: 5505f6ba-cd37-30ce-8f92-be4120c83d7f
-  - name: 法国+OVH机房SAS硬盘BGP主机
-    type: trojan
-    server: fr2.microsoft-orgwly.vip
-    port: 444?type=tcp&security=tls&sni=tls.microsoft-orgwly.vip&allowInsecure=1
-    password: 3e1ff3a0-c427-486f-95cf-9207721f570b
-  - name: 美国 V2CROSS.COM - 2
+  - name: 美国 华盛顿Cogent通信公司
     type: vmess
-    server: 45.153.203.85
-    port: 41632
+    server: 38.63.0.77
+    port: 47002
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
     udp: true
     network: tcp
-    ws-headers: {}
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 台湾省 中华电信(HiNet)数据中心
+    type: vmess
+    server: tw99-hinet.mynodes001.one
+    port: 445
+    uuid: 5f04de84-6b7e-3564-82c2-d2a998002629
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /chat
+    ws-headers:
+      Host: 🇹🇼TW台湾(youtube阿伟科技2)
+  - name: 日本+北海道石狩SAKURA数据中心
+    type: trojan
+    server: trs19.bolab.net
+    port: '443'
+    password: 7a73f1dc97a70905870c0c0484b12145
+  - name: 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+    type: vmess
+    server: 172.247.67.46
+    port: 50035
+    uuid: 2278efe4-ad0c-47ce-9480-068608368d76
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 爱尔兰+都柏林Amazon数据中心
+    type: trojan
+    server: 52.18.93.89
+    port: 22222?sni=trj.rollingnext.co.uk
+    password: telegram-id-privatevpns
 proxy-groups:
   - name: Free-servers
     type: select
@@ -135,55 +70,34 @@ proxy-groups:
       - 自动选择
       - 故障转移
       - 美国 CloudFlare节点
-      - 美国 Datability
-      - 美国 V2CROSS.COM
-      - 越南+V2CROSS.COM
-      - 荷兰+V2CROSS.COM
-      - 美国 加利福尼亚州森尼韦尔市PEG TECH公司
-      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国 CloudFlare节点 - 2
-      - 日本东京都品川区+Linode
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
       - 广东省+移动
-      - 法国+OVH机房SAS硬盘BGP主机
-      - 美国 V2CROSS.COM - 2
+      - 美国 华盛顿Cogent通信公司
+      - 台湾省 中华电信(HiNet)数据中心
+      - 日本+北海道石狩SAKURA数据中心
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 爱尔兰+都柏林Amazon数据中心
   - name: 自动选择
     type: url-test
     proxies:
       - 美国 CloudFlare节点
-      - 美国 Datability
-      - 美国 V2CROSS.COM
-      - 越南+V2CROSS.COM
-      - 荷兰+V2CROSS.COM
-      - 美国 加利福尼亚州森尼韦尔市PEG TECH公司
-      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国 CloudFlare节点 - 2
-      - 日本东京都品川区+Linode
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
       - 广东省+移动
-      - 法国+OVH机房SAS硬盘BGP主机
-      - 美国 V2CROSS.COM - 2
+      - 美国 华盛顿Cogent通信公司
+      - 台湾省 中华电信(HiNet)数据中心
+      - 日本+北海道石狩SAKURA数据中心
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 爱尔兰+都柏林Amazon数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
       - 美国 CloudFlare节点
-      - 美国 Datability
-      - 美国 V2CROSS.COM
-      - 越南+V2CROSS.COM
-      - 荷兰+V2CROSS.COM
-      - 美国 加利福尼亚州森尼韦尔市PEG TECH公司
-      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国 CloudFlare节点 - 2
-      - 日本东京都品川区+Linode
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
       - 广东省+移动
-      - 法国+OVH机房SAS硬盘BGP主机
-      - 美国 V2CROSS.COM - 2
+      - 美国 华盛顿Cogent通信公司
+      - 台湾省 中华电信(HiNet)数据中心
+      - 日本+北海道石狩SAKURA数据中心
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 爱尔兰+都柏林Amazon数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
