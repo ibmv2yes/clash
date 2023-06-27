@@ -1,96 +1,66 @@
 proxies:
-  - name: 美国+Microsoft数据中心
-    type: trojan
-    server: jp.stablize.top
-    port: '443'
-    password: 4d23cf0e-5ceb-43e7-90d3-63982bfa6940
   - name: 美国 CloudFlare节点
     type: vmess
-    server: zfc.windowsupdate1.com
-    port: 80
-    uuid: 01925169-e2ff-483c-89f2-6e778dcdd450
+    server: 104.16.48.44
+    port: 443
+    uuid: 3de4ec27-74b4-43e3-bf23-18e726ac80bc
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /
+    ws-path: /P6kpn5UKG40MNLK2
     ws-headers:
-      Host: us-1.acyun.cf
-  - name: 美国+惠普HP
-    type: trojan
-    server: jp10.jisuyun.co
-    port: 10070?sni=tls.jisuyun.co
-    password: 899e9266-84ae-45dd-9e61-97d276b69539
-  - name: 香港 电讯盈科有限公司
+      Host: SX8xtGOKv1MaJh.janbaroon.com
+    tls: true
+  - name: 美国 Datability
     type: vmess
-    server: cn-to-hk-443.db-link.in
-    port: 443
-    uuid: 40cbc750-a182-3fe2-8832-9fa6006354cf
-    alterId: 1
+    server: 140.99.128.114
+    port: 58455
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
     cipher: auto
     udp: true
-    network: ws
-    ws-path: /db
+    network: tcp
+    ws-path: /
     ws-headers:
-      Host: free-to-us-01.db-link.in
-    tls: true
-  - name: 美国+Microsoft数据中心 - 2
-    type: trojan
-    server: jp.stablize.top
-    port: '443'
-    password: 4d23cf0e-5ceb-43e7-90d3-63982bfa6940
-  - name: 韩国+V2CROSS.COM
-    type: trojan
-    server: kr2.twincloud.xyz
-    port: 443?sni=kr2.twincloud.xyz
-    password: 6455f944-7c07-4ab0-b88f-440e581f41d9
+      Host: ''
   - name: 美国 V2CROSS.COM
     type: vmess
-    server: 104.31.16.45
-    port: 80
-    uuid: 2fcc2939-7dcf-4741-aa03-825bc40e23fd
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /CZfczvtieCZXdOlgWhgDLX
-    ws-headers:
-      Host: de3.irteh.fun
-  - name: 南非 V2CROSS.COM
-    type: vmess
-    server: 156.225.67.136
-    port: 47852
-    uuid: 964bf499-9ec0-4378-92b6-87d8d861b2d0
+    server: 137.175.9.204
+    port: 57902
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
     udp: true
     network: tcp
-    ws-path: ''
+    ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国 CloudFlare节点 - 2
+  - name: 越南+V2CROSS.COM
+    type: trojan
+    server: 103.81.85.238
+    port: 443?type=tcp&security=tls&allowInsecure=1
+    password: b49e3ef1-8a43-4c95-8365-20f4a012e693
+  - name: 荷兰+V2CROSS.COM
+    type: trojan
+    server: hk5.jisuyun.co
+    port: 10094?sni=tls.jisuyun.co
+    password: 899e9266-84ae-45dd-9e61-97d276b69539
+  - name: 美国 加利福尼亚州森尼韦尔市PEG TECH公司
     type: vmess
-    server: txx.vtcss.top
-    port: 443
-    uuid: 3cd4f859-1048-4fdf-d8d8-4dbfaa9e8a80
-    alterId: 0
+    server: 142.0.132.44
+    port: 51015
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
     cipher: auto
     udp: true
-    network: ws
-    ws-path: /qwer
-    ws-headers:
-      Host: txx.vtcss.top
-    tls: true
-  - name: 美国+V2CROSS.COM
-    type: trojan
-    server: 152.70.74.66
-    port: 443?security=tls&type=tcp&headerType=none
-    password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
+    network: tcp
+    ws-headers: {}
   - name: 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
     type: vmess
-    server: 172.247.67.46
-    port: 50035
-    uuid: 2278efe4-ad0c-47ce-9480-068608368d76
+    server: 23.225.9.198
+    port: 50002
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
     udp: true
@@ -98,98 +68,122 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国 CloudFlare节点 - 3
+  - name: 美国 加利福尼亚州圣何塞PEG TECH
     type: vmess
-    server: dl.v001sssv.pw
-    port: 80
-    uuid: a4bb7f93-cee6-43d7-b2dd-fa9c70b88233
+    server: 142.4.110.125
+    port: 54002
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-headers: {}
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: akrab2.v-pn.my.id
+    port: 443
+    uuid: b07a349b-5e3c-4b17-aabe-d1dc63376ecf
     alterId: 0
     cipher: auto
     udp: true
     network: ws
+    ws-path: /v2ray
+    ws-headers:
+      Host: idc8.vpn-akcelluler.my.id
+    tls: true
+  - name: 日本东京都品川区+Linode
+    type: trojan
+    server: jp2.520748.xyz
+    port: 10002?sni=jp2.520748.xyz
+    password: d7616325-e7cf-4901-b2b2-f1ea3669d022
+  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
+    type: vmess
+    server: 192.74.234.185
+    port: 51322
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
     ws-path: /
     ws-headers:
-      Host: dl.v001sssv.pw
+      Host: ''
+  - name: 广东省+移动
+    type: trojan
+    server: official.taipeicitygovernment.kiev.ua
+    port: '8443'
+    password: 5505f6ba-cd37-30ce-8f92-be4120c83d7f
+  - name: 法国+OVH机房SAS硬盘BGP主机
+    type: trojan
+    server: fr2.microsoft-orgwly.vip
+    port: 444?type=tcp&security=tls&sni=tls.microsoft-orgwly.vip&allowInsecure=1
+    password: 3e1ff3a0-c427-486f-95cf-9207721f570b
   - name: 美国 V2CROSS.COM - 2
     type: vmess
-    server: sg4.zingfast.vn
-    port: 80
-    uuid: 533724ad-58ef-4147-88dc-9da523c15fc4
-    alterId: 0
+    server: 45.153.203.85
+    port: 41632
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
     cipher: auto
     udp: true
-    network: ws
-    ws-path: /anti13.zingfast.vn
-    ws-headers:
-      Host: sg4.zingfast.vn
-  - name: 美国 V2CROSS.COM - 3
-    type: vmess
-    server: ns1.v2-vip.fun
-    port: 80
-    uuid: 4f859149-2b2f-4b90-9a2c-8c0fe15c8c4c
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /ozX9aUPiJVtoLavjTW
-    ws-headers:
-      Host: de14.irteh.fun
+    network: tcp
+    ws-headers: {}
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国+Microsoft数据中心
       - 美国 CloudFlare节点
-      - 美国+惠普HP
-      - 香港 电讯盈科有限公司
-      - 美国+Microsoft数据中心 - 2
-      - 韩国+V2CROSS.COM
+      - 美国 Datability
       - 美国 V2CROSS.COM
-      - 南非 V2CROSS.COM
-      - 美国 CloudFlare节点 - 2
-      - 美国+V2CROSS.COM
+      - 越南+V2CROSS.COM
+      - 荷兰+V2CROSS.COM
+      - 美国 加利福尼亚州森尼韦尔市PEG TECH公司
       - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
-      - 美国 CloudFlare节点 - 3
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国 CloudFlare节点 - 2
+      - 日本东京都品川区+Linode
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 广东省+移动
+      - 法国+OVH机房SAS硬盘BGP主机
       - 美国 V2CROSS.COM - 2
-      - 美国 V2CROSS.COM - 3
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国+Microsoft数据中心
       - 美国 CloudFlare节点
-      - 美国+惠普HP
-      - 香港 电讯盈科有限公司
-      - 美国+Microsoft数据中心 - 2
-      - 韩国+V2CROSS.COM
+      - 美国 Datability
       - 美国 V2CROSS.COM
-      - 南非 V2CROSS.COM
-      - 美国 CloudFlare节点 - 2
-      - 美国+V2CROSS.COM
+      - 越南+V2CROSS.COM
+      - 荷兰+V2CROSS.COM
+      - 美国 加利福尼亚州森尼韦尔市PEG TECH公司
       - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
-      - 美国 CloudFlare节点 - 3
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国 CloudFlare节点 - 2
+      - 日本东京都品川区+Linode
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 广东省+移动
+      - 法国+OVH机房SAS硬盘BGP主机
       - 美国 V2CROSS.COM - 2
-      - 美国 V2CROSS.COM - 3
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国+Microsoft数据中心
       - 美国 CloudFlare节点
-      - 美国+惠普HP
-      - 香港 电讯盈科有限公司
-      - 美国+Microsoft数据中心 - 2
-      - 韩国+V2CROSS.COM
+      - 美国 Datability
       - 美国 V2CROSS.COM
-      - 南非 V2CROSS.COM
-      - 美国 CloudFlare节点 - 2
-      - 美国+V2CROSS.COM
+      - 越南+V2CROSS.COM
+      - 荷兰+V2CROSS.COM
+      - 美国 加利福尼亚州森尼韦尔市PEG TECH公司
       - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
-      - 美国 CloudFlare节点 - 3
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国 CloudFlare节点 - 2
+      - 日本东京都品川区+Linode
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 广东省+移动
+      - 法国+OVH机房SAS硬盘BGP主机
       - 美国 V2CROSS.COM - 2
-      - 美国 V2CROSS.COM - 3
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
