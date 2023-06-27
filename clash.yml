@@ -1,61 +1,91 @@
 proxies:
-  - name: 美国 加利福尼亚州洛杉矶it7.net
+  - name: 广东省东莞市 电信
     type: vmess
-    server: 173.242.127.11
-    port: 59236
-    uuid: fa5b50c9-adf3-4e6f-8583-7572cf222954
+    server: 2f36c18cfe76.sanfen004.me
+    port: 10775
+    uuid: 92316c61-06ee-4097-aabf-b9bb34396e62
     alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-headers: {}
+  - name: 日本 东京Amazon数据中心
+    type: vmess
+    server: jp.ssvpn.ru
+    port: 443
+    uuid: f1d918ef-e160-4d0e-a48a-89ee1891ef46
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: jp.ssvpn.ru
+    tls: true
+  - name: 安徽省+移动(全省通用)
+    type: ss
+    server: cm1-nc.go001.buzz
+    port: '19584'
+    cipher: chacha20-ietf-poly1305
+    password: 5dffba42-4be9-447e-a6d5-61567a360e70
+  - name: 美国 CloudFlare
+    type: vmess
+    server: 162.159.25.51
+    port: 8080
+    uuid: d5382631-aae1-486d-842a-de48274dd0d7
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /qwer
+    ws-headers:
+      Host: uxx.vtcss.top
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: 104.17.3.81
+    port: 80
+    uuid: 43b747e0-02bb-11ee-9b1d-1577c1651679
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /files
+    ws-headers:
+      Host: sg.xmbb.net
+  - name: 香港 特别行政区
+    type: vmess
+    server: 104.208.84.115
+    port: 443
+    uuid: 35ff16c4-b60c-4fce-abd8-1864138084ad
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: 104.208.84.115
+  - name: 美国 加利福尼亚州圣何塞PEG TECH
+    type: vmess
+    server: 142.4.110.28
+    port: 52908
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-headers: {}
+  - name: 美国 加利福尼亚州洛杉矶Sharktech数据中心
+    type: vmess
+    server: 67.21.64.84
+    port: 43123
+    uuid: 2566d00f-218c-48f7-9a36-13d3d6f1a724
+    alterId: 64
     cipher: auto
     udp: true
     network: tcp
     ws-path: ''
     ws-headers:
       Host: ''
-  - name: 美国 加利福尼亚州森尼韦尔市PEG TECH公司
-    type: vmess
-    server: 142.0.132.44
-    port: 51015
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-headers: {}
-  - name: 美国 加利福尼亚州圣何塞PEG TECH
-    type: vmess
-    server: 142.4.119.202
-    port: 53986
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 乌克兰 V2CROSS.COM
-    type: vmess
-    server: 195.211.98.34
-    port: 10000
-    uuid: 6ea7177c-1312-11ee-9d2d-1fc2820056f7
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /vpnjantit
-    ws-headers: {}
-  - name: 台湾省 中华电信(HiNet)数据中心
-    type: vmess
-    server: tw99-hinet.mynodes001.one
-    port: 445
-    uuid: 5f04de84-6b7e-3564-82c2-d2a998002629
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /chat
-    ws-headers:
-      Host: 🇹🇼TW台湾(youtube阿伟科技2)
   - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
     type: vmess
     server: 192.74.234.166
@@ -68,11 +98,29 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
+  - name: 法国+格拉沃利讷OVH数据中心
+    type: ss
+    server: 54.36.174.181
+    port: '6679'
+    cipher: aes-256-gcm
+    password: TEzjfAYq2IjtuoS
+  - name: 江苏省 移动
+    type: vmess
+    server: 36.156.198.43
+    port: 50034
+    uuid: 9e7b2986-fabf-4711-9e35-de67ba13dbef
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: ''
+    ws-headers:
+      Host: ''
   - name: 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
     type: vmess
-    server: 172.247.67.46
-    port: 50035
-    uuid: 2278efe4-ad0c-47ce-9480-068608368d76
+    server: 23.225.9.198
+    port: 50002
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
     udp: true
@@ -80,10 +128,58 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国 加利福尼亚州洛杉矶Sharktech数据中心
+  - name: 美国 Datability
     type: vmess
-    server: 170.178.167.144
-    port: 50002
+    server: 140.99.127.222
+    port: 54774
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 加利福尼亚州洛杉矶PetaExpress
+    type: vmess
+    server: 107.148.194.239
+    port: 55504
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 荷兰 北荷兰省阿姆斯特丹Sharktech数据中心
+    type: vmess
+    server: 45.58.186.85
+    port: 51140
+    uuid: 4a138e19-0595-4d51-83c6-fd276cf7d307
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 欧盟 V2CROSS.COM
+    type: vmess
+    server: 45.86.8.88
+    port: 49982
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: 137.175.9.204
+    port: 57902
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -98,38 +194,65 @@ proxy-groups:
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 加利福尼亚州洛杉矶it7.net
-      - 美国 加利福尼亚州森尼韦尔市PEG TECH公司
+      - 广东省东莞市 电信
+      - 日本 东京Amazon数据中心
+      - 安徽省+移动(全省通用)
+      - 美国 CloudFlare
+      - 美国 CloudFlare节点
+      - 香港 特别行政区
       - 美国 加利福尼亚州圣何塞PEG TECH
-      - 乌克兰 V2CROSS.COM
-      - 台湾省 中华电信(HiNet)数据中心
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
       - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 法国+格拉沃利讷OVH数据中心
+      - 江苏省 移动
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 美国 Datability
+      - 美国 加利福尼亚州洛杉矶PetaExpress
+      - 荷兰 北荷兰省阿姆斯特丹Sharktech数据中心
+      - 欧盟 V2CROSS.COM
+      - 美国 V2CROSS.COM
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 加利福尼亚州洛杉矶it7.net
-      - 美国 加利福尼亚州森尼韦尔市PEG TECH公司
+      - 广东省东莞市 电信
+      - 日本 东京Amazon数据中心
+      - 安徽省+移动(全省通用)
+      - 美国 CloudFlare
+      - 美国 CloudFlare节点
+      - 香港 特别行政区
       - 美国 加利福尼亚州圣何塞PEG TECH
-      - 乌克兰 V2CROSS.COM
-      - 台湾省 中华电信(HiNet)数据中心
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
       - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 法国+格拉沃利讷OVH数据中心
+      - 江苏省 移动
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 美国 Datability
+      - 美国 加利福尼亚州洛杉矶PetaExpress
+      - 荷兰 北荷兰省阿姆斯特丹Sharktech数据中心
+      - 欧盟 V2CROSS.COM
+      - 美国 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 加利福尼亚州洛杉矶it7.net
-      - 美国 加利福尼亚州森尼韦尔市PEG TECH公司
+      - 广东省东莞市 电信
+      - 日本 东京Amazon数据中心
+      - 安徽省+移动(全省通用)
+      - 美国 CloudFlare
+      - 美国 CloudFlare节点
+      - 香港 特别行政区
       - 美国 加利福尼亚州圣何塞PEG TECH
-      - 乌克兰 V2CROSS.COM
-      - 台湾省 中华电信(HiNet)数据中心
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
       - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 法国+格拉沃利讷OVH数据中心
+      - 江苏省 移动
+      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 美国 Datability
+      - 美国 加利福尼亚州洛杉矶PetaExpress
+      - 荷兰 北荷兰省阿姆斯特丹Sharktech数据中心
+      - 欧盟 V2CROSS.COM
+      - 美国 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
