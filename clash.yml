@@ -1,95 +1,22 @@
 proxies:
   - name: 美国 CloudFlare节点
     type: vmess
-    server: txx.vtcss.top
-    port: 443
-    uuid: 3cd4f859-1048-4fdf-d8d8-4dbfaa9e8a80
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /qwer
-    ws-headers:
-      Host: txx.vtcss.top
-    tls: true
-  - name: 澳大利亚 Kooweerup Secondary College
-    type: vmess
-    server: 1.sanfen001.top
+    server: cf.yxjnode.com
     port: 80
-    uuid: 82a573e6-6ac2-448a-b36b-f996ccdeda23
+    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /
+    ws-path: /yxzbp
     ws-headers:
-      Host: ccaws.cashdawiodxkawjaiocjdawdawdadwrawgfsegsededwadawfgrdrcvsssl.top
-  - name: 美国 加利福尼亚州圣何塞PEG TECH
-    type: vmess
-    server: 142.4.110.125
-    port: 54002
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: xt.ylks01.eu.org
-    port: 2095
-    uuid: b710770a-fdaf-41fb-bbe4-68a6c41e2605
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /blue
-    ws-headers:
-      Host: ''
-  - name: 印度+V2CROSS.COM
+      Host: dp1.yxjnode.com
+  - name: 美国+V2CROSS.COM
     type: trojan
-    server: 27.0.175.159
-    port: '1935'
-    password: YKMfmP7RV5
-  - name: 美国 加利福尼亚州森尼韦尔市PEG TECH公司
-    type: vmess
-    server: 142.0.139.57
-    port: 56079
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
+    server: 152.70.74.66
+    port: 443?security=tls&type=tcp&headerType=none
+    password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
   - name: 美国 V2CROSS.COM
-    type: vmess
-    server: sg4.zingfast.vn
-    port: 80
-    uuid: 533724ad-58ef-4147-88dc-9da523c15fc4
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /anti13.zingfast.vn
-    ws-headers:
-      Host: sg4.zingfast.vn
-  - name: 美国 V2CROSS.COM - 2
-    type: vmess
-    server: 104.31.16.28
-    port: 80
-    uuid: 58fe1542-5290-40ad-815a-77707a81afe5
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /IOebhLMhl1CTbFHbL95myfRX2
-    ws-headers:
-      Host: ca4.tehme2.fun
-  - name: 美国 V2CROSS.COM - 3
     type: vmess
     server: ns1.v2-vip.fun
     port: 80
@@ -101,10 +28,10 @@ proxies:
     ws-path: /i99LgvSaslbsPLLQQ7j6Z
     ws-headers:
       Host: de5.irteh.fun
-  - name: 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+  - name: 美国 V2CROSS.COM - 2
     type: vmess
-    server: 23.225.9.198
-    port: 50002
+    server: 137.175.9.201
+    port: 57902
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -113,7 +40,7 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国 CloudFlare节点 - 3
+  - name: 美国 CloudFlare节点 - 2
     type: vmess
     server: zfc.windowsupdate1.com
     port: 80
@@ -125,6 +52,47 @@ proxies:
     ws-path: /
     ws-headers:
       Host: us-1.acyun.cf
+  - name: 美国 加利福尼亚州洛杉矶PetaExpress
+    type: vmess
+    server: 107.148.192.155
+    port: 49924
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 斯洛伐克+V2CROSS.COM
+    type: ss
+    server: 185.48.248.126
+    port: '444'
+    cipher: chacha20-ietf-poly1305
+    password: Onsheypy
+  - name: 法国+OVH机房SAS硬盘BGP主机
+    type: trojan
+    server: fr2.microsoft-orgwly.vip
+    port: 444?sni=tls.microsoft-orgwly.vip
+    password: 3e1ff3a0-c427-486f-95cf-9207721f570b
+  - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: txx.vtcss.top
+    port: 443
+    uuid: 3cd4f859-1048-4fdf-d8d8-4dbfaa9e8a80
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /qwer
+    ws-headers:
+      Host: txx.vtcss.top
+    tls: true
+  - name: 美国+Microsoft数据中心
+    type: trojan
+    server: jp.stablize.top
+    port: '443'
+    password: 4d23cf0e-5ceb-43e7-90d3-63982bfa6940
 proxy-groups:
   - name: Free-servers
     type: select
@@ -132,46 +100,43 @@ proxy-groups:
       - 自动选择
       - 故障转移
       - 美国 CloudFlare节点
-      - 澳大利亚 Kooweerup Secondary College
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国 CloudFlare节点 - 2
-      - 印度+V2CROSS.COM
-      - 美国 加利福尼亚州森尼韦尔市PEG TECH公司
+      - 美国+V2CROSS.COM
       - 美国 V2CROSS.COM
       - 美国 V2CROSS.COM - 2
-      - 美国 V2CROSS.COM - 3
-      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 美国 CloudFlare节点 - 2
+      - 美国 加利福尼亚州洛杉矶PetaExpress
+      - 斯洛伐克+V2CROSS.COM
+      - 法国+OVH机房SAS硬盘BGP主机
       - 美国 CloudFlare节点 - 3
+      - 美国+Microsoft数据中心
   - name: 自动选择
     type: url-test
     proxies:
       - 美国 CloudFlare节点
-      - 澳大利亚 Kooweerup Secondary College
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国 CloudFlare节点 - 2
-      - 印度+V2CROSS.COM
-      - 美国 加利福尼亚州森尼韦尔市PEG TECH公司
+      - 美国+V2CROSS.COM
       - 美国 V2CROSS.COM
       - 美国 V2CROSS.COM - 2
-      - 美国 V2CROSS.COM - 3
-      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 美国 CloudFlare节点 - 2
+      - 美国 加利福尼亚州洛杉矶PetaExpress
+      - 斯洛伐克+V2CROSS.COM
+      - 法国+OVH机房SAS硬盘BGP主机
       - 美国 CloudFlare节点 - 3
+      - 美国+Microsoft数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
       - 美国 CloudFlare节点
-      - 澳大利亚 Kooweerup Secondary College
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国 CloudFlare节点 - 2
-      - 印度+V2CROSS.COM
-      - 美国 加利福尼亚州森尼韦尔市PEG TECH公司
+      - 美国+V2CROSS.COM
       - 美国 V2CROSS.COM
       - 美国 V2CROSS.COM - 2
-      - 美国 V2CROSS.COM - 3
-      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+      - 美国 CloudFlare节点 - 2
+      - 美国 加利福尼亚州洛杉矶PetaExpress
+      - 斯洛伐克+V2CROSS.COM
+      - 法国+OVH机房SAS硬盘BGP主机
       - 美国 CloudFlare节点 - 3
+      - 美国+Microsoft数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
