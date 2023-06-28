@@ -1,14 +1,75 @@
 proxies:
-  - name: 美国+亚利桑那州凤凰城Oracle云计算数据中心
+  - name: 美国 Datability
+    type: vmess
+    server: 140.99.77.25
+    port: 50332
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: scaleway.696960.xyz
+    port: 443
+    uuid: e357cd63-f1a5-4c8e-c42e-26da11207fee
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /root/
+    ws-headers:
+      Host: ''
+    tls: true
+  - name: 美国+Microsoft数据中心
     type: trojan
-    server: hk1997.pro
-    port: '4000'
-    password: 887c0298-2bab-4d4c-8cb0-b85b3ba9c4bb
-  - name: 亚太地区+V2CROSS.COM
+    server: jp.stablize.top
+    port: '443'
+    password: 4d23cf0e-5ceb-43e7-90d3-63982bfa6940
+  - name: 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+    type: vmess
+    server: 107.167.30.132
+    port: 43900
+    uuid: 58e560b4-bba6-4843-be5f-83321022fa0d
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: cf-lt.sharecentre.online
+    port: 80
+    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /shirker
+    ws-headers:
+      Host: ca.ilovescp.com
+  - name: 美国+V2CROSS.COM
     type: trojan
-    server: 163.123.192.60
-    port: 443?sni=18-140-66-207.nhost.00cdn.com
-    password: 41bec492-cd79-4b57-9a15-7d2bb00fcfca
+    server: 152.70.74.66
+    port: 443?security=tls&type=tcp&headerType=none
+    password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
+  - name: 美国 加利福尼亚州洛杉矶Sharktech数据中心
+    type: vmess
+    server: 64.32.20.104
+    port: 40039
+    uuid: c1bad9a6-1482-4941-a0c4-e85f3cbbcb5a
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
   - name: 美国 华盛顿Cogent通信公司
     type: vmess
     server: 38.63.0.78
@@ -21,22 +82,10 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 荷兰 北荷兰省阿姆斯特丹Sharktech数据中心
+  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
     type: vmess
-    server: 45.58.186.91
-    port: 51140
-    uuid: 4a138e19-0595-4d51-83c6-fd276cf7d307
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: ''
-    ws-headers:
-      Host: ''
-  - name: 美国 加利福尼亚州洛杉矶Sharktech数据中心
-    type: vmess
-    server: 170.178.167.149
-    port: 50002
+    server: 192.74.231.187
+    port: 49255
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -45,32 +94,23 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国加利福尼亚州洛杉矶 CeraNetworks数据中心
+  - name: 香港 沙田电信数据中心
     type: vmess
-    server: 23.225.211.21
-    port: 42941
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
+    server: cn-to-hk-443.db-link.in
+    port: 443
+    uuid: 40cbc750-a182-3fe2-8832-9fa6006354cf
+    alterId: 1
     cipher: auto
     udp: true
-    network: tcp
-    ws-headers: {}
+    network: ws
+    ws-path: /db
+    ws-headers:
+      Host: free-to-us-01.db-link.in
+    tls: true
   - name: 美国 V2CROSS.COM
     type: vmess
-    server: ns1.v2-vip.fun
-    port: 80
-    uuid: 8abe9496-5e24-4e49-b566-dcf86116017d
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /i99LgvSaslbsPLLQQ7j6Z
-    ws-headers:
-      Host: de5.irteh.fun
-  - name: 美国 加利福尼亚州圣何塞PEG TECH
-    type: vmess
-    server: 142.4.112.1
-    port: 51091
+    server: 45.153.203.89
+    port: 41632
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -79,16 +119,47 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国+Microsoft数据中心
-    type: trojan
-    server: kr.stablize.top
-    port: '443'
-    password: c8ad75e9-b071-446e-b2e3-ea93b8dd0324
-  - name: 南非 V2CROSS.COM
+  - name: 美国 加利福尼亚州洛杉矶PetaExpress
     type: vmess
-    server: 156.225.67.207
-    port: 40934
-    uuid: d7735058-1dac-4618-99ff-0aa0441ec2d7
+    server: 107.148.194.239
+    port: 55504
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国加利福尼亚州洛杉矶 PetaExpress
+    type: vmess
+    server: 198.2.204.244
+    port: 46902
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: microsoftdebug.com
+    port: 80
+    uuid: 705b44ad-72d1-4ea8-8d9e-0b1fd789223d
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /windows7.ios
+    ws-headers:
+      Host: v1.us1.microsoftdebug.com
+  - name: 美国 加利福尼亚州洛杉矶Sharktech数据中心 - 2
+    type: vmess
+    server: 67.21.64.84
+    port: 43123
+    uuid: 2566d00f-218c-48f7-9a36-13d3d6f1a724
     alterId: 64
     cipher: auto
     udp: true
@@ -96,66 +167,65 @@ proxies:
     ws-path: ''
     ws-headers:
       Host: ''
-  - name: 美国 加利福尼亚州费利蒙Linode数据中心
-    type: vmess
-    server: vus2.0bad.com
-    port: 443
-    uuid: 927094d3-d678-4763-8591-e240d0bcae87
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /chat
-    ws-headers:
-      Host: vus2.0bad.com
-    tls: true
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国+亚利桑那州凤凰城Oracle云计算数据中心
-      - 亚太地区+V2CROSS.COM
-      - 美国 华盛顿Cogent通信公司
-      - 荷兰 北荷兰省阿姆斯特丹Sharktech数据中心
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
-      - 美国加利福尼亚州洛杉矶 CeraNetworks数据中心
-      - 美国 V2CROSS.COM
-      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国 Datability
+      - 美国 CloudFlare节点
       - 美国+Microsoft数据中心
-      - 南非 V2CROSS.COM
-      - 美国 加利福尼亚州费利蒙Linode数据中心
+      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+      - 美国 CloudFlare节点 - 2
+      - 美国+V2CROSS.COM
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 美国 华盛顿Cogent通信公司
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 香港 沙田电信数据中心
+      - 美国 V2CROSS.COM
+      - 美国 加利福尼亚州洛杉矶PetaExpress
+      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 美国 CloudFlare节点 - 3
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心 - 2
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国+亚利桑那州凤凰城Oracle云计算数据中心
-      - 亚太地区+V2CROSS.COM
-      - 美国 华盛顿Cogent通信公司
-      - 荷兰 北荷兰省阿姆斯特丹Sharktech数据中心
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
-      - 美国加利福尼亚州洛杉矶 CeraNetworks数据中心
-      - 美国 V2CROSS.COM
-      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国 Datability
+      - 美国 CloudFlare节点
       - 美国+Microsoft数据中心
-      - 南非 V2CROSS.COM
-      - 美国 加利福尼亚州费利蒙Linode数据中心
+      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+      - 美国 CloudFlare节点 - 2
+      - 美国+V2CROSS.COM
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 美国 华盛顿Cogent通信公司
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 香港 沙田电信数据中心
+      - 美国 V2CROSS.COM
+      - 美国 加利福尼亚州洛杉矶PetaExpress
+      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 美国 CloudFlare节点 - 3
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心 - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国+亚利桑那州凤凰城Oracle云计算数据中心
-      - 亚太地区+V2CROSS.COM
-      - 美国 华盛顿Cogent通信公司
-      - 荷兰 北荷兰省阿姆斯特丹Sharktech数据中心
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
-      - 美国加利福尼亚州洛杉矶 CeraNetworks数据中心
-      - 美国 V2CROSS.COM
-      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国 Datability
+      - 美国 CloudFlare节点
       - 美国+Microsoft数据中心
-      - 南非 V2CROSS.COM
-      - 美国 加利福尼亚州费利蒙Linode数据中心
+      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+      - 美国 CloudFlare节点 - 2
+      - 美国+V2CROSS.COM
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 美国 华盛顿Cogent通信公司
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 香港 沙田电信数据中心
+      - 美国 V2CROSS.COM
+      - 美国 加利福尼亚州洛杉矶PetaExpress
+      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 美国 CloudFlare节点 - 3
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心 - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
