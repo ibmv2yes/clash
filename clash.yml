@@ -1,102 +1,21 @@
 proxies:
-  - name: 美国+V2CROSS.COM
+  - name: 南非豪登省约翰内斯堡 Cloudinnovation数据中心
+    type: vmess
+    server: 156.249.18.37
+    port: 48972
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 广东省+移动
     type: trojan
-    server: 216.52.59.50
-    port: '20458'
-    password: m8krTirthj
-  - name: 美国 V2CROSS.COM
-    type: vmess
-    server: ns1.v2-vip.fun
-    port: 80
-    uuid: 4f859149-2b2f-4b90-9a2c-8c0fe15c8c4c
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /ozX9aUPiJVtoLavjTW
-    ws-headers:
-      Host: de14.irteh.fun
-  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
-    type: vmess
-    server: 192.74.232.226
-    port: 52312
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国 V2CROSS.COM - 2
-    type: vmess
-    server: 137.175.9.204
-    port: 57902
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 台湾省花莲县+中华电信
-    type: trojan
-    server: hnm.xiaohouzi.club
-    port: '23330'
-    password: c32c56fb-64d9-33c4-b42a-af81b7a33fe7
-  - name: 亚太地区+V2CROSS.COM
-    type: trojan
-    server: 163.123.192.60
-    port: '443'
-    password: 41bec492-cd79-4b57-9a15-7d2bb00fcfca
-  - name: 美国 V2CROSS.COM - 3
-    type: vmess
-    server: 137.175.52.18
-    port: 33002
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 香港 V2CROSS.COM
-    type: vmess
-    server: 156.245.8.158
-    port: 39734
-    uuid: 11117d4c-3b6a-4e76-8bcc-2b41b3e9ca93
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: ''
-    ws-headers:
-      Host: ''
-  - name: 美国 Datability
-    type: vmess
-    server: 140.99.127.222
-    port: 54774
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 日本 V2CROSS.COM
-    type: vmess
-    server: kr4.jisuyun.co
-    port: 443
-    uuid: 28f57cb0-f336-46e6-b040-fcc138affb29
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers: {}
+    server: official.taipeicitygovernment.kiev.ua
+    port: 8443?sni=66.42.40.132
+    password: 5505f6ba-cd37-30ce-8f92-be4120c83d7f
   - name: 中国 阿里云
     type: vmess
     server: cn-to-hk-443.db-link.in
@@ -110,113 +29,35 @@ proxies:
     ws-headers:
       Host: free-to-us-01.db-link.in
     tls: true
-  - name: 美国 Cloudinnovation数据中心
-    type: vmess
-    server: 154.85.1.81
-    port: 47721
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国 V2CROSS.COM - 4
-    type: vmess
-    server: 137.175.58.66
-    port: 40071
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
   - name: 美国 CloudFlare节点
     type: vmess
-    server: v2ray.online
-    port: 443
-    uuid: 00BBF5B8-173E-6818-9927-5AD1AA073C7D
+    server: 104.21.53.35
+    port: 80
+    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /speedtest
+    ws-path: /yxzbp
     ws-headers:
-      Host: Kansas.v2ray.online
-    tls: true
-  - name: 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+      Host: dp3.yxjnode.com
+  - name: 日本东京 Oracle云计算数据中心
     type: vmess
-    server: 107.167.16.91
-    port: 45689
-    uuid: 7640a1e7-9701-428e-a4b2-19b3e7dd6f9f
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国 加利福尼亚州圣何塞PEG TECH
-    type: vmess
-    server: 142.4.126.67
-    port: 52212
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 欧盟 V2CROSS.COM
-    type: vmess
-    server: 45.86.8.83
-    port: 49982
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 广东省广州市+UCloud
-    type: trojan
-    server: iplc-enter-tw-xe.fib-sys.xyz
-    port: '11451'
-    password: 11a4e5be-3c87-37d2-aac8-00b85ef0fcdc
-  - name: 欧盟 V2CROSS.COM - 2
-    type: vmess
-    server: 45.92.160.22
-    port: 47839
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国 V2CROSS.COM - 5
-    type: vmess
-    server: 129.146.247.135
-    port: 32558
-    uuid: c24b6170-ba54-4b2b-92a7-c04740bfc7bf
+    server: 158.101.155.230
+    port: 80
+    uuid: 88c6d12b-614f-485f-83fc-fb0cc57c4801
     alterId: 0
     cipher: auto
     udp: true
-    network: tcp
-    ws-path: ''
+    network: ws
+    ws-path: /cdn
     ws-headers:
-      Host: ''
-  - name: 南非 V2CROSS.COM
+      Host: dctzj47pbgu88.cloudfront.net
+  - name: 美国 Datability
     type: vmess
-    server: 156.225.67.131
-    port: 48123
-    uuid: 515bcb4d-0ba1-4cae-87cf-a047007eec54
+    server: 140.99.140.158
+    port: 57172
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
     udp: true
@@ -224,91 +65,107 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 法国+巴黎Amazon数据中心
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: cf-lt.sharecentre.online
+    port: 80
+    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /shirker
+    ws-headers:
+      Host: ca.ilovescp.com
+  - name: 上海市+电信
     type: trojan
-    server: 35.180.23.133
-    port: 22222?sni=trj.rollingnext.co.uk
-    password: telegram-id-privatevpns
+    server: 116.192.171.97
+    port: '8443'
+    password: 5505f6ba-cd37-30ce-8f92-be4120c83d7f
+  - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: 104.24.159.57
+    port: 80
+    uuid: 9572d691-e27a-4f54-ef4d-57600a785b55
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /qwer0
+    ws-headers:
+      Host: txx.vtcss.top
+  - name: 美国 CloudFlare节点 - 4
+    type: vmess
+    server: cf-yd-dns.sharecentre.online
+    port: 80
+    uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /shirker
+    ws-headers:
+      Host: dp3.scproxy.top
+  - name: 亚太地区+V2CROSS.COM
+    type: trojan
+    server: 163.123.192.60
+    port: '443'
+    password: 41bec492-cd79-4b57-9a15-7d2bb00fcfca
+  - name: 美国+V2CROSS.COM
+    type: trojan
+    server: 152.70.74.66
+    port: 443?security=tls&type=tcp&headerType=none
+    password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国+V2CROSS.COM
-      - 美国 V2CROSS.COM
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 美国 V2CROSS.COM - 2
-      - 台湾省花莲县+中华电信
-      - 亚太地区+V2CROSS.COM
-      - 美国 V2CROSS.COM - 3
-      - 香港 V2CROSS.COM
-      - 美国 Datability
-      - 日本 V2CROSS.COM
+      - 南非豪登省约翰内斯堡 Cloudinnovation数据中心
+      - 广东省+移动
       - 中国 阿里云
-      - 美国 Cloudinnovation数据中心
-      - 美国 V2CROSS.COM - 4
       - 美国 CloudFlare节点
-      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 欧盟 V2CROSS.COM
-      - 广东省广州市+UCloud
-      - 欧盟 V2CROSS.COM - 2
-      - 美国 V2CROSS.COM - 5
-      - 南非 V2CROSS.COM
-      - 法国+巴黎Amazon数据中心
+      - 日本东京 Oracle云计算数据中心
+      - 美国 Datability
+      - 美国 CloudFlare节点 - 2
+      - 上海市+电信
+      - 美国 CloudFlare节点 - 3
+      - 美国 CloudFlare节点 - 4
+      - 亚太地区+V2CROSS.COM
+      - 美国+V2CROSS.COM
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国+V2CROSS.COM
-      - 美国 V2CROSS.COM
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 美国 V2CROSS.COM - 2
-      - 台湾省花莲县+中华电信
-      - 亚太地区+V2CROSS.COM
-      - 美国 V2CROSS.COM - 3
-      - 香港 V2CROSS.COM
-      - 美国 Datability
-      - 日本 V2CROSS.COM
+      - 南非豪登省约翰内斯堡 Cloudinnovation数据中心
+      - 广东省+移动
       - 中国 阿里云
-      - 美国 Cloudinnovation数据中心
-      - 美国 V2CROSS.COM - 4
       - 美国 CloudFlare节点
-      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 欧盟 V2CROSS.COM
-      - 广东省广州市+UCloud
-      - 欧盟 V2CROSS.COM - 2
-      - 美国 V2CROSS.COM - 5
-      - 南非 V2CROSS.COM
-      - 法国+巴黎Amazon数据中心
+      - 日本东京 Oracle云计算数据中心
+      - 美国 Datability
+      - 美国 CloudFlare节点 - 2
+      - 上海市+电信
+      - 美国 CloudFlare节点 - 3
+      - 美国 CloudFlare节点 - 4
+      - 亚太地区+V2CROSS.COM
+      - 美国+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国+V2CROSS.COM
-      - 美国 V2CROSS.COM
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 美国 V2CROSS.COM - 2
-      - 台湾省花莲县+中华电信
-      - 亚太地区+V2CROSS.COM
-      - 美国 V2CROSS.COM - 3
-      - 香港 V2CROSS.COM
-      - 美国 Datability
-      - 日本 V2CROSS.COM
+      - 南非豪登省约翰内斯堡 Cloudinnovation数据中心
+      - 广东省+移动
       - 中国 阿里云
-      - 美国 Cloudinnovation数据中心
-      - 美国 V2CROSS.COM - 4
       - 美国 CloudFlare节点
-      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 欧盟 V2CROSS.COM
-      - 广东省广州市+UCloud
-      - 欧盟 V2CROSS.COM - 2
-      - 美国 V2CROSS.COM - 5
-      - 南非 V2CROSS.COM
-      - 法国+巴黎Amazon数据中心
+      - 日本东京 Oracle云计算数据中心
+      - 美国 Datability
+      - 美国 CloudFlare节点 - 2
+      - 上海市+电信
+      - 美国 CloudFlare节点 - 3
+      - 美国 CloudFlare节点 - 4
+      - 亚太地区+V2CROSS.COM
+      - 美国+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
