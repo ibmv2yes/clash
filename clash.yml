@@ -1,62 +1,33 @@
 proxies:
-  - name: 美国+V2CROSS.COM
-    type: ss
-    server: 172.99.188.99
-    port: '6379'
-    cipher: aes-256-gcm
-    password: zDNVedRFPQexG9v
+  - name: 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+    type: vmess
+    server: 107.167.7.19
+    port: 41654
+    uuid: bdee202c-8fae-441f-a588-7bc4d3887019
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 日本 V2CROSS.COM
+    type: vmess
+    server: cn-to-hk-443.db-link.in
+    port: 443
+    uuid: 40cbc750-a182-3fe2-8832-9fa6006354cf
+    alterId: 1
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /db
+    ws-headers:
+      Host: free-to-us-01.db-link.in
+    tls: true
   - name: 美国 V2CROSS.COM
     type: vmess
-    server: ns1.v2-vip.fun
-    port: 80
-    uuid: 8abe9496-5e24-4e49-b566-dcf86116017d
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /i99LgvSaslbsPLLQQ7j6Z
-    ws-headers:
-      Host: de5.irteh.fun
-  - name: 美国 Datability
-    type: vmess
-    server: 140.99.77.57
-    port: 48901
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国 V2CROSS.COM - 2
-    type: vmess
-    server: 45.153.203.89
-    port: 41632
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国 V2CROSS.COM - 3
-    type: vmess
-    server: ns1.v2-vip.fun
-    port: 80
-    uuid: 8abe9496-5e24-4e49-b566-dcf86116017d
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /i99LgvSaslbsPLLQQ7j6Z
-    ws-headers:
-      Host: de5.irteh.fun
-  - name: 美国 加利福尼亚州圣何塞PEG TECH
-    type: vmess
-    server: 142.4.100.43
-    port: 45009
+    server: 137.175.18.109
+    port: 50004
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -67,38 +38,32 @@ proxies:
       Host: ''
   - name: 美国 CloudFlare节点
     type: vmess
-    server: dl.v001sssv.pw
-    port: 80
-    uuid: a4bb7f93-cee6-43d7-b2dd-fa9c70b88233
+    server: v2ray.online
+    port: 443
+    uuid: 00BBF5B8-173E-6818-9927-5AD1AA073C7D
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /
+    ws-path: /speedtest
     ws-headers:
-      Host: dl.v001sssv.pw
-  - name: 美国 Datability - 2
+      Host: Kansas.v2ray.online
+    tls: true
+  - name: 南非豪登省约翰内斯堡 Cloudinnovation数据中心
     type: vmess
-    server: 140.99.140.158
-    port: 57172
+    server: 156.249.18.69
+    port: 54802
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
     udp: true
     network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国+Microsoft数据中心
-    type: trojan
-    server: jp.stablize.top
-    port: '443'
-    password: 4d23cf0e-5ceb-43e7-90d3-63982bfa6940
-  - name: 美国 加利福尼亚州圣何塞PEG TECH - 2
+    ws-headers: {}
+  - name: 香港 BGP.NET CN2数据中心
     type: vmess
-    server: 142.4.126.47
-    port: 44392
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    server: 202.79.174.157
+    port: 55264
+    uuid: 121c9c89-7d11-4f49-9112-dc1e85363f6f
     alterId: 64
     cipher: auto
     udp: true
@@ -106,27 +71,22 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+  - name: 瑞典 Oracle Corporation
     type: vmess
-    server: 107.167.7.19
-    port: 41654
-    uuid: bdee202c-8fae-441f-a588-7bc4d3887019
-    alterId: 64
+    server: 141.147.153.244
+    port: 41545
+    uuid: d47d7135-0954-46ab-a190-17b6c8630a85
+    alterId: 0
     cipher: auto
     udp: true
     network: tcp
-    ws-path: ''
+    ws-path: /
     ws-headers:
       Host: ''
-  - name: 德国+V2CROSS.COM
-    type: trojan
-    server: 217.79.184.76
-    port: 443?sni=18-140-66-207.nhost.00cdn.com
-    password: 8196dd4b-513f-4b2d-8631-56a4f0c8597d
-  - name: 美国加利福尼亚州洛杉矶 PetaExpress
+  - name: 欧盟 V2CROSS.COM
     type: vmess
-    server: 198.2.203.54
-    port: 44672
+    server: 45.86.8.88
+    port: 49982
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -141,53 +101,38 @@ proxy-groups:
     proxies:
       - 自动选择
       - 故障转移
-      - 美国+V2CROSS.COM
-      - 美国 V2CROSS.COM
-      - 美国 Datability
-      - 美国 V2CROSS.COM - 2
-      - 美国 V2CROSS.COM - 3
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国 CloudFlare节点
-      - 美国 Datability - 2
-      - 美国+Microsoft数据中心
-      - 美国 加利福尼亚州圣何塞PEG TECH - 2
       - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
-      - 德国+V2CROSS.COM
-      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 日本 V2CROSS.COM
+      - 美国 V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 南非豪登省约翰内斯堡 Cloudinnovation数据中心
+      - 香港 BGP.NET CN2数据中心
+      - 瑞典 Oracle Corporation
+      - 欧盟 V2CROSS.COM
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国+V2CROSS.COM
-      - 美国 V2CROSS.COM
-      - 美国 Datability
-      - 美国 V2CROSS.COM - 2
-      - 美国 V2CROSS.COM - 3
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国 CloudFlare节点
-      - 美国 Datability - 2
-      - 美国+Microsoft数据中心
-      - 美国 加利福尼亚州圣何塞PEG TECH - 2
       - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
-      - 德国+V2CROSS.COM
-      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 日本 V2CROSS.COM
+      - 美国 V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 南非豪登省约翰内斯堡 Cloudinnovation数据中心
+      - 香港 BGP.NET CN2数据中心
+      - 瑞典 Oracle Corporation
+      - 欧盟 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国+V2CROSS.COM
-      - 美国 V2CROSS.COM
-      - 美国 Datability
-      - 美国 V2CROSS.COM - 2
-      - 美国 V2CROSS.COM - 3
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国 CloudFlare节点
-      - 美国 Datability - 2
-      - 美国+Microsoft数据中心
-      - 美国 加利福尼亚州圣何塞PEG TECH - 2
       - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
-      - 德国+V2CROSS.COM
-      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 日本 V2CROSS.COM
+      - 美国 V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 南非豪登省约翰内斯堡 Cloudinnovation数据中心
+      - 香港 BGP.NET CN2数据中心
+      - 瑞典 Oracle Corporation
+      - 欧盟 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
