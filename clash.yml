@@ -1,8 +1,8 @@
 proxies:
-  - name: 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
+  - name: 美国 加利福尼亚州圣何塞PEG TECH
     type: vmess
-    server: 23.225.9.196
-    port: 50002
+    server: 142.4.126.67
+    port: 52212
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -11,155 +11,18 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: dl.v001sssv.pw
-    port: 80
-    uuid: a4bb7f93-cee6-43d7-b2dd-fa9c70b88233
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: dl.v001sssv.pw
-  - name: 美国 Datability
-    type: vmess
-    server: 140.99.140.158
-    port: 57172
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
-    type: vmess
-    server: 192.74.234.185
-    port: 51322
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国加利福尼亚州洛杉矶 PetaExpress
-    type: vmess
-    server: 198.2.204.241
-    port: 46902
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-headers: {}
   - name: 美国 V2CROSS.COM
     type: vmess
-    server: ns1.v2-vip.fun
-    port: 80
-    uuid: 8abe9496-5e24-4e49-b566-dcf86116017d
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /i99LgvSaslbsPLLQQ7j6Z
-    ws-headers:
-      Host: de5.irteh.fun
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: dl.v001sssv.pw
-    port: 80
-    uuid: a4bb7f93-cee6-43d7-b2dd-fa9c70b88233
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: dl.v001sssv.pw
-  - name: 亚太地区+V2CROSS.COM
-    type: trojan
-    server: 163.123.192.156
-    port: '443'
-    password: 1113a9fa-c6ee-4929-ae93-d29d024b1728
-  - name: 日本+北海道石狩SAKURA数据中心
-    type: trojan
-    server: trs19.bolab.net
-    port: '443'
-    password: 7a73f1dc97a70905870c0c0484b12145
-  - name: 日本 东京Digital VM
-    type: vmess
-    server: 45.88.43.163
-    port: 51801
+    server: 137.175.58.66
+    port: 40071
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
     udp: true
     network: tcp
-    ws-headers: {}
-  - name: 英国 V2CROSS.COM
-    type: vmess
-    server: 83.142.225.32
-    port: 49920
-    uuid: 5267ca71-97e6-44c8-8fb5-9fe4afe0954e
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 香港 V2CROSS.COM
-    type: vmess
-    server: 156.245.8.142
-    port: 49110
-    uuid: 6193116d-96f9-4d7a-9be5-5bb06a69af0b
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国 加利福尼亚州洛杉矶Sharktech数据中心
-    type: vmess
-    server: 64.32.4.42
-    port: 43166
-    uuid: 8653004f-de67-44c2-9cce-e0830933fb03
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国 CloudFlare节点 - 3
-    type: vmess
-    server: scaleway.696960.xyz
-    port: 443
-    uuid: e357cd63-f1a5-4c8e-c42e-26da11207fee
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /root/
-    ws-headers:
-      Host: ''
-    tls: true
-  - name: 美国 Cloudinnovation数据中心
-    type: vmess
-    server: 154.85.1.3
-    port: 40024
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-headers: {}
   - name: 美国 V2CROSS.COM - 2
     type: vmess
     server: ns1.v2-vip.fun
@@ -172,120 +35,135 @@ proxies:
     ws-path: /ozX9aUPiJVtoLavjTW
     ws-headers:
       Host: de14.irteh.fun
-  - name: 南非豪登省约翰内斯堡 Cloudinnovation数据中心
+  - name: 日本 V2CROSS.COM
     type: vmess
-    server: 156.249.18.38
-    port: 48972
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国 Datability - 2
-    type: vmess
-    server: 140.99.128.114
-    port: 58455
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国 Microsoft数据中心
-    type: vmess
-    server: 20.198.192.236
-    port: 8848
-    uuid: 88c6d12b-614f-485f-83fc-fb0cc57c4801
+    server: kr4.jisuyun.co
+    port: 443
+    uuid: 28f57cb0-f336-46e6-b040-fcc138affb29
     alterId: 0
     cipher: auto
     udp: true
     network: ws
     ws-path: /
     ws-headers: {}
-  - name: 美国+Microsoft数据中心
+  - name: 南非 V2CROSS.COM
+    type: vmess
+    server: 156.225.67.131
+    port: 48123
+    uuid: 515bcb4d-0ba1-4cae-87cf-a047007eec54
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 加利福尼亚州圣何塞MULTACOM机房
+    type: vmess
+    server: 45.199.138.4
+    port: 47793
+    uuid: f9fa3a9c-f7d5-414f-88e6-6970585d9949
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国+V2CROSS.COM
     type: trojan
-    server: jp.stablize.top
+    server: 152.70.74.66
+    port: 443?security=tls&type=tcp&headerType=none
+    password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
+  - name: 日本+北海道石狩SAKURA数据中心
+    type: trojan
+    server: trs19.bolab.net
     port: '443'
-    password: 4d23cf0e-5ceb-43e7-90d3-63982bfa6940
+    password: 7a73f1dc97a70905870c0c0484b12145
+  - name: 美国 加利福尼亚州洛杉矶MULTACOM数据中心
+    type: vmess
+    server: 170.178.194.20
+    port: 53386
+    uuid: 3023981b-0431-4bff-8a10-0f986ba86c73
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: bluehost.com
+    port: 443
+    uuid: be74ca03-6a7c-4c88-edc2-c6434ead0cfa
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /16575
+    ws-headers:
+      Host: cdnca1.digisport.shop
+    tls: true
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: dl.v001sssv.pw
+    port: 80
+    uuid: a4bb7f93-cee6-43d7-b2dd-fa9c70b88233
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: dl.v001sssv.pw
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
-      - 美国 CloudFlare节点
-      - 美国 Datability
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 美国 加利福尼亚州圣何塞PEG TECH
       - 美国 V2CROSS.COM
-      - 美国 CloudFlare节点 - 2
-      - 亚太地区+V2CROSS.COM
-      - 日本+北海道石狩SAKURA数据中心
-      - 日本 东京Digital VM
-      - 英国 V2CROSS.COM
-      - 香港 V2CROSS.COM
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
-      - 美国 CloudFlare节点 - 3
-      - 美国 Cloudinnovation数据中心
       - 美国 V2CROSS.COM - 2
-      - 南非豪登省约翰内斯堡 Cloudinnovation数据中心
-      - 美国 Datability - 2
-      - 美国 Microsoft数据中心
-      - 美国+Microsoft数据中心
+      - 日本 V2CROSS.COM
+      - 南非 V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞MULTACOM机房
+      - 美国+V2CROSS.COM
+      - 日本+北海道石狩SAKURA数据中心
+      - 美国 加利福尼亚州洛杉矶MULTACOM数据中心
+      - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 - 2
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
-      - 美国 CloudFlare节点
-      - 美国 Datability
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 美国 加利福尼亚州圣何塞PEG TECH
       - 美国 V2CROSS.COM
-      - 美国 CloudFlare节点 - 2
-      - 亚太地区+V2CROSS.COM
-      - 日本+北海道石狩SAKURA数据中心
-      - 日本 东京Digital VM
-      - 英国 V2CROSS.COM
-      - 香港 V2CROSS.COM
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
-      - 美国 CloudFlare节点 - 3
-      - 美国 Cloudinnovation数据中心
       - 美国 V2CROSS.COM - 2
-      - 南非豪登省约翰内斯堡 Cloudinnovation数据中心
-      - 美国 Datability - 2
-      - 美国 Microsoft数据中心
-      - 美国+Microsoft数据中心
+      - 日本 V2CROSS.COM
+      - 南非 V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞MULTACOM机房
+      - 美国+V2CROSS.COM
+      - 日本+北海道石狩SAKURA数据中心
+      - 美国 加利福尼亚州洛杉矶MULTACOM数据中心
+      - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
-      - 美国 CloudFlare节点
-      - 美国 Datability
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 美国 加利福尼亚州圣何塞PEG TECH
       - 美国 V2CROSS.COM
-      - 美国 CloudFlare节点 - 2
-      - 亚太地区+V2CROSS.COM
-      - 日本+北海道石狩SAKURA数据中心
-      - 日本 东京Digital VM
-      - 英国 V2CROSS.COM
-      - 香港 V2CROSS.COM
-      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
-      - 美国 CloudFlare节点 - 3
-      - 美国 Cloudinnovation数据中心
       - 美国 V2CROSS.COM - 2
-      - 南非豪登省约翰内斯堡 Cloudinnovation数据中心
-      - 美国 Datability - 2
-      - 美国 Microsoft数据中心
-      - 美国+Microsoft数据中心
+      - 日本 V2CROSS.COM
+      - 南非 V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞MULTACOM机房
+      - 美国+V2CROSS.COM
+      - 日本+北海道石狩SAKURA数据中心
+      - 美国 加利福尼亚州洛杉矶MULTACOM数据中心
+      - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
