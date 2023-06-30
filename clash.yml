@@ -1,4 +1,38 @@
 proxies:
+  - name: 法国+OVH
+    type: trojan
+    server: 51.38.71.175
+    port: '80'
+    password: 211f5876-8c89-4d97-9004-ff16acddd506
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: speedip.eu.org
+    port: 2052
+    uuid: f8c60a5b-ec67-4ccc-bc91-d297fe79b977
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /waugfuigvhwoa
+    ws-headers:
+      Host: nl_nat.v50.one
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: cf.yxjnode.com
+    port: 80
+    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /yxzbp
+    ws-headers:
+      Host: dp3.yxjnode.com
+  - name: 日本+东京都亚马逊(Amazon)公司数据中心
+    type: trojan
+    server: pqawsjp1.gsjc.cfd
+    port: 443?sni=18-140-66-207.nhost.00cdn.com
+    password: 32068eda-adad-431a-bfd4-2f7d4c73507c
   - name: 美国 V2CROSS.COM
     type: vmess
     server: 137.175.29.33
@@ -11,101 +45,6 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 南非 V2CROSS.COM
-    type: vmess
-    server: 156.225.67.39
-    port: 44820
-    uuid: de491802-233e-47f2-8c6c-d19bcf5bd56b
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 欧盟 V2CROSS.COM
-    type: vmess
-    server: 45.92.160.138
-    port: 53602
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: 104.24.226.79
-    port: 443
-    uuid: 9ffbb816-b4bb-493f-b558-df527b767456
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /ports/10178
-    ws-headers:
-      Host: star-one.cfd
-    tls: true
-  - name: 美国 加利福尼亚州圣何塞PEG TECH
-    type: vmess
-    server: 142.4.110.124
-    port: 54002
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: cf5.vpn66.eu.org
-    port: 8080
-    uuid: 5f098028-ea22-42ea-abfd-9222cb298b74
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: vceu.vpn66.eu.org
-  - name: 美国+V2CROSS.COM
-    type: trojan
-    server: 216.52.59.50
-    port: '20458'
-    password: m8krTirthj
-  - name: 荷兰 北荷兰省阿姆斯特丹Sharktech数据中心
-    type: vmess
-    server: 45.58.186.81
-    port: 51140
-    uuid: 4a138e19-0595-4d51-83c6-fd276cf7d307
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: ''
-    ws-headers:
-      Host: ''
-  - name: 美国 加利福尼亚州圣何塞MULTACOM机房
-    type: vmess
-    server: 45.199.138.76
-    port: 49598
-    uuid: 37c29f42-b7c7-40c7-9da9-743dcc4895bc
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 广东省+移动
-    type: trojan
-    server: official.taipeicitygovernment.kiev.ua
-    port: '8443'
-    password: 5505f6ba-cd37-30ce-8f92-be4120c83d7f
   - name: 广东省广州市 电信
     type: vmess
     server: in06.my1188.org
@@ -118,122 +57,83 @@ proxies:
     ws-path: /
     ws-headers:
       Host: au01-rich.tencent.best
-  - name: 美国+Xerox
-    type: trojan
-    server: pqawsjp03.gsjc.cfd
-    port: 443?peer=18-140-66-207.nhost.00cdn.com&tfo=1
-    password: 32068eda-adad-431a-bfd4-2f7d4c73507c
-  - name: 美国+V2CROSS.COM - 2
-    type: trojan
-    server: 152.70.74.66
-    port: 443?security=tls&type=tcp&headerType=none
-    password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
-  - name: 美国加利福尼亚州洛杉矶 V2CROSS.COM
+  - name: 美国 CloudFlare节点 - 3
     type: vmess
-    server: 156.251.135.14
-    port: 53302
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国加利福尼亚州洛杉矶 PetaExpress
-    type: vmess
-    server: 198.2.204.253
-    port: 46902
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 德国+V2CROSS.COM
-    type: trojan
-    server: 217.79.184.76
-    port: 443?peer=downloadde.xn--mes358aby2apfg.com&tfo=1
-    password: 32068eda-adad-431a-bfd4-2f7d4c73507c
-  - name: 上海市 联通
-    type: vmess
-    server: in05.my1188.org
-    port: 63095
-    uuid: f9d5690c-08e9-302a-9654-f7cfee9215ba
+    server: cf5.vpn66.eu.org
+    port: 8080
+    uuid: 5f098028-ea22-42ea-abfd-9222cb298b74
     alterId: 0
     cipher: auto
     udp: true
     network: ws
     ws-path: /
     ws-headers:
-      Host: hkt-rich2g.tencent.best
+      Host: vceu.vpn66.eu.org
+  - name: 美国 CloudFlare节点 - 4
+    type: vmess
+    server: visa.com
+    port: 2082
+    uuid: 33f3e136-ccda-4959-a9cb-c09eea4cda77
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: c.ghhymua.tk
+  - name: 美国 V2CROSS.COM - 2
+    type: vmess
+    server: 104.31.16.28
+    port: 80
+    uuid: 58fe1542-5290-40ad-815a-77707a81afe5
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /IOebhLMhl1CTbFHbL95myfRX2
+    ws-headers:
+      Host: ca4.tehme2.fun
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 V2CROSS.COM
-      - 南非 V2CROSS.COM
-      - 欧盟 V2CROSS.COM
+      - 法国+OVH
       - 美国 CloudFlare节点
-      - 美国 加利福尼亚州圣何塞PEG TECH
       - 美国 CloudFlare节点 - 2
-      - 美国+V2CROSS.COM
-      - 荷兰 北荷兰省阿姆斯特丹Sharktech数据中心
-      - 美国 加利福尼亚州圣何塞MULTACOM机房
-      - 广东省+移动
+      - 日本+东京都亚马逊(Amazon)公司数据中心
+      - 美国 V2CROSS.COM
       - 广东省广州市 电信
-      - 美国+Xerox
-      - 美国+V2CROSS.COM - 2
-      - 美国加利福尼亚州洛杉矶 V2CROSS.COM
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 德国+V2CROSS.COM
-      - 上海市 联通
+      - 美国 CloudFlare节点 - 3
+      - 美国 CloudFlare节点 - 4
+      - 美国 V2CROSS.COM - 2
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 V2CROSS.COM
-      - 南非 V2CROSS.COM
-      - 欧盟 V2CROSS.COM
+      - 法国+OVH
       - 美国 CloudFlare节点
-      - 美国 加利福尼亚州圣何塞PEG TECH
       - 美国 CloudFlare节点 - 2
-      - 美国+V2CROSS.COM
-      - 荷兰 北荷兰省阿姆斯特丹Sharktech数据中心
-      - 美国 加利福尼亚州圣何塞MULTACOM机房
-      - 广东省+移动
+      - 日本+东京都亚马逊(Amazon)公司数据中心
+      - 美国 V2CROSS.COM
       - 广东省广州市 电信
-      - 美国+Xerox
-      - 美国+V2CROSS.COM - 2
-      - 美国加利福尼亚州洛杉矶 V2CROSS.COM
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 德国+V2CROSS.COM
-      - 上海市 联通
+      - 美国 CloudFlare节点 - 3
+      - 美国 CloudFlare节点 - 4
+      - 美国 V2CROSS.COM - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 V2CROSS.COM
-      - 南非 V2CROSS.COM
-      - 欧盟 V2CROSS.COM
+      - 法国+OVH
       - 美国 CloudFlare节点
-      - 美国 加利福尼亚州圣何塞PEG TECH
       - 美国 CloudFlare节点 - 2
-      - 美国+V2CROSS.COM
-      - 荷兰 北荷兰省阿姆斯特丹Sharktech数据中心
-      - 美国 加利福尼亚州圣何塞MULTACOM机房
-      - 广东省+移动
+      - 日本+东京都亚马逊(Amazon)公司数据中心
+      - 美国 V2CROSS.COM
       - 广东省广州市 电信
-      - 美国+Xerox
-      - 美国+V2CROSS.COM - 2
-      - 美国加利福尼亚州洛杉矶 V2CROSS.COM
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 德国+V2CROSS.COM
-      - 上海市 联通
+      - 美国 CloudFlare节点 - 3
+      - 美国 CloudFlare节点 - 4
+      - 美国 V2CROSS.COM - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
