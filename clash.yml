@@ -1,99 +1,28 @@
 proxies:
-  - name: 上海市 联通
+  - name: 美国 加利福尼亚州圣何塞PEG TECH
     type: vmess
-    server: in05.my1188.org
-    port: 63096
-    uuid: f9d5690c-08e9-302a-9654-f7cfee9215ba
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: hkbgp01-mg.tencent.best
-  - name: 南非 V2CROSS.COM
-    type: vmess
-    server: 156.225.67.136
-    port: 47390
-    uuid: 964bf499-9ec0-4378-92b6-87d8d861b2d0
+    server: 142.4.99.88
+    port: 43379
+    uuid: b65da4af-a12a-4a59-9316-4549e12ba62c
     alterId: 64
     cipher: auto
     udp: true
     network: tcp
-    ws-path: /
+    ws-path: ''
     ws-headers:
       Host: ''
-  - name: 法国+格拉沃利讷OVH数据中心
-    type: ss
-    server: 54.36.174.181
-    port: '5600'
-    cipher: aes-256-gcm
-    password: Y6R9pAtvxxzmGC
   - name: 美国 V2CROSS.COM
     type: vmess
-    server: 137.175.29.33
-    port: 53986
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 上海市 联通 - 2
-    type: vmess
-    server: in05.my1188.org
-    port: 63003
-    uuid: f9d5690c-08e9-302a-9654-f7cfee9215ba
+    server: 45.131.248.140
+    port: 50068
+    uuid: 557e532e-de4a-4b3e-9fb2-5d355ccb5da9
     alterId: 0
     cipher: auto
     udp: true
     network: ws
     ws-path: /
     ws-headers:
-      Host: au01-rich.tencent.best
-  - name: 美国 V2CROSS.COM - 2
-    type: vmess
-    server: ns1.v2-vip.fun
-    port: 80
-    uuid: 8abe9496-5e24-4e49-b566-dcf86116017d
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /i99LgvSaslbsPLLQQ7j6Z
-    ws-headers:
-      Host: de5.irteh.fun
-  - name: 香港 V2CROSS.COM
-    type: vmess
-    server: 156.245.8.128
-    port: 48333
-    uuid: 3ca912da-6ac2-418f-b9cf-45b6f694579b
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 德国+V2CROSS.COM
-    type: trojan
-    server: 217.79.184.18
-    port: 443?sni=downloadde.xn--mes358a9urctx.com
-    password: 632664eb-96a0-4a54-a16a-c9f8a14535b3
-  - name: 美国 V2CROSS.COM - 3
-    type: vmess
-    server: 137.175.29.38
-    port: 53986
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
+      Host: 45.131.248.140
   - name: 美国 加利福尼亚州圣何塞MULTACOM机房
     type: vmess
     server: 45.199.138.33
@@ -106,50 +35,143 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
+  - name: 俄罗斯 V2CROSS.COM
+    type: vmess
+    server: 185.156.111.106
+    port: 49982
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 V2CROSS.COM - 2
+    type: vmess
+    server: 137.175.9.200
+    port: 57902
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /mehdi
+    ws-headers:
+      Host: 🇺🇸US美国(youtube阿伟科技2)
+  - name: 美国+V2CROSS.COM
+    type: trojan
+    server: 152.70.74.66
+    port: 443?security=tls&type=tcp&headerType=none
+    password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
+  - name: 美国 加利福尼亚州圣何塞MULTACOM机房 - 2
+    type: vmess
+    server: 45.199.138.76
+    port: 49598
+    uuid: 37c29f42-b7c7-40c7-9da9-743dcc4895bc
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 爱尔兰+都柏林Amazon数据中心
+    type: trojan
+    server: 34.244.244.179
+    port: 22222?sni=trj.rollingnext.co.uk
+    password: telegram-id-privatevpns
+  - name: 日本+北海道石狩SAKURA数据中心
+    type: trojan
+    server: trs19.bolab.net
+    port: '443'
+    password: 7a73f1dc97a70905870c0c0484b12145
+  - name: 美国 加利福尼亚州洛杉矶Sharktech数据中心
+    type: vmess
+    server: 67.21.95.73
+    port: 53314
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 V2CROSS.COM - 3
+    type: vmess
+    server: ns1.v2-vip.fun
+    port: 80
+    uuid: 8abe9496-5e24-4e49-b566-dcf86116017d
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /i99LgvSaslbsPLLQQ7j6Z
+    ws-headers:
+      Host: de5.irteh.fun
+  - name: 美国 加利福尼亚州洛杉矶MULTACOM数据中心
+    type: vmess
+    server: 170.178.194.20
+    port: 53386
+    uuid: 3023981b-0431-4bff-8a10-0f986ba86c73
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: ''
+    ws-headers:
+      Host: ''
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 上海市 联通
-      - 南非 V2CROSS.COM
-      - 法国+格拉沃利讷OVH数据中心
+      - 美国 加利福尼亚州圣何塞PEG TECH
       - 美国 V2CROSS.COM
-      - 上海市 联通 - 2
-      - 美国 V2CROSS.COM - 2
-      - 香港 V2CROSS.COM
-      - 德国+V2CROSS.COM
-      - 美国 V2CROSS.COM - 3
       - 美国 加利福尼亚州圣何塞MULTACOM机房
+      - 俄罗斯 V2CROSS.COM
+      - 美国 V2CROSS.COM - 2
+      - 美国+V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞MULTACOM机房 - 2
+      - 爱尔兰+都柏林Amazon数据中心
+      - 日本+北海道石狩SAKURA数据中心
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 美国 V2CROSS.COM - 3
+      - 美国 加利福尼亚州洛杉矶MULTACOM数据中心
   - name: 自动选择
     type: url-test
     proxies:
-      - 上海市 联通
-      - 南非 V2CROSS.COM
-      - 法国+格拉沃利讷OVH数据中心
+      - 美国 加利福尼亚州圣何塞PEG TECH
       - 美国 V2CROSS.COM
-      - 上海市 联通 - 2
-      - 美国 V2CROSS.COM - 2
-      - 香港 V2CROSS.COM
-      - 德国+V2CROSS.COM
-      - 美国 V2CROSS.COM - 3
       - 美国 加利福尼亚州圣何塞MULTACOM机房
+      - 俄罗斯 V2CROSS.COM
+      - 美国 V2CROSS.COM - 2
+      - 美国+V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞MULTACOM机房 - 2
+      - 爱尔兰+都柏林Amazon数据中心
+      - 日本+北海道石狩SAKURA数据中心
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 美国 V2CROSS.COM - 3
+      - 美国 加利福尼亚州洛杉矶MULTACOM数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 上海市 联通
-      - 南非 V2CROSS.COM
-      - 法国+格拉沃利讷OVH数据中心
+      - 美国 加利福尼亚州圣何塞PEG TECH
       - 美国 V2CROSS.COM
-      - 上海市 联通 - 2
-      - 美国 V2CROSS.COM - 2
-      - 香港 V2CROSS.COM
-      - 德国+V2CROSS.COM
-      - 美国 V2CROSS.COM - 3
       - 美国 加利福尼亚州圣何塞MULTACOM机房
+      - 俄罗斯 V2CROSS.COM
+      - 美国 V2CROSS.COM - 2
+      - 美国+V2CROSS.COM
+      - 美国 加利福尼亚州圣何塞MULTACOM机房 - 2
+      - 爱尔兰+都柏林Amazon数据中心
+      - 日本+北海道石狩SAKURA数据中心
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 美国 V2CROSS.COM - 3
+      - 美国 加利福尼亚州洛杉矶MULTACOM数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
