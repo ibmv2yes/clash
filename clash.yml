@@ -1,14 +1,122 @@
 proxies:
-  - name: 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+  - name: 美国 V2CROSS.COM
     type: vmess
-    server: 107.167.16.91
-    port: 45689
-    uuid: 7640a1e7-9701-428e-a4b2-19b3e7dd6f9f
+    server: ns1.v2-vip.fun
+    port: 80
+    uuid: 8abe9496-5e24-4e49-b566-dcf86116017d
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /i99LgvSaslbsPLLQQ7j6Z
+    ws-headers:
+      Host: de5.irteh.fun
+  - name: 美国+V2CROSS.COM
+    type: trojan
+    server: 152.70.74.66
+    port: 443?security=tls&type=tcp&headerType=none
+    password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
+  - name: 美国 V2CROSS.COM - 2
+    type: vmess
+    server: 158.101.212.104
+    port: 80
+    uuid: 91232166-9695-3945-9f95-0a9b0269b3b1
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /v2ray
+    ws-headers:
+      Host: v9-dy.ixigua.com
+  - name: 广东省+移动
+    type: trojan
+    server: official.taipeicitygovernment.kiev.ua
+    port: 8443?sni=66.42.40.132
+    password: 5505f6ba-cd37-30ce-8f92-be4120c83d7f
+  - name: 德国+V2CROSS.COM
+    type: trojan
+    server: 217.79.184.76
+    port: 443?peer=downloadde.xn--mes358aby2apfg.com&tfo=1
+    password: 32068eda-adad-431a-bfd4-2f7d4c73507c
+  - name: 日本+东京Amazon数据中心
+    type: trojan
+    server: pqawsjp2.gsjc.cfd
+    port: 443?peer=18-140-66-207.nhost.00cdn.com&tfo=1
+    password: 32068eda-adad-431a-bfd4-2f7d4c73507c
+  - name: 美国 加利福尼亚州圣何塞PEG TECH
+    type: vmess
+    server: 142.4.106.83
+    port: 54434
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
     udp: true
     network: tcp
-    ws-path: ''
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 V2CROSS.COM - 3
+    type: vmess
+    server: 108.186.192.232
+    port: 45502
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 加利福尼亚州森尼韦尔市PEG TECH公司
+    type: vmess
+    server: 142.0.132.44
+    port: 51015
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 日本+北海道石狩SAKURA数据中心
+    type: trojan
+    server: trs19.bolab.net
+    port: 443?type=tcp&allowInsecure=1
+    password: 7a73f1dc97a70905870c0c0484b12145
+  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
+    type: vmess
+    server: 192.74.232.226
+    port: 52312
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 意大利+V2CROSS.COM
+    type: ss
+    server: 212.102.53.198
+    port: '443'
+    cipher: aes-128-gcm
+    password: shadowsocks
+  - name: 上海市+电信
+    type: trojan
+    server: 116.192.171.97
+    port: '8443'
+    password: 5505f6ba-cd37-30ce-8f92-be4120c83d7f
+  - name: 美国 加利福尼亚州圣何塞PEG TECH - 2
+    type: vmess
+    server: 142.4.126.70
+    port: 52212
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
     ws-headers:
       Host: ''
   - name: 美国+加利福尼亚州洛杉矶Level3通信(DIA)
@@ -16,19 +124,12 @@ proxies:
     server: kr.stablize.top
     port: '443'
     password: c8ad75e9-b071-446e-b2e3-ea93b8dd0324
-  - name: 上海市 联通
-    type: vmess
-    server: in05.my1188.org
-    port: 63082
-    uuid: f9d5690c-08e9-302a-9654-f7cfee9215ba
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: hkt3-cdn.tencent.best
-  - name: 美国 V2CROSS.COM
+  - name: 美国+Xerox
+    type: trojan
+    server: pqawssg02.gsjc.cfd
+    port: 443?peer=18-140-66-207.nhost.00cdn.com&tfo=1
+    password: 32068eda-adad-431a-bfd4-2f7d4c73507c
+  - name: 美国 V2CROSS.COM - 4
     type: vmess
     server: 45.153.203.89
     port: 41632
@@ -40,40 +141,71 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国+Xerox
-    type: trojan
-    server: pqawssg01.gsjc.cfd
-    port: 443?peer=18-140-66-207.nhost.00cdn.com&tfo=1
-    password: 32068eda-adad-431a-bfd4-2f7d4c73507c
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
-      - 上海市 联通
       - 美国 V2CROSS.COM
+      - 美国+V2CROSS.COM
+      - 美国 V2CROSS.COM - 2
+      - 广东省+移动
+      - 德国+V2CROSS.COM
+      - 日本+东京Amazon数据中心
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国 V2CROSS.COM - 3
+      - 美国 加利福尼亚州森尼韦尔市PEG TECH公司
+      - 日本+北海道石狩SAKURA数据中心
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 意大利+V2CROSS.COM
+      - 上海市+电信
+      - 美国 加利福尼亚州圣何塞PEG TECH - 2
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
       - 美国+Xerox
+      - 美国 V2CROSS.COM - 4
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
-      - 上海市 联通
       - 美国 V2CROSS.COM
+      - 美国+V2CROSS.COM
+      - 美国 V2CROSS.COM - 2
+      - 广东省+移动
+      - 德国+V2CROSS.COM
+      - 日本+东京Amazon数据中心
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国 V2CROSS.COM - 3
+      - 美国 加利福尼亚州森尼韦尔市PEG TECH公司
+      - 日本+北海道石狩SAKURA数据中心
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 意大利+V2CROSS.COM
+      - 上海市+电信
+      - 美国 加利福尼亚州圣何塞PEG TECH - 2
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
       - 美国+Xerox
+      - 美国 V2CROSS.COM - 4
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
-      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
-      - 上海市 联通
       - 美国 V2CROSS.COM
+      - 美国+V2CROSS.COM
+      - 美国 V2CROSS.COM - 2
+      - 广东省+移动
+      - 德国+V2CROSS.COM
+      - 日本+东京Amazon数据中心
+      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 美国 V2CROSS.COM - 3
+      - 美国 加利福尼亚州森尼韦尔市PEG TECH公司
+      - 日本+北海道石狩SAKURA数据中心
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 意大利+V2CROSS.COM
+      - 上海市+电信
+      - 美国 加利福尼亚州圣何塞PEG TECH - 2
+      - 美国+加利福尼亚州洛杉矶Level3通信(DIA)
       - 美国+Xerox
+      - 美国 V2CROSS.COM - 4
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
