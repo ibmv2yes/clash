@@ -1,73 +1,17 @@
 proxies:
-  - name: 日本+东京Amazon数据中心
-    type: trojan
-    server: pqawsjp2.gsjc.cfd
-    port: 443?type=tcp&sni=18-140-66-207.nhost.00cdn.com&allowInsecure=1
-    password: 32068eda-adad-431a-bfd4-2f7d4c73507c
-  - name: 新加坡+Amazon数据中心
-    type: trojan
-    server: hk1.gsjc.cfd
-    port: 443?peer=20-212-60-88.nhost.00cdn.com&tfo=1
-    password: bce72830-6561-4af6-a2c4-052fccb94595
+  - name: 南非 V2CROSS.COM
+    type: vmess
+    server: 156.225.67.16
+    port: 49123
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
   - name: 美国 V2CROSS.COM
-    type: vmess
-    server: 137.175.29.33
-    port: 53986
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国 加利福尼亚州圣何塞PEG TECH
-    type: vmess
-    server: 142.4.126.70
-    port: 52212
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国 V2CROSS.COM - 2
-    type: vmess
-    server: ns1.v2-vip.fun
-    port: 80
-    uuid: 8abe9496-5e24-4e49-b566-dcf86116017d
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /i99LgvSaslbsPLLQQ7j6Z
-    ws-headers:
-      Host: de5.irteh.fun
-  - name: 广东省+移动
-    type: ss
-    server: kqs-hk.kunlun-three.com
-    port: '53305'
-    cipher: aes-256-gcm
-    password: 881c64f4-6b05-4722-8164-b4533adafbe8
-  - name: 斯洛伐克+V2CROSS.COM
-    type: ss
-    server: 185.48.248.126
-    port: '444'
-    cipher: chacha20-ietf-poly1305
-    password: Onsheypy
-  - name: 泰国+V2CROSS.COM
-    type: trojan
-    server: th1.yihaobao.xyz
-    port: 10022?sni=tls.yihaobao.xyz
-    password: d51c9c17-c89b-436f-994d-57dc36580f24
-  - name: 美国+Xerox
-    type: trojan
-    server: pqawssg01.gsjc.cfd
-    port: 443?peer=18-140-66-207.nhost.00cdn.com&tfo=1
-    password: 32068eda-adad-431a-bfd4-2f7d4c73507c
-  - name: 美国 V2CROSS.COM - 3
     type: vmess
     server: 137.175.58.66
     port: 40071
@@ -79,50 +23,125 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
+  - name: 台湾省新竹市+中华电信
+    type: trojan
+    server: hnm.xiaohouzi.club
+    port: '23330'
+    password: c32c56fb-64d9-33c4-b42a-af81b7a33fe7
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: visa.com
+    port: 2082
+    uuid: 33f3e136-ccda-4959-a9cb-c09eea4cda77
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: c.ghhymua.tk
+  - name: 美国 V2CROSS.COM - 2
+    type: vmess
+    server: 137.175.29.33
+    port: 53986
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: 104.25.242.66
+    port: 443
+    uuid: 1a25dce4-9d27-4e8d-e46e-16199be54f81
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /ports/45314
+    ws-headers:
+      Host: star-one.cfd
+    tls: true
+  - name: 摩尔多瓦 V2CROSS.COM
+    type: vmess
+    server: baxwabe.76898102.xyz
+    port: 2052
+    uuid: a031d87d-ea68-3511-bc8a-8ab98ac734e9
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /aubverfsg
+    ws-headers:
+      Host: baxwabe.76898102.xyz
+  - name: 美国 V2CROSS.COM - 3
+    type: vmess
+    server: ns1.v2-vip.fun
+    port: 80
+    uuid: 8abe9496-5e24-4e49-b566-dcf86116017d
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /i99LgvSaslbsPLLQQ7j6Z
+    ws-headers:
+      Host: de5.irteh.fun
+  - name: 美国 CloudFlare节点 - 3
+    type: vmess
+    server: cf.yxjnode.com
+    port: 80
+    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /yxzbp
+    ws-headers:
+      Host: dp3.yxjnode.com
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 日本+东京Amazon数据中心
-      - 新加坡+Amazon数据中心
+      - 南非 V2CROSS.COM
       - 美国 V2CROSS.COM
-      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 台湾省新竹市+中华电信
+      - 美国 CloudFlare节点
       - 美国 V2CROSS.COM - 2
-      - 广东省+移动
-      - 斯洛伐克+V2CROSS.COM
-      - 泰国+V2CROSS.COM
-      - 美国+Xerox
+      - 美国 CloudFlare节点 - 2
+      - 摩尔多瓦 V2CROSS.COM
       - 美国 V2CROSS.COM - 3
+      - 美国 CloudFlare节点 - 3
   - name: 自动选择
     type: url-test
     proxies:
-      - 日本+东京Amazon数据中心
-      - 新加坡+Amazon数据中心
+      - 南非 V2CROSS.COM
       - 美国 V2CROSS.COM
-      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 台湾省新竹市+中华电信
+      - 美国 CloudFlare节点
       - 美国 V2CROSS.COM - 2
-      - 广东省+移动
-      - 斯洛伐克+V2CROSS.COM
-      - 泰国+V2CROSS.COM
-      - 美国+Xerox
+      - 美国 CloudFlare节点 - 2
+      - 摩尔多瓦 V2CROSS.COM
       - 美国 V2CROSS.COM - 3
+      - 美国 CloudFlare节点 - 3
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 日本+东京Amazon数据中心
-      - 新加坡+Amazon数据中心
+      - 南非 V2CROSS.COM
       - 美国 V2CROSS.COM
-      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 台湾省新竹市+中华电信
+      - 美国 CloudFlare节点
       - 美国 V2CROSS.COM - 2
-      - 广东省+移动
-      - 斯洛伐克+V2CROSS.COM
-      - 泰国+V2CROSS.COM
-      - 美国+Xerox
+      - 美国 CloudFlare节点 - 2
+      - 摩尔多瓦 V2CROSS.COM
       - 美国 V2CROSS.COM - 3
+      - 美国 CloudFlare节点 - 3
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
