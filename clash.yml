@@ -1,20 +1,38 @@
 proxies:
-  - name: 美国 V2CROSS.COM
+  - name: 上海市 联通
     type: vmess
-    server: 104.31.16.28
-    port: 80
-    uuid: 58fe1542-5290-40ad-815a-77707a81afe5
+    server: in05.my1188.org
+    port: 63096
+    uuid: f9d5690c-08e9-302a-9654-f7cfee9215ba
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /IOebhLMhl1CTbFHbL95myfRX2
+    ws-path: /
     ws-headers:
-      Host: ca4.tehme2.fun
-  - name: 美国加利福尼亚州洛杉矶 PetaExpress
+      Host: hkbgp01-mg.tencent.best
+  - name: 南非 V2CROSS.COM
     type: vmess
-    server: 198.2.234.108
-    port: 51322
+    server: 156.225.67.136
+    port: 47390
+    uuid: 964bf499-9ec0-4378-92b6-87d8d861b2d0
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 法国+格拉沃利讷OVH数据中心
+    type: ss
+    server: 54.36.174.181
+    port: '5600'
+    cipher: aes-256-gcm
+    password: Y6R9pAtvxxzmGC
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: 137.175.29.33
+    port: 53986
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -23,12 +41,18 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 斯洛伐克+V2CROSS.COM
-    type: ss
-    server: 185.48.248.126
-    port: '444'
-    cipher: chacha20-ietf-poly1305
-    password: Onsheypy
+  - name: 上海市 联通 - 2
+    type: vmess
+    server: in05.my1188.org
+    port: 63003
+    uuid: f9d5690c-08e9-302a-9654-f7cfee9215ba
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: au01-rich.tencent.best
   - name: 美国 V2CROSS.COM - 2
     type: vmess
     server: ns1.v2-vip.fun
@@ -41,11 +65,11 @@ proxies:
     ws-path: /i99LgvSaslbsPLLQQ7j6Z
     ws-headers:
       Host: de5.irteh.fun
-  - name: 美国 加利福尼亚州洛杉矶MULTACOM数据中心
+  - name: 香港 V2CROSS.COM
     type: vmess
-    server: 170.178.194.20
-    port: 53386
-    uuid: 3023981b-0431-4bff-8a10-0f986ba86c73
+    server: 156.245.8.128
+    port: 48333
+    uuid: 3ca912da-6ac2-418f-b9cf-45b6f694579b
     alterId: 64
     cipher: auto
     udp: true
@@ -53,127 +77,79 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 摩尔多瓦 V2CROSS.COM
-    type: vmess
-    server: 21.sanfen001.top
-    port: 8880
-    uuid: 82a573e6-6ac2-448a-b36b-f996ccdeda23
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: hk.cashdawiodxkawjaiocjdawdawdadwrawgfsegsededwadawfgrdrcvsssl.top
-  - name: 美国 加利福尼亚州圣何塞PEG TECH
-    type: vmess
-    server: 142.4.104.195
-    port: 56002
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: 162.159.243.21
-    port: 443
-    uuid: 20c08a8d-85d6-47c6-bbb0-c8389a578b71
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /7803f1
-    ws-headers:
-      Host: tk.731808.tk
-    tls: true
+  - name: 德国+V2CROSS.COM
+    type: trojan
+    server: 217.79.184.18
+    port: 443?sni=downloadde.xn--mes358a9urctx.com
+    password: 632664eb-96a0-4a54-a16a-c9f8a14535b3
   - name: 美国 V2CROSS.COM - 3
     type: vmess
-    server: 199.188.105.141
-    port: 45009
+    server: 137.175.29.38
+    port: 53986
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
     udp: true
     network: tcp
-    ws-path: /db
+    ws-path: /
     ws-headers:
-      Host: cn-to-hk-443.db-link.in
-  - name: 广东省+移动
-    type: trojan
-    server: official.taipeicitygovernment.kiev.ua
-    port: '8443'
-    password: 5505f6ba-cd37-30ce-8f92-be4120c83d7f
-  - name: 亚太地区+V2CROSS.COM
-    type: trojan
-    server: 163.123.192.57
-    port: 443?peer=download.xn--mes358aby2apfg.com&tfo=1
-    password: 32068eda-adad-431a-bfd4-2f7d4c73507c
-  - name: 美国 加利福尼亚州圣何塞PEG TECH - 2
+      Host: ''
+  - name: 美国 加利福尼亚州圣何塞MULTACOM机房
     type: vmess
-    server: 142.4.100.43
-    port: 45009
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    server: 45.199.138.33
+    port: 49123
+    uuid: fe5f69e7-e183-439b-950b-9661ef0651f2
     alterId: 64
     cipher: auto
     udp: true
     network: tcp
-    ws-path: /blue
+    ws-path: /
     ws-headers:
-      Host: xt.ylks01.eu.org
+      Host: ''
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
+      - 上海市 联通
+      - 南非 V2CROSS.COM
+      - 法国+格拉沃利讷OVH数据中心
       - 美国 V2CROSS.COM
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 斯洛伐克+V2CROSS.COM
+      - 上海市 联通 - 2
       - 美国 V2CROSS.COM - 2
-      - 美国 加利福尼亚州洛杉矶MULTACOM数据中心
-      - 摩尔多瓦 V2CROSS.COM
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国 CloudFlare节点
+      - 香港 V2CROSS.COM
+      - 德国+V2CROSS.COM
       - 美国 V2CROSS.COM - 3
-      - 广东省+移动
-      - 亚太地区+V2CROSS.COM
-      - 美国 加利福尼亚州圣何塞PEG TECH - 2
+      - 美国 加利福尼亚州圣何塞MULTACOM机房
   - name: 自动选择
     type: url-test
     proxies:
+      - 上海市 联通
+      - 南非 V2CROSS.COM
+      - 法国+格拉沃利讷OVH数据中心
       - 美国 V2CROSS.COM
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 斯洛伐克+V2CROSS.COM
+      - 上海市 联通 - 2
       - 美国 V2CROSS.COM - 2
-      - 美国 加利福尼亚州洛杉矶MULTACOM数据中心
-      - 摩尔多瓦 V2CROSS.COM
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国 CloudFlare节点
+      - 香港 V2CROSS.COM
+      - 德国+V2CROSS.COM
       - 美国 V2CROSS.COM - 3
-      - 广东省+移动
-      - 亚太地区+V2CROSS.COM
-      - 美国 加利福尼亚州圣何塞PEG TECH - 2
+      - 美国 加利福尼亚州圣何塞MULTACOM机房
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
+      - 上海市 联通
+      - 南非 V2CROSS.COM
+      - 法国+格拉沃利讷OVH数据中心
       - 美国 V2CROSS.COM
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 斯洛伐克+V2CROSS.COM
+      - 上海市 联通 - 2
       - 美国 V2CROSS.COM - 2
-      - 美国 加利福尼亚州洛杉矶MULTACOM数据中心
-      - 摩尔多瓦 V2CROSS.COM
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国 CloudFlare节点
+      - 香港 V2CROSS.COM
+      - 德国+V2CROSS.COM
       - 美国 V2CROSS.COM - 3
-      - 广东省+移动
-      - 亚太地区+V2CROSS.COM
-      - 美国 加利福尼亚州圣何塞PEG TECH - 2
+      - 美国 加利福尼亚州圣何塞MULTACOM机房
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
