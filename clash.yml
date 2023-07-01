@@ -1,35 +1,78 @@
 proxies:
-  - name: 广东省+移动
-    type: trojan
-    server: zf.heigouyunzf.xyz
-    port: 38803?type=tcp&allowInsecure=1
-    password: e958b47d-3510-445a-99cb-dc98d227e29e
-  - name: 日本+北海道石狩SAKURA数据中心
-    type: trojan
-    server: trs19.bolab.net
-    port: '443'
-    password: 7a73f1dc97a70905870c0c0484b12145
-  - name: 新加坡+Amazon数据中心
-    type: trojan
-    server: pqawsjp02.gsjc.cfd
-    port: 443?peer=18-140-66-207.nhost.00cdn.com&tfo=1
-    password: 32068eda-adad-431a-bfd4-2f7d4c73507c
+  - name: 南非 V2CROSS.COM
+    type: vmess
+    server: 156.225.67.234
+    port: 48123
+    uuid: 93503dd5-245a-4eb1-ae2a-57ab9f2b3c29
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: 🇳🇱NL荷兰(youtube阿伟科技2)
+  - name: 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+    type: vmess
+    server: 107.167.30.132
+    port: 43900
+    uuid: 58e560b4-bba6-4843-be5f-83321022fa0d
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
   - name: 美国 V2CROSS.COM
     type: vmess
-    server: ns1.v2-vip.fun
+    server: 104.31.16.28
     port: 80
-    uuid: 4f859149-2b2f-4b90-9a2c-8c0fe15c8c4c
+    uuid: 58fe1542-5290-40ad-815a-77707a81afe5
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /ozX9aUPiJVtoLavjTW
+    ws-path: /IOebhLMhl1CTbFHbL95myfRX2
     ws-headers:
-      Host: de14.irteh.fun
-  - name: 美国加利福尼亚州洛杉矶 PetaExpress
+      Host: ca4.tehme2.fun
+  - name: 美国+Microsoft数据中心
+    type: trojan
+    server: jp.stablize.top
+    port: '443'
+    password: 4d23cf0e-5ceb-43e7-90d3-63982bfa6940
+  - name: 美国+Microsoft数据中心 - 2
+    type: trojan
+    server: jp.stablize.top
+    port: '443'
+    password: 4d23cf0e-5ceb-43e7-90d3-63982bfa6940
+  - name: 美国 CloudFlare节点
     type: vmess
-    server: 198.2.204.253
-    port: 46902
+    server: cf.yxjnode.com
+    port: 80
+    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /yxzbp
+    ws-headers:
+      Host: dp3.yxjnode.com
+  - name: 美国 加利福尼亚州洛杉矶PetaExpress
+    type: vmess
+    server: 107.148.242.216
+    port: 54082
+    uuid: dcca1294-7097-44b7-bd49-5f51c73f532f
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: ''
+    ws-headers:
+      Host: ''
+  - name: 美国 V2CROSS.COM - 2
+    type: vmess
+    server: 137.175.29.33
+    port: 53986
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -38,89 +81,90 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 亚太地区+V2CROSS.COM
-    type: trojan
-    server: 163.123.192.57
-    port: 443?peer=download.xn--mes358aby2apfg.com&tfo=1
-    password: 32068eda-adad-431a-bfd4-2f7d4c73507c
-  - name: 新加坡+Amazon数据中心 - 2
-    type: trojan
-    server: hk1.gsjc.cfd
-    port: 443?peer=20-212-60-88.nhost.00cdn.com&tfo=1
-    password: bce72830-6561-4af6-a2c4-052fccb94595
-  - name: 上海市 联通
+  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
     type: vmess
-    server: in05.my1188.org
-    port: 63095
-    uuid: f9d5690c-08e9-302a-9654-f7cfee9215ba
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: hkt-rich2g.tencent.best
-  - name: 台湾省新竹市+中华电信
-    type: trojan
-    server: hnm.xiaohouzi.club
-    port: '23330'
-    password: c32c56fb-64d9-33c4-b42a-af81b7a33fe7
-  - name: 香港 V2CROSS.COM
-    type: vmess
-    server: 156.245.8.240
-    port: 49123
-    uuid: 29a5d48e-24f1-48fd-a5e1-9a46cb31032f
+    server: 192.74.229.198
+    port: 51592
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
     udp: true
     network: tcp
-    ws-path: ''
+    ws-path: /
     ws-headers:
       Host: ''
+  - name: 美国 V2CROSS.COM - 3
+    type: vmess
+    server: ns1.v2-vip.fun
+    port: 80
+    uuid: 8abe9496-5e24-4e49-b566-dcf86116017d
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /i99LgvSaslbsPLLQQ7j6Z
+    ws-headers:
+      Host: de5.irteh.fun
+  - name: 英国 V2CROSS.COM
+    type: vmess
+    server: 109.74.201.20
+    port: 443
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /chat
+    ws-headers:
+      Host: ''
+    tls: true
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 广东省+移动
-      - 日本+北海道石狩SAKURA数据中心
-      - 新加坡+Amazon数据中心
+      - 南非 V2CROSS.COM
+      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
       - 美国 V2CROSS.COM
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 亚太地区+V2CROSS.COM
-      - 新加坡+Amazon数据中心 - 2
-      - 上海市 联通
-      - 台湾省新竹市+中华电信
-      - 香港 V2CROSS.COM
+      - 美国+Microsoft数据中心
+      - 美国+Microsoft数据中心 - 2
+      - 美国 CloudFlare节点
+      - 美国 加利福尼亚州洛杉矶PetaExpress
+      - 美国 V2CROSS.COM - 2
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 美国 V2CROSS.COM - 3
+      - 英国 V2CROSS.COM
   - name: 自动选择
     type: url-test
     proxies:
-      - 广东省+移动
-      - 日本+北海道石狩SAKURA数据中心
-      - 新加坡+Amazon数据中心
+      - 南非 V2CROSS.COM
+      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
       - 美国 V2CROSS.COM
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 亚太地区+V2CROSS.COM
-      - 新加坡+Amazon数据中心 - 2
-      - 上海市 联通
-      - 台湾省新竹市+中华电信
-      - 香港 V2CROSS.COM
+      - 美国+Microsoft数据中心
+      - 美国+Microsoft数据中心 - 2
+      - 美国 CloudFlare节点
+      - 美国 加利福尼亚州洛杉矶PetaExpress
+      - 美国 V2CROSS.COM - 2
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 美国 V2CROSS.COM - 3
+      - 英国 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 广东省+移动
-      - 日本+北海道石狩SAKURA数据中心
-      - 新加坡+Amazon数据中心
+      - 南非 V2CROSS.COM
+      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
       - 美国 V2CROSS.COM
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 亚太地区+V2CROSS.COM
-      - 新加坡+Amazon数据中心 - 2
-      - 上海市 联通
-      - 台湾省新竹市+中华电信
-      - 香港 V2CROSS.COM
+      - 美国+Microsoft数据中心
+      - 美国+Microsoft数据中心 - 2
+      - 美国 CloudFlare节点
+      - 美国 加利福尼亚州洛杉矶PetaExpress
+      - 美国 V2CROSS.COM - 2
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 美国 V2CROSS.COM - 3
+      - 英国 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
