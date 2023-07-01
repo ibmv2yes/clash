@@ -1,26 +1,31 @@
 proxies:
-  - name: 美国 加利福尼亚州圣何塞MULTACOM机房
-    type: vmess
-    server: 45.199.138.76
-    port: 49598
-    uuid: 37c29f42-b7c7-40c7-9da9-743dcc4895bc
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国+Xerox
+  - name: 广东省+移动
     type: trojan
-    server: pqawssg01.gsjc.cfd
+    server: zf.heigouyunzf.xyz
+    port: 38803?type=tcp&allowInsecure=1
+    password: e958b47d-3510-445a-99cb-dc98d227e29e
+  - name: 日本+北海道石狩SAKURA数据中心
+    type: trojan
+    server: trs19.bolab.net
+    port: '443'
+    password: 7a73f1dc97a70905870c0c0484b12145
+  - name: 新加坡+Amazon数据中心
+    type: trojan
+    server: pqawsjp02.gsjc.cfd
     port: 443?peer=18-140-66-207.nhost.00cdn.com&tfo=1
     password: 32068eda-adad-431a-bfd4-2f7d4c73507c
-  - name: 美国+Microsoft数据中心
-    type: trojan
-    server: jp.stablize.top
-    port: '443'
-    password: 4d23cf0e-5ceb-43e7-90d3-63982bfa6940
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: ns1.v2-vip.fun
+    port: 80
+    uuid: 4f859149-2b2f-4b90-9a2c-8c0fe15c8c4c
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /ozX9aUPiJVtoLavjTW
+    ws-headers:
+      Host: de14.irteh.fun
   - name: 美国加利福尼亚州洛杉矶 PetaExpress
     type: vmess
     server: 198.2.204.253
@@ -33,22 +38,20 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国 V2CROSS.COM
+  - name: 亚太地区+V2CROSS.COM
+    type: trojan
+    server: 163.123.192.57
+    port: 443?peer=download.xn--mes358aby2apfg.com&tfo=1
+    password: 32068eda-adad-431a-bfd4-2f7d4c73507c
+  - name: 新加坡+Amazon数据中心 - 2
+    type: trojan
+    server: hk1.gsjc.cfd
+    port: 443?peer=20-212-60-88.nhost.00cdn.com&tfo=1
+    password: bce72830-6561-4af6-a2c4-052fccb94595
+  - name: 上海市 联通
     type: vmess
-    server: 137.175.29.33
-    port: 53986
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 广东省广州市 电信
-    type: vmess
-    server: in06.my1188.org
-    port: 63003
+    server: in05.my1188.org
+    port: 63095
     uuid: f9d5690c-08e9-302a-9654-f7cfee9215ba
     alterId: 0
     cipher: auto
@@ -56,108 +59,68 @@ proxies:
     network: ws
     ws-path: /
     ws-headers:
-      Host: au01-rich.tencent.best
-  - name: 日本+东京Amazon数据中心
+      Host: hkt-rich2g.tencent.best
+  - name: 台湾省新竹市+中华电信
     type: trojan
-    server: jp1.gsjc.cfd
-    port: 443?peer=20-212-60-88.nhost.00cdn.com&tfo=1
-    password: bce72830-6561-4af6-a2c4-052fccb94595
-  - name: 美国 V2CROSS.COM - 2
+    server: hnm.xiaohouzi.club
+    port: '23330'
+    password: c32c56fb-64d9-33c4-b42a-af81b7a33fe7
+  - name: 香港 V2CROSS.COM
     type: vmess
-    server: 137.175.29.38
-    port: 53986
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    server: 156.245.8.240
+    port: 49123
+    uuid: 29a5d48e-24f1-48fd-a5e1-9a46cb31032f
     alterId: 64
     cipher: auto
     udp: true
     network: tcp
-    ws-path: /
+    ws-path: ''
     ws-headers:
       Host: ''
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: dl8.v001sssv.pw
-    port: 80
-    uuid: 3fec7182-02fb-4730-9b97-4c9aee563ef6
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: dl8.v001sssv.pw
-  - name: 美国 加利福尼亚州圣何塞MULTACOM机房 - 2
-    type: vmess
-    server: 45.199.138.29
-    port: 48344
-    uuid: 743bdc87-1dea-41bf-aa0b-51dfbbfec8aa
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: hotel2.expressedu.online
-    port: 443
-    uuid: 7f061d39-2670-4355-8590-fef2acd927ed
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /9b08c0d789
-    ws-headers:
-      Host: hotel2.expressedu.online
-    tls: true
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 加利福尼亚州圣何塞MULTACOM机房
-      - 美国+Xerox
-      - 美国+Microsoft数据中心
-      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 广东省+移动
+      - 日本+北海道石狩SAKURA数据中心
+      - 新加坡+Amazon数据中心
       - 美国 V2CROSS.COM
-      - 广东省广州市 电信
-      - 日本+东京Amazon数据中心
-      - 美国 V2CROSS.COM - 2
-      - 美国 CloudFlare节点
-      - 美国 加利福尼亚州圣何塞MULTACOM机房 - 2
-      - 美国 CloudFlare节点 - 2
+      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 亚太地区+V2CROSS.COM
+      - 新加坡+Amazon数据中心 - 2
+      - 上海市 联通
+      - 台湾省新竹市+中华电信
+      - 香港 V2CROSS.COM
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 加利福尼亚州圣何塞MULTACOM机房
-      - 美国+Xerox
-      - 美国+Microsoft数据中心
-      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 广东省+移动
+      - 日本+北海道石狩SAKURA数据中心
+      - 新加坡+Amazon数据中心
       - 美国 V2CROSS.COM
-      - 广东省广州市 电信
-      - 日本+东京Amazon数据中心
-      - 美国 V2CROSS.COM - 2
-      - 美国 CloudFlare节点
-      - 美国 加利福尼亚州圣何塞MULTACOM机房 - 2
-      - 美国 CloudFlare节点 - 2
+      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 亚太地区+V2CROSS.COM
+      - 新加坡+Amazon数据中心 - 2
+      - 上海市 联通
+      - 台湾省新竹市+中华电信
+      - 香港 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 加利福尼亚州圣何塞MULTACOM机房
-      - 美国+Xerox
-      - 美国+Microsoft数据中心
-      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 广东省+移动
+      - 日本+北海道石狩SAKURA数据中心
+      - 新加坡+Amazon数据中心
       - 美国 V2CROSS.COM
-      - 广东省广州市 电信
-      - 日本+东京Amazon数据中心
-      - 美国 V2CROSS.COM - 2
-      - 美国 CloudFlare节点
-      - 美国 加利福尼亚州圣何塞MULTACOM机房 - 2
-      - 美国 CloudFlare节点 - 2
+      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 亚太地区+V2CROSS.COM
+      - 新加坡+Amazon数据中心 - 2
+      - 上海市 联通
+      - 台湾省新竹市+中华电信
+      - 香港 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
