@@ -1,9 +1,53 @@
 proxies:
-  - name: 美国+华盛顿州西雅图市亚马逊(Amazon)公司数据中心
+  - name: 新加坡+Amazon数据中心
     type: trojan
-    server: pqawsjp3.gsjc.cfd
+    server: pqawsjp03.gsjc.cfd
     port: 443?peer=18-140-66-207.nhost.00cdn.com&tfo=1
     password: 32068eda-adad-431a-bfd4-2f7d4c73507c
+  - name: 美国+V2CROSS.COM
+    type: trojan
+    server: 152.70.74.66
+    port: 443?security=tls&type=tcp&headerType=none
+    password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: 138.2.59.210
+    port: 80
+    uuid: 91232166-9695-3945-9f95-0a9b0269b3b1
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /v2ray
+    ws-headers:
+      Host: v9-dy.ixigua.com
+  - name: 亚太地区+V2CROSS.COM
+    type: trojan
+    server: 163.123.192.57
+    port: 443?peer=download.xn--mes358aby2apfg.com&tfo=1
+    password: 32068eda-adad-431a-bfd4-2f7d4c73507c
+  - name: 美国+Xerox
+    type: trojan
+    server: pqawssg02.gsjc.cfd
+    port: 443?peer=18-140-66-207.nhost.00cdn.com&tfo=1
+    password: 32068eda-adad-431a-bfd4-2f7d4c73507c
+  - name: 日本+东京Amazon数据中心
+    type: trojan
+    server: jp1.gsjc.cfd
+    port: 443?type=tcp&allowInsecure=1
+    password: bce72830-6561-4af6-a2c4-052fccb94595
+  - name: 美国 V2CROSS.COM - 2
+    type: vmess
+    server: 104.31.16.28
+    port: 80
+    uuid: 58fe1542-5290-40ad-815a-77707a81afe5
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /IOebhLMhl1CTbFHbL95myfRX2
+    ws-headers:
+      Host: ca4.tehme2.fun
   - name: 美国 CloudFlare节点
     type: vmess
     server: franc.digires.shop
@@ -17,11 +61,36 @@ proxies:
     ws-headers:
       Host: franc.digires.shop
     tls: true
-  - name: 美国+Amazon数据中心
+  - name: 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+    type: vmess
+    server: 107.167.30.132
+    port: 43900
+    uuid: 58e560b4-bba6-4843-be5f-83321022fa0d
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 英国 V2CROSS.COM
+    type: vmess
+    server: 109.74.201.20
+    port: 443
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /chat
+    ws-headers:
+      Host: ''
+    tls: true
+  - name: 日本+北海道石狩SAKURA数据中心
     type: trojan
-    server: 13.36.175.154
-    port: 22222?type=tcp&sni=trj.rollingnext.co.uk&allowInsecure=1
-    password: telegram-id-privatevpns
+    server: trs19.bolab.net
+    port: '443'
+    password: 7a73f1dc97a70905870c0c0484b12145
   - name: 南非 V2CROSS.COM
     type: vmess
     server: 156.225.67.234
@@ -34,23 +103,6 @@ proxies:
     ws-path: /
     ws-headers:
       Host: 🇳🇱NL荷兰(youtube阿伟科技2)
-  - name: 美国 V2CROSS.COM
-    type: vmess
-    server: 104.31.16.28
-    port: 80
-    uuid: 58fe1542-5290-40ad-815a-77707a81afe5
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /IOebhLMhl1CTbFHbL95myfRX2
-    ws-headers:
-      Host: ca4.tehme2.fun
-  - name: 美国+Microsoft数据中心
-    type: trojan
-    server: jp.stablize.top
-    port: '443'
-    password: 40297165-0545-4f8f-abc4-3ee25e6cfb87
   - name: 美国 CloudFlare节点 - 2
     type: vmess
     server: visa.com
@@ -69,34 +121,52 @@ proxy-groups:
     proxies:
       - 自动选择
       - 故障转移
-      - 美国+华盛顿州西雅图市亚马逊(Amazon)公司数据中心
-      - 美国 CloudFlare节点
-      - 美国+Amazon数据中心
-      - 南非 V2CROSS.COM
+      - 新加坡+Amazon数据中心
+      - 美国+V2CROSS.COM
       - 美国 V2CROSS.COM
-      - 美国+Microsoft数据中心
+      - 亚太地区+V2CROSS.COM
+      - 美国+Xerox
+      - 日本+东京Amazon数据中心
+      - 美国 V2CROSS.COM - 2
+      - 美国 CloudFlare节点
+      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+      - 英国 V2CROSS.COM
+      - 日本+北海道石狩SAKURA数据中心
+      - 南非 V2CROSS.COM
       - 美国 CloudFlare节点 - 2
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国+华盛顿州西雅图市亚马逊(Amazon)公司数据中心
-      - 美国 CloudFlare节点
-      - 美国+Amazon数据中心
-      - 南非 V2CROSS.COM
+      - 新加坡+Amazon数据中心
+      - 美国+V2CROSS.COM
       - 美国 V2CROSS.COM
-      - 美国+Microsoft数据中心
+      - 亚太地区+V2CROSS.COM
+      - 美国+Xerox
+      - 日本+东京Amazon数据中心
+      - 美国 V2CROSS.COM - 2
+      - 美国 CloudFlare节点
+      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+      - 英国 V2CROSS.COM
+      - 日本+北海道石狩SAKURA数据中心
+      - 南非 V2CROSS.COM
       - 美国 CloudFlare节点 - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国+华盛顿州西雅图市亚马逊(Amazon)公司数据中心
-      - 美国 CloudFlare节点
-      - 美国+Amazon数据中心
-      - 南非 V2CROSS.COM
+      - 新加坡+Amazon数据中心
+      - 美国+V2CROSS.COM
       - 美国 V2CROSS.COM
-      - 美国+Microsoft数据中心
+      - 亚太地区+V2CROSS.COM
+      - 美国+Xerox
+      - 日本+东京Amazon数据中心
+      - 美国 V2CROSS.COM - 2
+      - 美国 CloudFlare节点
+      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+      - 英国 V2CROSS.COM
+      - 日本+北海道石狩SAKURA数据中心
+      - 南非 V2CROSS.COM
       - 美国 CloudFlare节点 - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
