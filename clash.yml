@@ -1,21 +1,33 @@
 proxies:
+  - name: 美国+Microsoft数据中心
+    type: trojan
+    server: vpnhat.stablize.top
+    port: '443'
+    password: 4d23cf0e-5ceb-43e7-90d3-63982bfa6940
   - name: 美国 CloudFlare节点
     type: vmess
-    server: cf.yxjnode.com
-    port: 80
-    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
+    server: cf-lt.sharecentre.online
+    port: 8080
+    uuid: 3d8274d3-a977-4bc2-a461-8086963aafc0
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /yxzbp
+    ws-path: /api/v3/download.getFile
     ws-headers:
-      Host: dp3.yxjnode.com
-  - name: 台湾省新竹市+中华电信
-    type: trojan
-    server: hnm.xiaohouzi.club
-    port: '23330'
-    password: c32c56fb-64d9-33c4-b42a-af81b7a33fe7
+      Host: ssrsub.v01.ssrsub.com
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: ns1.v2-vip.fun
+    port: 80
+    uuid: 8abe9496-5e24-4e49-b566-dcf86116017d
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /i99LgvSaslbsPLLQQ7j6Z
+    ws-headers:
+      Host: de5.irteh.fun
   - name: 美国 CloudFlare节点 - 2
     type: vmess
     server: 104.24.169.238
@@ -29,45 +41,33 @@ proxies:
     ws-headers:
       Host: star-one.cfd
     tls: true
-  - name: 南非 V2CROSS.COM
+  - name: 日本+东京Amazon数据中心
+    type: trojan
+    server: pqawsjp2.gsjc.cfd
+    port: 443?peer=18-140-66-207.nhost.00cdn.com&tfo=1
+    password: 32068eda-adad-431a-bfd4-2f7d4c73507c
+  - name: 美国+V2CROSS.COM
+    type: trojan
+    server: 152.70.74.66
+    port: 443?security=tls&type=tcp&headerType=none
+    password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
+  - name: 日本+东京Amazon数据中心 - 2
+    type: trojan
+    server: jp1.gsjc.cfd
+    port: 443?type=tcp&allowInsecure=1
+    password: bce72830-6561-4af6-a2c4-052fccb94595
+  - name: 美国 V2CROSS.COM - 2
     type: vmess
-    server: 156.225.67.234
-    port: 48123
-    uuid: 93503dd5-245a-4eb1-ae2a-57ab9f2b3c29
-    alterId: 64
+    server: 104.31.16.28
+    port: 80
+    uuid: 58fe1542-5290-40ad-815a-77707a81afe5
+    alterId: 0
     cipher: auto
     udp: true
-    network: tcp
-    ws-path: /
+    network: ws
+    ws-path: /IOebhLMhl1CTbFHbL95myfRX2
     ws-headers:
-      Host: 🇳🇱NL荷兰(youtube阿伟科技2)
-  - name: 美国+Xerox
-    type: trojan
-    server: pqawssg01.gsjc.cfd
-    port: 443?peer=18-140-66-207.nhost.00cdn.com&tfo=1
-    password: 32068eda-adad-431a-bfd4-2f7d4c73507c
-  - name: 美国 加利福尼亚州圣何塞PEG TECH
-    type: vmess
-    server: 142.4.99.90
-    port: 43379
-    uuid: b65da4af-a12a-4a59-9316-4549e12ba62c
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国+Xerox - 2
-    type: trojan
-    server: pqawssg02.gsjc.cfd
-    port: 443?peer=18-140-66-207.nhost.00cdn.com&tfo=1
-    password: 32068eda-adad-431a-bfd4-2f7d4c73507c
-  - name: 美国+麻省理工学院
-    type: trojan
-    server: pqawsjp01.gsjc.cfd
-    port: 443?peer=18-140-66-207.nhost.00cdn.com&tfo=1
-    password: 32068eda-adad-431a-bfd4-2f7d4c73507c
+      Host: ca4.tehme2.fun
   - name: 美国 CloudFlare节点 - 3
     type: vmess
     server: franc.digires.shop
@@ -81,47 +81,55 @@ proxies:
     ws-headers:
       Host: franc.digires.shop
     tls: true
+  - name: 美国+Microsoft数据中心 - 2
+    type: trojan
+    server: vpnhat.stablize.top
+    port: 443?type=tcp&sni=kr.stablize.top&allowInsecure=1
+    password: 4d23cf0e-5ceb-43e7-90d3-63982bfa6940
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
+      - 美国+Microsoft数据中心
       - 美国 CloudFlare节点
-      - 台湾省新竹市+中华电信
+      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点 - 2
-      - 南非 V2CROSS.COM
-      - 美国+Xerox
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国+Xerox - 2
-      - 美国+麻省理工学院
+      - 日本+东京Amazon数据中心
+      - 美国+V2CROSS.COM
+      - 日本+东京Amazon数据中心 - 2
+      - 美国 V2CROSS.COM - 2
       - 美国 CloudFlare节点 - 3
+      - 美国+Microsoft数据中心 - 2
   - name: 自动选择
     type: url-test
     proxies:
+      - 美国+Microsoft数据中心
       - 美国 CloudFlare节点
-      - 台湾省新竹市+中华电信
+      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点 - 2
-      - 南非 V2CROSS.COM
-      - 美国+Xerox
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国+Xerox - 2
-      - 美国+麻省理工学院
+      - 日本+东京Amazon数据中心
+      - 美国+V2CROSS.COM
+      - 日本+东京Amazon数据中心 - 2
+      - 美国 V2CROSS.COM - 2
       - 美国 CloudFlare节点 - 3
+      - 美国+Microsoft数据中心 - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
+      - 美国+Microsoft数据中心
       - 美国 CloudFlare节点
-      - 台湾省新竹市+中华电信
+      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点 - 2
-      - 南非 V2CROSS.COM
-      - 美国+Xerox
-      - 美国 加利福尼亚州圣何塞PEG TECH
-      - 美国+Xerox - 2
-      - 美国+麻省理工学院
+      - 日本+东京Amazon数据中心
+      - 美国+V2CROSS.COM
+      - 日本+东京Amazon数据中心 - 2
+      - 美国 V2CROSS.COM - 2
       - 美国 CloudFlare节点 - 3
+      - 美国+Microsoft数据中心 - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
