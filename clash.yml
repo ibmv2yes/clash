@@ -1,9 +1,9 @@
 proxies:
-  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
+  - name: 美国 Datability
     type: vmess
-    server: 192.74.228.162
-    port: 42857
-    uuid: 051b844f-efe3-4847-92aa-66b5de0b6d4e
+    server: 140.99.49.56
+    port: 55602
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
     udp: true
@@ -11,18 +11,54 @@ proxies:
     ws-path: ''
     ws-headers:
       Host: ''
+  - name: 美国 加利福尼亚州洛杉矶Sharktech数据中心
+    type: vmess
+    server: 64.32.10.118
+    port: 41169
+    uuid: c528d8d8-94d6-48a9-8dd3-52892558a6ab
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
   - name: 美国 CloudFlare节点
     type: vmess
-    server: 190.93.246.201
-    port: 80
-    uuid: 9572d691-e27a-4f54-ef4d-57600a785b55
+    server: visa.com
+    port: 2082
+    uuid: 33f3e136-ccda-4959-a9cb-c09eea4cda77
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /qwer0
+    ws-path: /
     ws-headers:
-      Host: txx.vtcss.top
+      Host: c.ghhymua.tk
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: 162.159.142.203
+    port: 80
+    uuid: 6e1fdc12-214b-427f-88bb-599c536407ea
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /1654431
+    ws-headers:
+      Host: de3.mybestjj.com
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: 45.136.239.32
+    port: 51382
+    uuid: 9a780f2c-9643-49c0-90a6-7a74a566eb7f
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
   - name: 南非 V2CROSS.COM
     type: vmess
     server: 156.225.67.234
@@ -35,59 +71,69 @@ proxies:
     ws-path: /
     ws-headers:
       Host: 🇳🇱NL荷兰(youtube阿伟科技2)
-  - name: 美国 V2CROSS.COM
+  - name: 上海市+电信
+    type: trojan
+    server: 116.192.171.97
+    port: '8443'
+    password: 5505f6ba-cd37-30ce-8f92-be4120c83d7f
+  - name: 台湾省新竹市+中华电信
+    type: trojan
+    server: hnm.xiaohouzi.club
+    port: '23330'
+    password: c32c56fb-64d9-33c4-b42a-af81b7a33fe7
+  - name: 美国 CloudFlare节点 - 3
     type: vmess
-    server: ns1.v2-vip.fun
-    port: 80
-    uuid: 8abe9496-5e24-4e49-b566-dcf86116017d
+    server: visa.com
+    port: 8080
+    uuid: 722f07be-43a1-482c-c200-7a4f8076c588
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /i99LgvSaslbsPLLQQ7j6Z
+    ws-path: /
     ws-headers:
-      Host: de5.irteh.fun
-  - name: 美国 V2CROSS.COM - 2
-    type: vmess
-    server: 104.31.16.28
-    port: 80
-    uuid: 58fe1542-5290-40ad-815a-77707a81afe5
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /IOebhLMhl1CTbFHbL95myfRX2
-    ws-headers:
-      Host: ca4.tehme2.fun
+      Host: c.ghhymua.tk
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 美国 Datability
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
       - 美国 CloudFlare节点
-      - 南非 V2CROSS.COM
+      - 美国 CloudFlare节点 - 2
       - 美国 V2CROSS.COM
-      - 美国 V2CROSS.COM - 2
+      - 南非 V2CROSS.COM
+      - 上海市+电信
+      - 台湾省新竹市+中华电信
+      - 美国 CloudFlare节点 - 3
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 美国 Datability
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
       - 美国 CloudFlare节点
-      - 南非 V2CROSS.COM
+      - 美国 CloudFlare节点 - 2
       - 美国 V2CROSS.COM
-      - 美国 V2CROSS.COM - 2
+      - 南非 V2CROSS.COM
+      - 上海市+电信
+      - 台湾省新竹市+中华电信
+      - 美国 CloudFlare节点 - 3
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 美国 Datability
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
       - 美国 CloudFlare节点
-      - 南非 V2CROSS.COM
+      - 美国 CloudFlare节点 - 2
       - 美国 V2CROSS.COM
-      - 美国 V2CROSS.COM - 2
+      - 南非 V2CROSS.COM
+      - 上海市+电信
+      - 台湾省新竹市+中华电信
+      - 美国 CloudFlare节点 - 3
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
