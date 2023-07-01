@@ -1,164 +1,103 @@
 proxies:
+  - name: 美国+华盛顿州西雅图市亚马逊(Amazon)公司数据中心
+    type: trojan
+    server: pqawsjp3.gsjc.cfd
+    port: 443?peer=18-140-66-207.nhost.00cdn.com&tfo=1
+    password: 32068eda-adad-431a-bfd4-2f7d4c73507c
   - name: 美国 CloudFlare节点
     type: vmess
-    server: cf-lt.sharecentre.online
-    port: 80
-    uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /shirker
-    ws-headers:
-      Host: ca.ilovescp.com
-  - name: 香港+Amazon数据中心
-    type: trojan
-    server: microsoft-hk01.syjd.xyz
-    port: 443?type=tcp&sni=microsoft-hk01.syjd.xyz&allowInsecure=1
-    password: 51eebef7-beaa-417b-9584-2794d10377c9
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: cdnjs.com
+    server: franc.digires.shop
     port: 443
-    uuid: DCE76061-EE65-49DB-997C-A6A880DADE3A
+    uuid: 1af4ba3d-e60f-4f83-b38b-23fc181f676d
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /speedtest
+    ws-path: /11201
     ws-headers:
-      Host: Amsterdam.kotick.site
+      Host: franc.digires.shop
     tls: true
+  - name: 美国+Amazon数据中心
+    type: trojan
+    server: 13.36.175.154
+    port: 22222?type=tcp&sni=trj.rollingnext.co.uk&allowInsecure=1
+    password: telegram-id-privatevpns
+  - name: 南非 V2CROSS.COM
+    type: vmess
+    server: 156.225.67.234
+    port: 48123
+    uuid: 93503dd5-245a-4eb1-ae2a-57ab9f2b3c29
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: 🇳🇱NL荷兰(youtube阿伟科技2)
   - name: 美国 V2CROSS.COM
     type: vmess
-    server: 137.175.29.38
-    port: 53986
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国+V2CROSS.COM
-    type: trojan
-    server: 152.70.74.66
-    port: 443?security=tls&type=tcp&headerType=none
-    password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
-  - name: 台湾省新竹市+中华电信
-    type: trojan
-    server: hnm.xiaohouzi.club
-    port: '23330'
-    password: c32c56fb-64d9-33c4-b42a-af81b7a33fe7
-  - name: 美国 CloudFlare节点 - 3
-    type: vmess
-    server: cf5.vpn66.eu.org
-    port: 8080
-    uuid: 5f098028-ea22-42ea-abfd-9222cb298b74
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: vceu.vpn66.eu.org
-  - name: 西班牙 V2CROSS.COM
-    type: vmess
-    server: baxwabe.76898102.xyz
-    port: 2052
-    uuid: a031d87d-ea68-3511-bc8a-8ab98ac734e9
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /aubverfsg
-    ws-headers:
-      Host: baxwabe.76898102.xyz
-  - name: 美国 CloudFlare节点 - 4
-    type: vmess
-    server: dl.v001sssv.pw
+    server: 104.31.16.28
     port: 80
-    uuid: a4bb7f93-cee6-43d7-b2dd-fa9c70b88233
+    uuid: 58fe1542-5290-40ad-815a-77707a81afe5
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /IOebhLMhl1CTbFHbL95myfRX2
+    ws-headers:
+      Host: ca4.tehme2.fun
+  - name: 美国+Microsoft数据中心
+    type: trojan
+    server: jp.stablize.top
+    port: '443'
+    password: 40297165-0545-4f8f-abc4-3ee25e6cfb87
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: visa.com
+    port: 2082
+    uuid: 33f3e136-ccda-4959-a9cb-c09eea4cda77
     alterId: 0
     cipher: auto
     udp: true
     network: ws
     ws-path: /
     ws-headers:
-      Host: dl.v001sssv.pw
-  - name: 日本+东京Amazon数据中心
-    type: trojan
-    server: jp1.gsjc.cfd
-    port: 443?type=tcp&allowInsecure=1
-    password: bce72830-6561-4af6-a2c4-052fccb94595
-  - name: 日本+东京Amazon数据中心 - 2
-    type: trojan
-    server: jp2.gsjc.cfd
-    port: 443?peer=20-212-60-88.nhost.00cdn.com&tfo=1
-    password: bce72830-6561-4af6-a2c4-052fccb94595
-  - name: 美国加利福尼亚州洛杉矶 PetaExpress
-    type: vmess
-    server: 198.2.234.108
-    port: 51322
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
+      Host: c.ghhymua.tk
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
+      - 美国+华盛顿州西雅图市亚马逊(Amazon)公司数据中心
       - 美国 CloudFlare节点
-      - 香港+Amazon数据中心
-      - 美国 CloudFlare节点 - 2
+      - 美国+Amazon数据中心
+      - 南非 V2CROSS.COM
       - 美国 V2CROSS.COM
-      - 美国+V2CROSS.COM
-      - 台湾省新竹市+中华电信
-      - 美国 CloudFlare节点 - 3
-      - 西班牙 V2CROSS.COM
-      - 美国 CloudFlare节点 - 4
-      - 日本+东京Amazon数据中心
-      - 日本+东京Amazon数据中心 - 2
-      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 美国+Microsoft数据中心
+      - 美国 CloudFlare节点 - 2
   - name: 自动选择
     type: url-test
     proxies:
+      - 美国+华盛顿州西雅图市亚马逊(Amazon)公司数据中心
       - 美国 CloudFlare节点
-      - 香港+Amazon数据中心
-      - 美国 CloudFlare节点 - 2
+      - 美国+Amazon数据中心
+      - 南非 V2CROSS.COM
       - 美国 V2CROSS.COM
-      - 美国+V2CROSS.COM
-      - 台湾省新竹市+中华电信
-      - 美国 CloudFlare节点 - 3
-      - 西班牙 V2CROSS.COM
-      - 美国 CloudFlare节点 - 4
-      - 日本+东京Amazon数据中心
-      - 日本+东京Amazon数据中心 - 2
-      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 美国+Microsoft数据中心
+      - 美国 CloudFlare节点 - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
+      - 美国+华盛顿州西雅图市亚马逊(Amazon)公司数据中心
       - 美国 CloudFlare节点
-      - 香港+Amazon数据中心
-      - 美国 CloudFlare节点 - 2
+      - 美国+Amazon数据中心
+      - 南非 V2CROSS.COM
       - 美国 V2CROSS.COM
-      - 美国+V2CROSS.COM
-      - 台湾省新竹市+中华电信
-      - 美国 CloudFlare节点 - 3
-      - 西班牙 V2CROSS.COM
-      - 美国 CloudFlare节点 - 4
-      - 日本+东京Amazon数据中心
-      - 日本+东京Amazon数据中心 - 2
-      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 美国+Microsoft数据中心
+      - 美国 CloudFlare节点 - 2
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
