@@ -1,31 +1,25 @@
 proxies:
-  - name: 美国+Microsoft数据中心
-    type: trojan
-    server: jp.stablize.top
-    port: '443'
-    password: 4d23cf0e-5ceb-43e7-90d3-63982bfa6940
   - name: 美国 CloudFlare节点
     type: vmess
-    server: 104.24.226.79
-    port: 443
-    uuid: 9ffbb816-b4bb-493f-b558-df527b767456
+    server: cf.yxjnode.com
+    port: 80
+    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /ports/10178
+    ws-path: /yxzbp
     ws-headers:
-      Host: star-one.cfd
-    tls: true
+      Host: dp1.yxjnode.com
   - name: 日本+东京Amazon数据中心
     type: trojan
     server: jp1.gsjc.cfd
     port: 443?type=tcp&allowInsecure=1
     password: bce72830-6561-4af6-a2c4-052fccb94595
-  - name: 美国 V2CROSS.COM
+  - name: 美国 Datability
     type: vmess
-    server: 137.175.29.33
-    port: 53986
+    server: 140.99.49.56
+    port: 55602
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     alterId: 64
     cipher: auto
@@ -34,28 +28,6 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: datacenter.cm.01.biqibao.site
-    port: 2052
-    uuid: dbb2b9c8-9cf7-4791-9cbc-db480c7e2dbd
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /public
-    ws-headers:
-      Host: detacenter.01.biqibao.site
-  - name: 亚太地区+V2CROSS.COM
-    type: trojan
-    server: 163.123.192.60
-    port: 443?peer=download.xn--mes358aby2apfg.com&tfo=1
-    password: 32068eda-adad-431a-bfd4-2f7d4c73507c
-  - name: 台湾省新竹市+中华电信
-    type: trojan
-    server: hnm.xiaohouzi.club
-    port: '23330'
-    password: c32c56fb-64d9-33c4-b42a-af81b7a33fe7
   - name: 美国 加利福尼亚州圣何塞MULTACOM机房
     type: vmess
     server: 45.199.138.29
@@ -68,44 +40,116 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: dl.v001sssv.pw
+    port: 80
+    uuid: a4bb7f93-cee6-43d7-b2dd-fa9c70b88233
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /
+    ws-headers:
+      Host: dl.v001sssv.pw
+  - name: 广东省+移动
+    type: trojan
+    server: zf.heigouyunzf.xyz
+    port: '38803'
+    password: e958b47d-3510-445a-99cb-dc98d227e29e
+  - name: 南非豪登省约翰内斯堡 Cloudinnovation数据中心
+    type: vmess
+    server: 156.249.18.159
+    port: 48123
+    uuid: 63b4b829-7f01-4e26-b037-f04b1f098765
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 美国+Microsoft数据中心
+    type: trojan
+    server: jp.stablize.top
+    port: '443'
+    password: 4d23cf0e-5ceb-43e7-90d3-63982bfa6940
+  - name: 美国加利福尼亚州洛杉矶 PetaExpress
+    type: vmess
+    server: 198.2.234.108
+    port: 51322
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 日本+东京都亚马逊(Amazon)公司数据中心
+    type: trojan
+    server: pqawsjp4.gsjc.cfd
+    port: 443?peer=18-140-66-207.nhost.00cdn.com&tfo=1
+    password: 32068eda-adad-431a-bfd4-2f7d4c73507c
+  - name: 南非 V2CROSS.COM
+    type: vmess
+    server: 156.225.67.234
+    port: 48123
+    uuid: 93503dd5-245a-4eb1-ae2a-57ab9f2b3c29
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: 🇳🇱NL荷兰(youtube阿伟科技2)
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国+Microsoft数据中心
       - 美国 CloudFlare节点
       - 日本+东京Amazon数据中心
-      - 美国 V2CROSS.COM
-      - 美国 CloudFlare节点 - 2
-      - 亚太地区+V2CROSS.COM
-      - 台湾省新竹市+中华电信
+      - 美国 Datability
       - 美国 加利福尼亚州圣何塞MULTACOM机房
+      - 美国 CloudFlare节点 - 2
+      - 广东省+移动
+      - 南非豪登省约翰内斯堡 Cloudinnovation数据中心
+      - 美国+Microsoft数据中心
+      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 日本+东京都亚马逊(Amazon)公司数据中心
+      - 南非 V2CROSS.COM
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国+Microsoft数据中心
       - 美国 CloudFlare节点
       - 日本+东京Amazon数据中心
-      - 美国 V2CROSS.COM
-      - 美国 CloudFlare节点 - 2
-      - 亚太地区+V2CROSS.COM
-      - 台湾省新竹市+中华电信
+      - 美国 Datability
       - 美国 加利福尼亚州圣何塞MULTACOM机房
+      - 美国 CloudFlare节点 - 2
+      - 广东省+移动
+      - 南非豪登省约翰内斯堡 Cloudinnovation数据中心
+      - 美国+Microsoft数据中心
+      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 日本+东京都亚马逊(Amazon)公司数据中心
+      - 南非 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国+Microsoft数据中心
       - 美国 CloudFlare节点
       - 日本+东京Amazon数据中心
-      - 美国 V2CROSS.COM
-      - 美国 CloudFlare节点 - 2
-      - 亚太地区+V2CROSS.COM
-      - 台湾省新竹市+中华电信
+      - 美国 Datability
       - 美国 加利福尼亚州圣何塞MULTACOM机房
+      - 美国 CloudFlare节点 - 2
+      - 广东省+移动
+      - 南非豪登省约翰内斯堡 Cloudinnovation数据中心
+      - 美国+Microsoft数据中心
+      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 日本+东京都亚马逊(Amazon)公司数据中心
+      - 南非 V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
