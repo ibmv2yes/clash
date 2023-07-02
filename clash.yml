@@ -1,16 +1,4 @@
 proxies:
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: dl.v001sssv.pw
-    port: 80
-    uuid: a4bb7f93-cee6-43d7-b2dd-fa9c70b88233
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: dl.v001sssv.pw
   - name: 美国 V2CROSS.COM
     type: vmess
     server: 104.31.16.28
@@ -23,157 +11,87 @@ proxies:
     ws-path: /IOebhLMhl1CTbFHbL95myfRX2
     ws-headers:
       Host: ca4.tehme2.fun
-  - name: 美国 V2CROSS.COM - 2
-    type: vmess
-    server: 108.186.116.183
-    port: 55005
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国 V2CROSS.COM - 3
-    type: vmess
-    server: 108.186.116.175
-    port: 55005
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 斯洛伐克+V2CROSS.COM
-    type: ss
-    server: 185.48.248.126
-    port: '444'
-    cipher: chacha20-ietf-poly1305
-    password: Onsheypy
-  - name: 美国 加利福尼亚州洛杉矶市SharkTech数据中心
-    type: vmess
-    server: 107.167.16.85
-    port: 45689
-    uuid: 7640a1e7-9701-428e-a4b2-19b3e7dd6f9f
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 日本+东京Amazon数据中心
+  - name: 台湾省+中华电信(HiNet)数据中心
     type: trojan
-    server: jp2.gsjc.cfd
-    port: 443?peer=20-212-60-88.nhost.00cdn.com&tfo=1
+    server: gs-hinet.gsjc.cfd
+    port: 443?type=tcp&sni=20-212-60-88.nhost.00cdn.com&allowInsecure=1
     password: bce72830-6561-4af6-a2c4-052fccb94595
-  - name: 台湾省新竹市+中华电信
-    type: trojan
-    server: hnm.xiaohouzi.club
-    port: '23330'
-    password: c32c56fb-64d9-33c4-b42a-af81b7a33fe7
-  - name: 美国 CloudFlare节点 - 2
+  - name: 英国 V2CROSS.COM
     type: vmess
-    server: Lille.kotick.site
+    server: 109.74.201.20
     port: 443
-    uuid: 6147F065-9AC0-4081-A5A3-A2EB4EBB8958
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /speedtest
-    ws-headers:
-      Host: Lille.kotick.site
+    ws-path: /chat
+    ws-headers: {}
     tls: true
-  - name: 美国 CloudFlare节点 - 3
+  - name: 浙江省金华市+移动
+    type: ss
+    server: p1.bxy-fun3.com
+    port: '35127'
+    cipher: chacha20-ietf-poly1305
+    password: d7bee830-09aa-43b2-8945-3b341b8787db
+  - name: 上海市+电信
+    type: trojan
+    server: 116.192.171.97
+    port: '8443'
+    password: 5505f6ba-cd37-30ce-8f92-be4120c83d7f
+  - name: 美国 CloudFlare节点
     type: vmess
-    server: visa.com
-    port: 8080
-    uuid: 722f07be-43a1-482c-c200-7a4f8076c588
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: c.ghhymua.tk
-  - name: 美国 CloudFlare节点 - 4
-    type: vmess
-    server: cf.yxjnode.com
+    server: 104.24.159.57
     port: 80
-    uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa
+    uuid: 9572d691-e27a-4f54-ef4d-57600a785b55
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /yxzbp
+    ws-path: /qwer0
     ws-headers:
-      Host: dp1.yxjnode.com
-  - name: 美国 Cloudinnovation数据中心
-    type: vmess
-    server: 154.85.1.245
-    port: 47731
-    uuid: 1d474f0b-e78d-4af9-bc4a-a467467bc7a7
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: 🇺🇸US美国(youtube阿伟科技)
+      Host: txx.vtcss.top
+  - name: 美国+V2CROSS.COM
+    type: ss
+    server: 172.99.188.99
+    port: '4444'
+    cipher: aes-256-gcm
+    password: pKEW8JPByTVTLtM
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 CloudFlare节点
       - 美国 V2CROSS.COM
-      - 美国 V2CROSS.COM - 2
-      - 美国 V2CROSS.COM - 3
-      - 斯洛伐克+V2CROSS.COM
-      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
-      - 日本+东京Amazon数据中心
-      - 台湾省新竹市+中华电信
-      - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
-      - 美国 Cloudinnovation数据中心
+      - 台湾省+中华电信(HiNet)数据中心
+      - 英国 V2CROSS.COM
+      - 浙江省金华市+移动
+      - 上海市+电信
+      - 美国 CloudFlare节点
+      - 美国+V2CROSS.COM
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 CloudFlare节点
       - 美国 V2CROSS.COM
-      - 美国 V2CROSS.COM - 2
-      - 美国 V2CROSS.COM - 3
-      - 斯洛伐克+V2CROSS.COM
-      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
-      - 日本+东京Amazon数据中心
-      - 台湾省新竹市+中华电信
-      - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
-      - 美国 Cloudinnovation数据中心
+      - 台湾省+中华电信(HiNet)数据中心
+      - 英国 V2CROSS.COM
+      - 浙江省金华市+移动
+      - 上海市+电信
+      - 美国 CloudFlare节点
+      - 美国+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 CloudFlare节点
       - 美国 V2CROSS.COM
-      - 美国 V2CROSS.COM - 2
-      - 美国 V2CROSS.COM - 3
-      - 斯洛伐克+V2CROSS.COM
-      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
-      - 日本+东京Amazon数据中心
-      - 台湾省新竹市+中华电信
-      - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
-      - 美国 Cloudinnovation数据中心
+      - 台湾省+中华电信(HiNet)数据中心
+      - 英国 V2CROSS.COM
+      - 浙江省金华市+移动
+      - 上海市+电信
+      - 美国 CloudFlare节点
+      - 美国+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
