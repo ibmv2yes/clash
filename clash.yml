@@ -1,78 +1,26 @@
 proxies:
-  - name: 美国 CloudFlare节点
+  - name: 新加坡+Amazon数据中心
+    type: trojan
+    server: pqawsjp02.gsjc.cfd
+    port: '443'
+    password: 32068eda-adad-431a-bfd4-2f7d4c73507c
+  - name: 美国 V2CROSS.COM
     type: vmess
-    server: dl.v001sssv.pw
+    server: ns1.v2-vip.fun
     port: 80
-    uuid: a4bb7f93-cee6-43d7-b2dd-fa9c70b88233
+    uuid: 4f859149-2b2f-4b90-9a2c-8c0fe15c8c4c
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /
+    ws-path: /ozX9aUPiJVtoLavjTW
     ws-headers:
-      Host: dl.v001sssv.pw
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: cf-lt.sharecentre.online
-    port: 8080
-    uuid: 3d8274d3-a977-4bc2-a461-8086963aafc0
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /api/v3/download.getFile
-    ws-headers:
-      Host: ssrsub.v01.ssrsub.com
-  - name: 美国 CloudFlare节点 - 3
-    type: vmess
-    server: amstd.digires.shop
-    port: 443
-    uuid: c13277ce-cda6-4d01-cedc-1e3605a0eb72
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /12796
-    ws-headers:
-      Host: ''
-    tls: true
-  - name: 美国加利福尼亚州洛杉矶 PetaExpress
-    type: vmess
-    server: 198.2.234.108
-    port: 51322
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国 CloudFlare节点 - 4
-    type: vmess
-    server: 104.17.3.81
-    port: 80
-    uuid: 43b747e0-02bb-11ee-9b1d-1577c1651679
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /files
-    ws-headers:
-      Host: sg.xmbb.net
-  - name: 美国 CloudFlare节点 - 5
-    type: vmess
-    server: cdnjs.com
-    port: 443
-    uuid: DCE76061-EE65-49DB-997C-A6A880DADE3A
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /speedtest
-    ws-headers:
-      Host: Amsterdam.kotick.site
-    tls: true
+      Host: de14.irteh.fun
+  - name: 亚太地区+V2CROSS.COM
+    type: trojan
+    server: 163.123.192.57
+    port: '443'
+    password: 32068eda-adad-431a-bfd4-2f7d4c73507c
   - name: 美国 CloudFlare公司CDN节点(shopify)
     type: vmess
     server: 23.227.38.99
@@ -86,49 +34,114 @@ proxies:
     ws-headers:
       Host: 1.freek1.xyz
     tls: true
-  - name: 新加坡+Amazon数据中心
+  - name: 美国加利福尼亚州洛杉矶 PetaExpress
+    type: vmess
+    server: 198.2.234.108
+    port: 51322
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-headers: {}
+  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
+    type: vmess
+    server: 192.74.229.198
+    port: 51592
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: true
+    network: tcp
+    ws-path: /
+    ws-headers:
+      Host: ''
+  - name: 日本+北海道石狩SAKURA数据中心
     type: trojan
-    server: pqawsjp02.gsjc.cfd
+    server: trs19.bolab.net
     port: '443'
-    password: 32068eda-adad-431a-bfd4-2f7d4c73507c
+    password: 7a73f1dc97a70905870c0c0484b12145
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: cf-lt.sharecentre.online
+    port: 8080
+    uuid: 3d8274d3-a977-4bc2-a461-8086963aafc0
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /api/v3/download.getFile
+    ws-headers:
+      Host: ssrsub.v01.ssrsub.com
+  - name: 台湾省台北市+中華電信
+    type: trojan
+    server: hinet2.downloadvip.cfd
+    port: '443'
+    password: d59235c4-44ea-4e2e-bd90-5eed10db3b15
+  - name: 美国 CloudFlare节点 - 2
+    type: vmess
+    server: cf-lt.sharecentre.online
+    port: 8080
+    uuid: 3d8274d3-a977-4bc2-a461-8086963aafc0
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /api/v3/download.getFile
+    ws-headers:
+      Host: ssrsub.v01.ssrsub.com
+  - name: 日本+V2CROSS.COM
+    type: trojan
+    server: fsctw.fscloud123456789.com
+    port: '443'
+    password: 5057f49b-3038-4683-a5d9-8d9657caef3c
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 美国 CloudFlare节点 - 4
-      - 美国 CloudFlare节点 - 5
-      - 美国 CloudFlare公司CDN节点(shopify)
       - 新加坡+Amazon数据中心
+      - 美国 V2CROSS.COM
+      - 亚太地区+V2CROSS.COM
+      - 美国 CloudFlare公司CDN节点(shopify)
+      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 日本+北海道石狩SAKURA数据中心
+      - 美国 CloudFlare节点
+      - 台湾省台北市+中華電信
+      - 美国 CloudFlare节点 - 2
+      - 日本+V2CROSS.COM
   - name: 自动选择
     type: url-test
     proxies:
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 美国 CloudFlare节点 - 4
-      - 美国 CloudFlare节点 - 5
-      - 美国 CloudFlare公司CDN节点(shopify)
       - 新加坡+Amazon数据中心
+      - 美国 V2CROSS.COM
+      - 亚太地区+V2CROSS.COM
+      - 美国 CloudFlare公司CDN节点(shopify)
+      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 日本+北海道石狩SAKURA数据中心
+      - 美国 CloudFlare节点
+      - 台湾省台北市+中華電信
+      - 美国 CloudFlare节点 - 2
+      - 日本+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 美国 CloudFlare节点 - 4
-      - 美国 CloudFlare节点 - 5
-      - 美国 CloudFlare公司CDN节点(shopify)
       - 新加坡+Amazon数据中心
+      - 美国 V2CROSS.COM
+      - 亚太地区+V2CROSS.COM
+      - 美国 CloudFlare公司CDN节点(shopify)
+      - 美国加利福尼亚州洛杉矶 PetaExpress
+      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
+      - 日本+北海道石狩SAKURA数据中心
+      - 美国 CloudFlare节点
+      - 台湾省台北市+中華電信
+      - 美国 CloudFlare节点 - 2
+      - 日本+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
