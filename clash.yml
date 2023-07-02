@@ -1,17 +1,16 @@
 proxies:
   - name: 美国 CloudFlare节点
     type: vmess
-    server: cfcdn.sanfencdn.net
-    port: 443
-    uuid: f114e6d9-0cda-4fe8-b769-3bceb3bca453
+    server: dl.v001sssv.pw
+    port: 80
+    uuid: a4bb7f93-cee6-43d7-b2dd-fa9c70b88233
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /zh-cn
+    ws-path: /
     ws-headers:
-      Host: us4.sanfencdn1.com
-    tls: true
+      Host: dl.v001sssv.pw
   - name: 美国 V2CROSS.COM
     type: vmess
     server: 108.186.116.175
@@ -24,144 +23,43 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
-  - name: 美国 CloudFlare节点 - 2
+  - name: 美国 V2CROSS.COM - 2
     type: vmess
-    server: 104.17.3.81
+    server: 104.31.16.28
     port: 80
-    uuid: 43b747e0-02bb-11ee-9b1d-1577c1651679
+    uuid: 58fe1542-5290-40ad-815a-77707a81afe5
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /files
+    ws-path: /IOebhLMhl1CTbFHbL95myfRX2
     ws-headers:
-      Host: sg.xmbb.net
-  - name: 美国+麻省理工学院
+      Host: ca4.tehme2.fun
+  - name: 新加坡+Amazon数据中心
     type: trojan
-    server: hk2.gsjc.cfd
-    port: 443?peer=20-212-60-88.nhost.00cdn.com&tfo=1
-    password: bce72830-6561-4af6-a2c4-052fccb94595
-  - name: 美国+V2CROSS.COM
+    server: sg1.421421.xyz
+    port: 20230?sni=421421.xyz
+    password: b425d8b7-caca-402d-9902-0335fa5e67ed
+  - name: 台湾省新竹市+中华电信
     type: trojan
-    server: 152.70.74.66
-    port: 443?security=tls&type=tcp&headerType=none
-    password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
-  - name: 美国 CloudFlare节点 - 3
-    type: vmess
-    server: cf1.992688.xyz
-    port: 8080
-    uuid: 7fdddb2a-1403-40e1-9466-e82dd338f0a0
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: o2.992688.xyz
-  - name: 美国 CloudFlare节点 - 4
-    type: vmess
-    server: 104.24.159.57
-    port: 80
-    uuid: 9572d691-e27a-4f54-ef4d-57600a785b55
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /qwer0
-    ws-headers:
-      Host: txx.vtcss.top
-  - name: 美国 加利福尼亚州圣何塞PEG TECH数据中心
-    type: vmess
-    server: 192.74.228.188
-    port: 42857
-    uuid: 051b844f-efe3-4847-92aa-66b5de0b6d4e
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
-  - name: 美国 CloudFlare节点 - 5
-    type: vmess
-    server: sooya.biz.id
-    port: 443
-    uuid: c7169000-13f9-11ee-b432-205c6d5f5d78
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /vmws
-    ws-headers:
-      Host: asia1.oceis.net
-    tls: true
-  - name: 美国 加利福尼亚州洛杉矶市SharkTech数据中心
-    type: vmess
-    server: 107.167.16.85
-    port: 45689
-    uuid: 7640a1e7-9701-428e-a4b2-19b3e7dd6f9f
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
+    server: hnm.xiaohouzi.club
+    port: '23330'
+    password: c32c56fb-64d9-33c4-b42a-af81b7a33fe7
   - name: 美国+Microsoft数据中心
     type: trojan
-    server: fscsg.fscloud123456789.com
+    server: vpnhat.stablize.top
     port: '443'
-    password: fd47bd8c-21e5-4bbd-8ab1-c17005a9ac98
-  - name: 美国 CloudFlare节点 - 6
-    type: vmess
-    server: 104.24.169.238
-    port: 443
-    uuid: 1a25dce4-9d27-4e8d-e46e-16199be54f81
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /ports/45314
-    ws-headers:
-      Host: star-one.cfd
-    tls: true
-  - name: 美国 CloudFlare节点 - 7
-    type: vmess
-    server: 190.93.246.201
-    port: 80
-    uuid: 9572d691-e27a-4f54-ef4d-57600a785b55
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /qwer0
-    ws-headers:
-      Host: txx.vtcss.top
-  - name: 美国 CloudFlare节点 - 8
-    type: vmess
-    server: 173.245.58.66
-    port: 2087
-    uuid: 56236188-c4e3-4933-e0d5-0fe5c0c579ac
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /qwer
-    ws-headers:
-      Host: uxx.vtcss.top
-    tls: true
-  - name: 美国 加利福尼亚州圣何塞PEG TECH
-    type: vmess
-    server: 142.4.112.151
-    port: 44667
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    udp: true
-    network: tcp
-    ws-path: /
-    ws-headers:
-      Host: ''
+    password: 4d23cf0e-5ceb-43e7-90d3-63982bfa6940
+  - name: 亚太地区+V2CROSS.COM
+    type: trojan
+    server: 163.123.192.57
+    port: '443'
+    password: 41bec492-cd79-4b57-9a15-7d2bb00fcfca
+  - name: 日本+V2CROSS.COM
+    type: trojan
+    server: jp2.gsjc.cfd
+    port: 443?peer=20-212-60-88.nhost.00cdn.com&tfo=1
+    password: bce72830-6561-4af6-a2c4-052fccb94595
 proxy-groups:
   - name: Free-servers
     type: select
@@ -170,37 +68,23 @@ proxy-groups:
       - 故障转移
       - 美国 CloudFlare节点
       - 美国 V2CROSS.COM
-      - 美国 CloudFlare节点 - 2
-      - 美国+麻省理工学院
-      - 美国+V2CROSS.COM
-      - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 美国 CloudFlare节点 - 5
-      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+      - 美国 V2CROSS.COM - 2
+      - 新加坡+Amazon数据中心
+      - 台湾省新竹市+中华电信
       - 美国+Microsoft数据中心
-      - 美国 CloudFlare节点 - 6
-      - 美国 CloudFlare节点 - 7
-      - 美国 CloudFlare节点 - 8
-      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 亚太地区+V2CROSS.COM
+      - 日本+V2CROSS.COM
   - name: 自动选择
     type: url-test
     proxies:
       - 美国 CloudFlare节点
       - 美国 V2CROSS.COM
-      - 美国 CloudFlare节点 - 2
-      - 美国+麻省理工学院
-      - 美国+V2CROSS.COM
-      - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 美国 CloudFlare节点 - 5
-      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+      - 美国 V2CROSS.COM - 2
+      - 新加坡+Amazon数据中心
+      - 台湾省新竹市+中华电信
       - 美国+Microsoft数据中心
-      - 美国 CloudFlare节点 - 6
-      - 美国 CloudFlare节点 - 7
-      - 美国 CloudFlare节点 - 8
-      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 亚太地区+V2CROSS.COM
+      - 日本+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
@@ -208,19 +92,12 @@ proxy-groups:
     proxies:
       - 美国 CloudFlare节点
       - 美国 V2CROSS.COM
-      - 美国 CloudFlare节点 - 2
-      - 美国+麻省理工学院
-      - 美国+V2CROSS.COM
-      - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
-      - 美国 加利福尼亚州圣何塞PEG TECH数据中心
-      - 美国 CloudFlare节点 - 5
-      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+      - 美国 V2CROSS.COM - 2
+      - 新加坡+Amazon数据中心
+      - 台湾省新竹市+中华电信
       - 美国+Microsoft数据中心
-      - 美国 CloudFlare节点 - 6
-      - 美国 CloudFlare节点 - 7
-      - 美国 CloudFlare节点 - 8
-      - 美国 加利福尼亚州圣何塞PEG TECH
+      - 亚太地区+V2CROSS.COM
+      - 日本+V2CROSS.COM
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
