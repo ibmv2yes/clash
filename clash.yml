@@ -1,80 +1,16 @@
 proxies:
-  - name: 美国 CloudFlare节点
+  - name: 美国 V2CROSS.COM
     type: vmess
-    server: datacenter.cm.01.biqibao.site
-    port: 2052
-    uuid: dbb2b9c8-9cf7-4791-9cbc-db480c7e2dbd
+    server: ns1.v2-vip.fun
+    port: 80
+    uuid: 4f859149-2b2f-4b90-9a2c-8c0fe15c8c4c
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    ws-path: /public
+    ws-path: /ozX9aUPiJVtoLavjTW
     ws-headers:
-      Host: detacenter.01.biqibao.site
-  - name: 美国+Xerox
-    type: trojan
-    server: sgmax05.170203.xyz
-    port: 443?type=tcp&sni=sgmax05.170203.xyz&allowInsecure=1
-    password: 07578f26-1009-4c31-8c4d-fc46f1eef55f
-  - name: 美国+华盛顿州西雅图市亚马逊(Amazon)公司数据中心
-    type: trojan
-    server: pqawsjp3.gsjc.cfd
-    port: 443?peer=18-140-66-207.nhost.00cdn.com&tfo=1
-    password: 32068eda-adad-431a-bfd4-2f7d4c73507c
-  - name: 日本+东京Amazon数据中心
-    type: trojan
-    server: pqawsjp2.gsjc.cfd
-    port: 443?peer=18-140-66-207.nhost.00cdn.com&tfo=1
-    password: 32068eda-adad-431a-bfd4-2f7d4c73507c
-  - name: 美国 CloudFlare节点 - 2
-    type: vmess
-    server: visa.com
-    port: 8080
-    uuid: 722f07be-43a1-482c-c200-7a4f8076c588
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /
-    ws-headers:
-      Host: c.ghhymua.tk
-  - name: 美国 CloudFlare节点 - 3
-    type: vmess
-    server: datacenter.cm.01.biqibao.site
-    port: 2052
-    uuid: dbb2b9c8-9cf7-4791-9cbc-db480c7e2dbd
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /public
-    ws-headers:
-      Host: detacenter.01.biqibao.site
-  - name: 美国 CloudFlare节点 - 4
-    type: vmess
-    server: sooya.biz.id
-    port: 443
-    uuid: c7169000-13f9-11ee-b432-205c6d5f5d78
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /vmws
-    ws-headers:
-      Host: asia1.oceis.net
-    tls: true
-  - name: 美国 CloudFlare节点 - 5
-    type: vmess
-    server: cf-lt.sharecentre.online
-    port: 8080
-    uuid: 3d8274d3-a977-4bc2-a461-8086963aafc0
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-path: /api/v3/download.getFile
-    ws-headers:
-      Host: ssrsub.v01.ssrsub.com
+      Host: de14.irteh.fun
   - name: 美国 加利福尼亚州洛杉矶市SharkTech数据中心
     type: vmess
     server: 107.167.16.85
@@ -87,47 +23,106 @@ proxies:
     ws-path: /
     ws-headers:
       Host: ''
+  - name: 美国+俄勒冈州波特兰Amazon数据中心
+    type: trojan
+    server: link6.kuaidog004.top
+    port: '53422'
+    password: 3daac969-5f2d-4ca4-b55f-1f109f443ae1
+  - name: 新加坡+Amazon数据中心
+    type: trojan
+    server: pqawssg01.gsjc.cfd
+    port: 443?peer=18-140-66-207.nhost.00cdn.com&tfo=1
+    password: 32068eda-adad-431a-bfd4-2f7d4c73507c
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: 104.24.226.79
+    port: 443
+    uuid: 9ffbb816-b4bb-493f-b558-df527b767456
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /ports/10178
+    ws-headers:
+      Host: star-one.cfd
+    tls: true
+  - name: 美国+Xerox
+    type: trojan
+    server: pqawsjp02.gsjc.cfd
+    port: '443'
+    password: 32068eda-adad-431a-bfd4-2f7d4c73507c
+  - name: 英国 V2CROSS.COM
+    type: vmess
+    server: 109.74.201.20
+    port: 443
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-path: /chat
+    ws-headers:
+      Host: ''
+    tls: true
+  - name: 美国+Xerox - 2
+    type: trojan
+    server: pqawsjp01.gsjc.cfd
+    port: 443?peer=18-140-66-207.nhost.00cdn.com&tfo=1
+    password: 32068eda-adad-431a-bfd4-2f7d4c73507c
+  - name: 上海市+电信
+    type: trojan
+    server: 116.192.171.97
+    port: '8443'
+    password: 5505f6ba-cd37-30ce-8f92-be4120c83d7f
+  - name: 日本+北海道石狩SAKURA数据中心
+    type: trojan
+    server: trs19.bolab.net
+    port: '443'
+    password: 7a73f1dc97a70905870c0c0484b12145
 proxy-groups:
   - name: Free-servers
     type: select
     proxies:
       - 自动选择
       - 故障转移
+      - 美国 V2CROSS.COM
+      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+      - 美国+俄勒冈州波特兰Amazon数据中心
+      - 新加坡+Amazon数据中心
       - 美国 CloudFlare节点
       - 美国+Xerox
-      - 美国+华盛顿州西雅图市亚马逊(Amazon)公司数据中心
-      - 日本+东京Amazon数据中心
-      - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
-      - 美国 CloudFlare节点 - 5
-      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+      - 英国 V2CROSS.COM
+      - 美国+Xerox - 2
+      - 上海市+电信
+      - 日本+北海道石狩SAKURA数据中心
   - name: 自动选择
     type: url-test
     proxies:
+      - 美国 V2CROSS.COM
+      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+      - 美国+俄勒冈州波特兰Amazon数据中心
+      - 新加坡+Amazon数据中心
       - 美国 CloudFlare节点
       - 美国+Xerox
-      - 美国+华盛顿州西雅图市亚马逊(Amazon)公司数据中心
-      - 日本+东京Amazon数据中心
-      - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
-      - 美国 CloudFlare节点 - 5
-      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+      - 英国 V2CROSS.COM
+      - 美国+Xerox - 2
+      - 上海市+电信
+      - 日本+北海道石狩SAKURA数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
   - name: 故障转移
     type: fallback
     proxies:
+      - 美国 V2CROSS.COM
+      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+      - 美国+俄勒冈州波特兰Amazon数据中心
+      - 新加坡+Amazon数据中心
       - 美国 CloudFlare节点
       - 美国+Xerox
-      - 美国+华盛顿州西雅图市亚马逊(Amazon)公司数据中心
-      - 日本+东京Amazon数据中心
-      - 美国 CloudFlare节点 - 2
-      - 美国 CloudFlare节点 - 3
-      - 美国 CloudFlare节点 - 4
-      - 美国 CloudFlare节点 - 5
-      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+      - 英国 V2CROSS.COM
+      - 美国+Xerox - 2
+      - 上海市+电信
+      - 日本+北海道石狩SAKURA数据中心
     url: http://www.gstatic.com/generate_204
     interval: 86400
 rule-providers:
